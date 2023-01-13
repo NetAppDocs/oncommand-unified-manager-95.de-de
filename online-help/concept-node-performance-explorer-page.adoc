@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-node-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Seite Performance/Node Explorer bietet eine detaillierte Performance-Übersicht über alle Nodes innerhalb eines Clusters. 
+---
+= Seite „Performance/Node Explorer“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite Performance/Node Explorer bietet eine detaillierte Performance-Übersicht über alle Nodes innerhalb eines Clusters.
+
+Auf der Seite „Performance/Node Explorer“ können Sie die Node-Performance während eines bestimmten Zeitraums verfolgen und vergleichen. Dies hilft Ihnen bei der Fehlerbehebung und Feinabstimmung der Performance Ihrer Knoten.
+
+Mit der Funktion „Anzeigen und Vergleichen“ können Sie die Performance dieses Knotens mit den folgenden vergleichen:
+
+* Anderen Nodes im selben Cluster
+* Die Aggregate auf dem Node
+* Die Ports auf dem Node
+
+
+Auf der Seite Performance/Node Explorer können Sie:
+
+* Zeigen Sie Probleme mit Schwellenwerten und deren Details an
+* Verfolgen und Vergleichen von Node-Performance-Daten
+* Untersuchung und Behebung von Problemen mit Schwellenwerten
+* Untersuchung und Behebung von Performance-Problemen
+

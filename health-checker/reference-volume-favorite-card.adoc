@@ -1,0 +1,57 @@
+---
+permalink: health-checker/reference-volume-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit der Favoritkarte Volume können Sie die Kapazitäts-, Sicherungs- und Performancedetails der Volumes anzeigen, die Sie als Favoriten markiert haben. 
+---
+= Bevorzugte Karte für Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit der Favoritkarte Volume können Sie die Kapazitäts-, Sicherungs- und Performancedetails der Volumes anzeigen, die Sie als Favoriten markiert haben.
+
+
+
+== Volume-Attribute
+
+Die Lieblingskarte für das Volume zeigt die folgenden Volume-Attribute an:
+
+* *Volume-Integritätsstatus*
++
+Ein Symbol, das den Integritätsstatus des Volumes anzeigt. Mögliche Werte sind Normal, Warnung, Fehler und kritisch.
+
+* *Volumenname*
++
+Name des Volumes.
+
+* * Kapazität*
++
+Prozentsatz des verfügbaren freien Speicherplatzes auf dem Volume und die geschätzte Anzahl von Tagen bis zum Abschluss des Volume.
+
+* *Schutz*
++
+Schutzrolle, die für das Volume festgelegt ist. Die möglichen Werte sind ungeschützt, nicht zutreffend, geschützt und Ziel.
+
+* *Leistung*
++
+Performance-Statistiken für das Volume.
+
++
+** *IOPS*
++
+Durchschnittliche Anzahl von I/O-Vorgängen pro Sekunde in den letzten 72 Stunden.
+
+** *Durchsatz*
++
+Durchschnittlicher Durchsatz der letzten 72 Stunden, in MB/s.
+
+** *Latenz*
++
+Die durchschnittliche Reaktionszeit eines Vorgangs wurde in Millisekunden benötigt.
+
+
+
+

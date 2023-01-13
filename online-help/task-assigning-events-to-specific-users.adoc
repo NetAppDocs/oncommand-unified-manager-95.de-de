@@ -1,0 +1,61 @@
+---
+permalink: online-help/task-assigning-events-to-specific-users.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können nicht zugewiesene Ereignisse selbst oder anderen Benutzern, einschließlich Remote-Benutzern, zuweisen. Sie können zugewiesene Ereignisse bei Bedarf einem anderen Benutzer zuweisen. Wenn z. B. häufig Probleme an einem Storage-Objekt auftreten, können Sie den Benutzer, der das Objekt verwaltet, die Ereignisse für diese Probleme zuweisen. 
+---
+= Zuweisen von Ereignissen zu bestimmten Benutzern
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können nicht zugewiesene Ereignisse selbst oder anderen Benutzern, einschließlich Remote-Benutzern, zuweisen. Sie können zugewiesene Ereignisse bei Bedarf einem anderen Benutzer zuweisen. Wenn z. B. häufig Probleme an einem Storage-Objekt auftreten, können Sie den Benutzer, der das Objekt verwaltet, die Ereignisse für diese Probleme zuweisen.
+
+
+
+== Bevor Sie beginnen
+
+* Der Name und die E-Mail-ID des Benutzers müssen korrekt konfiguriert sein.
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Events*.
+. Wählen Sie auf der Seite *Ereignisse* Inventar ein oder mehrere Ereignisse aus, die Sie zuweisen möchten.
+. Ordnen Sie das Ereignis zu, indem Sie eine der folgenden Optionen auswählen:
++
+|===
+| Wenn Sie das Ereignis zuweisen möchten... | Dann tun Sie das... 
+
+
+ a| 
+Sich Selbst.
+ a| 
+Klicken Sie Auf *Zuweisen Zu* > *Mich*.
+
+
+
+ a| 
+Einem anderen Benutzer
+ a| 
+.. Klicken Sie auf *Zuweisen zu* > *anderer Benutzer*.
+.. Geben Sie im Dialogfeld Eigentümer zuweisen den Benutzernamen ein, oder wählen Sie einen Benutzer aus der Dropdown-Liste aus.
+.. Klicken Sie Auf *Zuweisen*.
++
+Der Benutzer erhält eine E-Mail-Benachrichtigung.
+
++
+[NOTE]
+====
+Wenn Sie keinen Benutzernamen eingeben oder einen Benutzer aus der Dropdown-Liste auswählen und auf *Zuweisen* klicken, bleibt die Zuweisung des Ereignisses aufgehoben.
+
+====
+
+
+|===
+

@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-understanding-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Storage Virtual Machine \(SVM\)-Zuordnungen sind Zuordnungen von einer Quell-SVM zu einer Ziel-SVM, die von den Partnerapplikationen zur Ressourcenauswahl und Bereitstellung von sekundärem Volume verwendet werden.' 
+---
+= Allgemeines zu SVM-Zuordnungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Storage Virtual Machine (SVM)-Zuordnungen werden von einer Quell-SVM zu einer Ziel-SVM zugeordnet, die von Partnerapplikationen zur Ressourcenauswahl und zur Bereitstellung von sekundären Volumes verwendet werden.
+
+Zwischen einer Quell-SVM und einer Ziel-SVM werden immer Zuordnungen erstellt, unabhängig davon, ob die Ziel-SVM ein sekundäres oder tertiäres Ziel ist. Zum Erstellen einer Zuordnung zu einer tertiären Ziel-SVM kann eine sekundäre Ziel-SVM nicht als Quelle verwendet werden.
+
+SVMs können auf drei Arten zugeordnet werden:
+
+* Zuordnen einer beliebigen SVM
++
+Sie können eine Zuordnung zwischen jeder beliebigen primären Quell-SVM und einer oder mehreren Ziel-SVMs erstellen. Das bedeutet, dass alle bestehenden SVMs, die derzeit Schutz benötigen, sowie alle zukünftig erstellten SVMs mit den angegebenen Ziel-SVMs verknüpft sind. Beispielsweise könnte es sinnvoll sein, dass Applikationen aus verschiedenen Quellen an verschiedenen Standorten auf einer oder mehreren Ziel-SVMs an einem Standort gesichert werden.
+
+* Eine bestimmte SVM zuordnen
++
+Sie können eine Zuordnung zwischen einer bestimmten Quell-SVM und einer oder mehreren spezifischen Ziel-SVMs erstellen. Wenn Sie beispielsweise vielen Clients Storage-Services bereitstellen, deren Daten voneinander getrennt sein müssen, können Sie diese Option auswählen, um eine bestimmte Quell-SVM einer bestimmten Ziel-SVM zu zuordnen, die nur diesem Client zugewiesen ist.
+
+* Zuordnung zu einer externen SVM
++
+Sie können eine Verknüpfung zwischen einer Quell-SVM und einem externen, flexiblen Volume einer Ziel-SVM erstellen.
+
+

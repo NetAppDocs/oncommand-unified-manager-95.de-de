@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-add-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld Anmerkungsregel hinzufügen können Sie in Unified Manager Anmerkungsregeln erstellen, mit denen Storage-Objekte dynamisch beschriftet werden können. 
+---
+= Dialogfeld Anmerkungsregel hinzufügen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Anmerkungsregel hinzufügen können Sie in Unified Manager Anmerkungsregeln erstellen, mit denen Storage-Objekte dynamisch beschriftet werden können.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Name*
++
+Gibt den Namen der Anmerkungsregel an.
+
+* *Zielobjekttyp*
++
+Gibt den Typ der Storage-Objekte (Storage Virtual Machines (SVMs), Volumes oder Cluster) an, die Anmerkungen enthalten sollen.
+
+* *Anmerkung Anwenden*
++
+Gibt die Anmerkung und den Wert an, mit dem Speicherobjekte beschriftet werden können, wenn alle Bedingungen erfüllt sind.
+
+* *Bedingungen*
++
+Gibt Bedingungen an, die bestimmen, welche Speicherobjekte Sie kommentieren können.
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Speichern und Hinzufügen*
++
+Fügt die von Ihnen erstellte Anmerkungsregel hinzu. Sie können eine weitere Anmerkungsregel hinzufügen, ohne das Dialogfeld zu schließen.
+
+* *Hinzufügen*
++
+Fügt die Anmerkungsregel hinzu und schließt das Dialogfeld Anmerkungsregel hinzufügen.
+
+* *Abbrechen*
++
+Bricht die Änderungen ab und schließt das Dialogfeld Anmerkungsregel hinzufügen.
+
+* *Bedingung Hinzufügen*
++
+Fügt eine Bedingung hinzu, um die Anmerkungsregel zu definieren.
+
+* *Bedingungsgruppe Hinzufügen*
++
+Fügt eine Bedingungsgruppe hinzu, um Bedingungen für die Anmerkungsregel zu definieren.
+
+

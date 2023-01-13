@@ -1,0 +1,49 @@
+---
+permalink: install/task-installing-unified-manager-in-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Zur Konfiguration der Hochverfügbarkeit müssen Sie Unified Manager auf beiden Microsoft Cluster Server \(MSCS\) Cluster Nodes installieren.' 
+---
+= Installation von Unified Manager auf MSCS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Zur Konfiguration der Hochverfügbarkeit müssen Sie Unified Manager auf beiden Microsoft Cluster Server (MSCS) Cluster Knoten installieren.
+
+
+
+== Schritte
+
+. Melden Sie sich als Domänenbenutzer auf beiden Knoten des Clusters an.
+. Sorgen Sie für Hochverfügbarkeit, indem Sie eine der folgenden Optionen auswählen:
++
+|===
+| Ihr Ziel ist | Dann tun Sie das... 
+
+
+ a| 
+Konfigurieren Sie für eine vorhandene Unified Manager-Installation die Hochverfügbarkeit
+ a| 
+Fügen Sie einen weiteren Server hinzu, der mit dem vorhandenen Server gekoppelt werden soll:
+
+.. Aktualisieren Sie den vorhandenen Unified Manager-Server auf die neueste Softwareversion.
+.. Erstellen Sie ein Backup der vorhandenen Unified Manager-Installation, und speichern Sie das Backup auf einer gemounteten LUN.
+.. Installation von Unified Manager auf dem zweiten Node
++
+xref:task-installing-unified-manager-on-windows.adoc[Installation von Unified Manager auf einem Windows System]
+
+.. Stellen Sie das Backup der vorhandenen Unified Manager-Installation auf dem zweiten Knoten wieder her.
+
+
+
+
+ a| 
+Konfigurieren Sie Hochverfügbarkeit bei einer neuen Unified Manager-Installation
+ a| 
+Installation von Unified Manager auf beiden Knoten xref:task-installing-unified-manager-on-windows.adoc[Installation von Unified Manager auf einem Windows System]
+
+|===
+

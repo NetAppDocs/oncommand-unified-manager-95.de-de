@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-annotations-for-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: In Unified Manager können Sie Anmerkungen erstellen, um Storage-Objekte zu beschriften. Mit Annotationen können Sie kritische Ressourcen leicht identifizieren und geeignete Aktionen durchführen, z. B. wichtige Ressourcen einer Gruppe hinzufügen, eine Gruppenaktion zuweisen oder einen Bericht mit kommentierten Ressourcen erstellen. 
+---
+= Verwalten von Anmerkungen für Speicherobjekte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In Unified Manager können Sie Anmerkungen erstellen, um Storage-Objekte zu beschriften. Mit Annotationen können Sie kritische Ressourcen leicht identifizieren und geeignete Aktionen durchführen, z. B. wichtige Ressourcen einer Gruppe hinzufügen, eine Gruppenaktion zuweisen oder einen Bericht mit kommentierten Ressourcen erstellen.

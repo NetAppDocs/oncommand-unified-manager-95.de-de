@@ -1,0 +1,75 @@
+---
+permalink: install/task-setting-up-unified-manager-server-with-vcs-using-configuration-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können Unified Manager mit Veritas Cluster Server \(VCS\) mit Konfigurationsskripten konfigurieren.' 
+---
+= Konfiguration von Unified Manager mit VCS mithilfe von Konfigurationsskripten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Unified Manager mit Veritas Cluster Server (VCS) mit Konfigurationsskripten konfigurieren.
+
+
+
+== Bevor Sie beginnen
+
+* Unified Manager muss auf beiden Knoten in der VCS Setup installiert sein.
+* Das XML: LibXML-Modul muss mit Perl gebündelt werden, damit VCS-Skripte funktionieren können.
+* Sie müssen eine gemeinsame LUN mit ausreichender Größe erstellt haben, um den Quell-Unified Manager-Daten gerecht zu werden.
+* Sie müssen den absoluten Mount-Pfad angegeben haben, damit das Skript funktioniert.
++
+Das Skript funktioniert nicht, wenn Sie einen Ordner im Mount-Pfad erstellen.
+
+* Sie müssen das heruntergeladen haben `ha_setup.pl` Skript an `/opt/netapp/ocum/scripts`.
+
+
+
+
+== Über diese Aufgabe
+
+Im VCS-Setup ist der Knoten, für den die virtuelle IP-Schnittstelle und der Mount Point aktiv sind, der erste Knoten. Der andere Node ist der zweite Node.
+
+
+
+== Schritte
+
+. Melden Sie sich beim ersten Node des Clusters an.
++
+Im Hochverfügbarkeitseinstellungen müssen Sie alle Unified Manager-Services auf dem zweiten Node angehalten haben.
+
+. Fügen Sie das VCS-Installationsverzeichnis hinzu `/opt/VRTSvcs/bin` Zum PFAD Umgebungsvariable.
+. Wenn Sie eine vorhandene Unified Manager Einrichtung konfigurieren, erstellen Sie ein Unified Manager Backup und erstellen Sie das Support Bundle.
+. Führen Sie die aus `ha_setup.pl` Skript: `perl ha_setup.pl --first -t vcs -g group_name -e eth_name -i cluster_ip -m net_mask -n fully_qualified_cluster_name -f mount_path -v volume_group -d disk_group -l install_dir -u user_name -p password`
++
+`perl \ha_setup.pl --first -t vcs -g umgroup -e eth0 -i 10.11.12.13 -m 255.255.255.0 -n cluster.eng.company.com -f /mnt/ocumdb -v ocumdb_SdHv -d ocumdb_SdDg -l /opt/netapp/ -u admin -p wx17yz`
+
+. Überprüfen Sie mithilfe der Veritas Operations Manager Webkonsole oder VCS Cluster Manager, ob eine Failover-Gruppe erstellt wird und ob die Unified Manager Serverdienste, Bereitstellungspunkt, virtuelle IP, Netzwerkschnittstellenkarte (NIC) und Volume-Gruppe der Cluster-Gruppe hinzugefügt werden.
+. Verschieben Sie die Unified Manager Service-Gruppe manuell zum sekundären Node und überprüfen Sie, ob ein Cluster-Failover funktioniert.
+. Überprüfen Sie, ob VCS auf den zweiten Knoten des Clusters umgeschaltet wurde.
++
+Vergewissern Sie sich, dass der Datenmounten, die virtuelle IP, die Volume-Gruppe und die NIC auf dem zweiten Node des Clusters online sind.
+
+. Beenden Sie Unified Manager mit Veritas Operations Manager.
+. Führen Sie die aus `perl ha_setup.pl --join -t vcs -f``mount_path` Befehl im zweiten Node des Clusters, sodass der Unified Manager Server auf die LUN verweist.
+. Überprüfen Sie, ob die Unified Manager Server Services auf dem zweiten Knoten des Clusters ordnungsgemäß gestartet werden.
+. Generieren Sie das Unified Manager-Zertifikat erneut, nachdem Sie die Konfigurationsskripte ausgeführt haben, um die globale IP-Adresse abzurufen.
++
+.. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im Menü *Setup* auf *HTTPS-Zertifikat*.
+.. Klicken Sie auf *HTTPS-Zertifikat erneut erstellen*.
+
+
++
+Das neu erstellte Zertifikat enthält nur die Cluster-IP-Adresse, nicht den vollqualifizierten Domänennamen (FQDN). Zur Einrichtung von Unified Manager für Hochverfügbarkeit müssen Sie die globale IP-Adresse verwenden.
+
+. Greifen Sie über folgende Ressourcen auf die Unified Manager-UI zu: `\https://<FQDN of Global IP>`
+
+
+
+
+== Nachdem Sie fertig sind
+
+Nach der Konfiguration der Hochverfügbarkeit müssen Sie einen freigegebenen Backup-Speicherort erstellen. Der freigegebene Speicherort ist erforderlich, um die Backups zu enthalten, die Sie vor und nach dem Failover erstellen. Die beiden Nodes in der Hochverfügbarkeitseinrichtung müssen auf den gemeinsamen Speicherort zugreifen können.

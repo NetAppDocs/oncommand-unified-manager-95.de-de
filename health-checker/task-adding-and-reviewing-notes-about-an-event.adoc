@@ -1,0 +1,30 @@
+---
+permalink: health-checker/task-adding-and-reviewing-notes-about-an-event.html 
+sidebar: sidebar 
+keywords:  
+summary: Während Sie Ereignisse ansprechen, können Sie Informationen darüber hinzufügen, wie das Problem behoben wird, indem Sie den Bereich Hinweise und Aktualisierungen auf der Seite Ereignisdetails verwenden. Mit diesen Informationen kann ein anderer Benutzer aktiviert werden, der dem Ereignis zugewiesen ist. Sie können auch Informationen anzeigen, die vom Benutzer hinzugefügt wurden, der ein Ereignis zuletzt adressiert hat, basierend auf dem letzten Zeitstempel. 
+---
+= Hinzufügen und Überprüfen von Notizen zu einem Ereignis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Während Sie Ereignisse ansprechen, können Sie Informationen darüber hinzufügen, wie das Problem behoben wird, indem Sie den Bereich Hinweise und Aktualisierungen auf der Seite Ereignisdetails verwenden. Mit diesen Informationen kann ein anderer Benutzer aktiviert werden, der dem Ereignis zugewiesen ist. Sie können auch Informationen anzeigen, die vom Benutzer hinzugefügt wurden, der ein Ereignis zuletzt adressiert hat, basierend auf dem letzten Zeitstempel.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Events*.
+. Klicken Sie auf der Seite *Events* Inventory auf das Ereignis, für das Sie die ereignisbezogenen Informationen hinzufügen möchten.
+. Fügen Sie auf der Seite *Event* Details die erforderlichen Informationen im Bereich *Hinweise und Updates* ein.
+. Klicken Sie Auf *Post*.
+

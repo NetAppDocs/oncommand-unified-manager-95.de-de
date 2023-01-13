@@ -1,0 +1,46 @@
+---
+permalink: performance-checker/concept-how-graphs-of-performance-data-work.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager verwendet Diagramme oder Diagramme, um Ihnen Volume-Performance-Statistiken und Ereignisse über einen bestimmten Zeitraum anzuzeigen. 
+---
+= Darstellung der Performance-Daten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager verwendet Diagramme oder Diagramme, um Ihnen Volume-Performance-Statistiken und Ereignisse über einen bestimmten Zeitraum anzuzeigen.
+
+Mithilfe der Diagramme können Sie den Zeitbereich anpassen, für den Daten angezeigt werden sollen. Die Daten werden mit dem Zeitrahmen auf der horizontalen Achse des Diagramms und den Zählern auf der vertikalen Achse angezeigt, wobei Punktintervalle entlang der Diagrammlinien angezeigt werden. Die vertikale Achse ist dynamisch; die Werte passen sich an die Spitzen der erwarteten oder tatsächlichen Werte an.
+
+
+
+== Auswählen von Zeitrahmens
+
+Auf der Seite Performance/Volume Details können Sie im Historic Data Chart einen Zeitrahmen für alle Diagramme auf der Seite auswählen. Die schaltflächen 1d, 5d, 10d und 30d geben 1 Tag bis 30 Tage (1 Monat) an und mit der Schaltfläche *Benutzerdefiniert* können Sie einen benutzerdefinierten Zeitbereich innerhalb dieser 30 Tage festlegen. Jeder Punkt in einem Diagramm entspricht einem Erfassungsintervall von 5 Minuten, und es werden maximal 30 Tage historische Performance-Daten aufbewahrt. Beachten Sie, dass Intervalle auch Netzwerkverzögerungen und andere Anomalien berücksichtigen.
+
+image::../media/opm-timeframe-selectors-jpg.gif[Zeitrahmenauswahl im Performance Manager]
+
+In diesem Beispiel hat das Historic Data Chart einen Zeitrahmen auf den Anfang und das Ende des Monats März eingestellt. Im ausgewählten Zeitrahmen sind alle historischen Daten vor März ausgegraut.
+
+
+
+== Anzeigen von Datenpunktinformationen
+
+Um die Informationen zu Datenpunkten in einem Diagramm anzuzeigen, können Sie den Cursor über einen bestimmten Punkt im Diagramm positionieren, und ein Popup-Feld zeigt die Werte-, Datums- und Zeitinformationen an.
+
+image::../media/opm-chart-popup-png.gif[Grafik-Meldung im OnCommand Performance Manager]
+
+Wenn Sie in diesem Beispiel den Mauszeiger über das IOPS-Diagramm auf der Seite „Performance/Volume Details“ positionieren, werden die Reaktionszeiten und die Werte der Vorgänge zwischen 3:50 Uhr angezeigt Und 3:55 Uhr Am 20. Oktober.
+
+
+
+== Anzeigen von Performance-Ereignisinformationen
+
+Um Event-Informationen auf einem Diagramm anzuzeigen, können Sie den Mauszeiger über ein Event-Symbol positionieren, um zusammenfassende Informationen in einem Popup-Feld anzuzeigen. Alternativ können Sie auf das Event-Symbol klicken, um ausführlichere Informationen zu erhalten.
+
+image::../media/opm-bully-volume-png.gif[Popup-Fenster zu Vorfällen in Performance Manager]
+
+In diesem Beispiel werden auf der Seite Performance/Volume-Details durch Klicken auf ein Ereignissymbol im Latenzdiagramm detaillierte Informationen zum Ereignis in einem Popup-Feld angezeigt. Das Ereignis wird auch in der Ereignisliste hervorgehoben.

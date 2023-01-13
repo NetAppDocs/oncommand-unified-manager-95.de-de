@@ -1,0 +1,38 @@
+---
+permalink: online-help/reference-edit-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld Cluster bearbeiten können Sie die Verbindungseinstellungen eines vorhandenen Clusters, einschließlich IP-Adresse, Port und Protokoll, ändern. 
+---
+= Dialogfeld Cluster bearbeiten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Cluster bearbeiten können Sie die Verbindungseinstellungen eines vorhandenen Clusters, einschließlich IP-Adresse, Port und Protokoll, ändern.
+
+Sie können die folgenden Felder bearbeiten:
+
+* *Hostname oder IP-Adresse*
++
+Ermöglicht Ihnen, den FQDN, den Kurznamen oder die IP-Adresse (IPv4 oder IPv6) der Cluster-Management-LIF anzugeben, die zum Herstellen einer Verbindung zum Cluster verwendet wird.
+
+* *Benutzername*
++
+Ermöglicht Ihnen, einen Benutzernamen anzugeben, der zum Anmelden beim Cluster verwendet werden kann.
+
+* *Passwort*
++
+Ermöglicht Ihnen die Angabe eines Passworts für den angegebenen Benutzernamen.
+
+* *Protokoll*
++
+Ermöglicht Ihnen die Angabe des Protokolltyps, der im Cluster konfiguriert werden kann. Sie können HTTP oder HTTPS aktivieren (für eine sichere Verbindung). Die Verbindung mit dem Cluster wird über beide Protokolle hergestellt, und HTTPS wird über HTTP ausgewählt. Standardmäßig ist HTTPS mit dem Standardport 443 aktiviert.
+
+* *Port*
++
+Ermöglicht Ihnen, die Portnummer anzugeben, die zum Herstellen der Verbindung mit dem Cluster verwendet wird. Wenn der Port nicht angegeben wird, wird der Standardport für das ausgewählte Protokoll verwendet (80 für HTTP oder 443 für HTTPS).
+
+

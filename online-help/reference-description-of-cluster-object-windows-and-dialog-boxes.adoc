@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-cluster-object-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können alle Cluster- und Cluster-Objekte auf der jeweiligen Storage-Objektseite anzeigen. Sie können die Details auch auf der entsprechenden Seite mit den Details des Speicherobjekts anzeigen. 
+---
+= Beschreibung der Fenster und Dialogfelder für Cluster-Objekte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können alle Cluster- und Cluster-Objekte auf der jeweiligen Storage-Objektseite anzeigen. Sie können die Details auch auf der entsprechenden Seite mit den Details des Speicherobjekts anzeigen.

@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-performing-suggested-remedial-actions-for-a-full-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: Nachdem Sie ein „Volume Space Full“-Fehlerereignis erhalten haben, überprüfen Sie die vorgeschlagenen Abhilfemaßnahmen auf der Seite „Event Details“ und entscheiden, eine der vorgeschlagenen Maßnahmen durchzuführen. 
+---
+= Durchführung von vorgeschlagenen Abhilfemaßnahmen für ein vollständiges Volumen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nachdem Sie ein Fehlerereignis „`Volume Space Full`“ erhalten haben, überprüfen Sie die vorgeschlagenen Korrekturmaßnahmen auf der Seite Ereignisdetails und entscheiden sich für eine der vorgeschlagenen Aktionen.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+Ein Benutzer mit einer beliebigen Rolle kann alle Aufgaben in diesem Workflow mit Unified Manager ausführen.
+
+
+
+== Über diese Aufgabe
+
+In diesem Beispiel wurde auf der Seite Unified ManagerDashboards/Übersicht ein Fehlerereignis für Volume Space Full angezeigt und auf den Namen des Ereignisses geklickt.
+
+Mögliche Abhilfemaßnahmen für ein komplettes Volume sind:
+
+* Aktivieren von Autogrow, Deduplizierung oder Komprimierung auf dem Volume
+* Ändern der Größe oder Verschieben des Volumes
+* Löschen oder Verschieben von Daten vom Volume
+
+
+Obwohl alle diese Aktionen entweder über OnCommand System Manager oder über die ONTAP CLI ausgeführt werden müssen, können Sie in Unified Manager Informationen finden, die Sie möglicherweise ermitteln müssen, welche Maßnahmen ergriffen werden sollen.
+
+
+
+== Schritte
+
+. Auf der Seite *Event* Details klicken Sie im Feld Quelle auf den Namen des Datenträgers, um Details zum betroffenen Volume anzuzeigen.
+. Klicken Sie auf der Seite *Zustand/Volume* Details auf *Konfiguration* und sehen Sie, dass die Deduplizierung und Komprimierung bereits auf dem Volume aktiviert sind.
++
+Sie entscheiden, die Größe des Volumes zu ändern.
+
+. Im Fensterbereich *Verwandte Geräte* klicken Sie auf den Namen des Hosting-Aggregats, um zu sehen, ob das Aggregat ein größeres Volumen aufnehmen kann.
+. Auf der Detailseite *Systemzustand/Aggregat* sehen Sie, dass das Aggregat, das das volle Volume hostet, über genügend freie Kapazität verfügt. Sie verwenden OnCommand System Manager, um die Größe des Volumes zu ändern und ihm mehr Kapazität zu geben.
+

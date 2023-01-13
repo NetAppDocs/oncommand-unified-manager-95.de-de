@@ -1,0 +1,70 @@
+---
+permalink: online-help/task-generating-an-https-security-certificate-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können aus mehreren Gründen ein neues HTTPS-Sicherheitszertifikat generieren, z. B. wenn Sie mit einer anderen Zertifizierungsstelle signieren möchten oder wenn das aktuelle Sicherheitszertifikat abgelaufen ist. Das neue Zertifikat ersetzt das vorhandene Zertifikat. 
+---
+= Erstellen eines HTTPS-Sicherheitszertifikats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können aus mehreren Gründen ein neues HTTPS-Sicherheitszertifikat generieren, z. B. wenn Sie mit einer anderen Zertifizierungsstelle signieren möchten oder wenn das aktuelle Sicherheitszertifikat abgelaufen ist. Das neue Zertifikat ersetzt das vorhandene Zertifikat.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen die OnCommand-Administratorrolle besitzen.
+
+
+
+== Über diese Aufgabe
+
+Wenn Sie keinen Zugriff auf die Web-UI von Unified Manager haben, können Sie mithilfe der Wartungskonsole das HTTPS-Zertifikat mit den gleichen Werten neu generieren.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im Menü *Setup* auf *HTTPS-Zertifikat*.
+. Klicken Sie auf *HTTPS-Zertifikat erneut erstellen*.
++
+Das Dialogfeld „HTTPS-Zertifikat neu erstellen“ wird angezeigt.
+
+. Wählen Sie je nach Erstellung des Zertifikats eine der folgenden Optionen aus:
++
+|===
+| Ihr Ziel ist | Tun Sie das... 
+
+
+ a| 
+Generieren Sie das Zertifikat mit den aktuellen Werten neu
+ a| 
+Klicken Sie auf die Option *regenerieren mit aktuellen Zertifikatattributen*.
+
+
+
+ a| 
+Generieren Sie das Zertifikat mithilfe anderer Werte
+ a| 
+ Click the *Update the Current Certificate Attributes* option.
+Die Felder allgemeiner Name und Alternative Namen verwenden die Werte aus dem vorhandenen Zertifikat, wenn Sie keine neuen Werte eingeben. Die anderen Felder benötigen keine Werte, aber Sie können Werte eingeben, z. B. für Stadt, Bundesland und Land, wenn diese Werte in das Zertifikat eingetragen werden sollen.
+
+[NOTE]
+====
+Sie können das Kontrollkästchen „`lokale Identifizierungsdaten ausschließen (z. B. localhost)`“ aktivieren, wenn Sie die lokalen Identifizierungsdaten aus dem Feld Alternative Namen im Zertifikat entfernen möchten. Wenn dieses Kontrollkästchen aktiviert ist, werden nur die Daten verwendet, die Sie in das Feld Alternative Namen eingeben. Wenn das Zertifikat leer gelassen wird, hat das resultierende Zertifikat überhaupt kein Feld alternativer Namen.
+
+====
+|===
+. Klicken Sie auf *Ja*, um das Zertifikat erneut zu generieren.
+. Starten Sie den Unified Manager-Server neu, damit das neue Zertifikat wirksam wird.
+
+
+
+
+== Nachdem Sie fertig sind
+
+Überprüfen Sie die neuen Zertifikatinformationen, indem Sie das HTTPS-Zertifikat anzeigen.

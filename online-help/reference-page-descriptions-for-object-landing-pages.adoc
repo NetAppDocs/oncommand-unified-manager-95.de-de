@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-page-descriptions-for-object-landing-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Mithilfe der Seiten des Performance Explorer können Sie detaillierte Performance-Informationen über jedes verfügbare Storage-Objekt anzeigen, z. B. Cluster, Aggregate, Volumes usw. Auf diesen Seiten können Sie die Gesamtleistung aller Objekte bewerten und Objektleistendaten im Side-by-Side-Format vergleichen. 
+---
+= Beschreibungen der Seiten des Performance Explorers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mithilfe der Seiten des Performance Explorer können Sie detaillierte Performance-Informationen über jedes verfügbare Storage-Objekt anzeigen, z. B. Cluster, Aggregate, Volumes usw. Auf diesen Seiten können Sie die Gesamtleistung aller Objekte bewerten und Objektleistendaten im Side-by-Side-Format vergleichen.

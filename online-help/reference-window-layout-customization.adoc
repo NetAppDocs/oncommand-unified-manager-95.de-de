@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-window-layout-customization.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Manager ermöglicht Ihnen das Anpassen des Layouts für Informationen auf den Storage-Objektseiten. Durch Anpassen der Fenster können Sie steuern, welche Daten angezeigt werden und wie die Daten angezeigt werden. 
+---
+= Anpassung des Fensterlayouts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager ermöglicht Ihnen das Anpassen des Layouts für Informationen auf den Storage-Objektseiten. Durch Anpassen der Fenster können Sie steuern, welche Daten angezeigt werden und wie die Daten angezeigt werden.
+
+* *Sortierung*
++
+Sie können auf die Spaltenüberschrift klicken, um die Sortierreihenfolge der Spalteneinträge zu ändern. Wenn Sie auf die Spaltenüberschrift klicken, werden die Sortierpfeile (image:../media/sort-asc-um60.gif["Symbol für die Spaltensortierung – aufsteigend"] Und image:../media/sort-desc-um60.gif["Symbol für die Spaltensortierung – absteigend"]) Erscheint für diese Spalte.
+
+* *Filterung*
++
+Sie können Filter anwenden, um die Anzeige der Informationen auf den Speicherobjektseiten anzupassen, sodass nur Einträge angezeigt werden, die den angegebenen Bedingungen entsprechen. Sie können Filter entweder im Fensterbereich Filter oder in den Spalten anwenden.
+
++
+Im Bereich Filter können Sie anhand der ausgewählten Optionen einige Spalten filtern. Auf der Seite „Systemzustand/Volumen-Inventar“ können Sie beispielsweise im Fensterbereich „Filter“ nur die Spalten „Status“ und „Status“ filtern. Um alle Volumes anzuzeigen, die offline sind, können Sie die entsprechende Filteroption unter Status auswählen.
+
++
+Alternativ können Sie Filter für Spalten mithilfe des Filtersymbols ( festlegenimage:../media/filtericon-um60.png["Symbol für Spaltenfilter"]). Sie können dann den Platzhalter-Zeichenfilter (?) verwenden. Oder Platzhalter-String-Filter (*), um Ihre Suche einzugrenzen. Beispielsweise können Sie auf der Seite „Systemzustand/Volumes-Inventar“ unter Verwendung des Stringfilters in der Spalte „Volume“ nach einem Volume von vol234 suchen. Sie können eingeben `*vol`, Und alle Volumen mit Namen mit "`vol`" sind aufgelistet. Sie können eingeben `vol?` Um die Liste aller Volumes mit dem Namen anzuzeigen, der „`vol`“ enthält, gefolgt von einem weiteren Zeichen, z. B. vol1 oder vol2. Sie können eingeben `vol` Liste aller Volumes mit Namen anzeigen, die mit „`vol`“ beginnen
+
++
+Kapazitätsbezogene Spalten in jeder Liste zeigen immer Kapazitätsdaten in entsprechenden Einheiten an, abgerundet auf zwei Dezimalstellen. Dies gilt auch beim Filtern von Kapazitätspalten. Beispiel: Wenn Sie den Filter in der Spalte „Gesamtkapazität Daten“ auf der Seite „Inventar/Aggregate“ verwenden, um Daten größer als 20.45 GB zu filtern, wird die tatsächliche Kapazität von 20.454 GB als 20.45 GB angezeigt. Ebenso wird bei Filtern von Daten unter 20.45 GB die tatsächliche Kapazität von 20.449 GB als 20.45 GB angezeigt.
+
++
+Wenn Sie den Filter in der Spalte Available Data % auf der Seite „Health/Aggregates Inventory“ verwenden, um Daten von mehr als 20.45 % zu filtern, wird die tatsächliche Kapazität von 20.454 % als 20.45 % angezeigt. Gleiches gilt, wenn Sie Daten weniger als 20.45% filtern, wird die tatsächliche Kapazität von 20.449% als 20.45% angezeigt. Für Spalten, die Kapazitätsdaten in Prozent anzeigen, können Sie Werte bis zu vier Dezimalstellen anzeigen, indem Sie den Mauszeiger über den Wert bewegen, der in der Spalte angezeigt wird.
+
+* *Ausblenden oder Neuanzeigen der Spalten*
++
+Sie können auf das Spaltenanzeigesymbol klicken (image:../media/advanced-options.gif[""]) Um auszuwählen, welche Spalten angezeigt werden sollen.
+
+* *Daten exportieren*
++
+Sie können auf das Exportsymbol klicken (image:../media/export-icon.gif["Symbol zum Exportieren kommagetrennter Daten für die Verwendung in Berichten."]) Zum Exportieren von Daten in kommagetrennte Werte (`.csv`) Datei und verwenden Sie die exportierten Daten, um Berichte zu erstellen.
+
+

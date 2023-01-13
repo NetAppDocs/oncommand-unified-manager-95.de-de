@@ -1,0 +1,48 @@
+---
+permalink: online-help/reference-edit-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die von Ihnen erstellten Anmerkungsregeln bearbeiten, um Anmerkungen zu Speicherobjekten hinzuzufügen oder zu entfernen. 
+---
+= Dialogfeld Anmerkungsregel bearbeiten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die von Ihnen erstellten Anmerkungsregeln bearbeiten, um Anmerkungen zu Speicherobjekten hinzuzufügen oder zu entfernen.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Name*
++
+Zeigt den Namen der Anmerkungsregel an.
+
+* *Zielobjekttyp*
++
+Zeigt den Typ des Speicherobjekts an, das mit Anmerkungen versehen werden soll. Sie können den Objekttyp nicht ändern.
+
+* *Anmerkung Anwenden*
++
+Zeigt die Anmerkung und den Wert an, mit dem Speicherobjekte beschriftet werden können, wenn alle Bedingungen erfüllt sind.
+
+* *Bedingungen*
++
+Zeigt die Liste der Bedingungen für die Anmerkungsregel an. Sie können die Bedingungen bearbeiten, um die Anmerkung zu Speicherobjekten hinzuzufügen oder zu entfernen.
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Speichern*
++
+Speichert die Änderungen, die Sie vorgenommen haben, und schließt das Dialogfeld Anmerkungsregel bearbeiten.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Anmerkungsregel bearbeiten, ohne Ihre Änderungen zu speichern.
+
+

@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-add-group-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld Gruppenregel hinzufügen können Sie in Unified Manager Gruppenregeln erstellen, um Speicherobjekte dynamisch zu gruppieren. Sie können später Gruppenaktionen für die Gruppe konfigurieren und anwenden. 
+---
+= Dialogfeld Gruppenregel hinzufügen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Gruppenregel hinzufügen können Sie in Unified Manager Gruppenregeln erstellen, um Speicherobjekte dynamisch zu gruppieren. Sie können später Gruppenaktionen für die Gruppe konfigurieren und anwenden.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Name*
++
+Gibt den Namen der Gruppenregel an.
+
+* *Zielobjekttyp*
++
+Gibt den Typ der Speicherobjekte an, die in die Gruppe aufgenommen werden sollen.
+
+* *Gruppe*
++
+Gibt den Namen der Gruppe an, für die die Gruppenregel erstellt wird.
+
+* *Bedingungen*
++
+Gibt Bedingungen an, die bestimmen, welche Speicherobjekte in eine Gruppe aufgenommen werden können.
+
+* *Bedingungsgruppe*
++
+Gibt Bedingungsgruppen an, die eine oder mehrere Bedingungen für die Einbeziehung von Speicherobjekten in eine Gruppe definiert haben.
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Speichern und Hinzufügen*
++
+Fügt die Gruppenregel hinzu und ermöglicht das Hinzufügen einer weiteren Gruppenregel, ohne das Dialogfeld zu schließen.
+
+* *Hinzufügen*
++
+Fügt die Gruppenregel hinzu und schließt das Dialogfeld Gruppenregel hinzufügen.
+
+* *Abbrechen*
++
+Bricht die Änderungen ab und schließt das Dialogfeld Gruppenregel hinzufügen.
+
+* *Bedingung Hinzufügen*
++
+Fügt eine Bedingung hinzu, um die Gruppenregel zu definieren.
+
+* *Bedingungsgruppe Hinzufügen*
++
+Fügt eine Bedingungsgruppe hinzu, um Bedingungen für die Gruppenregel zu definieren.
+
+

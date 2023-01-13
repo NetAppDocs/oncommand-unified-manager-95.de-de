@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-protection-relationships-window-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Sicherungsdetails wie Ressourcen-Pools, SVM-Zuordnungen und Sicherungsjobs anzeigen und managen. Sie können die entsprechende Seite mit den Konfigurations-/Integritätsschwellenwerten verwenden, um globale Schwellenwerte für den Systemzustand für Aggregate, Volumes und Beziehungen zu konfigurieren. 
+---
+= Beschreibung der Fenster und Dialogfelder zu Sicherungsbeziehungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Sicherungsdetails wie Ressourcen-Pools, SVM-Zuordnungen und Sicherungsjobs anzeigen und managen. Sie können die entsprechende Seite mit den Konfigurations-/Integritätsschwellenwerten verwenden, um globale Schwellenwerte für den Systemzustand für Aggregate, Volumes und Beziehungen zu konfigurieren.

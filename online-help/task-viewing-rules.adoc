@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können eine Liste der auf der Registerkarte Datenrichtlinie erstellten Regeln anzeigen, bevor Sie die Datenrichtlinie für Ihre SVM mit Infinite Volume ändern. 
+---
+= Anzeigen von Regeln
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Liste der auf der Registerkarte Datenrichtlinie erstellten Regeln anzeigen, bevor Sie die Datenrichtlinie für Ihre SVM mit Infinite Volume ändern.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+* Der Cluster, der die SVM mit Infinite Volume mit Storage-Klassen enthält, muss der Unified Manager Datenbank hinzugefügt werden.
+
+
+
+
+== Über diese Aufgabe
+
+Die Registerkarte Datenrichtlinie ist nur für eine SVM mit Infinite Volume sichtbar.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie auf der Seite *Health/Storage Virtual Machines* Inventory die entsprechende SVM aus.
+. Klicken Sie Auf *Datenrichtlinie*.
+
+
+
+
+== Ergebnisse
+
+Es wird eine Liste der Regeln in der Datenrichtlinie für die ausgewählte SVM angezeigt. Mit Filtern nach Storage Class können Sie Regeln zu bestimmten Speicherklassen anzeigen.

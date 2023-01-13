@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-svm-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können SVM-Bestandsberichte erstellen, um Volume-Informationen zu analysieren und die allgemeine Integrität und Storage-Verfügbarkeit anzuzeigen. Sie können beispielsweise Berichte erstellen, um SVMs die maximale Volume-Anzahl zu erreichen und beendete SVMs zu analysieren. 
+---
+= Anpassungen des SVM-Inventarberichts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können SVM-Bestandsberichte erstellen, um Volume-Informationen zu analysieren und die allgemeine Integrität und Storage-Verfügbarkeit anzuzeigen. Sie können beispielsweise Berichte erstellen, um SVMs die maximale Volume-Anzahl zu erreichen und beendete SVMs zu analysieren.

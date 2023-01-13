@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Anmerkungsregeln können Sie aus OnCommand Unified Manager löschen, wenn die Regeln nicht mehr benötigt werden. 
+---
+= Anmerkungsregeln werden gelöscht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Anmerkungsregeln können Sie aus OnCommand Unified Manager löschen, wenn die Regeln nicht mehr benötigt werden.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Wenn Sie eine Anmerkungsregel löschen, wird die Anmerkung getrennt und aus den Speicherobjekten entfernt.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im linken Menü Verwaltung auf *Anmerkungen*.
+. Wählen Sie auf der Registerkarte *Anmerkungsregeln* die Anmerkungsregel aus, die Sie löschen möchten, und klicken Sie dann auf *Löschen*.
+. Klicken Sie im Dialogfeld *Warnung* auf *Ja*, um den Löschvorgang zu bestätigen.
+

@@ -1,0 +1,40 @@
+---
+permalink: online-help/reference-edit-annotation-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld Anmerkung bearbeiten können Sie die Beschreibung einer vorhandenen Anmerkung ändern. 
+---
+= Dialogfeld Anmerkung bearbeiten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Anmerkung bearbeiten können Sie die Beschreibung einer vorhandenen Anmerkung ändern.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Anmerkungsname*
++
+Zeigt den Namen der Anmerkung an. Dieses Feld kann nicht bearbeitet werden.
+
+* *Beschreibung*
++
+Enthält eine aussagekräftige Beschreibung der Anmerkung. Sie können dieses Feld bearbeiten, wenn Sie die aktuelle Beschreibung der Anmerkung ändern möchten.
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Speichern und Schließen*
++
+Speichert die Änderungen der Anmerkungsbeschreibung und schließt das Dialogfeld.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Anmerkung bearbeiten, ohne die Änderungen zu speichern.
+
+

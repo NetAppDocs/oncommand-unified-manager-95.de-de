@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-viewing-object-configuration-information.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf den Objektinformationsseiten auf der Landing Page des jeweiligen Objekts werden die Werte für die nicht leistungsorientierten Konfigurationsattribute des jeweiligen Storage-Objekts angezeigt. Einige der Attribute sind physische Konfigurationseinstellungen, während andere Attribute die Leistung des Objekts beeinträchtigen können. 
+---
+= Anzeigen von Informationen zur Objektkonfiguration
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf den Objektinformationsseiten auf der Landing Page jedes Objekts werden die Werte für die nicht-Performance-Konfigurationsattribute der einzelnen Storage-Objekte angezeigt. Einige der Attribute sind physische Konfigurationseinstellungen, während andere Attribute die Leistung des Objekts beeinträchtigen können.
+
+Es ist beispielsweise nützlich, die Menge an Speicherplatz zu kennen, die für ein Aggregat oder für einen Node verfügbar ist. Das Wissen über die Geschwindigkeitseinstellung für einen bestimmten Port kann helfen, wenn Sie ein Leistungsproblem diagnostizieren.

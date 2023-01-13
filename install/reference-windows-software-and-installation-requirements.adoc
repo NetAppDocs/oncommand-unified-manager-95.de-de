@@ -1,0 +1,91 @@
+---
+permalink: install/reference-windows-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: Für die erfolgreiche Installation von Unified Manager unter Windows müssen Sie sicherstellen, dass das System, auf dem Unified Manager installiert wird, den Softwareanforderungen entspricht. 
+---
+= Windows Software- und Installationsanforderungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+Für die erfolgreiche Installation von Unified Manager unter Windows müssen Sie sicherstellen, dass das System, auf dem Unified Manager installiert wird, den Softwareanforderungen entspricht.
+
+
+
+== Betriebssystem-Software
+
+Unified Manager läuft nur auf einem Windows-Betriebssystem in 64-Bit-Englisch-Sprache. Sie können Unified Manager auf folgenden Windows Plattformen installieren:
+
+* Microsoft Windows Server 2012 Standard und Datacenter Edition
+* Microsoft Windows Server 2012 R2 Standard und Datacenter Edition
+* Microsoft Windows Server 2016 Standard und Datacenter Edition
+
+
+[NOTE]
+====
+Unter Windows Server 2012 R2 muss das Windows Update KB2919355 auf dem Zielsystem installiert sein, da die Installation fehlschlägt.
+
+====
+Beachten Sie, dass Windows Server 2008 nicht wie in früheren Versionen unterstützt wird. In der Interoperabilitäts-Matrix finden Sie die vollständige und aktuelle Liste der unterstützten Windows-Versionen.
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+Der Server sollte für die Ausführung von Unified Manager dediziert sein; es sollten keine anderen Anwendungen auf dem Server installiert sein.
+
+Folgende Drittanbieterpakete sind erforderlich:
+
+* Microsoft Visual C&#43;&#43; 2015 Redistributable Package Version 14.0.24212
+* Microsoft Visual C&#43;&#43; weiterverteilbare Pakete für Visual Studio 2013 Version 12.0.40660
+* MySQL Community Edition Version 5.7.23, oder höhere Versionen in der 5.7-Familie
+* OpenJDK Version 11
+* P7zip Version 18.01 oder höher
+
+
+Wenn diese Drittanbieterpakete nicht installiert sind, installiert Unified Manager sie im Rahmen der Installation.
+
+[NOTE]
+====
+Ab Unified Manager 9.5 wird OpenJDK im Unified Manager-Installationspaket bereitgestellt und automatisch installiert. Oracle Java wird ab Unified Manager 9.5 nicht unterstützt.
+
+====
+Wenn MySQL vorinstalliert ist, müssen Sie Folgendes sicherstellen:
+
+* Er verwendet den Standardport.
+* Die Beispieldatenbanken sind nicht installiert.
+* Der Servicename lautet "`MYSQL`".
+
+
+[NOTE]
+====
+Wenn Sie nach dem Ausführen von Unified Manager ein Upgrade der Drittanbieter-Software planen, müssen Sie Unified Manager zunächst herunterfahren. Nach Abschluss der Softwareinstallation von Drittanbietern können Sie Unified Manager neu starten.
+
+====
+
+
+== Installationsvoraussetzungen
+
+* Microsoft .NET 4.5 oder höher muss installiert sein.
+* Sie müssen 2 GB Speicherplatz für das reservieren `temp` Verzeichnis zum Extrahieren der Installationsdateien.
+* Sie müssen 2 GB Festplattenspeicher im Windows-Laufwerk reservieren, um die MSI-Dateien von Unified Manager zwischenzuspeichern.
+* Der Microsoft Windows-Server, auf dem Sie Unified Manager installieren möchten, muss mit einem vollständig qualifizierten Domänennamen (FQDN) konfiguriert sein, der diesen entspricht `ping` Die Antworten auf den Hostnamen und FQDN sind erfolgreich.
+* Sie müssen den weltweiten Webveröffentlichungsservice von Microsoft IIS deaktivieren und sicherstellen, dass die Ports 80 und 443 frei sind.
+* Sie müssen sicherstellen, dass während der Installation die Einstellung für den Host der Remote-Desktopsitzung für „`Windows Installer RDS Compatibility`“ deaktiviert ist.
+* UDP-Port 514 muss frei sein und darf nicht von anderen Diensten verwendet werden.
+
+
+[NOTE]
+====
+Das Unified Manager-Installationsprogramm konfiguriert die folgenden Ausschlüsse in Windows Defender:
+
+* Datenverzeichnis von Unified Manager (nur Windows Server 2016)
+* Unified Manager Installationsverzeichnis vorhanden
+* MySQL-Datenverzeichnis
+
+
+Wenn auf Ihrem Server ein anderer Antiviren-Scanner installiert ist, müssen Sie diese Ausschlüsse manuell konfigurieren.
+
+====

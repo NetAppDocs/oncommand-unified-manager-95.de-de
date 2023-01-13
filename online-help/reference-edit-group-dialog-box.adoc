@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-edit-group-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld Gruppe bearbeiten können Sie den Namen und die Beschreibung einer Gruppe ändern. 
+---
+= Dialogfeld „Gruppe bearbeiten“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Gruppe bearbeiten können Sie den Namen und die Beschreibung einer Gruppe ändern.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Gruppenname*
++
+Zeigt den Namen der Gruppe an. Wenn Sie den Gruppennamen ändern, dürfen Sie keinen vorhandenen Gruppennamen verwenden.
+
+* *Beschreibung*
++
+Gibt eine aussagekräftige Beschreibung der Gruppe an. Sie können dieses Feld bearbeiten, wenn Sie die aktuelle Beschreibung der Gruppe ändern möchten.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Befehlsschaltflächen können Sie die an der Gruppe vorgenommene Änderung speichern oder abbrechen.
+
+* *Speichern*
++
+Speichert die vorgenommenen Änderungen und schließt das Dialogfeld.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Gruppe bearbeiten, ohne Ihre Änderungen zu speichern.
+
+

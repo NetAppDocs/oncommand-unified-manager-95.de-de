@@ -1,0 +1,39 @@
+---
+permalink: health-checker/task-adding-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können Gruppen erstellen, um Cluster, Volumes und Storage Virtual Machines \ (SVMs\) zu kombinieren und so das Management zu vereinfachen.' 
+---
+= Hinzufügen von Gruppen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gruppen können erstellt werden, um Cluster, Volumes und Storage Virtual Machines (SVMs) zu kombinieren und so das Management zu vereinfachen.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Sie können Gruppenregeln definieren, um Mitglieder aus der Gruppe hinzuzufügen oder zu entfernen und Gruppenaktionen für die Gruppe zu ändern.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann auf *Verwaltung* > *Gruppen*.
+. Klicken Sie auf der Registerkarte *Gruppen* auf *Hinzufügen*.
+. Geben Sie im Dialogfeld *Gruppe hinzufügen* einen Namen und eine Beschreibung für die Gruppe ein.
++
+Der Gruppenname muss eindeutig sein.
+
+. Klicken Sie Auf *Hinzufügen*_**_.
+

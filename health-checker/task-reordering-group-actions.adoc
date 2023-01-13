@@ -1,0 +1,36 @@
+---
+permalink: health-checker/task-reordering-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Reihenfolge der Gruppenaktionen ändern, die auf die Speicherobjekte in einer Gruppe angewendet werden sollen. Gruppenaktionen werden sequenziell auf Speicherobjekte basierend auf ihrer Rangfolge angewendet. Der niedrigste Rang wird der Gruppenaktion zugewiesen, die Sie zuletzt konfiguriert haben. Sie können den Rang der Gruppenaktion je nach Ihren Anforderungen ändern. 
+---
+= Gruppenaktionen neu anordnen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Reihenfolge der Gruppenaktionen ändern, die auf die Speicherobjekte in einer Gruppe angewendet werden sollen. Gruppenaktionen werden sequenziell auf Speicherobjekte basierend auf ihrer Rangfolge angewendet. Der niedrigste Rang wird der Gruppenaktion zugewiesen, die Sie zuletzt konfiguriert haben. Sie können den Rang der Gruppenaktion je nach Ihren Anforderungen ändern.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Sie können entweder eine einzelne Zeile oder mehrere Zeilen auswählen und dann mehrere Drag-and-Drop-Vorgänge durchführen, um den Rang von Gruppenaktionen zu ändern. Sie müssen jedoch die Änderungen speichern, damit die Neupriorisierung im Raster Gruppenaktionen angezeigt wird.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann auf *Verwaltung* > *Gruppen*.
+. Klicken Sie auf der Registerkarte *Gruppenaktionen* auf *Neuordnung*.
+. Ziehen Sie im Dialogfeld *Gruppenaktionen neu anordnen* die Zeilen per Drag-and-Drop, um die Reihenfolge der Gruppenaktionen nach Bedarf neu anzuordnen.
+. Klicken Sie Auf *Speichern*.
+

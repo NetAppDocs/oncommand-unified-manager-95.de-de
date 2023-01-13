@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-rules-to-generate-user-and-group-quota-email-address-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Regeln zum Generieren von E-Mail-Adressen für Benutzer- und Gruppenkontingente“ können Sie Regeln erstellen, um E-Mail-Adressen basierend auf dem Benutzerkontingent festzulegen, das mit Clustern, SVMs, Volumes, qtrees, Benutzern, Oder Benutzergruppen. Bei Überschreitung einer Quote wird eine Benachrichtigung an die angegebene E-Mail-Adresse gesendet. 
+---
+= Regeln zum Erstellen der E-Mail-Adresse für Benutzer- und Gruppenkontingente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Regeln zum Generieren von E-Mail-Adressen für Benutzer- und Gruppenkontingente“ können Sie Regeln erstellen, um E-Mail-Adressen basierend auf dem Benutzerkontingent festzulegen, das mit Clustern, SVMs, Volumes, qtrees, Benutzern, Oder Benutzergruppen. Bei Überschreitung einer Quote wird eine Benachrichtigung an die angegebene E-Mail-Adresse gesendet.
+
+
+
+== Regelbereich
+
+Sie müssen die Regeln für eine Quota-E-Mail-Adresse definieren. Sie können auch Kommentare hinzufügen, um die Regeln zu erklären.
+
+
+
+== Wie Sie Regeln definieren
+
+Sie müssen die Regeln in der Reihenfolge eingeben, in der Sie sie ausführen möchten. Wenn das Kriterium der ersten Regel erfüllt ist, wird die E-Mail-Adresse basierend auf dieser Regel generiert. Wenn das Kriterium nicht erfüllt ist, wird das Kriterium für die nächste Regel berücksichtigt und so weiter. Jede Zeile enthält eine separate Regel. Die Standardregel ist die letzte Regel in der Liste. Sie können die Prioritätenreihenfolge von Regeln ändern. Sie können jedoch die Reihenfolge der Standardregel nicht ändern.
+
+Wenn Sie beispielsweise die E-Mail-Adresse qtree1@xyz.com verwenden möchten, um Benachrichtigungen über Quotenverletzungen für qtree1 zu erhalten und die E-Mail-Adresse admin@xyz.com für alle anderen qtrees zu verwenden, müssen die Regeln in der folgenden Reihenfolge aufgeführt werden:
+
+* Bei (€ QTREE =='qtre1' ) dann qtree1@xyz.com
+* Bei (€ QTREE == * ) dann admin@xyz.com
+
+
+Wenn keines der von Ihnen angegebenen Kriterien erfüllt ist, wird die Standardregel verwendet:
+
+WENN ( US-DOLLAR USER_OR_GROUP == * ) DANN USD USER_OR_GROUP@ USD DOMAIN
+
+Wenn mehrere Benutzer dieselbe Quote haben, werden die Namen der Benutzer als kommagetrennte Werte angezeigt und die Regeln gelten nicht für die Quote.
+
+
+
+== So fügen Sie Kommentare hinzu
+
+Sie können Kommentare hinzufügen, um die Regeln zu erläutern. Sie sollten # am Anfang jedes Kommentars verwenden und jede Zeile einen separaten Kommentar auflistet.
+
+
+
+== Regelsyntax
+
+Die Syntax der Regel muss eine der folgenden sein:
+
+* Wenn ( _gültige Variable**Operator_ *) dann _email ID_@_Domain Name_
++
+`if` Ist ein Schlüsselwort und ist in Kleinbuchstaben. Der Operator lautet ==. Die E-Mail-ID kann jedes beliebige Zeichen, die gültigen Variablen €USER_OR_GROUP, US-Dollar USER oder USD GROUP oder eine Kombination von Zeichen und den gültigen Variablen €USER_OR_GROUP, USD USER oder USD GROUP enthalten. Der Domainname kann jedes beliebige Zeichen, die gültige Variable USD DOMAIN oder eine Kombination eines beliebigen Zeichens und der gültigen Variable USD DOMAIN enthalten. Gültige Variablen können groß oder klein sein, dürfen aber keine Kombination aus beiden sein. Beispielsweise sind DomänenanDollar und US-Dollar-DOMAINS gültig, eine gültige Variable in US-Dollar jedoch nicht.
+
+* Wenn ( _gültige Variable**Operator_ '_string_ ') dann _email ID_@_Domain Name_
++
+`if` Ist ein Schlüsselwort und ist klein geschrieben. Der Bediener kann sein `contains` Oder ==. Die E-Mail-ID kann jedes beliebige Zeichen, die gültigen Variablen €USER_OR_GROUP, US-Dollar USER oder USD GROUP oder eine Kombination von Zeichen und den gültigen Variablen €USER_OR_GROUP, USD USER oder USD GROUP enthalten. Der Domainname kann jedes beliebige Zeichen, die gültige Variable USD DOMAIN oder eine Kombination eines beliebigen Zeichens und der gültigen Variable USD DOMAIN enthalten. Gültige Variablen können groß oder klein sein, dürfen aber keine Kombination aus beiden sein. Beispielsweise sind DomänenanDollar und US-Dollar-DOMAINS gültig, eine gültige Variable in US-Dollar jedoch nicht.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Befehlsschaltflächen können Sie die erstellten Regeln speichern, überprüfen oder abbrechen:
+
+* *Validieren*
++
+Überprüft die Syntax der erstellten Regel. Wenn während der Validierung Fehler auftreten, wird die Regel, die den Fehler generiert, zusammen mit einer Fehlermeldung angezeigt.
+
+* *Wiederherstellen auf Werkseinstellungen*
++
+Ermöglicht Ihnen, die Adressregeln auf die werkseitigen Standardwerte wiederherzustellen.
+
+* *Speichern*
++
+Überprüft die Syntax der Regel und speichert die Regel, wenn keine Fehler vorliegen. Wenn während der Validierung Fehler auftreten, wird die Regel, die den Fehler generiert, zusammen mit einer Fehlermeldung angezeigt.
+
+

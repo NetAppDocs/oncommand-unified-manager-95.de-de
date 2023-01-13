@@ -1,0 +1,51 @@
+---
+permalink: online-help/task-customizing-the-svm-inventory-report-to-display-a-list-of-svms-reaching-maximum-volume-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den SVM-Bestandsbericht anpassen, um eine Liste der SVMs anzuzeigen, die die maximale Volume-Grenze erreichen, indem Sie die Volumes in steigender Reihenfolge sortieren. 
+---
+= Sie können den SVM-Bestandsbericht anpassen, um eine Liste der SVMs anzuzeigen, die die maximale Volume-Begrenzung erreichen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den SVM-Bestandsbericht anpassen, um eine Liste der SVMs anzuzeigen, die die maximale Volume-Grenze erreichen, indem Sie die Volumes in steigender Reihenfolge sortieren.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach einem Cluster:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um SVMs zu filtern, die keine unbegrenzten zulässigen Volumen haben, klicken Sie auf die Spalte *Maximum allowed Volumes* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie im Feld *Datentyp* die Option *String* aus, und klicken Sie auf *OK*.
+. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *nicht gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *unbegrenzt*.
+. So fügen Sie eine neue berechnete Spalte hinzu:
++
+.. Wählen Sie eine Spalte aus, und klicken Sie auf image:../media/click-to-see-menu.gif[""] Und wählen Sie *Spalte* > *Neue berechnete Spalte*.
+.. Geben Sie im Dialogfeld * Neue berechnete Spalte* ein `Available Volume` Im Feld *Spaltenbeschriftung*.
+.. Wählen Sie in der Liste Kategorie auswählen die Option *Math* aus.
+.. Wählen Sie aus der Dropdown-Liste *Funktion auswählen* die Option *Erweitert* aus.
+.. Geben Sie im Feld *Ausdruck eingeben* ein `[maximumVolumes]-[volumeCount]`.
+.. Klicken Sie auf *OK*.
+
+
+. Um SVMs in aufsteigender Reihenfolge zu sortieren, klicken Sie in der Spalte *Available Volume* auf und klicken Sie auf image:../media/click-to-see-menu.gif[""] Symbol.
+. Wählen Sie *Filter* > *Oben/Unten N*.
+. Wählen Sie im Dialogfeld *Oben/Unten N* aus dem Feld *Filter* die Option *bottom N* aus, und geben Sie einen Wert in das Textfeld ein.
+. Klicken Sie auf *OK*.
+

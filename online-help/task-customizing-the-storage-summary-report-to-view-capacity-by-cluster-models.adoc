@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-view-capacity-by-cluster-models.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Storage-Übersichtsbericht anpassen, um die Storage-Kapazität und Auslastung von Clustern zu analysieren und die in der Gesamt-Rohkapazität enthaltenen Aggregate anzuzeigen. 
+---
+= Anpassen des Storage Summary-Berichts zur Anzeige der Kapazität nach Cluster-Modellen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Storage-Übersichtsbericht anpassen, um die Storage-Kapazität und Auslastung von Clustern zu analysieren und die in der Gesamt-Rohkapazität enthaltenen Aggregate anzuzeigen.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach einem Cluster:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. So gruppieren Sie den Bericht anhand des Modellnamens:
++
+.. Klicken Sie in die Spalte *Modell*, und klicken Sie auf image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Gruppe Hinzufügen*.
+
+
+. Führen Sie die folgenden Schritte aus, um der gesamten Rohkapazität Aggregate hinzuzufügen:
++
+.. Klicken Sie in die Spalte *Gesamt Rohkapazität* und klicken Sie auf image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Aggregation*.
+.. Deaktivieren Sie im Dialogfeld *Aggregation* das Kontrollkästchen *Tabellenebene* und aktivieren Sie das Kontrollkästchen *Gruppenebene*.
+.. Geben Sie ggf. einen Namen in das Feld *Etikett eingeben* ein.
+
+
+. Klicken Sie auf *OK*.
+. Um den anderen Spalten im Bericht Aggregate hinzuzufügen, wiederholen Sie die Schritte 3 und 4.
+

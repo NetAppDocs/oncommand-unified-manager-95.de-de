@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-analyzing-events-from-user-defined-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: Ereignisse, die aus benutzerdefinierten Schwellenwerten generiert werden, deuten darauf hin, dass ein Performance-Zähler für ein bestimmtes Storage-Objekt, z. B. ein Aggregat oder ein Volume, den in der Richtlinie definierten Schwellenwert überschritten hat. Dies gibt an, dass beim Cluster-Objekt ein Performance-Problem auftritt. 
+---
+= Analyse von Ereignissen aus benutzerdefinierten Performance-Schwellenwerten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ereignisse, die aus benutzerdefinierten Schwellenwerten generiert werden, deuten darauf hin, dass ein Performance-Zähler für ein bestimmtes Storage-Objekt, z. B. ein Aggregat oder ein Volume, den in der Richtlinie definierten Schwellenwert überschritten hat. Dies gibt an, dass beim Cluster-Objekt ein Performance-Problem auftritt.
+
+Auf der Seite Ereignisdetails können Sie das Leistungsereignis analysieren und bei Bedarf Korrekturmaßnahmen ergreifen, um die Leistung wieder normal zu machen.

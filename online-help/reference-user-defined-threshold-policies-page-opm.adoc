@@ -1,0 +1,81 @@
+---
+permalink: online-help/reference-user-defined-threshold-policies-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Über die Seite Konfiguration/Performance-Schwellenwerte können Sie alle aktuell definierten Performance-Schwellenwertrichtlinien anzeigen. Diese Seite bietet auch die Funktionen zum Erstellen, Klonen, Bearbeiten und Löschen von Schwellenwertrichtlinien. 
+---
+= Seite „Konfigurations-/Performance-Schwellenwerte“ beschrieben
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über die Seite Konfiguration/Performance-Schwellenwerte können Sie alle aktuell definierten Performance-Schwellenwertrichtlinien anzeigen. Diese Seite bietet auch die Funktionen zum Erstellen, Klonen, Bearbeiten und Löschen von Schwellenwertrichtlinien.
+
+Die Liste der Performance-Schwellenwertrichtlinien wird alphabetisch nach Richtliniennamen sortiert. Sie können auf eine Spaltenüberschrift klicken, um die Richtlinien nach dieser Spalte zu sortieren. Wenn Sie nach einer bestimmten Richtlinie suchen, können Sie die Filter- und Suchmechanismen verwenden, um die Liste der Schwellenwertrichtlinien, die in der Bestandsliste angezeigt werden, zu verfeinern.
+
+
+
+== Filter- und Suchleiste
+
+Mit der Schaltfläche *Filtern* können Sie die Liste der Schwellenwertrichtlinien verfeinern, indem Sie nur die Richtlinien anzeigen, die bestimmten Kriterien entsprechen.
+
+Mit der Schaltfläche *Suchen* können Sie nach bestimmten Richtlinien suchen, indem Sie vollständige oder partielle Richtliniennamen eingeben, um die Liste der Schwellenwertrichtlinien, die in der Bestandsliste angezeigt werden, zu verfeinern.
+
+
+
+== Befehlsschaltflächen
+
+* *Erstellen*
++
+Erstellt eine neue Richtlinie für Leistungsschwellenwerte.
+
+* *Klonen*
++
+Erstellt auf der Grundlage einer Kopie der ausgewählten Richtlinie eine neue Richtlinie für Leistungsschwellenwerte.
+
+* *Bearbeiten*
++
+Ändert die von Ihnen ausgewählte Performance-Schwellenwertrichtlinie. Alle Speicherobjekte, die die Richtlinie verwenden, werden aktualisiert und verwenden die überarbeitete Richtlinie.
+
+* *Löschen*
++
+Löscht die Richtlinie für Leistungsschwellenwerte, die Sie ausgewählt haben. Die Richtlinie wird aus allen Storage-Objekten, die diese Richtlinie verwenden, entfernt. Sie können auf das Element in der Spalte Associated Objects klicken, um die Objekte anzuzeigen, die diese Richtlinie derzeit verwenden.
+
+
+
+
+
+== Liste der Schwellenwertrichtlinien
+
+* *Policy Name*
++
+Zeigt den Namen der Schwellenwertrichtlinie an. Sie können Ihren Cursor über den Richtliniennamen positionieren, um die Details der Richtlinie anzuzeigen.
+
+* *Beschreibung*
++
+Zeigt eine kurze Beschreibung der Schwellenwertrichtlinie an.
+
+* *Erste Bedingung*
++
+Zeigt die primäre Bedingung für die Schwellenwertrichtlinie an, einschließlich des definierten Performance-Zählers, der Werte für Warnmeldungen und der kritischen Triggerwerte. Sie können den Cursor über den Bedingungsnamen positionieren, um die Details der Bedingung anzuzeigen.
+
+* *Zweiter Zustand*
++
+Zeigt die Bedingung für die sekundäre Schwellenwertrichtlinie an, falls definiert. Sie können den Cursor über den Bedingungsnamen positionieren, um die Details der Bedingung anzuzeigen. Wenn keine zweite Bedingung definiert ist, ist diese Spalte leer.
+
++
+[NOTE]
+====
+Wenn eine zweite Bedingung definiert ist, wird ein Ereignis nur erzeugt, wenn beide Bedingungen verletzt werden.
+
+====
+* *Assoziierte Objekte*
++
+Zeigt den Typ des Speicherobjekts an, auf das die Schwellenwertrichtlinie angewendet werden kann, und die Anzahl der Objekte, die die Richtlinie verwenden. Dieses Feld ist leer, bis Sie die Richtlinie mindestens einem Objekt zuweisen.
+
++
+Sie können auf die Spaltenüberschrift klicken, um die Richtlinien nach Objekttyp zu sortieren: Volume, LUN, Aggregat usw. Sie können auf den Richtliniennamen klicken, um die Bestandsseite anzuzeigen, die mit den Objekten ausgefüllt wird, die die Schwellenwertrichtlinie derzeit verwenden.
+
+

@@ -1,0 +1,117 @@
+---
+permalink: online-help/reference-node-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Performance/Node Information können Sie eine Liste der physischen und logischen Attribute des Knotens anzeigen. Diese Informationen könnten bei der Beantwortung von Fragen zur Leistungsfähigkeit helfen. 
+---
+= Informationen zu Performance/Nodes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Performance/Node Information können Sie eine Liste der physischen und logischen Attribute des Knotens anzeigen. Diese Informationen könnten bei der Beantwortung von Fragen zur Leistungsfähigkeit helfen.
+
+
+
+== Knotenattribute
+
+* *IP-Adresse*
++
+Die IPv4- oder IPv6-Adresse der Node-Management-LIF.
+
+* *FQDN*
++
+Der vollständig qualifizierte Domain-Name (FQDN) der Node-Management-LIF.
+
+* *Betriebssystemversion*
++
+Die Version der auf dem Node installierten ONTAP Software.
+
+* *Modell / Familie*
++
+Die Nummer des Plattformmodells des Nodes.
+
+* * Kapazität (frei/gesamt)*
++
+Den gesamten für den Node verfügbaren Storage in Gigabyte und die derzeit verfügbare Menge an Speicherplatz.
+
+* * Cluster*
++
+Der Name des Clusters, zu dem dieser Node gehört. Sie können auf den Namen klicken, um Cluster-Details auf der Seite „Performance/Cluster Explorer“ anzuzeigen.
+
+* *HA-Partner*
++
+Ggf. der Name des HA-Partner-Node. Sie können auf den Namen klicken, um Details zu Partner-Nodes auf der Seite Performance/Node Explorer anzuzeigen.
+
+* *Aggregate*
++
+Die Anzahl der Aggregate auf diesem Node. Sie können auf die Nummer klicken, um auf der Seite „Performance/Aggregates Inventory“ die Aggregate anzuzeigen.
+
++
+[NOTE]
+====
+Die hier aufgeführte Nummer stimmt möglicherweise nicht mit der Nummer auf der Seite „Performance/Aggregates Inventory“ überein, da die Bestandsseite keine Root-Aggregate enthält.
+
+====
+* *Ports*
++
+Die Anzahl der Ports auf diesem Node. Sie können auf die Nummer klicken, um auf der Seite „Performance/Ports Inventory“ die Ports anzuzeigen.
+
++
+[NOTE]
+====
+Die hier aufgeführte Nummer stimmt möglicherweise nicht mit der Nummer auf der Seite „Performance/Ports Inventory“ überein, da die Inventarseite keine Node-Management-Ports enthält.
+
+====
+* *Kontakt / Standort*
++
+Falls verfügbar, der Name des Administrators, der Kontakt zu diesem Node und dem Standort des Node aufnimmt.
+
+* *# von Kernen / Geschwindigkeit*
++
+Falls verfügbar, die Anzahl der CPU-Kerne im Controller und die Geschwindigkeit der CPU-Kerne.
+
+* *RAM*
++
+Falls verfügbar, ist der gesamte verfügbare Speicher des Controllers.
+
+
+
+
+
+== Flash-Geräte
+
+[NOTE]
+====
+Flash Cache-Daten werden nur für Nodes und nur angezeigt, wenn ein Flash Cache Modul im Node installiert ist.
+
+====
+* *Steckplatznummer*
++
+Die Steckplatznummer, in der das Flash Cache-Modul installiert ist.
+
+* *Status*
++
+Der Betriebsstatus des Moduls. Gültige Werte:
+
++
+** Online
+** Offline_fehlgeschlagen
+** „Offline_Schwellenwert“
+
+
+* *Modell / Familie*
++
+Die Modellnummer des Moduls.
+
+* *Firmware Rev.*
++
+Die auf dem Modul installierte Firmware-Version.
+
+* * Kapazität*
++
+Die Größe des installierten Flash Cache Moduls
+
+

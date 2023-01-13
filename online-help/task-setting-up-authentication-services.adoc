@@ -1,0 +1,80 @@
+---
+permalink: online-help/task-setting-up-authentication-services.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Authentifizierungsservices ermöglichen die Authentifizierung von Remote-Benutzern oder Remotegruppen in einem Authentifizierungsserver, bevor sie ihnen den Zugriff auf Unified Manager gewähren. Sie können Benutzer mithilfe von vordefinierten Authentifizierungsdiensten \ (z. B. Active Directory oder OpenLDAP\) authentifizieren, oder indem Sie Ihren eigenen Authentifizierungsmechanismus konfigurieren.' 
+---
+= Einrichten von Authentifizierungsservices
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Authentifizierungsservices ermöglichen die Authentifizierung von Remote-Benutzern oder Remotegruppen in einem Authentifizierungsserver, bevor sie ihnen den Zugriff auf Unified Manager gewähren. Sie können Benutzer mithilfe von vordefinierten Authentifizierungsdiensten (z. B. Active Directory oder OpenLDAP) authentifizieren, oder indem Sie Ihren eigenen Authentifizierungsmechanismus konfigurieren.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen die Remote-Authentifizierung aktiviert haben.
+* Sie müssen die OnCommand-Administratorrolle besitzen.
+
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im linken Einrichtungsmenü auf *Authentifizierung*.
+. Klicken Sie auf der Seite *Setup* Optionen auf *Management Server* > *Authentifizierung*.
+. Wählen Sie einen der folgenden Authentifizierungsdienste aus:
++
+|===
+| Wenn Sie die Option... | Dann tun Sie das... 
+
+
+ a| 
+Active Directory
+ a| 
+.. Geben Sie den Administratornamen und das Kennwort ein.
+.. Geben Sie den Basisnamen des Authentifizierungsservers an.
++
+Wenn beispielsweise der Domänenname des Authentifizierungsservers ou@domain.com lautet, lautet der Name der Basisunterscheidungname `cn=ou,dc=domain,dc=com`.
+
+
+
+
+
+ a| 
+OpenLDAP
+ a| 
+.. Geben Sie den Distinguished Name und das Bind-Passwort ein.
+.. Geben Sie den Basisnamen des Authentifizierungsservers an.
++
+Wenn beispielsweise der Domänenname des Authentifizierungsservers ou@domain.com lautet, lautet der Name der Basisunterscheidungname `cn=ou,dc=domain,dc=com`.
+
+
+
+
+
+ a| 
+Andere
+ a| 
+.. Geben Sie den Distinguished Name und das Bind-Passwort ein.
+.. Geben Sie den Basisnamen des Authentifizierungsservers an.
++
+Wenn beispielsweise der Domänenname des Authentifizierungsservers ou@domain.com lautet, lautet der Name der Basisunterscheidungname `cn=ou,dc=domain,dc=com`.
+
+.. Geben Sie die vom Authentifizierungsserver unterstützte LDAP-Protokollversion an.
+.. Geben Sie den Benutzernamen, die Gruppenmitgliedschaft, die Benutzergruppe und die Mitgliedsattribute ein.
+
+
+|===
++
+[NOTE]
+====
+Wenn Sie den Authentifizierungsdienst ändern möchten, müssen Sie alle vorhandenen Authentifizierungsserver löschen und dann neue Authentifizierungsserver hinzufügen.
+
+====
+. Klicken Sie auf *Speichern und Schließen*.
+

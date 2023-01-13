@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-edit-vserver-with-infinite-volume-thresholds-dialog-box-iv.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können das Dialogfeld „SVM mit Infinite Volume Schwellenwerten bearbeiten“ verwenden, um die Standardschwellenwerte jeder SVM je nach Anforderung Ihres Unternehmens mit Infinite Volume zu ändern. Die Standardschwellenwerte geben die Aktivitätsebene an, die auf der SVM erreicht werden muss, bevor ein Ereignis ausgelöst wird. 
+---
+= Das Dialogfeld „SVM mit Infinite Volume Schwellenwerten“ bearbeiten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld „SVM mit Infinite Volume Schwellenwerten bearbeiten“ können Sie die standardmäßigen Schwellwerte jeder SVM je nach Unternehmensanforderung mit Infinite Volume ändern. Die Standardschwellenwerte geben die Aktivitätsebene an, die auf der SVM erreicht werden muss, bevor ein Ereignis ausgelöst wird.
+
+
+
+== Kapazität
+
+Im Bereich Kapazität können Sie mit Infinite Volume für die ausgewählte SVM einen Kapazitätsschwellenwert festlegen:
+
+* *Raum Fast Voll*
++
+Gibt den Prozentsatz an, bei dem die SVM mit Infinite Volume als nahezu voll erachtet wird. Außerdem wird der entsprechende Speicherplatz (in GB, MB oder TB) im Infinite Volume angezeigt. Wenn Sie beispielsweise ein Infinite Volume mit einer Größe von 10 GB haben und der Schwellenwert für fast voll Speicherplatz 80 % beträgt, werden folgende Informationen angezeigt: (8 GB von 10 GB).
+
++
+Sie können auch den Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+* *Raum Voll*
++
+Gibt den Prozentsatz an, bei dem die SVM mit Infinite Volume als voll erachtet wird. Außerdem wird der entsprechende Speicherplatz (in GB, MB oder TB) im Infinite Volume angezeigt. Wenn Sie beispielsweise ein Infinite Volume mit Größe 10 GB haben und der Schwellenwert für „Space Full“ 90 % beträgt, werden folgende Informationen angezeigt: (9 GB von 10 GB).
+
++
+Sie können auch den Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+* *Limit Für Snapshot-Nutzung*
++
+Gibt das Limit des in Prozent reservierten Speicherplatzes für Snapshot Kopien im Infinite Volume an.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Auf globale Standards zurücksetzen*
++
+Ermöglicht es Ihnen, die Schwellenwerteinstellungen auf die aktuellen Werte zurückzusetzen, die auf globaler Ebene festgelegt sind.
+
+* *Speichern*
++
+Speichert alle Schwellwerteinstellungen.
+
+* *Speichern und Schließen*
++
+Speichert alle Schwellenwerteinstellungen und schließt dann das Dialogfeld „SVM mit Infinite Volume-Schwellenwerten bearbeiten“.
+
+* *Abbrechen*
++
+Ignoriert alle Änderungen an den Schwellenwerten und schließt das Dialogfeld „SVM mit Infinite Volume Schwellenwerten bearbeiten“.
+
+

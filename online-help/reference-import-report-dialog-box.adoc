@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-import-report-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können das Dialogfeld Bericht importieren verwenden, um Berichte aus .rptdesign-Dateien zu importieren. 
+---
+= Dialogfeld „Bericht importieren“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können das Dialogfeld Bericht importieren verwenden, um Berichte aus zu importieren `.rptdesign` Dateien:
+
+
+
+== Eigenschaften
+
+Sie können einen Bericht importieren, indem Sie den Namen der Berichtsdatei, den Berichtsnamen und die Berichtsbeschreibung angeben.
+
+* *Wählen Sie Berichtsdatei*
++
+Ermöglicht Ihnen die Auswahl des `.rptdesign` Datei, die importiert werden soll.
+
++
+[NOTE]
+====
+In Google Chrome, die `fakepath` Des `.rptdesign` Datei wird angezeigt. In Mozilla Firefox, nur die `.rptdesign` Dateiname wird angezeigt. In Internet Explorer den vollständigen Pfad des `.rptdesign` Datei wird angezeigt.
+
+====
+* *Name*
++
+Zeigt den Namen des Berichts an. Dieses Feld ist standardmäßig leer. Sie können einen Namen für den importierten Bericht eingeben.
+
+* *Beschreibung*
++
+Gibt die Beschreibung des importierten Berichts an. Die Beschreibung darf nicht mehr als 150 Zeichen enthalten.
+
+* *Wählen Sie Datenbankbenutzer mit der Rolle des Berichtsschemas* aus
++
+Wählen Sie einen Datenbankbenutzer aus, oder erstellen Sie ihn, wenn Sie Berichte aus dem Storage Automation Store importieren möchten.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Import*
++
+Validiert die ausgewählte `.rptdesign` Datei und importiert den Bericht.
+
+* *Abbrechen*
++
+Bricht den Importvorgang ab und schließt das Dialogfeld „Importbericht“.
+
+

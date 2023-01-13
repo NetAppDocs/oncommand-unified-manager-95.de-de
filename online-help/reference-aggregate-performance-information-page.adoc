@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-aggregate-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Verwenden Sie die Seite Informationen zu Performance/Aggregat, um eine Liste der physischen und logischen Attribute des Aggregats anzuzeigen. Diese Informationen könnten bei der Beantwortung von Fragen zur Leistungsfähigkeit helfen. 
+---
+= Informationsseite zu Performance/Aggregat
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Verwenden Sie die Seite Informationen zu Performance/Aggregat, um eine Liste der physischen und logischen Attribute des Aggregats anzuzeigen. Diese Informationen könnten bei der Beantwortung von Fragen zur Leistungsfähigkeit helfen.
+
+
+
+== Aggregatattribute
+
+* *Aggregattyp*
++
+Der Aggregattyp:
+
++
+** HDD
+** Hybrid
++
+Kombiniert HDDs und SSDs, aber Flash Pool wurde nicht aktiviert.
+
+** Hybrid (Flash Pool)
++
+Kombiniert HDDs und SSDs und ermöglicht die Aktivierung von Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Kombiniert SSDs mit einer Cloud-Tier
+
+** VMDisk (SDS)
++
+Virtuelle Laufwerke innerhalb einer virtuellen Maschine
+
+** VMDisk (FabricPool)
++
+Kombiniert virtuelle Festplatten mit einer Cloud-Tier
+
+** LUN (FlexArray)
+
+
+* * Cluster*
++
+Der Name des Clusters, zu dem das Aggregat gehört. Sie können auf den Namen klicken, um in der Seite „Performance/Cluster Explorer“ Cluster-Details anzuzeigen.
+
+* *Knoten*
++
+Der Name des Node, zu dem die Festplatten des Aggregats gehören. Sie können auf den Namen klicken, um Node-Details auf der Seite Performance/Node Explorer anzuzeigen.
+
+* *Flash Pool*
++
+Ob es sich um ein Flash Pool Aggregat handelt: Ja oder Nein
+
++
+Ein Flash Pool Aggregat ist ein hybrides Aggregat, das sowohl aus SSDs als auch aus HDDs besteht.
+
+* *FabricPool*
++
+Ob es sich dabei um ein FabricPool Aggregat handelt: Ja oder Nein
+
++
+Ein FabricPool Aggregat besteht aus SSDs und einer Cloud-Tier.
+
+* *Inaktive Datenberichterstattung*
++
+Gibt an, ob die Funktion zur Berichterstellung inaktiver Daten auf diesem Aggregat aktiviert oder deaktiviert ist. Bei Aktivierung zeigen Volumes auf diesem Aggregat auf der Seite „Performance/Volumes Inventory“ den Umfang der „kalten“ Daten an.
+
++
+Der Wert in diesem Feld lautet „`N/A`“, wenn die Version von ONTAP keine inaktive Datenberichterstattung unterstützt.
+
+

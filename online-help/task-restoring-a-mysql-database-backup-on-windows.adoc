@@ -1,0 +1,56 @@
+---
+permalink: online-help/task-restoring-a-mysql-database-backup-on-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: Bei Datenverlust oder Datenbeschädigung kann Unified Manager mit der Wiederherstellungsfunktion in den vorherigen stabilen Zustand bei minimalem Verlust wiederhergestellt werden. Sie können die Unified Manager-Datenbank auf einem lokalen Windows-System oder einem Remote-Windows-System mithilfe des Wiederherstellungsbefehls wiederherstellen. 
+---
+= Wiederherstellen einer Datenbanksicherung unter Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei Datenverlust oder Datenbeschädigung kann Unified Manager mit der Wiederherstellungsfunktion in den vorherigen stabilen Zustand bei minimalem Verlust wiederhergestellt werden. Sie können die Unified Manager-Datenbank auf einem lokalen Windows-System oder einem Remote-Windows-System mithilfe des Wiederherstellungsbefehls wiederherstellen.
+
+
+
+== Bevor Sie beginnen
+
+* Unified Manager muss auf einem Server installiert sein.
+* Sie müssen über Administratorrechte für Windows verfügen.
+* Sie müssen die Backup-Datei von Unified Manager und den Inhalt des Datenbank-Repository-Verzeichnisses auf das System kopiert haben, auf dem Sie den Wiederherstellungsvorgang ausführen möchten.
++
+Es wird empfohlen, die Sicherungsdatei in das Standardverzeichnis zu kopieren `\ProgramData\NetApp\OnCommandAppData\ocum\backup`. Die Datenbank-Repository-Dateien müssen in die kopiert werden `\database_dumps_repo` Unterverzeichnis unter dem `\backup` Verzeichnis.
+
+* Die Sicherungsdateien müssen aus sein `.7z` Typ.
+
+
+
+
+== Über diese Aufgabe
+
+Die Wiederherstellungsfunktion ist plattformspezifisch und versionsspezifisch. Sie können ein Unified Manager Backup nur auf derselben Version von Unified Manager wiederherstellen. Ein Windows Backup kann nur auf einer Windows-Plattform wiederhergestellt werden.
+
+[TIP]
+====
+Wenn die Ordnernamen ein Leerzeichen enthalten, müssen Sie den absoluten Pfad oder den relativen Pfad der Sicherungsdatei in doppelten Anführungszeichen einschließen.
+
+====
+
+
+== Schritte
+
+. Wenn Sie eine Wiederherstellung auf einem neuen Server durchführen, starten Sie nach der Installation von Unified Manager die UI nicht oder konfigurieren Sie nach Abschluss der Installation keine Cluster, Benutzer oder Authentifizierungseinstellungen. Die Sicherungsdatei füllt diese Informationen während des Wiederherstellungsprozesses aus.
+. Melden Sie sich als Administrator bei der Unified Manager-Konsole an: `um cli login -u maint_username`
+. Stellen Sie an der Eingabeaufforderung das Backup wieder her: `um backup restore -f <backup_file_path>/<backup_file_name>`
++
+`um backup restore -f \ProgramData\NetApp\OnCommandAppData\ocum\backup\UM_9.4.N151118.2300_backup_windows_02-20-2018-02-51.7z`
+
+
+
+
+
+== Nachdem Sie fertig sind
+
+Nach Abschluss der Wiederherstellung können Sie sich bei Unified Manager einloggen.

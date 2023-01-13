@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-metrocluster-configuration-verification.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Performance-Probleme bei gespiegelten Workloads in einer MetroCluster-Konfiguration vermeiden, indem Sie sicherstellen, dass die MetroCluster-Konfiguration korrekt eingerichtet ist. Sie können außerdem die Workload-Performance verbessern, indem Sie die Konfiguration ändern oder Software- oder Hardware-Komponenten aktualisieren. 
+---
+= Überprüfung der MetroCluster-Konfiguration
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Performance-Probleme bei gespiegelten Workloads in einer MetroCluster-Konfiguration vermeiden, indem Sie sicherstellen, dass die MetroCluster-Konfiguration korrekt eingerichtet ist. Sie können außerdem die Workload-Performance verbessern, indem Sie die Konfiguration ändern oder Software- oder Hardware-Komponenten aktualisieren.
+
+Das _MetroCluster Installations- und Konfigurationshandbuch_ enthält Anweisungen zum Einrichten der Cluster in der MetroCluster-Konfiguration, einschließlich der Fibre Channel (FC)-Switches, Kabel und Inter-Switch-Links (ISLs). Darüber hinaus unterstützt Sie die Konfiguration der MetroCluster Software, sodass die lokalen und Remote Cluster mit gespiegelten Volume-Daten kommunizieren können.
+
+Sie können Ihre MetroCluster Konfiguration mit den Anforderungen im _MetroCluster Installations- und Konfigurationsleitfaden_ vergleichen, um zu ermitteln, ob ein Ändern oder Aktualisieren von Komponenten in Ihrer MetroCluster-Konfiguration die Workload-Performance verbessern könnte. Dieser Vergleich hilft Ihnen bei der Beantwortung der folgenden Fragen:
+
+* Sind die Controller für Ihre Workloads geeignet?
+* Müssen Sie Ihre ISL-Bundles auf eine höhere Bandbreite aktualisieren, um einen höheren Durchsatz zu bewältigen?
+* Können Sie die Buffer-to-Buffer Credits (BBC) auf Ihren Switches anpassen, um die Bandbreite zu erhöhen?
+* Wenn Ihre Workloads einen hohen Schreibdurchsatz auf SSD-Storage (Solid State Drive) aufweisen, müssen Sie Ihre FC-to-SAS-Bridges aktualisieren, um den Durchsatz zu bewältigen?
+
+
+Informationen zum Austauschen oder Aktualisieren von MetroCluster-Komponenten finden Sie im _MetroCluster-Servicehandbuch_.

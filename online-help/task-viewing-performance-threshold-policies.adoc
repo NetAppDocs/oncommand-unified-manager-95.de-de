@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-viewing-performance-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können alle derzeit definierten Performance-Schwellenwertrichtlinien auf der Seite Konfiguration/Performance-Schwellenwerte anzeigen. 
+---
+= Anzeigen von Richtlinien für Performance-Schwellenwerte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können alle derzeit definierten Performance-Schwellenwertrichtlinien auf der Seite Konfiguration/Performance-Schwellenwerte anzeigen.
+
+
+
+== Über diese Aufgabe
+
+Die Liste der Schwellenwertrichtlinien wird alphabetisch nach Richtlinienname sortiert und umfasst Richtlinien für alle Arten von Storage-Objekten. Sie können auf eine Spaltenüberschrift klicken, um die Richtlinien nach dieser Spalte zu sortieren. Wenn Sie nach einer bestimmten Richtlinie suchen, können Sie mithilfe der Filter- und Suchmechanismen die Liste der Schwellenwertrichtlinien, die in der Bestandsliste angezeigt werden, verfeinern.
+
+Sie können den Mauszeiger über den Richtliniennamen und den Bedingungsnamen bewegen, um die Konfigurationsdetails der Richtlinie anzuzeigen. Zusätzlich können Sie mithilfe der bereitgestellten Schaltflächen benutzerdefinierte Schwellenwertrichtlinien erstellen, klonen, bearbeiten und löschen.
+
+
+
+== Schritte
+
+. Wählen Sie im linken Navigationsbereich *Konfiguration* > *Leistungsschwellenwerte*.
++
+Die Seite Konfiguration/Leistungsschwellenwerte wird angezeigt.
+
+

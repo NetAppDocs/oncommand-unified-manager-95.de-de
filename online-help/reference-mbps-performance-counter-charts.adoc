@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-mbps-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: In den Zählerdiagrammen Performance Explorer MB/s wird die Anzahl der in das ausgewählte Objekt pro Sekunde übertragenen Megabyte an Daten angezeigt. 
+---
+= MB/s-Performance-Zählerdiagramme
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In den Zählerdiagrammen Performance Explorer MB/s wird die Anzahl der in das ausgewählte Objekt pro Sekunde übertragenen Megabyte an Daten angezeigt.
+
+Das Popup-Fenster, das angezeigt wird, wenn sich der Cursor im Diagrammbereich befindet, zeigt die spezifischen Zählerwerte zu bestimmten Zeiten an.
+
+Wenn in der Zoom-Ansicht angezeigt wird, zeigen die Volume- und LUN-Diagramme unter ONTAP auch Einstellungen für den maximalen MB/s-Durchsatz von Quality of Service (QoS) an.
+
+Wenn sich ein Volume oder eine LUN ansieht, das die MB/s einer gemeinsam genutzten QoS-Richtlinie teilt, wird eine Zeile mit „`Gesamt-Workload Mbps`“ angezeigt, um die MB/s anzuzeigen, die von allen anderen Workloads in dieser Richtlinie verwendet werden.
+
+Auf der unteren Seite der Kartenseite werden Informationen für den minimalen, maximalen, durchschnittlichen und 95-perzentilen MB/s für den ausgewählten Zeitbereich angezeigt.
+
+Es stehen zwei Arten von Mbps-Diagrammen zur Verfügung:
+
+
+
+== MB/s – Zählerdiagramm insgesamt
+
+Zeigt die Anzahl der Megabyte an Daten an, die pro Sekunde an das ausgewählte Objekt übertragen werden.
+
+
+
+== Mbps - Aufschlüsselung des Zählerdiagramms
+
+Zeigt dieselben MB/s-Daten an, die in Festplattenlesevorgänge, Flash Cache Lese-, Schreib- und andere Vorgänge getrennt sind.
+
+Diese Diagrammoption wird angewendet, wenn das ausgewählte Objekt eine SVM, einen Node, ein Aggregat, ein Volume oder eine LUN ist.
+
+[NOTE]
+====
+Flash Cache-Daten werden nur für Nodes und nur angezeigt, wenn ein Flash Cache Modul im Node installiert ist.
+
+====
+
+
+== *Zoom-Ansicht*-Taste
+
+Zeigt eine vergrößerte Ansicht der Daten des Zählerdiagramms an.
+
+* Veranstaltungen
++
+Das Auftreten von kritischen, Fehler-, Warn- und Informationsereignissen wird in den Zeitlinien oberhalb der Diagramme angezeigt.
+
+* Schwellenwerte
++
+Die horizontale, gestrichelte Zeile zeigt den in Unified Manager festgelegten Grenzwert für die Auslastungswarnung an.
+
++
+Die rote Linie zeigt den Auslastungskritischen Schwellenwert in Unified Manager an.
+
+* Zähler
++
+Die Zähler im linken Teilfenster zeigen an, welche Zählerwerte angezeigt werden. Deaktivieren oder Auswählen des image:../media/eye-icon.gif[""] Dies wird mit einem Zähler verknüpft, versteckt sich und zeigt die Zählerinformationen aus dem Diagramm an und kann beim Vergleich von Objekt-MB/s helfen.
+
+

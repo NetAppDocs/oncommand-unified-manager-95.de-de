@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Verschiedene Unified Manager Berichte können anhand von Storage- und Nutzungskapazität, Ereignissen, Cluster-Inventar, NFS-Exporten oder SVM-Inventar angepasst werden. . 
+---
+= Berichtanpassung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Verschiedene Unified Manager Berichte können anhand von Storage- und Nutzungskapazität, Ereignissen, Cluster-Inventar, NFS-Exporten oder SVM-Inventar angepasst werden. .

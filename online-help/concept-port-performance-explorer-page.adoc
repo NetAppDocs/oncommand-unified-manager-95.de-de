@@ -1,0 +1,41 @@
+---
+permalink: online-help/concept-port-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Seite Performance/Port Explorer bietet eine detaillierte Performance-Übersicht über alle Ports in einem Cluster. 
+---
+= Seite „Performance/Port Explorer“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite Performance/Port Explorer bietet eine detaillierte Performance-Übersicht über alle Ports in einem Cluster.
+
+[NOTE]
+====
+Die Werte des Performance-Zähler werden nur für physische Ports angezeigt. Zählerwerte werden nicht für VLANs oder Interface Groups angezeigt.
+
+====
+Auf der Seite „Performance/Port Explorer“ können Sie die Portleistung in einem bestimmten Zeitraum verfolgen und vergleichen. Dies hilft Ihnen bei der Fehlerbehebung und Feinabstimmung der Portleistung.
+
+Mit der Funktion „Ansicht und Vergleich“ können Sie die Leistung dieses Ports mit vergleichen:
+
+* Andere Ports auf demselben Node
+* Der Node, auf dem sich der Port befindet
+* LIFs am Port
+
+
+[NOTE]
+====
+Nur Cluster und Daten-LIFs werden bei Filterung mit der Option „`LIFs auf diesem Port`“ angezeigt. Es werden keine Intercluster-LIFs angezeigt.
+
+====
+Auf der Seite „Performance/Port Explorer“ können Sie Folgendes ausführen:
+
+* Zeigen Sie Probleme mit Schwellenwerten und deren Details an
+* Verfolgen und vergleichen Sie die Port-Performance-Daten
+* Untersuchung und Behebung von Problemen mit Schwellenwerten
+* Untersuchung und Behebung von Performance-Problemen
+

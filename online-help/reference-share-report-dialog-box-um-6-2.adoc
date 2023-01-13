@@ -1,0 +1,50 @@
+---
+permalink: online-help/reference-share-report-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können einen Bericht per E-Mail an einen oder mehrere Benutzer freigeben. Nachdem Sie einen Bericht angepasst haben, müssen Sie die Änderungen speichern, bevor Sie den Bericht freigeben, um sicherzustellen, dass die Änderungen angezeigt werden. 
+---
+= Dialogfeld „Bericht freigeben“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können einen Bericht per E-Mail an einen oder mehrere Benutzer freigeben. Nachdem Sie einen Bericht angepasst haben, müssen Sie die Änderungen speichern, bevor Sie den Bericht freigeben, um sicherzustellen, dass die Änderungen angezeigt werden.
+
+
+
+== Eigenschaften
+
+Sie können einen Bericht freigeben, indem Sie Eigenschaften wie die E-Mail-Adresse des Benutzers, Betreff der E-Mail und das Format des Berichts angeben.
+
+* * Empfänger-E-Mail-Adresse*
++
+Gibt die E-Mail-Adresse des Benutzers an, an den der Bericht weitergegeben werden soll. Sie können einen oder mehrere Einträge angeben, getrennt durch Kommas. Dies ist ein Pflichtfeld.
+
+* *Betreff*
++
+Gibt den Betreff der E-Mail an. Standardmäßig wird der Name des Berichts angezeigt.
+
+* *Berichtsformat*
++
+Gibt das Format an, in dem der Bericht gemeinsam genutzt werden soll. Die Option _PDF_ ist standardmäßig ausgewählt. Wenn das XHTML-Format ausgewählt ist, öffnen Sie den Bericht, der per E-Mail über einen unterstützten Webbrowser gesendet wird.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Anteil*
++
+Teilt den Bericht mit der gespeicherten Konfiguration und schließt das Dialogfeld Bericht freigeben.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Bericht freigeben, während eine Meldung angezeigt wird, um die Berichtskonfiguration zu speichern.
+
+

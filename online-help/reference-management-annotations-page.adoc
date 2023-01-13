@@ -1,0 +1,193 @@
+---
+permalink: online-help/reference-management-annotations-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Management/Annotationen“ können Sie Anmerkungen in Unified Manager erstellen, mit denen Storage-Objekte beschriftet werden können, oder Sie können Anmerkungen bearbeiten oder löschen. Sie können Storage-Objekte entweder manuell mit einem annotation=value-Paar beschriften oder Anmerkungsregeln konfigurieren. Storage-Objekte werden basierend auf den verwendeten Annotationen dynamisch beschriftet. 
+---
+= Management-/Annotationsseite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Management/Annotationen“ können Sie Anmerkungen in Unified Manager erstellen, mit denen Storage-Objekte beschriftet werden können, oder Sie können Anmerkungen bearbeiten oder löschen. Sie können Storage-Objekte entweder manuell mit einem annotation=value-Paar beschriften oder Anmerkungsregeln konfigurieren. Storage-Objekte werden basierend auf den verwendeten Annotationen dynamisch beschriftet.
+
+Wenn Sie sich als Operator anmelden, haben Sie nur Lesezugriff auf die Seite. Sie können auf den Schaltflächen Hinzufügen, Bearbeiten oder Löschen auf jeder Registerkarte zugreifen, wenn Sie sich als Speicheradministrator oder Unified Manager-Administrator anmelden.
+
+
+
+== Registerkarte „Anmerkungen“
+
+Auf der Registerkarte Anmerkungen können Sie Anmerkungen in Unified Manager anzeigen, erstellen, bearbeiten oder löschen.
+
+* *Anmerkungsliste*
++
+Zeigt die Namen der vordefinierten und benutzerdefinierten Anmerkungen an. Die Anzahl der Anmerkungswerte, die mit jeder Anmerkung verknüpft sind, wird ebenfalls angezeigt. Sie können auf den Anmerkungsnamen klicken, um die Details der Anmerkung anzuzeigen.
+
+
+
+
+
+== Zusammenfassungsbereich
+
+Sie können die folgenden Details der ausgewählten Anmerkung anzeigen:
+
+* *Beschreibung*
++
+Zeigt die Beschreibung für die Anmerkung an.
+
+* * Erstellt von*
++
+Zeigt den Namen des Benutzers an, der die Anmerkung erstellt hat.
+
+* *Erstellungsdatum*
++
+Zeigt das Datum an, an dem die Anmerkung erstellt wurde.
+
+
+
+
+
+== Anmerkung=Werte Paare
+
+Zeigt die Liste der Anmerkungswertpaare und der zugehörigen Speicherobjekte an, die für die ausgewählte Anmerkung verfügbar sind.
+
+* *Wert*
++
+Zeigt den Namen des annotation=value-Paars an.
+
+* *Anwendbare Cluster*
++
+Zeigt die Anzahl der Cluster an, die mit einem bestimmten Anmerkungs=Wert-Paar beschriftet sind. Sie können auf die Nummer klicken, um die Seite Cluster anzuzeigen, auf der eine gefilterte Liste der Cluster angezeigt wird, die einem bestimmten Wert zugeordnet sind.
+
+* *Anwendbare Storage Virtual Machines (SVMs)*
++
+Zeigt die Anzahl der Storage Virtual Machines (SVMs) an, die mit einem bestimmten Annotation=Wertpaar versehen sind. Sie können auf die Nummer klicken, um die Seite Storage Virtual Machines (SVMs) anzuzeigen. In dieser Seite wird eine gefilterte Liste von Storage Virtual Machines (SVMs) angezeigt, die einem bestimmten Wert zugeordnet sind.
+
+* *Geltende Volumen*
++
+Zeigt die Anzahl der Volumes an, die mit einem bestimmten Anmerkungspaar=Wert versehen sind. Sie können auf die Nummer klicken, um die Seite Volumes anzuzeigen, auf der eine gefilterte Liste der Volumes angezeigt wird, die einem bestimmten Wert zugeordnet sind.
+
+
+
+
+
+== Objektzuweisungen über Regeln
+
+Zeigt die Liste der Anmerkungsregeln und die zugehörigen Speicherobjekte für die ausgewählte Anmerkung an.
+
+* * Rang*
++
+Zeigt die Reihenfolge der Anmerkungsregeln an, die auf die Speicherobjekte angewendet werden sollen.
+
+* *Regeln*
++
+Zeigt den Namen der Anmerkungsregel an.
+
+* *Zielobjekttyp*
++
+Zeigt den Typ des Speicherobjekts an, auf das die Anmerkungsregel angewendet wird.
+
+* *Zugehörige Anmerkung*
++
+Zeigt das auf das Speicherobjekt angewendete annotation=value-Paar an.
+
+* *Anwendbare Objekte*
++
+Zeigt die Anzahl der Storage-Objekte an, die basierend auf der Anmerkungsregel mit Anmerkungen versehen werden.
+
+
+
+
+
+== Manuelle Objektzuordnungen
+
+Zeigt die Liste der Anmerkungen an, die Sie manuell konfiguriert und mit Speicherobjekten verknüpft haben.
+
+* *Anmerkung=Wertpaar*
++
+Zeigt den Namen der manuellen Anmerkung und den Wert an.
+
+* *Anwendbare Cluster*
++
+Zeigt die Anzahl der Cluster an, die mit einem bestimmten manuellen Anmerkungswert versehen sind. Sie können auf die Nummer klicken, um die Seite Cluster anzuzeigen, auf der eine gefilterte Liste der Cluster angezeigt wird, die einem bestimmten Wert zugeordnet sind.
+
+* *Anwendbare Storage Virtual Machines (SVMs)*
++
+Zeigt die Anzahl der Storage Virtual Machines (SVMs) an, die mit einem bestimmten manuellen Anmerkungswert versehen werden. Sie können auf die Nummer klicken, um die Seite Storage Virtual Machines (SVMs) anzuzeigen. In dieser Seite wird eine gefilterte Liste von Storage Virtual Machines (SVMs) angezeigt, die einem bestimmten Wert zugeordnet sind.
+
+* *Geltende Volumen*
++
+Zeigt die Anzahl der Volumes an, die mit einem bestimmten manuellen Anmerkungswert versehen werden. Sie können auf die Nummer klicken, um die Seite Volumes anzuzeigen, auf der eine gefilterte Liste der Volumes angezeigt wird, die einem bestimmten Wert zugeordnet sind.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen. Für vordefinierte Anmerkungen können Sie keine Werte hinzufügen oder löschen.
+
+* *Anmerkung Hinzufügen*
++
+Öffnet das Dialogfeld Anmerkung hinzufügen, in dem Sie neue benutzerdefinierte Anmerkungen erstellen und der Anmerkung Werte zuweisen können.
+
+* *Aktionen*
++
+Ermöglicht das Bearbeiten oder Löschen der ausgewählten Beschreibung der Anmerkung.
+
+* *Bearbeiten*
++
+Öffnet das Dialogfeld Anmerkung bearbeiten, in dem Sie den Anmerkungsnamen und die Beschreibung ändern können.
+
+* *Löschen*
++
+Ermöglicht das Löschen des Anmerkungswerts. Sie können den Wert nur löschen, wenn er nicht mit Anmerkungsregeln oder Gruppenregeln verknüpft ist.
+
+
+
+
+
+== Registerkarte „Anmerkungsregeln“
+
+Auf der Registerkarte Annotationsregeln werden die Anmerkungsregeln angezeigt, die Sie zum Kommentieren von Speicherobjekten erstellt haben. Sie können Aufgaben wie Hinzufügen, Bearbeiten, Löschen oder Neuanordnen einer Anmerkungsregel durchführen. Sie können auch die Anzahl der Speicherobjekte anzeigen, die der Anmerkungsregel entsprechen.
+
+
+
+== Befehlsschaltflächen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Hinzufügen*
++
+Zeigt das Dialogfeld Anmerkungsregel hinzufügen an, in dem Sie Anmerkungsregeln für Speicherobjekte erstellen können.
+
+* *Bearbeiten*
++
+Zeigt das Dialogfeld Anmerkungsregel bearbeiten an, in dem Sie zuvor konfigurierte Anmerkungsregeln neu konfigurieren können.
+
+* *Löschen*
++
+Löscht die ausgewählten Anmerkungsregeln.
+
+* *Neuordnung*
++
+Zeigt das Dialogfeld Anmerkungsregel neu anordnen an, mit dem Sie die Reihenfolge der Anmerkungsregeln neu anordnen können.
+
+
+
+
+
+== Listenansicht
+
+In der Listenansicht werden die Anmerkungsregeln angezeigt, die Sie auf dem Unified Manager-Server erstellt haben. Mit den Spaltenfiltern können Sie die angezeigten Daten anpassen. Die Listenansicht der Registerkarte Anmerkungsregeln und die Listenansicht des Abschnitts zugewiesene Regeln auf der Registerkarte Anmerkung enthält die folgenden Spalten:
+
+* Rang
+* Name
+* Zielobjekttyp
+* Zugeordneten Anmerkungswert
+* Anwendbare Objekte
+
+
+Für die Registerkarte Anmerkungsregeln, Associated Annotation, wird eine zusätzliche Spalte angezeigt, in der der Name der auf das Speicherobjekt angewendeten Anmerkung angezeigt wird.

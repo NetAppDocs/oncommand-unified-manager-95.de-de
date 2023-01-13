@@ -1,0 +1,45 @@
+---
+permalink: performance-checker/reference-performance-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Diese Seite enthält detaillierte Performance-Statistiken für alle I/O-Aktivitäten und Vorgänge für das ausgewählte FlexVol Volume, das FlexGroup Volume oder den FlexGroup-Komponenten-Workload. Sie können einen bestimmten Zeitrahmen auswählen, in dem die Statistiken und Ereignisse für das Volume angezeigt werden sollen. Die Ereignisse identifizieren Performance-Ereignisse und Änderungen, die sich auf die I/O-Performance auswirken können. 
+---
+= Seite Performance/Volume Details
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Diese Seite enthält detaillierte Performance-Statistiken für alle I/O-Aktivitäten und Vorgänge für das ausgewählte FlexVol Volume, das FlexGroup Volume oder den FlexGroup-Komponenten-Workload. Sie können einen bestimmten Zeitrahmen auswählen, in dem die Statistiken und Ereignisse für das Volume angezeigt werden sollen. Die Ereignisse identifizieren Performance-Ereignisse und Änderungen, die sich auf die I/O-Performance auswirken können.
+
+
+
+== Historisches Diagramm
+
+Zeigt die historischen Leistungsanalyse-Daten für das ausgewählte Volume an. Sie können auf die Schieberegler klicken und ziehen, um einen Zeitrahmen festzulegen. Die Schieberegler erhöhen und reduzieren das Zeitfenster. Die Daten außerhalb des Zeitrahmenfensters sind ausgegraut. Mit dem Schieberegler unten im Diagramm können Sie das Zeitfenster über die historischen Daten verschieben. Die gesamte Seite, einschließlich der angezeigten Diagramme und Ereignisse, gibt die Daten wieder, die im Zeitfenster verfügbar sind. Unified Manager speichert auf dieser Seite maximal 30 Tage historische Daten.
+
+[NOTE]
+====
+Wenn Sie auf dem historischen Datendiagramm je nach Bildschirmauflösung einen Zeitrahmen von mehr als einem Tag auswählen, werden in den Diagrammen die maximalen Werte für Reaktionszeit und IOPS über die Anzahl der Tage hinweg angezeigt.
+
+====
+
+
+== Optionen
+
+* *Zeitauswahl*
++
+Gibt den Zeitbereich an, über den die Volume-Performance-Statistiken für die gesamte Seite angezeigt werden sollen. Sie können 1 Tag (*1d*) bis 30 Tage (*30d*) anklicken oder auf *Benutzerdefiniert* klicken, um einen benutzerdefinierten Bereich auszuwählen. Für einen benutzerdefinierten Bereich können Sie ein Anfang- und Enddatum auswählen und dann auf *Aktualisieren* klicken, um die gesamte Seite zu aktualisieren.
+
++
+[NOTE]
+====
+Wenn Sie auf der Seite Ereignisdetails auf die Seite Performance/Volume Details zugreifen, indem Sie auf den Namenslink eines Volumes klicken, wird standardmäßig automatisch ein Zeitbereich, z. B. 1 Tag oder 5 Tage vor dem aktuellen Tag, ausgewählt. Wenn Sie den Schieberegler im historischen Datendiagramm verschieben, ändert sich der Zeitbereich in einen benutzerdefinierten Bereich, aber die Auswahl *Benutzerdefiniert* Zeit ist nicht ausgewählt. Die Standardzeitauswahl bleibt ausgewählt.
+
+====
+* ***Brechen Sie die Daten nach*** auf
++
+Enthält eine Liste von Diagrammen, die Sie zur Seite „Performance/Volume-Details“ hinzufügen können, um detailliertere Performance-Statistiken für das ausgewählte Volume anzuzeigen.
+
+

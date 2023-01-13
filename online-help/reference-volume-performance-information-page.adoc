@@ -1,0 +1,81 @@
+---
+permalink: online-help/reference-volume-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf dieser Seite können Sie eine Liste der physischen und logischen Attribute des Volumes anzeigen. Diese Informationen könnten bei der Beantwortung von Fragen zur Leistungsfähigkeit helfen. Der Titel dieser Seite hängt davon ab, ob Sie ein FlexVol-Volume oder ein FlexGroup-Volume anzeigen. 
+---
+= Performance/Volume oder Performance/FlexGroup Informationsseite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf dieser Seite können Sie eine Liste der physischen und logischen Attribute des Volumes anzeigen. Diese Informationen könnten bei der Beantwortung von Fragen zur Leistungsfähigkeit helfen. Der Titel dieser Seite hängt davon ab, ob Sie ein FlexVol-Volume oder ein FlexGroup-Volume anzeigen.
+
+
+
+== Volume-Attribute
+
+* *Typ*
++
+Typ des Volume, entweder Lesen/Schreiben (RW) oder Datensicherung (DP).
+
+* *Stil*
++
+Stil eines Volumes, entweder FlexVol oder FlexGroup.
+
++
+[NOTE]
+====
+Die Performance-Seiten von Unified Manager unterstützen keine Infinite Volumes.
+
+====
+* * Cluster*
++
+Der Name des Clusters, zu dem dieses FlexVol Volume oder das FlexGroup Volume gehört. Sie können auf den Namen klicken, um in der Seite „Performance/Cluster Explorer“ Cluster-Details anzuzeigen.
+
+* *Aggregate*
++
+Der Name des Aggregats, auf dem sich das FlexVol Volume befindet, oder die Anzahl der Aggregate, auf denen sich dieses FlexGroup Volume befindet.
+
++
+Bei FlexVol-Volumes können Sie auf den Namen klicken, um Details zu Aggregaten auf der Seite mit dem Explorer anzuzeigen. Bei FlexGroup Volumes können Sie auf die Zahl klicken, um die Aggregate anzuzeigen, die in diesem FlexGroup Volume verwendet werden, auf der Seite „Performance/Aggregat-Inventar“.
+
+* *Storage Virtual Machine*
++
+Der Name der SVM, zu der dieses FlexVol Volume oder dieses FlexGroup Volume gehört. Sie können auf der Seite „Performance/SVM Explorer“ auf den Namen klicken, um SVM-Details anzuzeigen.
+
+* *Tiering-Richtlinie*
++
+Die Tiering-Richtlinie für das Volume. Die Richtlinie wirkt sich nur dann aus, wenn das Volume auf einem FabricPool Aggregat bereitgestellt wird. Folgende Richtlinien stehen zur Verfügung:
+
++
+** Keine. Die Daten für dieses Volume verbleiben immer auf der Performance-Tier.
+** Nur Snapshot. Nur Snapshot Daten werden automatisch in die Cloud-Tier verschoben. Alle anderen Daten verbleiben in der Performance-Tier.
+** Backup: Bei Datensicherungs-Volumes werden alle übertragenen Benutzerdaten in der Cloud-Tier gestartet, aber bei späteren Client-Lesevorgängen kann es dazu kommen, heiße Daten in die Performance-Tier zu verschieben.
+** Automatisch. Daten auf diesem Volume werden automatisch zwischen Performance-Tier und Cloud-Tier verschoben, wenn ONTAP feststellt, dass die Daten „`Hot`“ oder „`Cold`“ sind.
+
+
+* *RAID-Typ*
++
+Der Redundanztyp, der auf der Performance-Tier des Aggregats verwendet wird, auf dem sich das Volume befindet. Mögliche Typen:
+
++
+** RAID0
+** RAID4
+** RAID-DP
+** RAID-TEC
+
+
++
+[NOTE]
+====
+Der Wert „`not zutreffende`“ wird für FlexGroup Volumes angezeigt, da sich die zusammengehörigen Volumes auf Aggregaten verschiedener RAID-Typen befinden können.
+
+====
+* * Kapazität (frei/gesamt)*
++
+Der gesamte verfügbare Speicher für das Volume, in Gigabyte und die derzeit verfügbare Speichermenge.
+
+

@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-storage-class-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn Sie Probleme im Zusammenhang mit Speicherplatz in Ihren Speicherklassen lösen müssen, können Sie die Schwellenwerteinstellungen der Speicherkapazität entsprechend den Anforderungen Ihres Unternehmens bearbeiten. Wenn der Schwellenwert überschritten wird, werden Ereignisse generiert und Sie erhalten Benachrichtigungen, wenn Sie für solche Ereignisse konfiguriert haben. 
+---
+= Bearbeiten der Schwellenwerteinstellungen von Speicherklassen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie Probleme im Zusammenhang mit dem Speicherplatz in Ihren Storage-Klassen beheben müssen, können Sie die Schwellenwerteinstellungen der Storage-Kapazität entsprechend den Anforderungen Ihres Unternehmens bearbeiten. Wenn der Schwellenwert überschritten wird, werden Ereignisse generiert und Sie erhalten Benachrichtigungen, wenn Sie für solche Ereignisse konfiguriert haben.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie auf der Seite *Health/Storage Virtual Machines* Inventory eine SVM mit Infinite Volume aus.
+. Klicken Sie auf der Seite *Health/Storage Virtual Machine* Details auf *Actions* > *Schwellenwerte bearbeiten*.
+. Ändern Sie im Dialogfeld *Schwellenwerte für Speicherklassen bearbeiten* die Schwellenwerte nach Bedarf.
+. Klicken Sie auf *Speichern und Schließen*.
+

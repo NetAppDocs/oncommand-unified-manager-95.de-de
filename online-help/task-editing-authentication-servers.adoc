@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Port ändern, den der Unified Manager-Server für die Kommunikation mit Ihrem Authentifizierungsserver verwendet. 
+---
+= Bearbeiten von Authentifizierungsservern
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Port ändern, den der Unified Manager-Server für die Kommunikation mit Ihrem Authentifizierungsserver verwendet.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen die OnCommand-Administratorrolle besitzen.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im linken Einrichtungsmenü auf *Authentifizierung*.
+. Aktivieren Sie auf der Seite *Setup/Authentifizierung* das Kontrollkästchen *Nested Group Lookup deaktivieren*.
+. Wählen Sie im Bereich *Authentifizierungsserver* den Authentifizierungsserver aus, den Sie bearbeiten möchten, und klicken Sie dann auf *Bearbeiten*.
+. Bearbeiten Sie im Dialogfeld *Authentifizierungsserver bearbeiten* die Portdetails.
+. Klicken Sie Auf *Speichern*.
+

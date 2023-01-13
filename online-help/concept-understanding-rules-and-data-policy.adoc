@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-rules-and-data-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn Sie die Konzepte zu Regeln und Datenrichtlinien kennen, können Sie Ihre Infinite Volumes effizient managen. 
+---
+= Allgemeines zu Regeln und Datenrichtlinien
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie die Konzepte zu Regeln und Datenrichtlinien kennen, können Sie Ihre Infinite Volumes effizient managen.

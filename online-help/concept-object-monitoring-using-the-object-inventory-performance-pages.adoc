@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-object-monitoring-using-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Über die Seiten zum Performance-Objektbestand können Sie die Objekt-Performance basierend auf den Werten bestimmter Performance-Zähler oder auf der Grundlage von Performance-Ereignissen überwachen. Dies ist vorteilhaft, da durch die Identifizierung von Objekten mit Performance-Ereignissen die Ursache von Cluster-Performance-Problemen untersucht werden kann. 
+---
+= Objektüberwachung mithilfe der Bestandsseiten des Performance-Objekts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über die Seiten zum Performance-Objektbestand können Sie die Objekt-Performance basierend auf den Werten bestimmter Performance-Zähler oder auf der Grundlage von Performance-Ereignissen überwachen. Dies ist vorteilhaft, da durch die Identifizierung von Objekten mit Performance-Ereignissen die Ursache von Cluster-Performance-Problemen untersucht werden kann.
+
+Auf den Seiten des Performance-Objektbestands werden die zugeordneten Zähler, zugeordnete Objekte und Performance-Schwellenwertrichtlinien für alle Objekte in allen Clustern angezeigt. Auf diesen Seiten können Sie außerdem Richtlinien für Leistungsschwellenwerte auf Objekte anwenden. Sie können die Seite anhand einer beliebigen Spalte sortieren und alle Objektnamen oder -Daten durchsuchen.
+
+Sie können Daten von diesen Seiten in kommagetrennte Werte exportieren (`.csv`) Datei mit der Schaltfläche *Exportieren* und dann die exportierten Daten zum Erstellen von Berichten verwenden.

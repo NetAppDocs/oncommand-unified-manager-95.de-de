@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-executing-protection-workflows-using-wfa.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Workflow Automation lässt sich in Unified Manager integrieren, um Workflows für Ihre Storage-Klassen auszuführen und SVMs mit Infinite Volume zu überwachen, die keine Storage-Klassen haben. 
+---
+= Ausführen von Sicherungs-Workflows mithilfe von OnCommand Workflow Automation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Workflow Automation lässt sich in Unified Manager integrieren, um Workflows für Ihre Storage-Klassen auszuführen und SVMs mit Infinite Volume zu überwachen, die keine Storage-Klassen haben.

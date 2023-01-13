@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-monitoring-cluster-performance-from-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: Das Performance-Dashboard von OnCommand System Manager zeigt den Performance-Status aller Cluster an, die von dieser Instanz von Unified Manager überwacht werden. So können Sie die allgemeine Performance der gemanagten Cluster beurteilen und alle erkannten Ereignisse schnell erfassen, lokalisieren oder zur Lösung zuweisen. 
+---
+= Monitoring der Cluster-Performance über das Performance-Dashboard
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Performance-Dashboard von OnCommand System Manager zeigt den Performance-Status aller Cluster an, die von dieser Instanz von Unified Manager überwacht werden. So können Sie die allgemeine Performance der gemanagten Cluster beurteilen und alle erkannten Ereignisse schnell erfassen, lokalisieren oder zur Lösung zuweisen.

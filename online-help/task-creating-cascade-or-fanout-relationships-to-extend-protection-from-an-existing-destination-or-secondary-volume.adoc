@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-creating-cascade-or-fanout-relationships-to-extend-protection-from-an-existing-destination-or-secondary-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Schutz vor einer bestehenden Beziehung erweitern, indem Sie entweder einen Fanout vom Quell-Volume oder eine Kaskade vom Zielvolumen einer bestehenden Beziehung erstellen. Dies kann der Fall sein, wenn Sie Daten von einem Standort auf mehrere Standorte kopieren oder durch das Erstellen weiterer Backups zusätzlichen Schutz bieten müssen. 
+---
+= Erstellen von Kaskadierungs- oder Fanout-Beziehungen, um den Schutz vor einer bestehenden Schutzbeziehung zu erweitern
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Schutz vor einer bestehenden Beziehung erweitern, indem Sie entweder einen Fanout vom Quell-Volume oder eine Kaskade vom Zielvolumen einer bestehenden Beziehung erstellen. Dies kann der Fall sein, wenn Sie Daten von einem Standort auf mehrere Standorte kopieren oder durch das Erstellen weiterer Backups zusätzlichen Schutz bieten müssen.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Schritte
+
+. Klicken Sie Auf *Schutz* > *Volume Relationships*.
+. Wählen Sie auf der Seite *Schutz/Volume Beziehungen* die SnapMirror Beziehung aus, aus der Sie den Schutz erweitern möchten.
+. Klicken Sie in der Aktionsleiste auf *Schutz erweitern*.
+. Wählen Sie im Menü entweder *aus Quelle* oder *aus Ziel* aus, je nachdem, ob Sie eine Fanout-Beziehung aus der Quelle oder eine Kaskadenbeziehung aus dem Ziel erstellen.
+. Wählen Sie entweder *mit SnapMirror* oder *mit SnapVault* aus, je nach Art der von Ihnen erstellten Schutzbeziehung.
++
+Das Dialogfeld Schutz konfigurieren wird angezeigt.
+
+. Füllen Sie die Informationen aus, wie im Dialogfeld *Schutz konfigurieren* angegeben.
+

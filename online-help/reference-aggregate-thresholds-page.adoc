@@ -1,0 +1,153 @@
+---
+permalink: online-help/reference-aggregate-thresholds-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Configuration/Health schwells für Aggregate können Sie globale Statusschwellenwerte für überwachte Aggregate konfigurieren. Wenn Sie die Optionen global konfigurieren, werden die Standardwerte aller Objekte geändert. Wenn jedoch die Standardwerte auf Objektebene geändert wurden, werden die globalen Werte nicht geändert. 
+---
+= Konfigurations-/Health-Schwellenwerte für Aggregate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Configuration/Health schwells für Aggregate können Sie globale Statusschwellenwerte für überwachte Aggregate konfigurieren. Wenn Sie die Optionen global konfigurieren, werden die Standardwerte aller Objekte geändert. Wenn jedoch die Standardwerte auf Objektebene geändert wurden, werden die globalen Werte nicht geändert.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+Ereignisse werden erzeugt, wenn ein Schwellenwert überschritten wird. Sie können für solche Ereignisse Korrekturmaßnahmen ergreifen.
+
+Die Schwellenwerte sind für das Root-Aggregat des Knotens nicht anwendbar.
+
+Sie können für die folgenden Aggregate einen Zustandsschwellenwert festlegen: Kapazität, Aggregatwachstum und Snapshot Kopien für Aggregate.
+
+
+
+== Kapazität
+
+Im Kapazitätsbereich können Sie die folgenden Bedingungen für die Aggregat-Kapazität festlegen. Beachten Sie, dass bei Aktivierung von Autogrow auf Volumes im Aggregat die Kapazitätsschwellenwerte für das Aggregat basierend auf der durch Autogrow festgelegten maximalen Volume-Größe gelten, nicht jedoch auf der ursprünglichen Volume-Größe.
+
+* *Raum Fast Voll*
++
+Gibt den Prozentsatz an, bei dem ein Aggregat als fast voll erachtet wird:
+
++
+** Standardwert: 80 Prozent
++
+Der Wert für diesen Schwellenwert muss niedriger sein als der Wert für den Gesamtschwellenwert für den Verwaltungsserver, um ein Ereignis zu generieren.
+
+** Generiertes Ereignis: Fast voll aggregieren
+** Ereignis Schweregrad: Warnung
+
+
+* *Raum Voll*
++
+Gibt den Prozentsatz an, bei dem ein Aggregat als voll betrachtet wird:
+
++
+** Standardwert: 90 Prozent
+** Event generiert: Aggregat voll
+** Ereignis Schweregrad: Fehler
+
+
+* *Fast Überengagiert*
++
+Gibt den Prozentsatz an, an dem ein Aggregat als fast überengagiert betrachtet wird:
+
++
+** Standardwert: 95 Prozent
++
+Der Wert für diesen Schwellenwert muss niedriger sein als der Wert für den zu hohen Gesamtschwellenwert für den Verwaltungsserver, um ein Ereignis zu generieren.
+
+** Event generiert: Fast überengagiert zusammenfassen
+** Ereignis Schweregrad: Warnung
+
+
+* *Überengagiert*
++
+Gibt den Prozentsatz an, an dem ein Aggregat als überengagiert betrachtet wird:
+
++
+** Standardwert: 100 Prozent
+** Event generiert: Zusammenfassung überengagiert
+** Ereignis Schweregrad: Fehler
+
+
+* *Tage Bis Voll*
++
+Gibt die Anzahl der verbleibenden Tage an, bevor die volle Kapazität des Aggregats erreicht ist:
+
++
+** Standardwert: 7
+** Event generiert: Tage aggregieren bis voll
+** Ereignis Schweregrad: Fehler
+
+
+
+
+
+
+== Wachstumsbereich
+
+Im Wachstumsbereich können Sie die folgenden Schwellwerte für das Gesamtwachstum festlegen:
+
+* *Wachstumsrate*
++
+Gibt den Prozentsatz an, bei dem die Wachstumsrate eines Aggregats als normal angesehen wird, bevor das System ein ungewöhnliches Ereignis für die Aggregatwachstumsrate generiert:
+
++
+** Standardwert: 1 Prozent
+** Generiertes Ereignis: Aggregierte Wachstumsrate anormal
+** Ereignis Schweregrad: Warnung
+
+
+* *Empfindlichkeit Der Wachstumsrate*
++
+Gibt den Faktor an, der auf die Standardabweichung der Wachstumsrate eines Aggregats angewendet wird. Wenn die Wachstumsrate die faktorierte Standardabweichung überschreitet, wird ein ungewöhnliches Ereignis für die aggregierte Wachstumsrate generiert.
+
++
+Ein niedrigerer Wert für die Wachstumsrate zeigt an, dass das Aggregat sehr empfindlich auf Veränderungen der Wachstumsrate reagiert. Der Bereich für die Empfindlichkeit der Wachstumsrate liegt zwischen 1 und 5.
+
++
+** Standardwert: 2
+
+
++
+[NOTE]
+====
+Wenn Sie die Wachstumssensitivität für Aggregate auf der globalen Schwellenebene ändern, wird die Änderung auch auf die Wachstumsratenempfindlichkeit für Volumes auf der globalen Schwellenebene angewendet.
+
+====
+
+
+
+
+== Bereich der Snapshot-Kopien
+
+Im Bereich Snapshot Kopien können Sie die folgenden Schwellwerte der Snapshot Reserve einstellen:
+
+* *Snapshot Reserve Voll*
++
+Gibt den Prozentsatz an, an dem ein Aggregat den gesamten reservierten Speicherplatz für Snapshot Kopien belegt hat:
+
++
+** Standardwert: 90 Prozent
+** Event generiert: Zusammenfassung der Snapshot Reserve voll
+** Ereignis Schweregrad: Warnung
+
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Wiederherstellen auf Werkseinstellungen*
++
+Ermöglicht die Wiederherstellung der Konfigurationseinstellungen auf die werkseitigen Standardwerte.
+
+* *Speichern*
++
+Speichert die Konfigurationseinstellungen für die ausgewählte Option.
+
+

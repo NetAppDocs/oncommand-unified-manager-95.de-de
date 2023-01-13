@@ -1,0 +1,54 @@
+---
+permalink: online-help/reference-add-annotation-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Im Dialogfeld Anmerkung hinzufügen können Sie benutzerdefinierte Anmerkungen erstellen, die Sie mit Clustern, Volumes und Storage-Virtual-Machines \(SVMs\) über Anmerkungsregeln verknüpfen können.' 
+---
+= Dialogfeld Anmerkung hinzufügen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Anmerkung hinzufügen können Sie benutzerdefinierte Annotationen erstellen, die Sie über Annotationsregeln mit Clustern, Volumes und Storage Virtual Machines (SVMs) verknüpfen können.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Anmerkungsname*
++
+Gibt den Namen der Anmerkung an. Sie müssen einen eindeutigen Namen für die Anmerkung eingeben.
+
+* *Beschreibung*
++
+Gibt eine aussagekräftige Beschreibung der Anmerkung an.
+
+
+
+
+
+== Anmerkungswerte
+
+* *Hinzufügen*
++
+Fügt der ausgewählten Anmerkung einen neuen Wert hinzu.
+
+* *Löschen*
++
+Löscht den ausgewählten Wert für eine Anmerkung.
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Speichern und Schließen*
++
+Speichert die neue Anmerkung und schließt das Dialogfeld Anmerkung hinzufügen.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Anmerkung hinzufügen, ohne Ihre Änderungen zu speichern.
+
+

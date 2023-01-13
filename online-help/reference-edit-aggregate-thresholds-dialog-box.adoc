@@ -1,0 +1,121 @@
+---
+permalink: online-help/reference-edit-aggregate-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Benachrichtigungen konfigurieren, um Benachrichtigungen zu senden, wenn ein Ereignis im Zusammenhang mit der Kapazität eines Aggregats generiert wird, und Sie können Korrekturmaßnahmen für das Ereignis ergreifen. Beispielsweise können Sie für den Schwellenwert für „Aggregate Full“ eine Meldung konfigurieren, um eine Benachrichtigung zu senden, wenn der Zustand über einen bestimmten Zeitraum beibehalten wird. 
+---
+= Dialogfeld „Aggregat-Schwellenwerte bearbeiten“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Benachrichtigungen konfigurieren, um Benachrichtigungen zu senden, wenn ein Ereignis bezüglich der Kapazität eines Aggregats generiert wird. Korrekturmaßnahmen können vorgenommen werden, um das Ereignis einzuleiten. Beispielsweise können Sie für den Schwellenwert für „Aggregate Full“ eine Meldung konfigurieren, um eine Benachrichtigung zu senden, wenn der Zustand über einen bestimmten Zeitraum beibehalten wird.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+Im Dialogfeld „Aggregat-Schwellenwerte bearbeiten“ können Sie Schwellenwerte auf Aggregatebene konfigurieren, die auf ausgewählte Aggregate angewendet werden. Wenn Sie Schwellenwerte auf Aggregatebene konfigurieren, haben diese Vorrang vor den globalen Schwellenwerten. Sie können Schwellwerte für Kapazität, Wachstum und Snapshot Kopien auf Aggregatebene konfigurieren. Wenn diese Einstellungen nicht konfiguriert sind, werden die globalen Schwellenwerte angewendet.
+
+[NOTE]
+====
+Die Schwellenwerte sind für das Root-Aggregat des Knotens nicht anwendbar.
+
+====
+
+
+== Kapazität
+
+Im Kapazitätsbereich können Sie die folgenden Bedingungen für die Aggregat-Kapazität festlegen:
+
+* *Raum Fast Voll*
++
+Gibt den Prozentsatz an, bei dem ein Aggregat als fast voll erachtet wird. Er zeigt auch die Größe des Aggregats an, die dem angegebenen Schwellwert entspricht.
+
++
+Sie können auch den Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+* *Raum Voll*
++
+Gibt den Prozentsatz an, bei dem ein Aggregat als voll betrachtet wird. Er zeigt auch die Größe des Aggregats an, die dem angegebenen Schwellwert entspricht.
+
++
+Sie können auch den Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+* *Fast Überengagiert*
++
+Gibt den Prozentsatz an, bei dem ein Aggregat als fast zu hoch angesetzt betrachtet wird.
+
+* *Überengagiert*
++
+Gibt den Prozentsatz an, mit dem ein Aggregat als überengagiert betrachtet wird.
+
+* *Tage Bis Voll*
++
+Gibt die Anzahl der verbleibenden Tage an, bevor die volle Kapazität des Aggregats erreicht ist.
+
+
+
+
+
+== Wachstumsbereich
+
+Im Wachstumsbereich können Sie die folgenden Schwellwerte für das Gesamtwachstum festlegen:
+
+* *Wachstumsrate*
++
+Gibt den Prozentsatz an, bei dem die Wachstumsrate eines Aggregats als normal angesehen wird, bevor das System ein ungewöhnliches Ereignis für die aggregierte Wachstumsrate generiert.
+
+* *Empfindlichkeit Der Wachstumsrate*
++
+Gibt den Faktor an, der auf die Standardabweichung der Wachstumsrate eines Aggregats angewendet wird. Wenn die Wachstumsrate die faktorierte Standardabweichung überschreitet, wird ein ungewöhnliches Ereignis für die aggregierte Wachstumsrate generiert.
+
++
+Ein niedrigerer Wert für die Wachstumsrate zeigt an, dass das Aggregat sehr empfindlich auf Veränderungen der Wachstumsrate reagiert.
+
++
+[NOTE]
+====
+Wenn Sie die Wachstumssensitivität für Aggregate auf der globalen Schwellenebene ändern, wird die Änderung auch auf die Wachstumsratenempfindlichkeit für Volumes auf der globalen Schwellenebene angewendet.
+
+====
+
+
+
+
+== Bereich der Snapshot-Kopien
+
+Im Bereich Snapshot Kopien können Sie die folgenden Schwellwerte der Snapshot Reserve einstellen:
+
+* *Snapshot Reserve Voll*
++
+Gibt den Prozentsatz an, an dem ein Aggregat den gesamten reservierten Speicherplatz für Snapshot Kopien verbraucht hat.
+
++
+Sie können auch den Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Befehlsschaltflächen können Sie die folgenden Aufgaben für ein ausgewähltes Aggregat ausführen:
+
+* *Auf Standard zurücksetzen*
++
+Ermöglicht es Ihnen, die Schwellenwerte auf Aggregatebene auf die globalen Werte wiederherzustellen.
+
+* *Speichern*
++
+Speichert alle Schwellwerteinstellungen.
+
+* *Speichern und Schließen*
++
+Speichert alle Schwellwerteinstellungen und schließt das Dialogfeld.
+
+* *Abbrechen*
++
+Ignoriert die Änderungen (falls vorhanden) an den Schwellenwerteinstellungen und schließt das Dialogfeld.
+
+

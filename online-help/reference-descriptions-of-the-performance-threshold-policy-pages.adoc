@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-descriptions-of-the-performance-threshold-policy-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie verwenden die Seite Configuration/Performance schwellungen, um Richtlinien für Performance-Schwellenwerte zu erstellen, zu bearbeiten, zu klonen, zu löschen und anzuzeigen. 
+---
+= Beschreibungen der Seiten für Richtlinien zu Leistungsschwellenwerten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie verwenden die Seite Configuration/Performance schwellungen, um Richtlinien für Performance-Schwellenwerte zu erstellen, zu bearbeiten, zu klonen, zu löschen und anzuzeigen.
+
+Die folgenden Themen werden angezeigt, wenn Sie auf der entsprechenden Seite auf *Hilfe* klicken.

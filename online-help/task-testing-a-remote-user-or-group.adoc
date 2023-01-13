@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-testing-a-remote-user-or-group.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können überprüfen, ob ein Remote-Benutzer oder eine Remote-Gruppe auf den Unified Manager-Server zugreifen kann, indem Sie die für Ihre Authentifizierungsserver festgelegten Authentifizierungseinstellungen verwenden. 
+---
+= Testen eines Remote-Benutzers oder einer Remote-Gruppe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können überprüfen, ob ein Remote-Benutzer oder eine Remote-Gruppe auf den Unified Manager-Server zugreifen kann, indem Sie die für Ihre Authentifizierungsserver festgelegten Authentifizierungseinstellungen verwenden.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen die Remote-Authentifizierung aktiviert und die Authentifizierungseinstellungen so konfiguriert haben, dass der Unified Manager-Server den Remote-Benutzer oder die Remote-Gruppe validieren kann.
+* Sie müssen die OnCommand-Administratorrolle besitzen.
+
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im linken Menü Verwaltung auf *Benutzer*.
+. Wählen Sie auf der Seite * Management/Users* einen Remote-Benutzer oder eine Remote-Gruppe aus, die Sie validieren möchten, und klicken Sie dann auf *Test*.
+

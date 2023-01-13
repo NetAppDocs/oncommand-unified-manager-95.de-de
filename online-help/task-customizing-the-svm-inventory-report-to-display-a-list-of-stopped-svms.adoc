@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-svm-inventory-report-to-display-a-list-of-stopped-svms.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den SVM-Bestandsbericht anpassen, um eine Liste der angehalten SVMs anzuzeigen. Der Bericht filtert die SVMs nach ihrem Status. 
+---
+= Sie können den SVM-Bestandsbericht anpassen, um eine Liste der angehalten SVMs anzuzeigen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den SVM-Bestandsbericht anpassen, um eine Liste der angehalten SVMs anzuzeigen. Der Bericht filtert die SVMs nach ihrem Status.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. Um SVMs nach Status zu filtern, klicken Sie auf die Spalte *Status* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Liste *Bedingung* die Option *gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *angehalten*.
+. Klicken Sie auf *OK*.
+

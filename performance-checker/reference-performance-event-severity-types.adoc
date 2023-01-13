@@ -1,0 +1,37 @@
+---
+permalink: performance-checker/reference-performance-event-severity-types.html 
+sidebar: sidebar 
+keywords:  
+summary: Jedes Performance-Ereignis ist mit einem Schweregrad verknüpft, der Ihnen dabei hilft, die Ereignisse zu priorisieren, die unmittelbare Korrekturmaßnahmen erfordern. 
+---
+= Arten von Schweregrad für Performance-Ereignisse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Jedes Performance-Ereignis ist mit einem Schweregrad verknüpft, der Ihnen dabei hilft, die Ereignisse zu priorisieren, die unmittelbare Korrekturmaßnahmen erfordern.
+
+* * Kritisch*
++
+Ein Performance-Ereignis, das zu einer Serviceunterbrechung führen kann, wenn keine Korrekturmaßnahmen sofort ergriffen werden.
+
++
+Kritische Ereignisse werden nur von benutzerdefinierten Schwellenwerten gesendet.
+
+* *Warnung*
++
+Ein Performance-Zähler für ein Cluster-Objekt befindet sich außerhalb des normalen Bereichs und sollte überwacht werden, um sicherzustellen, dass es den kritischen Schweregrad nicht erreicht. Ereignisse dieses Schweregrades führen nicht zu einer Serviceunterbrechung und unmittelbare Korrekturmaßnahmen sind möglicherweise nicht erforderlich.
+
++
+Warnereignisse werden von benutzerdefinierten, systemdefinierten oder dynamischen Schwellenwerten gesendet.
+
+* *Information*
++
+Das Ereignis tritt auf, wenn ein neues Objekt erkannt wird oder wenn eine Benutzeraktion durchgeführt wird. Beispiel: Wenn ein Storage-Objekt gelöscht wird oder wenn Konfigurationsänderungen vorliegen, wird das Ereignis mit dem Schweregrad „Informationen“ generiert.
+
++
+Informationsereignisse werden direkt von ONTAP gesendet, wenn eine Konfigurationsänderung erkannt wird.
+
+

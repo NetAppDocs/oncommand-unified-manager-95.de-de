@@ -1,0 +1,47 @@
+---
+permalink: online-help/task-deleting-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können eine Regel aus einer Datenrichtlinie löschen, wenn sie nicht mehr benötigt wird. Beispielsweise möchten Sie eine Regel für ein bestimmtes Verzeichnis löschen, das nicht mehr gültig ist. 
+---
+= Regeln werden gelöscht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Regel aus einer Datenrichtlinie löschen, wenn sie nicht mehr benötigt wird. Beispielsweise möchten Sie eine Regel für ein bestimmtes Verzeichnis löschen, das nicht mehr gültig ist.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Die Registerkarte Datenrichtlinie ist nur für eine SVM mit Infinite Volume sichtbar.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie auf der Seite *Health/Storage Virtual Machines* Inventory eine geeignete SVM aus.
+. Klicken Sie Auf *Datenrichtlinie*.
++
+Es wird eine Liste der Regeln in der Datenrichtlinie für die ausgewählte SVM mit Infinite Volume angezeigt.
+
+. Wählen Sie die Regel aus, die Sie löschen möchten, und klicken Sie dann auf *Löschen*.
++
+[NOTE]
+====
+Sie können die Standardregel nicht löschen.
+
+====
+. Vorschau aller anderen Änderungen an der Datenrichtlinie.
+. Klicken Sie auf *Aktivieren*, um die Änderungen in den Regeleigenschaften in der SVM zu aktivieren.
+

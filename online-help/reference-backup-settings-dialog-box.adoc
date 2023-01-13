@@ -1,0 +1,77 @@
+---
+permalink: online-help/reference-backup-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Über das Dialogfeld Einstellungen für die Datenbanksicherung können Sie einen Backup-Pfad und die Anzahl der Aufbewahrung angeben und einen Backup-Zeitplan für eine ausgewählte Backupinstanz aktivieren. 
+---
+= Dialogfeld „Einstellungen für die Datenbanksicherung“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über das Dialogfeld Einstellungen für die Datenbanksicherung können Sie einen Backup-Pfad und die Anzahl der Aufbewahrung angeben und einen Backup-Zeitplan für eine ausgewählte Backupinstanz aktivieren.
+
+Sie können die folgenden Datenbank-Backup-Einstellungen ändern:
+
+* *Pfad*
++
+Gibt den Pfad zum Speicherort der Sicherungsdateien an. Die folgende Tabelle gibt das Format des Backup-Pfads und die Standardstandorte für verschiedene Betriebssysteme an:
+
++
+|===
+| Host-Betriebssystem | Format des Backup-Pfads 
+
+
+ a| 
+Virtuelle Appliance
+ a| 
+`/opt/netapp/data/ocum-backup`
+
+
+
+ a| 
+Red hat Enterprise Linux oder CentOS
+ a| 
+`/data/ocum-backup`
+
+
+
+ a| 
+Microsoft Windows
+ a| 
+`C:\ProgramData\NetApp\OnCommandAppData\ocum\backup\`
+
+|===
+* *Anzahl Der Einbehalt*
++
+Gibt die maximale Anzahl von Backups an, die von Unified Manager beibehalten werden sollen. Der Standardwert ist zehn.
+
+* *Zeitplanhäufigkeit Aktivieren*
++
+Mit dieser Option können Sie festlegen, wann ein Backup geplant werden soll; Sie können täglich oder wöchentlich wählen.
+
+* * Daily*
++
+Gibt den täglichen Backup-Zeitplan mit der Zeit an.
+
+* *Wöchentlich*
++
+Gibt den wöchentlichen Backup-Zeitplan mit dem Tag und der Uhrzeit an.
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Speichern und Schließen*
++
+Speichert die Sicherungsdatei und schließt das Dialogfeld. Unified Manager speichert die Sicherungsdatei im folgenden Format: `um_um_version_backup_os_timestamp.7z`.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Einstellungen für die Datenbanksicherung, ohne Ihre Änderungen zu speichern.
+
+

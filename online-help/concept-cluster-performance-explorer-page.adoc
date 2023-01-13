@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-cluster-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Seite „Performance/Cluster Explorer“ bietet eine detaillierte Performance-Übersicht über alle Cluster, die von Unified Manager gemanagt werden. 
+---
+= Seite „Performance/Cluster Explorer“ beschrieben
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite „Performance/Cluster Explorer“ bietet eine detaillierte Performance-Übersicht über alle Cluster, die von Unified Manager gemanagt werden.
+
+Auf der Seite „Performance/Cluster Explorer“ können Sie die Cluster-Performance nachverfolgen und die Objekte in diesem Cluster während eines bestimmten Zeitraums vergleichen. Dies erleichtert die Fehlerbehebung und Feinanpassung der Performance eines Clusters.
+
+Mithilfe der Funktion „View and Compare“ können Sie die Performance des Clusters mit vergleichen:
+
+* Die Nodes in diesem Cluster
+* Die Storage Virtual Machines (SVMs) dieses Clusters
+* Die Aggregate auf diesem Cluster
+
+
+Auf der Seite „Performance/Cluster Explorer“ können Sie:
+
+* Zeigen Sie Probleme mit Schwellenwerten und deren Details an
+* Nachverfolgung von Cluster-Performance-Daten
+* Untersuchung und Behebung von Problemen mit Schwellenwerten
+* Untersuchung und Behebung von Performance-Problemen
+

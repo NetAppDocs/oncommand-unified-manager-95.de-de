@@ -1,0 +1,72 @@
+---
+permalink: online-help/reference-setup-workflow-automation-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Setup/Workflow-Automatisierung können Sie die Einstellungen für die Integration von OnCommand Workflow Automation in Unified Manager konfigurieren. Sie können die Einstellungen auch hinzufügen, ändern oder löschen. 
+---
+= Seite „Setup/Workflow Automation“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Setup/Workflow-Automatisierung können Sie die Einstellungen für die Integration von OnCommand Workflow Automation in Unified Manager konfigurieren. Sie können die Einstellungen auch hinzufügen, ändern oder löschen.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Unified Manager Datenbankbenutzer
+
+In diesem Bereich können Sie die Anmeldeinformationen eines Datenbankbenutzers eingeben, der für die Verbindung von Unified Manager mit Workflow Automation erforderlich ist:
+
+* *Name*
++
+Ermöglicht die Angabe des Benutzernamens eines Datenbankbenutzers, der für den Zugriff auf Daten in der Unified Manager-Datenbank verwendet werden kann. Standardmäßig ist kein Datenbankbenutzer ausgewählt. Sie können einen Datenbankbenutzer aus der Dropdown-Liste auswählen.
+
+* *Passwort*
++
+Ermöglicht Ihnen die Angabe eines Passworts für den angegebenen Benutzernamen.
+
+
+
+
+
+== Belege für den Erfolg von OnCommand Workflow Automation
+
+In diesem Bereich können Sie die Zugangsdaten für ein Workflow Automation Konto eingeben, das für die Verbindung mit Unified Manager erforderlich ist:
+
+* *Hostname oder IP-Adresse*
++
+Gibt den Namen oder die IP-Adresse des Workflow Automation Host-Servers an, der zum Pairing mit Unified Manager verwendet wird.
+
+* *Port*
++
+Zeigt die erforderliche Portnummer des Workflow Automation Host-Servers an, der 443 ist.
+
+* *Benutzername*
++
+Ermöglicht Ihnen, einen Benutzernamen anzugeben, der zur Anmeldung bei Workflow Automation verwendet werden kann.
+
+* *Passwort*
++
+Ermöglicht Ihnen die Angabe eines Passworts für den angegebenen Benutzernamen.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Befehlsschaltflächen können Sie die Setup-Optionen entfernen, speichern oder abbrechen:
+
+* *Setup Entfernen*
++
+Der Workflow Automation Setup wurde aus Unified Manager entfernt.
+
+* *Speichern*
++
+Speichert die Konfigurationseinstellungen für die ausgewählte Option.
+
+

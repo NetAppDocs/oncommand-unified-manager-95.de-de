@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-event-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Ereignisse informieren Sie über Probleme in Ihrer Umgebung. Sie können die Seite „Ereignisinventar“ und die Seite „Ereignisdetails“ verwenden, um alle Ereignisse zu überwachen. Über das Dialogfeld „Benachrichtigungseinstellungen“ können Sie Benachrichtigungen konfigurieren. Über die Seite „Ereignisse konfigurieren/managen“ können Ereignisse deaktiviert oder aktiviert werden. 
+---
+= Beschreibung der Ereignisfenster und Dialogfelder
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ereignisse informieren Sie über Probleme in Ihrer Umgebung. Sie können die Seite „Ereignisinventar“ und die Seite „Ereignisdetails“ verwenden, um alle Ereignisse zu überwachen. Über das Dialogfeld „Benachrichtigungseinstellungen“ können Sie Benachrichtigungen konfigurieren. Über die Seite „Ereignisse konfigurieren/managen“ können Ereignisse deaktiviert oder aktiviert werden.

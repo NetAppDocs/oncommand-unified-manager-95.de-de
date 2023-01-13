@@ -1,0 +1,68 @@
+---
+permalink: install/task-upgrading-the-host-os-from-rhel-6-x-to-7-x.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn Sie bereits Unified Manager auf einem Red hat Enterprise Linux 6.x-System installiert haben und jetzt ein Upgrade auf Red hat Enterprise Linux 7.x durchführen müssen, müssen Sie eines der in diesem Thema aufgeführten Verfahren befolgen. In beiden Fällen müssen Sie eine Sicherung von Unified Manager auf dem Red hat Enterprise Linux 6.x-System erstellen und anschließend die Sicherung auf einem Red hat Enterprise Linux 7.x-System wiederherstellen. 
+---
+= Aktualisieren des Host-Betriebssystems von Red hat Enterprise Linux 6.x auf 7.x
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie bereits Unified Manager auf einem Red hat Enterprise Linux 6.x-System installiert haben und jetzt ein Upgrade auf Red hat Enterprise Linux 7.x durchführen müssen, müssen Sie eines der in diesem Thema aufgeführten Verfahren befolgen. In beiden Fällen müssen Sie eine Sicherung von Unified Manager auf dem Red hat Enterprise Linux 6.x-System erstellen und anschließend die Sicherung auf einem Red hat Enterprise Linux 7.x-System wiederherstellen.
+
+
+
+== Über diese Aufgabe
+
+Der Unterschied zwischen den beiden unten aufgeführten Optionen besteht darin, dass Sie in einem Fall die Wiederherstellung von Unified Manager auf einem neuen RHEL 7.x-Server durchführen und in dem anderen Fall die Wiederherstellung auf demselben Server durchführen.
+
+Da diese Aufgabe erfordert, dass Sie auf dem Red hat Enterprise Linux 6.x-System ein Backup von Unified Manager erstellen, sollten Sie das Backup nur dann erstellen, wenn Sie bereit sind, den gesamten Upgrade-Prozess abzuschließen, sodass Unified Manager für den kürzesten Zeitraum offline ist. In der Unified Manager-Benutzeroberfläche werden Lücken in gesammelten Daten für den Zeitraum angezeigt, in dem das Red hat Enterprise Linux 6.x-System heruntergefahren wird, und bevor das neue Red hat Enterprise Linux 7.x gestartet wird.
+
+Weitere Informationen zu den Backup- und Wiederherstellungsprozessen finden Sie in der Online-Hilfe des _Unified Manager_.
+
+*Aktualisieren des Host-Betriebssystems mit einem neuen Server*
+
+Führen Sie diese Schritte aus, wenn Sie ein Ersatzsystem haben, auf dem Sie RHEL 7.x-Software installieren können, so dass Sie die Unified Manager-Wiederherstellung auf diesem System durchführen können, während das RHEL 6.x-System weiterhin verfügbar ist.
+
+. Installieren und konfigurieren Sie einen neuen Server mit der Red hat Enterprise Linux 7.x-Software.
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Red hat Software und Installationsanforderungen]
+
+. Installieren Sie auf dem Red hat Enterprise Linux 7.x-System dieselbe Version der Unified Manager-Software, die Sie auf dem vorhandenen Red hat Enterprise Linux 6.x-System verwenden.
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Installation von Unified Manager auf Red hat Enterprise Linux]
+
++
+Starten Sie die UI nicht, und konfigurieren Sie keine Cluster-, Benutzer- oder Authentifizierungseinstellungen, wenn die Installation abgeschlossen ist. Die Sicherungsdatei füllt diese Informationen während des Wiederherstellungsprozesses aus.
+
+. Erstellen Sie auf dem Red hat Enterprise Linux 6.x-System aus dem Menü Administration in der Web-Benutzeroberfläche ein Unified Manager-Backup und kopieren Sie die Sicherungsdatei anschließend an einen externen Speicherort.
+. Fahren Sie auf dem Red hat Enterprise Linux 6.x-System Unified Manager herunter.
+. Kopieren Sie auf dem Red hat Enterprise Linux 7.x-System die Sicherungsdatei vom externen Speicherort nach `/data/ocum-backup/`, Und geben Sie dann den folgenden Befehl ein, um die Unified Manager-Datenbank aus der Sicherungsdatei wiederherzustellen:``um backup restore -f /opt/netapp/data/ocum-backup/<backup_file_name>``
+. Geben Sie die IP-Adresse oder URL in einem unterstützten Webbrowser ein, um die Unified Manager Web-UI zu starten, und melden Sie sich anschließend beim System an.
+
+
+Sobald Sie überprüft haben, ob das System ordnungsgemäß funktioniert, können Sie Unified Manager vom Red hat Enterprise Linux 6.x-System entfernen.
+
+*Aktualisierung des Host-Betriebssystems auf demselben Server*
+
+Befolgen Sie diese Schritte, wenn Sie kein Ersatzsystem haben, auf dem Sie RHEL 7.x Software installieren können.
+
+. Erstellen Sie im Menü Administration in der Web UI ein Backup von Unified Manager und kopieren Sie die Sicherungsdatei anschließend an einen externen Speicherort.
+. Entfernen Sie das Red hat Enterprise Linux 6.x-Image aus dem System, und löschen Sie das System vollständig.
+. Installation und Konfiguration der Red hat Enterprise Linux 7.x-Software auf demselben System
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Red hat Software und Installationsanforderungen]
+
+. Installieren Sie auf dem Red hat Enterprise Linux 7.x-System dieselbe Version der Unified Manager-Software, die Sie auf dem Red hat Enterprise Linux 6.x-System hatten.
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Installation von Unified Manager auf Red hat Enterprise Linux]
+
++
+Starten Sie die UI nicht, und konfigurieren Sie keine Cluster-, Benutzer- oder Authentifizierungseinstellungen, wenn die Installation abgeschlossen ist. Die Sicherungsdatei füllt diese Informationen während des Wiederherstellungsprozesses aus.
+
+. Kopieren Sie die Sicherungsdatei vom externen Speicherort nach `/data/ocum-backup/`, Und geben Sie dann den folgenden Befehl ein, um die Unified Manager-Datenbank aus der Sicherungsdatei wiederherzustellen:``um backup restore -f /opt/netapp/data/ocum-backup/<backup_file_name>``
+. Geben Sie die IP-Adresse oder URL in einem unterstützten Webbrowser ein, um die Unified Manager Web-UI zu starten, und melden Sie sich anschließend beim System an.
+

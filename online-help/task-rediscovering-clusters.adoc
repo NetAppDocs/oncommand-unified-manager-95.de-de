@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-rediscovering-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können ein Cluster manuell auf der Seite „Configuration/Cluster Data Sources“ wiederfinden, um die neuesten Informationen über den Systemzustand, den Überwachungsstatus und den Performance-Status des Clusters abzurufen. 
+---
+= Cluster-Erkennung neu ermitteln
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein Cluster manuell auf der Seite „Configuration/Cluster Data Sources“ wiederfinden, um die neuesten Informationen über den Systemzustand, den Überwachungsstatus und den Performance-Status des Clusters abzurufen.
+
+
+
+== Über diese Aufgabe
+
+Sie können ein Cluster manuell wiederentdecken, wenn Sie den Cluster aktualisieren möchten - z. B. indem Sie die Größe eines Aggregats erhöhen, wenn der Speicherplatz nicht ausreicht - und Sie möchten, dass Unified Manager die Änderungen entdeckt, die Sie vornehmen.
+
+Wenn Unified Manager mit OnCommand Workflow Automation (WFA) kombiniert wird, löst das Pairing die Neuerfassung der von WFA gecachten Daten aus.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Konfiguration* > *Cluster-Datenquellen*.
+. Klicken Sie auf der Seite *Konfiguration/Cluster-Datenquellen* auf *Wiederentdecken*.
++
+Unified Manager erkennt das ausgewählte Cluster erneut und zeigt den neuesten Zustand und Performance-Status an.
+
++
+[NOTE]
+====
+Sie können den Überwachungsstatus des Clusters im rechten Bereich der Seite Dashboards/Cluster-Ansicht abrufen.
+
+====
+

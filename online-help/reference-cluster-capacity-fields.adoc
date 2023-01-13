@@ -1,0 +1,100 @@
+---
+permalink: online-help/reference-cluster-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit dem Bericht „Storage Summary“ können Sie zusammengefasste Informationen zur Storage-Kapazität in den HA-Paaren anzeigen. Anhand dieser Informationen erhalten Sie Einblick in mögliche Kapazitätsrisiken und können geeignete Maßnahmen zur Neuverteilung des Workloads ergreifen. Cluster-Informationen mit einem Node sind im Bericht nicht sichtbar. 
+---
+= Zusammenfassungsbericht über Storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit dem Bericht „Storage Summary“ können Sie zusammengefasste Informationen zur Storage-Kapazität in den HA-Paaren anzeigen. Anhand dieser Informationen erhalten Sie Einblick in mögliche Kapazitätsrisiken und können geeignete Maßnahmen zur Neuverteilung des Workloads ergreifen. Cluster-Informationen mit einem Node sind im Bericht nicht sichtbar.
+
+
+
+== Übersicht Storage-Bericht – Diagrammansicht
+
+Der Bericht „Speicherübersicht“ wird in zwei Formaten angezeigt:
+
+* Übersicht Storage-Bericht – Diagrammansicht
+* Tabellarische Ansicht des Berichts „Storage Summary“
+
+
+Das Diagramm zeigt den Kapazitätstrends der genutzten und nicht genutzten Datenkapazität der Aggregate für einen bestimmten Zeitraum. Die Gesamtkapazität wird auf der vertikalen (y) Achse und dem Cluster-Namen auf der horizontalen (x)-Achse angezeigt. Daher stellt jeder Balken im Diagramm einen Cluster dar. Sie können die Details zu bestimmten Punkten im Diagramm anzeigen, indem Sie den Cursor auf einen bestimmten Punkt positionieren.
+
+* * Clustername*
++
+Zeigt den Cluster-Namen an.
+
+* *HA-Paar*
++
+Zeigt den HA-Paar-Wert an, der durch die Bildung von zwei Nodes ermittelt wird.
+
+* *Modell*
++
+Zeigt den Namen des Modells an.
+
+* *Betriebssystemversion*
++
+Zeigt die Version des verwendeten ONTAP an.
+
+* *Gesamtbruttokapazität*
++
+Zeigt die gesamte physische Kapazität aller Festplatten im Array an.
+
+* *Unkonfigurierte Rohkapazität*
++
+Zeigt die nicht konfigurierte Kapazität von Festplatten an, deren Containertyp nicht „Aggregate“, „Broken“, „Spare“ oder „Shared“ ist. Diese Kapazität ist immer höher als die physische Kapazität der Festplatte in ONTAP. Nehmen Sie beispielsweise eine 2-TB-Festplatte in Betracht. Die physische Kapazität der Festplatte beträgt 1.6 TB in ONTAP, während die nicht konfigurierte Rohkapazität in Unified Manager 1.8 TB beträgt.
+
+* *Gesamtkapazität*
++
+Zeigt die Gesamtgröße der verfügbaren Aggregate für den Benutzer an. Dies schließt die Snapshot Kopie-Reserve ein.
+
+* *Verwendete Gesamtkapazität*
++
+Zeigt die Kapazität an, die bereits in Aggregaten verwendet wird. Dies schließt die Kapazität ein, die von Volumes, LUNs und anderen Technologieköpfen für Storage-Effizienz verbraucht wird.
+
+* * Nicht Genutzte Kapazität Aggregieren*
++
+Zeigt die Kapazität an, die möglicherweise zum Speichern zusätzlicher Daten im Aggregat verfügbar ist. Dies schließt die Snapshot Kopie-Reserve ein.
+
+* *Zugewiesene LUN-Kapazität*
++
+Zeigt die Kapazität der zugeordneten LUNs an.
+
+* *Nicht zugewiesene LUN-Kapazität*
++
+Zeigt die Kapazität aller LUNs an, die dem Host nicht zugeordnet sind.
+
+* *Volumen Gesamtkapazität*
++
+Zeigt die Gesamtkapazität der Volumes an (verwendet plus nicht genutzt).
+
+* *Volumen Genutzte Kapazität*
++
+Zeigt die verwendete Kapazität der Volumes an.
+
+* *Volumen Ungenutzte Kapazität*
++
+Zeigt die ungenutzte Kapazität der Volumes an.
+
+* *Volume Protection Kapazität*
++
+Zeigt die Kapazität der Volumes an, für die SnapMirror und SnapVault aktiviert sind.
+
+* * Cluster Lizenzierte Cloud Stufe Gesamt*
++
+Zeigt die Gesamtkapazität an, die im Cloud-Tier lizenziert wurde. Dieses Feld wird für Storage-Provider angezeigt, die eine FabricPool-Lizenz benötigen, z. B. Amazon S3, IBM Cloud Object Storage, Microsoft Azure Cloud oder Alibaba Cloud Object Storage.
+
+* * Clusterlizenzierte Cloud-Stufe Verwendet*
++
+Zeigt den Speicherplatz an, der von Daten im Cloud-Tier für Storage-Provider verwendet wird, die eine FabricPool Lizenz benötigen.
+
+* *Verwendete Cluster-StorageGRID-Kapazität*
++
+Zeigt den Speicherplatz an, der von Daten im Cloud-Tier für Storage-Provider verwendet wird, die keine FabricPool Lizenz benötigen, z. B. StorageGRID.
+
+

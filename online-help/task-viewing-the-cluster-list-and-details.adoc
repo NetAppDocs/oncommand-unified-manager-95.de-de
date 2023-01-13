@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-viewing-the-cluster-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Seite „Health/Clusters Inventory“ verwenden, um Ihr Clusterinventar anzuzeigen. Auf der Seite „Systemzustand/Cluster Storage Summary“ können in allen Clustern zusammengefasste Informationen zur Storage-Kapazität und -Auslastung angezeigt werden. 
+---
+= Anzeigen der Cluster-Liste und der Details
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Seite „Health/Clusters Inventory“ verwenden, um Ihr Clusterinventar anzuzeigen. Auf der Seite „Systemzustand/Cluster Storage Summary“ können in allen Clustern zusammengefasste Informationen zur Storage-Kapazität und -Auslastung angezeigt werden.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Sie können auch Details für einzelne Cluster anzeigen, beispielsweise für den Zustand des Clusters, die Kapazität, die Konfiguration, LIFs, Nodes, Und Festplatten in diesem Cluster verwenden Sie die Seite „Systemzustand/Cluster-Details“.
+
+Die Details auf der Seite „Health/Clusters Inventory“, „Health/Clusters Storage Summary“ und die Seite „Health/Cluster Details“ unterstützen Sie bei der Planung Ihres Speichers. Vor dem Bereitstellen eines neuen Aggregats können Sie beispielsweise auf der Seite „Systemzustand/Cluster-Inventar“ ein bestimmtes Cluster auswählen und Kapazitätsdetails erhalten, um zu ermitteln, ob der Cluster über den erforderlichen Speicherplatz verfügt.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Gesundheit* > *Cluster*.
+. Wählen Sie im Menü *Ansicht* die Option *Speicherzusammenfassung* aus, um Details zur Speicherkapazität und Auslastung in allen Clustern anzuzeigen
+. Zeigen Sie die vollständigen Details des Clusters auf der Seite *Systemzustand/Cluster* Details an, indem Sie auf den Cluster-Namen klicken.
+

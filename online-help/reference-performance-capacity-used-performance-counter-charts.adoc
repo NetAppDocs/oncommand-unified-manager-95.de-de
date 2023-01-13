@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-performance-capacity-used-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Performance ExplorerPerformance-Kapazität verwendeten Zählerdiagramme zeigen den Prozentsatz der Performance-Kapazität an, die vom Node oder Aggregat verbraucht wird. 
+---
+= Zählerdiagramme mit hoher Performance-Kapazität
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Performance ExplorerPerformance-Kapazität verwendeten Zählerdiagramme zeigen den Prozentsatz der Performance-Kapazität an, die vom Node oder Aggregat verbraucht wird.
+
+[NOTE]
+====
+Daten zur Performance-Kapazität sind nur verfügbar, wenn die Nodes in einem Cluster mit der Software ONTAP 9.0 oder höher installiert sind.
+
+====
+Diese Diagramme gelten nur, wenn das ausgewählte Objekt ein Knoten oder Aggregat ist.
+
+Das Popup-Fenster, das angezeigt wird, wenn sich der Cursor im Diagrammbereich befindet, zeigt die spezifischen Zählerwerte zu bestimmten Zeiten an.
+
+Auf der unteren Seite des Diagramms werden Informationen zur minimalen, maximalen, durchschnittlichen und 95. Perzentil-Performance angezeigt, die für den ausgewählten Zeitraum verwendet wird.
+
+Es stehen zwei Arten von Diagrammen zur Nutzung der Performance-Kapazität zur Verfügung:
+
+
+
+== Genutzte Performance-Kapazität – Zählerdiagramm insgesamt
+
+Zeigt den Prozentsatz der Performance-Kapazität an, die vom Node oder Aggregat verbraucht wird.
+
+* Grüner Bereich
++
+Der Kapazitätswert liegt unter dem in Unified Manager festgelegten Warnschwellenwert.
+
+* Gelber Bereich
++
+Der Kapazitätswert nähert sich dem in Unified Manager festgelegten Warnschwellenwert.
+
+* Roter Bereich
++
+Der Kapazitätswert liegt über dem Warnschwellenwert und nähert sich dem in Unified Manager festgelegten maximalen Schwellenwert.
+
+
+
+
+
+== Genutzte Performance-Kapazität – Aufschlüsselung der Zähler
+
+Zeigt denselben Prozentsatz der Performance-Kapazität an, die in Benutzerprotokolle, System-Hintergrundprozesse und die Menge an freier Performance-Kapazität unterteilt ist.
+
+
+
+== *Zoom-Ansicht*-Taste
+
+Zeigt eine vergrößerte Ansicht der Daten des Zählerdiagramms an.
+
+* Veranstaltungen
++
+Das Auftreten von kritischen, Warn- und Informationsereignissen wird in den Zeitlinien über den Diagrammen angezeigt.
+
+* Schwellenwerte
++
+Die horizontale, gestrichelte Zeile gibt den in Unified Manager festgelegten Kapazitätswarnschwellenwert an.
+
++
+Die rote Linie zeigt den in Unified Manager festgelegten Kapazitätsschwellenwert an.
+
++
+Der schwarze durchgezogene Linie bei 100 % ist der empfohlene Wert für die maximale Performance-Kapazität.
+
+* Zähler
++
+Die Zähler im linken Teilfenster zeigen an, welche Zählerwerte angezeigt werden. Deaktivieren oder Auswählen des image:../media/eye-icon.gif[""] Das mit einem Zähler verknüpft ist, kann den Vergleich einschränken.
+
+

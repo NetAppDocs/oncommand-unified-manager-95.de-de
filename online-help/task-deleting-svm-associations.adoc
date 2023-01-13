@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-deleting-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können SVM-Zuordnungen für Partnerapplikationen löschen, um die sekundäre Bereitstellungsbeziehung zwischen Quell- und Ziel-SVMs zu entfernen. Dies kann beispielsweise geschehen, wenn die Ziel-SVM voll ist und Sie eine neue SVM-Sicherungszuordnung erstellen möchten. 
+---
+= SVM-Zuordnungen werden gelöscht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können SVM-Zuordnungen für Partnerapplikationen löschen, um die sekundäre Bereitstellungsbeziehung zwischen Quell- und Ziel-SVMs zu entfernen. Dies kann beispielsweise geschehen, wenn die Ziel-SVM voll ist und Sie eine neue SVM-Sicherungszuordnung erstellen möchten.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Die Schaltfläche *Löschen* ist deaktiviert, bis mindestens eine SVM-Zuordnung ausgewählt ist. Das Ändern von Zuordnungen mithilfe der Funktionen „Löschen und Erstellen“ wirkt sich nur auf zukünftige Bereitstellungsvorgänge aus. Vorhandene Ziel-Volumes werden nicht verschoben.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Schutz* > *SVM-Zuordnungen*.
+. Wählen Sie mindestens eine SVM-Zuordnung aus.
++
+Die Schaltfläche *Löschen* ist aktiviert.
+
+. Klicken Sie Auf *Löschen.*
++
+Ein Warndialogfeld wird angezeigt.
+
+. Klicken Sie auf *Ja*, um fortzufahren.
++
+Die ausgewählte SVM-Zuordnung wird aus der Liste entfernt.
+
+

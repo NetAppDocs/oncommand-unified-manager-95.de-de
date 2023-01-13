@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-svm-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit diesem SVM-Bestandsbericht können Sie SVM-Volume-Konfigurationsgrenzwerte und allgemeine Integritätswerte analysieren, um Risiken für die zukünftige Storage-Verfügbarkeit zu ermitteln. 
+---
+= SVM-Inventarbericht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit diesem SVM-Bestandsbericht können Sie SVM-Volume-Konfigurationsgrenzwerte und allgemeine Integritätswerte analysieren, um Risiken für die zukünftige Storage-Verfügbarkeit zu ermitteln.
+
+
+
+== Tabellenansicht des SVM-Bestandsberichts
+
+* * Cluster*
++
+Zeigt den Namen des Clusters an, der die SVM enthält.
+
+* *Storage Virtual Machine*
++
+Zeigt den Namen der SVM an.
+
+* *Bundesland*
++
+Zeigt den aktuellen Administrationsstatus der SVM an. Der Status kann ausgeführt, angehalten, gestartet, angehalten, beendet, nicht zugeordnet, Initialisierung oder Löschen.
+
+* *Volumenzahl*
++
+Zeigt die Anzahl der Volumes an, die von der SVM enthalten sind.
+
+* *Maximal Zulässige Volumen*
++
+Zeigt die maximal zulässigen Volumes an, die auf der SVM konfiguriert werden können.
+
+* *Root Volume*
++
+Zeigt den Namen des Root-Volumes der SVM an.
+
+* *Erlaubte Protokolle*
++
+Zeigt den Typ der Protokolle an, die für die SVM konfiguriert werden können.
+
+* *DNS-Domäne*
++
+Zeigt den DNS-Domänennamen an.
+
+* *NIS-Domäne*
++
+Zeigt den NIS-Domänennamen (Network Information Service) an. Diese Spalte ist leer, wenn der NIS-Server (Network Information Service) deaktiviert oder nicht konfiguriert ist.
+
+* *LDAP aktiviert*
++
+Zeigt an, ob das LDAP-Protokoll aktiviert ist oder nicht.
+
+* *Name Service Switch*
++
+Zeigt den Informationstyp an, der von Hosts erfasst wurde. Mögliche Werte sind Datei, LDAP oder NIS.
+
+

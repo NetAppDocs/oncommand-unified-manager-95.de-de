@@ -1,0 +1,86 @@
+---
+permalink: online-help/reference-svm-storage-class-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SVM Storage-Klassenveranstaltungen versorgen Sie mit Informationen zum Status Ihrer Storage-Klassen. So können Sie auf mögliche Probleme überwachen. SVM-Storage-Klassen sind nur in SVMs mit Infinite Volume vorhanden. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad. 
+---
+= Ereignisse der SVM Storage-Klasse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVM Storage-Klassenveranstaltungen versorgen Sie mit Informationen zum Status Ihrer Storage-Klassen. So können Sie auf mögliche Probleme überwachen. SVM-Storage-Klassen sind nur in SVMs mit Infinite Volume vorhanden. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad.
+
+Die folgenden SVM Storage-Ereignisse gelten nur für SVMs mit Infinite Volume.
+
+
+
+== Impact Area: Verfügbarkeit
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+SVM Storage Class nicht verfügbar(ocumEvtVserverStorageClassNoverfügbar)
+ a| 
+Vorfall
+ a| 
+Storage-Klasse
+ a| 
+Kritisch
+
+
+
+ a| 
+SVM Storage Class teilweise verfügbar(ocumEvtVserverStorageClassPartiallyverfügbar)
+ a| 
+Dar
+ a| 
+Storage-Klasse
+ a| 
+Fehler
+
+|===
+
+
+== Impact Area: Kapazität
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+SVM Storage Class Space nahezu voll(ocumEvtVserverStorageClassNearFull)
+ a| 
+Dar
+ a| 
+Storage-Klasse
+ a| 
+Warnung
+
+
+
+ a| 
+SVM Storage Class Space Full(ocumEvtVserverStorageClassFull)
+ a| 
+Dar
+ a| 
+Storage-Klasse
+ a| 
+Fehler
+
+
+
+ a| 
+Snapshot-Nutzungsgrenze für SVM Storage-Klasse überschritten (ocumEvtVserverStorageClassSnapshotUsageExceped)
+ a| 
+Dar
+ a| 
+Storage-Klasse
+ a| 
+Warnung
+
+|===

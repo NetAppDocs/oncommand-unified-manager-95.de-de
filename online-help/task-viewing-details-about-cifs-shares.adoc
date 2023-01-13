@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-viewing-details-about-cifs-shares.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Auf der Seite Health/Storage Virtual Machine Details können Sie detaillierte Informationen über die CIFS-Freigabe anzeigen, die von der ausgewählten Storage Virtual Machine \(SVM\) gehostet wird. Sie können Details anzeigen, wie z. B. den Freigabennamen, den Verbindungspfad, Objekte, Sicherheitseinstellungen und die für die Freigabe definierten Richtlinien exportieren.' 
+---
+= Anzeigen der CIFS-Freigaben
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Health/Storage Virtual Machine Details können Sie detaillierte Informationen über die CIFS-Freigabe anzeigen, die von der ausgewählten SVM (Storage Virtual Machine) gehostet wird. Sie können Details anzeigen, wie z. B. den Freigabennamen, den Verbindungspfad, Objekte, Sicherheitseinstellungen und die für die Freigabe definierten Richtlinien exportieren.
+
+
+
+== Bevor Sie beginnen
+
+* Die CIFS-Lizenz muss auf dem Cluster aktiviert sein.
+* Es müssen logische Schnittstellen, die die CIFS-Freigaben erfüllen, konfiguriert werden.
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+
+
+
+
+== Über diese Aufgabe
+
+[NOTE]
+====
+Freigaben in Ordnern werden auf der Registerkarte CIFS-Freigaben nicht angezeigt.
+
+====
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie die SVM aus, für die Sie die Details der CIFS-Freigabe anzeigen möchten.
+. Klicken Sie auf der Seite *Health/Storage Virtual Machine* Details auf die Registerkarte *CIFS Shares*.
+

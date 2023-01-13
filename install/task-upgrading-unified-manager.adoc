@@ -1,0 +1,118 @@
+---
+permalink: install/task-upgrading-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können ein Upgrade von Unified Manager Version 7.3 oder 9.4 auf Unified Manager 9.5 durchführen, indem Sie die Installationsdatei auf der Red hat Plattform herunterladen und ausführen. 
+---
+= Upgrade von Unified Manager auf Red hat Enterprise Linux oder CentOS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein Upgrade von Unified Manager Version 7.3 oder 9.4 auf Unified Manager 9.5 durchführen, indem Sie die Installationsdatei auf der Red hat Plattform herunterladen und ausführen.
+
+
+
+== Bevor Sie beginnen
+
+* Das System, auf dem Unified Manager aktualisiert wird, muss die System- und Software-Anforderungen erfüllen.
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[Hardwaresystemanforderungen]
+
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Anforderungen an Red hat und CentOS Software und Installation]
+
+* Ab Unified Manager 9.4 wird Red hat Enterprise Linux 6.x nicht mehr unterstützt. Wenn Sie RHEL 6 verwenden, müssen Sie Ihre Instanz von RHEL auf Version 7.x aktualisieren, bevor Sie auf Unified Manager 9.5 aktualisieren.
+* Ab Unified Manager 9.5 wird Oracle Java nicht mehr unterstützt. Die korrekte Version von OpenJDK muss vor dem Upgrade auf Unified Manager 9.5 installiert werden.
+* Sie müssen über ein Abonnement für den Red hat Enterprise Linux Subscription Manager verfügen.
+* Um Datenverlust zu vermeiden, müssen Sie ein Backup der Unified Manager-Datenbank erstellt haben, falls während des Upgrades ein Problem auftritt. Es wird auch empfohlen, die Sicherungsdatei aus dem zu verschieben `/opt/netapp/data` Verzeichnis zu einem externen Speicherort.
+* Sie sollten alle laufenden Vorgänge abgeschlossen haben, da Unified Manager während des Upgrades nicht verfügbar ist.
+
+
+
+
+== Über diese Aufgabe
+
+[NOTE]
+====
+Diese Schritte enthalten Informationen zu Systemen, die für Hochverfügbarkeit mit Veritas Operation Manager konfiguriert sind. Wenn Ihr System nicht für hohe Verfügbarkeit konfiguriert ist, ignorieren Sie diese zusätzlichen Schritte.
+
+====
+
+
+== Schritte
+
+. Melden Sie sich beim Red hat Enterprise Linux- oder CentOS-Zielserver an.
+. Laden Sie das Unified Manager Bundle auf den Server herunter.
++
+xref:task-downloading-unified-manager.adoc[Herunterladen von Unified Manager für Red hat oder CentOS]
+
+. Navigieren Sie zum Zielverzeichnis und erweitern Sie das Unified Manager Bundle: `unzip OnCommandUnifiedManager-rhel7-9.5.zip`
++
+Die erforderlichen RPM-Module für Unified Manager werden in das Zielverzeichnis entpackt.
+
+. Bestätigen Sie das Vorhandensein der aufgeführten Module: `ls *.rpm`
++
+Die folgenden RPM-Module sind aufgelistet:
+
++
+** `ocie-au-<version>.x86_64.rpm`
+** `ocie-server-<version>.x86_64.rpm`
+** `ocie-serverbase-<version>.x86_64.rpm`
+** `netapp-application-server-<version>.x86_64.rpm`
+** `netapp-platform-base-<version>.x86_64.rpm`
+** `netapp-ocum-<version>.x86_64.rpm`
+
+
+. Bei Systemen, die nicht mit dem Internet verbunden sind oder die RHEL-Repositorys nicht nutzen, führen Sie die folgenden Schritte aus, um festzustellen, ob erforderliche Pakete fehlen und diese Pakete heruntergeladen werden können:
++
+.. Die Liste der verfügbaren und nicht verfügbaren Pakete anzeigen: `yum install *.rpm --assumeno`
++
+Die Elemente im Abschnitt „`Installieren:`“ sind die Pakete, die im aktuellen Verzeichnis verfügbar sind, und die Elemente im Abschnitt „`Installieren für Abhängigkeiten:`“ sind die Pakete, die auf Ihrem System fehlen.
+
+.. Laden Sie die fehlenden Pakete auf einem anderen System mit Internetzugang herunter: `yum install package_name --downloadonly --downloaddir=.`
++
+[NOTE]
+====
+Da das Plug-in "`yum-Plugin-downloadonly`" nicht immer auf Red hat Enterprise Linux-Systemen aktiviert ist, müssen Sie möglicherweise die Funktionalität zum Herunterladen eines Pakets ohne Installation aktivieren: `yum install yum-plugin-downloadonly`
+
+====
+.. Kopieren Sie die fehlenden Pakete aus dem mit dem Internet verbundenen System auf Ihr Installationssystem.
+
+
+. Wenn Unified Manager für Hochverfügbarkeit konfiguriert ist, beenden Sie alle Unified Manager Services auf dem ersten Knoten mit Veritas Operations Manager.
+. Aktualisieren Sie Unified Manager mithilfe des folgenden Skripts: `upgrade.sh`
++
+Dieses Skript führt automatisch die RPM-Module aus, aktualisiert die erforderliche unterstützende Software und die darauf ausgeführten Unified Manager-Module. Außerdem prüft das Upgrade-Skript, ob es Systemkonfigurationseinstellungen oder installierte Software gibt, die mit dem Upgrade von Unified Manager in Konflikt geraten. Wenn das Skript Probleme erkennt, müssen Sie die Probleme vor dem Upgrade von Unified Manager beheben.
+
++
+[NOTE]
+====
+Versuchen Sie nicht, ein Upgrade mit alternativen Befehlen wie z. B. durchzuführen `+rpm -Uvh ...+`). Für ein erfolgreiches Upgrade müssen alle Unified Manager-Dateien und zugehörigen Dateien in einer bestimmten Reihenfolge auf eine bestimmte Verzeichnisstruktur aktualisiert werden, die vom Skript automatisch ausgeführt und konfiguriert wird.
+
+====
+. Beenden Sie bei Hochverfügbarkeitsinstallationen alle Unified Manager-Dienste auf dem zweiten Knoten mit Veritas Operations Manager.
+. Bei Hochverfügbarkeitsinstallationen wechseln Sie die Service-Gruppe beim Hochverfügbarkeits-Setup auf den zweiten Node und aktualisieren Unified Manager auf dem zweiten Node.
+. Nach Abschluss des Upgrades blättern Sie zurück durch die Meldungen, bis die Meldung eine IP-Adresse oder URL für die Web-UI von Unified Manager, den Wartungs-Benutzernamen (umadmin) und das Standardpasswort angezeigt wird.
++
+Die Meldung ähnelt der folgenden:
+
++
+[listing]
+----
+OnCommand Unified Manager upgraded successfully.
+Use a web browser and one of the following URLs to access the OnCommand Unified Manager GUI:
+
+https://default_ip_address/    (if using IPv4)
+https://[default_ip_address]/  (if using IPv6)
+https://fully_qualified_domain_name/
+----
+
+
+
+
+== Nachdem Sie fertig sind
+
+Geben Sie die angegebene IP-Adresse oder URL in einen unterstützten Webbrowser ein, um die Unified Manager Web-UI zu starten, und melden Sie sich anschließend mit demselben Wartungs-Benutzernamen (umadmin) und Kennwort an, das Sie zuvor festgelegt haben.

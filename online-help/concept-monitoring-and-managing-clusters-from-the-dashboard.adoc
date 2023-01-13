@@ -1,0 +1,21 @@
+---
+permalink: online-help/concept-monitoring-and-managing-clusters-from-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Dashboards bieten kumulative Details über den Systemzustand. Mit den Dashboards können Sie die Verfügbarkeit, Kapazität, Performance und den Sicherungsstatus der gemanagten Cluster insgesamt beurteilen und schnell sämtliche eventuell auftretenden Probleme bemerken, lokalisieren, diagnostizieren oder zuweisen. 
+---
+= Monitoring des Clusterzustands und der Performance über die Dashboards
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Dashboards bieten kumulative Details über den Systemzustand. Mit den Dashboards können Sie die Verfügbarkeit, Kapazität, Performance und den Sicherungsstatus der gemanagten Cluster insgesamt beurteilen und schnell sämtliche eventuell auftretenden Probleme bemerken, lokalisieren, diagnostizieren oder zuweisen.
+
+Drei Dashboards bieten einen einzigartigen Blick auf Zustand und Performance Ihrer Cluster:
+
+* Die Seite Dashboards/Überblick enthält Informationen über Zustand und Performance Ihrer Speicherobjekte.
+* Die Seite Dashboards/Leistung bietet einen allgemeinen Leistungsstatus aller zu überwachenden Cluster.
+* Die Seite Dashboards/Cluster-Ansicht enthält Informationen zu einzelnen Clustern.
+

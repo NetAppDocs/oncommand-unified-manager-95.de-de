@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-what-lifs-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Eine LIF \(logische Schnittstelle\) ist eine IP-Adresse oder ein WWPN mit entsprechenden Merkmalen, wie z. B. eine Rolle, ein Home-Port, ein Home-Node, eine Liste von Ports für Failover auf sowie eine Firewall-Richtlinie. Sie können LIFs an Ports konfigurieren, über die das Cluster Kommunikation über das Netzwerk sendet und empfängt.' 
+---
+= Was LIFs sind
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eine LIF (logische Schnittstelle) ist eine IP-Adresse oder WWPN mit entsprechenden Merkmalen, wie z. B. eine Rolle, ein Home-Port, ein Home-Node, eine Liste von Failover-Ports auf sowie eine Firewall-Richtlinie. Sie können LIFs an Ports konfigurieren, über die das Cluster Kommunikation über das Netzwerk sendet und empfängt.
+
+LIFs können an folgenden Ports gehostet werden:
+
+* Physische Ports, die nicht zu Interface Groups gehören
+* Interface Groups
+* VLANs
+* Physische Ports oder Schnittstellengruppen, die VLANs hosten
+* Virtuelle IP-Ports (VIP)
++
+Ab ONTAP 9.5 werden VIP LIFs unterstützt und auf VIP-Ports gehostet.
+
+
+
+Während der Konfiguration von SAN-Protokollen, z. B. FC, auf einer logischen Schnittstelle wird sie einem WWPN zugewiesen.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html["ONTAP 9 – Systemadministrationshandbuch"]
+
+In der folgenden Abbildung wird die Porthierarchie in einem ONTAP-System dargestellt:
+
+image::../media/port-hierarchy-in-a-cluster-mode-system.gif[Abbildung der Porthierarchie in einem Clustered Data ONTAP System]

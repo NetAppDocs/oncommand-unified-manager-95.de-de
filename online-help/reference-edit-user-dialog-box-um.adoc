@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-edit-user-dialog-box-um.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld Benutzer bearbeiten können Sie je nach ausgewähltem Benutzer nur bestimmte Einstellungen bearbeiten. 
+---
+= Dialogfeld „Benutzer bearbeiten“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Benutzer bearbeiten können Sie je nach ausgewähltem Benutzer nur bestimmte Einstellungen bearbeiten.
+
+
+
+== Details
+
+Im Bereich Details können Sie die folgenden Informationen über einen ausgewählten Benutzer bearbeiten:
+
+* *Typ*
++
+Dieses Feld kann nicht bearbeitet werden.
+
+* *Name*
++
+Dieses Feld kann nicht bearbeitet werden.
+
+* *Passwort*
++
+Ermöglicht Ihnen das Bearbeiten des Kennworts, wenn der ausgewählte Benutzer ein Datenbankbenutzer ist.
+
+* *Passwort Bestätigen*
++
+Hiermit können Sie das bestätigte Kennwort bearbeiten, wenn der ausgewählte Benutzer ein Datenbankbenutzer ist.
+
+* *E-Mail*
++
+Ermöglicht Ihnen die Bearbeitung der E-Mail-Adresse des ausgewählten Benutzers. Dieses Feld kann bearbeitet werden, wenn der ausgewählte Benutzer ein lokaler Benutzer, ein LDAP-Benutzer oder ein Wartungbenutzer ist.
+
+* * Rolle*
++
+Ermöglicht Ihnen die Bearbeitung der Rolle, die dem Benutzer zugewiesen ist. Dieses Feld kann bearbeitet werden, wenn der ausgewählte Benutzer ein lokaler Benutzer, ein Remote-Benutzer oder eine Remote-Gruppe ist.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Speichern*
++
+Speichert die Änderungen und schließt das Dialogfeld Benutzer bearbeiten.
+
+* *Abbrechen*
++
+Bricht die Änderungen ab und schließt das Dialogfeld Benutzer bearbeiten.
+
+

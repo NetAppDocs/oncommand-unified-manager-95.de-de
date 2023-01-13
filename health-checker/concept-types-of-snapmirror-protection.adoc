@@ -1,0 +1,66 @@
+---
+permalink: health-checker/concept-types-of-snapmirror-protection.html 
+sidebar: sidebar 
+keywords:  
+summary: Je nach Implementierung Ihrer Topologie des Storage können Sie mit Unified Manager mehrere Arten von SnapMirror Sicherungsbeziehungen konfigurieren. Alle Varianten des SnapMirror Schutzes bieten Failover Disaster Recovery-Schutz, bieten jedoch unterschiedliche Funktionen in Bezug auf Performance, Versionsflexibilität und Sicherung mehrerer Backup-Kopien. 
+---
+= Arten der SnapMirror Sicherung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Je nach Implementierung Ihrer Topologie des Storage können Sie mit Unified Manager mehrere Arten von SnapMirror Sicherungsbeziehungen konfigurieren. Alle Varianten des SnapMirror Schutzes bieten Failover Disaster Recovery-Schutz, bieten jedoch unterschiedliche Funktionen in Bezug auf Performance, Versionsflexibilität und Sicherung mehrerer Backup-Kopien.
+
+
+
+== Herkömmliche asynchrone Datensicherungsbeziehungen von SnapMirror
+
+Herkömmlicher SnapMirror asynchroner Schutz bietet Sicherung der Blockreplizierung zwischen Quell- und Ziel-Volumes.
+
+In herkömmlichen SnapMirror Beziehungen werden Spiegelvorgänge schneller ausgeführt als in alternativen SnapMirror Beziehungen, da der Spiegelvorgang auf der Blockreplizierung basiert. Beim herkömmlichen SnapMirror Schutz muss das Ziel-Volume jedoch unter derselben oder einer höheren kleineren Version der ONTAP Software wie das Quell-Volume innerhalb derselben größeren Version (z. B. Version 8.x zu 8.x oder 9.x zu 9.x) ausgeführt werden.
+
+
+
+== SnapMirror Asynchronous Protection mit versionsflexibler Replizierung
+
+SnapMirror asynchrone Sicherung mit versionsflexibler Replizierung bietet einen logischen Spiegelschutz der Replizierungszwischen Quell- und Ziel-Volumes, selbst wenn diese Volumes unter verschiedenen Versionen von ONTAP 8.3 oder höher ausgeführt werden (z. B. Version 8.3 zu 8.3, oder 8.3 zu 9.1 oder 9.0 zu 8.3).
+
+In SnapMirror Beziehungen mit versionsflexibler Replizierung werden Spiegelvorgänge nicht so schnell ausgeführt wie in herkömmlichen SnapMirror Beziehungen.
+
+Aufgrund der langsameren Ausführung eignet sich SnapMirror mit versionsflexibler Replizierungssicherung nicht für den Einsatz unter folgenden Umständen:
+
+* Das Quellobjekt enthält mehr als 10 Millionen Dateien, die gesichert werden müssen.
+* Die Recovery-Zeitvorgabe für die geschützten Daten beträgt maximal zwei Stunden. (Das heißt, das Ziel muss immer gespiegelte, wiederherstellbare Daten enthalten, die nicht mehr als zwei Stunden älter sind als die Daten der Quelle.)
+
+
+In einem der aufgeführten Situationen ist die schnellere blockbasierte Ausführung der SnapMirror Standardsicherung erforderlich.
+
+
+
+== SnapMirror Asynchronous Protection mit versionsflexibler Replizierung und Option für Backups
+
+SnapMirror Asynchronous Protection mit der versionsflexiblen Replizierungs- und Backup-Option bietet Spiegelschutz zwischen Quell- und Ziel-Volumes und die Möglichkeit, mehrere Kopien der gespiegelten Daten am Zielspeicherort zu speichern.
+
+Der Storage-Administrator kann festlegen, welche Snapshot Kopien vom Quell- zum Zielsystem gespiegelt werden, und er kann auch angeben, wie lange diese Kopien am Ziel aufbewahrt werden sollen, selbst wenn sie an der Quelle gelöscht werden.
+
+In SnapMirror Beziehungen mit versionsflexibler Replizierung und Backup-Option werden Spiegelvorgänge nicht so schnell ausgeführt wie in herkömmlichen SnapMirror Beziehungen.
+
+
+
+== SnapMirror synchroner Schutz mit strenger Synchronisierung
+
+SnapMirror Synchronous Schutz mit „`strict`“-Synchronisierung sorgt dafür, dass das primäre und sekundäre Volume immer eine echte Kopie voneinander sind. Falls beim Versuch, Daten auf das sekundäre Volume zu schreiben, ein Replizierungsfehler auftritt, wird der Client-I/O auf das primäre Volume unterbrochen.
+
+
+
+== SnapMirror synchroner Schutz mit regelmäßiger Synchronisierung
+
+SnapMirror Synchronous Schutz mit „`regular`“-Synchronisierung erfordert nicht, dass das primäre und sekundäre Volume immer eine echte Kopie voneinander sind, wodurch die Verfügbarkeit des primären Volumes gewährleistet wird. Wenn beim Versuch, Daten auf das sekundäre Volume zu schreiben, ein Replizierungsfehler auftritt, werden die primären und sekundären Volumes nicht mehr synchronisiert und die Client-I/O-Vorgänge werden weiter zum primären Volume fortgesetzt.
+
+[NOTE]
+====
+Die Schaltfläche „Wiederherstellen“ und die Schaltflächen zum Beziehungsvorgang sind nicht verfügbar, wenn synchrone Schutzbeziehungen auf der Seite „Gesundheits-/Volume-Bestand“ oder auf der Seite „Angaben zum Zustand/Volumen“ überwacht werden.
+
+====

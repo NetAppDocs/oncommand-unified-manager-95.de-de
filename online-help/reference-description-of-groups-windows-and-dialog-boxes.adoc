@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-groups-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Seite Verwaltung/Gruppen verwenden, um alle Ihre Gruppen anzuzeigen und zu verwalten. Sie können auch Gruppenregeln und Aktionen für Ihre Speicherobjekte auf der Registerkarte Gruppenregeln und Gruppenaktionen konfigurieren. 
+---
+= Beschreibung der Gruppenfenster und Dialogfelder
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Seite Verwaltung/Gruppen verwenden, um alle Ihre Gruppen anzuzeigen und zu verwalten. Sie können auch Gruppenregeln und Aktionen für Ihre Speicherobjekte auf der Registerkarte Gruppenregeln und Gruppenaktionen konfigurieren.

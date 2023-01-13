@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-managing-backup-and-restore-operations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können Backups von Unified Manager erstellen und die Wiederherstellungsfunktion verwenden, um das Backup im Falle eines Systemausfalls oder Datenverlust auf demselben \(local\)-System oder einem neuen \(Remote\)-System wiederherzustellen.' 
+---
+= Konfiguration von Backup- und Restore-Vorgängen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Backups von Unified Manager erstellen und die Wiederherstellungsfunktion verwenden, um das Backup im Falle eines Systemausfalls oder Datenverlust auf dasselbe (lokales) System oder ein neues (Remote-) System wiederherzustellen.

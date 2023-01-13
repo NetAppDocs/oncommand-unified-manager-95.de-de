@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können eine Sicherungsbeziehung auf der Seite Systemzustand/Volume-Details unterbrechen und die Datentransfers zwischen einem Quell- und Ziel-Volume in einer SnapMirror Beziehung stoppen. Wenn Sie Daten migrieren, für Disaster Recovery-Zwecke oder zum Testen von Applikationen nutzen möchten, können Sie eine Beziehung unterbrechen. Das Zielvolume wird in ein Lese- und Schreib-Volume geändert. Man kann keine SnapVault Beziehung durchbrechen. 
+---
+= Die SnapMirror-Beziehung von der Seite „Systemzustand/Volume-Details“ abbricht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Sicherungsbeziehung auf der Seite Systemzustand/Volume-Details unterbrechen und die Datentransfers zwischen einem Quell- und Ziel-Volume in einer SnapMirror Beziehung stoppen. Wenn Sie Daten migrieren, für Disaster Recovery-Zwecke oder zum Testen von Applikationen nutzen möchten, können Sie eine Beziehung unterbrechen. Das Zielvolume wird in ein Lese- und Schreib-Volume geändert. Man kann keine SnapVault Beziehung durchbrechen.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Sie müssen Workflow Automation einrichten.
+
+
+
+
+== Schritte
+
+. Wählen Sie auf der Registerkarte *Schutz* der Seite *Gesundheit/Volume* Details aus der Topologie die SnapMirror Beziehung aus, die Sie brechen möchten.
+. Klicken Sie mit der rechten Maustaste auf das Ziel und wählen Sie im Menü die Option *Pause* aus.
++
+Das Dialogfeld Beziehung unterbrechen wird angezeigt.
+
+. Klicken Sie auf *Weiter*, um die Beziehung zu brechen.
+. Stellen Sie in der Topologie sicher, dass die Beziehung unterbrochen ist.
+

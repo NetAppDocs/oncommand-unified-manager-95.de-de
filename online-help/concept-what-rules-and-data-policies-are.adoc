@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-what-rules-and-data-policies-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Eine Regel bestimmt die Platzierung von Dateien \(Data\) auf einer Storage Virtual Machine \(SVM\) mit Infinite Volume. Eine Sammlung solcher Regeln wird als Datenrichtlinie bezeichnet.' 
+---
+= Was sind Regeln und Datenrichtlinien
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eine _Regel_ legt die Platzierung von Dateien (Daten) in einer Storage Virtual Machine (SVM) mit Infinite Volume fest. Eine Sammlung solcher Regeln ist als _Datenrichtlinie_ bekannt.
+
+* *Regel*
++
+Regeln bestehen im Wesentlichen aus einer Reihe vordefinierter Bedingungen und Informationen, die bestimmen, wo Dateien im Infinite Volume abgelegt werden sollen. Wird eine Datei im Infinite Volume abgelegt, werden die Attribute dieser Datei mit der Liste der Regeln abgeglichen. Wenn Attribute mit den Regeln übereinstimmen, werden durch die Platzierungsinformationen dieser Regel die Speicherklasse bestimmt, in der die Datei abgelegt wird. Eine Standardregel in der Datenrichtlinie wird verwendet, um die Platzierung von Dateien zu bestimmen, wenn die Attribute keiner der Regeln in der Regelliste entsprechen.
+
++
+Wenn Sie zum Beispiel eine Regel haben, "`Platzieren Sie alle Dateien vom Typ .mp3 in der Bronze-Speicherklasse.`", würden alle .mp3-Dateien, die auf das Infinite Volume geschrieben werden, in der Bronze-Speicherklasse platziert werden.
+
+* *Datenrichtlinie*
++
+Eine Datenrichtlinie ist eine Liste von Regeln. Jede SVM mit Infinite Volume verfügt über eine eigene Datenrichtlinie. Jede Datei, die dem Infinite Volume hinzugefügt wird, wird mit den Regeln seiner Datenrichtlinie verglichen, um den Speicherort dieser Datei zu bestimmen. Die Datenrichtlinie ermöglicht es Ihnen, eingehende Dateien auf Basis der Dateiattribute zu filtern und diese Dateien in den entsprechenden Speicherklassen zu platzieren.
+
+

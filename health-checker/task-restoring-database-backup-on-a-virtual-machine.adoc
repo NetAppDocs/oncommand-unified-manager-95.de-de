@@ -1,0 +1,63 @@
+---
+permalink: health-checker/task-restoring-database-backup-on-a-virtual-machine.html 
+sidebar: sidebar 
+keywords:  
+summary: Bei Datenverlust oder Datenbeschädigung kann Unified Manager mit der Wiederherstellungsfunktion in den vorherigen stabilen Zustand bei minimalem Verlust wiederhergestellt werden. Sie können die Unified Manager-Datenbank auf einer virtuellen Maschine über die Wartungskonsole von Unified Manager wiederherstellen. 
+---
+= Wiederherstellen einer Datenbanksicherung auf einer virtuellen Maschine
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei Datenverlust oder Datenbeschädigung kann Unified Manager mit der Wiederherstellungsfunktion in den vorherigen stabilen Zustand bei minimalem Verlust wiederhergestellt werden. Sie können die Unified Manager-Datenbank auf einer virtuellen Maschine über die Wartungskonsole von Unified Manager wiederherstellen.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Anmeldeinformationen für den Wartungs-Benutzer verfügen.
+* Die Backup-Dateien von Unified Manager müssen sich auf dem lokalen System befinden.
+* Die Sicherungsdateien müssen aus sein `.7z` Typ.
+
+
+
+
+== Über diese Aufgabe
+
+Die Backup-Kompatibilität ist Plattform- und versionsabhängig. Das Wiederherstellen eines Backups von einer virtuellen Appliance auf einer anderen virtuellen Appliance oder von einer virtuellen Appliance auf einem Red hat Enterprise Linux oder CentOS System ist möglich.
+
+[NOTE]
+====
+Wenn Sie einen Wiederherstellungsvorgang auf einer anderen virtuellen Appliance durchführen als auf dem System, von dem die ursprüngliche Sicherungsdatei erstellt wurde, müssen der Wartungsbenutzername und das Kennwort auf der neuen vApp identisch sein mit den Anmeldeinformationen der ursprünglichen vApp.
+
+====
+
+
+== Schritte
+
+. Suchen Sie im vSphere-Client die virtuelle Unified Manager-Maschine und wählen Sie dann die Registerkarte *Konsole* aus.
+. Klicken Sie auf das Konsolenfenster, und melden Sie sich dann mit Ihrem Benutzernamen und Passwort an der Wartungskonsole an.
+. Geben Sie im *Hauptmenü* die Nummer für die Option *Systemkonfiguration* ein.
+. Geben Sie im Menü * Systemkonfiguration* die Nummer für die Option *aus einem OCUM-Backup* wiederherstellen ein.
+. Geben Sie bei entsprechender Aufforderung den absoluten Pfad der Sicherungsdatei ein.
++
+[listing]
+----
+Bundle to restore from: opt/netapp/data/ocum-backup/UM_9.4.N151112.0947_backup_unix_02-25-2018-11-41.7z
+----
++
+Nach Abschluss der Wiederherstellung können Sie sich bei Unified Manager einloggen.
+
+
+
+
+
+== Nachdem Sie fertig sind
+
+Wenn der OnCommand Workflow Automation-Server nach der Wiederherstellung des Backups nicht funktioniert, führen Sie die folgenden Schritte aus:
+
+. Ändern Sie auf dem Workflow Automation Server die IP-Adresse des Unified Manager-Servers, um auf die neueste Maschine zu verweisen.
+. Setzen Sie auf dem Unified Manager-Server das Datenbankkennwort zurück, wenn die Erfassung in Schritt 1 fehlschlägt.
+

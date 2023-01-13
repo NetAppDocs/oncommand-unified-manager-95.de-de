@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-data-constituents-are.html 
+sidebar: sidebar 
+keywords:  
+summary: In einem Infinite Volume werden Daten in mehreren separaten Datenkomponenten gespeichert. Datenkomponenten speichern nur die Daten aus einer Datei, nicht den Namen der Datei. 
+---
+= Was Datenkomponenten sind
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In einem Infinite Volume werden Daten in mehreren separaten Datenkomponenten gespeichert. Datenkomponenten speichern nur die Daten aus einer Datei, nicht den Namen der Datei.
+
+Die Clients kennen Datenkomponenten nicht. Wenn ein Client eine Datei von einem Infinite Volume anfordert, ruft der Node die Daten der Datei von einer Datenkomponente ab und gibt die Datei an den Client zurück.
+
+Jedes Infinite Volume verfügt über Dutzende Datenkomponenten. Ein Infinite Volume mit 6 PB, das eine Milliarde Dateien enthält, kann beispielsweise 60 Datenkomponenten in Aggregaten von 6 Nodes enthalten.

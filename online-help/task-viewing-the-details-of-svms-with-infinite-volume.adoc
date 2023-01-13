@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-viewing-the-details-of-svms-with-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Auf der Seite „Health/Storage Virtual Machines Inventory“ können Sie detaillierte Informationen zu Storage Virtual Machines \(SVMs\) mit Infinite Volume anzeigen, die von Unified Manager überwacht werden. Sie können Details wie Kapazität, Konfiguration und Datenrichtlinien sowie Regeln im Zusammenhang mit dem Infinite Volume anzeigen.' 
+---
+= Betrachtung der Details zu SVMs mit Infinite Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Health/Storage Virtual Machines Inventory“ können Sie detaillierte Informationen zu Storage Virtual Machines (SVMs) mit Infinite Volume anzeigen, die von Unified Manager überwacht werden. Sie können Details wie Kapazität, Konfiguration und Datenrichtlinien sowie Regeln im Zusammenhang mit dem Infinite Volume anzeigen.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+* Der Cluster, der die SVM mit Infinite Volume enthält, muss der Unified Manager Datenbank hinzugefügt werden.
+
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Verwenden Sie auf der Seite *Health/Storage Virtual Machines* Inventory den Spaltenfilter in *zulässiger Volume Type*, um die zu überwachenden Infinite Volumes aufzulisten.
+. Alle Details zu SVM mit Infinite Volume können Sie anzeigen, indem Sie auf den SVM-Namen klicken.
+

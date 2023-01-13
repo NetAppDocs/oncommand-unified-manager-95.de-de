@@ -1,0 +1,48 @@
+---
+permalink: online-help/reference-edit-group-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Gruppenaktion bearbeiten, die Sie für Gruppen erstellt haben, indem Sie das Dialogfeld Gruppenaktion bearbeiten verwenden. 
+---
+= Dialogfeld Gruppenaktion bearbeiten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Gruppenaktion bearbeiten, die Sie für Gruppen erstellt haben, indem Sie das Dialogfeld Gruppenaktion bearbeiten verwenden.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Aktionsname*
++
+Zeigt den Namen der Gruppenaktion an.
+
+* *Beschreibung*
++
+Zeigt die Beschreibung der Gruppenaktion an.
+
+* *Gruppe*
++
+Zeigt den Namen der ausgewählten Gruppe an.
+
+* *Aktionstyp*
++
+Zeigt den Typ der Gruppenaktion an. Sie können den Aktionstyp nicht ändern. Sie können jedoch die Parameter ändern, mit denen Sie die Gruppenaktion konfigurieren.
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Speichern*
++
+Speichert die Änderungen, die Sie an der Gruppenaktion vorgenommen haben.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Gruppenaktion bearbeiten, ohne Ihre Änderungen zu speichern.
+
+

@@ -1,0 +1,54 @@
+---
+permalink: online-help/concept-what-a-data-continuity-collection-cycle-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Durch einen Datenkontinuitätszyklus werden Performancedaten außerhalb des Echtzeit-Zyklus der Cluster-Performance-Erfassung abgerufen, der standardmäßig alle fünf Minuten ausgeführt wird. Datenkontinuitätssammlungen ermöglichen es Unified Manager, Lücken statistischer Daten zu schließen, die auftreten, wenn sie keine Echtzeitdaten erfassen konnten. 
+---
+= Was ist ein Data-Continuity-Erfassungszyklus
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Durch einen Datenkontinuitätszyklus werden Performancedaten außerhalb des Echtzeit-Zyklus der Cluster-Performance-Erfassung abgerufen, der standardmäßig alle fünf Minuten ausgeführt wird. Datenkontinuitätssammlungen ermöglichen es Unified Manager, Lücken statistischer Daten zu schließen, die auftreten, wenn sie keine Echtzeitdaten erfassen konnten.
+
+Die Datenkontinuitätssammlung wird nur auf Clustern unterstützt, die mit der Software ONTAP Version 8.3.1 oder höher installiert sind.
+
+Unified Manager führt Datenkontinuität-Abfragen der historischen Performance-Daten durch, wenn die folgenden Ereignisse auftreten:
+
+* Dem Unified Manager wird zunächst ein Cluster hinzugefügt.
++
+Unified Manager sammelt historische Performance-Daten für die letzten 15 Tage. So können Sie einige Stunden nach dem Hinzufügen von Performance-Informationen von zwei Wochen für ein Cluster anzeigen.
+
++
+Darüber hinaus werden systemdefinierte Schwellenwertereignisse für den vorherigen Zeitraum gemeldet, sofern vorhanden.
+
++
+[NOTE]
+====
+15 Tage der historischen Volumen-Statistiken werden derzeit nicht gesammelt.
+
+====
+* Der aktuelle Erfassungszyklus für Performance-Daten ist nicht pünktlich abgeschlossen.
++
+Wenn die Echtzeit-Performance-Umfrage über den fünf-Minuten-Erfassungszeitraum hinausgeht, wird ein Datenkontinuitätssammlungszyklus eingeleitet, um die fehlenden Informationen zu erfassen. Ohne die Datenkontinuitätssammlung wird der nächste Erfassungszeitraum übersprungen.
+
+* Unified Manager war für einen bestimmten Zeitraum nicht zugänglich und dann wieder online, wie in den folgenden Situationen:
++
+** Es wurde neu gestartet.
+** Sie wurde während eines Software-Upgrades oder beim Erstellen einer Sicherungsdatei heruntergefahren.
+** Ein Netzwerkausfall ist behoben.
+
+
+* Ein Cluster war für einen Zeitraum nicht zugänglich und dann wieder online, wie in den folgenden Situationen:
++
+** Ein Netzwerkausfall ist behoben.
+** Eine langsame Wide Area Network-Verbindung verzögerte die normale Erfassung von Performancedaten.
+
+
+
+
+Ein Datenerfassungszyklus kann maximal 24 Stunden historische Daten erfassen. Wenn Unified Manager länger als 24 Stunden ausfällt, wird auf den UI-Seiten eine Lücke in den Performance-Daten angezeigt.
+
+Ein Datenerfassungszyklus und ein Datenerfassungszyklus in Echtzeit können nicht gleichzeitig ausgeführt werden. Der Datenerfassungszyklus muss vor Beginn der Performance-Datenerfassung in Echtzeit abgeschlossen sein. Wenn die Daten-Continuity-Sammlung länger als eine Stunde historische Daten erfasst werden muss, befindet sich oben im Performance Dashboard eine Bannermeldung für den Cluster.

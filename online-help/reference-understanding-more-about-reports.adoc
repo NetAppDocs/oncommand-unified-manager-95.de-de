@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-understanding-more-about-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Option zum Ausführen, Löschen, Exportieren und Importieren von Berichten verwenden. Sie können auch benutzerdefinierte Berichte erstellen und den benutzerdefinierten Bericht speichern. Sie können weitere Vorgänge wie Filtern, Sortieren, Gruppieren und Formatieren ausführen. 
+---
+= Weitere Informationen zu Berichten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Option zum Ausführen, Löschen, Exportieren und Importieren von Berichten verwenden. Sie können auch benutzerdefinierte Berichte erstellen und den benutzerdefinierten Bericht speichern. Sie können weitere Vorgänge wie Filtern, Sortieren, Gruppieren und Formatieren ausführen.

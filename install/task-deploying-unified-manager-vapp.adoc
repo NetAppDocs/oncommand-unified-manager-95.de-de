@@ -1,0 +1,50 @@
+---
+permalink: install/task-deploying-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Bereitstellung von Unified Manager umfasst das Herunterladen von Software, die Bereitstellung der virtuellen Appliance, das Erstellen eines Benutzernamens und Kennworts für die Wartung und das Durchführen der ersten Einrichtung in der Web-Benutzeroberfläche. 
+---
+= Einführung Von Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Bereitstellung von Unified Manager umfasst das Herunterladen von Software, die Bereitstellung der virtuellen Appliance, das Erstellen eines Benutzernamens und Kennworts für die Wartung und das Durchführen der ersten Einrichtung in der Web-Benutzeroberfläche.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen die Systemanforderungen für die Implementierung abgeschlossen haben.
++
+xref:concept-requirements-for-installing-unified-manager.adoc[Systemanforderungen]
+
+* Sie müssen die folgenden Informationen haben:
++
+** Anmeldedaten für die NetApp Support-Website
+** Zugangsdaten für den Zugriff auf VMware vCenter Server und vSphere Web Client (für vSphere Version 6.5) oder vSphere Client (für vSphere Version 5.5 oder 6.0)
+** IP-Adresse des ESXi-Servers, auf dem Sie die virtuelle Unified Manager-Appliance bereitstellen
+** Details zum Datacenter, z. B. Speicherplatz im Datenspeicher und Speicheranforderungen
+** IPv6 muss auf dem Host aktiviert sein, wenn Sie IPv6-Adressen verwenden möchten.
+** CD-ROM- oder ISO-Image der VMware Tools
+
+
+
+
+
+
+== Über diese Aufgabe
+
+Sie können Unified Manager als virtuelle Appliance auf einem VMware ESXi Server bereitstellen.
+
+Sie müssen über die VMware Konsole auf die Wartungskonsole zugreifen, nicht über SSH.
+
+VMware Tools sind nicht im Unified Manager enthalten``.ova`` Datei und muss separat installiert werden.
+
+
+
+== Nachdem Sie fertig sind
+
+Nachdem Sie die Implementierung und das Setup abgeschlossen haben, können Sie entweder Cluster hinzufügen oder zusätzliche Netzwerkeinstellungen in der Wartungskonsole konfigurieren und anschließend auf die Web-Benutzeroberfläche zugreifen.

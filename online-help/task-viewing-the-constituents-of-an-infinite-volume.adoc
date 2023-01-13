@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-viewing-the-constituents-of-an-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: Über die Seite „Health/Volumes Inventory“ können Sie die Liste der Komponenten in Ihrem Infinite Volume anzeigen. Sie können Details wie den Komponentenstatus, die SVM mit Infinite Volume anzeigen, die die Komponente, den Verbindungspfad der Komponente, das Aggregat mit der Komponente sowie die verfügbare, genutzte und die gesamte Datenkapazität der Komponente enthält. 
+---
+= Anzeigen der Komponenten eines Infinite Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über die Seite „Health/Volumes Inventory“ können Sie die Liste der Komponenten in Ihrem Infinite Volume anzeigen. Sie können Details wie den Komponentenstatus, die SVM mit Infinite Volume anzeigen, die die Komponente, den Verbindungspfad der Komponente, das Aggregat mit der Komponente sowie die verfügbare, genutzte und die gesamte Datenkapazität der Komponente enthält.
+
+
+
+== Bevor Sie beginnen
+
+Folgende Anforderungen müssen erfüllt werden:
+
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+* Der Cluster, der die SVM mit Infinite Volume enthält, muss der Unified Manager Datenbank hinzugefügt werden.
+
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Klicken Sie auf den Namen einer SVM mit Infinite Volume.
+. Klicken Sie auf der Seite *Health/Storage Virtual Machine* Details auf *Volumes* im rechten Fensterbereich *Related Devices*.
++
+Die Liste der Komponenten wird auf der Seite „Inventar für Funktionsdaten/Volumes“ angezeigt.
+
+

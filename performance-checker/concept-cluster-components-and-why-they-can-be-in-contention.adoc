@@ -1,0 +1,58 @@
+---
+permalink: performance-checker/concept-cluster-components-and-why-they-can-be-in-contention.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können Probleme mit der Cluster-Performance identifizieren, wenn ein Konflikt zwischen einer Cluster-Komponente besteht. Die Performance von Volume-Workloads, die die Komponente nutzen, wird langsamer. Außerdem nimmt die Reaktionszeit \(Latenz\) für Client-Anforderungen zu und löst in Unified Manager ein Ereignis aus.' 
+---
+= Cluster-Komponenten und warum sie über Konflikte verfügen können
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Probleme mit der Cluster-Performance identifizieren, wenn ein Konflikt zwischen einer Cluster-Komponente besteht. Die Performance von Volume-Workloads, die die Komponente nutzen, wird langsamer. Dadurch wird die Reaktionszeit (Latenz) für Client-Anforderungen erhöht und ein Ereignis in Unified Manager ausgelöst.
+
+Eine Komponente, die einen Konflikt verursacht, kann nicht auf einer optimalen Ebene ausgeführt werden. Die Performance ist gesunken, und die Performance anderer Cluster-Komponenten und Workloads, sogenannten _Opfern_, hat möglicherweise eine höhere Latenz zur Verfügung. Um die Konflikte einer Komponente zu beseitigen, müssen Sie ihre Workloads verringern oder die Fähigkeit erhöhen, mehr Arbeit zu erledigen, damit die Performance wieder auf das normale Niveau kommt. Da Unified Manager die Workload-Performance in fünf-Minuten-Intervallen erfasst und analysiert, wird nur erkannt, wenn eine Cluster-Komponente konsistent überlastet ist. Vorübergehende Überlastungsspitzen, die nur für eine kurze Dauer innerhalb des fünfminütigen Intervalls dauern, werden nicht erkannt.
+
+Beispielsweise könnte ein Storage-Aggregat unter Konflikt stehen, da ein oder mehrere Workloads darauf konkurrierende, dass ihre I/O-Anfragen erfüllt werden. Andere Workloads auf dem Aggregat können beeinträchtigt werden, was zu einer Abnahme der Performance führt. Um die Aktivitätsmenge auf dem Aggregat zu verringern, können verschiedene Schritte durchgeführt werden, z. B. Verschieben von einem oder mehreren Workloads in ein weniger stark beschäftigtes Aggregat, um die Gesamtanforderungen an die Workloads im aktuellen Aggregat zu verringern. Bei einer QoS-Richtliniengruppe können Sie das Durchsatzlimit anpassen oder Workloads in eine andere Richtliniengruppe verschieben, sodass die Workloads nicht mehr gedrosselt werden.
+
+Unified Manager überwacht die folgenden Cluster-Komponenten, um bei Engpässen eine Warnung zu erhalten:
+
+* *Netzwerk*
++
+Zeigt die Wartezeit von I/O-Anfragen durch iSCSI-Protokolle oder Fibre Channel-Protokollen (FC) des Clusters an. Die Wartezeit liegt darin, auf die Transaktionen „iSCSI Ready to Transfer“ (R2T) oder „FCP Transfer Ready“ (XFER_RDY) zu warten, bis der Cluster auf eine I/O-Anforderung antworten kann. Wenn die Netzwerkkomponente unter einem Konflikt steht, bedeutet dies, dass hohe Wartezeiten auf der Protokollebene des Blocks die Latenz eines oder mehrerer Workloads beeinflussen.
+
+* * Netzwerkverarbeitung*
++
+Repräsentiert die Softwarekomponente in dem Cluster, die mit I/O-Verarbeitung zwischen Protokollebene und Cluster beteiligt ist Der Knoten, der die Netzwerkverarbeitung verarbeitet, hat sich seit dem Erkennen des Ereignisses möglicherweise geändert. Wenn die Netzwerkverarbeitungskomponente einen Konflikt verursacht, bedeutet dies, dass eine hohe Auslastung des Node zur Netzwerkverarbeitung die Latenz eines oder mehrerer Workloads beeinträchtigt.
+
+* *QoS-Richtlinie*
++
+Steht für die Storage-Richtliniengruppe für Quality of Service (QoS), der Mitglied des Workloads ist Wenn die Richtliniengruppe Konflikte hat, bedeutet dies, dass alle Workloads in der Richtliniengruppe durch das festgelegte Durchsatzlimit gedrosselt werden, was sich auf die Latenz eines oder mehrerer dieser Workloads auswirkt.
+
+* * Cluster Interconnect*
++
+Stellt die Kabel und Adapter dar, mit denen die physischen Nodes des Clustern verbunden sind. Wenn die Cluster-Interconnect-Komponente einen Konflikt verursacht, bedeutet dies hohe Wartezeiten bei I/O-Anfragen am Cluster Interconnect, die sich auf die Latenz eines oder mehrerer Workloads auswirken.
+
+* *Datenverarbeitung*
++
+Zeigt die Softwarekomponente in dem Cluster an, die mit I/O-Verarbeitung zwischen dem Cluster und dem Storage-Aggregat, das den Workload enthält. Der Node, der die Datenverarbeitung verarbeitet, hat sich seit dem Erkennen des Ereignisses geändert. Wenn die Datenverarbeitungkomponente einen Konflikt verursacht, bedeutet dies, dass eine hohe Auslastung am Datenverarbeitungs-Node die Latenz eines oder mehrerer Workloads beeinträchtigt.
+
+* *MetroCluster Ressourcen*
++
+Repräsentiert die MetroCluster-Ressourcen, einschließlich NVRAM und Interswitch Links (ISLs), die zur Spiegelung von Daten zwischen Clustern in einer MetroCluster Konfiguration verwendet werden. Wenn die MetroCluster Komponente Konflikte verursacht, bedeutet dies einen hohen Schreibdurchsatz von Workloads auf dem lokalen Cluster oder ein Link-Systemzustandsproblem Auswirkungen auf die Latenz einer oder mehrerer Workloads auf dem lokalen Cluster. Wenn das Cluster nicht in einer MetroCluster-Konfiguration befindet, wird dieses Symbol nicht angezeigt.
+
+* *Aggregate oder SSD Aggregate Ops*
++
+Repräsentiert das Storage-Aggregat, auf dem die Workloads ausgeführt werden Wenn die Aggregat-Komponente Konflikte verursacht, bedeutet dies, dass eine hohe Auslastung des Aggregats sich auf die Latenz eines oder mehrerer Workloads auswirkt. Ein Aggregat besteht aus rein HDDs oder einer Kombination aus HDDs und SSDs (einem Flash Pool Aggregat). Ein „`SSD Aggregat`“ besteht aus allen SSDs (ein All-Flash-Aggregat) oder einer Kombination aus SSDs und einer Cloud Tier (ein FabricPool Aggregat).
+
+* *Cloud-Latenz*
++
+Stellt die Softwarekomponente in dem Cluster dar, die mit I/O-Verarbeitung zwischen dem Cluster und dem Cloud-Tier beschäftigt ist, auf dem Benutzerdaten gespeichert werden Wenn die Komponente für die Cloud-Latenz aufgrund von Konflikten vorliegen, bedeutet dies, dass sich ein großer Anteil der in der Cloud-Ebene gehosteten Lesevorgänge auf die Latenz eines oder mehrerer Workloads auswirkt.
+
+* *Sync SnapMirror*
++
+Repräsentiert die Software-Komponente in dem Cluster, die mit der Replizierung von Benutzerdaten vom primären Volume auf das sekundäre Volume in einer SnapMirror Synchronous-Beziehung beteiligt ist Wenn die synchrone SnapMirror Komponente Konflikte verursacht, bedeutet dies, dass die Aktivitäten des synchronen Betriebs von SnapMirror sich auf die Latenz eines oder mehrerer Workloads auswirken.
+
+

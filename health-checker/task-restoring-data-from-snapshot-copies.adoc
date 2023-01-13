@@ -1,0 +1,32 @@
+---
+permalink: health-checker/task-restoring-data-from-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn bei einem Ausfall Daten verloren gehen oder Verzeichnisse oder Dateien versehentlich gelöscht wurden, können Sie Unified Manager zum Auffinden und Wiederherstellen der Daten aus einer Snapshot Kopie verwenden. 
+---
+= Wiederherstellen von Daten aus Snapshot-Kopien
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn bei einem Ausfall Daten verloren gehen oder Verzeichnisse oder Dateien versehentlich gelöscht wurden, können Sie Unified Manager zum Auffinden und Wiederherstellen der Daten aus einer Snapshot Kopie verwenden.
+
+
+
+== Über diese Aufgabe
+
+In der Web-UI von Unified Manager können Sie Daten von zwei Standorten wiederherstellen.
+
+
+
+== Schritte
+
+. Stellen Sie Daten mithilfe einer der folgenden Aufgaben wieder her:
++
+** xref:task-restoring-data-using-the-health-volume-details-page.adoc[Stellen Sie die Daten auf der Seite „Health/Volume Details“ wieder her].
+** xref:task-restoring-data-using-the-health-volumes-page.adoc[Stellen Sie die Daten auf der Seite „Systemzustand/Volumes“ wieder her].
+
+
+

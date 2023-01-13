@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-events-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Berichte erstellen, um ausstehende Ereignisse auf einem Cluster zu überwachen. 
+---
+= Anpassungen für Ereignisberichte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Berichte erstellen, um ausstehende Ereignisse auf einem Cluster zu überwachen.

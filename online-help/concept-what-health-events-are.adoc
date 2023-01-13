@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-what-health-events-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Systemzustandsereignisse sind Benachrichtigungen, die automatisch generiert werden, wenn eine vordefinierte Bedingung eintritt oder wenn ein Objekt einen Systemzustandsschwellenwert überschreitet. Mithilfe dieser Ereignisse können Sie Maßnahmen ergreifen, um Probleme zu vermeiden, die zu schlechter Performance und Nichtverfügbarkeit des Systems führen können. Ereignisse umfassen einen Impact-Bereich, einen Schweregrad und einen Impact-Level. 
+---
+= Was für einen Systemzustand gibt es
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Systemzustandsereignisse sind Benachrichtigungen, die automatisch generiert werden, wenn eine vordefinierte Bedingung eintritt oder wenn ein Objekt einen Systemzustandsschwellenwert überschreitet. Mithilfe dieser Ereignisse können Sie Maßnahmen ergreifen, um Probleme zu vermeiden, die zu schlechter Performance und Nichtverfügbarkeit des Systems führen können. Ereignisse umfassen einen Impact-Bereich, einen Schweregrad und einen Impact-Level.
+
+Systemzustandsereignisse werden nach Art der Beeinträchtigungen kategorisiert, z. B. Verfügbarkeit, Kapazität, Konfiguration oder Schutz. Ereignisse werden zudem einem Schweregrad und einem Impact-Level zugewiesen, mit dem Sie feststellen können, ob eine sofortige Aktion erforderlich ist.
+
+Sie können Meldungen so konfigurieren, dass Benachrichtigungen automatisch gesendet werden, wenn bestimmte Ereignisse oder Ereignisse eines bestimmten Schweregrads auftreten.
+
+Veraltete, behobene und informative Ereignisse werden automatisch protokolliert und standardmäßig 180 Tage lang aufbewahrt.
+
+Es ist wichtig, dass Sie umgehend Korrekturmaßnahmen bei Ereignissen mit einem Schweregrad „Fehler“ oder „kritisch“ vornehmen.

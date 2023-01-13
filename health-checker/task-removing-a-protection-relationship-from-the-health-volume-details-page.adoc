@@ -1,0 +1,37 @@
+---
+permalink: health-checker/task-removing-a-protection-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können eine Schutzbeziehung entfernen, um eine vorhandene Beziehung zwischen der ausgewählten Quelle und dem ausgewählten Ziel dauerhaft zu löschen, z. B. wenn Sie eine Beziehung unter Verwendung eines anderen Ziels erstellen möchten. Durch diesen Vorgang werden alle Metadaten entfernt und können nicht rückgängig gemacht werden. 
+---
+= Entfernen einer Schutzbeziehung von der Seite „Gesundheits-/Volume-Details“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Schutzbeziehung entfernen, um eine vorhandene Beziehung zwischen der ausgewählten Quelle und dem ausgewählten Ziel dauerhaft zu löschen, z. B. wenn Sie eine Beziehung unter Verwendung eines anderen Ziels erstellen möchten. Durch diesen Vorgang werden alle Metadaten entfernt und können nicht rückgängig gemacht werden.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Sie müssen Workflow Automation einrichten.
+
+
+
+
+== Schritte
+
+. Wählen Sie auf der Registerkarte *Protection* der Seite *Health/Volume* Details aus der Topologie die SnapMirror Beziehung aus, die Sie entfernen möchten.
+. Klicken Sie mit der rechten Maustaste auf den Namen des Ziels und wählen Sie im Menü die Option *Entfernen*.
++
+Das Dialogfeld Beziehung entfernen wird angezeigt.
+
+. Klicken Sie auf *Weiter*, um die Beziehung zu entfernen.
++
+Die Beziehung wird von der Seite „Health/Volume Details“ entfernt.
+
+

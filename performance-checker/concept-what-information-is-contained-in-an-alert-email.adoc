@@ -1,0 +1,27 @@
+---
+permalink: performance-checker/concept-what-information-is-contained-in-an-alert-email.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Warnmeldungen von Unified Manager liefern die Art des Ereignisses, den Schweregrad des Ereignisses, den Namen der Richtlinie, die gegen das Ereignis verstoßen wurde, und eine Beschreibung des Ereignisses. Die E-Mail-Nachricht enthält auch einen Hyperlink für jedes Ereignis, mit dem Sie die Detailseite für das Ereignis in der Benutzeroberfläche anzeigen können. 
+---
+= Welche Informationen sind in einer Alarm-E-Mail enthalten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Warnmeldungen von Unified Manager liefern die Art des Ereignisses, den Schweregrad des Ereignisses, den Namen der Richtlinie, die gegen das Ereignis verstoßen wurde, und eine Beschreibung des Ereignisses. Die E-Mail-Nachricht enthält auch einen Hyperlink für jedes Ereignis, mit dem Sie die Detailseite für das Ereignis in der Benutzeroberfläche anzeigen können.
+
+Alle Benutzer, die sich für den Erhalt von Benachrichtigungen angemeldet haben, erhalten Warnmeldungen per E-Mail.
+
+Wenn sich ein Performance-Zähler oder Kapazitätswert während einer Inkassofrist groß ändert, kann es dazu führen, dass sowohl ein kritisches als auch ein Warnereignis gleichzeitig für dieselbe Schwellenwertrichtlinie ausgelöst werden. In diesem Fall erhalten Sie möglicherweise eine E-Mail für das Warnereignis und eine für das kritische Ereignis. Dies liegt daran, dass Sie mit Unified Manager separat Warnmeldungen für Warnung und kritische Schwellenwertverletzungen erhalten.
+
+[NOTE]
+====
+Nach dem Upgrade auf Unified Manager 7.2 oder höher funktionieren Links zu Ereignissen und Warnmeldungen von E-Mails, die von älteren Versionen von Unified Manager gesendet wurden, aufgrund einer Änderung des Ereignisses und der Alarm-URLs nicht mehr.
+
+====
+Nachstehend finden Sie eine Beispiel-E-Mail für eine Warnmeldung:
+
+image::../media/um-email-alert.gif[Um E-Mail-Warnung]

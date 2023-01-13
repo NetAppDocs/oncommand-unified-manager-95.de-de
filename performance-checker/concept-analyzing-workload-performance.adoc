@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/concept-analyzing-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit Unified Manager lässt sich die I/O-Performance von Volume-Workloads auf Clustern überwachen und analysieren. Sie können ermitteln, ob ein Performance-Problem im Cluster liegt und ob der Storage das Problem ist. 
+---
+= Analyse der Workload-Performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit Unified Manager lässt sich die I/O-Performance von Volume-Workloads auf Clustern überwachen und analysieren. Sie können ermitteln, ob ein Performance-Problem im Cluster liegt und ob der Storage das Problem ist.
+
+[NOTE]
+====
+Dieses Kapitel beschreibt die Analyse der Workload-Performance mithilfe der Seite „Performance/Volume Details“ und der Seite „Ereignisdetails“.
+
+====

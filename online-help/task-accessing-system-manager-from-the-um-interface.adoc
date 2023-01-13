@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-accessing-system-manager-from-the-um-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn für die Fehlerbehebung Konfigurationsänderungen an einem Cluster erforderlich sind, können Sie die grafische Schnittstelle von System Manager anstelle der ONTAP Befehlszeilenschnittstelle verwenden. System Manager ist als Webservice in ONTAP enthalten, ist standardmäßig aktiviert und kann über einen Browser aufgerufen werden. 
+---
+= Zugriff auf OnCommand System Manager über die Unified Manager Schnittstelle
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn für die Fehlerbehebung Konfigurationsänderungen an einem Cluster erforderlich sind, können Sie die grafische Schnittstelle von System Manager anstelle der ONTAP Befehlszeilenschnittstelle verwenden. System Manager ist als Webservice in ONTAP enthalten, ist standardmäßig aktiviert und kann über einen Browser aufgerufen werden.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen ein mit dem konfiguriertes Cluster-Benutzerkonto besitzen `admin` Rolle und der `http`, `ontapi`, und `console` Applikationstypen
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Dashboards* > *Clusteransicht*.
+. Wählen Sie auf der Seite *Dashboards/Clusteransicht* den Cluster aus, den Sie verwalten möchten.
++
+Ein Überblick über den Monitoring-Status, die Kapazität und die Performance des Clusters wird angezeigt.
+
+. Klicken Sie auf das Symbol *System Manager*.
++
+Wenn das Cluster ein selbstsigniertes digitales Zertifikat verwendet, wird im Browser möglicherweise eine Warnung angezeigt, dass das Zertifikat nicht vertrauenswürdig ist. Sie können entweder das Risiko bestätigen, den Zugriff fortzusetzen, oder ein von der Zertifizierungsstelle signiertes digitales Zertifikat auf dem Cluster zur Server-Authentifizierung installieren.
+
+. Melden Sie sich mit den Anmeldedaten des Cluster-Administrators bei System Manager an.
++
+Wenn die Anmeldung bei der System Manager-Benutzeroberfläche mit SAML-Authentifizierung geschützt ist, geben Sie Ihre Anmeldedaten anstelle der System Manager-Anmeldeseite auf der Anmeldeseite des Identitäts-Providers (IdP) ein.
+
+

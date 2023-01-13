@@ -1,0 +1,36 @@
+---
+permalink: online-help/concept-what-conditions-and-condition-sets-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Bedingungen sind ein Satz von übereinstimmenden Kriterien, die auf Regeleigenschaften wie Dateiname, Verzeichnispfad und Eigentümer basieren, die eine Regel definieren. Eine Sammlung solcher Bedingungen wird als Bedingungssatz bezeichnet. Sie können Bedingungen und Bedingungssätze nur für benutzerdefinierte Regeln verwenden, um zu bestimmen, wo Inhalte in Ihr Infinite Volume geschrieben werden. 
+---
+= Welche Bedingungen und Bedingungssätze sind
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+_Conditions_ sind ein Satz von übereinstimmenden Kriterien, die auf Regeleigenschaften basieren - wie Dateiname, Verzeichnispfad und Eigentümer -, die eine Regel definieren. Eine Sammlung solcher Bedingungen ist als _condition Set_ bekannt. Sie können Bedingungen und Bedingungssätze nur für benutzerdefinierte Regeln verwenden, um zu bestimmen, wo Inhalte in Ihr Infinite Volume geschrieben werden.
+
+
+
+== Bestimmten Bedingungen
+
+Für eine benutzerdefinierte Regel können Sie Bedingungen festlegen, die auf Regeleigenschaften wie Dateiname, Verzeichnispfad oder Eigentümer oder einer Kombination aller Regeleigenschaften basieren. Die Logik ähnelt einem Booleschen Vorgang UND einer Operation. Durch die Verwendung von Bedingungen können Sie beispielsweise eine benutzerdefinierte Regel erstellen, mit der Dateien gespeichert werden `.mp3` Erweiterungen und Dateien im Besitz von John im Verzeichnispfad beginnend mit `/NS/`.
+
+
+
+== Bedingungssätze
+
+Die für Bedingungssätze verwendete Logik ähnelt einem Booleschen Wert ODER einer Operation. Durch die Verwendung von Bedingungen und Bedingungssätzen können Sie beispielsweise eine komplexe benutzerdefinierte Regel erstellen, die einer der folgenden Bedingungen entspricht:
+
+* Zustand-1
++
+Alle Dateien im Besitz von Mary und werden in abgelegt `/NS/Eng/`
+
+* Zustand-2
++
+Alle Dateien mit Namen, die mit enden ``.pdf``Und im Besitz von Mary
+
+

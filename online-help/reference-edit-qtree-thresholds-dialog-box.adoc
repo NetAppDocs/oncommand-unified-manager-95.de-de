@@ -1,0 +1,71 @@
+---
+permalink: online-help/reference-edit-qtree-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Benachrichtigungen konfigurieren, um Benachrichtigungen zu senden, wenn ein Ereignis im Zusammenhang mit der Kapazität eines qtree erzeugt wird, und Sie können Korrekturmaßnahmen für das Ereignis ergreifen. Beispielsweise können Sie für den Schwellenwert für qtree „voll“ eine Meldung konfigurieren, um eine Benachrichtigung zu senden, wenn der Zustand über einen bestimmten Zeitraum beibehalten wird. 
+---
+= Dialogfeld „Qtree-Schwellenwerte bearbeiten“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Benachrichtigungen konfigurieren, um Benachrichtigungen zu senden, wenn ein Ereignis bezüglich der Kapazität eines qtree generiert wird. Sie können Korrekturmaßnahmen für das Ereignis ergreifen. Beispielsweise können Sie für den Schwellenwert für qtree „voll“ eine Meldung konfigurieren, um eine Benachrichtigung zu senden, wenn der Zustand über einen bestimmten Zeitraum beibehalten wird.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+Im Dialogfeld Qtree-Schwellenwerte bearbeiten können Sie Schwellenwerte auf qtree-Ebene konfigurieren, die auf die ausgewählten qtrees angewendet werden. Wenn Schwellenwerte auf qtree-Ebene konfiguriert werden, haben sie Vorrang vor den Schwellenwerte auf Gruppenebene oder den globalen Schwellenwerten.
+
+Sie können Schwellwerte für die Kapazität auf qtree-Ebene konfigurieren. Wenn eine Gruppenaktion des qtree Schwellenwerts konfiguriert wird, werden die Gruppenaktion Schwellenwerte für Einstellungen verwendet, die nicht auf qtree-Ebene konfiguriert sind. Wenn keine Gruppenaktion des qtree Schwellenwerts konfiguriert ist, verwenden Sie Bereiche im Dialogfeld Qtree-Schwellenwerte bearbeiten, die nicht konfiguriert sind, globale Schwellenwerte.
+
+
+
+== Kapazität
+
+Im Kapazitätsbereich können Sie die folgenden qtree-Kapazitätsschwellenwerte festlegen:
+
+* *Raum Fast Voll*
++
+Gibt den Prozentsatz an, bei dem ein qtree als fast voll erachtet wird. Er zeigt auch die Größe des qtree an, die dem angegebenen Schwellenwert entsprechen.
+
++
+Sie können auch den Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+* *Raum Voll*
++
+Gibt den Prozentsatz an, bei dem ein qtree als voll erachtet wird. Er zeigt auch die Größe des qtree an, die dem angegebenen Schwellenwert entsprechen.
+
++
+Sie können auch den Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Befehlsschaltflächen können Sie für einen ausgewählten qtree die folgenden Aufgaben ausführen:
+
+* *Auf Standard zurücksetzen*
++
+Ermöglicht Ihnen, die Schwellenwerte auf einen der folgenden Werte wiederherzustellen:
+
++
+** Gruppenwerte, wenn der qtree zu einer Gruppe gehört und diese Gruppe über einen qtree Schwellenwert verfügt.
+** Globale Werte, wenn der qtree nicht zu einer Gruppe gehört oder zu einer Gruppe gehört, die keinen qtree Schwellenwert hat
+
+
+* *Speichern*
++
+Speichert alle Schwellwerteinstellungen.
+
+* *Speichern und Schließen*
++
+Speichert alle Schwellwerteinstellungen und schließt das Dialogfeld.
+
+* *Abbrechen*
++
+Ignoriert die Änderungen (falls vorhanden) an den Schwellenwerteinstellungen und schließt das Dialogfeld.
+
+

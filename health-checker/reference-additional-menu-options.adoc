@@ -1,0 +1,54 @@
+---
+permalink: health-checker/reference-additional-menu-options.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit den folgenden Menüoptionen können Sie verschiedene administrative Aufgaben auf dem Unified Manager-Server ausführen. 
+---
+= Zusätzliche Menüoptionen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit den folgenden Menüoptionen können Sie verschiedene administrative Aufgaben auf dem Unified Manager-Server ausführen.
+
+Folgende Menüoptionen stehen zur Verfügung:
+
+* *Serverzertifikat Zurücksetzen*
++
+Generiert das HTTPS-Serverzertifikat erneut.
+
++
+Sie können das Serverzertifikat in der Benutzeroberfläche von Unified Manager neu generieren, indem Sie auf * klickenimage:../media/clusterpage-settings-icon.gif[""]* > *HTTPS-Zertifikat* > *HTTPS-Zertifikat neu erstellen*.
+
+* *SAML-Authentifizierung deaktivieren*
++
+Deaktiviert die SAML-Authentifizierung, sodass der Identitäts-Provider (IdP) keine Anmeldeauthentifizierung für Benutzer bereitstellt, die auf die Unified Manager-GUI zugreifen. Diese Konsolenoption wird in der Regel verwendet, wenn ein Problem mit der IdP-Server- oder SAML-Konfiguration Benutzer vom Zugriff auf die Unified Manager-GUI blockiert.
+
+* * Externer Datenanbieter*
++
+Bietet Optionen zum Verbinden von Unified Manager mit einem externen Datenanbieter. Nachdem Sie die Verbindung hergestellt haben, werden Performance-Daten an einen externen Server gesendet, sodass Storage Performance-Experten mithilfe von Software von Drittanbietern die Performance-Kennzahlen abstellen können. Folgende Optionen werden angezeigt:
+
++
+** *Server-Konfiguration anzeigen*--zeigt die aktuellen Verbindungs- und Konfigurationseinstellungen für einen externen Datenanbieter an.
+** *Serververbindung hinzufügen/ändern*--ermöglicht Ihnen die Eingabe neuer Verbindungseinstellungen für einen externen Datenanbieter oder die Änderung vorhandener Einstellungen.
+** *Serverkonfiguration ändern*--ermöglicht die Eingabe neuer Konfigurationseinstellungen für einen externen Datenanbieter oder das Ändern vorhandener Einstellungen.
+** *Serververbindung löschen*--Löscht die Verbindung zu einem externen Datenanbieter.
++
+Nach dem Löschen der Verbindung verliert Unified Manager die Verbindung zum externen Server.
+
+
+
+* *Konfiguration Des Leistungsintervalls*
++
+Bietet eine Option für die Konfiguration, wie häufig Unified Manager Performance-statistische Daten aus Clustern erfasst. Das Standard-Erfassungsintervall beträgt fünf Minuten.
+
++
+Sie können dieses Intervall auf zehn oder fünfzehn Minuten ändern, wenn Sie feststellen, dass Sammlungen von großen Clustern nicht rechtzeitig abgeschlossen werden.
+
+* *Ausgang*
++
+Beendet das Menü der Wartungskonsole.
+
+

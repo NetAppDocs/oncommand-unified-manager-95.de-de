@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-top-most-discussed-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Ereignisbericht so anpassen, dass Ereignisse, die am meisten besprochen werden, angezeigt werden. 
+---
+= Anpassen des Berichts „Veranstaltungen“ zur Anzeige der am häufigsten diskutierten Ereignisse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Ereignisbericht so anpassen, dass Ereignisse, die am meisten besprochen werden, angezeigt werden.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. Um die Ereignisse zu sortieren, die am meisten diskutiert werden, klicken Sie in die Spalte *Hinweise* und klicken Sie auf die image:../media/click-to-see-menu.gif[""] Symbol.
+. Wählen Sie *Filter* > *Oben/Unten N*.
+. Wählen Sie im Dialogfeld *Top/Bottom N* aus dem Feld *Filter* die Option *Top N* aus, und geben Sie einen Wert in das Textfeld ein.
+. Klicken Sie auf *OK*.
+

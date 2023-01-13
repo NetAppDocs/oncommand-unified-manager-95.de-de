@@ -1,0 +1,47 @@
+---
+permalink: online-help/reference-available-iops-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Im Performance Explorer Verfügbare IOPS-Zählerdiagramm wird die Anzahl der ein-/Ausgabevorgänge pro Sekunde angezeigt, die derzeit \(frei\) auf dem ausgewählten Speicherobjekt verfügbar sind.' 
+---
+= Verfügbares Zählerdiagramm für die IOPS-Performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Performance Explorer Verfügbare IOPS-Zählerdiagramm zeigt die Anzahl der ein-/Ausgabevorgänge pro Sekunde an, die derzeit (kostenlos) auf dem ausgewählten Speicherobjekt verfügbar sind.
+
+Das Popup-Fenster, das angezeigt wird, wenn sich der Cursor im Diagrammbereich befindet, zeigt die spezifischen Zählerwerte zu bestimmten Zeiten an.
+
+Diese Diagrammoption wird nur angewendet, wenn das ausgewählte Objekt ein Knoten oder Aggregat ist.
+
+Auf der unteren Seite des Diagramms werden Informationen zur minimalen, maximalen, durchschnittlichen und 95. Perzentil-Performance angezeigt, die für den ausgewählten Zeitraum verwendet wird.
+
+
+
+== Verfügbare IOPS: Zählerdiagramm insgesamt
+
+Zeigt die Anzahl der ein-/Ausgabevorgänge pro Sekunde an, die derzeit auf dem ausgewählten Speicherobjekt verfügbar (frei) sind. Diese Zahl ergibt sich aus der Subtraktion der derzeit verwendeten IOPS von den IOPS-Gesamtwerten, die Unified Manager berechnet, die das Objekt ausführen kann.
+
+[NOTE]
+====
+Verfügbare IOPS-Daten sind nur verfügbar, wenn die Nodes in einem Cluster mit der Software ONTAP 9.0 oder höher installiert sind.
+
+====
+
+
+== *Zoom-Ansicht*-Taste
+
+Zeigt eine vergrößerte Ansicht der Daten des Zählerdiagramms an.
+
+* Veranstaltungen
++
+Das Auftreten von kritischen, Warn- und Informationsereignissen wird in den Zeitlinien über den Diagrammen angezeigt.
+
+* Zähler
++
+Die Zähler im linken Teilfenster zeigen an, welche Zählerwerte angezeigt werden. Deaktivieren oder Auswählen des image:../media/eye-icon.gif[""] Dies wird mit einem Zähler verknüpft, versteckt sich und zeigt die Zählerinformationen aus dem Diagramm an und kann beim Vergleich von Objekten helfen.
+
+

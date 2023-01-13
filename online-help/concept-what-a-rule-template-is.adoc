@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-what-a-rule-template-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Eine Regelvorlage ist eine vordefinierte Vorlage, die zum Erstellen von Regeln in einer Datenrichtlinie verwendet werden kann. Mit einer Regelvorlage können Sie eine Regel erstellen, die auf drei Kategorien basiert: Eigentümer, Dateityp und Verzeichnispfad.' 
+---
+= Was ist eine Regelvorlage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eine Regelvorlage ist eine vordefinierte Vorlage, die zum Erstellen von Regeln in einer Datenrichtlinie verwendet werden kann. Mit einer Regelvorlage können Sie eine Regel erstellen, die auf drei Kategorien basiert: Eigentümer, Dateityp und Verzeichnispfad.
+
+
+
+== Beispiel für eine Regelvorlage für Dateitypen
+
+Die Regelvorlage "`Platzieren Sie alle Dateien mit den angegebenen Erweiterungen in einer geeigneten Speicherklasse`" speichert alle .mp3 Dateien, die auf das Infinite Volume geschrieben werden, in einer Speicherklasse, die Sie angeben.

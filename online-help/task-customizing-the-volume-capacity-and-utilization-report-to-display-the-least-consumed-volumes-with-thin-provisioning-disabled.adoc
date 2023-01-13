@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-the-least-consumed-volumes-with-thin-provisioning-disabled.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Volume-Kapazitäts- und Auslastungsbericht anpassen, um Volumes basierend auf ihrem Volume-Verbrauch anzuzeigen. 
+---
+= Anpassen des Berichts zur Volume-Kapazität und -Auslastung, um die am wenigsten verbrauchten Volumes mit deaktiviertem Thin Provisioning anzuzeigen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Volume-Kapazitäts- und Auslastungsbericht anpassen, um Volumes basierend auf ihrem Volume-Verbrauch anzuzeigen.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach SVM, Cluster oder Volume:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um die Volumen anhand des verbrauchten Prozentsatzes zu sortieren, klicken Sie in die Spalte *verwendete Daten %* und klicken Sie auf das image:../media/sort-asc.gif[""] Symbol.
+. Um Volumes mit deaktiviertem Thin Provisioning zu filtern, klicken Sie in die Spalte *Thin Provisioning* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Liste *Bedingung* die Option *gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *Nein*.
+. Klicken Sie auf *OK*.
+

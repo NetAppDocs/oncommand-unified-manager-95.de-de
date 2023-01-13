@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-with-a-critical-severity-type.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Ereignisbericht so anpassen, dass Ereignisse angezeigt werden, die nach ihrem Schweregrad gefiltert sind, und nach den Ereignissen, die für den längsten Zeitraum nicht gelöst wurden. 
+---
+= Anpassen des Ereignisberichts zur Anzeige von Ereignissen mit einem kritischen Schweregrad
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Ereignisbericht so anpassen, dass Ereignisse angezeigt werden, die nach ihrem Schweregrad gefiltert sind, und nach den Ereignissen, die für den längsten Zeitraum nicht gelöst wurden.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. Um Ereignisse mit dem Schweregrad kritisch zu filtern, klicken Sie in die Spalte *Status* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Liste *Bedingung* die Option *gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *kritisch*.
+. Klicken Sie auf *OK*.
+. Um die Ereignisse zu sortieren, die für den längsten Zeitraum nicht aufgelöst wurden, klicken Sie in die Spalte *Tage ausstehen* und klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+. Wählen Sie *Filter* > *Oben/Unten N*.
+. Wählen Sie im Dialogfeld *Top/Bottom N* aus dem Feld *Filter* die Option *Top N* aus, und geben Sie einen Wert in das Textfeld ein.
+. Klicken Sie auf *OK*.
+

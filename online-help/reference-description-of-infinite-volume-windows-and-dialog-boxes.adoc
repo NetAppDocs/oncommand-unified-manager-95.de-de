@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-infinite-volume-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können SVMs mit Infinite Volume über die entsprechende Detailseite für den Systemzustand/Storage Virtual Machine überwachen. Über das Dialogfeld Regel erstellen können Sie Regeln und Datenrichtlinien verwalten. Sie können die Schwellenwerte der Speicherklasse auch im Dialogfeld Schwellenwerte für Speicherklassen bearbeiten ändern. 
+---
+= Beschreibung der Fenster und Dialogfelder von Infinite Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können SVMs mit Infinite Volume über die entsprechende Detailseite für den Systemzustand/Storage Virtual Machine überwachen. Über das Dialogfeld Regel erstellen können Sie Regeln und Datenrichtlinien verwalten. Sie können die Schwellenwerte der Speicherklasse auch im Dialogfeld Schwellenwerte für Speicherklassen bearbeiten ändern.

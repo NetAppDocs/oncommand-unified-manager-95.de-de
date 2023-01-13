@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-incident-events-assigned-to-the-admin.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Ereignisbericht so anpassen, dass dem Administrator zugewiesene Ereignisse angezeigt werden, die nach der Auswirkungs-Ebene und dem Administratornamen gefiltert sind. 
+---
+= Anpassen des Ereignisberichts zur Anzeige der dem Administrator zugewiesenen Ereignisse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Ereignisbericht so anpassen, dass dem Administrator zugewiesene Ereignisse angezeigt werden, die nach der Auswirkungs-Ebene und dem Administratornamen gefiltert sind.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. Um Ereignisse zu filtern, klicken Sie in der Spalte *Impact Level* auf und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Liste *Bedingung* die Option *gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *Vorfall*.
+. Klicken Sie auf *OK*.
+. Um diese Vorfälle dem Administrator zuzuweisen, klicken Sie in der Spalte *Assigned to* auf und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *Admin-Name*.
+. Klicken Sie auf *OK*.
+

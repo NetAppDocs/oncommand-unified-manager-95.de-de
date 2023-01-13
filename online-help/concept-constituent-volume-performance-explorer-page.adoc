@@ -1,0 +1,38 @@
+---
+permalink: online-help/concept-constituent-volume-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Seite „Performance/Constituent Volume Explorer“ enthält detaillierte Leistungsinformationen für die ausgewählte FlexGroup-Komponente. 
+---
+= Seite „Performance/Constituent Volume Explorer“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite „Performance/Constituent Volume Explorer“ enthält detaillierte Leistungsinformationen für die ausgewählte FlexGroup-Komponente.
+
+Auf der Seite „Performance/Constituent Volume Explorer“ können Sie die Performance eines FlexGroup-Volumes und dessen zusammengehörige Volumes während eines bestimmten Zeitraums verfolgen und vergleichen. Dies hilft bei der Fehlersuche und Feinabstimmung der Performance eines Volume und seiner zusammengehörigen Volumes.
+
+Mithilfe der Funktion „Anzeigen und Vergleichen“ können Sie die Performance dieses zusammengehörigen Volumes mit folgenden Punkten vergleichen:
+
+* Das Aggregat, in dem sich das zusammengehörige Volume befindet
+* Der SVM, auf der sich das zusammengehörige Volume befindet
+* Das FlexGroup Volume, zu dem das zusammengehörige Volume gehört
+* Andere Volumes, die sich auf dem gleichen Aggregat befinden
+
+
+Auf der Seite „Performance/Constituent Volume Explorer“ können Sie Folgendes ausführen:
+
+* Zeigen Sie Probleme mit Schwellenwerten und deren Details an
+* Verfolgen und vergleichen Sie die Performance-Daten der einzelnen Bestandteile
+* Untersuchung und Behebung von Problemen mit Schwellenwerten
+* Untersuchung und Behebung von Performance-Problemen
+
+
+[NOTE]
+====
+Für Datensicherungs-Volumes (DP) werden nur Zählerwerte für den benutzergenerierten Datenverkehr angezeigt. Wenn das Cluster mit einer Version der ONTAP Software vor 8.3 installiert ist, werden keine Zählerwerte angezeigt.
+
+====

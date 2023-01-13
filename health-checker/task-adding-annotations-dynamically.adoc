@@ -1,0 +1,34 @@
+---
+permalink: health-checker/task-adding-annotations-dynamically.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Beim Erstellen benutzerdefinierter Anmerkungen ordnet Unified Manager Cluster, Storage Virtual Machines \(SVMs\) und Volumes mithilfe von Regeln dynamisch den Annotationen zu. Diese Regeln weisen die Anmerkungen automatisch den Speicherobjekten zu.' 
+---
+= Anmerkungen werden dynamisch hinzugefügt
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Beim Erstellen benutzerdefinierter Annotationen ordnet Unified Manager Cluster, Storage Virtual Machines (SVMs) und Volumes anhand von Regeln dynamisch den Annotationen zu. Diese Regeln weisen die Anmerkungen automatisch den Speicherobjekten zu.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im linken Menü Verwaltung auf *Anmerkungen*.
+. Klicken Sie auf der Seite *Anmerkungen* auf *Anmerkung hinzufügen*.
+. Geben Sie im Dialogfeld *Anmerkung hinzufügen* einen Namen und eine Beschreibung für die Anmerkung ein.
++
+Sie können beim Erstellen von Anmerkungen auch Werte zu Anmerkungen hinzufügen.
+
+. Optional: Klicken Sie im Abschnitt *Anmerkungswerte* auf *Hinzufügen*, um der Anmerkung Werte hinzuzufügen.
+. Klicken Sie auf *Speichern und Schließen*.
+

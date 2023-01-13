@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können die Zeitpläne für den Bericht Volume Transfer Status \(Historical\) anpassen, um die Volume-Details auf der Grundlage verschiedener Zeitpläne anzuzeigen. Sie können vorhandene Berichtspläne anzeigen, ändern oder löschen und neue Zeitpläne für Berichte hinzufügen.' 
+---
+= Anpassen der Berichtspläne für den Volume Transfer Status (Historical)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Zeitpläne für den Bericht „Volume Transfer Status“ (Historischer Bericht) anpassen, um die Volume-Details auf Basis verschiedener Zeitpläne anzuzeigen. Sie können vorhandene Berichtspläne anzeigen, ändern oder löschen und neue Zeitpläne für Berichte hinzufügen.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. Klicken Sie auf der Berichtsseite *Volume Transfer Status (Historical)* auf *Berichtszeitpläne verwalten*.
+. Geben Sie im Dialogfeld *Berichtszeitpläne verwalten* bestimmte Details ein, wie z. B. Name des Empfängerplans, E-Mail-Adresse, Berichtsformat, Häufigkeit und Berichte.
+. Wählen Sie als Berichtskategorie * Inventory* aus.
+. Klicken Sie auf *Speichern und Schließen*.
++
+Der Bericht zum Volume Transfer Status (Historical) wird automatisch per E-Mail an einen oder mehrere Empfänger gemäß dem Zeitplan gesendet.
+
+

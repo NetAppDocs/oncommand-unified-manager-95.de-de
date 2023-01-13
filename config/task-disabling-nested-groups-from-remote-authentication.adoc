@@ -1,0 +1,37 @@
+---
+permalink: config/task-disabling-nested-groups-from-remote-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn die Remote-Authentifizierung aktiviert ist, können Sie die verschachtelte Gruppenauthentifizierung deaktivieren, sodass sich nur einzelne Benutzer und nicht Gruppenmitglieder im Remote-Zugriff auf Unified Manager authentifizieren können. Sie können verschachtelte Gruppen deaktivieren, wenn Sie die Reaktionszeit der Active Directory-Authentifizierung verbessern möchten. 
+---
+= Deaktivieren verschachtelter Gruppen von der Remote-Authentifizierung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn die Remote-Authentifizierung aktiviert ist, können Sie die verschachtelte Gruppenauthentifizierung deaktivieren, sodass sich nur einzelne Benutzer und nicht Gruppenmitglieder im Remote-Zugriff auf Unified Manager authentifizieren können. Sie können verschachtelte Gruppen deaktivieren, wenn Sie die Reaktionszeit der Active Directory-Authentifizierung verbessern möchten.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen die OnCommand-Administratorrolle besitzen.
+* Das Deaktivieren verschachtelter Gruppen ist nur bei Verwendung von Active Directory anwendbar.
+
+
+
+
+== Über diese Aufgabe
+
+Wenn Sie die Unterstützung für verschachtelte Gruppen in Unified Manager deaktivieren, wird die Authentifizierungszeit möglicherweise verkürzt. Wenn die Unterstützung verschachtelter Gruppen deaktiviert ist und eine Remote-Gruppe zu Unified Manager hinzugefügt wird, müssen einzelne Benutzer Mitglieder der Remote-Gruppe sein, um sich bei Unified Manager zu authentifizieren.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im linken Einrichtungsmenü auf *Authentifizierung*.
+. Aktivieren Sie auf der Seite *Setup/Authentifizierung* das Kontrollkästchen *Nested Group Lookup deaktivieren*.
+. Klicken Sie Auf *Speichern*.
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-backup-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Liste der Backups von der Backup-Seite in Unified Manager anzeigen. Sie können den Backup-Namen, die Größe und die Erstellungszeit für die auf dieser Seite aufgeführten Backups anzeigen. Sie können die Einstellungen für die Datenbank-Sicherung auf der Seite Einstellungen für die Datenbank-Sicherung ändern. 
+---
+= Beschreibung der Backup-Fenster und Dialogfelder
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Liste der Backups von der Backup-Seite in Unified Manager anzeigen. Sie können den Backup-Namen, die Größe und die Erstellungszeit für die auf dieser Seite aufgeführten Backups anzeigen. Sie können die Einstellungen für die Datenbank-Sicherung auf der Seite Einstellungen für die Datenbank-Sicherung ändern.

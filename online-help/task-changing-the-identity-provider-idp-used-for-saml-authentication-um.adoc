@@ -1,0 +1,54 @@
+---
+permalink: online-help/task-changing-the-identity-provider-idp-used-for-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können den Identitäts-Provider \ (IdP\), den Unified Manager zur Authentifizierung von Remote-Benutzern verwendet, ändern.' 
+---
+= Ändern des Identitäts-Providers, der für die SAML-Authentifizierung verwendet wird
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Identitäts-Provider (IdP), den Unified Manager zur Authentifizierung von Remote-Benutzern verwendet, ändern.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die IdP-URL und die Metadaten verfügen.
+* Sie müssen Zugriff auf die IdP haben.
+
+
+
+
+== Über diese Aufgabe
+
+Der neue IdP kann vor oder nach der Konfiguration von Unified Manager konfiguriert werden.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im linken Einrichtungsmenü auf *Authentifizierung*.
+. Wählen Sie auf der Seite *Setup/Authentifizierung* die Registerkarte *SAML Authentication* aus.
+. Geben Sie die neue IdP-URI und die IdP-Metadaten ein, die erforderlich sind, um den Unified Manager-Server mit dem IdP zu verbinden.
++
+Wenn der IdP direkt über den Unified Manager-Server aufgerufen werden kann, können Sie nach Eingabe der IdP-URL auf die Schaltfläche *IdP-Metadaten abrufen* klicken, um das Feld IdP-Metadaten automatisch auszufüllen.
+
+. Kopieren Sie den Unified Manager-Metadaten-URI oder speichern Sie die Metadaten in eine XML-Textdatei.
+. Klicken Sie Auf *Konfiguration Speichern*.
++
+Es wird ein Meldungsfeld angezeigt, um zu bestätigen, dass Sie die Konfiguration ändern möchten.
+
+. Klicken Sie auf *OK*.
+
+
+
+
+== Nachdem Sie fertig sind
+
+Greifen Sie auf den neuen IdP zu, und geben Sie die URI und die Metadaten des Unified Manager-Servers ein, um die Konfiguration abzuschließen.
+
+Wenn die autorisierten Remote-Benutzer das nächste Mal versuchen, auf die grafische Benutzeroberfläche von Unified Manager zuzugreifen, geben sie ihre Anmeldeinformationen auf der neuen Anmeldeseite für IdP anstelle der alten Anmeldeseite ein.

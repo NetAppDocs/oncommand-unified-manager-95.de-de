@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-customizing-the-qtree-capacity-and-utilization-report-to-display-qtrees-that-have-breached-the-file-soft-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Qtree-Kapazitäts- und Auslastungsbericht anpassen, um qtrees anzuzeigen, die die Softlimit von Dateien überschritten haben. Sie können nach verwendeter Datei, hartem Limit und Softlimit für Dateien filtern und sortieren. 
+---
+= Anpassung des Qtree-Kapazitäts- und Auslastungsberichts zur Anzeige von qtrees, die das Softlimit der Dateien überschritten haben
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Qtree-Kapazitäts- und Auslastungsbericht anpassen, um qtrees anzuzeigen, die die Softlimit von Dateien überschritten haben. Sie können nach verwendeter Datei, hartem Limit und Softlimit für Dateien filtern und sortieren.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach SVM, Cluster oder Volume:
++
+.. Klicken Sie in die Spalten, die die Gruppierung aufheben müssen.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um qtrees zu filtern, die nicht über eine unbegrenzte Anzahl von Dateien verfügen, klicken Sie in die Spalte *File Hard Limit* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
++
+.. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *nicht gleich* aus.
+.. Klicken Sie auf *Werte auswählen* und wählen Sie *unbegrenzt*.
+.. Klicken Sie Auf *Ok*.
+
+
+. Um qtrees zu filtern, die kein unbegrenztes Dateilimit haben, klicken Sie in die Spalte *Dateiweicher Grenzwert* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf das klicken image:../media/click-to-filter.gif[""] Symbol.
++
+.. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *nicht gleich* aus.
+.. Klicken Sie auf *Werte auswählen* und wählen Sie *unbegrenzt*.
+.. Klicken Sie Auf *Ok*.
+
+
+. So fügen Sie eine Spalte für qtrees hinzu, die das Softlimit der Datei überschritten haben:
++
+.. Klicken Sie in der Spalte *Dateiweicher Grenzwert* auf das image:../media/click-to-see-menu.gif[""] Und wählen Sie *Spalte* > *Neue berechnete Spalte*
+.. Geben Sie im Dialogfeld * Neue berechnete Spalte* ein `Breached File Soft Limit Capacity` Im Feld *Spaltenbeschriftung*.
+.. Wählen Sie in der Liste Kategorie auswählen die Option *Text* aus.
+.. Wählen Sie aus der Dropdown-Liste *Funktion auswählen* die Option *Erweitert* aus.
+.. Geben Sie im Feld *Ausdruck eingeben* ein `IF(([qtreeFileUsedPercent]*[fileLimit]/100 > [softFileLimit]), "Yes", "No")`.
+.. Klicken Sie auf *OK*.
+
+
+. Um qtrees zu filtern, die das Limit für weiche Dateien überschritten haben, klicken Sie in die Spalte *undurchbrochen Dateiweicher Grenzwert Kapazität* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf das klicken image:../media/click-to-filter.gif[""] Symbol.
++
+.. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *gleich* aus.
+.. Klicken Sie auf *Werte auswählen* und wählen Sie *Ja*.
+.. Klicken Sie Auf *Ok*.
+
+
+

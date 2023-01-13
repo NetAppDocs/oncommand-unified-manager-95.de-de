@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-management-users-page-um.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Verwaltung/Benutzer wird eine Liste Ihrer Benutzer und Gruppen angezeigt und enthält Informationen wie den Namen, den Benutzertyp und die E-Mail-Adresse. Auf dieser Seite können Sie auch Aufgaben wie das Hinzufügen, Bearbeiten, Löschen und Testen von Benutzern ausführen. 
+---
+= Management-/Benutzerseite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Verwaltung/Benutzer wird eine Liste Ihrer Benutzer und Gruppen angezeigt und enthält Informationen wie den Namen, den Benutzertyp und die E-Mail-Adresse. Auf dieser Seite können Sie auch Aufgaben wie das Hinzufügen, Bearbeiten, Löschen und Testen von Benutzern ausführen.
+
+
+
+== Befehlsschaltflächen
+
+Mit den Befehlsschaltflächen können Sie für ausgewählte Benutzer die folgenden Aufgaben ausführen:
+
+* *Hinzufügen*
++
+Zeigt das Dialogfeld Benutzer hinzufügen an, in dem Sie einen lokalen Benutzer, einen Remote-Benutzer, eine Remote-Gruppe oder einen Datenbankbenutzer hinzufügen können.
+
++
+Sie können Remote-Benutzer oder -Gruppen nur hinzufügen, wenn Ihr Authentifizierungsserver aktiviert und konfiguriert ist.
+
+* *Bearbeiten*
++
+Zeigt das Dialogfeld Benutzer bearbeiten an, in dem Sie die Einstellungen für den ausgewählten Benutzer bearbeiten können.
+
+* *Löschen*
++
+Löscht die ausgewählten Benutzer aus der Management-Server-Datenbank.
+
+* *Test*
++
+Hiermit können Sie überprüfen, ob ein Remote-Benutzer oder eine Gruppe im Authentifizierungsserver vorhanden ist.
+
++
+Sie können diese Aufgabe nur ausführen, wenn Ihr Authentifizierungsserver aktiviert und konfiguriert ist.
+
+
+
+
+
+== Listenansicht
+
+Die Listenansicht zeigt in tabellarischer Form Informationen zu den erstellten Benutzern an. Mit den Spaltenfiltern können Sie die angezeigten Daten anpassen.
+
+* *Name*
++
+Zeigt den Namen des Benutzers oder der Gruppe an.
+
+* *Typ*
++
+Zeigt den Benutzertyp an: Lokaler Benutzer, Remote-Benutzer, Remote-Gruppe, Datenbankbenutzer oder Wartungbenutzer.
+
+* *E-Mail*
++
+Zeigt die E-Mail-Adresse des Benutzers an.
+
+* * Rolle*
++
+Zeigt den Typ der Rolle an, die dem Benutzer zugewiesen ist: Operator, Storage Administrator, OnCommand Administrator, Integrations- Schema oder Berichtschema.
+
+

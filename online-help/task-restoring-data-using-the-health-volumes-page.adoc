@@ -1,0 +1,54 @@
+---
+permalink: online-help/task-restoring-data-using-the-health-volumes-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können überschreibende oder gelöschte Dateien, Verzeichnisse oder ein gesamtes Volume anhand einer Snapshot Kopie wiederherstellen. Dazu verwenden Sie die Wiederherstellungsfunktion auf der Seite „Systemzustand“/„Volumes-Inventar“. 
+---
+= Wiederherstellen von Daten mithilfe der Seite „Health/Volumes Inventory“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können überschreibende oder gelöschte Dateien, Verzeichnisse oder ein gesamtes Volume anhand einer Snapshot Kopie wiederherstellen. Dazu verwenden Sie die Wiederherstellungsfunktion auf der Seite „Systemzustand“/„Volumes-Inventar“.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+NTFS-Dateiströme können nicht wiederhergestellt werden.
+
+Die Wiederherstellungsoption ist nicht verfügbar, wenn:
+
+* Die Volume-ID ist unbekannt, z. B. wenn Sie eine Intercluster-Beziehung haben und der Ziel-Cluster noch nicht erkannt wurde.
+* Das Volume ist ein FlexGroup Volume.
+* Das Volume ist für die synchrone SnapMirror Replizierung konfiguriert.
+
+
+
+
+== Schritte
+
+. Wählen Sie auf der Seite *Health/Volumes* Inventory ein Volume aus, aus dem Sie Daten wiederherstellen möchten.
+. Klicken Sie in der Symbolleiste auf *Wiederherstellen*.
++
+Das Dialogfeld Wiederherstellen wird angezeigt.
+
+. Wählen Sie das Volume und die Snapshot Kopie aus, von dem Sie Daten wiederherstellen möchten, falls sie sich von dem Standard unterscheiden.
+. Wählen Sie die Elemente aus, die Sie wiederherstellen möchten.
++
+Sie können das gesamte Volume wiederherstellen oder Ordner und Dateien angeben, die wiederhergestellt werden sollen.
+
+. Wählen Sie den Speicherort aus, an dem die ausgewählten Elemente wiederhergestellt werden sollen; entweder *Originalstandort* oder *alternativer Standort*.
+. Klicken Sie Auf *Wiederherstellen*.
++
+Der Wiederherstellungsprozess beginnt.
+
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-status-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können den Bericht Volume Transfer Status \(Historical\) anpassen, um Informationen zu Volume Transfers in bestimmten Zeitabständen anzuzeigen und zu analysieren. Mithilfe von Filtern können Sie Details zur Volume-Übertragung zwischen zwei Daten anzeigen.' 
+---
+= Anpassung des Berichts Volume Transfer Status (Historical)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Bericht „Volume Transfer Status“ (Verlauf) anpassen, um Informationen zu Volume-Transfers in bestimmten Zeitabständen anzuzeigen und zu analysieren. Mithilfe von Filtern können Sie Details zur Volume-Übertragung zwischen zwei Daten anzeigen.

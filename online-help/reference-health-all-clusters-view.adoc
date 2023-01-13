@@ -1,0 +1,128 @@
+---
+permalink: online-help/reference-health-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Health/Clusters Inventory“ können Sie Cluster hinzufügen und detaillierte Informationen zu den von Ihnen überwachten Clustern anzeigen. 
+---
+= „Systemzustand“/„Cluster Inventory“-Seite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Health/Clusters Inventory“ können Sie Cluster hinzufügen und detaillierte Informationen zu den von Ihnen überwachten Clustern anzeigen.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Befehlsschaltflächen
+
+* *Überwachungsstatus Anzeigen*
++
+Hier können Sie den Überwachungsstatus der ausgewählten Cluster anzeigen, indem Sie zur Seite Configuration/Cluster Data Sources navigieren.
+
+* *Anmerkung*
++
+Ermöglicht Ihnen, das ausgewählte Cluster mit Anmerkungen zu versehen.
+
+* *Liste Aktualisieren*
++
+Aktualisiert die Cluster-Liste und die dem Cluster zugeordneten Eigenschaften.
+
+* *Export*
++
+Ermöglicht das Exportieren der Details aller überwachten Cluster in kommagetrennte Werte (`.csv`) Datei.
+
+
+
+
+
+== Cluster-Tabelle
+
+In der Tabelle Cluster werden die Eigenschaften aller erkannten Cluster angezeigt. Mit den Spaltenfiltern können Sie die angezeigten Daten anpassen:
+
+* *Status*
++
+Ein Symbol, das den aktuellen Status des Clusters angibt. Der Status kann kritisch sein (image:../media/sev-critical-um60.png[""]), Fehler (image:../media/sev-error-um60.png[""]), Warnung (image:../media/sev-warning-um60.png[""]Oder normal (image:../media/sev-normal-um60.png[""]).
+
++
+Sie können Ihren Mauszeiger über das Symbol positionieren, um weitere Informationen über das Ereignis oder die für das Cluster generierten Ereignisse anzuzeigen.
+
++
+Wenn der Status des Clusters auf einem einzelnen Ereignis basiert, können Sie Informationen wie den Ereignisnamen, die Zeit und das Datum, an dem das Ereignis generiert wurde, den Namen des Administrators, dem das Ereignis zugewiesen ist, und die Ursache des Ereignisses anzeigen. Sie können auf die Schaltfläche *Details anzeigen* klicken, um weitere Informationen über die Veranstaltung anzuzeigen.
+
++
+Wenn der Status des Clusters auf mehreren Ereignissen des gleichen Schweregrads basiert, werden die drei wichtigsten Ereignisse zusammen mit Informationen wie dem Ereignisnamen, der Zeit und dem Datum, an dem die Ereignisse generiert werden, und dem Namen des Administrators angezeigt, dem das Ereignis zugewiesen ist. Sie können weitere Details zu den einzelnen Ereignissen anzeigen, indem Sie auf den Ereignisnamen klicken. Sie können auch auf den Link**Alle Ereignisse anzeigen** klicken, um die Liste der generierten Ereignisse anzuzeigen.
+
+* * Cluster*
++
+Der Name des Clusters.
+
+* *Kommunikationsstatus*
++
+Gibt an, ob das Cluster erreichbar ist oder nicht.
+
++
+Der Status wird als gut angezeigt, wenn das Cluster erreichbar ist. Wenn das Cluster nicht erreichbar ist oder die Anmeldeinformationen ungültig sind, wird der Status als nicht erreichbar angezeigt.
+
+* *Systemzustand*
++
+Allgemeine Informationen zum Status des Clusters, die anhand des Status verschiedener Cluster-Subsysteme berechnet werden.
+
++
+Mögliche Werte sind OK, OK mit Unterdrückten, herabgestuft und Komponenten nicht erreichbar. Diese Werte werden von den Zustandsüberwachungen in der ONTAP Software bestimmt.
+
+* *Hostname oder IP-Adresse*
++
+Der FQDN, der Kurzname oder die IP-Adresse der Cluster-Management-LIF, die zur Verbindung mit dem Cluster verwendet wird.
+
+* *FQDN*
++
+Der vollständig qualifizierte Domänenname (FQDN) des Clusters.
+
+* *Betriebssystemversion*
++
+Die ONTAP Version, in der das Cluster ausgeführt wird.
+
++
+Wenn im Cluster die Nodes unterschiedliche Versionen von ONTAP ausführen, wird die früheste ONTAP-Version angezeigt.
+
+* *Anzahl Knoten*
++
+Anzahl der Nodes, die zum Cluster gehören.
+
+* *Letzte Aktualisierte Zeit*
++
+Der Zeitstempel, an dem die Überwachungsmuster des Clusters zuletzt erfasst wurden.
+
+* *Seriennummer*
++
+Die Seriennummer des Clusters.
+
+* *Kontakt*
++
+Die Kontaktinformationen des Clusters.
+
+* *Lage*
++
+Der Speicherort des Clusters.
+
+* *FIPS aktiviert*
++
+Gibt an, ob der FIPS-Modus auf dem Cluster aktiviert ist
+
+
+
+
+
+== Bereich Filter
+
+Im Bereich Filter können Sie Filter festlegen, um die Anzeige von Informationen in der Cluster-Liste anzupassen. Sie können Filter in den Spalten Status, Kommunikationsstatus, Systemintegrität und Anmerkung auswählen.
+
+[NOTE]
+====
+Die im Fensterbereich Filter angegebenen Filter überschreiben die Filter, die für die Spalten in der Clusterliste angegeben sind.
+
+====

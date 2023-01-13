@@ -1,0 +1,26 @@
+---
+permalink: online-help/task-editing-a-customized-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können weitere Änderungen an einem bereits angepassten Bericht vornehmen und den Bericht speichern. Sie können den Namen des Berichts nicht ändern, nachdem Sie ihn gespeichert haben. 
+---
+= Bearbeiten eines benutzerdefinierten Berichts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können weitere Änderungen an einem bereits angepassten Bericht vornehmen und den Bericht speichern. Sie können den Namen des Berichts nicht ändern, nachdem Sie ihn gespeichert haben.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Berichte* und dann auf *Bericht ausführen* für den Bericht, den Sie bearbeiten möchten.
++
+Die Seite Berichtdetails wird angezeigt.
+
+. Ändern Sie den Bericht nach Bedarf, und klicken Sie dann auf *Aktionen* > *Benutzerdefinierter Bericht speichern*.
+. Geben Sie im Dialogfeld *Benutzerdefinierter Bericht speichern* eine kurze Beschreibung der Änderungen im benutzerdefinierten Bericht ein und klicken Sie auf *Speichern*.
+

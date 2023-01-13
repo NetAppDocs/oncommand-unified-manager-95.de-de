@@ -1,0 +1,63 @@
+---
+permalink: online-help/reference-qtree-thresholds-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Configuration/Health Schwellen für qtrees können Sie globale Schwellenwerte für den Systemzustand für überwachte qtrees konfigurieren. Ereignisse werden nur dann für einen qtree erzeugt, wenn ein qtree Kontingent oder eine Standard-Quote auf dem qtree festgelegt wurde. Ereignisse werden nicht generiert, wenn der in einem Benutzerkontingent oder Gruppenkontingent definierte Speicherplatz den Schwellenwert überschritten hat. 
+---
+= Seite „Schwellenwerte für Konfiguration/Systemzustand“ für qtrees
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Configuration/Health Schwellen für qtrees können Sie globale Schwellenwerte für den Systemzustand für überwachte qtrees konfigurieren. Ereignisse werden nur dann für einen qtree erzeugt, wenn ein qtree Kontingent oder eine Standard-Quote auf dem qtree festgelegt wurde. Ereignisse werden nicht generiert, wenn der in einem Benutzerkontingent oder Gruppenkontingent definierte Speicherplatz den Schwellenwert überschritten hat.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+Ereignisse werden erzeugt, wenn ein Schwellenwert überschritten wird. Sie können für solche Ereignisse Korrekturmaßnahmen ergreifen.
+
+
+
+== Kapazität
+
+Im Kapazitätsbereich können Sie die folgenden qtree-Kapazitätsschwellenwerte festlegen.
+
+* *Raum Fast Voll*
++
+Gibt den Prozentsatz an, bei dem ein qtree als nahezu voll erachtet wird:
+
++
+** Standardwert: 80 Prozent
++
+Der Wert für diesen Schwellenwert muss niedriger sein als der Wert für den Qtree Full Schwellenwert.
+
+** Event generiert: Qtree fast voll
+** Ereignis Schweregrad: Warnung
+
+
+* *Raum Voll*
++
+Gibt den Prozentsatz an, bei dem ein qtree als voll erachtet wird:
+
++
+** Standardwert: 90 Prozent
+** Ereignis generiert: Qtree voll
+** Ereignis Schweregrad: Fehler
+
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Wiederherstellen auf Werkseinstellungen*
++
+Ermöglicht die Wiederherstellung der Konfigurationseinstellungen auf die werkseitigen Standardwerte.
+
+* *Speichern*
++
+Speichert die Konfigurationseinstellungen für die ausgewählte Option.
+
+

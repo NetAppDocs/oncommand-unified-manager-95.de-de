@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-viewing-the-aggregate-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: Über die Seite „Systemzustand/Aggregate Inventory“ können Sie das Inventar Ihrer Aggregate überwachen. Auf der Seite Systemzustand/Aggregate Kapazität und Auslastung können Sie Informationen über die Kapazität und Auslastung von Aggregaten in allen Clustern anzeigen. 
+---
+= Anzeigen der Aggregatliste und der Details
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über die Seite „Systemzustand/Aggregate Inventory“ können Sie das Inventar Ihrer Aggregate überwachen. Auf der Seite Systemzustand/Aggregate Kapazität und Auslastung können Sie Informationen über die Kapazität und Auslastung von Aggregaten in allen Clustern anzeigen.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Sie können Details wie Aggregatskapazität und -Konfiguration sowie Festplatteninformationen über die Detailseite „Systemzustand/Aggregat“ anzeigen. Sie können diese Details verwenden, bevor Sie die Schwellenwerteinstellungen konfigurieren, falls erforderlich.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *Aggregate*.
+. Wählen Sie eine der folgenden Möglichkeiten, um die Aggregatdetails anzuzeigen:
++
+** Um Informationen über die Kapazität und Auslastung aller Aggregate in allen Clustern anzuzeigen, wählen Sie im Menü Ansicht die Option *Aggregatskapazität und -Auslastung* aus.
+** Um minimale Details anzuzeigen, positionieren Sie den Cursor über den Aggregatnamen.
+** Um die vollständigen Details anzuzeigen, klicken Sie auf den Aggregatnamen.
++
+Sie können die vollständigen Details auch anzeigen, indem Sie im Dialogfeld mit den minimalen Details auf *Details anzeigen* klicken.
+
+
+
+. Zeigen Sie die Objekte an, die mit dem Aggregat zusammenhängen, indem Sie im Dialogfeld mit den minimalen Details auf *Related* klicken.
+

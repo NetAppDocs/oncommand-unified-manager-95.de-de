@@ -1,0 +1,74 @@
+---
+permalink: online-help/concept-unified-manager-databases-accessible-for-reporting.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager verwendet eine MySQL Datenbank, um Daten von den überwachten Clustern zu speichern. Die Daten werden in verschiedenen Schemata in der MySQL-Datenbank gespeichert. 
+---
+= Auf Unified Manager-Datenbanken kann für individuelle Berichte zugegriffen werden
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager verwendet eine MySQL Datenbank, um Daten von den überwachten Clustern zu speichern. Die Daten werden in verschiedenen Schemata in der MySQL-Datenbank gespeichert.
+
+Ab Unified Manager 7.3 werden weitere Schemata bereitgestellt, die den Zugriff auf zusätzliche Tabellendaten ermöglichen.
+
+Alle Tabellendaten aus den folgenden Datenbanken sind verfügbar:
+
+|===
+| Datenbank | Beschreibung 
+
+
+ a| 
+netapp_Modell_Ansicht
+ a| 
+Daten zu den Objekten auf ONTAP Controllern.
+
+
+
+ a| 
+netapp_Performance
+ a| 
+Cluster-spezifische Performance-Zähler.
+
+
+
+ a| 
+Okum
+ a| 
+Daten und Informationen zu Unified Manager Applikationen unterstützen das Filtern, Sortieren und Berechnen einiger abgeleiteter Felder.
+
+
+
+ a| 
+Ocum_Report
+ a| 
+Daten für die Bestandskonfiguration und Informationen zur Kapazität.
+
+
+
+ a| 
+Ocum_Report_birt
+ a| 
+Wie oben beschrieben, aber diese Datenbank wird von integrierten BIRT-Berichten belegt.
+
+
+
+ a| 
+opm
+ a| 
+Einstellungen für Performance-Konfiguration und Schwellenwertinformationen.
+
+
+
+ a| 
+Skalemonitor
+ a| 
+Daten zu Zustand- und Performance-Problemen der Unified Manager Applikation
+
+|===
+Ein Berichtbenutzer – ein Datenbankbenutzer mit der Rolle „Berichtschema“ – kann auf die Daten in diesen Tabellen zugreifen. Dieser Benutzer hat schreibgeschützten Zugriff auf Reporting- und andere Datenbankansichten direkt aus der Unified Manager-Datenbank. Beachten Sie, dass dieser Benutzer nicht berechtigt ist, auf Tabellen zuzugreifen, die Benutzerdaten oder Cluster-Anmeldeinformationen enthalten.
+
+Siehe http://www.netapp.com/us/media/tr-4565.pdf["Technischer Bericht zu Unified Manager Reporting"] (TR-4565).

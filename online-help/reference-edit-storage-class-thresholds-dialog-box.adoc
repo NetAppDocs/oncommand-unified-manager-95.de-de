@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-edit-storage-class-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Über das Dialogfeld Schwellenwerte der Speicherklasse bearbeiten können Sie die Standardschwellenwerte verschiedener Speicherklassen in jeder SVM mit Infinite Volume basierend auf den Anforderungen Ihres Unternehmens ändern. Die Standardschwellenwerte geben an, welche Aktivität in einer Storage-Klasse erreicht werden muss, bevor ein Ereignis ausgelöst wird. 
+---
+= Dialogfeld „Schwellenwerte für Speicherklasse bearbeiten“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können im Dialogfeld Schwellenwerte der Storage-Klasse bearbeiten die Standardschwellenwerte verschiedener Storage-Klassen in jeder SVM mit Infinite Volume basierend auf den Anforderungen Ihres Unternehmens ändern. Die Standardschwellenwerte geben an, welche Aktivität in einer Storage-Klasse erreicht werden muss, bevor ein Ereignis ausgelöst wird.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Kapazität
+
+Im Kapazitätsbereich können Sie Grenzwerte für die Kapazität für die ausgewählte Speicherklasse festlegen.
+
+* *Raum Fast Voll*
++
+Gibt den Prozentsatz an, bei dem eine Storage-Klasse in der SVM mit Infinite Volume als nahezu voll erachtet wird. Es zeigt auch den entsprechenden Speicherplatz (in GB, MB oder TB) in der Speicherklasse an. Beispiel: Wenn Sie eine Speicherklasse von Größe 10 GB haben und der Schwellenwert für Speicherplatz fast voll 80% beträgt, werden folgende Informationen angezeigt: (8 GB von 10 GB).
+
++
+Sie können auch den Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+* *Raum Voll*
++
+Gibt den Prozentsatz an, bei dem die Storage-Klasse in der SVM mit Infinite Volume als voll erachtet wird. Es zeigt auch den entsprechenden Speicherplatz (in GB, MB oder TB) in der Speicherklasse an. Wenn Sie beispielsweise eine Speicherklasse mit einer Größe von 10 GB haben und der Schwellenwert für „Space Full“ 90 % beträgt, werden folgende Informationen angezeigt: (9 GB von 10GB).
+
++
+Sie können auch den Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+* *Limit Für Snapshot-Nutzung*
++
+Gibt das Limit in Prozent im Speicherplatz an, der für Snapshot Kopien in der Storage-Klasse reserviert ist.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Befehlsschaltflächen können Sie Aufgaben für ein ausgewähltes Volume ausführen.
+
+* *Auf globale Standards zurücksetzen*
++
+Ermöglicht es Ihnen, die Schwellenwerteinstellungen auf die aktuellen Werte zurückzusetzen, die auf globaler Ebene festgelegt sind.
+
+* *Speichern*
++
+Speichert alle Schwellwerteinstellungen.
+
+* *Speichern und Schließen*
++
+Speichert alle Schwellenwerteinstellungen und schließt dann das Dialogfeld „Schwellenwerte für Speicherklasse bearbeiten“.
+
+* *Abbrechen*
++
+Bricht Änderungen (falls vorhanden) an den Schwellenwerteinstellungen ab und schließt das Dialogfeld „Schwellenwerte für Speicherklasse bearbeiten“.
+
+

@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-typical-window-layouts-um-6-x.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Wenn Sie die typischen Fenster-Layouts kennen, können Sie OnCommand Unified Manager effektiv nutzen. Die meisten Unified Manager-Fenster ähneln einem von zwei allgemeinen Layouts: Objektliste oder Details. Die empfohlene Bildschirmeinstellung beträgt mindestens 1280 x 1024 Pixel.' 
+---
+= Typische Fensterlayouts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie die typischen Fenster-Layouts kennen, können Sie OnCommand Unified Manager effektiv nutzen. Die meisten Unified Manager-Fenster ähneln einem von zwei allgemeinen Layouts: Objektliste oder Details. Die empfohlene Bildschirmeinstellung beträgt mindestens 1280 x 1024 Pixel.
+
+Nicht jedes Fenster enthält jedes Element in den folgenden Diagrammen.
+
+
+
+== Layout des Fensters Objektliste
+
+image::../media/object-list.gif[Objektliste]
+
+
+
+== Layout des Fensters „Objektdetails“
+
+image::../media/object-details.gif[Objektdetails]

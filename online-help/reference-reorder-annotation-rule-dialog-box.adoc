@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-reorder-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Über das Dialogfeld Anmerkungsregel neu anordnen können Sie die Reihenfolge angeben, in der Anmerkungsregeln auf Speicherobjekte angewendet werden sollen. 
+---
+= Dialogfeld Anmerkungsregel neu anordnen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über das Dialogfeld Anmerkungsregel neu anordnen können Sie die Reihenfolge angeben, in der Anmerkungsregeln auf Speicherobjekte angewendet werden sollen.
+
+
+
+== Befehlsschaltflächen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Speichern*
++
+Speichert die Änderungen, die Sie an den Anmerkungsregeln vorgenommen haben, und schließt das Dialogfeld Anmerkungsregel neu anordnen.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Anmerkungsregel neu anordnen, ohne die vorgenommenen Änderungen zu speichern.
+
+
+
+
+
+== Listenansicht
+
+* * Rang*
++
+Zeigt die Reihenfolge an, in der die Anmerkungsregeln auf die Speicherobjekte angewendet werden.
+
+* *Name*
++
+Zeigt den Namen der Anmerkungsregel an.
+
+* *Zielobjekttyp*
++
+Zeigt den Typ des Speicherobjekts an, auf das die Anmerkungsregel angewendet wird.
+
+* *Zugehörige Anmerkung*
++
+Zeigt den Namen der Anmerkung an, die auf das Speicherobjekt angewendet wird.
+
+* *Zugehörige Anmerkung*
++
+Zeigt den Anmerkungswert für das Speicherobjekt an.
+
+

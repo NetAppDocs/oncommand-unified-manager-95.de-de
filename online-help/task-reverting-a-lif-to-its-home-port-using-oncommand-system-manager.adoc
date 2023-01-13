@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-reverting-a-lif-to-its-home-port-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können eine LIF nach einem Failover von ihrem aktuellen Port auf ihren Home Port zurücksetzen oder sie wird entweder manuell oder automatisch zu einem anderen Port migriert. Dies ist mit OnCommand System Manager möglich. 
+---
+= Zurücksetzen eines LIF auf seinen Home Port mithilfe von OnCommand System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine LIF nach einem Failover von ihrem aktuellen Port auf ihren Home Port zurücksetzen oder sie wird entweder manuell oder automatisch zu einem anderen Port migriert. Dies ist mit OnCommand System Manager möglich.
+
+
+
+== Über diese Aufgabe
+
+Beim Erstellen einer logischen Schnittstelle gibt der Administrator einen Home Port und einen Home Node an, der als bevorzugter Speicherort der logischen Schnittstelle verwendet werden soll. Wenn der Home-Node nicht verfügbar ist oder der Home-Port einen physischen Linkausfall hat, wird die LIF automatisch zu einem neuen Speicherort migriert. Der neue Speicherort wird in OnCommand System Manager z. B. als aktueller Port für die LIF gemeldet. Sofern die Option zur automatischen Wiederherstellung nicht aktiviert ist, bleibt die LIF an diesem neuen Speicherort, bis sie zurückgesetzt wird.
+
+
+
+== Schritte
+
+. Öffnen Sie den OnCommand System Manager.
+. Doppelklicken Sie auf der Registerkarte *Home* auf das Speichersystem.
+. Erweitern Sie im Navigationsbereich die Hierarchie *Storage Virtual Machines*.
+. Wählen Sie im Navigationsbereich die SVM aus und klicken Sie auf *Konfiguration* > *Netzwerkschnittstellen*.
+. Suchen Sie nach Daten-LIFs, die ein Haus-Symbol mit einem roten Kreuz in der Spalte *Current Port* anzeigen, wie im folgenden Bild.
++
+image::../media/systemmgr-lifs-networkinterfaces-jpg.gif[Ansicht Netzwerkschnittstellen]
+
+. Wählen Sie das LIF aus und klicken Sie auf *an die Startseite senden*.
++
+Diese Option ist nur aktiviert, wenn die ausgewählte Schnittstelle auf einem nicht-Home-Port gehostet wird und wenn der Home-Port verfügbar ist.
+
+

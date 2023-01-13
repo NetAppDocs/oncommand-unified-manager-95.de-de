@@ -1,0 +1,31 @@
+---
+permalink: health-checker/task-downloading-and-installing-mysql-connector-j.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie müssen die MySQL Connector/J-Treiber an einem bestimmten Ort herunterladen und installieren. Sie können diese Treiber verwenden, um eine Datenquelle zu erstellen, die den Bericht mit Unified Manager verbindet. 
+---
+= Herunterladen und Installieren von MySQL Connector/J
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie müssen die MySQL Connector/J-Treiber an einem bestimmten Ort herunterladen und installieren. Sie können diese Treiber verwenden, um eine Datenquelle zu erstellen, die den Bericht mit Unified Manager verbindet.
+
+
+
+== Über diese Aufgabe
+
+Sie müssen MySQL Connector/J Version 5.1 oder höher verwenden.
+
+
+
+== Schritte
+
+. Laden Sie die MySQL Connector/J Treiber unter herunter `dev.mysql.com`.
+. Installieren Sie den `.jar` Notieren Sie sich den Speicherort für eine spätere Referenz.
++
+Installieren Sie z. B. die `.jar` Datei unter `C:\Program Files\MySQL\MySQL Connector J\mysql-connector-java-5.1.32-bin.jar`.
+
+

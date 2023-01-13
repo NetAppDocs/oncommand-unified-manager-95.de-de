@@ -1,0 +1,33 @@
+---
+permalink: install/task-manually-configuring-the-mysql-repository.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Wenn das System, auf dem Sie Unified Manager installieren, keinen Zugriff auf das MySQL Community Edition Repository hat, müssen Sie das Repository manuell herunterladen und konfigurieren, damit eine erfolgreiche Installation durchgeführt werden kann. 
+---
+= Manuelles Konfigurieren des MySQL-Repository
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn das System, auf dem Sie Unified Manager installieren, keinen Zugriff auf das MySQL Community Edition Repository hat, müssen Sie das Repository manuell herunterladen und konfigurieren, damit eine erfolgreiche Installation durchgeführt werden kann.
+
+
+
+== Über diese Aufgabe
+
+Das MySQL-Repository bietet Zugriff auf die erforderliche MySQL-Software, die auf Ihrem System installiert werden muss.
+
+[NOTE]
+====
+Diese Aufgabe schlägt fehl, wenn das System keine Internetverbindung hat. Beachten Sie die MySQL-Dokumentation, wenn das System, auf dem Sie Unified Manager installieren, keinen Internetzugang hat.
+
+====
+
+
+== Schritte
+
+. Laden Sie das entsprechende MySQL-Repository für Ihre Installation herunter: `+wget http://repo.mysql.com/yum/mysql-5.7-community/el/7/x86_64/mysql57-community-release-el7-7.noarch.rpm+`
+. Konfigurieren Sie das MySQL-Repository: `yum install mysql57-community-release-el7-7.noarch.rpm`
+

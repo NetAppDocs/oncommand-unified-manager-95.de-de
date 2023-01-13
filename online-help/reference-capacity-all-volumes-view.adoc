@@ -1,0 +1,209 @@
+---
+permalink: online-help/reference-capacity-all-volumes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Systemzustand/Volumes Kapazität und Auslastung werden Informationen über die Kapazität und Auslastung der Volumes in einem Cluster angezeigt. Diese Informationen geben Ihnen die Möglichkeit, mögliche Kapazitätsrisiken zu verstehen und die konfigurierte, verwendete und nicht genutzte Kapazität von Volumes anzuzeigen. Darüber hinaus können Sie mit diesen Informationen Entscheidungen zum Aktivieren speicherplatzsparender Funktionen wie Deduplizierung und Thin Provisioning treffen. 
+---
+= System-/Volume-Kapazität und Auslastungsseite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Systemzustand/Volumes Kapazität und Auslastung werden Informationen über die Kapazität und Auslastung der Volumes in einem Cluster angezeigt. Diese Informationen geben Ihnen die Möglichkeit, mögliche Kapazitätsrisiken zu verstehen und die konfigurierte, verwendete und nicht genutzte Kapazität von Volumes anzuzeigen. Darüber hinaus können Sie mit diesen Informationen Entscheidungen zum Aktivieren speicherplatzsparender Funktionen wie Deduplizierung und Thin Provisioning treffen.
+
+Verwenden Sie die Schaltfläche *Export*, um die Details aller überwachten Volumes in kommagetrennte Werte zu exportieren (`.csv`) Datei.
+
+* * Cluster*
++
+Der Cluster-Name.
+
+* *SVM*
++
+Der Name der Storage Virtual Machine (SVM), die das Volume enthält.
+
+* *Lautstärke*
++
+Der Name des Volume.
+
+* *Gesamtkapazität Der Daten*
++
+Die Gesamtkapazität (genutzter plus verfügbarer) Daten in einem Volume.
+
+* *Genutzte Datenkapazität*
++
+Der genutzten Datenkapazität in einem Volume.
+
+* *Verwendete Daten %*
++
+Die verwendeten Daten in einem Volume als Prozentsatz.
+
+* *Verfügbare Datenkapazität*
++
+Die verfügbare Datenkapazität in einem Volume.
+
+* * Verfügbare Daten %*
++
+Die verfügbare Datenkapazität in einem Volume als Prozentsatz.
+
+* * Tägliche Zuwachsrate %*
++
+Die Wachstumsrate, die alle 24 Stunden im Volumen stattfindet.
+
+* *Tage Bis Voll*
++
+Die geschätzte Anzahl der verbleibenden Tage, bis die volle Kapazität des Volume erreicht ist.
+
+* *Space Full Threshold %*
++
+Der Prozentsatz des im Volume verwendeten Speicherplatzes, der als voll betrachtet wird.
+
+* *Space Fast Voll Schwellenwert %*
++
+Der Prozentsatz des im Volume genutzten Speicherplatzes, der als fast voll angesehen wird.
+
+* *Wachstumsquote Schwellenwert %*
++
+Die Wachstumsrate des Volumes, die als normal angesehen wird, bevor das System ein anormales Ereignis für die Volume-Wachstumsrate generiert.
+
+* *Schwellenwert Für Die Empfindlichkeit Der Wachstumsrate*
++
+Der Faktor, der auf die Standardabweichung der Wachstumsrate eines Volumens angewendet wird. Wenn die Wachstumsrate die faktorierte Standardabweichung überschreitet, wird ein ungewöhnliches Ereignis der Volumenwachstumsrate generiert.
+
+* *Tage Bis Zur Vollständigen Schwelle*
++
+Die Anzahl der verbleibenden Tage, bevor die volle Kapazität erreicht wurde.
+
+* *Snapshot-Überlauf %*
++
+Der Prozentsatz des Speicherplatzes, der von Snapshot Kopien verbraucht wird.
+
+* *Verwendete Snapshot-Reserve Kapazität*
++
+Die Menge an Speicherplatz, der von Snapshot Kopien im Volume verwendet wird.
+
+* *Snapshot Reserve Verwendet %*
++
+Die Menge an Speicherplatz, der von Snapshot Kopien im Volume als Prozentsatz verwendet wird.
+
+* *Snapshot Reserve Verfügbare Kapazität*
++
+Die Menge an Speicherplatz, der für Snapshot Kopien im Volume verfügbar ist.
+
+* *Snapshot Reserve Verfügbar %*
++
+Die Menge an Speicherplatz, die als Prozentsatz für Snapshot Kopien im Volume verfügbar ist.
+
+* *Snapshot Reserve Gesamtkapazität*
++
+Zeigt die Gesamtkapazität der Snapshot Kopien im Volume an.
+
+* *Snapshot Kopien Reservieren Voller Schwellenwert %*
++
+Der Prozentsatz, bei dem der für Snapshot Kopien reservierte Speicherplatz voll ist, gilt.
+
+* *Schwellenwert Für Anzahl Der Snapshot-Kopien*
++
+Die Anzahl der Snapshot Kopien auf einem Volume, die als zu viele Kopien gelten.
+
+* *Snapshot Kopiert Tage Bis Vollschwellenwert*
++
+Die Anzahl der verbleibenden Tage, bis der für Snapshot-Kopien reservierte Speicherplatz voll ist, erreicht die volle Kapazität.
+
+* * Anzahl Inodes*
++
+Die Anzahl der Inodes im Volume.
+
+* *Auslastung Von Nodes %*
++
+Der Prozentsatz des in dem Volume verwendeten Inode-Speicherplatzes.
+
+* *Inodes Full Threshold %*
++
+Der Prozentsatz, bei dem ein Volume als verbraucht betrachtet wird, alle Inodes verbraucht zu haben.
+
+* *Inodes Nahezu Vollen Schwellenwert %*
++
+Der Prozentsatz, bei dem ein Volumen betrachtet wird, um den Großteil seiner Inodes verbraucht zu haben.
+
+* *Quote Zugesagt Kapazität*
++
+Der Speicherplatz, der für Kontingente im Volume reserviert ist.
+
+* *Quote Überzuviel Kapazität*
++
+Die Menge an Speicherplatz, die für Quoten verwendet werden kann, bevor das System das überzustrapaziertes Ereignis des Volume Quota generiert.
+
+* *Überschreitungsschwellenwert Für Quote %*
++
+Der Prozentsatz, bei dem der Platz für die Quoten auf dem Volumen genutzt wird, wird als überengagiert betrachtet.
+
+* *Quote Nahezu Überfordert Schwellenwert %*
++
+Der Prozentsatz, bei dem der Platz für die Quoten auf dem Volumen genutzt wird, wird als fast übertrieben betrachtet.
+
+* *Snapshot Autodelete*
++
+Gibt an, ob das automatische Löschen von Snapshot Kopien aktiviert oder deaktiviert ist.
+
+* *Deduplizierung*
++
+Gibt an, ob die Deduplizierung für das Volume aktiviert oder deaktiviert ist
+
+* *Deduplizierungseinsparungen*
++
+Die Menge an Speicherplatz, die durch die Deduplizierung in einem Volume eingespart wurde
+
+* *Komprimierung*
++
+Gibt an, ob die Komprimierung für das Volume aktiviert oder deaktiviert ist
+
+* *Komprimierung Raumeinsparungen*
++
+Die Menge an Speicherplatz, die durch Komprimierung in einem Volume eingespart wurde
+
+* *Caching-Richtlinie*
++
+Die dem ausgewählten Volume zugeordnete Caching-Richtlinie
+
++
+Diese Richtlinie gibt Informationen darüber, wie Flash Pool Caching für das Volume stattfindet. Weitere Informationen zu Caching-Richtlinien finden Sie auf der Seite „Systemzustand/Volumes-Inventar“.
+
+* *Cache-Aufbewahrungspriorität*
++
+Die Priorität, die für die Aufbewahrung von zwischengespeicherten Pools verwendet wird.
+
+* *Thin Provisioning*
++
+Gibt an, ob die Platzgarantie für das ausgewählte Volume festgelegt ist. Gültige Werte sind Ja und Nein
+
+* *Autogrow*
++
+Gibt an, ob das Volume automatisch mit der Größe wächst, wenn der Speicherplatz erschöpft ist
+
+* * Raumgarantie*
++
+Die Storage-Garantie-Option, die für das Volume erforderlich ist.
+
+* *Schutzrolle*
++
+Die Schutzrolle, die für das Volume festgelegt ist.
+
+* *Bundesland*
++
+Der Status des zu exportierenden Volumes.
+
+* *SnapLock Typ*
++
+Gibt an, ob es sich um ein SnapLock-Volume oder ein nicht-SnapLock-Volume handelt.
+
+* *SnapLock Ablaufdatum*
++
+Das Verfalldatum des SnapLock.
+
+* *Tiering-Richtlinie*
++
+Die Tiering-Richtlinie für das Volume. Gültig bei Implementierung nur in FabricPool-fähigen Aggregaten
+
+

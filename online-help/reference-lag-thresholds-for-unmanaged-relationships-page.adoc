@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-lag-thresholds-for-unmanaged-relationships-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „lag Schwellenwerte für nicht verwaltete Beziehungen“ können Sie globale Verzögerungs- und Fehlerschwellenwerte für nicht verwaltete Schutzbeziehungen konfigurieren, damit Sie benachrichtigt werden und Maßnahmen ergreifen können, wenn Verzögerungs- oder Schwellenwertfehler auftreten. Änderungen an diesen Einstellungen werden bei der nächsten geplanten Aktualisierung übernommen. 
+---
+= Verzögerungsschwellenwerte für die Seite „nicht verwaltete Beziehungen“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „lag Schwellenwerte für nicht verwaltete Beziehungen“ können Sie globale Verzögerungs- und Fehlerschwellenwerte für nicht verwaltete Schutzbeziehungen konfigurieren, damit Sie benachrichtigt werden und Maßnahmen ergreifen können, wenn Verzögerungs- oder Schwellenwertfehler auftreten. Änderungen an diesen Einstellungen werden bei der nächsten geplanten Aktualisierung übernommen.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+Ereignisse werden erzeugt, wenn ein Schwellenwert überschritten wird. Sie können für solche Ereignisse Korrekturmaßnahmen ergreifen. Verzögerungsschwellenwerte für nicht verwaltete Beziehungen sind standardmäßig aktiviert.
+
+Der lag-Schwellenwert gibt einen Prozentsatz an, der die Verzögerungszeit nicht überschreiten darf. Mit einem Beispiel von einer Stunde, wenn der lag-Schwellenwert als 150 % definiert ist, dann erhalten Sie ein Ereignis, wenn die Verzögerungszeit mehr als 1.5 Stunden beträgt.
+
+
+
+== Verzögerungsschwellenwerte für Bereich „nicht verwaltete Beziehungen“
+
+Im Bereich „lag“ können Sie für die folgenden Bedingungen unverwaltete Beziehungs-lag-Schwellenwerte festlegen:
+
+* *Warnung*
++
+Gibt den Prozentsatz an, bei dem die Verzögerungsdauer dem lag-Warnungsschwellenwert entspricht oder überschreitet:
+
++
+** Standardwert: 150 Prozent
+** Ereignisse generiert: SnapMirror Beziehung Verzögerung Warnung oder SnapVault Beziehung Verzögerung Warnung
+** Ereignis Schweregrad: Warnung
+
+
+* *Fehler*
++
+Gibt den Prozentsatz an, bei dem die Verzögerungsdauer gleich oder größer als der lag-Fehlerschwellenwert ist:
+
++
+** Standardwert: 250 Prozent
+** Erzeugte Ereignisse: SnapMirror Beziehung Verzögerung Fehler oder SnapVault Beziehung Verzögerung Fehler
+** Ereignis Schweregrad: Fehler
+
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Wiederherstellen auf Werkseinstellungen*
++
+Ermöglicht die Wiederherstellung der Konfigurationseinstellungen auf die werkseitigen Standardwerte.
+
+* *Speichern*
++
+Speichert die Konfigurationseinstellungen für die ausgewählte Option.
+
+

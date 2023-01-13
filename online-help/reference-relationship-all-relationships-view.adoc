@@ -1,0 +1,270 @@
+---
+permalink: online-help/reference-relationship-all-relationships-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Schutz/Volume-Beziehungen“ werden Informationen zu Sicherungsbeziehungen im Storage-System angezeigt. 
+---
+= Sicherungs-/Volume-Beziehungen Seite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Schutz/Volume-Beziehungen“ werden Informationen zu Sicherungsbeziehungen im Storage-System angezeigt.
+
+Verwenden Sie die Schaltfläche *Exportieren*, um die Details aller Beziehungen in kommagetrennte Werte zu exportieren (`.csv`) Datei.
+
+* *Beziehungsstatus*
++
+Zeigt den aktuellen Status der Schutzbeziehung an.
+
++
+Der Status kann ein Fehler sein (image:../media/sev-error-um60.png[""]), Warnung (image:../media/sev-warning-um60.png[""]Oder normal (image:../media/sev-normal-um60.png[""]).
+
+* *Lag-Status*
++
+Zeigt den Verzögerungsstatus für verwaltete Beziehungen und für nicht verwaltete Beziehungen an, die mit dieser Beziehung verknüpft sind. Der Verzögerungsstatus kann sein:
+
++
+** Fehler (image:../media/sev-error-um60.png[""])
++
+Die Verzögerungsdauer ist größer oder gleich dem lag-Fehlerschwellenwert.
+
+** Warnung (image:../media/sev-warning-um60.png[""])
++
+Die Verzögerungsdauer ist größer oder gleich dem lag-Warnungsschwellenwert.
+
+** Normal (image:../media/sev-normal-um60.png[""])
++
+Die Verzögerungsdauer liegt innerhalb der normalen Grenzwerte.
+
+** Keine Angabe
++
+Der lag-Status gilt nicht für synchrone Beziehungen, da ein Zeitplan nicht konfiguriert werden kann.
+
+
+
+* *Transferstatus*
++
+Zeigt den Übertragungsstatus der Schutzbeziehung an. Der Übertragungsstatus kann einer der folgenden Werte sein:
+
++
+** Wird Abgebrochen
++
+SnapMirror-Transfers sind aktiviert; ein Vorgang, bei dem der Transfer abgebrochen wird, während das Checkpoint entfernt wird.
+
+** Prüfen
++
+Das Zielvolumen wird einer Diagnose-Prüfung unterzogen und es wird keine Übertragung durchgeführt.
+
+** Abschließen
++
+SnapMirror Transfers sind aktiviert. Das Volume befindet sich derzeit in der Phase nach dem Transfer für inkrementelle SnapVault Transfers.
+
+** Leerlauf
++
+Transfers sind aktiviert, und es wird keine Übertragung durchgeführt.
+
+** Synchronisiert
++
+Die Daten in den beiden Volumes in der synchronen Beziehung werden synchronisiert.
+
+** Out-of-Sync
++
+Die Daten im Ziel-Volume werden nicht mit dem Quell-Volume synchronisiert.
+
+** Vorbereitung
++
+SnapMirror Transfers sind aktiviert. Das Volume befindet sich derzeit in der Phase vor der Übertragung für inkrementelle SnapVault Transfers.
+
+** Warteschlange
++
+SnapMirror Transfers sind aktiviert. Es werden keine Transfers durchgeführt.
+
+** Stillgelegt
++
+SnapMirror Transfers sind deaktiviert. Es wird keine Übertragung durchgeführt.
+
+** Wird Stillgelegt
++
+Ein SnapMirror Transfer läuft. Zusätzliche Transfers sind deaktiviert.
+
+** Übertragung
++
+SnapMirror Transfers sind aktiviert, und ein Transfer läuft.
+
+** Übergang
++
+Der asynchrone Datentransfer aus dem Quell- zum Ziel-Volume ist abgeschlossen, und der Übergang zum synchronen Betrieb wurde gestartet.
+
+** Warten
++
+Ein SnapMirror Transfer wurde initiiert, aber einige zugehörige Aufgaben warten darauf, in die Warteschlange verschoben zu werden.
+
+
+
+* *Beziehungstyp*
++
+Zeigt den Beziehungstyp an, mit dem ein Volume repliziert wird. Beziehungstypen:
+
++
+** Asynchrones Spiegeln
+** Asynchroner Vault
+** StrictSync
+** Synchron
+
+
+* *Quell-SVM*
++
+Zeigt den Namen der Quell-SVM an.
+
++
+Wenn die Meldung angezeigt wird `Resource-key not discovered` Angezeigt wird, könnte dies bedeuten, dass die SVM im Cluster vorhanden, jedoch noch nicht zum Unified Manager Inventar hinzugefügt wurde oder dass sie nach der letzten Aktualisierung des Clusters erstellt wurde. Sie müssen sicherstellen, dass die SVM existiert, oder eine erneute Erkennung im Cluster durchführen, um die Liste der Ressourcen zu aktualisieren.
+
++
+Sie können den Mauszeiger über die Quell-SVM bewegen, um Informationen wie das Cluster, den Volume-Typ, die zulässigen Protokolle und das verwendete Speichervolumen anzuzeigen. Weitere Details zur SVM können Sie anzeigen, indem Sie auf den Namen der SVM klicken.
+
+* *Quellvolumen*
++
+Zeigt das zu schützende Quell-Volume an. Weitere Details zum Quell-Volume können Sie anzeigen, indem Sie auf den Namen des Quell-Volumes klicken.
+
++
+Wenn die Meldung angezeigt wird `Resource-key not discovered` Angezeigt wird, kann dies bedeuten, dass das Volume im Cluster vorhanden ist, diesem jedoch noch nicht hinzugefügt wurde oder dass das Volume nach der letzten Aktualisierung des Clusters erstellt wurde. Sie müssen sicherstellen, dass das Volume vorhanden ist, oder eine erneute Erkennung im Cluster durchführen, um die Liste der Ressourcen zu aktualisieren.
+
+* *Ziel-SVM*
++
+Zeigt den Namen der Ziel-SVM an.
+
++
+Sie können den Mauszeiger über die Ziel-SVM verschieben, um Informationen wie den Cluster, den Volume-Typ, die zulässigen Protokolle und den genutzten Speicherplatz zu sehen. Weitere Details zur SVM können Sie anzeigen, indem Sie auf den Namen der SVM klicken.
+
+* *Zielvolumen*
++
+Zeigt den Namen des Zieldatenträgers an.
+
++
+Sie können den Mauszeiger über ein Volume bewegen, um Informationen wie das Aggregat mit dem Volume, dem überbelegten Speicherplatz des qtree, dem Status der letzten Verschiebung des Volume und dem im Volume zugewiesenen Speicherplatz anzuzeigen. Sie können auch Details zu verwandten Objekten wie z.B. die SVM anzeigen, zu der das Volume gehört, das Aggregat, zu dem das Volume gehört, und alle Volumes, die zu diesem Aggregat gehören.
+
+* *Dauer Der Verzögerung*
++
+Zeigt die Zeitspanne an, die die Daten auf dem Spiegel hinter der Quelle hinkt.
+
++
+Die Verzögerungsdauer sollte bei StrictSync Beziehungen nahe oder gleich 0 Sekunden sein.
+
+* *Letzte Erfolgreiche Aktualisierung*
++
+Zeigt die Zeit des letzten erfolgreichen SnapMirror oder SnapVault Vorgangs an.
+
++
+Die letzte erfolgreiche Aktualisierung gilt nicht für synchrone Beziehungen.
+
+* *Letzte Transferdauer*
++
+Zeigt die Zeit an, die für den letzten Datentransfer benötigt wurde.
+
++
+Die Übertragungsdauer ist für StrictSync-Beziehungen nicht anwendbar, da die Übertragung gleichzeitig erfolgen sollte.
+
+* *Letzte Transfergröße*
++
+Zeigt die Größe der letzten Datenübertragung in Byte an.
+
++
+Die Übertragungsgröße ist nicht für StrictSync-Beziehungen anwendbar.
+
+* *Gesundheit Der Beziehung*
++
+Zeigt den Systemzustand der Beziehung des Clusters an.
+
+* * Beziehungsstatus*
++
+Zeigt den Mirror-Status der SnapMirror Beziehung an.
+
+* * Ungesunde Gründe*
++
+Der Grund, warum die Beziehung in einem ungesunden Zustand ist.
+
+* * Quellcluster*
++
+Zeigt den Namen des Quell-Clusters für die SnapMirror Beziehung an.
+
+* *Quellknoten*
++
+Zeigt den Namen des Quell-Node für die SnapMirror Beziehung an.
+
+* *Zielcluster*
++
+Zeigt den Namen des Ziel-Clusters für die SnapMirror Beziehung an.
+
+* *Zielknoten*
++
+Zeigt den Namen des Ziel-Node für die SnapMirror-Beziehung an.
+
+* * Priorität Übertragen*
++
+Zeigt die Priorität an, mit der eine Übertragung ausgeführt wird. Die Übertragungspriorität ist normal oder niedrig. Transfers mit normaler Priorität werden vor Transfers mit niedriger Priorität geplant.
+
++
+Die Übertragungspriorität gilt nicht für synchrone Beziehungen, da alle Transfers mit derselben Priorität behandelt werden.
+
+* *Richtlinien*
++
+Zeigt die Schutzrichtlinie für das Volume an. Sie können auf den Richtliniennamen klicken, um die mit dieser Richtlinie verknüpften Details anzuzeigen, einschließlich der folgenden Informationen:
+
++
+** Übertragungspriorität
++
+Gibt die Priorität an, mit der ein Transfer für asynchrone Vorgänge ausgeführt wird. Die Übertragungspriorität ist normal oder niedrig. Transfers mit normaler Priorität werden vor Transfers mit niedriger Priorität geplant. Die Standardeinstellung ist „Normal“.
+
+** Zugriffszeit ignorieren
++
+Gilt nur für SnapVault Beziehungen. Dadurch wird festgelegt, ob inkrementelle Transfers Dateien ignorieren, deren Zugriffszeit sich geändert hat. Die Werte sind entweder wahr oder falsch. Der Standardwert ist falsch.
+
+** Wenn die Beziehung nicht synchronisiert ist
++
+Gibt die Aktion an, die ONTAP ausführt, wenn eine synchrone Beziehung nicht synchronisiert werden kann. StrictSync-Beziehungen beschränken den Zugriff auf das primäre Volume, wenn die Synchronisierung mit dem sekundären Volume nicht möglich ist. Synchronisierungsbeziehungen schränken den Zugriff auf das primäre nicht ein, wenn eine Synchronisierung mit dem sekundären nicht möglich ist.
+
+** Limit für Versuche
++
+Gibt die maximale Anzahl der Zeiten an, die zu jedem manuellen oder geplanten Transfer für eine SnapMirror Beziehung versucht werden sollen. Der Standardwert ist 8.
+
+** Kommentare
++
+Enthält ein Textfeld für Kommentare, die speziell für die ausgewählte Richtlinie festgelegt sind.
+
+** SnapMirror-Etikett
++
+Gibt das SnapMirror-Label für den ersten Zeitplan an, der der Richtlinie für Snapshot-Kopien zugeordnet ist. Das SnapMirror-Label wird vom SnapVault-Subsystem verwendet, wenn Sie Snapshot Kopien auf einem SnapVault-Ziel sichern.
+
+** Aufbewahrungseinstellungen
++
+Gibt an, wie lange Backups aufbewahrt werden, basierend auf der Zeit oder der Anzahl der Backups.
+
+** Tatsächliche Snapshot Kopien
++
+Gibt die Anzahl der Snapshot-Kopien auf diesem Volume an, die mit der angegebenen Beschriftung übereinstimmen.
+
+** Bewahren Sie Snapshot Kopien auf
++
+Gibt die Anzahl der SnapVault Snapshot Kopien an, die nicht automatisch gelöscht werden, selbst wenn das maximale Limit für die Richtlinie erreicht wird. Die Werte sind entweder wahr oder falsch. Der Standardwert ist falsch.
+
+** Schwellenwert für Warnung bei Aufbewahrung
++
+Gibt das Limit für die Snapshot Kopie an, bei dem eine Warnung gesendet wird, um anzugeben, dass das maximale Aufbewahrungslimit fast erreicht ist.
+
+
+
+* *Zeitplan*
++
+Zeigt den Namen des Schutzplans an, der der Beziehung zugeordnet ist. Sie können auf den Terminplannamen klicken, um Details zum Zeitplan anzuzeigen.
+
++
+Der Zeitplan gilt nicht für synchrone Beziehungen.
+
+* *Version Flexible Replikation*
++
+Zeigt entweder Ja, Ja mit Sicherungsoption oder Keine an.
+
+

@@ -1,0 +1,63 @@
+---
+permalink: health-checker/concept-common-unified-manager-administrative-workflows-and-tasks.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Zu den geläufigsten Administrations-Workflows und Aufgaben für Unified Manager zählen die Auswahl der zu überwachenden Storage-Cluster, die Diagnose von Bedingungen, die sich nachteilig auf Datenverfügbarkeit, Kapazität und Sicherung auswirken, die Erstellung von Sicherungsbeziehungen, die Wiederherstellung verlorener Daten Konfiguration und Management von Infinite Volumes sowie Bündelung und Senden von Diagnosedaten an den technischen Support \(falls erforderlich\).' 
+---
+= Gemeinsame Workflows und Aufgaben im Zusammenhang mit Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Zu den geläufigsten Administrations-Workflows und Aufgaben für Unified Manager zählen die Auswahl der zu überwachenden Storage-Cluster, die Diagnose von Bedingungen, die sich nachteilig auf Datenverfügbarkeit, Kapazität und Sicherung auswirken, die Erstellung von Sicherungsbeziehungen, die Wiederherstellung verlorener Daten Konfiguration und Management von Infinite Volumes sowie Bündelung und Senden von Diagnosedaten an den technischen Support (falls erforderlich)
+
+Unified Manager gibt Storage-Administratoren die Möglichkeit, ein Dashboard anzuzeigen, die allgemeine Kapazität, Verfügbarkeit und den Sicherungsstatus der gemanagten Storage-Cluster zu bewerten und dann schnell spezielle Probleme zu identifizieren, zu lokalisieren, zu diagnostizieren und zu beheben.
+
+Die wichtigsten Probleme in Bezug auf Cluster, Storage Virtual Machine (SVM), Volume, FlexGroup Volume oder Sicherungsbeziehung, die die Storage-Kapazität, Datenverfügbarkeit oder Zuverlässigkeit der Sicherung Ihrer gemanagten Storage-Objekte beeinträchtigen, werden in den Systemintegritätsdiagrammen und -Ereignissen auf der Seite Dashboards/Überblick angezeigt. Wenn kritische Probleme erkannt werden, enthält diese Seite Links, um entsprechende Workflows zur Fehlerbehebung zu unterstützen.
+
+Unified Manager kann auch in Workflows mit verwandten Management-Tools wie beispielsweise OnCommand Workflow Automation (WFA) integriert werden, um die direkte Konfiguration von Storage-Ressourcen zu unterstützen.
+
+Allgemeine Workflows für die folgenden administrativen Aufgaben werden in diesem Dokument beschrieben:
+
+* Diagnose und Management von Verfügbarkeitsproblemen
++
+Wenn ein Hardwarefehler oder Probleme bei der Konfiguration von Speicherressourcen dazu führen, dass die Datenverfügbarkeits-Ereignisse auf der Seite Dashboards/Überblick angezeigt werden, können Speicheradministratoren mithilfe der eingebetteten Links Verbindungsinformationen über die betroffene Speicherressource anzeigen, Tipps zur Fehlerbehebung anzeigen und anderen Administratoren eine Problembehebung zuweisen.
+
+* Konfiguration und Monitoring von Performance-Vorfällen
++
+Der OnCommand Administrator kann die Performance der überwachten Storage-Systemressourcen überwachen und managen. Weitere Informationen finden Sie im _Unified Manager Workflow Guide zum Verwalten der Cluster Performance_.
+
+* Diagnose und Management von Kapazitätsproblemen bei Volumes
++
+Wenn Probleme mit der Speicherkapazität von Volumes auf der Seite Dashboards/Überblick angezeigt werden, können Speicheradministratoren anhand der eingebetteten Links die aktuellen und historischen Trends in Bezug auf die Speicherkapazität des betroffenen Volumes anzeigen, Tipps zur Fehlerbehebung anzeigen und anderen Administratoren die Problembehebung zuweisen.
+
+* Konfiguration, Monitoring und Diagnose von Problemen bei der Sicherungsbeziehung
++
+Nach dem Erstellen und Konfigurieren von Sicherungsbeziehungen können Storage-Administratoren auf der Seite Dashboards/Überblick die potenziellen Probleme mit Sicherungsbeziehungen anzeigen und mithilfe der eingebetteten Links den aktuellen Status der Sicherungsbeziehungen, die aktuellen und historischen Erfolgsinformationen über die betroffenen Beziehungen anzeigen. Beratung bei der Fehlerbehebung sowie Zuordnung der Problembehebung zu anderen Administratoren Storage-Administratoren können auch SnapMirror und SnapVault Beziehungen konfigurieren und managen.
+
+* Erstellen von Backup-Dateien und Wiederherstellen von Daten aus Backup-Dateien.
+* Verknüpfen von Speicherobjekten mit Anmerkungen
++
+Durch Verknüpfen von Storage-Objekten mit Annotationen können Storage-Administratoren die Ereignisse, die zu den Storage-Objekten gehören, filtern und anzeigen, sodass Storage-Administratoren die mit den Ereignissen verbundenen Probleme priorisieren und lösen können.
+
+* Senden eines Support Bundle an den technischen Support
++
+Storage-Administratoren können über die Wartungskonsole ein Support-Bundle abrufen und an den technischen Support senden. Support Bundles müssen an den technischen Support gesendet werden, wenn das Problem eine detailliertere Diagnose und Fehlerbehebung erfordert als eine AutoSupport Meldung.
+
+* Neue Berichte für den Import erstellen
++
+Storage-Administratoren können neue erstellen `.rptdesign` Dateien mit dem Eclipse Plug-in für Business Intelligence und Reporting Tools (BIRT). Diese Berichte können in die Benutzeroberfläche von Unified Manager importiert und auf der Seite Berichte angezeigt werden.
+
++
+Die auf der Seite Berichte angezeigten Berichte geben den aktuellen Status der Speicherobjekte an. Sie können wichtige Entscheidungen treffen – beispielsweise Entscheidungen zur Storage-Beschaffung – basierend auf der aktuellen Nutzung. Diese Berichte bieten eine detaillierte Übersicht über Storage-Objekte wie Volumes, Festplatten-Shelfs und Aggregate.
+
++
+Auf der Seite Berichte in der Benutzeroberfläche von Unified Manager können Sie detaillierte Informationen zu den von Ihnen erstellten Berichten anzeigen. Sie können nach einem bestimmten Bericht suchen, einen Bericht speichern und einen Bericht auf der Seite Berichte löschen. Sie können auch einen Bericht von dieser Seite planen, freigeben und importieren.
+
+* Erstellung, Konfiguration, Monitoring und Sicherung von Infinite Volumes
++
+Nachdem Storage-Klassen für ein Infinite Volume mit dem Tool Workflow Automation erstellt, konfiguriert und definiert wurden, können Storage-Administratoren mit Unified Manager überwachen, Benachrichtigungsschwellenwerte festlegen und die Datenrichtlinie für das entsprechende Volume und seine Storage-Klassen definieren. Optional können Storage-Administratoren mit WFA und Unified Manager die Datensicherung für das Infinite Volume einrichten.
+
+

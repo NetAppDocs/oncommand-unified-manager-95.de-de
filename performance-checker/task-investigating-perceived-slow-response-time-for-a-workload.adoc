@@ -1,0 +1,60 @@
+---
+permalink: performance-checker/task-investigating-perceived-slow-response-time-for-a-workload.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können mit Unified Manager ermitteln, ob die Operationen im Cluster möglicherweise zur langsamen Reaktionszeit \(Latenz\) für einen Volume-Workload beigetragen haben.' 
+---
+= Untersuchung einer vermuteten langsamen Reaktionszeit für einen Workload
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können mit Unified Manager ermitteln, ob die Operationen im Cluster möglicherweise zur langsamen Reaktionszeit (Latenz) für einen Volume-Workload beigetragen haben.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+* Sie müssen den Namen des Volumes oder der zugehörigen LUN identifiziert haben, die Sie analysieren möchten.
+* Unified Manager muss Performance-Statistiken vom Cluster mindestens fünf Tage gesammelt und analysiert haben.
+
+
+
+
+== Über diese Aufgabe
+
+Wenn Sie die Seite „Ereignisdetails“ aufrufen, können Sie auf den Namen eines Volumes klicken, um direkt zur Seite „Performance/Volume Details“ zu gelangen.
+
+
+
+== Schritte
+
+. Geben Sie in der *Search*-Leiste den Namen des Volumens ein.
++
+Der Name des Volume wird in den Suchergebnissen angezeigt.
+
+. Klicken Sie auf den Namen des Volumes.
++
+Das Volume wird auf der Seite Performance/Volume Details angezeigt.
+
+. Klicken Sie auf der Historischen Datenkarte auf *5d*, um die letzten fünf Tage historischer Daten anzuzeigen.
+. Lesen Sie das *IOPS* Diagramm, um die folgenden Fragen zu beantworten:
++
+** Gibt es dramatische Spitzen in der Aktivität?
+** Gibt es dramatische Tropfen in der Aktivität?
+** Gibt es anormale Änderungen im Betriebsmuster? Wenn der Betrieb keine dramatischen Spitzen oder Aktivitätsspitzen anzeigt und während dieser Zeit keine Änderungen an der Cluster-Konfiguration vorgenommen wurden, kann der Storage-Administrator bestätigen, dass andere Workloads die Volume-Performance nicht beeinträchtigt haben.
+
+
+. Wählen Sie im Menü *break down Data by* unter *IOPS* die Option ***reads/writes/other*** aus.
+. Klicken Sie Auf *Absenden*.
++
+Das Diagramm Lese-/Schreibvorgänge/Sonstiges wird unter dem IOPS-Diagramm angezeigt.
+
+. Prüfen Sie das Diagramm * Lese-/Schreibvorgänge/anderes*, um dramatische Spitzen oder Abfälle in der Menge der Lese- oder Schreibvorgänge für das Volume zu identifizieren.
++
+Wenn keine drastischen Spitzen oder Abfälle bei Lese- oder Schreibvorgängen vorliegen, kann der Storage-Administrator bestätigen, dass die I/O-Vorgänge im Cluster normal ausgeführt werden. Möglicherweise liegen Leistungsprobleme im Netzwerk oder den verbundenen Clients vor.
+
+

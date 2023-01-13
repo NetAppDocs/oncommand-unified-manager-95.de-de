@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-view-aggregates-reaching-full-capacity.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Aggregat-Kapazitäts- und Auslastungsbericht anpassen, um Aggregate anzuzeigen, sortiert nach wachsender Anordnung der Kapazitätsauslastung des Aggregats. So können Sie die volle Kapazität der Aggregate anzeigen. 
+---
+= Anpassen des Berichts zur Kapazität und Auslastung des Aggregats, um alle Aggregate anzuzeigen, die die volle Kapazität erreichen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Aggregat-Kapazitäts- und Auslastungsbericht anpassen, um Aggregate anzuzeigen, sortiert nach wachsender Anordnung der Kapazitätsauslastung des Aggregats. So können Sie die volle Kapazität der Aggregate anzeigen.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie Gruppierung nach Cluster und nach HA-Paar:
++
+.. Klicken Sie in die Spalten, die die Gruppierung aufheben müssen.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Option Innere Gruppe löschen*.
+
+
+. Um die volle Kapazität der Aggregate zu sortieren, klicken Sie in die Spalte *Tage bis voll* und klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+. Wählen Sie *Filter* > *Oben/Unten N*.
+. Wählen Sie im Dialogfeld *Oben/Unten N* aus dem Feld *Filter* die Option *bottom N* aus, und geben Sie einen Wert in das Textfeld ein.
+. Klicken Sie auf *OK*.
+

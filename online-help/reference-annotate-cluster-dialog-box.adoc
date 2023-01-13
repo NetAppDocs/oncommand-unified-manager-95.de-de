@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld „Cluster anfügen“ können Sie Speicherobjekte manuell annotieren. Sie können entweder ein einzelnes Cluster oder mehrere Cluster auswählen und in der vorhandenen Liste mit Anmerkungen mit einem bestimmten Wertpaar versehen. 
+---
+= Dialogfeld „Cluster mit Anmerkungen versehen“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld „Cluster anfügen“ können Sie Speicherobjekte manuell annotieren. Sie können entweder ein einzelnes Cluster oder mehrere Cluster auswählen und in der vorhandenen Liste mit Anmerkungen mit einem bestimmten Wertpaar versehen.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Anmerkung=Wertpaare*
++
+Hiermit können Sie die erforderliche Annotation für das ausgewählte Cluster auswählen.
+
+* *Anwenden*
++
+Wendet die ausgewählte Annotation auf das Cluster an.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Cluster annotieren, ohne Ihre Änderungen zu speichern.
+
+

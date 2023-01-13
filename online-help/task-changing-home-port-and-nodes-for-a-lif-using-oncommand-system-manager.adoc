@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-changing-home-port-and-nodes-for-a-lif-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den bevorzugten Speicherort einer logischen Schnittstelle ändern, indem Sie den Home-Port und den Home-Node ändern. Dies ist eine dauerhafte Konfiguration als die Migration einer logischen Schnittstelle, mit der üblicherweise eine LIF vorübergehend auf einen anderen Node während geplanter Wartungsarbeiten verschoben wird. 
+---
+= Ändern des Home-Ports und der Nodes für eine LIF mit OnCommand System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den bevorzugten Speicherort einer logischen Schnittstelle ändern, indem Sie den Home-Port und den Home-Node ändern. Dies ist eine dauerhafte Konfiguration als die Migration einer logischen Schnittstelle, mit der üblicherweise eine LIF vorübergehend auf einen anderen Node während geplanter Wartungsarbeiten verschoben wird.
+
+
+
+== Über diese Aufgabe
+
+Das folgende Image zeigt den ursprünglichen LIF-Startport und -Node sowie den Home-Port und den Node nach der Änderung. Der ursprüngliche LIF1-Startanschluss wurde von e1a auf e3a umgestellt und LIF2 wurde von e4a in e2a geändert.
+
+image::../media/diagram-cluster-lifs-move-jpg.gif[Änderung des LIF-Startports und Nodes]
+
+
+
+== Schritte
+
+. Öffnen Sie den OnCommand System Manager.
+. Doppelklicken Sie auf der Registerkarte *Home* auf das Speichersystem.
+. Erweitern Sie im Navigationsbereich die Hierarchie *SVMs*.
+. Wählen Sie im Navigationsbereich die SVMs aus und klicken Sie auf *Konfiguration* > *Netzwerkschnittstellen*.
+. Wählen Sie das LIF aus und klicken Sie auf *Bearbeiten*.
+. Geben Sie im Dialogfeld Schnittstelle bearbeiten** den Home-Port und die Netzwerkadresse des Ziel-Ports ein.
++
+image::../media/systemmgr-lif-edit-jpg.gif[Dialogfeld „Schnittstelle bearbeiten“]
+
++
+[NOTE]
+====
+In ONTAP 8.2 ist das Feld Home-Port deaktiviert.
+
+====
+. Klicken Sie auf *Speichern und Schließen*.
+

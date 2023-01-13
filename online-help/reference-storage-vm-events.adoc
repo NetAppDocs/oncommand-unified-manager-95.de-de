@@ -1,0 +1,465 @@
+---
+permalink: online-help/reference-storage-vm-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SVM-Ereignisse liefern Ihnen Informationen zum Status Ihrer SVMs. So können Sie das System auf potenzielle Probleme überwachen. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad. 
+---
+= SVM-Ereignisse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVM-Ereignisse liefern Ihnen Informationen zum Status Ihrer SVMs. So können Sie das System auf potenzielle Probleme überwachen. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad.
+
+
+
+== Impact Area: Verfügbarkeit
+
+Ein Sternchen (*) identifiziert EMS-Ereignisse, die in Unified Manager-Ereignisse konvertiert wurden.
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+SVM CIFS Service-Down(ocumEvtVserverCifsServiceStatusDown)
+ a| 
+Vorfall
+ a| 
+SVM
+ a| 
+Kritisch
+
+
+
+ a| 
+SVM CIFS-Service nicht konfiguriert (nicht zutreffend)
+ a| 
+Ereignis
+ a| 
+SVM
+ a| 
+Informationsdaten
+
+
+
+ a| 
+Versucht, eine nicht existierende CIFS-Freigabe * zu verbinden
+ a| 
+Vorfall
+ a| 
+SVM
+ a| 
+Kritisch
+
+
+
+ a| 
+CIFS NetBIOS Namenskonflikt *
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Fehler
+
+
+
+ a| 
+Fehler beim CIFS Shadow Copy-Vorgang *
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Fehler
+
+
+
+ a| 
+Viele CIFS-Verbindungen *
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Fehler
+
+
+
+ a| 
+Die max. CIFS-Verbindung wurde überschritten *
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Fehler
+
+
+
+ a| 
+Max. Anzahl der CIFS-Verbindung pro Benutzer überschritten *
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Fehler
+
+
+
+ a| 
+SVM FC/FCoE Service-Down (ocumEvtVserverFcServiceStatusDown)
+ a| 
+Vorfall
+ a| 
+SVM
+ a| 
+Kritisch
+
+
+
+ a| 
+SVM iSCSI Service-Down(ocumEvtVserverIscsiServiceStatusDown)
+ a| 
+Vorfall
+ a| 
+SVM
+ a| 
+Kritisch
+
+
+
+ a| 
+SVM NFS-Service-Down (ocumEvtVserverNfsServiceStatusDown)
+ a| 
+Vorfall
+ a| 
+SVM
+ a| 
+Kritisch
+
+
+
+ a| 
+SVM FC/FCoE-Service nicht konfiguriert (nicht zutreffend)
+ a| 
+Ereignis
+ a| 
+SVM
+ a| 
+Informationsdaten
+
+
+
+ a| 
+SVM iSCSI-Service nicht konfiguriert (nicht zutreffend)
+ a| 
+Ereignis
+ a| 
+SVM
+ a| 
+Informationsdaten
+
+
+
+ a| 
+SVM NFS-Service nicht konfiguriert (nicht zutreffend)
+ a| 
+Ereignis
+ a| 
+SVM
+ a| 
+Informationsdaten
+
+
+
+ a| 
+SVM angehalten(ocumEvtVserverDown)
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Warnung
+
+
+
+ a| 
+AV-Server zu beschäftigt, um neue Scananforderung zu akzeptieren *
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Fehler
+
+
+
+ a| 
+Keine AV-Server-Verbindung für Virus Scan *
+ a| 
+Vorfall
+ a| 
+SVM
+ a| 
+Kritisch
+
+
+
+ a| 
+Kein AV-Server registriert *
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Fehler
+
+
+
+ a| 
+Keine Responsive AV-Serververbindung *
+ a| 
+Ereignis
+ a| 
+SVM
+ a| 
+Informationsdaten
+
+
+
+ a| 
+Nicht autorisierter Benutzer versucht AV-Server *
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Fehler
+
+
+
+ a| 
+Virus von AV Server gefunden *
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Fehler
+
+
+
+ a| 
+SVM mit Infinite Volume Storage nicht verfügbar (ocumEvtVserverStorageUnverfügbar)
+ a| 
+Vorfall
+ a| 
+SVMs mit Infinite Volume
+ a| 
+Kritisch
+
+
+
+ a| 
+SVM mit Infinite Volume Storage teilweise verfügbar(ocumEvtVserverStoragePartiallyverfügbar)
+ a| 
+Dar
+ a| 
+SVMs mit Infinite Volume
+ a| 
+Fehler
+
+
+
+ a| 
+SVM mit Infinite Volume Namespace Mirror Komponenten mit Verfügbarkeitsproblemen (occumEvtVserverNsMirrorVerfügbarkeitHavingIssues)
+ a| 
+Dar
+ a| 
+SVMs mit Infinite Volume
+ a| 
+Warnung
+
+|===
+
+
+== Impact Area: Kapazität
+
+Die folgenden Kapazitätsereignisse gelten nur für SVMs mit Infinite Volume.
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+SVM mit Infinite Volume Space Full (ocumEvtVserverFull)
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Fehler
+
+
+
+ a| 
+SVM mit Infinite Volume nahezu voll (ocumEvtVserverNearsFull)
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Warnung
+
+
+
+ a| 
+SVM mit Infinite Volume Snapshot Nutzungslimit überschritten (ocumEvtVserverSnapshotUsageExceped)
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Warnung
+
+
+
+ a| 
+SVM mit Infinite Volume Namespace voll (ocumEvtVserverNamespaceFull)
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Fehler
+
+
+
+ a| 
+SVM mit Infinite Volume Namespace fast voll (ocumEvtVserverNamespaceNearyFull)
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Warnung
+
+|===
+
+
+== Impact Area: Konfiguration
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+SVM erkannt (nicht zutreffend)
+ a| 
+Ereignis
+ a| 
+SVM
+ a| 
+Informationsdaten
+
+
+
+ a| 
+SVM gelöscht (nicht zutreffend)
+ a| 
+Ereignis
+ a| 
+Cluster
+ a| 
+Informationsdaten
+
+
+
+ a| 
+SVM umbenannt (nicht zutreffend)
+ a| 
+Ereignis
+ a| 
+SVM
+ a| 
+Informationsdaten
+
+|===
+
+
+== Impact Area: Performance
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+Unterschreitkter SVM-IOPS-Schwellenwert (OktumSvmIopsVorfall)
+ a| 
+Vorfall
+ a| 
+SVM
+ a| 
+Kritisch
+
+
+
+ a| 
+Unterschreiten SVM-IOPS-Warnungsschwellenwert (ocumSvmIopsWarnung)
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Warnung
+
+
+
+ a| 
+Unterschreitkter SVM/s-Schwellenwert (ocumSvmMbpsVorfall)
+ a| 
+Vorfall
+ a| 
+SVM
+ a| 
+Kritisch
+
+
+
+ a| 
+Unterschreitenter SVM/s-Warnungsschwellenwert (ocumSvmMbpsWarnung)
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Warnung
+
+
+
+ a| 
+Unterschreiten kritischen Schwellenwert für SVM-Latenz (ocumSvmLatencyVorfall)
+ a| 
+Vorfall
+ a| 
+SVM
+ a| 
+Kritisch
+
+
+
+ a| 
+Unterschreitung – SVM-Latenzschwellenwert (ocumSvmLatencyWarnung)
+ a| 
+Dar
+ a| 
+SVM
+ a| 
+Warnung
+
+|===

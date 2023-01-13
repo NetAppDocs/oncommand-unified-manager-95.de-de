@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-storage-summary-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Storage-Übersichtsberichte anpassen, um Informationen zur Storage-Kapazität in HA-Paaren anzuzeigen und zu analysieren. Mit Filtern können Sie die Storage-Auslastung nach Cluster-Modell, die Kapazität der am meisten nicht zugewiesenen LUNs und die Kapazität verfügbarer HA-Paare anzeigen, um neue Volumes und LUNs bereitzustellen. 
+---
+= Anpassungen für Berichte der Storage-Zusammenfassung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Storage-Übersichtsberichte anpassen, um Informationen zur Storage-Kapazität in HA-Paaren anzuzeigen und zu analysieren. Mit Filtern können Sie die Storage-Auslastung nach Cluster-Modell, die Kapazität der am meisten nicht zugewiesenen LUNs und die Kapazität verfügbarer HA-Paare anzeigen, um neue Volumes und LUNs bereitzustellen.

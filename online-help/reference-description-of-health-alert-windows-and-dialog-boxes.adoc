@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-alert-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie sollten Benachrichtigungen für den Empfang von Benachrichtigungen über Ereignisse konfigurieren, indem Sie das Dialogfeld Alarm hinzufügen verwenden. Sie können die Liste der Warnmeldungen auch auf der Seite Konfiguration/Warnmeldungen anzeigen. 
+---
+= Beschreibung der Warnfenster und Dialogfelder
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie sollten Benachrichtigungen für den Empfang von Benachrichtigungen über Ereignisse konfigurieren, indem Sie das Dialogfeld Alarm hinzufügen verwenden. Sie können die Liste der Warnmeldungen auch auf der Seite Konfiguration/Warnmeldungen anzeigen.

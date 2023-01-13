@@ -1,0 +1,74 @@
+---
+permalink: performance-checker/task-responding-to-a-performance-incident-caused-by-ha-takeover.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Mit Unified Manager können Sie ein Performance-Ereignis untersuchen, das durch eine hohe Datenverarbeitung auf einem Cluster Node in einem hochverfügbaren \(HA\)-Paar verursacht wird. Sie können auch Unified Manager verwenden, um den Systemzustand der Nodes zu überprüfen, ob kürzlich entdeckte Systemzustandsereignisse auf den Nodes, die zum Performance-Ereignis beigetragen haben.' 
+---
+= Er reagiert auf ein dynamisches Performance-Ereignis, das durch HA Takeover verursacht wird
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit Unified Manager können Sie ein Performance-Ereignis anhand hoher Datenverarbeitung auf einem Cluster Node in einem Hochverfügbarkeitspaar (HA-Paar) untersuchen. Sie können auch Unified Manager verwenden, um den Systemzustand der Nodes zu überprüfen, ob kürzlich entdeckte Systemzustandsereignisse auf den Nodes, die zum Performance-Ereignis beigetragen haben.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+* Es müssen neue, anerkannte oder veraltete Ereignisse für die Leistung vorliegen.
+
+
+
+
+== Schritte
+
+. Rufen Sie die Seite *Ereignisdetails* auf, um Informationen über das Ereignis anzuzeigen.
+. Lesen Sie die *Description*, die die Workloads beschreibt, die an dem Ereignis beteiligt sind, und die Clusterkomponente, die mit einem Konflikt verbunden ist.
++
+Es gibt ein Opfer-Volume, dessen Latenz von der Cluster-Komponente im Konflikt beeinträchtigt wurde. Der Datenverarbeitungs-Node, der alle Workloads vom Partner-Node übernommen hat, ist die Cluster-Komponente im Konflikt. Unter Komponente in Konflikt wird das Symbol für die Datenverarbeitung rot markiert und der Name des Node, der zum Zeitpunkt des Ereignisses die Datenverarbeitung verarbeitet hat, wird in Klammern angezeigt.
+
+. Klicken Sie in der *Beschreibung* auf den Namen des Opfervolumens.
++
+Die Seite Performance/Volume Details wird angezeigt. Im unteren Bereich der Seite in der Zeile Ereignisse Zeit wird ein Symbol für das Ereignis ändern (image:../media/opm-change-icon.gif["Symbol „Ereignis ändern“"]) Gibt die Zeit an, zu der Unified Manager den Start der HA-Übernahme erkannt hat.
+
+. Zeigen Sie den Cursor auf das Änderungsereignis-Symbol für die HA-Übernahme.
++
+Details zum HA Takeover werden in der Tabelle „Ereignisse“ angezeigt. Im Latenzdiagramm zeigt ein Ereignis an, dass das ausgewählte Volume aufgrund einer hohen Latenz um die gleiche Zeit wie das HA-Takeover den Performance-Schwellenwert überschritten hat.
+
+. Wählen Sie *Aufbruchdaten nach* aus.
+. Wählen Sie unter *Latenz* ***Cluster-Komponenten*** aus.
+. Klicken Sie Auf *Absenden*.
++
+Das Diagramm Cluster-Komponenten wird angezeigt. Im Diagramm wird die gesamte Latenz nach Clusterkomponente unterteilt.
+
+. Zeigen Sie unten auf der Seite den Mauszeiger auf das Symbol für das Änderungsereignis zum Beginn der HA-Übernahme.
+. Vergleichen Sie im Diagramm *Cluster Components* die Latenz für die Datenverarbeitung mit der gesamten Latenz im Diagramm * Latenz*.
++
+Zum Zeitpunkt der HA-Übernahme betrug die Datenverarbeitung aufgrund der steigenden Workload-Anforderungen am Datenverarbeitungs-Node eine Spitze. Die höhere CPU-Auslastung steigerte die Latenz und löste das Ereignis aus.
+
+. Nach der Behebung des fehlerhaften Knotens führt OnCommand System Manager ein HA-Giveback durch, wodurch die Workloads vom Partner-Node zum festgelegten Node verschoben werden.
+. Nachdem die HA-Rückübertragung abgeschlossen ist, suchen Sie im Unified Manager nach der Ereignis-ID, die Sie in Schritt 2 aufgezeichnet haben.
++
+Das durch die HA-Übernahme ausgelöste Ereignis wird auf der Seite Ereignisdetails angezeigt. Das Ereignis weist nun einen Status veraltet auf, was darauf hinweist, dass das Ereignis gelöst wurde.
+
+. Klicken Sie in der *Beschreibung* auf den Namen des Opfervolumens.
++
+Die Seite Performance/Volume Details wird angezeigt. Im unteren Bereich der Seite wird in der Zeile Ereignisse die Zeit angezeigt, in der Unified Manager den Abschluss des HA-Giveback erkannt hat, ein Symbol für ein Änderungsereignis.
+
+. Wählen Sie *Aufbruchdaten nach* aus.
+. Wählen Sie unter *Latenz* ***Cluster-Komponenten*** aus.
++
+Das Diagramm Cluster-Komponenten wird angezeigt.
+
+. Zeigen Sie unten auf der Seite den Cursor auf das Symbol für das Änderungsereignis für das HA-Giveback.
++
+Das Änderungereignis wird in der Tabelle „Ereignisliste“ hervorgehoben und gibt an, dass die HA-Rückgabe erfolgreich abgeschlossen wurde.
+
+. Vergleichen Sie im Diagramm *Cluster Components* die Latenz für die Datenverarbeitung mit der gesamten Latenz im Diagramm * Latenz*.
++
+Die Latenz der Komponente für die Datenverarbeitung wurde herabgesetzt, wodurch die gesamte Latenz verringert wurde. Der Node, den das ausgewählte Volume jetzt zur Datenverarbeitung verwendet, hat das Ereignis aufgelöst.
+
+

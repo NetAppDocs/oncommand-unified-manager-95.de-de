@@ -1,0 +1,38 @@
+---
+permalink: install/concept-requirements-and-limitations-for-unified-manager-in-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: Vor dem Installieren von Unified Manager in einer Failover-Clustering-Umgebung müssen Sie sicherstellen, dass die Cluster-Nodes ordnungsgemäß konfiguriert sind, um Unified Manager zu unterstützen. 
+---
+= Anforderungen für Unified Manager in einer Failover Clustering-Umgebung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vor dem Installieren von Unified Manager in einer Failover-Clustering-Umgebung müssen Sie sicherstellen, dass die Cluster-Nodes ordnungsgemäß konfiguriert sind, um Unified Manager zu unterstützen.
+
+Sie müssen sicherstellen, dass die Failover-Cluster-Konfiguration die folgenden Anforderungen erfüllt:
+
+* Beide Clusterknoten müssen dieselbe Version von Microsoft Windows Server ausführen.
+* Die gleiche Version von Unified Manager muss auf beiden Cluster-Nodes mithilfe des gleichen Pfads installiert werden.
+* Das Failover Clustering muss auf beiden Nodes installiert und aktiviert sein.
++
+Anweisungen hierzu finden Sie in der Microsoft-Dokumentation.
+
+* Zum Erstellen gemeinsam genutzter Datenfestplatten müssen Sie Fibre Channel Switched Fabric oder iSCSI-basierten Storage als Storage Back-End verwenden
+* Optional: Bei Verwendung von SnapDrive für Windows muss ein gemeinsamer Speicherort erstellt werden, der für beide Knoten im Hochverfügbarkeitseinrichtung zugänglich ist.
++
+Informationen zum Installieren und Erstellen eines gemeinsam genutzten Speicherorts finden Sie im Installationshandbuch _SnapDrive for Windows_.
+
++
+Sie können auch LUNs über die Befehlszeilenschnittstelle des Storage-Systems verwalten. Weitere Informationen finden Sie in der SnapDrive for Windows Compatibility Matrix.
+
+* Sie müssen Perl installiert haben `XML::LibXML` Und `File::chdir` Module für Skripte zu funktionieren.
+* Die Cluster-Einrichtung muss nur zwei Nodes enthalten.
+* Der Quorumtyp „`Node und Disk Majority`“ muss für das Failover Clustering verwendet werden.
+* Sie müssen eine freigegebene IP-Adresse mit einem entsprechenden FQDN konfiguriert haben, damit sie als globale Cluster-IP-Adresse für den Zugriff auf Unified Manager verwendet werden kann.
+* Das Passwort für den Unified Manager-Wartungsbenutzer muss auf beiden Nodes identisch sein.
+* Sie müssen nur IPv4-IP-Adresse verwendet haben.
+

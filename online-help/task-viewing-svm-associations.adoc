@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: Über die Seite Verknüpfungen zu Protection-/Storage Virtual Machines können Sie vorhandene SVM-Zuordnungen und ihre Eigenschaften anzeigen und feststellen, ob zusätzliche SVM-Verknüpfungen erforderlich sind. 
+---
+= Anzeigen von SVM-Zuordnungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über die Seite Verknüpfungen zu Protection-/Storage Virtual Machines können Sie vorhandene SVM-Zuordnungen und ihre Eigenschaften anzeigen und feststellen, ob zusätzliche SVM-Verknüpfungen erforderlich sind.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Schutz* > *SVM-Zuordnungen*.
++
+Die Liste der SVM-Zuordnungen und ihrer Eigenschaften wird angezeigt.
+
+

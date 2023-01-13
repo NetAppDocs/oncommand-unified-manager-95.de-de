@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-deleting-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können eine Gruppenregel aus OnCommand Unified Manager löschen, wenn die Gruppenregel nicht mehr erforderlich ist. 
+---
+= Gruppenregeln werden gelöscht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Gruppenregel aus OnCommand Unified Manager löschen, wenn die Gruppenregel nicht mehr erforderlich ist.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Wenn eine Gruppenregel gelöscht wird, werden die zugeordneten Speicherobjekte aus der Gruppe entfernt.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann auf *Verwaltung* > *Gruppen*.
+. Wählen Sie auf der Registerkarte *Gruppenregeln* die Gruppenregel aus, die Sie löschen möchten, und klicken Sie dann auf *Löschen*.
+. Bestätigen Sie im Dialogfeld *Warnung* den Löschvorgang, indem Sie auf *Ja* klicken.
+

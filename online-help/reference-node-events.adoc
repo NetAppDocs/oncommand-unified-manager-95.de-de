@@ -1,0 +1,386 @@
+---
+permalink: online-help/reference-node-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Node-Ereignisse bieten Ihnen Informationen zum Node-Status, sodass Sie Ihr System auf potenzielle Probleme überwachen können. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad. 
+---
+= Node-Ereignisse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Node-Ereignisse bieten Ihnen Informationen zum Node-Status, sodass Sie Ihr System auf potenzielle Probleme überwachen können. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad.
+
+Ein Sternchen (*) identifiziert EMS-Ereignisse, die in Unified Manager-Ereignisse konvertiert wurden.
+
+
+
+== Impact Area: Verfügbarkeit
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+Node-Root-Volume-Speicherplatz fast voll (ocumEvtClusterNodeRootVolumeSpaceNearline )
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Warnung
+
+
+
+ a| 
+Cloud AWS MetaDataConnFail * (ocumCloudAwsMetadataConnFail)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Fehler
+
+
+
+ a| 
+Cloud AWS IAMCredsExpired * (ocumCloudAwsIamCredsExpired)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Fehler
+
+
+
+ a| 
+Cloud AWS IAMCredsIngültig * (ocumCloudAwsIamCredsungültig)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Fehler
+
+
+
+ a| 
+Cloud AWS IAMCredsNotFound * (ocumCloudAwsIamCredsNotFound)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Fehler
+
+
+
+ a| 
+Cloud AWS IAMCredsNotinitialisiert * (ocumCloudAwsIamCredsNotinitialisiert)
+ a| 
+Ereignis
+ a| 
+Knoten
+ a| 
+Informationsdaten
+
+
+
+ a| 
+Cloud AWS IAMRoleInvalid *(ocumCloudAwsIamRoleInvalid)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Fehler
+
+
+
+ a| 
+Cloud AWS IAMRoleNotFound * (ocumCloudAwsIamRoleNotFound)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Fehler
+
+
+
+ a| 
+Objstore Host unlösbar *(ocumObjstoreHostUnlösbar)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Fehler
+
+
+
+ a| 
+Objstore InterClusterLifDown *(ocumObjstoreInterClusterLifDown)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Fehler
+
+
+
+ a| 
+Signatur des Objektspeichers * anfordern
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Fehler
+
+
+
+ a| 
+Einer der NFSv4 Pools ist erschöpft *
+ a| 
+Vorfall
+ a| 
+Knoten
+ a| 
+Kritisch
+
+|===
+
+
+== Impact Area: Kapazität
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+QoS Monitor Memory maxed * (ocumQosMonitorMemory)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Fehler
+
+
+
+ a| 
+QoS Monitor Memory abited *(ocumQosMonitorMemoryAbed)
+ a| 
+Ereignis
+ a| 
+Knoten
+ a| 
+Informationsdaten
+
+|===
+
+
+== Impact Area: Konfiguration
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+Knoten umbenannt(nicht zutreffend)
+ a| 
+Ereignis
+ a| 
+Knoten
+ a| 
+Informationsdaten
+
+|===
+
+
+== Impact Area: Performance
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+Nicht behebgter Node-IOPS-Schwellenwert (OktumNodeIopsVorfall)
+ a| 
+Vorfall
+ a| 
+Knoten
+ a| 
+Kritisch
+
+
+
+ a| 
+Nicht beIOPS-Warnungsschwellenwert (OktumNodeIopsWarnung)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Warnung
+
+
+
+ a| 
+Unterschreiten kritischen Schwellenwert für Node/MBit/s (ocumNodeMbpsVorfall)
+ a| 
+Vorfall
+ a| 
+Knoten
+ a| 
+Kritisch
+
+
+
+ a| 
+Node Mbps: Überschreitung des Warnungsschwellenwerts (OccumNodeMbpsWarnung)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Warnung
+
+
+
+ a| 
+Node-Latenz ms/op Critical Threshold undurchbrochen (OktumNodeLatenzIncident)
+ a| 
+Vorfall
+ a| 
+Knoten
+ a| 
+Kritisch
+
+
+
+ a| 
+Node-Latenz ms/op Warnschwellenwert nicht überschritten (OktumNodeLatenWarnung)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Warnung
+
+
+
+ a| 
+Node-Performance: Verwendete Kapazität – kritischer Schwellenwert überschritten (OktumNodePerftätVerwendungVorfall)
+ a| 
+Vorfall
+ a| 
+Knoten
+ a| 
+Kritisch
+
+
+
+ a| 
+Node-Performance: Verwendete Kapazität – Warnung: Nicht überschritten (OktumNodePerftätNutzungWarnung)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Warnung
+
+
+
+ a| 
+Verwendete Node-Kapazität – Überschreiten kritischer Schwellenwert (OktumNodePerformance-NutzungÜbernahmeVorfall)
+ a| 
+Vorfall
+ a| 
+Knoten
+ a| 
+Kritisch
+
+
+
+ a| 
+Verwendete Node-Kapazität – Überschreitung der Warnschwelle (überschritten mit OktumNodePerformance-FunktionNutzungÜbernahmeWarnung)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Warnung
+
+
+
+ a| 
+Unterschreitem kritischen Schwellenwert für die Node-Auslastung (OkumNodeUtilizationVorfall)
+ a| 
+Vorfall
+ a| 
+Knoten
+ a| 
+Kritisch
+
+
+
+ a| 
+Unterschreitr. Schwellenwert für Node-Auslastung (OkumNodeUtilizationWarnung)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Warnung
+
+
+
+ a| 
+Überlasteter Schwellenwert für Node-HA-Paar (OktumNodeHaPairOverUtilizedInformation)
+ a| 
+Ereignis
+ a| 
+Knoten
+ a| 
+Informationsdaten
+
+
+
+ a| 
+Unterschreitender Schwellenwert für die Node-Festplattenfragmentierung (ocumNodeDiskFragmentationWarnung)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Warnung
+
+
+
+ a| 
+Nicht genutzte Node-Schwelle überschritten (OktumNodeOverUtilizedWarnung)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Warnung
+
+
+
+ a| 
+Nicht behebener dynamischer Knotenschwellenwert (ocumNodeDynamicEventWarnung)
+ a| 
+Dar
+ a| 
+Knoten
+ a| 
+Warnung
+
+|===

@@ -1,0 +1,104 @@
+---
+permalink: install/task-upgrading-the-unified-manager-virtual-appliance-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können ein Upgrade von Unified Manager Version 7.3 oder 9.4 auf Unified Manager 9.5 durchführen. 
+---
+= Aktualisieren der virtuellen Unified Manager Appliance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein Upgrade von Unified Manager Version 7.3 oder 9.4 auf Unified Manager 9.5 durchführen.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen das heruntergeladen haben `.iso` Datei von der NetApp Support Site
+* Das System, auf dem Unified Manager aktualisiert wird, muss die System- und Software-Anforderungen erfüllen.
++
+xref:concept-requirements-for-installing-unified-manager.adoc[Anforderungen an die virtuelle Infrastruktur]
+
++
+xref:reference-vmware-software-and-installation-requirements.adoc[VMware Software- und Installationsanforderungen]
+
+* Für vSphere 6.5-Benutzer müssen Sie die VMware Remote Console (VMRC) installiert haben.
+* Sie müssen die folgenden Informationen haben:
++
+** Anmeldedaten für die NetApp Support-Website
+** Zugangsdaten für den Zugriff auf VMware vCenter Server und vSphere Web Client (für vSphere Version 6.5) oder vSphere Client (für vSphere Version 5.5 oder 6.0)
+** Anmeldedaten für den Unified Manager-Wartungsbenutzer
+
+
+
+
+
+
+== Über diese Aufgabe
+
+Während des Upgrades ist Unified Manager nicht verfügbar. Vor dem Upgrade von Unified Manager sollten alle laufenden Vorgänge abgeschlossen werden.
+
+Wenn Workflow Automation und Unified Manager gekoppelt sind, müssen Sie den Hostnamen in Workflow Automation manuell aktualisieren.
+
+
+
+== Schritte
+
+. Klicken Sie im vSphere Client auf *Startseite* > *Inventar* > *VMs und Vorlagen*.
+. Wählen Sie die virtuelle Maschine (VM) aus, auf der die virtuelle Unified Manager Appliance installiert ist.
+. Wenn die Unified Manager-VM ausgeführt wird, navigieren Sie zu *Zusammenfassung* > *Befehle* > *Herunterfahren Gast*.
+. Erstellen Sie eine Backup-Kopie wie beispielsweise einen Snapshot oder Klon der Unified Manager VM, um ein applikationskonsistentes Backup zu erstellen.
+. Schalten Sie über vSphere Client die Unified Manager VM ein.
+. Wählen Sie das Unified Manager Upgrade-Image aus:
++
+|===
+| Sie verwenden... | Dann tun Sie das... 
+
+
+ a| 
+VSphere 5.5 oder 6.0
+ a| 
+.. Klicken Sie auf das Symbol * CD/DVD Drive* und wählen Sie auf der lokalen Festplatte * * * die Option mit ISO-Image verbinden.
+.. Wählen Sie die aus `OnCommandUnifiedManager-9.5-virtual-update.iso` Datei und klicken Sie auf *Öffnen*.
+
+
+
+
+ a| 
+VSphere 6.5
+ a| 
+.. Starten Sie die VMware Remote Console.
+.. Klicken Sie auf das Symbol *CD-ROM* und wählen Sie *mit der Datenträgerbilddatei verbinden (.iso)* aus.
+.. Wählen Sie die aus `OnCommandUnifiedManager-9.5-virtual-update.iso` Datei und klicken Sie auf *Öffnen*.
+
+
+|===
+. Klicken Sie auf die Registerkarte *Konsole*.
+. Melden Sie sich bei der Wartungskonsole von Unified Manager an.
+. Wählen Sie im Hauptmenü * die Option *Upgrade*.
++
+Es wird eine Meldung angezeigt, dass Unified Manager während des Aktualisierungsvorgangs nicht verfügbar ist und nach Abschluss wieder aufgenommen wird.
+
+. Typ `y` Um fortzufahren.
++
+Es wird eine Warnung angezeigt, die Sie daran erinnert, die virtuelle Maschine zu sichern, auf der sich das virtuelle Gerät befindet.
+
+. Typ `y` Um fortzufahren.
++
+Der Upgrade-Prozess und der Neustart von Unified Manager Services können mehrere Minuten dauern.
+
+. Drücken Sie eine beliebige Taste, um fortzufahren.
++
+Sie werden automatisch von der Wartungskonsole abgemeldet.
+
+. Loggen Sie sich bei der Wartungskonsole ein und überprüfen Sie die Version von Unified Manager.
+
+
+
+
+== Nachdem Sie fertig sind
+
+Sie können sich bei der Web-Benutzeroberfläche anmelden, um die aktualisierte Version von Unified Manager zu verwenden. Beachten Sie, dass Sie warten müssen, bis der Erkennungsvorgang abgeschlossen ist, bevor Sie eine Aufgabe in der Benutzeroberfläche ausführen.

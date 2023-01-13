@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-editing-the-group-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Namen und die Beschreibung einer Gruppe bearbeiten, die Sie in Unified Manager erstellt haben. 
+---
+= Gruppen werden bearbeitet
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Namen und die Beschreibung einer Gruppe bearbeiten, die Sie in Unified Manager erstellt haben.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Wenn Sie eine Gruppe bearbeiten, um den Namen zu aktualisieren, müssen Sie einen eindeutigen Namen angeben; Sie können keinen vorhandenen Gruppennamen verwenden.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann auf *Verwaltung* > *Gruppen*.
+. Wählen Sie auf der Registerkarte *Gruppen* die Gruppe aus, die Sie bearbeiten möchten, und klicken Sie dann auf *Bearbeiten*.
+. Ändern Sie im Dialogfeld *Gruppe bearbeiten* den Namen, die Beschreibung oder beides für die Gruppe.
+. Klicken Sie Auf *Speichern*.
+

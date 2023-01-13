@@ -1,0 +1,88 @@
+---
+permalink: install/task-selinux-requirements-for-mounting-opt-netapp-or-opt-netapp-data-on-an-nfs-or-cifs-share.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Wenn Sie Vorhaben, /opt/netapp oder /opt/netapp/Daten auf einem NAS- oder SAN-Gerät zu mounten und SELinux aktiviert ist, müssen Sie die folgenden Überlegungen beachten. 
+---
+= SELinux Anforderungen zum Mounten von /opt/netapp oder /opt/netapp/Daten auf einer NFS- oder CIFS-Freigabe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie die Montage planen `/opt/netapp` Oder `/opt/netapp/data` Auf einem NAS- oder SAN-Gerät, und SELinux ist aktiviert, müssen Sie die folgenden Überlegungen beachten.
+
+
+
+== Über diese Aufgabe
+
+Wenn planen, zu montieren `/opt/netapp` Oder `/opt/netapp/data` Von überall dort, wo das Root-Dateisystem und SELinux in Ihrer Umgebung aktiviert sind, müssen Sie den richtigen Kontext für die gemounteten Verzeichnisse festlegen. Befolgen Sie diese beiden Schritte, um den richtigen SELinux-Kontext zu setzen und zu bestätigen.
+
+* Konfigurieren Sie SELinux-Kontext, wenn `/opt/netapp/data` Angehängt ist
+* Konfigurieren Sie SELinux-Kontext, wenn `/opt/netapp` Angehängt ist
+
+
+*Konfigurieren des SELinux-Kontexts Wann `/opt/netapp/data` Ist montiert*
+
+Wenn Sie angehängt sind `/opt/netapp/data` In Ihrem System und SELinux ist auf festgelegt `Enforcing`, Stellen Sie sicher, dass der SELinux-Kontexttyp für `/opt/netapp/data` Ist auf festgelegt `mysqld_db_t`, Das ist das Standard-Kontextelement für den Speicherort der Datenbankdateien.
+
+. Führen Sie diesen Befehl aus, um den Kontext zu überprüfen: `ls -dZ /opt/netapp/data`
++
+Beispielausgabe:
+
++
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:default_t:s0 /opt/netapp/data
+----
++
+In dieser Ausgabe ist der Kontext `default_t` Das muss in geändert werden `mysqld_db_t`.
+
+. Führen Sie diese Schritte aus, um den Kontext basierend auf der Art und Weise festzulegen, wie Sie angehängt haben `/opt/netapp/data`.
++
+.. Führen Sie die folgenden Befehle aus, um den Kontext auf einzustellen `mysqld_db_t`: `semanage fcontext -a -t mysql_db_t "/opt/netapp/data"``restorecon -R -v /opt/netapp/data`
+.. Wenn Sie konfiguriert haben `/opt/netapp/data` In `/etc/fstab`, Sie müssen die bearbeiten `/etc/fstab` Datei: Für das `/opt/netapp/data/` Mount-Option, fügen Sie die MySQL-Bezeichnung wie folgt hinzu: `context=system_u:object_r:mysqld_db_t:s0`
+.. Heben Sie die Bereitstellung ab und montieren Sie sie wieder `/opt/netapp/data/` Zum Aktivieren des Kontexts.
+.. Wenn Sie über einen direkten NFS-Mount verfügen, führen Sie den folgenden Befehl aus, um den Kontext auf festzulegen `mysql_db_t`: `mount <nfsshare>:/<mountpoint> /opt/netapp/data -o context=system_u:object_r:mysql_db_t:s0`
+
+
+. Überprüfen Sie, ob der Kontext richtig eingestellt ist: `ls -dZ /opt/netapp/data/`
++
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:mysqld_db_t:s0 /opt/netapp/data/
+----
+
+
+*Konfigurieren des SELinux-Kontexts Wann `/opt/netapp` Ist montiert*
+
+Nachdem Sie den richtigen Kontext für festgelegt haben `/opt/netapp/data/`, Stellen Sie sicher, dass das übergeordnete Verzeichnis `/opt/netapp` Der SELinux-Kontext ist nicht auf festgelegt `file_t`.
+
+. Führen Sie diesen Befehl aus, um den Kontext zu überprüfen: `ls -dZ /opt/netapp`
++
+Beispielausgabe:
+
++
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:file_t:s0 /opt/netapp
+----
++
+In dieser Ausgabe ist der Kontext `file_t` Das muss geändert werden. Mit den folgenden Befehlen wird der Kontext auf festgelegt `usr_t`. Sie können den Kontext auf einen anderen Wert als einstellen `file_t` Basierend auf Ihren Sicherheitsanforderungen
+
+. Führen Sie diese Schritte aus, um den Kontext basierend auf der Art und Weise festzulegen, wie Sie angehängt haben `/opt/netapp`.
++
+.. Führen Sie die folgenden Befehle aus, um den Kontext festzulegen: `semanage fcontext -a -t usr_t "/opt/netapp"``restorecon -v /opt/netapp`
+.. Wenn Sie konfiguriert haben `/opt/netapp` In `/etc/fstab`, Sie müssen die bearbeiten `/etc/fstab` Datei: Für das `/opt/netapp` Mount-Option, fügen Sie die MySQL-Bezeichnung wie folgt hinzu: `context=system_u:object_r:usr_t:s0`
+.. Heben Sie die Bereitstellung ab und montieren Sie sie wieder `/opt/netapp` Zum Aktivieren des Kontexts.
+.. Wenn Sie über einen direkten NFS-Mount verfügen, führen Sie den folgenden Befehl aus, um den Kontext festzulegen: `mount <nfsshare>:/<mountpoint> /opt/netapp -o context=system_u:object_r:usr_t:s0`
+
+
+. Überprüfen Sie, ob der Kontext richtig eingestellt ist: `ls -dZ /opt/netapp`
++
+[listing]
+----
+drwxr-xr-x. mysql root unconfined_u:object_r:usr_t:s0 /opt/netapp
+----
+

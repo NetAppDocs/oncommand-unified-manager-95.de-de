@@ -1,0 +1,22 @@
+---
+permalink: health-checker/task-creating-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Ihrer Datenrichtlinie neue Regeln hinzufügen, um die Platzierung der Daten zu bestimmen, die auf das Infinite Volume geschrieben werden. Sie können Regeln entweder mithilfe von Regelvorlagen erstellen, die in Unified Manager definiert sind, oder benutzerdefinierte Regeln erstellen. 
+---
+= Regeln werden erstellt
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Ihrer Datenrichtlinie neue Regeln hinzufügen, um die Platzierung der Daten zu bestimmen, die auf das Infinite Volume geschrieben werden. Sie können Regeln entweder mithilfe von Regelvorlagen erstellen, die in Unified Manager definiert sind, oder benutzerdefinierte Regeln erstellen.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Der Cluster, der die SVM mit Infinite Volume mit Storage-Klassen enthält, muss der Unified Manager Datenbank hinzugefügt werden.
+

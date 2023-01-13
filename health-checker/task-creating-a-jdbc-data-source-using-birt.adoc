@@ -1,0 +1,64 @@
+---
+permalink: health-checker/task-creating-a-jdbc-data-source-using-birt.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Nachdem Sie den neuen Bericht mithilfe von BIRT erstellt haben, müssen Sie eine Datenquelle erstellen, um den Bericht mit Unified Manager zu verbinden. 
+---
+= Erstellen einer JDBC-Datenquelle mit BIRT
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nachdem Sie den neuen Bericht mithilfe von BIRT erstellt haben, müssen Sie eine Datenquelle erstellen, um den Bericht mit Unified Manager zu verbinden.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen einen Bericht mit BIRT erstellt haben.
+
+Sie müssen MySQL Connector/J. heruntergeladen und installiert haben
+
+Sie müssen einen Datenbankbenutzer mit der Rolle „Berichtschema“ erstellt haben.
+
+
+
+== Schritte
+
+. Wählen Sie in Eclipse *Data Explorer* > *Datenquellen* > *Neue Datenquelle* aus.
+. Wählen Sie in der folgenden Liste * aus einem Datenquellentyp erzeugen aus.
+. Wählen Sie *JDBC Datenquelle* und klicken Sie dann auf *Weiter*.
+. Wählen Sie im Dialogfeld *New JDBC Data Source Profile* die Option *com.mysql.jdbc.Driver(v5.1)* aus.
++
+.. Wenn der MySQL-Treiber nicht angezeigt wird, klicken Sie auf *Treiber verwalten*.
+.. Klicken Sie im Dialogfeld * JDBC-Treiber verwalten* auf *Hinzufügen*.
+.. Navigieren Sie zu dem Speicherort, an dem sich der MySQL Connector/J befindet `.jar` Die Datei wurde installiert, und wählen Sie dann die Datei aus.
+.. Klicken Sie auf *OK*.
++
+Sie sollten den MySQL-Treiber anzeigen und auswählen können.
+
+
+
+. Geben Sie den vollständig qualifizierten Host-Namen oder die IP-Adresse der Unified Manager Instanz im entsprechenden Format ein:
++
+|===
+| Adresstyp | Formatieren 
+
+
+ a| 
+IPv4
+ a| 
+`jdbc:mysql://xx.xx.xx.xx:3306/ocum_report`
+
+
+
+ a| 
+IPv6
+ a| 
+`jdbc:mysql://address=(protocol=tcp)(host=xx:xx:xx:xx:xx:xx:xx:xx)(port=3306)/ocum_report`
+
+|===
+. Geben Sie den Benutzernamen für den Datenbankbenutzer ein, geben Sie das Passwort ein und klicken Sie dann auf *Fertig stellen*.
+

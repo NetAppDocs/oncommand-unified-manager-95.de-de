@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-user-access-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Basierend auf den RBAC-Einstellungen können Sie Benutzer auf der Seite Management/Users hinzufügen und diesen Benutzern geeignete Rollen zuweisen, um die Cluster aufzurufen und zu überwachen. 
+---
+= Beschreibung der Benutzerzugriffsfenster und Dialogfelder
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Basierend auf den RBAC-Einstellungen können Sie Benutzer auf der Seite Management/Users hinzufügen und diesen Benutzern geeignete Rollen zuweisen, um die Cluster aufzurufen und zu überwachen.

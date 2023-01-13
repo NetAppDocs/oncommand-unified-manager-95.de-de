@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-viewing-node-and-aggregate-available-iops-values.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die verfügbaren IOPS-Werte für alle Nodes und alle Aggregate in einem Cluster überwachen. Alternativ können Sie Details zu einem einzelnen Node oder Aggregat anzeigen. 
+---
+= Anzeigen der verfügbaren IOPS-Werte für Node und Aggregat
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die verfügbaren IOPS-Werte für alle Nodes und alle Aggregate in einem Cluster überwachen. Alternativ können Sie Details zu einem einzelnen Node oder Aggregat anzeigen.
+
+Verfügbare IOPS-Werte werden in den Performance Explorer-Seitendiagrammen angezeigt. Wenn Sie beispielsweise einen Node auf der Seite „Performance/Node Explorer“ anzeigen, können Sie das Zählerdiagramm „`verfügbare IOPS`“ in der Liste auswählen, damit Sie die verfügbaren IOPS-Werte für mehrere Aggregate auf diesem Node vergleichen können.
+
+image::../media/available-iops-zoom.gif[Verfügbarer iops-Zoom]
+
+Durch das Monitoring des verfügbaren IOPS-Zählers können Sie Folgendes identifizieren:
+
+* Die Nodes oder Aggregate mit den höchsten verfügbaren IOPS-Werten unterstützen Sie bei der Entscheidung, wo zukünftige Workloads implementiert werden können.
+* Die Nodes oder Aggregate mit den kleinsten verfügbaren IOPS-Werten, um die zu überwachenden Ressourcen auf potenzielle künftige Performance-Probleme zu identifizieren.
+* Die am stärksten ausgelasteten Volumes und LUNs auf einem Aggregat mit kleinem verfügbaren IOPS-Wert.
+

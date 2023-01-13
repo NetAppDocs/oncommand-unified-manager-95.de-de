@@ -1,0 +1,151 @@
+---
+permalink: online-help/reference-health-all-nodes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Systemzustand/Nodes-Inventar“ können Sie detaillierte Informationen zu den Nodes in einem ausgewählten Cluster anzeigen. 
+---
+= Systemzustand/Knoten-Inventar Seite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Systemzustand/Nodes-Inventar“ können Sie detaillierte Informationen zu den Nodes in einem ausgewählten Cluster anzeigen.
+
+
+
+== Befehlsschaltfläche
+
+* *Export*
++
+Ermöglicht das Exportieren der Details aller überwachten Knoten in kommagetrennte Werte (`.csv`) Datei.
+
+
+
+
+
+== Liste der Knoten
+
+In der Liste Nodes werden die Eigenschaften aller erkannten Nodes in einem Cluster angezeigt. Mit den Spaltenfiltern können Sie die angezeigten Daten anpassen.
+
+* *Status*
++
+Ein Symbol, das den aktuellen Status des Knotens identifiziert. Der Status kann kritisch sein (image:../media/sev-critical-um60.png["Symbol für den Schweregrad „Ereignis“ – „kritisch“"]), Fehler (image:../media/sev-error-um60.png["Symbol für den Schweregrad „Ereignis“: Fehler"]), Warnung (image:../media/sev-warning-um60.png["Symbol für den Schweregrad „Ereignis“ – Warnung"]Oder normal (image:../media/sev-normal-um60.png["Symbol für den Schweregrad „Ereignis“ – „Normal“"]).
+
++
+Sie können den Mauszeiger über das Symbol positionieren, um weitere Informationen zu dem für den Node generierten Ereignis oder Ereignis anzuzeigen.
+
+* *Knoten*
++
+Der Name des Node.
+
+* *Bundesland*
++
+Der Status des Node. Der Status kann aktiv oder Inaktiv sein.
+
+* *HA-Zustand*
++
+Der Status des HA-Paars. Der Status kann „Fehler“, „Warnung“, „Normal“ oder „nicht zutreffend“ lauten.
+
+* *Stillzeit*
++
+Die verstrichene Zeit oder der Zeitstempel seit dem Offline-Status des Node. Wenn die verstrichene Zeit eine Woche überschreitet, wird der Zeitstempel des Offline-Status des Node angezeigt.
+
+* * Cluster*
++
+Der Name des Clusters, zu dem der Node gehört.
+
+* *Modell*
++
+Das Modell des Node.
+
+* *Betriebssystemversion*
++
+Die Softwareversion von ONTAP, auf der der Node ausgeführt wird.
+
+* * All Flash Optimiert*
++
+Gibt an, ob der Node nur für die Unterstützung von Solid State-Laufwerken (SSDs) optimiert ist
+
+* *Seriennummer*
++
+Die Seriennummer des Node.
+
+* *Firmware-Version*
++
+Die Versionsnummer der Firmware des Node.
+
+* *Eigentümer*
++
+Der Name des Eigentümers des Node.
+
+* *Lage*
++
+Der Speicherort des Node.
+
+* *Verwendete Gesamtkapazität*
++
+Die Menge an Speicherplatz, der in den Aggregaten des Node für Daten verwendet wird.
+
+* *Gesamtkapazität*
++
+Der insgesamt für Daten in den Aggregaten des Node verfügbare Speicherplatz.
+
+* *Nutzbare Ersatzkapazität*
++
+Die Menge an verfügbarem Speicherplatz im Node, der zur Verbesserung der Aggregatskapazität verwendet werden kann.
+
+* *Nutzbare Rohkapazität*
++
+Die Menge an Speicherplatz, der im Node nutzbar ist.
+
+* *Gesamtbruttokapazität*
++
+Die Kapazität jeder nicht formatierten Festplatte im Knoten vor der richtigen Dimensionierung und RAID-Konfiguration.
+
+* *SVM-Anzahl*
++
+Die Anzahl der SVMs im Cluster
+
+* * FC Port Anzahl*
++
+Die Anzahl der vom Node enthaltenen FC-Ports.
+
+* *FCoE Port Anzahl*
++
+Die Anzahl der vom Node enthaltenen FCoE-Ports.
+
+* * Anzahl Ethernet-Ports*
++
+Die Anzahl der vom Node enthaltenen ethernet-Ports.
+
+* *Flash-Kartengröße*
++
+Die Größe der auf dem Node installierten Flash-Karten.
+
+* * Anzahl Der Flash-Karten*
++
+Die Anzahl der auf dem Node installierten Flash-Karten.
+
+* * Anzahl Festplatten-Shelfs*
++
+Die Anzahl der vom Node enthaltenen Platten-Shelfs.
+
+* * Datenträgeranzahl*
++
+Die Anzahl der Festplatten im Node.
+
+
+
+
+
+== Bereich Filter
+
+Im Bereich Filter können Sie Filter einstellen, um die Art und Weise anzupassen, wie Informationen in der Liste der Knoten angezeigt werden. Sie können Filter für die Spalten Status, Zustand und HA-Status auswählen.
+
+[NOTE]
+====
+Die im Fensterbereich Filter angegebenen Filter überschreiben die Filter, die für die Spalten in der Liste Knoten angegeben sind.
+
+====

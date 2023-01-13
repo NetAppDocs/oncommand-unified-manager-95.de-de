@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-nfs-exports-report-to-display-a-list-of-volumes-with-default-export-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Bericht NFS-Exporte anpassen, um eine Liste von Volumes mit der Standard-Exportrichtlinie anzuzeigen. 
+---
+= Anpassen des Berichts NFS-Exporte zur Anzeige einer Liste von Volumes mit Standard-Exportrichtlinie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Bericht NFS-Exporte anpassen, um eine Liste von Volumes mit der Standard-Exportrichtlinie anzuzeigen.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach Cluster oder Volumes:
++
+.. Klicken Sie in die Spalten, die die Gruppierung aufheben müssen.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um Volumes mit Standard-Exportrichtlinie zu filtern, klicken Sie auf die Spalte *Richtlinie exportieren* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Liste *Bedingung* die Option *gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *Standard*.
+. Klicken Sie auf *OK*.
+

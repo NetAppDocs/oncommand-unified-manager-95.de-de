@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-script-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Management/Scripts“ können Sie Skripte zu Unified Manager hinzufügen. 
+---
+= Beschreibung der Skriptfenster und Dialogfelder
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Management/Scripts“ können Sie Skripte zu Unified Manager hinzufügen.

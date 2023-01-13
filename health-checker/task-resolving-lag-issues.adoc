@@ -1,0 +1,66 @@
+---
+permalink: health-checker/task-resolving-lag-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: Dieser Workflow bietet ein Beispiel dafür, wie Sie ein lag-Problem lösen können. In diesem Szenario sind Sie ein Administrator oder Operator, der auf die Seite Unified Manager Dashboards/Überblick zugreift, um zu sehen, ob es Probleme mit Ihren Schutzbeziehungen gibt und, falls sie vorhanden sind, Lösungen zu finden. 
+---
+= Behebung von lag-Problemen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dieser Workflow bietet ein Beispiel dafür, wie Sie ein lag-Problem lösen können. In diesem Szenario greifen Sie als Administrator oder Operator auf die Seite Unified ManagerDashboards/Übersicht zu, um zu sehen, ob es Probleme mit Ihren Schutzbeziehungen gibt und, falls diese vorhanden sind, Lösungen zu finden.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Auf der Seite Dashboards/Übersicht sehen Sie sich den Bereich ungelöste Vorfälle und Risiken an und Sie sehen einen SnapMirror lag-Fehler im Teilfenster „Sicherung“ unter „Sicherungsrisiken“.
+
+
+
+== Schritte
+
+. Suchen Sie im Fensterbereich *Schutz* auf der Seite *Dashboards/Übersicht* den Fehler SnapMirror Beziehungs-lag und klicken Sie darauf.
++
+Es wird die Seite Ereignisdetails für das Ereignis lag-Fehler angezeigt.
+
+. Auf der Seite *Event* Details können Sie eine oder mehrere der folgenden Aufgaben ausführen:
++
+** Prüfen Sie die Fehlermeldung im Feld Ursache im Übersichtsbereich, um festzustellen, ob Korrekturmaßnahmen vorgeschlagen werden.
+** Klicken Sie im Feld Quelle des Übersichtsbereichs auf den Objektnamen, in diesem Fall ein Volume, um Details zum Volume anzuzeigen.
+** Suchen Sie nach Notizen, die zu diesem Event hinzugefügt wurden.
+** Fügen Sie dem Ereignis eine Notiz hinzu.
+** Weisen Sie das Ereignis einem bestimmten Benutzer zu.
+** Bestätigen oder beheben Sie das Ereignis.
+
+
+. In diesem Szenario klicken Sie im Feld Quelle des Bereichs *Zusammenfassung* auf den Objektnamen (in diesem Fall ein Volume), um Details zum Volume zu erhalten.
++
+Die Registerkarte Schutz der Seite Health/Volume Details wird angezeigt.
+
+. Auf der Registerkarte *Schutz* sehen Sie sich das Topologiediagramm an.
++
+Die Tatsache, dass das Volume mit dem lag-Fehler das letzte Volume einer SnapMirror Kaskadierung mit drei Volumes ist, ist zu beachten. Das ausgewählte Volume wird in Dunkelgrau dargestellt, und eine doppelte orangefarbene Linie des Quell-Volume weist auf einen SnapMirror Beziehungsfehler hin.
+
++
+image::../media/topology-cascade-lag-error.gif[Kaskadierung von SnapMirror lag]
+
+. Klicken Sie auf jedes der Volumes in der SnapMirror-Kaskadierung.
++
+Bei der Auswahl der einzelnen Volumes sind die Schutzinformationen in der Zusammenfassung, Topologie, Verlauf, Ereignisse, Verwandte Geräte, Die Bereiche „Verwandte Warnungen“ ändern sich, um die für das ausgewählte Volume relevanten Details anzuzeigen.
+
+. Sie sehen den Bereich *Zusammenfassung* und positionieren den Cursor über dem Informationssymbol im Feld *Zeitplan aktualisieren* für jedes Volumen.
++
+In diesem Szenario beachten Sie, dass die SnapMirror-Richtlinie DPStandard ist und dass die SnapMirror-Zeitpläne stündlich innerhalb von fünf Minuten nach der Stunde aktualisiert werden. Sie wissen, dass alle Volumes in der Beziehung versuchen, einen SnapMirror Transfer gleichzeitig abzuschließen.
+
+. Um das lag-Problem zu beheben, ändern Sie die Zeitpläne für zwei der kaskadierten Volumes, sodass jedes Ziel nach Abschluss des Transfers einen SnapMirror Transfer beginnt.
+

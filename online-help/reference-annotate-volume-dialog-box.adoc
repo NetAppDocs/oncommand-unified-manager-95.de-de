@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-volume-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld „Ausgabe annotieren“ können Sie Speicherobjekte manuell annotieren. Sie können entweder ein einzelnes Volume oder mehrere Volumes auswählen und in der vorhandenen Liste der Anmerkungen mit einem bestimmten Wertpaar Anmerkungen versehen. 
+---
+= Dialogfeld „Volume mit Anmerkungen versehen“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld „Ausgabe annotieren“ können Sie Speicherobjekte manuell annotieren. Sie können entweder ein einzelnes Volume oder mehrere Volumes auswählen und in der vorhandenen Liste der Anmerkungen mit einem bestimmten Wertpaar Anmerkungen versehen.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Anmerkung=Wertpaare*
++
+Ermöglicht die Auswahl der erforderlichen Beschriftung für das ausgewählte Volumen.
+
+* *Anwenden*
++
+Wendet die ausgewählte Beschriftung auf das Volumen an.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld „Ausgabe annotieren“, ohne Ihre Änderungen zu speichern.
+
+

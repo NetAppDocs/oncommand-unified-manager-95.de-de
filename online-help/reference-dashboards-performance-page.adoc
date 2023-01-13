@@ -1,0 +1,121 @@
+---
+permalink: online-help/reference-dashboards-performance-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Mithilfe des Unified Manager Performance Dashboard können Sie den allgemeinen Performance-Status aller zu überwachenden Cluster anzeigen. Auf der Seite Dashboards/Performance wird auch eine Bannermeldung angezeigt, wenn Unified Manager nicht mit einem Cluster kommunizieren kann, das überwacht wird. 
+---
+= Dashboards/Seite zur Performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mithilfe des Unified Manager Performance Dashboard können Sie den allgemeinen Performance-Status aller zu überwachenden Cluster anzeigen. Auf der Seite Dashboards/Performance wird auch eine Bannermeldung angezeigt, wenn Unified Manager nicht mit einem Cluster kommunizieren kann, das überwacht wird.
+
+
+
+== Überblick
+
+Die Cluster werden nach dem Schweregrad mithilfe der folgenden Kriterien geordnet:
+
+. Wenn ein Cluster nicht erreichbar ist.
+. Wenn ein Cluster mindestens ein aktives, kritisches Performance-Ereignis aufweist (rotes Objektsymbol)
+. Wenn ein Cluster über ein oder mehrere aktive Warn-Performance-Ereignisse verfügt (gelbes Objektsymbol).
+. Wenn Cluster keine aktiven Performance-Ereignisse aufweisen (grünes Objektsymbol): Die Cluster sind nach den höchsten IOPS sortiert.
+
+
+Kritische Ereignisse werden generiert, wenn ein kritisches Limit in einer benutzerdefinierten Performance-Schwellenwertrichtlinie überschritten wird. Warnereignisse werden gesendet, wenn ein Warnlimit in einer benutzerdefinierten Performance-Schwellenwertrichtlinie überschritten wird oder eine systemdefinierte Schwellenwertrichtlinie oder ein dynamischer Schwellenwert überschritten wird.
+
+[NOTE]
+====
+Die Sortierreihenfolge wird durch die Gesamtzahl der aktiven (neuen oder bestätigten) Ereignisse bestimmt, nicht durch die Anzahl der Objekte, die Ereignisse aufweisen. Wenn beispielsweise Cluster A sieben kritische Ereignisse bei der Volume-Latenz hat, Und Cluster B weist zwei kritische Ereignisse bei Volume-Latenz und zwei kritische Node-IOPS-Ereignisse (insgesamt vier kritische Ereignisse) auf. Cluster A (mit einem roten Objektsymbol) erscheint oben in der Liste, obwohl Cluster B über zwei rote Objektsymbole verfügt.
+
+====
+Für jedes Cluster werden die folgenden häufig überwachten Ereignistypen angezeigt:
+
+* Latenzereignisse für Storage Virtual Machines (SVMs), Volumes und LUNs
+* IOPS-Ereignisse für Nodes und SVMs
+* MB/s-Ereignisse für Nodes und SVMs
+* Verwendete Performance-Kapazität Ereignisse für Nodes und Aggregate
+* Auslastungsereignisse für Nodes und Aggregate
+
+
+Unified Manager kann Performance-Ereignisse für andere Storage-Objekte und Zähler empfangen, z. B. MB/s-Ereignisse für Aggregate und IOPS-Ereignisse für Volumes. Wenn ein Cluster diese Ereignistypen aufweist, zeigt das Symbol neben dem Cluster-Namen ein Warnungs- (gelbes) oder kritisches (rotes) Ereignis an. Dieses Symbol kann bedeuten, dass Ereignisse vorhanden sind, wenn keine der fünf Zählerfeldanzeichen gelb oder rot sind, da diese Ereignistypen nicht in die vorhandenen Kategorien des Zählerfelds passen.
+
+Sie können auf das Objektsymbol klicken, um die Seite „Performance Inventory“ für das Objekt anzuzeigen. Dort können Sie alle Objekte des entsprechenden Typs in diesem Cluster anzeigen. Wenn Sie beispielsweise auf ein Volume-Symbol klicken, wird die Seite „Performance/Volume Inventory“ angezeigt. Hier werden eine Liste aller Volumes im ausgewählten Cluster angezeigt, die nach der schlechtesten bis optimalen Performance sortiert sind.
+
+
+
+== Performance-Zähler
+
+Für jedes Cluster sind fünf Performance-Zähler vorhanden, die jeweils in einem separaten Panel angezeigt werden. Diese Informationen werden nach jeder fünfminütigen Erfassungszeit automatisch aktualisiert:
+
+|===
+| Zähler | Beschreibung 
+
+
+ a| 
+Latenz
+ a| 
+Zeigt an, wie schnell das Cluster auf Client-Applikationsanforderungen reagiert, in Millisekunden pro Vorgang (ms/op).der Symbolbereich gibt an, ob SVMs, Volumes oder LUNs aktive Ereignisse aufweisen, basierend auf dem Latenzwert, der eine Schwellenwerteinstellung überschreitet.
+
+
+
+ a| 
+IOPS
+ a| 
+Zeigt die Betriebsgeschwindigkeit des Storage-Systems unter der Anzahl der ein-/Ausgabe-Vorgänge pro Sekunde (IOPS).
+
+* Der Symbolbereich gibt an, ob Nodes oder SVMs über aktive Ereignisse verfügen, basierend auf der Anzahl der IOPS, die einen Schwellenwert überschreitet.
+* Im unteren Bereich werden die gesamten Cluster IOPS der letzten fünf Minuten angezeigt.
+
+
+
+
+ a| 
+MB/Sek.
+ a| 
+Zeigt, wie viele Daten in Megabyte pro Sekunde (MB/s) in das und aus dem Cluster übertragen werden.
+
+* Der Symbolbereich gibt an, ob Nodes oder SVMs basierend auf dem MB/s-Wert, der eine Schwellenwerteinstellung überschreitet, aktive Ereignisse aufweisen.
+* Im unteren Bereich wird der gesamte Cluster-Durchsatz der letzten fünf-Minuten-Sammlung angezeigt.
+
+
+
+
+ a| 
+Verwendete Performance-Kapazität
+ a| 
+Zeigt, ob Nodes oder Aggregate die verfügbare Performance-Kapazität überbeanspruchen.
+
+* Der Symbolbereich gibt an, ob auf Basis des für die Performance verwendeten Werts, der eine Schwellenwerteinstellung überschreitet, Nodes oder Aggregate aktive Ereignisse aufweisen.
+* Im unteren Bereich werden die am stärksten ausgelasteten Nodes und das am stärksten ausgelasteten Aggregat die höchste Performance-Kapazität angezeigt.
+
+
+[NOTE]
+====
+Daten zur Performance-Kapazität sind nur verfügbar, wenn die Nodes in einem Cluster mit der Software ONTAP 9.0 oder höher installiert sind.
+
+====
+
+
+ a| 
+Auslastung
+ a| 
+Zeigt, ob die Ressourcen auf beliebigen Nodes oder Aggregaten überlastet sind.
+
+* Der Symbolbereich gibt an, ob Nodes oder Aggregate basierend auf dem Nutzungswert, der eine Schwellenwerteinstellung überschreitet, aktive Ereignisse aufweisen.
+* Im unteren Bereich wird der höchste Auslastungswert des am stärksten ausgelasteten Nodes und des am stärksten ausgelasteten Aggregats angezeigt.
+
+
+|===
+Ellipsen (...) Im Kopfbereich wird angegeben, dass Leistungsdaten gerade erfasst werden.
+
+Sie können auf *Cluster-Details* klicken, um einen Cluster mit Performance-Ereignissen anzuzeigen, auf der die Startseite des Performance Cluster angezeigt wird. Dort können Sie detaillierte Performance-Informationen über das Cluster und andere Storage-Objekte anzeigen.
+
+
+
+== Cluster-Statusmeldungen
+
+Wenn ein von Unified Manager gemanagter Cluster nicht mehr verfügbar ist, wird über den Performance-Zählern ein Statusmeldungs-Banner angezeigt. Eine *Details*-Schaltfläche wird rechts neben dem Statusmeldenbanner angezeigt, wenn das Cluster nicht erreichbar ist. Durch Klicken auf die Schaltfläche *Details* in der Statusmeldung können Sie zur Seite Cluster Data Sources navigieren, die vollständige Informationen zum Problem enthält. Auf der Seite „Cluster-Datenquellen“ finden Sie die Daten, die erforderlich sind, um Probleme zu beheben, aufgrund denen der Cluster nicht mehr verfügbar ist.

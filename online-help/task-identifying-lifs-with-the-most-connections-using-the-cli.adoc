@@ -1,0 +1,99 @@
+---
+permalink: online-help/task-identifying-lifs-with-the-most-connections-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: Möglicherweise möchten Sie eine Daten-LIF migrieren, wenn Sie eine hohe Last oder einen hohen Durchsatz aufweist. Um zu entscheiden, ob eine LIF migriert werden soll, können Sie die Last auf LIFs, die Anzahl der Verbindungen am Port, den Durchsatz und die CPU-Zyklen auf dem Node anzeigen. 
+---
+= Identifizierung von LIFs mit den meisten Verbindungen mithilfe der CLI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Möglicherweise möchten Sie eine Daten-LIF migrieren, wenn Sie eine hohe Last oder einen hohen Durchsatz aufweist. Um zu entscheiden, ob eine LIF migriert werden soll, können Sie die Last auf LIFs, die Anzahl der Verbindungen am Port, den Durchsatz und die CPU-Zyklen auf dem Node anzeigen.
+
+
+
+== Schritte
+
+. Greifen Sie als Cluster-Administrator auf die CLI zu.
+. Stellen Sie die Berechtigungsebene auf „Advanced“ ein, indem Sie den folgenden Befehl eingeben: `set -privilege advanced`
++
+Informationen zur Verwendung der CLI im erweiterten Modus finden Sie in der Referenz _Systemadministration_.
+
+. Geben Sie den folgenden Befehl ein, um das Gewicht der einzelnen LIFs zu ermitteln: `network interface lif-weights show`
++
+Eine überlastete LIF ist eines mit dem niedrigsten Gewicht.
+
+. Geben Sie den folgenden Befehl ein, um die aktiven Verbindungen auf einem Node zu suchen: `network connections active show-clients`
++
+Beachten Sie die höchste Anzahl von Clients pro Node.
+
++
+[listing]
+----
+cluster1::> network connections active show-clients
+Node    Client IP Address     Count
+------  -----------------     ------
+node1   192.0.2.253               12
+        192.0.2.252                9
+        192.0.2.251               12
+
+node2   192.0.2.250               12
+        192.0.2.252                9
+        192.0.2.253                9
+
+node3   customer.example.com       2
+        customer.example.net       2
+        customer.example.org       2
+----
+. Geben Sie den folgenden Befehl ein, um die aktiven Verbindungen nach LIF auf einem Node und einer SVM zu finden: `network connections active show-lifs`
++
+Beachten Sie die höchste Anzahl von Clients pro LIF.
+
++
+[listing]
+----
+cluster1::> network connections active show-lifs
+Node      Vserver Name  Interface Name  Count
+--------  ------------  --------------- ------
+node1
+          vs1           clus1              30
+
+node2
+          vs2           clus1              30
+
+node3
+          vs3           lif1                2
+          vs4           clus1              30
+----
+. Überprüfen Sie die LIFs, die sich denselben Home-Port und denselben Home-Node teilen, um die LIFs mit den meisten Verbindungen zu identifizieren.
+. Um den besten Datenport auszuwählen, geben Sie Folgendes ein: `statistics show -object port`
++
+Der Statistik-Befehl liefert Durchsatz- und Bandbreiteninformationen für Ethernet-Ports. Jede Zeile enthält einen separaten Zähler eindeutiger Informationen. Wert ist der Wert für den Objekttyp seit dem letzten Löschen des Zählers (seit ONTAP zuletzt gestartet wurde).
+
++
+[listing]
+----
+cluster1::> statistics show -object port
+Object: port
+Instance: e0a
+Start-time: 10/11/2013 13:51:41
+End-time: 10/11/2013 13:51:41
+Node: node1
+
+    Counter                                           Value
+    -------------------------------------------------------
+    recv-data                                            0B
+    recv-packets                                         0
+    recv-mcasts                                          0
+    recv-errors                                          0
+    recv-dropped                                         0
+    sent-data                                            0B
+    sent-packets                                         0
+    sent-mcasts                                          0
+    sent-errors                                          0
+    collisions                                           0
+----
+

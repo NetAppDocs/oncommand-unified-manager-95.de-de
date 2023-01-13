@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-clusters-and-cluster-object-health.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager verwendet regelmäßige API-Abfragen und eine Datenerfassungs-Engine, um Daten aus den Clustern zu erfassen. Durch das Hinzufügen von Clustern zur Unified Manager-Datenbank können diese Cluster hinsichtlich Verfügbarkeit und Kapazität überwacht und gemanagt werden. 
+---
+= Verwalten und Überwachen der Cluster- und Cluster-Objektintegrität
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager verwendet regelmäßige API-Abfragen und eine Datenerfassungs-Engine, um Daten aus den Clustern zu erfassen. Durch das Hinzufügen von Clustern zur Unified Manager-Datenbank können diese Cluster hinsichtlich Verfügbarkeit und Kapazität überwacht und gemanagt werden.

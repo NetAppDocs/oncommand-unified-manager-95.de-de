@@ -1,0 +1,14 @@
+---
+permalink: install/concept-installing-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: Es ist wichtig, dass Sie die Schritte kennen, um Unified Manager unter Windows herunterzuladen und zu installieren. Vor der Installation von Unified Manager unter Windows können Sie entscheiden, ob Sie Unified Manager für hohe Verfügbarkeit konfigurieren möchten. 
+---
+= Installation von Unified Manager unter Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es ist wichtig, dass Sie die Schritte kennen, um Unified Manager unter Windows herunterzuladen und zu installieren. Vor der Installation von Unified Manager unter Windows können Sie entscheiden, ob Sie Unified Manager für hohe Verfügbarkeit konfigurieren möchten.

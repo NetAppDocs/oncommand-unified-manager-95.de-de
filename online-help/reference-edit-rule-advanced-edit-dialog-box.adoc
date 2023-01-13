@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-edit-rule-advanced-edit-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld Regel bearbeiten können Sie die Eigenschaften einer Regel bearbeiten, die nicht mit einer Vorlage erstellt wurde. Die zu bearbeitenden Regeleigenschaften umfassen die Dateitypen, Verzeichnispfade, übereinstimmende Kriterien oder Eigentümer. Sie können eine geeignete Speicherklasse für die Regel auswählen. Sie können beispielsweise die Bedingungen bearbeiten, die in den übereinstimmenden Kriterien einer Regel angegeben sind. 
+---
+= Dialogfeld „Regel bearbeiten“ (Erweitert bearbeiten)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Regel bearbeiten können Sie die Eigenschaften einer Regel bearbeiten, die nicht mit einer Vorlage erstellt wurde. Die zu bearbeitenden Regeleigenschaften umfassen die Dateitypen, Verzeichnispfade, übereinstimmende Kriterien oder Eigentümer. Sie können eine geeignete Speicherklasse für die Regel auswählen. Sie können beispielsweise die Bedingungen bearbeiten, die in den übereinstimmenden Kriterien einer Regel angegeben sind.
+
+
+
+== Regelname
+
+Zeigt den Namen der Regel an.
+
+
+
+== Übereinstimmende Kriterien
+
+Zeigt eine Liste der Bedingungen an, die sich auf die ausgewählte Regelvorlage beziehen. Die Bedingungsliste ändert sich basierend auf der ausgewählten Regelvorlage. Sie können die Regeln erweitern und die Regeleigenschaften nach Bedarf ändern.
+
+
+
+== Bereich der Content-Platzierung
+
+Zeigt die Liste der Speicherklassen an. Sie können eine geeignete Speicherklasse für die ausgewählte Regel auswählen.
+
+
+
+== Befehlsschaltflächen
+
+* *Aktualisierung*
++
+Aktualisiert die an der Regel vorgenommenen Änderungen und schließt das Dialogfeld Regel bearbeiten.
+
+* *Abbrechen*
++
+Bricht die letzten Änderungen an der Regel ab und schließt das Dialogfeld Regel bearbeiten.
+
+

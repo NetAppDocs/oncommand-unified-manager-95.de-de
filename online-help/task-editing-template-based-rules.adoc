@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-editing-template-based-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld Regel bearbeiten können Sie eine Regel bearbeiten, die mithilfe der Regelvorlagen erstellt wurde. Sie können Regeleigenschaften wie Verzeichnispfade, Dateitypen und Eigentümer hinzufügen, ändern oder löschen. Sie können auch den Regelnamen und die der Regel zugeordnete Speicherklasse ändern. 
+---
+= Vorlagenbasierte Regeln werden bearbeitet
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Regel bearbeiten können Sie eine Regel bearbeiten, die mithilfe der Regelvorlagen erstellt wurde. Sie können Regeleigenschaften wie Verzeichnispfade, Dateitypen und Eigentümer hinzufügen, ändern oder löschen. Sie können auch den Regelnamen und die der Regel zugeordnete Speicherklasse ändern.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie auf der Seite *Health/Storage Virtual Machines* Inventory eine geeignete SVM aus.
+. Klicken Sie Auf *Datenrichtlinie*.
++
+Es wird eine Liste der Regeln in der Datenrichtlinie für die ausgewählte SVM mit Infinite Volume angezeigt.
+
+. Wählen Sie die Regel aus, für die neue Bedingungen oder Bedingungssätze einbezogen werden sollen.
+. Klicken Sie Auf *Bearbeiten*.
+. Bearbeiten Sie die Regel im Dialogfeld *Regel bearbeiten* nach Bedarf:
++
+|===
+| Ihr Ziel ist | Tun Sie das... 
+
+
+ a| 
+Fügen Sie eine neue Regeleigenschaft hinzu
+ a| 
+Klicken Sie Auf *Hinzufügen*.
+
+
+
+ a| 
+Löschen einer Regeleigenschaft
+ a| 
+Klicken Sie auf *Löschen*, indem Sie die entsprechende Regeleigenschaft auswählen.
+
+
+
+ a| 
+Ändern Sie eine Regeleigenschaft
+ a| 
+Doppelklicken Sie auf die entsprechende Regeleigenschaft, und ändern Sie sie nach Bedarf.
+
+|===
+. Klicken Sie Auf *Aktualisieren*.
+. Überprüfen Sie, ob Ihre Änderungen auf die Regel angewendet werden, indem Sie die Regel auf der Registerkarte *Datenrichtlinie* erweitern.
+. Vorschau aller anderen Änderungen an der Datenrichtlinie.
+. Klicken Sie auf *Aktivieren*, um die Änderungen an den Regeleigenschaften in der SVM zu aktivieren.
+

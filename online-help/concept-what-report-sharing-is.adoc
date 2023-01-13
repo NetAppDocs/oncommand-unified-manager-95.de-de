@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-report-sharing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Über die Option „Teilen“ können Sie einen Bericht mit einem oder mehreren Benutzern per E-Mail teilen. 
+---
+= Die Weitergabe von Berichten ist wichtig
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können einen Bericht über E-Mail mit der Option *Teilen* an einen oder mehrere Benutzer weitergeben.
+
+Sie müssen den Bericht vor der Freigabe speichern, um sicherzustellen, dass die letzten Änderungen, die Sie an dem Bericht vorgenommen haben, angezeigt werden.
+
+Sie können den Bericht in jedem gewünschten Format freigeben. Mit der Option *Share* können Sie Berichte sofort per E-Mail teilen, auch mit Personen, die keinen Zugang zu Unified Manager haben, aber über eine gültige E-Mail-Adresse verfügen.

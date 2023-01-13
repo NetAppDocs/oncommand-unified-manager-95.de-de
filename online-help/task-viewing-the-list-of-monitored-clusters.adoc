@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-viewing-the-list-of-monitored-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Configuration/Cluster Data Sources können Sie das Inventar der Cluster anzeigen. Sie können Details zu den Clustern anzeigen, z. B. ihren Namen oder ihre IP-Adresse und ihren Kommunikationsstatus. 
+---
+= Anzeigen der Liste der überwachten Cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Configuration/Cluster Data Sources können Sie das Inventar der Cluster anzeigen. Sie können Details zu den Clustern anzeigen, z. B. ihren Namen oder ihre IP-Adresse und ihren Kommunikationsstatus.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Die Liste der Cluster wird nach der Spalte „Sammlungsstatus“ sortiert. Sie können auf eine Spaltenüberschrift klicken, um die Cluster nach unterschiedlichen Spalten zu sortieren.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Konfiguration* > *Cluster-Datenquellen*.
+

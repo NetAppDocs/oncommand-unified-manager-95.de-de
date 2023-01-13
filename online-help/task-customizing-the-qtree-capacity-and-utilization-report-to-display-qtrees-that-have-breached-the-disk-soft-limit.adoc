@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-customizing-the-qtree-capacity-and-utilization-report-to-display-qtrees-that-have-breached-the-disk-soft-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Qtree-Kapazitäts- und Auslastungsbericht anpassen, um qtrees anzuzeigen, die die Softgrenzen der Festplatte überschritten haben. Sie können nach verwendeter Festplatte, Festplatten-Limit und Festplatten-Softlimit filtern und sortieren. 
+---
+= Anpassung des Qtree-Kapazitäts- und Auslastungsberichts zur Anzeige von qtrees, die das weiche Limit der Festplatte überschritten haben
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Qtree-Kapazitäts- und Auslastungsbericht anpassen, um qtrees anzuzeigen, die die Softgrenzen der Festplatte überschritten haben. Sie können nach verwendeter Festplatte, Festplatten-Limit und Festplatten-Softlimit filtern und sortieren.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach SVM, Cluster oder Volume:
++
+.. Klicken Sie in die Spalten, die die Gruppierung aufheben müssen.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um qtrees zu filtern, die nicht über eine unbegrenzte Anzahl von Festplatten verfügen, klicken Sie in die Spalte *Disk Hard Limit* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf das klicken image:../media/click-to-filter.gif[""] Symbol.
++
+.. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *nicht gleich* aus.
+.. Klicken Sie auf *Werte auswählen* und wählen Sie *unbegrenzt*.
+.. Klicken Sie Auf *Ok*.
+
+
+. Um qtrees zu filtern, die nicht über einen unbegrenzten Wert verfügen, klicken Sie in die Spalte *Disk Soft Limit* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf das klicken image:../media/click-to-filter.gif[""] Symbol.
++
+.. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *nicht gleich* aus.
+.. Klicken Sie auf *Werte auswählen* und wählen Sie *unbegrenzt*.
+.. Klicken Sie Auf *Ok*.
+
+
+. So fügen Sie eine Spalte für qtrees hinzu, die das weiche Limit für die Festplatte nicht überschritten haben:
++
+.. Klicken Sie in der Spalte *Disk Soft Limit* auf image:../media/click-to-see-menu.gif[""] Und wählen Sie *Spalte* > *Neue berechnete Spalte*
+.. Geben Sie im Dialogfeld * Neue berechnete Spalte* ein `Breached Disk Soft Limit Capacity` Im Feld *Spaltenbeschriftung*.
+.. Wählen Sie in der Liste Kategorie auswählen die Option *Text* aus.
+.. Wählen Sie aus der Dropdown-Liste *Funktion auswählen* die Option *Erweitert* aus.
+.. Geben Sie im Feld *Ausdruck eingeben* ein `IF(([qtreeDiskUsedPercent] *[diskLimit]/100 > [softDiskLimit]), "Yes", "No")`.
+.. Klicken Sie auf *OK*.
+
+
+. Um qtrees zu filtern, die das Limit für weiche Festplatten überschritten haben, klicken Sie in die Spalte *nicht mehr belegte Datenträgerweiche Grenzkapazität* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf das klicken image:../media/click-to-filter.gif[""] Symbol.
++
+.. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *gleich* aus.
+.. Klicken Sie auf *Werte auswählen* und wählen Sie *Ja*.
+.. Klicken Sie Auf *Ok*.
+
+
+

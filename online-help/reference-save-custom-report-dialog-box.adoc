@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-save-custom-report-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld „Benutzerdefinierter Bericht speichern“ können Sie einen benutzerdefinierten Bericht speichern, nachdem Sie zusätzliche Änderungen am benutzerdefinierten Bericht vorgenommen haben. 
+---
+= Dialogfeld „Benutzerdefinierter Bericht speichern“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld „Benutzerdefinierter Bericht speichern“ können Sie einen benutzerdefinierten Bericht speichern, nachdem Sie zusätzliche Änderungen am benutzerdefinierten Bericht vorgenommen haben.
+
+
+
+== Eigenschaften
+
+Sie können einen benutzerdefinierten Bericht speichern, indem Sie Eigenschaften wie die Beschreibung angeben.
+
+* *Berichtsname*
++
+Zeigt den Namen des benutzerdefinierten Berichts an. Dieses Feld kann nicht bearbeitet werden.
+
+* *Beschreibung*
++
+Gibt die Beschreibung der Anpassungen an, die im benutzerdefinierten Bericht vorgenommen wurden. Beschreibung darf nicht mehr als 150 Zeichen enthalten.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Speichern*
++
+Speichert den benutzerdefinierten Bericht .
+
+* *Abbrechen*
++
+Bricht die letzten Änderungen ab und schließt das Dialogfeld „Benutzerdefinierter Bericht speichern“.
+
+

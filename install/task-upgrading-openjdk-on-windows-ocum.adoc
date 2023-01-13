@@ -1,0 +1,45 @@
+---
+permalink: install/task-upgrading-openjdk-on-windows-ocum.html 
+sidebar: sidebar 
+keywords: OnCommand Unified Manager 
+summary: 'Sie können auf eine neuere Version von Java Runtime Environment \ (JRE\) auf dem Windows-Server aktualisieren, auf dem Unified Manager installiert ist, um die Behebung von Sicherheitslücken zu erhalten.' 
+---
+= Aktualisieren von JRE unter Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können auf eine neuere Version der Java Runtime Environment (JRE) auf dem Windows-Server aktualisieren, auf dem Unified Manager installiert ist, um die Behebung von Sicherheitsschwachstellen zu erhalten.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über Windows-Administratorrechte für das System verfügen, auf dem Unified Manager installiert ist.
+
+
+
+== Schritte
+
+. Melden Sie sich als Admin-Benutzer auf der Unified Manager-Host-Maschine an.
+. Laden Sie die entsprechende Version von Java (64-Bit) von der JDK-Site auf das Zielsystem herunter.
++
+Beispiel: Download `openjdk-11_windows-x64_bin.zip` Von `+http://jdk.java.net/11/+`.
+
+. Beenden Sie mithilfe der Windows Services-Konsole die folgenden Unified Manager-Services:
++
+** Übernahme von NetApp OCIE (Ocie-au)
+** NetApp OnCommand Applikations-Server (OnCommandsvc)
+
+
+. Erweitern Sie den `zip` Datei:
+. Kopieren Sie die Verzeichnisse und Dateien aus dem Ergebnis `jdk` Verzeichnis (z. B. `jdk-11.0.1` An den Speicherort, an dem Java installiert ist. Beispiel: `C:\Program Files\NetApp\JDK\`
+. Starten Sie die Unified Manager-Dienste über die Windows Services-Konsole:
++
+** NetApp OnCommand Applikations-Server (OnCommandsvc)
+** Übernahme von NetApp OCIE (Ocie-au)
+
+
+

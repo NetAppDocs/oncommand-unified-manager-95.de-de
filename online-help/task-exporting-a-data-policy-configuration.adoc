@@ -1,0 +1,46 @@
+---
+permalink: online-help/task-exporting-a-data-policy-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können eine Konfiguration einer Datenrichtlinie aus Unified Manager in eine Datei exportieren. Nachdem Sie beispielsweise das erforderliche Backup erstellt haben und im Notfall die Konfiguration der Datenrichtlinie aus dem primären Storage exportiert haben. 
+---
+= Konfiguration einer Datenrichtlinie exportieren
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Konfiguration einer Datenrichtlinie aus Unified Manager in eine Datei exportieren. Nachdem Sie beispielsweise das erforderliche Backup erstellt haben und im Notfall die Konfiguration der Datenrichtlinie aus dem primären Storage exportiert haben.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Die Registerkarte Datenrichtlinie, die bei dieser Aufgabe verwendet wird, wird nur für SVMs mit Infinite Volume angezeigt.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie auf der Seite *Health/Storage Virtual Machines* Inventory die entsprechende SVM aus.
+. Klicken Sie Auf *Datenrichtlinie*.
++
+Es wird eine Liste der Regeln in der Datenrichtlinie für die ausgewählte SVM mit Infinite Volume angezeigt.
+
+. Klicken Sie Auf *Exportieren*.
+. Geben Sie im browserspezifischen Dialogfeld den Speicherort an, an den die Konfiguration der Datenrichtlinie exportiert werden soll.
+
+
+
+
+== Ergebnisse
+
+Die Konfiguration der Datenrichtlinien wird als JSON-Datei an den angegebenen Speicherort exportiert.

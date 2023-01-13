@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-creating-custom-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Je nach Anforderungen im Datacenter können Sie benutzerdefinierte Regeln erstellen und einer Datenrichtlinie hinzufügen, um die Platzierung von Daten zu bestimmen, die mit Infinite Volume auf die SVM geschrieben werden. Sie können benutzerdefinierte Regeln im Dialogfeld Regel erstellen erstellen erstellen ohne vorhandene Vorlagen zu verwenden. 
+---
+= Benutzerdefinierte Regeln werden erstellt
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Je nach Anforderungen im Datacenter können Sie benutzerdefinierte Regeln erstellen und einer Datenrichtlinie hinzufügen, um die Platzierung von Daten zu bestimmen, die mit Infinite Volume auf die SVM geschrieben werden. Sie können benutzerdefinierte Regeln im Dialogfeld Regel erstellen erstellen erstellen ohne vorhandene Vorlagen zu verwenden.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Der Cluster, der die SVM mit Infinite Volume mit Storage-Klassen enthält, muss der Unified Manager Datenbank hinzugefügt werden.
+
+
+
+
+== Über diese Aufgabe
+
+Die Registerkarte Datenrichtlinie ist nur für eine SVM mit Infinite Volume sichtbar.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie auf der Seite *Health/Storage Virtual Machines* Inventory die entsprechende SVM aus.
+. Klicken Sie Auf *Datenrichtlinie*.
+. Klicken Sie Auf *Erstellen*.
+. Wählen Sie im Dialogfeld *Regel erstellen* die Option *Benutzerdefinierte Regel* aus der Liste *Vorlage* aus.
+. Fügen Sie im Bereich *passende Kriterien* die Bedingungen bei Bedarf hinzu.
++
+Unter Bedingungen können Sie eine Regel erstellen, die auf Dateitypen, Verzeichnispfaden oder Besitzern basiert. Eine Kombination dieser Bedingungen sind die Bedingungssätze. Zum Beispiel können Sie eine Regel haben: "`Platzieren Sie alle .mp3 im Besitz von John in Bronze-Speicherklasse.`"
+
+. Wählen Sie aus der Dropdown-Liste *Platzieren Sie den passenden Inhalt in der Storage Class* aus.
+. Klicken Sie Auf *Erstellen*.
++
+Die neu erstellte Regel wird auf der Registerkarte Datenrichtlinie angezeigt.
+
+. Vorschau aller anderen Änderungen an der Datenrichtlinie.
+. Klicken Sie auf *Aktivieren*, um die Änderungen in den Regeleigenschaften in der SVM zu aktivieren.
+

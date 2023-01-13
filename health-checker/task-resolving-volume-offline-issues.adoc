@@ -1,0 +1,57 @@
+---
+permalink: health-checker/task-resolving-volume-offline-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: Dieser Workflow bietet ein Beispiel dafür, wie Sie ein Offline-Ereignis eines Volumes bewerten und beheben können, das Unified Manager im Bereich Verfügbarkeit der Seite Dashboards/Überblick anzeigen kann. In diesem Szenario sind Sie ein Administrator, der Unified Manager zur Fehlerbehebung bei einem oder mehreren Offline-Volume-Ereignissen verwendet, die auf der Seite Dashboards/Überblick angezeigt werden. 
+---
+= Lösung von Offline-Problemen des Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dieser Workflow bietet ein Beispiel dafür, wie Sie ein Offline-Ereignis eines Volumes bewerten und beheben können, das Unified Manager im Bereich Verfügbarkeit der Seite Dashboards/Überblick anzeigen kann. In diesem Szenario sind Sie ein Administrator, der Unified Manager zur Fehlerbehebung bei einem oder mehreren Offline-Volume-Ereignissen verwendet, die auf der Seite Dashboards/Überblick angezeigt werden.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Volumes können aus verschiedenen Gründen offline gemeldet werden:
+
+* Der SVM-Administrator hat das Volume absichtlich offline geschaltet.
+* Der Hosting-Cluster-Node des Volumes ist ausgefallen und das Storage-Failover zu seinem HA-Paar-Partner ist ebenfalls ausgefallen.
+* Das Volume, das die Storage Virtual Machine (SVM) hostet, wird angehalten, da der Node, der das Root-Volume dieser SVM hostet, ausgefallen ist.
+* Das Hosting-Aggregat des Volumes ist aufgrund des gleichzeitigen Ausfalls von zwei RAID-Festplatten ausgefallen.
+
+
+Sie können die Seite Dashboards/Überblick und die Seiten „Systemzustand/Cluster, Zustand/SVM“ und „Systemzustand/Volume-Details“ verwenden, um eine oder mehrere dieser Möglichkeiten zu bestätigen oder zu eliminieren.
+
+
+
+== Schritte
+
+. Klicken Sie im Fenster *Verfügbarkeit* im Abschnitt *ungelöste Vorfälle und Risiken* auf den Hypertext-Link, der für das Offlinevent Volume angezeigt wird.
++
+Die Seite Ereignisdetails für den Verfügbarkeitsereignis wird angezeigt.
+
+. Prüfen Sie auf dieser Seite die Hinweise, ob der SVM-Administrator das fragliche Volume offline geschaltet hat.
+. Auf der Seite *Event* Details können Sie die Informationen für eine oder mehrere der folgenden Aufgaben einsehen:
++
+** Überprüfen Sie die im Feld Ursache angezeigten Informationen, um eine mögliche Diagnoseführung zu erhalten.
++
+In diesem Beispiel werden Sie in den Informationen im Feld Ursache nur darüber informiert, dass das Volume offline ist.
+
+** Im Bereich „Notizen“ und „Updates“ werden alle Angaben darüber gemacht, dass der SVM-Administrator das fragliche Volume absichtlich offline geschaltet hat.
+** Klicken Sie auf die Quelle des Ereignisses, in diesem Fall auf das offline gemeldete Volume, um weitere Informationen zu diesem Volume zu erhalten. xref:task-performing-diagnotstic-actions-for-volume-offline-conditions.adoc[Durchführung von Korrekturmaßnahmen für Offline-Bedingungen des Volumes]
+** Weisen Sie das Ereignis einem Administrator zu. xref:task-assigning-events-to-specific-users.adoc[Ereignisse werden zugewiesen]
+** Bestätigen Sie das Ereignis oder markieren Sie es gegebenenfalls als erledigt. xref:task-acknowledging-and-resolving-events.adoc[Bestätigen und Beheben von Ereignissen]
+
+
+

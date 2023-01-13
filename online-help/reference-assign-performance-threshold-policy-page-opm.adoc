@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-assign-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Grenzwertrichtlinie zuweisen“ können Sie einem oder mehreren Speicherobjekten eine Richtlinie für Leistungsschwellenwerte zuweisen. 
+---
+= Seite „Richtlinie für Leistungsschwellenwert zuweisen“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Grenzwertrichtlinie zuweisen“ können Sie einem oder mehreren Speicherobjekten eine Richtlinie für Leistungsschwellenwerte zuweisen.
+
+Die Liste der Richtlinien wird nur mit den Richtlinien ausgefüllt, die für den Storage-Objekttyp gültig sind.
+
+Wählen Sie die Richtlinie aus, die Sie auf das Objekt oder die Objekte anwenden möchten, und klicken Sie dann auf *Richtlinie anwenden*.
+
+Es gibt einige Fälle, in denen beim Versuch, eine Richtlinie anzuwenden, eine Fehlermeldung angezeigt wird:
+
+* Beim Anwenden einer Richtlinie, die die Performance-Kapazität verwendet, wird der Zähler auf einen Node oder Aggregat angewendet, der nicht mit der Software ONTAP 9.0 oder höher installiert ist.
++
+Versionen der ONTAP Software vor 9.0 unterstützen die Performance-Kapazitäts-Zähler nicht.
+
+* Beim Anwenden einer Kombinationsrichtlinie auf ein FlexGroup Volume, bei dem der zweite Zähler entweder einen Node oder ein Aggregatobjekt beinhaltet.
++
+Da FlexGroup Volumes über mehrere Nodes und Aggregate verteilt werden können, ist dieser Vorgang nicht zulässig.
+
+

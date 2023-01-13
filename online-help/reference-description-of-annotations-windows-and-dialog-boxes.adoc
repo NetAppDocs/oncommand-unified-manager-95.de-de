@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-annotations-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können alle Anmerkungen auf der Seite Management/Anmerkungen anzeigen und verwalten. Über die Registerkarte „Anmerkungsregeln“ können Sie auch Anmerkungsregeln für Ihre Speicherobjekte konfigurieren. 
+---
+= Beschreibung der Fenster und Dialogfelder Anmerkungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können alle Anmerkungen auf der Seite Management/Anmerkungen anzeigen und verwalten. Über die Registerkarte „Anmerkungsregeln“ können Sie auch Anmerkungsregeln für Ihre Speicherobjekte konfigurieren.

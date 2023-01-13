@@ -1,0 +1,51 @@
+---
+permalink: online-help/reference-add-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld Gruppenaktion hinzufügen können Sie Gruppenaktionen konfigurieren, die auf Speicherobjekte einer ausgewählten Gruppe angewendet werden können. 
+---
+= Dialogfeld Gruppenaktion hinzufügen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Gruppenaktion hinzufügen können Sie Gruppenaktionen konfigurieren, die auf Speicherobjekte einer ausgewählten Gruppe angewendet werden können.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Name*
++
+Gibt den Namen der Aktion an.
+
+* *Beschreibung*
++
+Gibt die Beschreibung der Aktion an.
+
+* *Gruppe*
++
+Gibt die Gruppe an, für die die Aktion konfiguriert ist.
+
+* *Aktionstyp*
++
+Gibt den Typ der konfigurierten Aktion an. Auf der Grundlage des ausgewählten Aktionstyps wird das Dialogfeld Gruppenaktion hinzufügen erweitert, sodass Sie eine Gruppenaktion durch die Bereitstellung der erforderlichen Werte konfigurieren können.
+
++
+Unified Manager unterstützt derzeit nur den Aktionstyp für Volume-Schwellenwerte.
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Hinzufügen*
++
+Fügt die neue Aktion hinzu und schließt das Dialogfeld.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Gruppenaktion hinzufügen, ohne Ihre Änderungen zu speichern.
+
+

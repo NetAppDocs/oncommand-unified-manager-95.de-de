@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-protection-storage-virtual-machine-associations-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Verknüpfungen zu Protection/Storage Virtual Machines können vorhandene SVM Verknüpfungen zwischen Quell- und Ziel-SVMs angezeigt werden. Außerdem können Sie neue SVM-Verknüpfungen erstellen, die von Partnerapplikationen zum Erstellen von SnapMirror und SnapVault Beziehungen verwendet werden. 
+---
+= Seite „Verknüpfungen zu Sicherungs-/Storage Virtual Machines“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Verknüpfungen zu Protection/Storage Virtual Machines können vorhandene SVM Verknüpfungen zwischen Quell- und Ziel-SVMs angezeigt werden. Außerdem können Sie neue SVM-Verknüpfungen erstellen, die von Partnerapplikationen zum Erstellen von SnapMirror und SnapVault Beziehungen verwendet werden.
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Erstellen*
++
+Öffnet den Assistenten zum Erstellen von Storage Virtual Machine-Zuordnungen.
+
+* *Löschen*
++
+Hiermit können Sie die ausgewählten SVM-Zuordnungen löschen.
+
+
+
+
+
+== Liste der Storage Virtual Machine (SVM)-Verknüpfungen
+
+Die Liste Storage Virtual Machine Associations wird in einer Tabelle die erstellten Quell- und Ziel-SVM-Zuordnungen sowie die Art der für jede Zuordnung zugelassenen Sicherungsbeziehung angezeigt.
+
+* * Source Storage Virtual Machine*
++
+Zeigt den Namen der Quell-SVM an.
+
+* * Quellcluster*
++
+Zeigt den Namen des Quell-Clusters an.
+
+* *Zielspeicher Virtual Machine*
++
+Zeigt den Namen der Ziel-SVM an.
+
+* *Zielcluster*
++
+Zeigt den Namen des Ziel-Clusters an.
+
+* *Typ*
++
+Zeigt die Art der Schutzbeziehung an. Beziehungstypen sind entweder SnapMirror oder SnapVault.
+
+

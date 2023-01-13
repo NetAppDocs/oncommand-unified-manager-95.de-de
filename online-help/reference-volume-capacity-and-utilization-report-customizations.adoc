@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Berichte erstellen, um verschiedene Kapazitäts- und Auslastungsinformationen über Volumes zu überwachen. Sie können z. B. Berichte erstellen, um genutzte Volumes, Gesamtkapazität, tägliche Wachstumsrate und Kapazität von Snapshot-Kopien anzuzeigen. Dadurch können Sie feststellen, ob genügend Speicherplatz auf einem Volume vorhanden ist oder ob diese zu stark genutzt werden oder nicht ausgelastet sind. 
+---
+= Anpassungen der Volume-Kapazität und -Auslastung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Berichte erstellen, um verschiedene Kapazitäts- und Auslastungsinformationen über Volumes zu überwachen. Sie können z. B. Berichte erstellen, um genutzte Volumes, Gesamtkapazität, tägliche Wachstumsrate und Kapazität von Snapshot-Kopien anzuzeigen. Dadurch können Sie feststellen, ob genügend Speicherplatz auf einem Volume vorhanden ist oder ob diese zu stark genutzt werden oder nicht ausgelastet sind.

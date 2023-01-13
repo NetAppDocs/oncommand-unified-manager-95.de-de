@@ -1,0 +1,186 @@
+---
+permalink: online-help/reference-management-groups-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Die Seite „Management/Groups“ ermöglicht das Erstellen von Gruppen in Unified Manager zur einfachen Verwaltung von Storage-Objekten. Eine Gruppe ist eine dynamische Sammlung von Storage-Objekten \(Cluster, Volumes und SVMs\). Diese werden durch die Gruppenregeln definiert, die Sie für die Gruppe erstellen.' 
+---
+= Management-/Gruppenseite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite „Management/Groups“ ermöglicht das Erstellen von Gruppen in Unified Manager zur einfachen Verwaltung von Storage-Objekten. Eine Gruppe ist eine dynamische Sammlung von Storage-Objekten (Cluster, Volumes und SVMs). Diese werden durch die für die Gruppe erstellten Gruppenregeln definiert.
+
+Die Seite Verwaltung/Gruppen enthält Registerkarten, auf denen Sie eine Gruppe, Gruppenregeln und Gruppenaktionen hinzufügen, löschen oder bearbeiten können. Wenn Sie sich als Operator anmelden, haben Sie nur Lesezugriff auf die Seite. Sie können auf den Schaltflächen Hinzufügen, Bearbeiten oder Löschen auf jeder Registerkarte zugreifen, wenn Sie sich als Speicheradministrator oder Unified Manager-Administrator anmelden.
+
+
+
+== Registerkarte „Gruppen“
+
+Auf der Registerkarte Gruppen werden der Name und die Beschreibung der von Ihnen erstellten Gruppen angezeigt. Sie können Aufgaben wie das Hinzufügen, Bearbeiten oder Löschen einer Gruppe ausführen. Auf der Registerkarte wird außerdem die Anzahl der Gruppenregeln und Gruppenaktionen angezeigt, die einer Gruppe, der Anzahl der Cluster, SVMs und Volumes in der Gruppe zugeordnet sind.
+
+
+
+== Befehlsschaltflächen
+
+* *Hinzufügen*
++
+Zeigt das Dialogfeld Gruppe hinzufügen an, in dem Sie eine Gruppe hinzufügen und einen Namen und eine Beschreibung für die Gruppe angeben können.
+
++
+Sie können auch Gruppenregeln später auf die Gruppe anwenden, um Speicherobjekte aufzunehmen.
+
+* *Bearbeiten*
++
+Zeigt das Dialogfeld Gruppe bearbeiten an, in dem Sie den Namen und die Beschreibung der ausgewählten Gruppe bearbeiten können.
+
+* *Löschen*
++
+Löscht die ausgewählte Gruppe.
+
+
+
+
+
+== Listenansicht
+
+In der Listenansicht werden die Gruppen angezeigt, die Sie in Unified Manager erstellt haben. Mit den Spaltenfiltern können Sie die angezeigten Daten anpassen. Standardmäßig ist die Liste nach Gruppennamen sortiert.
+
+* *Name*
++
+Zeigt den Namen der Gruppe an.
+
+* *Beschreibung*
++
+Zeigt die Beschreibung der Gruppe an.
+
+* *Verbundene Regeln*
++
+Zeigt die Anzahl der Regeln an, die der Gruppe hinzugefügt wurden.
+
+* *Verbundene Aktionen*
++
+Zeigt die Anzahl der Gruppenaktionen an, die der Gruppe hinzugefügt wurden.
+
+* *Anwendbare Cluster*
++
+Zeigt die Anzahl der Cluster an, die in der Gruppe enthalten sind.
+
+* *Anwendbare SVMs*
++
+Zeigt die Anzahl der in der Gruppe enthaltenen SVMs an.
+
+* *Geltende Volumen*
++
+Zeigt die Anzahl der Volumes an, die in der Gruppe enthalten sind.
+
+
+
+
+
+== Registerkarte Gruppenregeln
+
+Auf der Registerkarte Gruppenregeln werden die Gruppenregeln angezeigt, die Sie für Gruppen erstellt haben, um Speicherobjekte zu enthalten. Sie können Aufgaben wie das Hinzufügen, Bearbeiten oder Löschen einer Gruppenregel ausführen. Auf der Registerkarte wird auch der Gruppenname angezeigt, für den die Gruppenregel erstellt wurde, und das Speicherobjekt, für das die Regel angewendet wird. Sie können auch die Anzahl der Speicherobjekte anzeigen, die die Gruppenregel erfüllen.
+
+
+
+== Befehlsschaltflächen
+
+* *Hinzufügen*
++
+Zeigt das Dialogfeld Gruppenregel hinzufügen an, in dem Sie Gruppenregeln für Speicherobjekte erstellen können.
+
+* *Bearbeiten*
++
+Zeigt das Dialogfeld Gruppenregel bearbeiten an, mit dem Sie zuvor konfigurierte Gruppenregeln neu konfigurieren können.
+
+* *Löschen*
++
+Löscht die ausgewählte Gruppenregel.
+
+
+
+
+
+== Listenansicht
+
+In der Listenansicht werden die Gruppenregeln angezeigt, die Sie für ein bestimmtes Speicherobjekt (Cluster, Volumes oder SVMs) erstellt haben, und die Anzahl der Speicherobjekte, die der definierten Gruppenregel entsprechen.
+
+* *Name*
++
+Zeigt den Namen der Regel an.
+
+* * Assoziierte Gruppe*
++
+Zeigt den Namen der Gruppe an, für die die Gruppenregel definiert ist.
+
+* *Zielobjekttyp*
++
+Zeigt den Typ des Speicherobjekts an, auf das die Gruppenregel angewendet wird.
+
+* *Anwendbare Objekte*
++
+Zeigt die Anzahl der in der Gruppe enthaltenen Speicherobjekte basierend auf der Gruppenregel an.
+
+
+
+
+
+== Registerkarte Gruppenaktionen
+
+Auf der Registerkarte Gruppenaktionen werden Name und Typ der Gruppenaktionen angezeigt, die Sie für Gruppen definieren. Sie können Aufgaben wie das Hinzufügen, Bearbeiten, Löschen oder Neuanordnen der Gruppenaktionen ausführen. Auf der Registerkarte wird auch der Name der Gruppe angezeigt, auf die die Gruppenaktion angewendet wird.
+
+
+
+== Befehlsschaltflächen
+
+* *Hinzufügen*
++
+Zeigt das Dialogfeld Aktion hinzufügen an, in dem Sie Gruppenaktionen für eine Gruppe von Speicherobjekten erstellen können. Sie können beispielsweise die Schwellenwertstufen von Storage-Objekten in einer Gruppe festlegen.
+
+* *Bearbeiten*
++
+Zeigt das Dialogfeld „Aktion bearbeiten“ an, in dem Sie bereits konfigurierte Gruppenaktionen neu konfigurieren können.
+
+* *Löschen*
++
+Löscht die ausgewählte Gruppenaktion.
+
+* *Neuordnung*
++
+Zeigt das Dialogfeld Gruppenaktionen neu anordnen an, um die Reihenfolge der Gruppenaktionen neu anzuordnen.
+
+
+
+
+
+== Listenansicht
+
+In der Listenansicht werden die Gruppenaktionen angezeigt, die Sie für die Gruppen im Unified Manager-Server erstellt haben. Mit den Spaltenfiltern können Sie die angezeigten Daten anpassen.
+
+* * Rang*
++
+Zeigt die Reihenfolge der Gruppenaktionen an, die auf die Speicherobjekte in einer Gruppe angewendet werden sollen.
+
+* *Name*
++
+Zeigt den Namen der Gruppenaktion an.
+
+* * Assoziierte Gruppe*
++
+Zeigt den Namen der Gruppe an, für die die Gruppenaktion definiert ist.
+
+* *Aktionstyp*
++
+Zeigt den Typ der Gruppenaktion an, die Sie auf den Speicherobjekten einer Gruppe durchführen können.
+
++
+Sie können nicht mehrere Gruppenaktionen desselben Aktionstyps für eine Gruppe erstellen. Sie können beispielsweise eine Gruppenaktion zum Festlegen von Volume-Schwellenwerten für eine Gruppe erstellen. Sie können jedoch keine weitere Gruppenaktion für dieselbe Gruppe erstellen, um Volume-Schwellenwerte zu ändern.
+
+* *Beschreibung*
++
+Zeigt die Beschreibung der Gruppenaktion an.
+
+

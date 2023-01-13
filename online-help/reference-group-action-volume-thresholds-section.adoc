@@ -1,0 +1,196 @@
+---
+permalink: online-help/reference-group-action-volume-thresholds-section.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Abschnitt Schwellenwerte für Gruppenaktionen-Volume können Sie für Volumes Integritätsschwellenwerte auf Gruppenebene konfigurieren. Diese Schwellenwerte werden auf alle Volumes in einer Gruppe angewendet. Wenn die Schwellenwerte für den Zustand des Volumes auf Gruppenebene konfiguriert sind, sind die globalen Schwellenwerte für den Systemzustand nicht betroffen. 
+---
+= Abschnitt „Schwellenwerte für Aktionsvolumen gruppieren“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Abschnitt Schwellenwerte für Gruppenaktionen-Volume können Sie für Volumes Integritätsschwellenwerte auf Gruppenebene konfigurieren. Diese Schwellenwerte werden auf alle Volumes in einer Gruppe angewendet. Wenn die Schwellenwerte für den Zustand des Volumes auf Gruppenebene konfiguriert sind, sind die globalen Schwellenwerte für den Systemzustand nicht betroffen.
+
+Sie können die Schwellenwerte für den Zustand von Volumes für Folgendes konfigurieren, um eine Gruppenaktion zu konfigurieren:
+
+* Kapazität
+* Wachstum
+* Qtree Kontingent
+* Snapshots
+* Inodes
+
+
+Globale Standardwerte werden verwendet, wenn für eine dieser Kategorien keine Volume-Integritätsschwellenwerte konfiguriert wurden. Sie können Systemzustandsschwellenwerte für folgende festlegen:
+
+* Kapazität
+* Wachstum
+* Qtree Kontingent
+* Snapshots
+* Inodes
+
+
+
+
+== Abschnitt „Kapazität“
+
+Sie können Bedingungen für die folgenden Statusschwellenwerte für die Volume-Kapazität festlegen:
+
+* *Raum Fast Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als fast voll betrachtet wird:
+
++
+** Standardwert: 80 Prozent
++
+Der Wert für diesen Schwellenwert muss niedriger sein als der Wert für den Schwellenwert „Volume Full“, damit der Verwaltungsserver ein Ereignis generieren kann.
+
+** Event generiert: Volumen fast voll
+** Ereignis Schweregrad: Warnung
+
+
+* *Raum Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als voll betrachtet wird:
+
++
+** Standardwert: 90 Prozent
+** Event generiert: Volumen voll
+** Ereignis Schweregrad: Fehler
+
+
+* *Überengagiert*
++
+Gibt den Prozentsatz an, bei dem ein Volume als überfordert betrachtet wird:
+
++
+** Standardwert: 100 Prozent
+** Event generiert: Volumen überfordert
+** Ereignis Schweregrad: Fehler
+
+
+
+
+
+
+== Abschnitt „Wachstum“
+
+Sie können die folgenden Integritätsschwellenwerte für das Volume-Wachstum festlegen:
+
+* *Wachstumsrate*
++
+Gibt den Prozentsatz an, bei dem die Wachstumsrate eines Volumes als normal angesehen wird, bevor das System ein ungewöhnliches Ereignis der Volumenwachstumsrate generiert:
+
++
+** Standardwert: 1 Prozent
+** Generiertes Ereignis: Volumenwachstumsrate anormal
+** Ereignis Schweregrad: Warnung
+
+
+* *Empfindlichkeit Der Wachstumsrate*
++
+Gibt den Faktor an, der auf die Standardabweichung der Wachstumsrate eines Volumens angewendet wird. Wenn die Wachstumsrate die faktorierte Standardabweichung überschreitet, wird ein ungewöhnliches Ereignis der Volumenwachstumsrate generiert.
+
++
+Ein niedrigerer Wert für die Wachstumsrate zeigt an, dass das Aggregat sehr empfindlich auf Veränderungen der Wachstumsrate reagiert. Der Bereich für die Empfindlichkeit der Wachstumsrate liegt zwischen 1 und 5.
+
++
+** Standardwert: 2
+
+
+
+
+
+
+== Abschnitt qtree Kontingente
+
+Sie können die folgenden Statusschwellenwerte für Volume-Quoten festlegen:
+
+* *Fast Überengagiert*
++
+Gibt den Prozentsatz an, mit dem ein Volume als beinahe durch qtree Kontingente überengagiert werden soll:
+
++
+** Standardwert: 95 Prozent
+** Event erzeugt: Volumen Qtree Kontingent fast überengagiert
+** Ereignis Schweregrad: Warnung
+
+
+* *Überengagiert*
++
+Gibt den Prozentsatz an, mit dem ein Volume als durch qtree Kontingente überengagiert werden soll:
+
++
+** Standardwert: 100 Prozent
+** Event erstellt: Volumen Qtree Kontingent überfordert
+** Ereignis Schweregrad: Fehler
+
+
+
+
+
+
+== Abschnitt „Snapshot Kopien“
+
+Sie können die folgenden Integritätsschwellenwerte für die Snapshot Kopien in dem Volume festlegen:
+
+* *Snapshot Reserve Voll*
++
+Gibt den Prozentsatz an, an dem der für Snapshot Kopien reservierte Speicherplatz voll berücksichtigt wird:
+
++
+** Standardwert: 90 Prozent
+** Event generiert: Volume Snapshot Reserve voll
+** Ereignis Schweregrad: Fehler
+
+
+* *Tage Bis Voll*
++
+Gibt die Anzahl der Tage an, die noch verbleiben, bevor der für Snapshot Kopien reservierte Speicherplatz mit der vollen Kapazität erreicht wird:
+
++
+** Standardwert: 7
+** Event generiert: Volume Snapshot Reserve Days bis Kapazitätsreserve
+** Ereignis Schweregrad: Fehler
+
+
+* * Anzahl*
++
+Gibt die Anzahl der Snapshot Kopien auf einem Volume an, die als zu viele Kopien gelten:
+
++
+** Standardwert: 250
+** Generiertes Ereignis: Zu viele Snapshot Kopien
+** Ereignis Schweregrad: Fehler
+
+
+
+
+
+
+== Inodes-Abschnitt
+
+Sie können die folgenden Integritätsschwellenwerte für Inodes festlegen:
+
+* *Fast Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als den Großteil seiner Inodes verbraucht wurde:
+
++
+** Standardwert: 80 Prozent
+** Event generiert: Inodes fast voll
+** Ereignis Schweregrad: Warnung
+
+
+* *Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als „alle Inodes verbraucht“ betrachtet wird:
+
++
+** Standardwert: 90 Prozent
+** Event generiert: Inodes voll
+** Ereignis Schweregrad: Fehler
+
+
+

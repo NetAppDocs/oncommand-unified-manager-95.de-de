@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-customizing-a-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Berichte auf der Seite Berichtsdetails anpassen und den benutzerdefinierten Bericht mit einem anderen Namen speichern. 
+---
+= Anpassen eines Berichts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Berichte auf der Seite Berichtsdetails anpassen und den benutzerdefinierten Bericht mit einem anderen Namen speichern.
+
+
+
+== Über diese Aufgabe
+
+Nachdem Sie einen benutzerdefinierten Bericht gespeichert haben, können Sie keinen der Filter ändern, die Sie zum Erstellen des Berichts angewendet haben, da der Bericht als „`New`“ gilt. Stellen Sie also sicher, dass Sie mit allen Änderungen zufrieden sind, bevor Sie den Bericht speichern. Sie können jedoch neue Filter auf den Bericht anwenden.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Berichte* und dann auf *Bericht ausführen* für den Bericht, den Sie anpassen möchten.
++
+Die Seite Berichtdetails wird angezeigt.
+
+. Passen Sie den Bericht nach Bedarf an, und klicken Sie dann auf *Aktionen* > *Customized Report speichern unter*.
+. Geben Sie im Dialogfeld *Customized Report as* speichern einen Namen für den angepassten Bericht und eine kurze Beschreibung der Anpassung ein, damit andere verstehen, was der Bericht anzeigt.
++
+Standardmäßig wird der aktuelle Berichtname angezeigt.
+
+. Klicken Sie Auf *Speichern*.
++
+Wenn Sie die Fehlermeldung „`konnte den benutzerdefinierten Bericht nicht speichern. Die gewünschte Datei wurde nicht`" erstellt, warten einige Momente und klicken dann erneut auf *Speichern*. Dieses Problem tritt auf, wenn die Verbindung zwischen dem Webbrowser und dem Unified Manager-Server langsam ist.
+
+
+
+
+
+== Ergebnisse
+
+Der benutzerdefinierte Bericht wird gespeichert und in seiner jeweiligen Berichtskategorie auf der Seite Berichtdetails angezeigt.

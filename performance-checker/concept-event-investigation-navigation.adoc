@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/concept-event-investigation-navigation.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf den Seiten mit den Unified Manager Event-Details werden Performance-Ereignisse detailliert analysiert. Dies ist von Vorteil bei der Untersuchung von Performance-Ereignissen, bei der Fehlerbehebung und bei der Feinabstimmung der System-Performance. 
+---
+= Navigation zur Ereignisuntersuchung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf den Seiten mit den Unified Manager Event-Details werden Performance-Ereignisse detailliert analysiert. Dies ist von Vorteil bei der Untersuchung von Performance-Ereignissen, bei der Fehlerbehebung und bei der Feinabstimmung der System-Performance.
+
+Je nach Art des Performance-Ereignisses werden möglicherweise zwei Arten von Ereignis-Detailseiten angezeigt:
+
+* Seite mit den Ereignisdetails für benutzerdefinierte und systemdefinierte Schwellenwertrichtlinienereignisse
+* Seite mit Ereignisdetails für dynamische Schwellenwertrichtlinienereignisse
+
+
+Dies ist ein Beispiel für eine Ereignisuntersuchung-Navigation.
+
+. Klicken Sie im linken Navigationsbereich auf *Events*.
+. Klicken Sie auf der Seite Ereignisbestand auf die Schaltfläche Filter und wählen Sie im Bereich Auswirkungen die Option *Leistung* aus, um die Ereignisliste zu filtern.
+. Klicken Sie auf den Namen des Ereignisses, das Sie untersuchen möchten, und die Seite Ereignisdetails wird angezeigt.
+. Erweitern Sie alle Bereiche, z. B. vorgeschlagene Aktionen, um weitere Details zu dem Ereignis anzuzeigen, das Ihnen bei der Lösung des Problems helfen kann.
+
+
+image::../media/event-flow.gif[Ereignisfluss]

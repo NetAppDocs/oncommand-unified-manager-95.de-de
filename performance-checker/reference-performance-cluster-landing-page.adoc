@@ -1,0 +1,29 @@
+---
+permalink: performance-checker/reference-performance-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Performance Cluster Landing“ wird der Performance-Status eines ausgewählten Clusters angezeigt. Auf der Seite können Sie alle Details zu jedem Performance-Zähler für die Storage-Objekte im ausgewählten Cluster abrufen. 
+---
+= Landing Page für Performance Cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Performance Cluster Landing“ wird der Performance-Status eines ausgewählten Clusters angezeigt. Auf der Seite können Sie alle Details zu jedem Performance-Zähler für die Storage-Objekte im ausgewählten Cluster abrufen.
+
+Klicken Sie auf die Schaltfläche *Favoriten* (image:../media/favorites-inactive.png[""]) Um dieses Objekt zu Ihrer Liste der bevorzugten Speicherobjekte hinzuzufügen. Eine blaue Taste (image:../media/favorites-active.png[""]) Zeigt an, dass dieses Objekt bereits ein Favorit ist.
+
+Die Landing Page für Performance Cluster enthält vier Registerkarten, die die Cluster-Details in vier Informationsbereiche trennen:
+
+* Übersichtsseite
++
+** Bereich Cluster-Ereignisse
+** Bereich „Managed Objects“
+
+
+* Seite „Top Performers“
+* Explorer-Seite
+* Informationsseite
+

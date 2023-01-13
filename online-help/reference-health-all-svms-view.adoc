@@ -1,0 +1,134 @@
+---
+permalink: online-help/reference-health-all-svms-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Auf der Inventarseite für den Systemzustand/Storage Virtual Machines können Sie detaillierte Informationen zu den von Ihnen überwachten Storage Virtual Machines \(SVMs\) anzeigen.' 
+---
+= Inventarseite für den Status/Speicher virtueller Maschinen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Systemzustand“/„Storage Virtual Machines Inventory“ können Sie detaillierte Informationen zu den von Ihnen überwachten Storage Virtual Machines (SVMs) anzeigen.
+
+
+
+== Befehlsschaltflächen
+
+* *Export*
++
+Ermöglicht es Ihnen, die Details aller überwachten SVMs in kommagetrennte Werte zu exportieren (`.csv`) Datei.
+
+* *Anmerkung*
++
+Hiermit können Sie die ausgewählte Storage Virtual Machine (SVM) kommentieren.
+
+
+
+
+
+== SVMs-Liste
+
+Die Liste der SVMs wird im Tabellenformat die Eigenschaften aller erkannten SVMs angezeigt. Mit den Spaltenfiltern können Sie die angezeigten Daten anpassen:
+
+* *Status*
++
+Der aktuelle Status der SVM. Der Status kann kritisch sein (image:../media/sev-critical-um60.png["Symbol für den Schweregrad „Ereignis“ – „kritisch“"]), Fehler (image:../media/sev-error-um60.png["Symbol für den Schweregrad „Ereignis“: Fehler"]), Warnung (image:../media/sev-warning-um60.png["Symbol für den Schweregrad „Ereignis“ – Warnung"]Oder normal (image:../media/sev-normal-um60.png["Symbol für den Schweregrad „Ereignis“ – „Normal“"]).
+
++
+Sie können den Zeiger auf den Status verschieben, um weitere Informationen zu dem für die SVM generierten Ereignis oder Ereignissen anzuzeigen.
+
++
+Wenn der Status der SVM durch ein einzelnes Ereignis bestimmt wird, können Sie Informationen wie den Ereignisnamen, die Uhrzeit und das Datum anzeigen, an dem das Ereignis ausgelöst wurde, den Namen des Administrators, dem das Ereignis zugeordnet ist, und die Ursache des Ereignisses anzeigen. Sie können auf die Schaltfläche Details anzeigen klicken, um weitere Informationen zum Ereignis anzuzeigen.
+
++
+Wenn der Status der SVM durch mehrere Ereignisse des gleichen Schweregrads bestimmt wird, werden die drei wichtigsten Ereignisse mit Informationen angezeigt, z. B. Ereignisname, Uhrzeit und Datum, an dem die Ereignisse ausgelöst werden, und der Name des Administrators, dem das Ereignis zugewiesen ist. Sie können weitere Details zu den einzelnen Ereignissen anzeigen, indem Sie auf den Ereignisnamen klicken. Sie können auch auf den Link Alle Ereignisse anzeigen klicken, um die Liste der generierten Ereignisse anzuzeigen.
+
+* *Storage Virtual Machine*
++
+Der Name der SVM.
+
++
+Sie können den Zeiger auf jede SVM verschieben, um Informationen wie das letzte erzeugte Ereignis, das Cluster, zu dem die SVM gehört, den Volume-Typ der SVM, die zulässigen Protokolle und den in der SVM zugewiesenen Speicherplatz anzuzeigen. Sie können auch Details zu verwandten Objekten anzeigen, z. B. den Cluster, zu dem die SVM gehört, alle SVMs, die zum Cluster gehören, und die Volumes, die zur SVM gehören.
+
+* *Bundesland*
++
+Der aktuelle Administrationsstatus der SVM Der Status kann ausgeführt, angehalten, gestartet oder angehalten werden.
+
+* * Cluster*
++
+Der Name des Clusters, zu dem die SVM gehört.
+
+* *Zulässiger Volumentyp*
++
+Der Typ des Volumes, der in der SVM erstellt werden kann. Der Typ kann InfiniteVol, FlexVol oder FlexVol/FlexGroup sein.
+
++
+[NOTE]
+====
+Der FlexGroup-Typ ist bei Verwendung von ONTAP 9.1 oder höher zulässig.
+
+====
+* *Verfügbare Datenkapazität*
++
+Die verfügbare Datenkapazität aller Volumes in der SVM.
+
+* *Gesamtkapazität Der Daten*
++
+Die Gesamtkapazität aller Volumes in der SVM.
+
+* *Root Volume*
++
+Der Name des Root-Volumes der SVM.
+
+* *NIS-Status*
++
+Der Status des Network Information Service (NIS). Der Status kann aktiviert, deaktiviert oder nicht konfiguriert werden.
+
+* *NIS-Domäne*
++
+Der NIS-Domain-Name. Diese Spalte ist leer, wenn der NIS-Server deaktiviert oder nicht konfiguriert ist.
+
+* *DNS-Status*
++
+Der Status des Domain Name System (DNS). Der Status kann aktiviert, deaktiviert oder nicht konfiguriert werden.
+
+* *DNS-Domäne*
++
+Der DNS-Domain-Name.
+
+* *Name Service Switch*
++
+Der von Hosts gesammelte Informationstyp. Mögliche Werte sind Datei, LDAP oder NIS.
+
+* *LDAP aktiviert*
++
+Gibt an, ob das LDAP-Protokoll aktiviert ist oder nicht.
+
+* *Erlaubte Protokolle*
++
+Der Typ der Protokolle, der auf der SVM konfiguriert werden kann. Verfügbare Protokolle sind FC/FCoE, iSCSI, HTTP, NDMP, NVMe, NFS und CIFS.
+
+* *Maximal Zulässige Volumen*
++
+Die maximal zulässigen Volumes, die auf der SVM konfiguriert werden können.
+
+* *Anzahl Der Volumes*
++
+Anzahl der Volumes in der SVM
+
+
+
+
+
+== Bereich Filter
+
+Im Bereich Filter können Sie Filter festlegen, um die Art und Weise anzupassen, in der Liste SVMs angezeigt wird. Sie können Filter für die Spalten Status, Zustand und Anmerkung auswählen.
+
+[NOTE]
+====
+Die im Fensterbereich Filter angegebenen Filter überschreiben die Filter, die für die Spalten in der Liste SVMs angegeben sind.
+
+====

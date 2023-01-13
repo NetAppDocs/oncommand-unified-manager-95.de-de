@@ -1,0 +1,64 @@
+---
+permalink: health-checker/reference-cluster-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit der Cluster Favorite Card können Sie die Kapazitäts-, Konfigurations- und Performance-Details der einzelnen Cluster anzeigen, die Sie als Favoriten markiert haben. 
+---
+= Cluster-Favorite-Karte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit der Cluster Favorite Card können Sie die Kapazitäts-, Konfigurations- und Performance-Details der einzelnen Cluster anzeigen, die Sie als Favoriten markiert haben.
+
+
+
+== Cluster-Attribute
+
+Auf der Cluster Favorite Card werden die folgenden Attribute der einzelnen Cluster angezeigt:
+
+* *Cluster-Integritätsstatus*
++
+Ein Symbol, das den Systemzustand des Clusters angibt. Mögliche Werte sind Normal, Warnung, Fehler und kritisch.
+
+* *Clustername*
++
+Der Name des Clusters.
+
+* * Kapazität*
++
+Freier Speicherplatz im Cluster.
+
+* *Konfiguration*
++
+Konfigurationsdetails des Clusters.
+
++
+** *IP-Adresse*
++
+IP-Adresse oder Host-Name der logischen Cluster-Management-Schnittstelle (LIF), die zum Hinzufügen des Clusters verwendet wurde.
+
+** *Anzahl der Knoten*
++
+Anzahl Nodes im Cluster.
+
+
+
+* *Leistung*
++
+Performance-Details des Clusters.
+
++
+** *IOPS*
++
+Durchschnittliche Anzahl von I/O-Vorgängen pro Sekunde in den letzten 72 Stunden.
+
+** *Durchsatz*
++
+Durchschnittsdurchsatz der letzten 72 Stunden, in Mbps .
+
+
+
+

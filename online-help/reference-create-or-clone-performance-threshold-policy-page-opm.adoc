@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-create-or-clone-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können auf der Seite „Schwellenwertrichtlinie erstellen“ oder auf der Seite „Schwellenwertrichtlinie klonen“ eine neue Richtlinie für Leistungsschwellenwerte erstellen. 
+---
+= Seite „Performance Threshold Policy“ erstellen oder klonen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können auf der Seite „Schwellenwertrichtlinie erstellen“ oder auf der Seite „Schwellenwertrichtlinie klonen“ eine neue Richtlinie für Leistungsschwellenwerte erstellen.
+
+Sie können die Felder auf dieser Seite ausfüllen und auf *Speichern* klicken, um eine Richtlinie für Leistungsschwellenwerte hinzuzufügen.
+
+* *Für Objekttyp*
++
+Wählen Sie den Typ des Speicherobjekts aus, für das Sie eine Schwellenrichtlinie erstellen möchten.
+
+* *Policy Name*
++
+Geben Sie den Namen der Schwellenwertrichtlinie ein. Der Name wird auf anderen Unified Manager-Seiten angezeigt und sollte eine kurze Beschreibung der Richtlinie enthalten.
+
+* *Beschreibung*
++
+(Optional) Geben Sie eine detaillierte Beschreibung der Schwellenwertrichtlinie ein.
+
+* *Schwellenwerte*
++
+Definieren Sie die primäre und optional die sekundäre Schwellwertzählbedingung. Zum Einbeziehen eines sekundären Zählers müssen beide Zähler die Grenzwerte überschreiten, bevor der Schwellenwert als überschritten betrachtet wird.
+
++
+** *Wählen Sie einen Zähler*
++
+Wählen Sie den Zähler aus, für den Sie einen Leistungsschwellenwert festlegen möchten.
+
+** *Warnung*
++
+Geben Sie den Grenzwert für den Zähler ein, der als Warnung betrachtet wird.
+
+** * Kritisch*
++
+Geben Sie den Grenzwert für den Zähler ein, der als kritisch angesehen wird.
+
+
+
++
+Gültige Schwellenwerte sind 0.001 bis 10,000,000 für Zahlen, 0.001-100 für Prozentsätze und 0.001-200 für Performance-Kapazität verwendet Prozentwerte.
+
+* *Dauer*
++
+Wählen Sie die Anzahl der Minuten aus, die der Zählerwert größer sein muss als der Warnwert oder der kritische Grenzwert. Da Unified Manager alle fünf Minuten neue Performance-Zählerwerte erfasst, enthält das Menü basierend auf dem Aktualisierungsintervall Werte in einem Vielfachen von fünf.
+
+

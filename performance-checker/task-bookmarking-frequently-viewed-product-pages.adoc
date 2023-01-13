@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/task-bookmarking-frequently-viewed-product-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können häufig aufgerufene Produktseiten über die Unified Manager-Benutzeroberfläche als Lesezeichen hinzufügen. So können Sie schnell zu diesen Seiten zurückkehren. Wenn Sie die Seite später anzeigen, werden die neuesten Daten angezeigt. 
+---
+= Lesezeichen häufig aufgerufene Produktseiten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können häufig aufgerufene Produktseiten über die Unified Manager-Benutzeroberfläche als Lesezeichen hinzufügen. So können Sie schnell zu diesen Seiten zurückkehren. Wenn Sie die Seite später anzeigen, werden die neuesten Daten angezeigt.
+
+
+
+== Über diese Aufgabe
+
+Sie können den Link (URL) auch auf die aktuelle Produktseite kopieren, sodass Sie ihn in eine E-Mail oder eine andere Anwendung einfügen können, um ihn mit anderen Personen zu teilen.
+
+
+
+== Schritte
+
+. Erstellen Sie ein Lesezeichen mit einem beliebigen Schritt, der benötigt wird, um eine Seite in Ihrem Browser zu markieren.
++
+Der Link für die Seite wird mit Details über die Seite gespeichert, aber Sie können den Lesezeichentext anpassen, um die Seite zu identifizieren: Z. B. „`Unified Manager` Node: Node-01`“ oder „`Unified Manager Benutzerdefiniertes Schwellenwertereignis: IOPS Volume1“.
+
+

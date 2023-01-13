@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-page-descriptions-for-certificate-management-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite HTTPS-Zertifikat können Sie die aktuellen Sicherheitszertifikate anzeigen und neue HTTPS-Zertifikate erstellen. 
+---
+= Seitenbeschreibungen zur Zertifikatverwaltung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite HTTPS-Zertifikat können Sie die aktuellen Sicherheitszertifikate anzeigen und neue HTTPS-Zertifikate erstellen.

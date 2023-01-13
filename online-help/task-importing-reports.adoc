@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-importing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn Sie einen Bericht außerhalb von Unified Manager erstellt haben, können Sie die Berichtsdatei importieren und speichern, die mit Unified Manager verwendet werden soll. 
+---
+= Berichte werden importiert
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie einen Bericht außerhalb von Unified Manager erstellt haben, können Sie die Berichtsdatei importieren und speichern, die mit Unified Manager verwendet werden soll.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen die OnCommand-Administratorrolle besitzen.
+
+Sie müssen sicherstellen, dass der zu importierende Bericht von Unified Manager unterstützt wird.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Berichte* und dann auf *Bericht importieren*.
+. Klicken Sie im Dialogfeld *Bericht importieren* auf *Durchsuchen* und wählen Sie die Datei aus, die Sie importieren möchten, und geben Sie dann einen Namen und eine kurze Beschreibung des Berichts ein.
+. Klicken Sie Auf *Import*.
++
+Wenn Sie den Bericht nicht importieren können, können Sie die Protokolldatei überprüfen, um den Fehler zu finden, der das Problem verursacht.
+
+

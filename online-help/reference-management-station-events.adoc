@@ -1,0 +1,100 @@
+---
+permalink: online-help/reference-management-station-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Management Station-Ereignisse geben Ihnen Informationen über den Status des Servers, auf dem Unified Manager installiert ist, sodass Sie auf mögliche Probleme überwachen können. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad. 
+---
+= Management Station-Events
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Management Station-Ereignisse geben Ihnen Informationen über den Status des Servers, auf dem Unified Manager installiert ist, sodass Sie auf mögliche Probleme überwachen können. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad.
+
+
+
+== Impact Area: Konfiguration
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+Unified Manager Server Disk Space Fast Full (ocumEvtUnifiedManagerDiskSpaceNearlyFull)
+ a| 
+Dar
+ a| 
+Management Station
+ a| 
+Warnung
+
+
+
+ a| 
+Voller Speicherplatz auf dem Unified Manager-Server (ocumEvtUnifiedManagerDiskSpaceFull)
+ a| 
+Vorfall
+ a| 
+Management Station
+ a| 
+Kritisch
+
+
+
+ a| 
+Unified Manager Server, auf dem der Speicher gering ist (ocumEvtUnifiedManagerMemoryLow)
+ a| 
+Dar
+ a| 
+Management Station
+ a| 
+Warnung
+
+
+
+ a| 
+Unified Manager Server fast nicht genügend Arbeitsspeicher (ocumEvtUnifiedManagerMemoryAlmostOut)
+ a| 
+Vorfall
+ a| 
+Management Station
+ a| 
+Kritisch
+
+|===
+
+
+== Impact Area: Performance
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+Performance Data Analysis is hited(ocumEvtUnifiedManagerDataMissingAnalyze)
+ a| 
+Dar
+ a| 
+Management Station
+ a| 
+Warnung
+
+
+
+ a| 
+Performance Data Collection ist betroffen(OktEvtUnifiedManagerDataMissingCollection)
+ a| 
+Vorfall
+ a| 
+Management Station
+ a| 
+Kritisch
+
+|===
+[NOTE]
+====
+Die beiden letzten Performance-Ereignisse waren nur für Unified Manager 7.2 verfügbar. Wenn eines dieser Ereignisse im Status „Neu“ vorhanden ist und Sie dann auf eine neuere Version der Unified Manager-Software aktualisieren, werden die Ereignisse nicht automatisch gelöscht. Sie müssen die Ereignisse manuell in den Status „aufgelöst“ verschieben.
+
+====

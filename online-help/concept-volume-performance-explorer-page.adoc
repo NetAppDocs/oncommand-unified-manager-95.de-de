@@ -1,0 +1,60 @@
+---
+permalink: online-help/concept-volume-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Diese Seite bietet detaillierte Performance-Informationen für ein Volume in einem Cluster. Der Titel dieser Seite hängt davon ab, ob Sie ein FlexVol-Volume oder ein FlexGroup-Volume anzeigen. 
+---
+= Seite „Performance/Volume“ oder „Performance/FlexGroup Explorer“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Diese Seite bietet detaillierte Performance-Informationen für ein Volume in einem Cluster. Der Titel dieser Seite hängt davon ab, ob Sie ein FlexVol-Volume oder ein FlexGroup-Volume anzeigen.
+
+Auf der Seite „Volume“ oder „FlexGroup Explorer“ können Sie die Volume-Performance in einem bestimmten Zeitraum verfolgen und vergleichen. So lassen sich Fehler beheben und die Volume-Performance optimieren.
+
+[NOTE]
+====
+Root-Volumes werden auf dieser Seite nicht angezeigt.
+
+====
+Verwenden der Funktion „Anzeigen und Vergleichen“:
+
+* Bei FlexVol Volumes können Sie die Performance dieses Volumes mit vergleichen:
++
+** Andere Volumes auf demselben Aggregat
+** Das Aggregat, auf dem sich dieses Volume befindet
+** Der SVM, auf der sich das Volume befindet
+** Die LUNs, die sich auf diesem Volume befinden
+
+
+* Bei FlexGroup Volumes können Sie die Performance dieser FlexGroup mit vergleichen:
++
+** Die Aggregate, auf denen sich die FlexGroup befindet
+** Der SVM, auf der sich die FlexGroup befindet
+** Die zusammengehörigen Volumes der FlexGroup
+
+
+
+
+Die Statistiken in den Diagrammen werden nach jedem Erfassungszeitraum aktualisiert, der standardmäßig alle 5 Minuten beträgt. Die Auswahl von Statistiken zur Ansicht bietet eine Option, um die über die vorherige Stunde gemittelten Statistiken anzuzeigen. Durch diese Funktionalität können Sie das Latenzdiagramm zur Unterstützung des NetApp „`Performance Guarantee`“-Programms anzeigen.
+
+Auf der Seite Performance/Volume Explorer oder Performance/FlexGroup Explorer können Sie:
+
+* Zeigen Sie Probleme mit Schwellenwerten und deren Details an
+* Verfolgen und Vergleichen von Volume Performance-Daten
+* Untersuchung und Behebung von Problemen mit Schwellenwerten
+* Untersuchung und Behebung von Performance-Problemen
+* Starten Sie System Manager, um eine Konfigurationsänderung für das Volume vorzunehmen
++
+Die Schaltfläche *Lautstärke konfigurieren* steht zur Verfügung, wenn Sie sich bei Unified Manager mit der Rolle „OnCommand Administrator“ oder „Speicheradministrator“ und bei Verwendung von ONTAP 9.5 oder höher bei Unified Manager angemeldet haben.
+
+
+
+[NOTE]
+====
+Für Datensicherungs-Volumes (DP) werden nur Zählerwerte für den benutzergenerierten Datenverkehr angezeigt. Wenn das Cluster mit einer Version der ONTAP Software vor 8.3 installiert ist, werden keine Zählerwerte angezeigt.
+
+====

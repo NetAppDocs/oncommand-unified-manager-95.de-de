@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-rate-report-to-view-volume-transfers-based-on-transfer-size.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können den Bericht Volume Transfer Rate \(Historical\) anpassen, um die Volume-Transferdetails entsprechend der Gesamtübertragungsgröße des Volumes anzuzeigen.' 
+---
+= Anpassen des Berichts zur Volume Transfer Rate (Historical), um Volume-Transfers basierend auf der Transfergröße anzuzeigen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Bericht „Volume Transfer Rate“ (Historischer Bericht) anpassen, um die Volume-Transferdetails entsprechend der Gesamtübertragungsgröße des Volumes anzuzeigen.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. Gruppierung nach Cluster entfernen:
++
+.. Wählen Sie die Spalte aus, die die Gruppierung aufheben soll.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um die Volume-Transfers entsprechend der Volume-Transfergröße zu sortieren, klicken Sie auf die Spalte *Total Transfer Size (GB)*.
+

@@ -1,0 +1,68 @@
+---
+permalink: online-help/task-identifying-trends-of-i-o-response-time-on-cluster-components.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit Unified Manager können Sie die Performance-Trends für alle überwachten Clusterkomponenten für einen Volume Workload anzeigen. Im Laufe der Zeit können Sie sehen, welche Komponenten die höchste Auslastung haben, ob Lese- oder Schreibanfragen die höchste Auslastung haben und wie sich die Auslastung auf die Reaktionszeit des Workloads ausgewirkt hat. 
+---
+= Trends der I/O-Reaktionszeit bei Cluster-Komponenten erkennen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit Unified Manager können Sie die Performance-Trends für alle überwachten Clusterkomponenten für einen Volume Workload anzeigen. Im Laufe der Zeit können Sie sehen, welche Komponenten die höchste Auslastung haben, ob Lese- oder Schreibanfragen die höchste Auslastung haben und wie sich die Auslastung auf die Reaktionszeit des Workloads ausgewirkt hat.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+* Sie müssen den Namen des Volumes oder der zugehörigen LUN, die Sie analysieren möchten, identifiziert haben.
+* Um Performance-Statistiken von 30 Tagen anzuzeigen, muss Unified Manager mindestens 30 Tage Performance-Statistik aus dem Cluster gesammelt und analysiert haben.
+
+
+
+
+== Über diese Aufgabe
+
+Anhand der Ermittlung der Performance-Trends für die Cluster-Komponenten kann der Administrator entscheiden, ob der Cluster überlastet oder nicht ausgelastet ist.
+
+Wenn Sie die Seite „Ereignisdetails“ aufrufen, können Sie auf den Namen eines Volumes klicken, um direkt zur Seite „Performance/Volume Details“ zu gelangen.
+
+
+
+== Schritte
+
+. Geben Sie in der *Search*-Leiste den Namen des Volumens ein.
++
+Der Name des Volume wird in den Suchergebnissen angezeigt.
+
+. Klicken Sie auf den Namen des Volumes.
++
+Das Volume wird auf der Seite Performance/Volume Details angezeigt.
+
+. Klicken Sie auf dem Historischen Datendiagramm auf *30d*, um die letzten 30 Tage historischer Daten anzuzeigen.
+. Klicken Sie auf *Aufbrechen von Daten durch*.
+. Wählen Sie unter *Latenz* ***Cluster-Komponenten*** und ***Lese-/Schreib-Latenz*** aus.
+. Klicken Sie Auf *Absenden*.
++
+Beide Diagramme werden unter dem Latenzdiagramm angezeigt.
+
+. Sehen Sie sich das Diagramm * Cluster Components* an.
++
+Das Diagramm unterteilt die Gesamtantwortzeit nach Cluster-Komponente. Die Reaktionszeit im Aggregat ist die höchste.
+
+. Vergleichen Sie das Diagramm *Cluster Components* mit dem Diagramm *Latenz*.
++
+Das Latenzdiagramm zeigt Spitzen in der gesamten Reaktionszeit, die mit den Spitzen in der Reaktionszeit des Aggregats abgeglichen werden. Am Ende des 30-Tage-Zeitrahmens, in dem die Leistungsschwelle überschritten wurde, gibt es einige wenige.
+
+. Prüfen Sie das Diagramm * Lese-/Schreib-Latenz*.
++
+Das Diagramm zeigt eine höhere Reaktionszeit bei Schreibanfragen als Leseanforderungen, was darauf hinweist, dass die Client-Anwendungen länger als gewöhnlich warten, um ihre Schreibanforderungen zu erfüllen.
+
+. Vergleichen Sie das Diagramm * Lese-/Schreib-Latenz* mit dem Diagramm * Latenz*.
++
+Die Spitzen bei der gesamten Antwortzeit, die auf das Aggregat im Diagramm „Cluster-Komponenten“ abgestimmt sind, werden auch auf die Schreibvorgänge im Latenzdiagramm für Lese-/Schreibvorgänge ausgerichtet. Der Administrator muss entscheiden, ob die Client-Applikationen, die den Workload verwenden, berücksichtigt werden müssen oder ob das Aggregat zu viel genutzt wird.
+
+

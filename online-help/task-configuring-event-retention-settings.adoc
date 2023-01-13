@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-configuring-event-retention-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Anzahl der Tage angeben, die ein Ereignis im Unified Manager-Server beibehalten wird, bevor es automatisch gelöscht wird. Es werden nur Ereignisse gelöscht, die aufgelöst, veraltet oder vom Typ Informationen sind. Sie können auch die Häufigkeit festlegen, mit der diese Ereignisse gelöscht werden, oder Sie können die Ereignisse auch manuell löschen. 
+---
+= Konfigurieren von Einstellungen für die Ereignisaufbewahrung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Anzahl der Tage angeben, die ein Ereignis im Unified Manager-Server beibehalten wird, bevor es automatisch gelöscht wird. Es werden nur Ereignisse gelöscht, die aufgelöst, veraltet oder vom Typ Informationen sind. Sie können auch die Häufigkeit festlegen, mit der diese Ereignisse gelöscht werden, oder Sie können die Ereignisse auch manuell löschen.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ verfügen, um die Ereigniseinstellungen zu ändern.
+
+
+
+== Über diese Aufgabe
+
+Die Aufbewahrung von Ereignissen über 180 Tage wirkt sich auf die Serverleistung aus und wird nicht empfohlen. Die untere Grenze für die Ereignisaufbewahrungsdauer beträgt 7 Tage; es gibt keine Obergrenze.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Konfiguration* > *Ereignisse verwalten*.
+. Klicken Sie auf der Seite *Konfiguration/Ereignisse verwalten* auf die Schaltfläche *Ereignisaufbewahrungseinstellungen*.
+. Konfigurieren Sie die entsprechenden Einstellungen im Dialogfeld *Ereignisaufbewahrungseinstellungen*.
+. Klicken Sie auf *Speichern und Schließen*.
+

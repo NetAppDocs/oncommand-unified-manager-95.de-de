@@ -1,0 +1,82 @@
+---
+permalink: online-help/reference-performance-all-luns-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Seite „Performance/LUNs Inventory“ zeigt eine Übersicht über die Performance-Ereignisse, Daten und Konfigurationsinformationen für jede LUN an, die durch eine Instanz von Unified Manager überwacht wird. So können Sie die Performance Ihrer LUNs schnell überwachen und Performance-Probleme sowie Schwellenwertereignisse beheben. 
+---
+= Seite „Performance/LUNs Inventory“ (Inventar
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite „Performance/LUNs Inventory“ zeigt eine Übersicht über die Performance-Ereignisse, Daten und Konfigurationsinformationen für jede LUN an, die durch eine Instanz von Unified Manager überwacht wird. So können Sie die Performance Ihrer LUNs schnell überwachen und Performance-Probleme sowie Schwellenwertereignisse beheben.
+
+Je nachdem, wie Sie zu dieser Seite navigieren, wird oben auf der Seite möglicherweise ein anderer Titel angezeigt, um anzugeben, ob die Liste gefiltert wurde. Beispiel: Wenn alle LUNs angezeigt werden, lautet der Titel „`LUNs`“. Wenn Sie eine Untergruppe von LUNs anzeigen, die von der Seite Threshold Policies zurückgegeben wird, lautet der Titel „`LUNs auf denen Policy: LUN_IOPS is appliced`“.
+
+Mit den Schaltflächen oben auf der Seite können Sie Suchen durchführen, um bestimmte Daten zu finden, Filter zu erstellen und anzuwenden, um die Liste der angezeigten Daten einzugrenzen und die Daten auf der Seite in A zu exportieren `.csv` Datei, und fügen Sie Spalten auf der Seite hinzu oder entfernen Sie sie.
+
+Standardmäßig werden Objekte auf den Objektbestandsseiten sortiert, basierend auf dem Kritikereignis der Objektleistung. Objekte mit kritischen Ereignissen werden zuerst aufgeführt und Objekte mit Warnmeldungen werden als zweites aufgeführt. Dies bietet eine unmittelbare visuelle Darstellung von Problemen, die behoben werden müssen. Die Werte der Leistungsindikatoren basieren auf einem Durchschnitt aus den Daten der letzten 72 oder mehr Stunden, wie auf der Seite angegeben. Sie können auf die Schaltfläche „Aktualisieren“ klicken, um die Objektbestandsdaten zu aktualisieren.
+
+Über die Schaltflächen *Performance Threshold Policy* und *Clear PerformanceThreshold Policy* können Sie Schwellenwertrichtlinien für beliebige Objekte auf den Objektbestandsseiten zuweisen oder löschen.
+
+
+
+== Spalten auf der Seite „LUNs-Inventar“
+
+Die Seite „Performance/LUNs Inventory“ enthält die folgenden Spalten für jede LUN:
+
+* *Status*
++
+Ein gesundes Objekt ohne aktive Ereignisse zeigt ein grünes Häkchen-Symbol (image:../media/sev-normal-um60.png["Symbol für den Schweregrad „Ereignis“ – „Normal“"]). Wenn das Objekt über ein aktives Ereignis verfügt, identifiziert das Symbol für die Ereignisanzeige den Schweregrad: Kritische Ereignisse sind rot (image:../media/sev-critical-um60.png["Symbol für den Schweregrad „Ereignis“ – „kritisch“"]Die Fehlerereignisse sind orange (image:../media/sev-error-um60.png["Symbol für den Schweregrad „Ereignis“: Fehler"]), und Warnereignisse sind gelb (image:../media/sev-warning-um60.png["Symbol für den Schweregrad „Ereignis“ – Warnung"]).
+
+* *LUN*
++
+Sie können auf den LUN-Namen klicken, um zur Seite mit den Performance-Details dieser LUN zu gelangen.
+
+* *Latenz*
++
+Die durchschnittliche Reaktionszeit aller I/O-Anforderungen, ausgedrückt in Millisekunden pro Vorgang
+
+* *IOPS*
++
+Die ein-/Ausgabevorgänge pro Sekunde für die LUN.
+
+* *Mbps*
++
+Der Durchsatz auf der LUN, gemessen in Megabyte pro Sekunde.
+
+* *Freie Kapazität*
++
+Die ungenutzte Speicherkapazität der LUN in Gigabyte
+
+* *Gesamtkapazität*
++
+Die gesamte Storage-Kapazität der LUN in Gigabyte
+
+* * Cluster*
++
+Der Cluster, zu dem die LUN gehört. Sie können auf den Cluster-Namen klicken, um zur Detailseite des jeweiligen Clusters zu gelangen.
+
+* *Knoten*
++
+Der Node, zu dem die LUN gehört. Sie können auf den Node-Namen klicken, um zur Detailseite dieses Node zu navigieren.
+
+* *SVM*
++
+Die Storage Virtual Machine (SVM), der die LUN angehört. Sie können auf den SVM-Namen klicken, um zur Detailseite dieser SVM zu navigieren.
+
+* * Aggregat*
++
+Das Aggregat, zu dem die LUN gehört. Sie können auf den Aggregatnamen klicken, um zur Detailseite des jeweiligen Aggregats zu navigieren.
+
+* *Lautstärke*
++
+Das Volume, zu dem die LUN gehört. Sie können auf den Volume-Namen klicken, um zur Detailseite des betreffenden Volumes zu navigieren.
+
+* *Grenzwertrichtlinie*
++
+Die benutzerdefinierte Performance-Schwellenwertrichtlinie, die für dieses Storage-Objekt aktiv ist, oder Richtlinien. Sie können den Cursor über Richtliniennamen mit Ellipsen (...) positionieren, um den vollständigen Richtliniennamen oder die Liste der zugewiesenen Richtliniennamen anzuzeigen. Die Schaltflächen *Performance Threshold Policy* und *Clear Performance Threshold Policy* bleiben deaktiviert, bis Sie ein oder mehrere Objekte auswählen, indem Sie auf die Kontrollkästchen ganz links klicken.
+
+

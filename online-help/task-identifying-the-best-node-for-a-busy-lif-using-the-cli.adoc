@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können Informationen zu allen Ports in einem Cluster anzeigen. Sie können Informationen wie die Netzwerkanschlussrolle \ (Cluster, Daten oder Node-Management\), den Verbindungsstatus, die maximale Übertragungseinheit \ (MTU\), die Geschwindigkeitseinstellung und den Betriebsstatus sowie ggf. die Schnittstellengruppe des Ports anzeigen.' 
+---
+= Ermitteln des besten Node für eine überlastete LIF mithilfe der CLI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Informationen zu allen Ports in einem Cluster anzeigen. Sie können Informationen anzeigen, z. B. die Netzwerkport-Rolle (Cluster, Daten oder Node-Management), den Link-Status, die MTU (Maximum Transmission Unit), die Geschwindigkeitseinstellung und den Betriebsstatus sowie die Schnittstellengruppe des Ports.
+
+
+
+== Schritte
+
+. Geben Sie zum Anzeigen von Portinformationen den folgenden Befehl ein: `network port show`
++
+Im folgenden Beispiel werden Informationen zu Netzwerkports angezeigt, die eine Datenrolle aufweisen und sich im Cluster befinden:
+
++
+[listing]
+----
+cluster1::> network port show  -role data -link up
+                                   Auto-Negot Duplex      Speed (Mbps)
+Node Port Role         Link  MTU   Admin/Oper Admin/Oper  Admin/Oper
+---- ---- -----        ----  ----  ---------- ----------  ----------
+node1
+     e0M  data         up    1500  true/true  full/full   auto/100
+     e0b  data         up    1500  true/true  full/full   auto/1000
+
+node2
+     e0b  data         up    1500  true/true  full/full   auto/1000
+----
+. Überprüfen Sie, ob sich die Zielanschlüsse im gleichen Netzwerk befinden wie der Startport des Quell- und der Home-Node-Ports.
++
+Beispielsweise sollten sich der Home-Port des Ziels und der Home-Node gegebenenfalls auf demselben VLAN befinden.
+
+. Um den am wenigsten ausgelasteten Port zu identifizieren, wählen Sie einen Datenport mit der geringsten Anzahl von Verbindungen aus.
+

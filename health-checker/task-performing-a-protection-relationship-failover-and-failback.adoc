@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task-performing-a-protection-relationship-failover-and-failback.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn ein Quell-Volume in Ihrer Sicherungsbeziehung aufgrund eines Hardware-Ausfalls oder eines Notfalls deaktiviert wird, können Sie die Sicherungsfunktionen in Unified Manager verwenden, um den Zugriff auf Lese-/Schreibzugriff auf das Schutzziel zu ermöglichen und ein Failover auf dieses Volume durchzuführen, bis die Quelle wieder online ist; Anschließend können Sie ein Failback zur ursprünglichen Quelle erstellen, sobald Daten zur Verfügung stehen. 
+---
+= Durchführen eines Failover und Failback einer Sicherungsbeziehung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn ein Quell-Volume in Ihrer Sicherungsbeziehung aufgrund eines Hardware-Ausfalls oder eines Notfalls deaktiviert wird, können Sie die Sicherungsfunktionen in Unified Manager verwenden, um den Zugriff auf Lese-/Schreibzugriff auf das Schutzziel zu ermöglichen und ein Failover auf dieses Volume durchzuführen, bis die Quelle wieder online ist; Anschließend können Sie ein Failback zur ursprünglichen Quelle erstellen, sobald Daten zur Verfügung stehen.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Sie müssen OnCommand Workflow Automation einrichten, um diesen Vorgang auszuführen.
+
+
+
+
+== Schritte
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[SnapMirror Beziehung unterbrechen].
++
+Sie müssen die Beziehung unterbrechen, bevor Sie das Ziel von einem Datensicherungs-Volume in ein Lese-/Schreib-Volume konvertieren können, und bevor Sie die Beziehung rückgängig machen können.
+
+. xref:task-reversing-protection-relationships-from-the-health-volume-details-page.adoc[Die Sicherungsbeziehung wird umkehren].
++
+Wenn das ursprüngliche Quell-Volume wieder verfügbar ist, können Sie vielleicht entscheiden, die ursprüngliche Schutzbeziehung wiederherzustellen, indem Sie das Quell-Volume wiederherstellen. Bevor Sie die Quelle wiederherstellen können, müssen Sie sie mit den Daten synchronisieren, die auf das frühere Ziel geschrieben wurden. Sie verwenden die umgekehrte Resynchronisierung, um eine neue Schutzbeziehung zu erstellen, indem Sie die Rollen der ursprünglichen Beziehung rückgängig machen und das Quell-Volume mit dem vorherigen Ziel synchronisieren. Für die neue Beziehung wird eine neue Basis-Snapshot Kopie erstellt.
+
++
+Die umgekehrte Beziehung sieht ähnlich aus wie eine kaskadierte Beziehung:
+
++
+image::../media/um-toplogy-reverse-resync.gif[Um-toplogy Resynchronisierung rückgängig machen]
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[Die umgekehrte SnapMirror Beziehung unterbrechen].
++
+Wenn das ursprüngliche Quell-Volume neu synchronisiert wird und erneut Daten bereitstellen kann, unterbrechen Sie die umgekehrte Beziehung.
+
+. xref:task-removing-a-protection-relationship-from-the-health-volume-details-page.adoc[Entfernen Sie die Beziehung].
++
+Wenn die umgekehrte Beziehung nicht mehr erforderlich ist, sollten Sie diese Beziehung entfernen, bevor Sie die ursprüngliche Beziehung wieder herstellen.
+
+. xref:task-resynchronizing-protection-relationships-from-the-health-volume-details-page.adoc[Beziehung neu synchronisieren].
++
+Verwenden Sie den Vorgang zur erneuten Synchronisierung, um Daten von der Quelle zum Ziel zu synchronisieren und die ursprüngliche Beziehung wiederherzustellen.
+
+

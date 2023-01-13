@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Mithilfe der Zählerdiagramme des Performance Explorer können Sie Performancedaten für ausgewählte Speicherobjekte anzeigen und vergleichen. Diese Diagramme bieten einen Überblick über Performance-Trends und können Performance-Probleme isolieren und lösen. 
+---
+= Beschreibungen der Zählerdiagramme
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mithilfe der Zählerdiagramme des Performance Explorer können Sie Performancedaten für ausgewählte Speicherobjekte anzeigen und vergleichen. Diese Diagramme bieten einen Überblick über Performance-Trends und können Performance-Probleme isolieren und lösen.

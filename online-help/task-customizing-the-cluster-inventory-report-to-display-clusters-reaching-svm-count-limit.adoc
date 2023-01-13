@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-clusters-reaching-svm-count-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Bericht „Cluster Inventory“ so anpassen, dass Cluster angezeigt werden. Dieser Bericht sortiert nach klassifikation der Reihenfolge ihrer SVM-Anzahl. 
+---
+= Sie können den Bericht „Cluster Inventory“ anpassen, um Cluster anzuzeigen, die das Limit für die SVM-Anzahl erreichen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Bericht „Cluster Inventory“ so anpassen, dass Cluster angezeigt werden. Dieser Bericht sortiert nach klassifikation der Reihenfolge ihrer SVM-Anzahl.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach Cluster oder Node:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. So sortieren Sie Cluster nach SVM-Anzahl:
++
+.. Klicken Sie in die Spalte *SVM Count*.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Option Innere Gruppe löschen*.
+
+
+. Wählen Sie *Filter* > *Oben/Unten N*.
+. Wählen Sie im Dialogfeld *Top/Bottom N* aus dem Feld *Filter* die Option *Top N* aus, und geben Sie einen Wert in das Textfeld ein.
+. Klicken Sie auf *OK*.
+

@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-groups-detail-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Gruppen-Details können Sie die Details einer ausgewählten Gruppe anzeigen. Sie können auch zusätzliche Informationen wie Gruppenregeln und Gruppenaktionen anzeigen, die der ausgewählten Gruppe zugeordnet sind. 
+---
+= Detailseite Gruppen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Gruppen-Details können Sie die Details einer ausgewählten Gruppe anzeigen. Sie können auch zusätzliche Informationen wie Gruppenregeln und Gruppenaktionen anzeigen, die der ausgewählten Gruppe zugeordnet sind.
+
+
+
+== Befehlsschaltflächen
+
+* *Gruppen Anzeigen*
++
+Ermöglicht die Navigation zur Seite Gruppen.
+
+* *Aktionen*
++
+Ermöglicht Ihnen, die Gruppe entsprechend Ihrer Rolle zu bearbeiten oder zu löschen. Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Gruppenregeln Verwalten*
++
+Hier können Sie zur Seite Gruppenregeln navigieren, auf der Regeln für diese Gruppe angezeigt werden.
+
+* *Gruppenaktionen Verwalten*
++
+Hier können Sie zur Seite Gruppenaktionen navigieren, auf der Aktionen für diese Gruppe angezeigt werden.
+
+
+
+
+
+== Zusammenfassungsbereich
+
+Sie können die folgenden Gruppendetails anzeigen:
+
+* *Beschreibung*
++
+Zeigt die für die Gruppe bereitgestellte Beschreibung an.
+
+* * Erstellt von*
++
+Zeigt den Namen des Benutzers an, der die Gruppe erstellt hat.
+
+* * Erstellungsdatum*
++
+Zeigt das Datum an, an dem die Gruppe erstellt wurde.
+
+* *Verbundene Regeln*
++
+Zeigt alle Gruppenregeln an, die für eine Gruppe erstellt wurden, im Tabellenformat. Sie können die Details jeder Gruppenregel anzeigen, z. B. den Regelnamen, den zugeordneten Objekttyp und die Anzahl der Speicherobjekte des zugehörigen Objekttyps.
+
+* *Verbundene Aktionen*
++
+Zeigt alle Gruppenaktionen an, die für eine Gruppe konfiguriert sind, im Tabellenformat. Sie können die Details jeder Gruppenaktion anzeigen, z. B. Rang, Name, Aktionstyp und Beschreibung.
+
+

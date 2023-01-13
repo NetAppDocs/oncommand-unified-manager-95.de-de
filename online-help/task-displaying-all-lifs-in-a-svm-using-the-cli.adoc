@@ -1,0 +1,66 @@
+---
+permalink: online-help/task-displaying-all-lifs-in-a-svm-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Informationen zu allen LIFs in einer SVM anzeigen. Möglicherweise möchten Sie alle LIFs anzeigen, bevor Sie bestimmen, welche LIFs möglicherweise ausgelastet sind und verschoben werden sollten. 
+---
+= Anzeigen aller LIFs in einer SVM mithilfe der CLI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Informationen zu allen LIFs in einer SVM anzeigen. Möglicherweise möchten Sie alle LIFs anzeigen, bevor Sie bestimmen, welche LIFs möglicherweise ausgelastet sind und verschoben werden sollten.
+
+
+
+== Über diese Aufgabe
+
+Der Betriebsstatus einer LIF wird dadurch bestimmt, ob sie auf einem bestimmten Port konfiguriert wurde und Daten bereitstellen kann. Wenn eine SVM angehalten wird, können die zugeordneten Daten-LIFs und SVM-Management-LIFs keine Daten mehr bereitstellen. Der Betriebsstatus dieser LIFs ändert sich in `down`.
+
+
+
+== Schritte
+
+. Um Informationen zu allen LIFs in einer SVM anzuzeigen, geben Sie den folgenden Befehl ein: `network interface show -vserver vserver_name`
++
+Mit dem Befehl werden die folgenden Informationen angezeigt:
+
++
+** Dem LIF zugeordneten Node oder SVM
+** LIF-Name
+** Administrations- und Betriebsstatus
+** IP-Adresse
+** Netzmaske
+** Node und Port, auf dem die LIF konfiguriert ist
+
+
++
+Ein Home Server kann ein Node oder eine SVM sein.
+
++
+Wenn keine Daten für ein Feld verfügbar sind (z. B. die Betriebs-Duplexkonfiguration und die Geschwindigkeit für einen inaktiven Port), wird das Feld als undef angezeigt.
+
++
+[NOTE]
+====
+Sie können alle verfügbaren Informationen abrufen, indem Sie die angeben `-instance` Parameter.
+
+====
++
+Im folgenden Beispiel werden allgemeine Informationen zu allen LIFs einer SVM angezeigt:
+
++
+[listing]
+----
+vs1::> network interface show -vserver vs1
+            Logical    Status     Network            Current       Current Is
+Vserver     Interface  Admin/Oper Address/Mask       Node          Port    Home
+----------- ---------- ---------- ------------------ ------------- ------- ----
+vs1
+            lif1         up/up    192.0.2.253/24     node-01       e0b     false
+            d2           up/up    192.0.2.252/21     node-01       e0d     true
+            data3        up/up    192.0.2.251/20     node-02       e0c     true
+----
+

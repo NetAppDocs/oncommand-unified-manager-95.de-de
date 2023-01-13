@@ -1,0 +1,32 @@
+---
+permalink: health-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-health.html 
+sidebar: sidebar 
+keywords:  
+summary: Dieser Abschnitt enthält Informationen zu den beiden Benutzeroberflächen, die OnCommand Unified Manager zur Fehlerbehebung von Storage-Kapazität, -Verfügbarkeit und -Sicherung bereitstellt. Die beiden UIs sind die Unified Manager Web-UI und die Wartungskonsole. 
+---
+= Unified Manager-Schnittstellen, die zum Management des Zustands des Storage-Systems verwendet werden
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dieser Abschnitt enthält Informationen zu den beiden Benutzeroberflächen, die OnCommand Unified Manager zur Fehlerbehebung von Storage-Kapazität, -Verfügbarkeit und -Sicherung bereitstellt. Die beiden UIs sind die Unified Manager Web-UI und die Wartungskonsole.
+
+Um die Sicherungsfunktionen in Unified Manager nutzen zu können, müssen auch OnCommand Workflow Automation (WFA) installiert und konfiguriert werden.
+
+
+
+== Unified Manager Web-UI
+
+Die Unified Manager Web-UI ermöglicht einem Administrator, Cluster-Probleme in Bezug auf Kapazität, Verfügbarkeit und Sicherung der Daten zu überwachen und zu beheben.
+
+In diesem Abschnitt werden einige gängige Workflows beschrieben, die ein Administrator befolgen kann, um Fehler bei der Storage-Kapazität, Datenverfügbarkeit oder Sicherungsproblemen zu beheben, die in der Web-Benutzeroberfläche von Unified Manager angezeigt werden.
+
+
+
+== Wartungskonsole
+
+Die Wartungskonsole ermöglicht einem Administrator, Betriebssystemprobleme, Probleme mit dem Versionsaufrüstungs-, Benutzer-Zugriffsprobleme und Netzwerkprobleme im Zusammenhang mit dem Unified Manager Server selbst zu überwachen, zu diagnostizieren und zu beheben. Wenn die Web-UI von Unified Manager nicht verfügbar ist, stellt die Wartungskonsole die einzige Zugriffsmöglichkeit auf Unified Manager dar.
+
+Dieser Abschnitt enthält eine Anleitung zum Zugriff auf die Wartungskonsole und zur Behebung von Problemen im Zusammenhang mit der Funktionsweise des Unified Manager-Servers.

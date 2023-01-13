@@ -1,0 +1,104 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Der Bericht zum Bestand von Volume-Beziehungen ermöglicht Ihnen die Analyse der Details zum Storage-Inventar in einem Cluster, die Analyse des für Volumes erforderlichen Schutzes sowie die Filterung der Volume-Details basierend auf den Fehlerquellen, Mustern und Zeitplänen. 
+---
+= Bestandsbericht zu Volume-Beziehungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der Bericht zum Bestand von Volume-Beziehungen ermöglicht Ihnen die Analyse der Details zum Storage-Inventar in einem Cluster, die Analyse des für Volumes erforderlichen Schutzes sowie die Filterung der Volume-Details basierend auf den Fehlerquellen, Mustern und Zeitplänen.
+
+Der Bericht „Bestandsaufnahme der Volume-Beziehungen“ wird in zwei Formaten angezeigt:
+
+* Diagramm „SnapMirror Beziehungen“ und „SnapVault Beziehungen“
+* Berichtstabellenansicht „Volume Relationships Inventory“
+
+
+
+
+== Tortendiagramme mit SnapMirror und SnapVault
+
+Zeigt die Konfigurationsdetails der Volume-Beziehungen an, die im Storage-System vorhanden sind.
+
+
+
+== Bestandsinformationen zu Volume-Beziehungen
+
+* *Gesundheit Der Beziehung*
++
+Zeigt den Systemzustand der Beziehung des Clusters an.
+
+* * Beziehungsstatus*
++
+Zeigt den Mirror-Status der SnapMirror Beziehung an.
+
+* *Transferstatus*
++
+Zeigt den Status der SnapMirror-Beziehung an.
+
+* *Lag-Status*
++
+Zeigt den Verzögerungsstatus des Volumes an.
+
+* * Quellcluster*
++
+Zeigt den Namen des Quell-Clusters für die SnapMirror Beziehung an.
+
+* *Quell-SVM*
++
+Zeigt den Namen der Quell-Storage Virtual Machine (SVM) für die SnapMirror Beziehung an.
+
+* *Quellvolumen*
++
+Zeigt den Namen des Quell-Volume für die SnapMirror Beziehung an.
+
+* *Zielcluster*
++
+Zeigt den Namen des Ziel-Clusters für die SnapMirror Beziehung an.
+
+* *Ziel-SVM*
++
+Zeigt den Namen der Ziel-Storage Virtual Machine (SVM) für die SnapMirror Beziehung an.
+
+* *Zielvolumen*
++
+Zeigt den Namen des Ziel-Volume für die SnapMirror Beziehung an.
+
+* *Beziehungstyp*
++
+Zeigt alle Beziehungstypen an, einschließlich SnapMirror oder SnapVault.
+
+* *Letzte Erfolgreiche Aktualisierungszeit*
++
+Zeigt die Zeit des letzten erfolgreichen SnapMirror oder SnapVault Vorgangs an.
+
+* *Letzte Transferdauer (Std.)*
++
+Zeigt die Zeit an, die für den letzten Datentransfer benötigt wurde.
+
+* *Letzte Transfergröße (MB)*
++
+Zeigt die Größe der letzten Datenübertragung in Byte an.
+
+* *Endzeit Der Letzten Übertragung*
++
+Zeigt die Zeit an, zu der der letzte erfolgreiche SnapMirror oder SnapVault Vorgang abgeschlossen wurde.
+
+* * Ungesunde Gründe*
++
+Der Grund, warum die Beziehung in einem ungesunden Zustand ist.
+
+* *Dauer (Std.)*
++
+Zeigt die Zeitspanne an, die die Daten auf dem Spiegel hinter der Quelle hinkt.
+
+* *Version Flexible Replikation*
++
+Zeigt entweder Ja, Ja mit Sicherungsoption oder Keine an.
+
+

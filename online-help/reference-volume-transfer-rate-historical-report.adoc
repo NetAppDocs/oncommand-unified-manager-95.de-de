@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-volume-transfer-rate-historical-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Der Bericht Volume Transfer Rate \ (Historical\) ermöglicht es Ihnen, die Menge des täglich übertragenen Datenvolumens zu analysieren. Der Bericht enthält außerdem Details zu den täglichen Volume-Transfers und die Zeit, die für den Abschluss des Transfervorgangs erforderlich ist.' 
+---
+= Bericht „Volume Transfer Rate“ (Historical)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der Bericht zur Volume-Übertragungsrate (Historical) ermöglicht es Ihnen, die Menge des täglich übertragenen Datenvolumens zu analysieren. Der Bericht enthält außerdem Details zu den täglichen Volume-Transfers und die Zeit, die für den Abschluss des Transfervorgangs erforderlich ist.
+
+Der Bericht zur Volumenübertragungsrate (Historischer Bericht) wird in zwei Formaten angezeigt:
+
+* Balkendiagramm für Volumenübertragungsraten
+* Tabellenansicht Volumenübertragungsrate
+
+
+
+
+== Balkendiagramm für Volumenübertragungsraten
+
+Zeigt die Details der Übertragungsrate des Volumes an, indem die Gesamtübertragungsgröße mit der Anzahl der Stunden verglichen wird. Sie können auch die Details der Datenmenge anzeigen, die täglich übertragen wird.
+
+
+
+== Tabellenansicht Volumenübertragungsrate
+
+* *Gesamtübertragungsgröße (GB)*
++
+Zeigt die Gesamtgröße der Volume-Übertragung in Gigabyte an.
+
+* *Tag*
++
+Zeigt den Tag an, an dem die Volume-Übertragung initiiert wurde.
+
+* *Endzeit*
++
+Zeigt die Endzeit der Volume-Übertragung mit dem Datum an.
+
+

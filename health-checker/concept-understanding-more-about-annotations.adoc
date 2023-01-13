@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-understanding-more-about-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn Sie die Konzepte über Annotationen verstehen, können Sie Ereignisse aus dem Zusammenhang mit den Storage-Objekten in Ihrer Umgebung managen. 
+---
+= Weitere Informationen zu Annotationen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie die Konzepte über Annotationen verstehen, können Sie Ereignisse aus dem Zusammenhang mit den Storage-Objekten in Ihrer Umgebung managen.

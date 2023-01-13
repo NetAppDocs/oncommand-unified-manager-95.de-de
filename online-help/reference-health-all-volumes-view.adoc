@@ -1,0 +1,414 @@
+---
+permalink: online-help/reference-health-all-volumes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Systemzustand/Volume-Bestand“ werden Informationen zu den Volumes in den überwachten Speichersystemen angezeigt und Sie können die Schwellwerteinstellungen des Volumes ändern. 
+---
+= Integrität/Volumen-Inventarseite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Systemzustand/Volume-Bestand“ werden Informationen zu den Volumes in den überwachten Speichersystemen angezeigt und Sie können die Schwellwerteinstellungen des Volumes ändern.
+
+
+
+== Befehlsschaltflächen
+
+* *Schwellenwerte Bearbeiten*
++
+Zeigt das Dialogfeld Schwellenwerte bearbeiten an, in dem Sie die Einstellungen für den Integritätsschwellenwert für ein oder mehrere Volumes bearbeiten können.
+
+* *Schutz*
++
+Zeigt die folgenden Untermenüs an:
+
++
+** SnapMirror
++
+Ermöglicht Ihnen, eine SnapMirror Beziehung für die ausgewählten Volumes zu erstellen.
+
+** SnapVault
++
+Ermöglicht Ihnen, eine SnapVault-Beziehung für die ausgewählten Volumes zu erstellen.
+
+
+
+* *Wiederherstellen*
++
+Zeigt das Dialogfeld Wiederherstellen an, in dem Sie Verzeichnisse oder Dateien von einem Volume gleichzeitig wiederherstellen können.
+
++
+Diese Schaltfläche ist deaktiviert, wenn mehrere Volumes ausgewählt sind, oder wenn ein FlexGroup-Volume ausgewählt ist oder ein für SnapMirror Synchronous konfiguriertes Volume ausgewählt ist.
+
+* *Anmerkung*
++
+Ermöglicht Ihnen, das ausgewählte Volume mit Anmerkungen zu versehen.
+
+* *Export*
++
+Ermöglicht das Exportieren der Details aller überwachten Volumes in kommagetrennte Werte (`.csv`) Datei. Bei der Anzeige von Infinite Volumes werden die Infinite Volume Komponenten exportiert.
+
+
+
+
+
+== Volumes Übersicht
+
+Die Tabelle Volumes zeigt die Eigenschaften aller erkannten Volumes an. Mit den Spaltenfiltern können Sie die angezeigten Daten anpassen:
+
+* *Status*
++
+Der aktuelle Status eines Volumes. Der Status kann kritisch sein (image:../media/sev-critical-um60.png["Symbol für den Schweregrad „Ereignis“ – „kritisch“"]), Fehler (image:../media/sev-error-um60.png["Symbol für den Schweregrad „Ereignis“: Fehler"]), Warnung (image:../media/sev-warning-um60.png["Symbol für den Schweregrad „Ereignis“ – Warnung"]Oder normal (image:../media/sev-normal-um60.png["Symbol für den Schweregrad „Ereignis“ – „Normal“"]).
+
++
+Sie können den Zeiger über den Status verschieben, um weitere Informationen zu dem für das Volume generierten Ereignis oder Ereignissen anzuzeigen.
+
++
+Wenn der Status des Volumes durch ein einziges Ereignis bestimmt wird, können Sie Informationen wie den Ereignisnamen, die Uhrzeit und das Datum anzeigen, an dem das Ereignis ausgelöst wurde, den Namen des Administrators, dem das Ereignis zugewiesen wurde, und die Ursache des Ereignisses anzeigen. Sie können auf den Link *Details anzeigen* klicken, um weitere Informationen über die Veranstaltung anzuzeigen.
+
++
+Wenn der Status des Volumes durch mehrere Ereignisse desselben Schweregrades bestimmt wird, werden die drei wichtigsten Ereignisse mit Informationen wie Ereignisname, Uhrzeit und Datum beim Auslösen der Ereignisse und dem Namen des Administrators angezeigt, dem das Ereignis zugewiesen ist. Sie können weitere Details zu den einzelnen Ereignissen anzeigen, indem Sie auf den Ereignisnamen klicken. Sie können auch auf den Link *Alle Ereignisse anzeigen* klicken, um die Liste der generierten Ereignisse anzuzeigen.
+
+* *Lautstärke*
++
+Der Name des Volume.
+
++
+Sie können den Mauszeiger über ein Volume bewegen, um Informationen wie den im Volume zugewiesenen Speicherplatz für das qtree-Kontingent, den Status der letzten Verschiebung des Volumes und den dem Volume zugewiesenen Speicherplatz anzuzeigen. Sie können auch Details zu verwandten Objekten wie z.B. die SVM anzeigen, zu der das Volume gehört, das Aggregat, zu dem das Volume gehört, und alle Volumes, die zu diesem Aggregat gehören.
+
++
+Wenn eine SVM mit Infinite Volume überwacht wird, können Sie Details zu den drei Typen von Komponenten (Daten, Namespace und Namespace-Spiegelung) in der SVM mit Infinite Volume anzeigen. Zu den Angaben zu den Komponenten zählen folgende Informationen:
+
++
+** Name der Komponente
+** Zustand der Komponente
+** Name der SVM mit Infinite Volume, zu der die Komponente gehört
+** Verbindungspfad der Komponente
+** Name des Aggregats, in dem die Komponente enthalten ist
+** Verfügbare, genutzte und Gesamtkapazität der Komponente der Daten
+
+
+* *Bundesland*
++
+Der aktuelle Status des Volumes:
+
++
+** Offline
++
+Lese- oder Schreibzugriff auf das Volume ist nicht zulässig.
+
+** Online
++
+Lese- und Schreibzugriff auf das Volume ist zulässig.
+
+** Eingeschränkt
++
+Begrenzte Vorgänge, wie etwa die Paritätsrekonstruktion, sind zulässig, der Datenzugriff jedoch nicht.
+
+** Gemischt
++
+Die Komponenten eines FlexGroup-Volumes sind nicht alle im selben Zustand.
+
+
+
+* *Verbindungspfad*
++
+Der Pfad, auf den das Volume angehängt ist.
+
+* *Storage Virtual Machine*
++
+Der SVM, die das Volume enthält.
+
+* *Aggregate*
++
+Der Name des Aggregats, auf dem sich das Volume befindet, oder die Anzahl der Aggregate, auf denen sich das FlexGroup Volume befindet.
+
++
+Sie können auf den Namen klicken, um Details auf der Seite „Aggregatdetails“ anzuzeigen. Bei FlexGroup Volumes können Sie auf die Nummer klicken, um die Aggregate anzuzeigen, die in der FlexGroup auf der Seite Aggregate verwendet werden.
+
+* *Tiering-Richtlinie*
++
+Die Tiering-Richtlinie für das Volume. Die Richtlinie wirkt sich nur dann aus, wenn das Volume auf einem FabricPool Aggregat bereitgestellt wird:
+
++
+** Keine. Die Daten für dieses Volume verbleiben immer auf der Performance-Tier.
+** Nur Snapshot: Nur Snapshot Daten werden automatisch in die Cloud-Tier verschoben. Alle anderen Daten verbleiben in der Performance-Tier.
+** Backup: Bei Datensicherungs-Volumes werden alle übertragenen Benutzerdaten in der Cloud-Tier gestartet, aber bei späteren Client-Lesevorgängen kann es dazu kommen, heiße Daten in die Performance-Tier zu verschieben.
+** Automatisch. Daten auf diesem Volume werden automatisch zwischen Performance-Tier und Cloud-Tier verschoben, wenn ONTAP feststellt, dass die Daten „`Hot`“ oder „`Cold`“ sind.
+
+
+* *SnapLock Typ*
++
+Der SnapLock-Typ des Aggregats, der das Volume enthält. Verfügbare Optionen sind Compliance, Enterprise, Non-SnapLock.
+
+* * Im Übergang*
++
+Ob die Transition des Volume abgeschlossen ist oder nicht.
+
+* *Schutzrolle*
++
+Die Schutzrolle eines Volumens:
+
++
+** Ungesichert
++
+Lese-/Schreib-Volume ohne ausgehende oder eingehende SnapMirror- oder SnapVault-Beziehungen
+
+** Geschützt
++
+Lese-/Schreib-Volume mit einer ausgehenden SnapMirror oder SnapVault Beziehung
+
+** Ziel
++
+Datensicherung (DP)-Volume oder Lese-/Schreib-Volume mit einer eingehenden SnapMirror oder SnapVault Beziehung
+
+** Keine Angabe
++
+Ein Volume, für das keine Sicherungsrollen gelten, wie z. B. ein Volume zur Lastenteilung, eine Datenkomponente oder ein temporäres Volume
+
++
+Sie können Ihren Zeiger über die Schutzrolle eines Volumes verschieben, um eine grafische Darstellung der Schutztopologie für das ausgewählte Volume anzuzeigen. Dazu können das Quell-Volume, die Gesamtzahl der ausgehenden synchronen und asynchronen SnapMirror Beziehungen und die Gesamtzahl der ausgehenden SnapVault Beziehungen gehören. Die blaue Markierung um die Lautstärke zeigt die ausgewählte Lautstärke an.
+
++
+Durch Klicken auf *Anzeigen von Schutzdetails* wird die Registerkarte Schutz auf der Seite Daten zum Zustand/Volumen angezeigt.
+
+
+
+* *Thin Provisioning*
++
+Gibt an, ob die Platzgarantie für das ausgewählte Volume festgelegt ist. Gültige Werte sind Ja und Nein
+
+* *Verfügbare Datenkapazität*
++
+Die Menge an physischem Speicherplatz, der derzeit für Daten im Volume verfügbar ist.
+
+* * Verfügbare Daten %*
++
+Der Prozentsatz des derzeit für Daten im Volume verfügbaren physischen Speicherplatzes.
+
+* *Genutzte Datenkapazität*
++
+Die Menge an physischem Speicherplatz, der von Daten im Volume genutzt wird
+
+* *Verwendete Daten %*
++
+Der Prozentsatz des physischen Speicherplatzes, der von Daten im Volume genutzt wird, basierend auf der insgesamt verfügbaren Datenkapazität.
+
+* *Logischer Raum Verwendet %*
++
+Der Prozentsatz des logischen Speicherplatzes, der von Daten im Volume genutzt wird, basierend auf der insgesamt verfügbaren Datenkapazität.
+
+* *Logical Space Reporting*
++
+Gibt an, ob das Volume über einen konfigurierten logischen Speicherplatz verfügt. Der Wert kann aktiviert, deaktiviert oder nicht zutreffend sein.
+
++
+Logischer Speicherplatz gibt die tatsächliche Größe der Daten an, die auf dem Volume gespeichert werden, ohne die Einsparungen durch ONTAP Storage-Effizienztechnologien zu verwenden.
+
+* *Gesamtkapazität Der Daten*
++
+Der insgesamt für Daten auf dem Volume verfügbare physische Speicherplatz.
+
+* *Storage-Klasse*
++
+Der Name der Speicherklasse. Diese Spalte wird nur für Infinite Volume angezeigt.
+
+* *Konstituierende Rolle*
++
+Der Rollenname der Komponente. Als Rollen können Namespace, Daten oder Namespace-Spiegelung genutzt werden. Diese Spalte wird nur für Infinite Volumes angezeigt.
+
+* *Status Verschieben*
++
+Der aktuelle Status der Volume-Verschiebung. Der Status kann „in Bearbeitung“, „Pause“, „Fehlgeschlagen“ oder „Abgeschlossen“ sein.
+
++
+Sie können den Mauszeiger über den Status bewegen, um weitere Informationen zum Vorgang der Volume-Verschiebung anzuzeigen, z. B. Quelle, Ziel, Startzeit des Vorgangs, Ende des Vorgangs, aktuelle Phase der Volume-Verschiebung, die gerade ausgeführt wird, Status (in Prozent) und geschätzte Endzeit.
+
+* *Caching-Richtlinie*
++
+Die dem ausgewählten Volume zugeordnete Caching-Richtlinie Die Richtlinie bietet Informationen darüber, wie das Flash Pool Caching für das Volume stattfindet.
+
++
+|===
+| Cache-Richtlinie | Beschreibung 
+
+
+ a| 
+Automatisch
+ a| 
+Lese-Cache speichert alle Metadaten-Blöcke und liest zufällig gelesene Benutzerdatenblöcke im Cache und schreibt alle zufällig überschreibbaren Datenblöcke für Benutzer im Cache.
+
+
+
+ a| 
+Keine
+ a| 
+Keine Benutzerdaten oder Metadatenblöcke im Cache.
+
+
+
+ a| 
+Alle
+ a| 
+Lese-Caches mit allen Benutzerdaten, die gelesen und geschrieben werden Die Richtlinie führt kein Schreib-Caching durch.
+
+
+
+ a| 
+Zufälliger Schreibzugriff
+ a| 
+Diese Richtlinie ist eine Kombination aus den Richtlinien All und No Read-Random Write und führt die folgenden Aktionen durch:
+
+** Lese-Caches mit allen Benutzerdaten, die gelesen und geschrieben werden
+** Der Schreib-Cache speichert alle zufällig überschreibenden Benutzerdatenblöcke.
+
+
+
+
+ a| 
+Alle Gelesen
+ a| 
+Lese-Caches für alle Metadaten, zufällig gelesene und sequenziell gelesene Benutzerdatenblöcke
+
+
+
+ a| 
+Alle Lese-Random-Schreibvorgänge
+ a| 
+Diese Richtlinie ist eine Kombination aus den Richtlinien All Read und No Read-Random Write und führt die folgenden Aktionen durch:
+
+** Lese-Caches für alle Metadaten, zufällig gelesene und sequenziell gelesene Benutzerdatenblöcke
+** Der Schreib-Cache speichert alle zufällig überschreibenden Benutzerdatenblöcke.
+
+
+
+
+ a| 
+Zufälliger Lesezugriff
+ a| 
+Lese-Caches für alle Metadaten, zufällig gelesene, sequenziell gelesene und zufällig geschriebene Datenblöcke der Benutzer
+
+
+
+ a| 
+Zufälliger Lesezugriff Mit Schreibzugriff
+ a| 
+Diese Richtlinie besteht aus einer Kombination der Richtlinien All Read Random Write und No Read-Random Write. Sie führt Folgendes aus:
+
+** Lesen Sie den Cache aller Metadaten, zufällig gelesene und sequenziell gelesene sowie zufällig geschriebene Datenblöcke für die Benutzerdaten.
+** Der Schreib-Cache speichert alle zufällig überschreibenden Benutzerdatenblöcke.
+
+
+
+
+ a| 
+Meta
+ a| 
+Lesezugriffe erfolgen nur durch Metadaten-Blöcke.
+
+
+
+ a| 
+Zufälliger Meta-Schreibvorgang
+ a| 
+Diese Richtlinie ist eine Kombination aus Meta und No Read-Random Write und führt Folgendes aus: Nur Lese-Caches
+
+
+
+ a| 
+Kein Lese-Random-Schreibvorgang
+ a| 
+Der Schreib-Cache speichert alle zufällig überschreibenden Benutzerdatenblöcke. Die Richtlinie führt kein Lese-Caching durch.
+
+
+
+ a| 
+Zufälliges Lesen
+ a| 
+Lese-Caches für alle Metadaten-Blöcke und zufällig gelesene Benutzerdatenblöcke
+
+
+
+ a| 
+Random-Read-Write
+ a| 
+Der Lese-Cache speichert alle Metadaten, zufällig gelesene und zufällig geschriebene Datenblöcke der Benutzer.
+
+
+
+ a| 
+Random-Read-Write – Zufällige Schreibzugriffe
+ a| 
+Diese Richtlinie ist eine Kombination aus den Richtlinien für zufällige Schreibvorgänge und Schreibvorgänge ohne Lese-/Schreibzugriff. Folgende Schritte werden vorgenommen:
+
+** Der Lese-Cache speichert alle Metadaten im Cache, Lesezugriffe erfolgen nach dem Zufallsprinzip, und die Datenblöcke werden zufällig überschrieben.
+** Der Schreib-Cache speichert alle zufällig überschreibenden Benutzerdatenblöcke.
+
+
+|===
+* *Cache-Aufbewahrungspriorität*
++
+Die Priorität für die Cache-Aufbewahrung für das Volume. Eine Priorität für die Cache-Aufbewahrung definiert, wie lange die Blöcke eines Volumes sich im Cache-Status befinden, sobald sie „kalt“ sind.
+
++
+** Niedrig
++
+Speichern Sie das kalte Volume zum geringstmöglichen Zeitpunkt
+
+** Normal
++
+Speichern Sie das kalte Volume-Blocks zum Standardzeitpunkt
+
+** Hoch
++
+Speichern Sie das kalte Volume für höchste Zeit
+
+
+
+* *Komprimierung*
++
+Gibt an, ob die Komprimierung für das Volume aktiviert ist In der Spalte wird entweder aktiviert oder deaktiviert angezeigt.
+
+* *Deduplizierung*
++
+Gibt an, ob die Deduplizierung für das Volume aktiviert ist In der Spalte wird entweder aktiviert oder deaktiviert angezeigt.
+
+* *Stil*
++
+Stil des Volumes: FlexVol oder FlexGroup.
+
+* *Typ*
++
+Der Volume-Typ. Der Volume-Typ kann Lese-, Schreib- und Datenschutz, Lastverteilung oder Daten-Cache sein.
+
+* * Cluster*
++
+Den Cluster, der das Ziel-Volume enthält. Sie können weitere Details zum Cluster anzeigen, indem Sie auf den Cluster-Namen klicken.
+
+* *Cluster-Knoten*
++
+Der Name des Node, zu dem das Volume gehört, oder die Anzahl der Nodes, auf denen sich das FlexGroup Volume befindet. Weitere Details zum Cluster-Node können Sie anzeigen, indem Sie auf den Node-Namen klicken.
+
++
+Sie können auf den Node-Namen klicken, um Details auf der Seite „Node Details“ anzuzeigen. Für FlexGroup Volumes können Sie auf die Zahl klicken, um die Knoten anzuzeigen, die in der FlexGroup auf der Seite Knoten verwendet werden.
+
+* *Lokale Snapshot-Richtlinie*
++
+Richtlinien für lokale Snapshot Kopien für die aufgeführten Volumes. Der Standardrichtlinienname ist Standard.
+
+
+
+
+
+== Bereich Filter
+
+Im Bereich Filter können Sie Filter festlegen, um die Art und Weise anzupassen, wie Informationen in der Liste Volumes angezeigt werden. Sie können Filter auswählen, die sich auf die Spalten Volume Status, Status und Anmerkung beziehen.
+
+[NOTE]
+====
+Die im Fensterbereich Filter angegebenen Filter überschreiben die Filter, die für die Spalten in der Liste Volumes angegeben sind.
+
+====

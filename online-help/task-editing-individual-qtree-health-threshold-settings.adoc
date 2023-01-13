@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-editing-individual-qtree-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Statusschwellenwerte für qtree-Kapazität für eine oder mehrere qtrees bearbeiten. Wenn ein Schwellenwert überschritten wird, werden Warnungen erzeugt und Sie erhalten Benachrichtigungen. Diese Benachrichtigungen helfen Ihnen, auf Basis des generierten Ereignisses vorbeugende Maßnahmen zu ergreifen. 
+---
+= Bearbeiten einzelner qtree-Statusschwellenwerte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Statusschwellenwerte für qtree-Kapazität für eine oder mehrere qtrees bearbeiten. Wenn ein Schwellenwert überschritten wird, werden Warnungen erzeugt und Sie erhalten Benachrichtigungen. Diese Benachrichtigungen helfen Ihnen, auf Basis des generierten Ereignisses vorbeugende Maßnahmen zu ergreifen.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Basierend auf Änderungen an den Schwellenwerten werden Ereignisse im nächsten Überwachungszyklus generiert oder veraltet.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie auf der Seite *Health/Storage Virtual Machines* Inventory die SVM aus, auf der sich der qtree befindet.
+. Klicken Sie auf der Seite * Health/Storage Virtual Machine* Details auf die Registerkarte qtrees.
+. Wählen Sie eine oder mehrere qtrees aus und klicken Sie dann auf *Schwellenwerte bearbeiten*.
+. Ändern Sie im Dialogfeld *Qtree Schwellenwerte bearbeiten* die Kapazitätsschwellenwerte für den ausgewählten qtree oder qtrees und klicken Sie auf *Speichern*.
+

@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-nodes-running-older-versions-of-ontap.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Cluster-Inventory-Bericht so anpassen, dass nach älteren ONTAP-Versionen gefiltert werden. 
+---
+= Sie können den Cluster-Inventory-Bericht anpassen, um Nodes anzuzeigen, auf denen ältere Versionen der ONTAP Software ausgeführt werden
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Cluster-Inventory-Bericht so anpassen, dass nach älteren ONTAP-Versionen gefiltert werden.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach Cluster oder Node:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um Knoten zu filtern, die nicht ONTAP 8.3 ausführen, klicken Sie auf die Spalte *ONTAP Version* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *nicht gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *8.3*.
+. Klicken Sie auf *OK*.
+

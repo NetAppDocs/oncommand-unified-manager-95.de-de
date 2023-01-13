@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-impacting-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Ereignisbericht so anpassen, dass Ereignisse angezeigt werden, die nach den meisten Vorfällen kategorisiert und dem Administrator zugewiesen sind. Sie können den Bericht nach den Auswirkungen und dem Admin-Namen filtern. 
+---
+= Anpassen des Ereignisberichts zur Anzeige von Ereignissen, die die Verfügbarkeit beeinträchtigen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Ereignisbericht so anpassen, dass Ereignisse angezeigt werden, die nach den meisten Vorfällen kategorisiert und dem Administrator zugewiesen sind. Sie können den Bericht nach den Auswirkungen und dem Admin-Namen filtern.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. Um Verfügbarkeitsereignisse zu filtern, klicken Sie in die Spalte *Impact Area* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *Vorfall*.
+. Klicken Sie auf *OK*.
+

@@ -1,0 +1,52 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-overcommitted-threshold-breached.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Aggregat-Kapazitäts- und Auslastungsbericht anpassen, um die Aggregate anzuzeigen, sortiert nach dem Prozentsatz der überbelegten Kapazität, sodass Sie den noch in den Aggregaten verfügbaren Speicherplatz anzeigen können. 
+---
+= Anpassung des Aggregat-Kapazitäts- und Auslastungsberichts, um Aggregate mit überhöhten Schwellenwerten anzuzeigen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Aggregat-Kapazitäts- und Auslastungsbericht anpassen, um die Aggregate anzuzeigen, sortiert nach dem Prozentsatz der überbelegten Kapazität, sodass Sie den noch in den Aggregaten verfügbaren Speicherplatz anzeigen können.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach Cluster oder HA-Paar:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um den Unterschied zwischen dem übernused used prozentual und dem überzugestodenen Schwellenwert anzuzeigen, fügen Sie eine neue Spalte hinzu.
++
+.. Wählen Sie eine Spalte aus, und klicken Sie auf image:../media/click-to-see-menu.gif[""].
+.. Wählen Sie *Spalte* > *Neue Berechnete Spalte*.
+.. Geben Sie im Dialogfeld * Neue berechnete Spalte* eine Spaltenbezeichnung ein.
+.. Wählen Sie in der Liste Kategorie auswählen die Option *Math* aus.
+.. Wählen Sie aus der Liste *Funktion auswählen* die Option *UNTERSCHIED*.
+.. Wählen Sie in der Liste Spalte 1 die Option *Überbeplante Schwelle (%)* aus.
+.. Wählen Sie aus der Liste Spalte 2 die Option *überzugestogene Kapazität %* aus.
+.. Klicken Sie auf *OK*.
+
+
+. Um die Werte größer als Null in der neuen Spalte zu filtern, klicken Sie in die Spalte *Neu berechnet* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Liste *Bedingung* die Option *größer als* aus.
+. Geben Sie im Feld *Wert* ein `0` Und klicken Sie auf *OK*.
+. Um die Werte zu sortieren, klicken Sie in *Neue berechnete Spalte* und klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+. Wählen Sie *Filter* > *Oben/Unten N*.
+. Wählen Sie im Dialogfeld *Top/Bottom N* aus dem Feld *Filter* die Option *Top N* aus, und geben Sie einen Wert in das Textfeld ein.
+. Klicken Sie auf *OK*.
+

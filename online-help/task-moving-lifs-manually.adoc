@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-moving-lifs-manually.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Storage Virtual Machines \(SVMs\) enthalten Daten-Volumes und eine oder mehrere logische Schnittstellen \(LIFs\), über die die SVM den Clients Daten zur Verfügung stellt. Sie können Daten-LIFs innerhalb derselben SVM von einem physischen Port zu einem anderen verschieben. Möglicherweise möchten Sie dies zum Lastausgleich verbessern oder bei Wartungsarbeiten und Performance-Tuning unterstützen.' 
+---
+= LIFs werden manuell verschoben
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Storage Virtual Machines (SVMs) enthalten Daten-Volumes und eine oder mehrere logische Schnittstellen (LIFs), über die die SVM den Clients Daten zur Verfügung stellt. Sie können Daten-LIFs innerhalb derselben SVM von einem physischen Port zu einem anderen verschieben. Möglicherweise möchten Sie dies zum Lastausgleich verbessern oder bei Wartungsarbeiten und Performance-Tuning unterstützen.
+
+
+
+== Über diese Aufgabe
+
+Es gibt die folgenden Typen von LIFs:
+
+* Daten-LIFs: Sind einer SVM zugeordnet und zur Kommunikation mit den Clients verwendet.
+* Cluster-Management-LIFs: Werden zum Verwalten von Nodes, SVMs und dem Cluster selbst verwendet.
+* Cluster-LIFs: Werden für den Intracluster-Datenverkehr verwendet.
+* Intercluster LIFs: Werden für die Kommunikation zwischen Clustern verwendet.
+* Intracluster LIFs: Wird für die Kommunikation zwischen HA-Paaren verwendet.
+* SVM-Management-LIFs: Daten-LIFs, die einer SVM zugeordnet und zum Management dieser SVM verwendet werden.
+
+
+image::../media/cluster-network-types.gif[Cluster-Netzwerktypen]
+
+In diesem Workflow wird das Verschieben von Daten-LIFs beschrieben. Dies gilt für NAS (NFS und CIFS) LIFs, nicht jedoch für SAN-LIFs (FC und iSCSI).
+
+[NOTE]
+====
+Wenn ein LIF verschoben wird, das mit CIFS-Freigaben verbunden ist, wird die Verbindung von Clients, die auf CIFS-Freigaben zugreifen, getrennt. Sämtliche Lese- oder Schreibanfragen an die CIFS-Freigaben werden unterbrochen.
+
+====
+[NOTE]
+====
+Informationen zum Verschieben anderer Arten von LIFs, einschließlich Details zum Verschieben VON LIFS über verbundene CIFS-Freigaben, finden Sie in der ONTAP-Netzwerkdokumentation.
+
+====
+Sie können die folgenden grundlegenden Aktionen in Bezug auf Daten-LIFs ausführen:
+
+* Zeigt alle Daten-LIFs an.
+* Identifizieren der am stärksten ausgelasteten LIFs
+* Ermitteln Sie den besten Node zur Annahme einer überlasteten LIF.
+* Ändern Sie den Home-Port oder Node für eine LIF, um ihren bevorzugten Speicherort im Cluster zu ändern.
++
+Sie sollten stattdessen eine LIF verschieben, anstatt eine LIF zu migrieren, um eine dauerhafte Änderung zu erzielen. Um zum ursprünglichen Home Port zurückzukehren, sollten Sie das LIF zurücksetzen.
+
+* Eine Daten-LIF zu einem anderen Port migrieren, um eine temporäre Änderung vorzunehmen, die verwendet werden kann, wenn der Home Port oder Node ein Problem aufweist oder eine geplante Wartung durchgeführt wird.
+* Zurücksetzen einer Daten-LIF auf ihren Home-Port
+

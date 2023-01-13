@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-cache-miss-ratio-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: Das Zählerdiagramm im Performance Explorer Cache Miss Ratio zeigt den Prozentsatz der Leseanforderungen von Client-Anwendungen an, die von der Festplatte zurückgegeben werden, anstatt vom Cache zurückgegeben zu werden. 
+---
+= Zählerdiagramm der Performance im Cache-Verhältnis
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Zählerdiagramm im Performance Explorer Cache Miss Ratio zeigt den Prozentsatz der Leseanforderungen von Client-Anwendungen an, die von der Festplatte zurückgegeben werden, anstatt vom Cache zurückgegeben zu werden.
+
+Das Popup-Fenster, das angezeigt wird, wenn sich der Cursor im Diagrammbereich befindet, zeigt die spezifischen Zählerwerte zu bestimmten Zeiten an.
+
+Auf der unteren Seite der Kartenseite werden Informationen zum Mindest-, maximal-, Durchschnitts- und 95. Perzentil-Cacheverhältnis für den ausgewählten Zeitbereich angezeigt.
+
+
+
+== Cache-Miss-Verhältnis - Zählerdiagramm insgesamt
+
+Zeigt den Prozentsatz der Leseanforderungen von Client-Anwendungen an, die von der Festplatte zurückgegeben werden, anstatt vom Cache zurückgegeben zu werden.
+
+Diese Diagrammoption gilt nur, wenn das ausgewählte Objekt ein Volume ist.
+
+
+
+== *Zoom-Ansicht*-Taste
+
+Zeigt eine vergrößerte Ansicht der Daten des Zählerdiagramms an.
+
+* Veranstaltungen
++
+Das Auftreten von kritischen, Warn- und Informationsereignissen wird in den Zeitlinien über den Diagrammen angezeigt.
+
+* Zähler
++
+Die Zähler im linken Teilfenster zeigen an, welche Zählerwerte angezeigt werden. Deaktivieren oder Auswählen des image:../media/eye-icon.gif[""] Dies wird mit einem Zähler verknüpft, versteckt sich und zeigt die Zählerinformationen aus dem Diagramm an und kann beim Vergleich von Objekten helfen.
+
+

@@ -1,0 +1,52 @@
+---
+permalink: performance-checker/task-determining-whether-a-workload-has-a-performance-issue.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können mit Unified Manager feststellen, ob ein festgestellter Performance-Ereignis tatsächlich durch ein Performance-Problem auf dem Cluster verursacht wurde. Das Ereignis konnte beispielsweise zu einem Spitzenwert bei der Aktivität geführt haben, der die Reaktionszeit steigerte, aber jetzt ist die Reaktionszeit wieder auf das übliche Niveau zurückgekehrt. 
+---
+= Ermitteln, ob ein Workload ein Performance-Problem aufweist
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können mit Unified Manager feststellen, ob ein festgestellter Performance-Ereignis tatsächlich durch ein Performance-Problem auf dem Cluster verursacht wurde. Das Ereignis konnte beispielsweise zu einem Spitzenwert bei der Aktivität geführt haben, der die Reaktionszeit steigerte, aber jetzt ist die Reaktionszeit wieder auf das übliche Niveau zurückgekehrt.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+* Sie müssen den Namen des Volumes oder der zugehörigen LUN identifiziert haben, die Sie analysieren möchten.
+* Unified Manager muss Performance-Statistiken vom Cluster mindestens fünf Tage gesammelt und analysiert haben.
+
+
+
+
+== Über diese Aufgabe
+
+Wenn Sie die Seite „Ereignisdetails“ aufrufen, können Sie auf den Namenslink für ein Volume klicken, um direkt zur Seite „Performance/Volume Details“ zu gelangen.
+
+
+
+== Schritte
+
+. Geben Sie in der *Search*-Leiste mindestens die ersten drei Zeichen des Volume-Namens ein.
++
+Der Name des Volume wird in den Suchergebnissen angezeigt.
+
+. Klicken Sie auf den Namen des Volumes.
++
+Das Volume wird auf der Seite Performance/Volume Details angezeigt.
+
+. Klicken Sie im *Historic Data*-Diagramm auf *5d*, um die letzten fünf Tage historischer Daten anzuzeigen.
+. Lesen Sie das *Latenz*-Diagramm, um die folgenden Fragen zu beantworten:
++
+** Gibt es neue Performance-Ereignisse?
+** Gibt es historische Performance-Ereignisse, die darauf hindeuten, dass in der Vergangenheit Probleme mit dem Volume aufgetreten sind?
+** Gibt es Spitzen in der Reaktionszeit, auch wenn sich die Spitzen innerhalb des erwarteten Bereichs befinden?
+** Gab es Konfigurationsänderungen auf dem Cluster, die sich möglicherweise auf die Performance auswirken? Wenn bei der Antwortzeit des Volumes keine Performance-Ereignisse, Spitzenlasten oder kürzlich geänderte Konfigurationen angezeigt werden, die sich möglicherweise auf die Reaktionszeit auswirken, können Sie das durch das Cluster verursachte Performance-Problem ausschließen.
+
+
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-qtree-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können benutzerdefinierte Berichte erstellen, um die Kapazität und die Auslastung der qtrees des Systems zu analysieren. Beispielsweise können Sie Berichte erstellen, um qtrees zu sortieren und zu bestimmen, ob gegen die Festplatten- oder DateiSoft-Limits verstoßen wurde. 
+---
+= Anpassungen hinsichtlich Kapazität und Auslastung von qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können benutzerdefinierte Berichte erstellen, um die Kapazität und Auslastung der qtrees des Systems zu analysieren. Beispielsweise können Sie Berichte erstellen, um qtrees zu sortieren und zu bestimmen, ob gegen die Festplatten- oder DateiSoft-Limits verstoßen wurde.

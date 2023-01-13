@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Konfiguration/Warnmeldungen können Sie die Liste der für verschiedene Ereignisse erstellten Warnmeldungen anzeigen. Zudem können Sie Eigenschaften von Warnmeldungen anzeigen, z. B. Alarmbeschreibung, Benachrichtigungsmethode und -Häufigkeit, Ereignisse, die die Warnung auslösen, E-Mail-Empfänger der Warnmeldungen und betroffene Ressourcen wie Cluster, Aggregate und Volumes. 
+---
+= Anzeigen von Meldungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Konfiguration/Warnmeldungen können Sie die Liste der für verschiedene Ereignisse erstellten Warnmeldungen anzeigen. Zudem können Sie Eigenschaften von Warnmeldungen anzeigen, z. B. Alarmbeschreibung, Benachrichtigungsmethode und -Häufigkeit, Ereignisse, die die Warnung auslösen, E-Mail-Empfänger der Warnmeldungen und betroffene Ressourcen wie Cluster, Aggregate und Volumes.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Konfiguration* > *Alerting*.
++
+Die Liste der Warnungen wird auf der Seite Konfiguration/Warnmeldungen angezeigt.
+
+

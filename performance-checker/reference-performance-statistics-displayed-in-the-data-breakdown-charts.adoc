@@ -1,0 +1,124 @@
+---
+permalink: performance-checker/reference-performance-statistics-displayed-in-the-data-breakdown-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Diagramme verwenden, um Performance-Trends für ein Volume anzuzeigen. Sie können auch Statistiken für Lese- und Schreibvorgänge, Netzwerkprotokollaktivitäten, die Auswirkungen einer QoS-Richtliniengruppendrosselung auf Latenz, das Verhältnis von Lese- und Schreibzugriffen auf Cache Storage, die von einem Workload verwendete Cluster-CPU-Gesamtzeit und bestimmte Cluster-Komponenten anzeigen. 
+---
+= In den Aufschlüsselung der Daten werden Performance-Statistiken angezeigt
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Diagramme verwenden, um Performance-Trends für ein Volume anzuzeigen. Sie können auch Statistiken für Lese- und Schreibvorgänge, Netzwerkprotokollaktivitäten, die Auswirkungen einer QoS-Richtliniengruppendrosselung auf Latenz, das Verhältnis von Lese- und Schreibzugriffen auf Cache Storage, die von einem Workload verwendete Cluster-CPU-Gesamtzeit und bestimmte Cluster-Komponenten anzeigen.
+
+Diese Ansichten zeigen Statistiken von maximal 30 Tagen vom aktuellen Tag an. Wenn Sie im historischen Datendiagramm je nach Bildschirmauflösung einen Zeitrahmen von mehr als einem Tag auswählen, werden in den Diagrammen die maximalen Werte für Latenz und IOPS über die Anzahl der Tage hinweg angezeigt.
+
+[NOTE]
+====
+Sie können das Kontrollkästchen * Alle auswählen* verwenden, um alle aufgeführten Diagrammoptionen auszuwählen oder zu deaktivieren.
+
+====
+* *Latenz*
++
+In den folgenden Diagrammen werden Informationen zur Latenz oder Reaktionszeit für den ausgewählten Workload detailliert aufgeführt:
+
++
+** *Clusterkomponenten*
++
+Zeigt ein Diagramm der Zeit an, die für jede Cluster-Komponente verwendet wurde, die vom ausgewählten Volume verwendet wurde.
+
++
+Das Diagramm hilft Ihnen, die Auswirkung auf die Latenz für jede Komponente in Verbindung mit der gesamten Latenz zu bestimmen. Sie können das Kontrollkästchen neben jeder Komponente verwenden, um das Diagramm anzuzeigen und auszublenden.
+
++
+Bei QoS-Richtliniengruppen werden Daten nur für benutzerdefinierte Richtliniengruppen angezeigt. Nullen werden für systemdefinierte Richtliniengruppen angezeigt, z. B. für Standardrichtliniengruppen.
+
+** *Lese-/Schreib-Latenz*
++
+Zeigt ein Diagramm der Latenzen der erfolgreichen Lese- und Schreibanforderungen vom ausgewählten Volume-Workload im ausgewählten Zeitrahmen an.
+
++
+Schreibanforderungen sind eine orangefarbene Zeile und Leseanforderungen sind eine blaue Zeile. Die Anforderungen sind spezifisch hinsichtlich der Latenz für den ausgewählten Volume-Workload und nicht für alle Workloads im Cluster.
+
++
+[NOTE]
+====
+Die Lese- und Schreib-Statistiken ergeben möglicherweise nicht immer die im Latenzdiagramm angezeigten Statistiken zur gesamten Latenz. Das erwartete Verhalten hängt davon ab, wie Unified Manager Statistiken zu Lese- und Schreibvorgängen für einen Workload sammelt und analysiert.
+
+====
+** *Policy Group Impact*
++
+Zeigt ein Diagramm des prozentualen Anteils der Latenz für den ausgewählten Volume-Workload an, der durch das Durchsatzlimit seiner QoS-Richtliniengruppe beeinträchtigt wird.
+
++
+Wenn der Workload gedrosselt wird, zeigt der Prozentsatz an, wie sehr die Drosselung zu einem bestimmten Zeitpunkt zur Latenz beigetragen hat. Die Prozentwerte geben die Drosselung an:
+
++
+*** 0% = keine Drosselung
+*** > 0% = Drosselung
+*** > 20% = kritische Drosselung Wenn der Cluster mehr Arbeit erledigen kann, können Sie die Drosselung durch Erhöhung des Richtliniengruppenlimits verringern. Eine andere Option ist es, den Workload in ein weniger stark ausgelasteten Aggregat zu verschieben.
+
+
+
+
++
+[NOTE]
+====
+Das Diagramm wird nur für Workloads in einer benutzerdefinierten QoS-Richtliniengruppe mit einem festgelegten Durchsatzlimit angezeigt. Sie wird nicht angezeigt, ob sich die Workloads in einer von dem System definierten Richtliniengruppe befinden, z. B. in der Standardrichtliniengruppe, oder in einer Richtliniengruppe, die kein QoS-Limit hat. Bei einer QoS-Richtliniengruppe können Sie den Mauszeiger auf den Namen der Richtliniengruppe zeigen, um ihr Durchsatzlimit und das letzte Mal anzuzeigen. Wenn die Richtliniengruppe geändert wurde, bevor das zugehörige Cluster zu Unified Manager hinzugefügt wurde, handelt es sich bei der letzten geänderten Zeit um das Datum und die Uhrzeit, zu der Unified Manager das Cluster zum ersten Mal entdeckte.
+
+====
+* *IOPS*
++
+Die folgenden Diagramme zeigen die IOPS-Daten für den ausgewählten Workload an:
+
++
+** *Lesen/Schreiben/Sonstiges*
++
+Zeigt ein Diagramm an, das die Anzahl der Lese- und Schreib-IOPS und anderer IOPS pro Sekunde im ausgewählten Zeitrahmen anzeigt.
+
++
+Andere IOPS sind Protokollaktivitäten, die vom Client initiiert werden und keine Lese- oder Schreibvorgänge sind. In einer NFS-Umgebung könnten dies beispielsweise Metadatenvorgänge wie getattr, setattr oder fsstat sein. In einer CIFS-Umgebung könnte es sich um Attributsuchen, Verzeichnislisten oder Virenschutzprüfungen handeln. Schreib-IOPS sind eine orangefarbene Linie und Leseanforderungen sind eine blaue Linie. Die Anforderungen sind spezifisch für alle Vorgänge des ausgewählten Volume-Workloads und nicht für alle Vorgänge im Cluster.
+
+
+
+* *Mbps*
++
+Die folgenden Diagramme zeigen die Durchsatzdaten für den ausgewählten Workload an:
+
++
+** *Cache Trefferquote*
++
+Zeigt ein Diagramm des prozentualen Anteils der Leseanforderungen von Client-Applikationen an, die über den Cache im ausgewählten Zeitrahmen zufrieden sind.
+
++
+Der Cache könnte sich auf Flash Cache-Karten oder Solid State-Laufwerken (SSDs) in Flash Pool Aggregaten befinden. Ein Cache-Treffer in Blau ist ein aus dem Cache gelesener Treffer. Ein Cache-Treffer in orange ist ein Lesevorgang von einer Festplatte im Aggregat. Die Anforderungen sind spezifisch für den ausgewählten Volume-Workload, nicht jedoch für alle Workloads im Cluster.
+
++
+Ausführlichere Informationen zur Volume-Cache-Nutzung können Sie auf den Integritätsseiten von Unified Manager und in OnCommand System Manager anzeigen.
+
+
+
+* *Komponenten*
++
+Die folgenden Diagramme zeigen die Daten nach Clusterkomponenten, die vom ausgewählten Workload verwendet werden:
+
++
+** *Cluster CPU-Zeit*
++
+Zeigt ein Diagramm der CPU-Nutzungszeit in ms für alle Nodes im Cluster an, die vom ausgewählten Workload verwendet werden.
+
++
+Das Diagramm zeigt die kombinierte CPU-Nutzungszeit für die Netzwerkverarbeitung und Datenverarbeitung an. Auch die CPU-Zeit für systemdefinierte Workloads, die dem ausgewählten Workload zugewiesen sind und dieselben Nodes für die Datenverarbeitung nutzen, ist inbegriffen. Anhand der Tabelle können Sie ermitteln, ob der Workload ein hoher Verbrauch der CPU-Ressourcen auf dem Cluster darstellt. Mithilfe des Diagramms können Sie auch zusammen mit dem Latenzdiagramm für Lese-/Schreibvorgänge unter dem Latenzdiagramm oder dem Diagramm „Lese-/Schreibvorgänge/anderes“ unter dem IOPS-Diagramm festlegen, wie Änderungen an der Workload-Aktivität im Laufe der Zeit die Cluster-CPU-Auslastung beeinträchtigen.
+
+** * Datenträgernutzung*
++
+Zeigt ein Diagramm an, das den Prozentsatz der Auslastung auf den Datenfestplatten im Storage-Aggregat im ausgewählten Zeitrahmen anzeigt.
+
++
+Die Auslastung schließt nur Lese- und Schreibanfragen der Festplatte aus dem ausgewählten Volume-Workload ein. Lesezugriffe aus dem Cache sind nicht enthalten. Die Auslastung ist spezifisch für den ausgewählten Volume Workload, nicht für alle Workloads auf den Festplatten. Wenn ein überwachtes Volume an einer Volume-Verschiebung beteiligt ist, beziehen sich die Auslastungswerte in diesem Diagramm auf das Zielaggregat, zu dem das Volume verschoben wurde.
+
+
+
+

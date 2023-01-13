@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-event-retention-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können die Ereigniseinstellungen so konfigurieren, dass Ereignisse \(Informationen, aufgelöst oder veraltet\) nach einer bestimmten Zeit und zu einer bestimmten Frequenz automatisch gelöscht werden. Sie können diese Ereignisse auch manuell löschen.' 
+---
+= Dialogfeld „Einstellungen für die Ereignisaufbewahrung“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Ereigniseinstellungen so konfigurieren, dass Ereignisse (Informationen, aufgelöst oder veraltet) nach einer bestimmten Zeit und zu einer bestimmten Frequenz automatisch gelöscht werden. Sie können diese Ereignisse auch manuell löschen.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Ereigniseinstellungen
+
+Sie können die folgenden Optionen konfigurieren:
+
+* *Löschen von Informationen, gelösten und veralteten Ereignissen, die älter sind als*
++
+Hiermit können Sie den Aufbewahrungszeitraum festlegen, nach dem Ereignisse, die als Information, Lösung oder veraltet markiert sind, vom Verwaltungsserver entfernt werden.
+
++
+Der Standardwert ist 180 Tage. Die Aufbewahrung der Ereignisse über mehr als 180 Tage wirkt sich auf die Leistung aus und wird nicht empfohlen. Die untere Grenze für die Ereignisaufbewahrungsdauer beträgt 7 Tage, obwohl es keine Obergrenze gibt.
+
+* *Zeitplan Löschen*
++
+Hiermit können Sie festlegen, wie oft alle Ereignisse, die als Information, Lösung oder veraltet markiert sind und deren Altersgrenze überschritten wurde, automatisch vom Verwaltungsserver gelöscht werden. Die möglichen Werte sind „Daily“, „Weekly“ oder „Monthly“.
+
++
+Der Standardwert ist Daily.
+
+* *Jetzt Löschen*
++
+Ermöglicht Ihnen das manuelle Löschen aller Informationen, gelösten und veralteten Ereignisse, die den angegebenen Aufbewahrungszeitraum überschritten haben.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Befehlsschaltflächen können Sie die Setup-Optionen speichern oder abbrechen:
+
+* *Speichern und Schließen*
++
+Speichert die Konfigurationseinstellungen für die ausgewählte Option und schließt das Dialogfeld.
+
+* *Abbrechen*
++
+Bricht die letzten Änderungen ab und schließt das Dialogfeld.
+
+

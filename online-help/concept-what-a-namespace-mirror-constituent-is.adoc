@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-a-namespace-mirror-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Eine Namespace-Spiegelkomponente ist eine Kopie der Namespace-Komponente eines Clusters, die innerhalb eines Infinite Volume zu einer Spiegelung für die Datensicherung eingesetzt wird. Die Namespace-Spiegelkomponente übernimmt zwei Rollen: Sie sorgt für die Datensicherung der Namespace-Komponente und unterstützt SnapDiff für inkrementelles Tape Backup von Infinite Volumes.' 
+---
+= Eine Namespace-Spiegelkomponente ist das
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eine Namespace-Spiegelkomponente ist eine Kopie der Namespace-Komponente eines Clusters, die innerhalb eines Infinite Volume zu einer Spiegelung für die Datensicherung eingesetzt wird. Die Namespace-Spiegelkomponente übernimmt zwei Rollen: Sie sorgt für die Datensicherung der Namespace-Komponente und unterstützt SnapDiff für inkrementelles Tape Backup von Infinite Volumes.

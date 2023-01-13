@@ -1,0 +1,59 @@
+---
+permalink: online-help/reference-port-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Verwenden Sie die Seite Angaben zu Leistung/Anschluss, um eine Liste der physischen und logischen Attribute des Ports anzuzeigen. Diese Informationen könnten bei der Beantwortung von Fragen zur Leistungsfähigkeit helfen. 
+---
+= Informationen zu Leistung/Anschluss
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Verwenden Sie die Seite Angaben zu Leistung/Anschluss, um eine Liste der physischen und logischen Attribute des Ports anzuzeigen. Diese Informationen könnten bei der Beantwortung von Fragen zur Leistungsfähigkeit helfen.
+
+
+
+== Port-Attribute
+
+* * WWN*
++
+Der WWN (World Wide Name) des Ports.
+
+* *Knoten*
++
+Der Name des Node, auf dem sich der physische Port befindet. Sie können auf den Namen klicken, um Node-Details auf der Seite Performance/Node Explorer anzuzeigen.
+
+* * Cluster*
++
+Der Name des Clusters, zu dem der Port gehört. Sie können auf den Namen klicken, um Cluster-Details auf der Seite „Performance/Cluster Explorer“ anzuzeigen.
+
+* *Betriebsgeschwindigkeit*
++
+Die tatsächliche Geschwindigkeit, mit der der Port für die Ausführung konfiguriert ist.
+
++
+FCP-Ports sind automatisch Erkennung und werden als „`Auto`“ angezeigt.
+
+* * Rolle*
++
+Die Netzwerkanschlussfunktion: Entweder Data oder Cluster.
+
++
+FCP-Ports können keine Rolle haben, und dieses Feld wird nicht angezeigt.
+
+* *Typ*
++
+Der Porttyp: Entweder Netzwerk oder FCP (Fibre Channel Protocol).
+
+* *Bundesland*
++
+Der Verbindungsstatus des Ports.
+
++
+** Bei Netzwerkports wird ein aktiver Port als „`up`“ aufgeführt und ein inaktiver Port wird als „`Down`“ aufgeführt.
+** Bei FCP-Ports wird ein aktiver Port als „`Online`“ angezeigt, und ein inaktiver Port wird als „`Link not connected`“ aufgeführt.
+
+
+

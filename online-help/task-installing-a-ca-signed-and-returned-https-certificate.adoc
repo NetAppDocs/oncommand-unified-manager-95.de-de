@@ -1,0 +1,59 @@
+---
+permalink: online-help/task-installing-a-ca-signed-and-returned-https-certificate.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können ein Sicherheitszertifikat hochladen und installieren, nachdem eine Zertifizierungsstelle unterschrieben und zurückgesendet wurde. Die Datei, die Sie hochladen und installieren, muss eine signierte Version des vorhandenen selbstsignierten Zertifikats sein. Ein CA-signiertes Zertifikat hilft bei der Verhinderung von man-in-the-Middle-Angriffen und bietet besseren Schutz als ein selbstsigniertes Zertifikat. 
+---
+= Installieren eines HTTPS-Sicherheitszertifikats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein Sicherheitszertifikat hochladen und installieren, nachdem eine Zertifizierungsstelle unterschrieben und zurückgesendet wurde. Die Datei, die Sie hochladen und installieren, muss eine signierte Version des vorhandenen selbstsignierten Zertifikats sein. Ein CA-signiertes Zertifikat hilft bei der Verhinderung von man-in-the-Middle-Angriffen und bietet besseren Schutz als ein selbstsigniertes Zertifikat.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen die folgenden Aktionen durchgeführt haben:
+
+* Laden Sie die Zertifikatsignierungsanforderungsdatei herunter und lassen Sie sie von einer Zertifizierungsstelle signiert werden
+* Die Zertifikatskette wurde im PEM-Format gespeichert
+* Alle Zertifikate in der Kette enthalten, vom Unified Manager-Serverzertifikat bis zum Stammzertifikat, einschließlich aller vorhandenen Zwischenzertifikate
+
+
+Sie müssen die OnCommand-Administratorrolle besitzen.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im Menü *Setup* auf *HTTPS-Zertifikat*.
+. Klicken Sie auf *HTTPS-Zertifikat installieren*.
+. Klicken Sie im angezeigten Dialogfeld auf *Datei auswählen...*, um die hochzuladende Datei zu suchen.
+. Wählen Sie die Datei aus und klicken Sie dann auf *Installieren*, um die Datei zu installieren.
+
+
+
+
+== Beispiel für eine Zertifikatskette
+
+Das folgende Beispiel zeigt, wie die Zertifikatkettendatei angezeigt werden kann:
+
+[listing]
+----
+-----BEGIN CERTIFICATE-----
+<*Server certificate*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#1 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#2 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Root signing certificate*>
+-----END CERTIFICATE-----
+----

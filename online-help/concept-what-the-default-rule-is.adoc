@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-the-default-rule-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Die Standardregel ist die Regel, die in der Datenrichtlinie einer Storage Virtual Machine \(SVM\) mit Infinite Volume vorhanden ist. Sie bestimmt die Platzierung der Daten, die auf das Infinite Volume geschrieben werden, wenn keine der Bedingungen in den vorhandenen Regeln mit den zu schreibenden Daten übereinstimmen.' 
+---
+= Die Standardregel ist
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Standardregel dabei ist die Regel, die in der Datenrichtlinie einer Storage Virtual Machine (SVM) mit Infinite Volume vorhanden ist. Sie bestimmt die Platzierung der Daten, die auf das Infinite Volume geschrieben werden, wenn keine der Bedingungen in den vorhandenen Regeln mit den zu schreibenden Daten übereinstimmen.
+
+Die Standardregel ist immer die letzte Regel in einer Datenrichtlinie und kann nicht neu angeordnet werden. Nehmen wir zum Beispiel eine Datenrichtlinie mit drei Regeln. Regel-1 speichert alle .pdf-Dateien in der Klasse __High_Performance__Storage. Regel-2 speichert alle Dateien, die dem Administrator gehören, und Dateinamen, die mit *.xls enden, in der Speicherklasse _Archive_CONFIR_. Die dritte Regel ist die Standardregel für die Storage-Klasse _low_Performance_.
+
+Wenn eine Reihe von *.jpg-Dateien, die nicht dem Administrator gehören, in das Infinite Volume geschrieben wird, wird die Standardregel verwendet, um diese .jpg-Dateien in der Speicherklasse _low_Performance_ zu platzieren. Regel-1 und Regel-2 werden nicht verwendet, da die geschriebenen Daten nicht mit diesen Regeln übereinstimmen.

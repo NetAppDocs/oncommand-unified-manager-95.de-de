@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-thresholds-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die entsprechende Seite Configuration/Health schwellers verwenden, um globale Statusschwellenwerte für Aggregate und Volumes zu konfigurieren und globale lag-Warn- und Fehlerschwellenwerte für nicht gemanagte Sicherungsbeziehungen zu konfigurieren. 
+---
+= Beschreibung der Seiten für den Systemzustand
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die entsprechende Seite Configuration/Health schwellers verwenden, um globale Statusschwellenwerte für Aggregate und Volumes zu konfigurieren und globale lag-Warn- und Fehlerschwellenwerte für nicht gemanagte Sicherungsbeziehungen zu konfigurieren.

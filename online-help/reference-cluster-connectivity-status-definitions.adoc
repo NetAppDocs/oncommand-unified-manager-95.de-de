@@ -1,0 +1,51 @@
+---
+permalink: online-help/reference-cluster-connectivity-status-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Die Konnektivität zwischen den Clustern in einer MetroCluster-Konfiguration kann einen der folgenden Status aufweisen: Optimal, beeinträchtigt oder ausgefallen. Wenn Sie über den Konnektivitätsstatus verfügen, können Sie Ihre MetroCluster Konfigurationen effizient managen.' 
+---
+= Statusdefinitionen für Cluster-Konnektivität
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Konnektivität zwischen den Clustern in einer MetroCluster-Konfiguration kann einen der folgenden Status aufweisen: Optimal, beeinträchtigt oder ausgefallen. Wenn Sie über den Konnektivitätsstatus verfügen, können Sie Ihre MetroCluster Konfigurationen effizient managen.
+
+|===
+| Konnektivitätsstatus | Beschreibung | Wird angezeigt 
+
+
+ a| 
+Optimal
+ a| 
+Die Konnektivität zwischen den Clustern in der MetroCluster Konfiguration ist normal.
+ a| 
+image:../media/metrocluster-connectivity-optimal.gif[""]
+
+
+
+ a| 
+Beeinträchtigt
+ a| 
+Mindestens ein Fehler beeinträchtigt den Status der Failover-Verfügbarkeit. In der MetroCluster Konfiguration sind jedoch noch beide Cluster aktiv. Beispiel: Wenn die ISL-Verbindung ausgefallen ist, wenn die Intercluster-IP-Verbindung ausgefallen ist oder das Partner-Cluster nicht erreichbar ist.
+ a| 
+image:../media/metrocluster-connectivity-impacted.gif[""]
+
+
+
+ a| 
+Runter
+ a| 
+Die Konnektivität zwischen den Clustern in der MetroCluster Konfiguration ist ausgefallen, da ein oder beide Cluster ausgefallen sind oder sich die Cluster im Failover-Modus befinden. Wenn das Partner-Cluster beispielsweise aufgrund eines Ausfalls oder bei einem geplanten Switchover zu Testzwecken ausfällt,
+ a| 
+Umschaltung mit Fehlern:
+
+image::../media/metrocluster-connectivity-down.gif[MetroCluster-Konnektivität nicht verbunden]
+
+Umschaltung erfolgreich:
+
+image::../media/metrocluster-connectivity-failover.gif[Failover für MetroCluster-Konnektivität]
+
+|===

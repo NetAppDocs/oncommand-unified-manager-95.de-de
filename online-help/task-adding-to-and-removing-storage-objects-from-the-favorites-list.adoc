@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-adding-to-and-removing-storage-objects-from-the-favorites-list.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können einer Favoritenliste Storage-Objekte hinzufügen, damit Sie diese Objekte im Hinblick auf Zustand, Kapazität und Performance überwachen können. Sie können den Objektstatus in der Favoritenliste verwenden, um Probleme zu ermitteln und zu beheben, bevor sie kritisch werden. Die Favoritenliste enthält außerdem den aktuellsten Überwachungsstatus eines Speicherobjekts. Sie können Speicherobjekte aus der Favoritenliste entfernen, wenn sie nicht mehr als Favorit markiert werden müssen. 
+---
+= Hinzufügen zu und Entfernen von Speicherobjekten aus der Liste Favoriten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können einer Favoritenliste Storage-Objekte hinzufügen, damit Sie diese Objekte im Hinblick auf Zustand, Kapazität und Performance überwachen können. Sie können den Objektstatus in der Favoritenliste verwenden, um Probleme zu ermitteln und zu beheben, bevor sie kritisch werden. Die Favoritenliste enthält außerdem den aktuellsten Überwachungsstatus eines Speicherobjekts. Sie können Speicherobjekte aus der Favoritenliste entfernen, wenn sie nicht mehr als Favorit markiert werden müssen.
+
+
+
+== Über diese Aufgabe
+
+In der Favoritenliste können bis zu 20 Cluster, Nodes, Aggregate oder Volumes hinzugefügt werden. Wenn Sie der Liste „Favoriten“ einen Node hinzufügen, wird dieser als Cluster angezeigt.
+
+
+
+== Schritte
+
+. Rufen Sie die Seite *Details* des Speicherobjekts auf, das Sie als Favorit markieren möchten.
+. Klicken Sie auf das Sternsymbol (image:../media/favorite-icon.gif[""]) Zum Hinzufügen des Speicherobjekts zur Favoritenliste.
+
+
+
+
+== Hinzufügen eines Aggregats zur Favoritenliste
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *Aggregate*.
+. Klicken Sie auf der Seite „Inventar/Aggregate“ auf das Aggregat, das Sie der Liste „Favoriten“ hinzufügen möchten.
+. Klicken Sie auf der Seite „Systemzustand/Aggregat-Details“ auf das STAR-Symbol (image:../media/favorite-icon.gif[""]).
+
+
+
+
+== Nachdem Sie fertig sind
+
+Um ein Speicherobjekt aus der Liste Favoriten zu entfernen, wechseln Sie zur Listenseite Favoriten, klicken Sie auf das Sternsymbol (image:../media/favorite-icon.gif[""]) Auf der Objektkarte, die Sie entfernen möchten, und wählen Sie dann die Option *aus Favoriten entfernen*.

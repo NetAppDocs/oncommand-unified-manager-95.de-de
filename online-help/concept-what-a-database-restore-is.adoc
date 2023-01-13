@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-what-a-database-restore-is.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Bei einer Datenbank-Wiederherstellung wird eine vorhandene Unified Manager-Backup-Datei auf demselben oder einem anderen Unified Manager-Server wiederhergestellt. Sie führen die Wiederherstellung über die Unified Manager-Konsole aus. 
+---
+= Was ist ein Datenbank-Restore
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei einer Datenbank-Wiederherstellung wird eine vorhandene Unified Manager-Backup-Datei auf demselben oder einem anderen Unified Manager-Server wiederhergestellt. Sie führen die Wiederherstellung über die Unified Manager-Konsole aus.
+
+Wenn Sie einen Wiederherstellungsvorgang auf demselben (lokalen) System durchführen und die Sicherungsdateien alle lokal gespeichert sind, können Sie den Wiederherstellungsbefehl über den Standardspeicherort ausführen. Wenn Sie einen Wiederherstellungsvorgang auf einem anderen Unified Manager-System (einem Remote-System) durchführen, müssen Sie die Sicherungsdatei oder Dateien vom sekundären Speicher auf die lokale Festplatte kopieren, bevor Sie den Wiederherstellungsbefehl ausführen.
+
+Während des Wiederherstellungsprozesses werden Sie von Unified Manager abgemeldet. Sie können sich nach Abschluss der Wiederherstellung beim System anmelden.
+
+Die Wiederherstellungsfunktion ist versionsspezifisch und plattformspezifisch. Sie können ein Unified Manager-Backup nur auf derselben Version von Unified Manager wiederherstellen. Unified Manager unterstützt Backup und Restore in den folgenden Plattformszenarien:
+
+* Virtuelle Appliance auf virtuelle Appliance
+* Virtuelle Appliance für Red hat Enterprise Linux oder CentOS
+* Red hat Enterprise Linux auf Red hat Enterprise Linux oder CentOS
+* Windows zu Windows
+
+
+Wenn Sie das Backup-Image auf einem neuen Server wiederherstellen, müssen Sie nach Abschluss des Wiederherstellungsvorgangs ein neues HTTPS-Sicherheitszertifikat generieren und den Unified Manager-Server neu starten. Wenn Sie das Backup-Image auf einem neuen Server wiederherstellen müssen, müssen Sie auch SAML-Authentifizierungseinstellungen neu konfigurieren.
+
+[NOTE]
+====
+Alte Sicherungsdateien können nicht verwendet werden, um ein Image wiederherzustellen, nachdem Unified Manager auf eine neuere Softwareversion aktualisiert wurde. Um Speicherplatz zu sparen, werden alle alten Backupdateien außer der neuesten Datei beim Upgrade von Unified Manager automatisch entfernt.
+
+====

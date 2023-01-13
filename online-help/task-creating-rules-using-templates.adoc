@@ -1,0 +1,53 @@
+---
+permalink: online-help/task-creating-rules-using-templates.html 
+sidebar: sidebar 
+keywords:  
+summary: Neue Regeln lassen sich mithilfe von von Unified Manager definierten Regelvorlagen hinzufügen, um die Platzierung von Daten, die auf die SVM mit Infinite Volume geschrieben werden, zu bestimmen. Regeln lassen sich auf Basis von Dateitypen, Verzeichnispfaden oder Eigentümern erstellen. 
+---
+= Erstellen von Regeln mithilfe von Vorlagen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Neue Regeln lassen sich mithilfe von von Unified Manager definierten Regelvorlagen hinzufügen, um die Platzierung von Daten, die auf die SVM mit Infinite Volume geschrieben werden, zu bestimmen. Regeln lassen sich auf Basis von Dateitypen, Verzeichnispfaden oder Eigentümern erstellen.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Der Cluster, der die SVM mit Infinite Volume mit Storage-Klassen enthält, muss der Unified Manager Datenbank hinzugefügt werden.
+
+
+
+
+== Über diese Aufgabe
+
+Die Registerkarte Datenrichtlinie ist nur für eine SVM mit Infinite Volume sichtbar.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie auf der Seite *Health/Storage Virtual Machines* Inventory die entsprechende SVM aus.
+. Klicken Sie auf die Registerkarte *Datenrichtlinie*.
++
+Es wird eine Liste der Regeln in der Datenrichtlinie für die ausgewählte SVM mit Infinite Volume angezeigt.
+
+. Klicken Sie Auf *Erstellen*.
+. Wählen Sie im Dialogfeld *Regel erstellen* eine entsprechende Regelvorlage aus der Dropdown-Liste aus.
++
+Die Vorlage basiert auf drei Kategorien: Dateityp, Eigentümer oder Verzeichnispfad.
+
+. Fügen Sie auf der Grundlage der ausgewählten Vorlage die notwendigen Bedingungen im Bereich *passende Kriterien* hinzu.
+. Wählen Sie aus der Dropdown-Liste *Platzieren Sie den passenden Inhalt in der Storage Class* aus.
+. Klicken Sie Auf *Erstellen*.
++
+Die neue Regel, die Sie erstellt haben, wird auf der Registerkarte Datenrichtlinie angezeigt.
+
+. Vorschau aller anderen Änderungen an der Datenrichtlinie.
+. Klicken Sie auf *Aktivieren*, um die Änderungen in den Regeleigenschaften in der SVM zu aktivieren.
+

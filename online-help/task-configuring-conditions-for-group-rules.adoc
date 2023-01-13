@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-configuring-conditions-for-group-rules.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Sie können eine oder mehrere Bedingungen zum Erstellen von Gruppenregeln in Unified Manager konfigurieren, die auf die Speicherobjekte angewendet werden. Die Speicherobjekte, die die Gruppenregel erfüllen, werden zu einer Gruppe zusammengefasst. 
+---
+= Konfigurieren von Bedingungen für Gruppenregeln
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine oder mehrere Bedingungen zum Erstellen von Gruppenregeln in Unified Manager konfigurieren, die auf die Speicherobjekte angewendet werden. Die Speicherobjekte, die die Gruppenregel erfüllen, werden zu einer Gruppe zusammengefasst.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann auf *Verwaltung* > *Gruppen*.
+. Klicken Sie Auf *Hinzufügen*.
+. Wählen Sie im Dialogfeld *Gruppenregel hinzufügen* einen Operand aus der Liste der Operanden aus.
+. Wählen Sie einen Operator für die Bedingung aus.
+. Geben Sie einen erforderlichen Wert ein, oder wählen Sie einen aus der Liste verfügbar aus.
+. Klicken Sie Auf *Hinzufügen*.
+
+
+
+
+== Beispiel für das Konfigurieren einer Bedingung für eine Gruppenregel
+
+Es empfiehlt sich eine Bedingung für den Objekttyp „SVM“, bei der der Objektname „`svm_Data`“ enthält.
+
+Führen Sie die folgenden Schritte im Dialogfeld Gruppenregel hinzufügen durch, um die Bedingung zu konfigurieren:
+
+. Geben Sie einen Namen für die Gruppenregel ein.
+. Wählen Sie den Objekttyp als SVM aus.
+. Wählen Sie eine Gruppe aus der Gruppenliste aus.
+. Wählen Sie im Feld *Bedingungen* als Operand *Objektname* aus.
+. Wählen Sie als Operator * enthält* aus.
+. Geben Sie den Wert als ein `svm_data`.
+. Klicken Sie Auf *Hinzufügen*.
+

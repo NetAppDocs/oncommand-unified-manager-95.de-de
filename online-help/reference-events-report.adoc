@@ -1,0 +1,126 @@
+---
+permalink: online-help/reference-events-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Ereignisbericht können Sie Informationen zu Ereignistrends über einen bestimmten Zeitraum anzeigen. Anhand dieser Informationen können Sie aktuelle Aktivitäten mit früheren betrieblichen Aktivitäten vergleichen, z. B. Konfigurationsänderungen, Upgrades usw. Die Informationen helfen Ihnen auch, ausstehende Ereignisse zu bestimmen. 
+---
+= Ereignisbericht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Ereignisbericht können Sie Informationen zu Ereignistrends über einen bestimmten Zeitraum anzeigen. Anhand dieser Informationen können Sie aktuelle Aktivitäten mit früheren betrieblichen Aktivitäten vergleichen, z. B. Konfigurationsänderungen, Upgrades usw. Die Informationen helfen Ihnen auch, ausstehende Ereignisse zu bestimmen.
+
+
+
+== Diagrammansicht des Ereignisberichts
+
+Der Ereignisbericht wird in zwei Formaten angezeigt:
+
+* Diagrammansicht des Ereignisberichts
+* Tabellarische Ansicht Ereignisbericht
+
+
+Das Ereignisdiagramm wird in zwei Formaten angezeigt:
+
+* Ereignisse Severity Trend (Alle offenen Ereignisse)
+* Trend Zum Ereignisstatus
+
+
+Das Diagramm zeigt die Schweregrade für alle geöffneten Ereignisse innerhalb eines Zeitraums an. Auf der vertikalen Achse (y) wird eine Anzahl von Ereignissen angezeigt, und das Datum wird auf der horizontalen Achse (x) angezeigt. Sie können die Details zu bestimmten Punkten im Diagramm anzeigen, indem Sie den Cursor auf einen bestimmten Punkt positionieren. Die Details zeigen den Schweregrad des Ereignisses, die Anzahl der Ereignisse des bestimmten Schweregrads und das Datum des Ereignisses an.
+
+Die angezeigten Schweregrade sind kritisch, Fehler und Warnung. Die Ereignisabtrennungen werden durch verschiedene Farben unterschieden. Es kann die gleiche Anzahl von Ereignissen am gleichen Datum in verschiedenen Status sein.
+
+* * Anzahl*
++
+Zeigt eine Anzahl von Ereignissen an.
+
+* *Datum*
++
+Zeigt das Datum an. Die x-Achse zeigt Daten von dem Zeitpunkt an, zu dem das Ereignis bis zum aktuellen Datum aufgetreten ist. Sie können auf das Diagramm klicken und vergrößern, um weitere Informationen zu erhalten.
+
+
+
+Das Diagramm zeigt den Trend des Ereignisstatus pro Tag über einen bestimmten Zeitraum. Auf der vertikalen Achse (y) wird eine Anzahl von Ereignissen angezeigt, und das Datum wird auf der horizontalen Achse (x) angezeigt. Die Details zeigen den Ereignisstatus, die Anzahl der Ereignisse des spezifischen Status und das Datum des Ereignisses an.
+
+Der Ereignisstatus lautet „Neu“, „bestätigt“ und „gelöst“. Der Ereignisstatus wird durch unterschiedliche Farben unterschieden.
+
+Das Diagramm zeigt die täglich neu erzeugten Ereignisse auf kumulativer Basis in einem Balkendiagramm, dargestellt in grüner Farbe. Die Anzahl der bestätigten und gelösten Ereignisse wird angezeigt, als und wann sie täglich anerkannt und gelöst werden.
+
+In den Diagrammen stehen eine Zoom-Funktion zur Verfügung. Sie können diese Funktion verwenden, um einen bestimmten Punkt in der Grafik zu vergrößern, um mehr Klarheit zu erzielen.
+
+* *Quelle*
++
+Zeigt die Quelle eines Ereignisses an.
+
+* *Status*
++
+Zeigt den Schweregrad des Ereignisses an. Sie können diese Spalte filtern, um Ereignisse mit einem bestimmten Schweregrad anzuzeigen. Die Schweregrade des Ereignisses sind kritisch, Fehler oder Warnung.
+
+* *Bundesland*
++
+Zeigt den Ereignisstatus an: Neu, bestätigt, aufgelöst oder veraltet. Sie können diese Spalte filtern, um Ereignisse eines bestimmten Status anzuzeigen.
+
+* *Veranstaltung*
++
+Zeigt die Ereignisnamen an.
+
+* *Auslösezeit*
++
+Zeigt die Uhrzeit an, zu der das Ereignis generiert wurde. Sowohl die Uhrzeit als auch das Datum werden angezeigt.
+
+* *Tage Herausragend*
++
+Zeigt die Anzahl der Tage zwischen einem Ereignis und seiner Auflösung oder Bezeichnung als veraltet an.
+
+* *Quelltyp*
++
+Zeigt den Objekttyp (z. B. Storage Virtual Machine (SVM), Volume oder qtree) an, mit dem das Ereignis verknüpft ist.
+
+* * Datenpriorität*
++
+Zeigt den Anmerkungstyp an, der auf der Priorität der Daten des Speicherobjekts basiert.
+
+* *Impact Level*
++
+Zeigt an, ob das Ereignis als Vorfall, Risiko oder Information kategorisiert ist.
+
+* *Aufprallbereich*
++
+Zeigt an, ob es sich um ein Kapazitäts-, Verfügbarkeits-, Performance-, Schutz- oder Konfigurationsereignis handelt.
+
+* * Zugewiesen Zu*
++
+Zeigt den Namen des Benutzers an, dem das Ereignis zugeordnet ist.
+
+* *Zugewiesene Zeit*
++
+Zeigt die Zeit an, zu der das Ereignis einem Benutzer zugewiesen wurde.
+
+* *Hinweise*
++
+Zeigt die Anzahl der Notizen an, die für ein Ereignis hinzugefügt werden.
+
+* * Bestätigt Durch*
++
+Zeigt den Namen des Benutzers an, der das Ereignis bestätigt hat. Das Feld ist leer, wenn das Ereignis nicht bestätigt wird.
+
+* * Quittierte Zeit*
++
+Zeigt die Zeit an, die seit der Quittierung des Ereignisses verstrichen ist. Wenn die verstrichene Zeit eine Woche überschreitet, wird der Zeitstempel angezeigt, wann das Ereignis bestätigt wurde.
+
+* * Gelöst Von*
++
+Zeigt den Namen des Benutzers an, der das Ereignis gelöst hat. Das Feld ist leer, wenn das Ereignis nicht aufgelöst wird.
+
+* * Zeit Gelöst*
++
+Zeigt die Zeit an, die seit dem Auflösen des Ereignisses verstrichen ist. Wenn die verstrichene Zeit eine Woche überschreitet, wird der Zeitstempel angezeigt, wann das Ereignis aufgelöst wurde.
+
+* *Veraltete Zeit*
++
+Zeigt die Zeit an, zu der der Status des Ereignisses veraltet wurde.
+
+

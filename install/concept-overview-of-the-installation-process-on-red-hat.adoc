@@ -1,0 +1,16 @@
+---
+permalink: install/concept-overview-of-the-installation-process-on-red-hat.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Installations-Workflow werden die Aufgaben beschrieben, die Sie vor der Verwendung von Unified Manager ausführen müssen. 
+---
+= Überblick über den Installationsprozess auf Red hat oder CentOS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Installations-Workflow werden die Aufgaben beschrieben, die Sie vor der Verwendung von Unified Manager ausführen müssen.
+
+image::../media/install-flow-on-rhel.gif[Den Fluss auf dem Rsel installieren]

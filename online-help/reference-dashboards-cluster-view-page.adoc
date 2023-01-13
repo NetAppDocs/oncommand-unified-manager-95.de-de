@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-dashboards-cluster-view-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Dashboards/Clusteransicht werden Überblicksinformationen zu den zu verwaltenden Clustern angezeigt. 
+---
+= Dashboards/Cluster-Ansicht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Dashboards/Clusteransicht werden Überblicksinformationen zu den zu verwaltenden Clustern angezeigt.
+
+Durch Klicken auf *Cluster verwalten* gelangen Sie zur Seite Configuration/Cluster Data Sources.
+
+Durch Klicken auf ein Cluster werden Überblicksinformationen zu dem Monitoring-Status, dem Kapazitätsstatus und dem Performance-Status des Clusters angezeigt.
+
+Das Dashboard der Clusteransicht besteht aus zwei Hauptbereichen: Verwalteten Clustern (links) und Clusterdetails (rechts).
+
+
+
+== Abschnitt „verwaltete Cluster“
+
+Listet alle Cluster auf, die von Unified Manager überwacht werden. Für jedes Cluster in der Liste werden folgende Details angegeben:
+
+* Cluster-Status-Symbol: Der Status kann kritisch sein (image:../media/sev-critical-um60.png["Symbol für den Schweregrad „Ereignis“ – „kritisch“"]), Fehler (image:../media/sev-error-um60.png["Symbol für den Schweregrad „Ereignis“: Fehler"]), Warnung (image:../media/sev-warning-um60.png["Symbol für den Schweregrad „Ereignis“ – Warnung"]Oder normal (image:../media/sev-normal-um60.png["Symbol für den Schweregrad „Ereignis“ – „Normal“"]).
+* IP-Adresse oder Hostname: Stellt den Hostnamen des Clusters und die IP-Adresse oder FQDN bereit.
+* Cluster-Systemzustand: Bietet Informationen über den Systemzustand des Clusters, die von Unified Manager überwacht werden.
++
+Der Systemzustand kann einen der folgenden Werte aufweisen: OK, OK mit unterdrückt, beeinträchtigt und die Komponenten sind nicht erreichbar.
+
+
+
+
+
+== Abschnitt „Cluster-Details“
+
+Bietet Informationen zum Monitoring-Status, zur Kapazität und zur Performance des ausgewählten Clusters.
+
+* Überwachungsstatus: Zeigt den kontinuierlichen Status von Zustand und Performance-Überwachung an.
++
+Der Überwachungsstatus kann die folgenden Werte aufweisen: Ermittlung, Abmeldung abgeschlossen, Abfrage fehlgeschlagen oder nicht verfügbar. Der Überwachungsstatus zeigt eine Fehlermeldung an, wenn der entsprechende Überwachungsauftrag (Zustand oder Leistung) ausfällt.
+
+* Kapazität: Zeigt die gesamte, genutzte und freie Speicherkapazität des ausgewählten Clusters an.
+* Performance: Zeigt die durchschnittliche Betriebsgeschwindigkeit des Clusters in Anzahl der IOPS (Eingabe-/Ausgabevorgänge pro Sekunde) und den durchschnittlichen Durchsatz des ausgewählten Clusters in MB/s (Megabyte pro Sekunde) an.
+
+
+Im Abschnitt „Details“ finden Sie außerdem Links zu den einzelnen Cluster-Detailseiten der OnCommand Unified Manager Applikationen:
+
+* Der Link Systemzustand navigiert zur Seite mit den Angaben zum Systemzustand/Cluster des ausgewählten Clusters.
+* Der Link Performance navigiert zur Seite Performance/Cluster-Details des ausgewählten Clusters.
+* Der Link System Manager navigiert zur Anmeldeseite für OnCommand System Manager, sodass Sie Cluster-Einstellungen verwalten können.
+

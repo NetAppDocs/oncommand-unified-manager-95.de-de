@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-schedule-report-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die zu erstellenden Berichte in einer bestimmten Frequenz im Dialogfeld Bericht planen, die wiederholt erstellt werden sollen. Der Bericht wird per E-Mail an einen oder mehrere Benutzer gesendet, die im Dialogfeld Bericht planen angegeben sind. 
+---
+= Dialogfeld „Bericht planen“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die zu erstellenden Berichte in einer bestimmten Frequenz im Dialogfeld Bericht planen, die wiederholt erstellt werden sollen. Der Bericht wird per E-Mail an einen oder mehrere Benutzer gesendet, die im Dialogfeld Bericht planen angegeben sind.
+
+
+
+== Eigenschaften
+
+Sie können einen Bericht planen, indem Sie Eigenschaften wie die E-Mail-Adresse des Benutzers, das Format des Berichts und die Häufigkeit, mit der der Bericht generiert wird, angeben.
+
+* *Verwendung Eines Vorhandenen Zeitplans*
++
+** *Terminplanname*
++
+Zeigt alle vorhandenen Planungsnamen an. Hier können Sie einen bestehenden Zeitplan für Ihre Berichte auswählen.
+
+
+
+* *Neuer Zeitplan Erstellen*
++
+** *Terminplanname*
++
+Ermöglicht die Eingabe des Planungsnamens beim Erstellen eines neuen Zeitplans.
+
+** * Empfänger-E-Mail-Adresse*
++
+Gibt die E-Mail-Adresse des Benutzers an den der Bericht gesendet werden soll an. Sie können einen oder mehrere Einträge angeben, getrennt durch Kommas. Dies ist ein Pflichtfeld.
+
+** *Berichtsformat*
++
+Gibt das Format an, in dem der Bericht geplant werden soll. Die Option _PDF_ ist standardmäßig ausgewählt.
+
+** *Frequenz*
++
+Gibt die Häufigkeit an, mit der der Bericht geplant werden soll. Die Option _hourly_ ist standardmäßig ausgewählt.
+
+
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Zeitplan*
++
+Plant den Bericht mit der gespeicherten oder aktualisierten Vorlage und schließt das Dialogfeld Bericht planen.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Bericht planen, während eine Meldung angezeigt wird, um die Vorlage für Planungsberichte zu speichern.
+
+

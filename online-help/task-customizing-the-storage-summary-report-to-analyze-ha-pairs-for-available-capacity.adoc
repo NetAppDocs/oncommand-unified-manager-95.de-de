@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-analyze-ha-pairs-for-available-capacity.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Bericht „Storage Summary“ anpassen, um verfügbare HA-Paare mit Kapazität anzuzeigen, sodass Sie neue Volumes und LUNs bereitstellen können. Im Bericht werden HA-Paare sortiert, um die ungenutzte Gesamtkapazität des Aggregats zu verringern. 
+---
+= Anpassen des Storage Summary Reports zur Analyse von HA-Paaren für die verfügbare Kapazität, um neue Volumes und LUNs bereitzustellen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Bericht „Storage Summary“ anpassen, um verfügbare HA-Paare mit Kapazität anzuzeigen, sodass Sie neue Volumes und LUNs bereitstellen können. Im Bericht werden HA-Paare sortiert, um die ungenutzte Gesamtkapazität des Aggregats zu verringern.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie Gruppierung nach Cluster:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um HA-Paare mit verfügbarer Kapazität zu sortieren, klicken Sie in die Spalte *Aggregat unbenutzte Kapazität (TB)* und klicken Sie auf die image:../media/click-to-see-menu.gif[""] Symbol.
+. Wählen Sie *Filter* > *Oben/Unten N*.
+. Wählen Sie im Dialogfeld *Top/Bottom N* aus dem Feld *Filter* die Option *Top N* aus, und geben Sie einen Wert in das Textfeld ein.
+. Klicken Sie auf *OK*.
+

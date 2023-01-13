@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-analyzing-the-capacity-of-the-top-most-unassigned-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Bericht „Storage Summary“ anpassen, um die Storage-Auslastung von Clustern zu analysieren, sodass Sie die LUNs mit der am meisten nicht zugewiesenen Kapazität finden können. 
+---
+= Anpassen des Berichts „Storage Summary“ zur Analyse von Clustern mit der am meisten nicht zugewiesenen LUN-Kapazität
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Bericht „Storage Summary“ anpassen, um die Storage-Auslastung von Clustern zu analysieren, sodass Sie die LUNs mit der am meisten nicht zugewiesenen Kapazität finden können.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie Gruppierung nach Cluster:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um HA-Paare mit der am meisten nicht zugewiesenen LUN-Kapazität zu sortieren, klicken Sie in die Spalte *nicht zugewiesene LUN-Kapazität (TB)* und klicken Sie auf image:../media/click-to-see-menu.gif[""] Symbol.
+. Wählen Sie *Filter* > *Oben/Unten N*.
+. Wählen Sie im Dialogfeld *Top/Bottom N* aus dem Feld *Filter* die Option *Top N* aus, und geben Sie einen Wert in das Textfeld ein.
+. Klicken Sie auf *OK*.
+

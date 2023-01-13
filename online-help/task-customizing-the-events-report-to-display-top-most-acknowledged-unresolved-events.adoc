@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-top-most-acknowledged-unresolved-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Ereignisbericht so anpassen, dass die am stärksten bestätigten Ereignisse, gefiltert nach dem Ereignisstatus, angezeigt werden. Sie können sie in abnehmender Reihenfolge sortieren, um die Anzahl der ausstehenden Tage anzuzeigen. 
+---
+= Anpassen des Berichts „Ereignisse“ zur Anzeige der am häufigsten bestätigten nicht behobenen Ereignisse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Ereignisbericht so anpassen, dass die am stärksten bestätigten Ereignisse, gefiltert nach dem Ereignisstatus, angezeigt werden. Sie können sie in abnehmender Reihenfolge sortieren, um die Anzahl der ausstehenden Tage anzuzeigen.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. Um bestätigte Ereignisse zu filtern, klicken Sie in die Spalte *Status* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *bestätigt*.
+. Klicken Sie auf *OK*.
+. Um den Bericht weiter zu filtern, klicken Sie in die Spalte *bestätigt durch* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *Name*.
+. Klicken Sie auf *OK*.
+. Um die Ereignisse, die für die meisten Tage ausstehen, zu sortieren, klicken Sie in die Spalte *Tage Outstanding* und klicken Sie auf image:../media/click-to-see-menu.gif[""].
+. Wählen Sie *Filter* > *Oben/Unten N*.
+. Wählen Sie im Dialogfeld *Top/Bottom N* aus dem Feld *Filter* die Option *Top N* aus, und geben Sie einen Wert in das Textfeld ein.
+. Klicken Sie auf *OK*.
+

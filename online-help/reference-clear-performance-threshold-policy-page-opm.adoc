@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-clear-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Schwellenwertrichtlinie löschen können Sie eine Richtlinie für Leistungsschwellenwerte aus einem oder mehreren Speicherobjekten entfernen oder löschen. 
+---
+= Löschen Sie die Seite Richtlinie für Leistungsschwellenwert
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mithilfe der Seite Schwellenwertrichtlinie löschen können Sie eine Performance-Schwellenwertrichtlinie aus einem oder mehreren Storage-Objekten entfernen oder _Clear_.
+
+Die Liste der Richtlinien wird nur mit den Richtlinien ausgefüllt, die im ausgewählten Objekt oder den ausgewählten Objekten verwendet werden.
+
+Wählen Sie die Richtlinie aus, die Sie aus dem Speicherobjekt oder den Objekten entfernen möchten, und klicken Sie dann auf *Richtlinie löschen*.

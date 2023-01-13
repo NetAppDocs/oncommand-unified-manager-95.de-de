@@ -1,0 +1,79 @@
+---
+permalink: online-help/task-creating-a-snapmirror-protection-relationship-from-the-health-volumes-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Mithilfe der Seite „Systemzustand“/„Volumes Inventar“ können Sie mehrere SnapMirror Sicherungsbeziehungen gleichzeitig erstellen, indem Sie mehrere Volumes auf derselben SVM auswählen. 
+---
+= Erstellen einer SnapMirror Sicherungsbeziehung auf der Seite „Systemzustand“/„Volumes-Inventar“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mithilfe der Seite „Systemzustand“/„Volumes Inventar“ können Sie mehrere SnapMirror Sicherungsbeziehungen gleichzeitig erstellen, indem Sie mehrere Volumes auf derselben SVM auswählen.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Sie müssen Workflow Automation einrichten.
+
+
+
+
+== Über diese Aufgabe
+
+Das Menü * Protect* wird in den folgenden Fällen nicht angezeigt:
+
+* Wenn die RBAC-Einstellungen diese Aktion nicht zulassen, z. B. wenn Sie nur über Operatorrechte verfügen
+* Wenn die Volume-ID unbekannt ist, z. B. wenn eine Intercluster-Beziehung vorhanden ist und der Ziel-Cluster noch nicht erkannt wurde
+
+
+
+
+== Schritte
+
+. Klicken Sie auf der Seite *Health/Volumes* Inventory mit der rechten Maustaste auf ein Volume, das Sie schützen möchten.
++
+Wenn Sie mehrere Sicherungsbeziehungen auf derselben SVM erstellen möchten, wählen Sie auf der Seite Health/Volumes Inventory ein oder mehrere Volumes aus, und klicken Sie in der Symbolleiste auf *Protect* > *SnapMirror*.
+
++
+Das Dialogfeld Schutz konfigurieren wird angezeigt.
+
+. Klicken Sie auf *SnapMirror*, um die Registerkarte *SnapMirror* anzuzeigen und die Zielinformationen zu konfigurieren.
+. Klicken Sie auf *Erweitert*, um die Platzgarantie nach Bedarf festzulegen, und klicken Sie dann auf *Anwenden*.
+. Füllen Sie auf der Registerkarte *SnapMirror* den Bereich *Zielinformationen* und den Bereich *Beziehungseinstellungen* aus.
+. Klicken Sie Auf *Anwenden*.
++
+Sie gelangen wieder zur Seite „Health/Volumes Inventory“.
+
+. Klicken Sie oben auf der Seite *Health/Volumes* Inventory auf den Link für die Schutzkonfiguration.
++
+Wenn Sie nur eine Schutzbeziehung erstellen, wird die Seite Schutz-/Jobdetails angezeigt. Wenn Sie jedoch mehr als eine Schutzbeziehung erstellen, wird eine Liste aller mit dem Schutzvorgang verknüpften Jobs angezeigt.
+
+. Führen Sie einen der folgenden Schritte aus:
++
+** Wenn Sie nur einen Job haben, klicken Sie auf *Aktualisieren*, um die Aufgabenliste und die Aufgabendetails zu aktualisieren, die mit dem Konfigurationsauftrag für den Schutz verknüpft sind, und um festzustellen, wann der Job abgeschlossen ist.
+** Wenn Sie mehr als einen Job haben:
++
+... Klicken Sie in der Liste Jobs auf einen Job.
+... Klicken Sie auf *Aktualisieren*, um die Aufgabenliste und die Aufgabendetails zu aktualisieren, die mit dem Konfigurationsauftrag für den Schutz verknüpft sind, und um festzustellen, wann der Job abgeschlossen ist.
+... Verwenden Sie die Schaltfläche *Zurück*, um zur gefilterten Liste zurückzukehren und einen anderen Job anzuzeigen.
+
+
+
+
+
+
+
+
+== Ergebnisse
+
+Je nachdem, welche Ziel-SVM Sie während der Konfiguration oder in den Optionen angegeben haben, die Sie in den erweiterten Einstellungen aktiviert haben, kann die SnapMirror Beziehung eine oder mehrere mögliche Varianten sein:
+
+* Falls Sie eine Ziel-SVM angegeben haben, die unter derselben oder einer neueren Version von ONTAP im Vergleich zur des Quell-Volume ausgeführt wird, ist eine auf Replizierung basierende SnapMirror Beziehung das Standardergebnis.
+* Wenn Sie eine Ziel-SVM angegeben haben, die im Vergleich zum Quell-Volume unter derselben oder einer neueren Version von ONTAP (8.3 oder höher) ausgeführt wird, aber Sie in den erweiterten Einstellungen eine versionsflexible Replizierung aktiviert haben, ist das Ergebnis eine SnapMirror Beziehung mit versionsflexibler Replizierung.
+* Wenn Sie eine Ziel-SVM angegeben haben, die unter einer früheren Version von ONTAP 8.3 oder einer höheren Version als die des Quell-Volume ausgeführt wird, und die frühere Version unterstützt eine versionsflexible Replizierung. Das automatische Ergebnis ist eine SnapMirror Beziehung mit versionsflexibler Replizierung.
+

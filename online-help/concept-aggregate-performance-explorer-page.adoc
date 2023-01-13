@@ -1,0 +1,38 @@
+---
+permalink: online-help/concept-aggregate-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Seite „Performance/Aggregate Explorer“ bietet eine detaillierte Performance-Übersicht über alle Aggregate in einem Cluster. 
+---
+= Explorer-Seite für Performance/Aggregat
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite „Performance/Aggregate Explorer“ bietet eine detaillierte Performance-Übersicht über alle Aggregate in einem Cluster.
+
+Auf der Explorer-Seite „Performance/Aggregate“ können Sie die aggregierte Performance in einem bestimmten Zeitraum nachverfolgen und vergleichen. Dies hilft Ihnen bei der Fehlerbehebung und Feinabstimmung der Performance eines Aggregats.
+
+[NOTE]
+====
+Root-Aggregate werden auf dieser Seite nicht angezeigt.
+
+====
+Mithilfe der Funktion „Anzeigen und Vergleichen“ können Sie die Performance dieses Aggregats mit folgenden vergleichen:
+
+* Anderer Aggregate auf demselben Node
+* Anderen Aggregaten auf demselben Cluster
+* Der Node, auf dem sich das Aggregat befindet
+* Alle Nodes auf dem Cluster, die dieses Aggregat verwenden
+* Die Volumes in diesem Aggregat
+
+
+Auf der Seite „Performance/Aggregate Explorer“ können Sie:
+
+* Zeigen Sie Probleme mit Schwellenwerten und deren Details an
+* Verfolgen und Vergleichen von Aggregat-Performance-Daten
+* Untersuchung und Behebung von Problemen mit Schwellenwerten
+* Untersuchung und Behebung von Performance-Problemen
+

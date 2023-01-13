@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-page-descriptions-for-cluster-management.html 
+sidebar: sidebar 
+keywords:  
+summary: Cluster lassen sich anzeigen und verwalten, einschließlich Hinzufügen, Bearbeiten, Neuerkennen und Entfernen von Clustern. Von einer einzelnen Seite aus. 
+---
+= Seitenbeschreibungen zur Datenquellenverwaltung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cluster lassen sich anzeigen und verwalten, einschließlich Hinzufügen, Bearbeiten, Neuerkennen und Entfernen von Clustern. Von einer einzelnen Seite aus.

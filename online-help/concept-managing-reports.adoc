@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-managing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit OnCommand Unified Manager lassen sich Berichte erstellen und managen, sodass Kunden benutzerdefinierte Informationen über Kapazität, Auslastung und Performance von Storage-Objekten und Ereignissen für Storage-Objekte anzeigen können. 
+---
+= Verwalten von Berichten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit OnCommand Unified Manager lassen sich Berichte erstellen und managen, sodass Kunden benutzerdefinierte Informationen über Kapazität, Auslastung und Performance von Storage-Objekten und Ereignissen für Storage-Objekte anzeigen können.
+
+[NOTE]
+====
+Die Implementierung der Planung und Erstellung von Berichten aus der Option Berichte im linken Navigationsbereich wird in einer zukünftigen Version abgelehnt. Mit den folgenden zusätzlichen Methoden können Sie Gesundheits- und Performance-Daten aus Unified Manager extrahieren:
+
+* Daten direkt aus den Grid-Seiten in der GUI extrahieren
+* Verwenden der Open Database für den Zugriff auf alle verfügbaren Objekte
+* Ausführung von Unified Manager REST-APIs zur Rückgabe der Informationen, für die Sie interessiert sind, zu überprüfen
+
+
+====

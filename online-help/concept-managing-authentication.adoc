@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-managing-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Authentifizierung mit LDAP oder Active Directory auf dem Unified Manager-Server aktivieren und so konfigurieren, dass sie mit Ihren Servern zur Authentifizierung von Remote-Benutzern verwendet werden kann. 
+---
+= Verwalten der Authentifizierung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Authentifizierung mit LDAP oder Active Directory auf dem Unified Manager-Server aktivieren und so konfigurieren, dass sie mit Ihren Servern zur Authentifizierung von Remote-Benutzern verwendet werden kann.
+
+Darüber hinaus können Sie die SAML-Authentifizierung aktivieren, damit Remote-Benutzer über einen sicheren Identitäts-Provider (IdP) authentifiziert werden, bevor sie sich in der Web-UI von Unified Manager anmelden können.

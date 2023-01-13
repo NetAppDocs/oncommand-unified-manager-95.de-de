@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-lun-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Seite „Performance/LUN Explorer“ bietet eine detaillierte Übersicht über die Performance aller LUNs innerhalb eines Clusters. 
+---
+= Seite „Performance/LUN Explorer“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite „Performance/LUN Explorer“ bietet eine detaillierte Übersicht über die Performance aller LUNs innerhalb eines Clusters.
+
+Auf der Seite „Performance/LUN Explorer“ können Sie die LUN-Performance in einem bestimmten Zeitraum nachverfolgen und vergleichen. Dies hilft Ihnen, Fehler zu finden und die Performance Ihrer LUNs zu optimieren.
+
+Mithilfe der Funktion „Anzeigen und Vergleichen“ können Sie die Performance dieser LUN mit vergleichen:
+
+* Andere LUNs, die sich auf demselben Volume befinden
+* Das Volume, auf dem sich die LUN befindet
+
+
+Die Statistiken in den Diagrammen werden nach jedem Erfassungszeitraum aktualisiert, der standardmäßig alle 5 Minuten beträgt. Die Auswahl von Statistiken zur Ansicht bietet eine Option, um die über die vorherige Stunde gemittelten Statistiken anzuzeigen. Durch diese Funktionalität können Sie das Latenzdiagramm zur Unterstützung des NetApp „`Performance Guarantee`“-Programms anzeigen.
+
+Auf der Seite „Performance/LUN Explorer“ können Sie:
+
+* Zeigen Sie Probleme mit Schwellenwerten und deren Details an
+* Verfolgen und Vergleichen der LUN-Performance-Daten
+* Untersuchung und Behebung von Problemen mit Schwellenwerten
+* Untersuchung und Behebung von Performance-Problemen
+

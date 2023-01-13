@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-cluster-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: Cluster-Bestandsbericht enthält Informationen zu verfügbaren Ressourcen für Cluster-Komponenten, um mögliche Risiken zu verstehen, die durch unzureichende Ressourcen verursacht werden. 
+---
+= Cluster-Inventory-Bericht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cluster-Bestandsbericht enthält Informationen zu verfügbaren Ressourcen für Cluster-Komponenten, um mögliche Risiken zu verstehen, die durch unzureichende Ressourcen verursacht werden.
+
+
+
+== Cluster-Bestandsbericht – tabellarische Ansicht
+
+* * Cluster*
++
+Zeigt den Namen des Clusters an.
+
+* *HA-Paar*
++
+Zeigt den HA-Paar-Wert an, der durch die Bildung von zwei Nodes ermittelt wird.
+
+* *Knoten*
++
+Zeigt den Namen der Nodes an.
+
+* *Modell*
++
+Zeigt den Namen des Modells an.
+
+* *Betriebssystemversion*
++
+Zeigt die Version des verwendeten ONTAP an.
+
+* * All Flash Optimiert*
++
+Zeigt an, ob ein Node nur Solid State Drives (SSDs) unterstützt.
+
+* *Seriennummer*
++
+Zeigt die Seriennummer des Node an.
+
+* *Firmware-Version*
++
+Zeigt die Firmware-Version des Node an.
+
+* *SVM-Anzahl*
++
+Zeigt die Anzahl der SVM an, die vom Cluster enthalten ist.
+
+* * FC Port Anzahl*
++
+Zeigt die Anzahl der vom Node enthaltenen FC-Ports an.
+
+* *FCoE Port Anzahl*
++
+Zeigt die Anzahl der vom Node enthaltenen FCoE-Ports an.
+
+* * Anzahl Ethernet-Ports*
++
+Zeigt die Anzahl der vom Node enthaltenen ethernet-Ports an.
+
+* * Anzahl Der Flash-Karten*
++
+Zeigt die Anzahl der auf den Nodes in Ihrem Datacenter installierten Flash-Karten an, sodass Sie auf mögliche Probleme überwachen können.
+
+* *Flash-Kartengröße (GB)*
++
+Zeigt die Größe der auf den Nodes installierten Flash-Karten an.
+
+* * Anzahl Festplatten-Shelfs*
++
+Zeigt die Anzahl der vom Node enthaltenen Platten-Shelfs an.
+
+* * Datenträgeranzahl*
++
+Zeigt die Anzahl der Festplatten in einem Node an.
+
+

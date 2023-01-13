@@ -1,0 +1,57 @@
+---
+permalink: health-checker/task-restoring-a-mysql-database-backup-on-red-hat-enterprise-linux-or-centos.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Im Falle eines Datenverlustes oder einer Beschädigung von Daten können Sie Unified Manager in den vorherigen stabilen Zustand bei minimalem Datenverlust wiederherstellen. Die Unified Manager Datenbank kann auf einem lokalen oder Remote Red hat Enterprise Linux oder CentOS System wiederhergestellt werden. 
+---
+= Wiederherstellen einer Datenbanksicherung auf einem Linux-System
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Falle eines Datenverlustes oder einer Beschädigung von Daten können Sie Unified Manager in den vorherigen stabilen Zustand bei minimalem Datenverlust wiederherstellen. Die Unified Manager Datenbank kann auf einem lokalen oder Remote Red hat Enterprise Linux oder CentOS System wiederhergestellt werden.
+
+
+
+== Bevor Sie beginnen
+
+* Unified Manager muss auf einem Server installiert sein.
+* Sie müssen über die Stammbenutzeranmeldeinformationen für den Linux-Host verfügen, auf dem Unified Manager installiert ist.
+* Sie müssen die Backup-Datei von Unified Manager und den Inhalt des Datenbank-Repository-Verzeichnisses auf das System kopiert haben, auf dem Sie den Wiederherstellungsvorgang ausführen möchten.
++
+Es wird empfohlen, die Sicherungsdatei in das Standardverzeichnis zu kopieren `/data/ocum-backup`. Die Datenbank-Repository-Dateien müssen in die kopiert werden `/database-dumps-repo` Unterverzeichnis unter dem `/ocum-backup` Verzeichnis.
+
+* Die Sicherungsdateien müssen aus sein `.7z` Typ.
+
+
+
+
+== Über diese Aufgabe
+
+Die Wiederherstellungsfunktion ist plattformspezifisch und versionsspezifisch. Sie können ein Unified Manager-Backup nur auf derselben Version von Unified Manager wiederherstellen. Sie können eine Sicherungsdatei für Linux oder eine Sicherungsdatei einer virtuellen Appliance auf einem Red hat Enterprise Linux oder CentOS System wiederherstellen.
+
+[TIP]
+====
+Wenn der Name des Sicherungsordners ein Leerzeichen enthält, müssen Sie den absoluten Pfad oder den relativen Pfad in doppelte Anführungszeichen einschließen.
+
+====
+
+
+== Schritte
+
+. Wenn Sie eine Wiederherstellung auf einem neuen Server durchführen, starten Sie nach der Installation von Unified Manager die UI nicht oder konfigurieren Sie nach Abschluss der Installation keine Cluster, Benutzer oder Authentifizierungseinstellungen. Die Sicherungsdatei füllt diese Informationen während des Wiederherstellungsprozesses aus.
+. Melden Sie sich als Root-Benutzer an dem Host an, auf dem Unified Manager installiert ist.
+. Wenn Unified Manager in VCS Setup installiert ist, stoppen Sie die Unified Manager ocie und ocieau Services mit Veritas Operations Manager.
+. Stellen Sie an der Eingabeaufforderung das Backup wieder her: `um backup restore -f <backup_file_path>/<backup_file_name>`
++
+`um backup restore -f /data/ocum-backup/UM_9.4.N151113.1348_backup_rhel_02-20-2018-04-45.7z`
+
+
+
+
+
+== Nachdem Sie fertig sind
+
+Nach Abschluss der Wiederherstellung können Sie sich bei Unified Manager einloggen.

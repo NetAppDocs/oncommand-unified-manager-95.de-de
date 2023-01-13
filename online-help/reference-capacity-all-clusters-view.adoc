@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-capacity-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Systemzustand/Cluster Storage Summary“ können in allen Clustern zusammengefasste Informationen zur Storage-Kapazität und -Auslastung angezeigt werden. Anhand dieser Informationen werden mögliche Kapazitätsrisiken identifiziert und die Workloads neu ausgerichtet. 
+---
+= Systemzustand/Cluster-Storage-Übersicht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Systemzustand/Cluster Storage Summary“ können in allen Clustern zusammengefasste Informationen zur Storage-Kapazität und -Auslastung angezeigt werden. Anhand dieser Informationen werden mögliche Kapazitätsrisiken identifiziert und die Workloads neu ausgerichtet.
+
+Verwenden Sie die Schaltfläche *Export*, um die Details aller überwachten Cluster in kommagetrennte Werte zu exportieren (`.csv`) Datei.
+
+* * Cluster*
++
+Der Cluster-Name.
+
+* *HA-Paar*
++
+Der HA-Paar-Wert, der durch die Bildung von zwei Nodes ermittelt wird.
+
+* *Modell/Familie*
++
+Modell oder Familienname des Clusters.
+
+* *Betriebssystemversion*
++
+Die auf dem System installierte ONTAP-Version.
+
+* *Gesamtbruttokapazität*
++
+Zeigt die gesamte physische Kapazität aller Festplatten im Array an.
+
+* *Unkonfigurierte Rohkapazität*
++
+Die nicht konfigurierte Kapazität von Festplatten, deren Containertyp nicht aggregiert, beschädigt, frei oder freigegeben ist. Diese Kapazität ist immer höher als die physische Kapazität der Festplatte in ONTAP. Nehmen Sie beispielsweise eine 2-TB-Festplatte in Betracht. Die physische Kapazität der Festplatte beträgt 1.6 TB in ONTAP, während die nicht konfigurierte Rohkapazität in Unified Manager 1.8 TB beträgt.
+
+* *Gesamtkapazität*
++
+Die Gesamtgröße der verfügbaren Aggregate für den Benutzer. Dies schließt die Snapshot Kopie-Reserve ein.
+
+* *Verwendete Gesamtkapazität*
++
+Die Kapazität, die bereits in Aggregaten verwendet wird. Dies schließt die Kapazität ein, die von Volumes, LUNs und anderen Technologieköpfen für Storage-Effizienz verbraucht wird.
+
+* * Nicht Genutzte Kapazität Aggregieren*
++
+Die Kapazität, die möglicherweise zum Speichern zusätzlicher Daten im Aggregat verfügbar ist. Dies schließt die Snapshot Kopie-Reserve ein.
+
+* *Zugewiesene LUN-Kapazität*
++
+Die Kapazität der zugeordneten LUNs.
+
+* *Nicht zugewiesene LUN-Kapazität*
++
+Die Kapazität aller LUNs, die dem Host nicht zugeordnet sind.
+
+* *Volumen Gesamtkapazität*
++
+Die Gesamtkapazität der Volumes (genutzt plus nicht genutzt).
+
+* *Volumen Genutzte Kapazität*
++
+Verwendete Kapazität der Volumes.
+
+* *Volumen Ungenutzte Kapazität*
++
+Die ungenutzte Kapazität der Volumes.
+
+* *Volume Protection Kapazität*
++
+Die Kapazität der Volumes mit SnapMirror und SnapVault ist aktiviert.
+
+* * Cluster Lizenzierte Cloud Stufe Gesamt*
++
+Die Gesamtkapazität, die in der Cloud-Tier lizenziert wurde. Dieses Feld wird für Storage-Provider angezeigt, die eine FabricPool-Lizenz benötigen, z. B. Amazon S3, Microsoft Azure Cloud, IBM Cloud Object Storage oder Alibaba Cloud Object Storage.
+
+* * Clusterlizenzierte Cloud-Stufe Verwendet*
++
+Der von Daten im Cloud-Tier verwendete Speicherplatz für Storage-Provider, die eine FabricPool Lizenz benötigen.
+
+* *Verwendete Cluster-StorageGRID-Kapazität*
++
+Von Daten in der Cloud-Tier verwendeter Speicherplatz für Storage-Provider, die keine FabricPool-Lizenz benötigen, beispielsweise StorageGRID.
+
+

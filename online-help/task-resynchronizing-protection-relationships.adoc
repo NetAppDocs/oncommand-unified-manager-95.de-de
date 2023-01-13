@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-resynchronizing-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Schutz/Volume-Beziehungen“ können Sie eine Beziehung neu synchronisieren, um sie von einem Ereignis wiederherzustellen, bei dem das Quell-Volume deaktiviert wurde, oder wenn Sie die aktuelle Quelle auf ein anderes Volume ändern möchten. 
+---
+= Erneutes Synchronisieren von Schutzbeziehungen auf der Seite „Schutz/Volume-Beziehungen“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Schutz/Volume-Beziehungen“ können Sie eine Beziehung neu synchronisieren, um sie von einem Ereignis wiederherzustellen, bei dem das Quell-Volume deaktiviert wurde, oder wenn Sie die aktuelle Quelle auf ein anderes Volume ändern möchten.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Sie müssen Workflow Automation einrichten.
+
+
+
+
+== Schritte
+
+. Wählen Sie auf der Seite *Schutz/Volume Relationships* ein oder mehrere Volumes mit stillgelegten Beziehungen aus und klicken Sie in der Symbolleiste auf *resynchronisieren*.
++
+Das Dialogfeld „Resynchronisieren“ wird angezeigt.
+
+. Wählen Sie auf der Registerkarte *Resynchronisierung Optionen* eine Übertragungs-Priorität und die maximale Übertragungsrate aus.
+. Klicken Sie auf *Quelle Snapshot Kopien* und dann in der Spalte *Snapshot Kopie* auf *Standard*.
++
+Das Dialogfeld Quell-Snapshot-Kopie auswählen wird angezeigt.
+
+. Wenn Sie eine vorhandene Snapshot Kopie angeben möchten, anstatt die Standard-Snapshot Kopie zu übertragen, klicken Sie auf *vorhandene Snapshot Kopie* und wählen Sie eine Snapshot Kopie aus der Liste aus.
+. Klicken Sie Auf *Absenden*.
++
+Sie werden wieder zum Dialogfeld „erneut synchronisieren“ angezeigt.
+
+. Wenn Sie mehrere Quellen zum erneuten Synchronisieren ausgewählt haben, klicken Sie für die nächste Quelle, für die Sie eine vorhandene Snapshot Kopie angeben möchten, auf *Standard*.
+. Klicken Sie auf *Senden*, um die Neusynchronisierung zu beginnen.
++
+Der Resynchronisierung-Job wird gestartet, Sie werden auf die Seite Beziehungen zu Schutz/Volumes zurückgegeben und oben auf der Seite wird ein Link zu Jobs angezeigt.
+
+. Klicken Sie auf der Seite *Schutz/Volume-Beziehungen* auf *Jobs anzeigen*, um den Status der einzelnen Neusynchronisierung zu verfolgen.
++
+Eine gefilterte Liste von Jobs wird angezeigt.
+
+. Klicken Sie auf den Pfeil *Zurück* in Ihrem Browser, um zur Seite *Schutz/Volume-Beziehungen* zurückzukehren.
++
+Die Neusynchronisierung ist nach erfolgreichem Abschluss aller Aufgabenstellungen abgeschlossen.
+
+

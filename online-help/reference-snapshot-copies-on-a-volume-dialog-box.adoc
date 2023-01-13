@@ -1,0 +1,69 @@
+---
+permalink: online-help/reference-snapshot-copies-on-a-volume-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit den Snapshot Kopien im Dialogfeld Volume können Sie die Liste der Snapshot Kopien anzeigen. Sie können eine Snapshot-Kopie löschen, um Speicherplatz zu sparen oder frei zu halten, oder wenn die Kopie nicht mehr benötigt wird. Sie können auch die Menge an Festplattenspeicher berechnen, die zurückgewonnen werden kann, wenn eine oder mehrere Snapshot-Kopien gelöscht werden. 
+---
+= Snapshot Kopien in einem Dialogfeld „Volume“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit den Snapshot Kopien im Dialogfeld Volume können Sie die Liste der Snapshot Kopien anzeigen. Sie können eine Snapshot-Kopie löschen, um Speicherplatz zu sparen oder frei zu halten, oder wenn die Kopie nicht mehr benötigt wird. Sie können auch die Menge an Festplattenspeicher berechnen, die zurückgewonnen werden kann, wenn eine oder mehrere Snapshot-Kopien gelöscht werden.
+
+
+
+== Listenansicht
+
+Die Listenansicht zeigt Informationen über die Snapshot Kopien auf dem Volume in Tabellenformat an. Mit den Spaltenfiltern können Sie die angezeigten Daten anpassen.
+
+* *Snapshot Kopie*
++
+Zeigt den Namen der Snapshot Kopie an.
+
+* *Verwendeter Raum %*
++
+Zeigt prozentual den von der Snapshot Kopie im Volume genutzten Gesamtspeicherplatz an.
+
+* *Gesamtgröße*
++
+Zeigt die Gesamtgröße der Snapshot Kopie an.
+
+* *Erstellte Zeit*
++
+Zeigt den Zeitstempel der Snapshot Kopie an.
+
+* *Abhängigkeit*
++
+Zeigt die Applikationen an, die von der Snapshot Kopie abhängig sind. Mögliche Werte sind SnapMirror, SnapVault, SnapLock, Dump, LUNs, Vclone und beschäftigt.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Berechnen*
++
+Mit können Sie den Speicherplatz berechnen, der zurückgewonnen werden kann, indem eine oder mehrere Snapshot Kopien gelöscht werden.
+
+* *Auswahl Löschen*
++
+Löscht eine oder mehrere Snapshot Kopien.
+
+* *Schließen*
++
+Schließt das Dialogfeld Snapshot Kopien in einem Volume.
+
+* * Neu Berechnen*
++
+Mit können Sie den Speicherplatz berechnen, der zurückgewonnen werden kann, indem Sie die ausgewählten Snapshot Kopien löschen.
+
++
+Die Schaltfläche *Neu berechnen* ist aktiviert, wenn Sie Änderungen an der Auswahl der Snapshot-Kopien vornehmen.
+
+

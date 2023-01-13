@@ -1,0 +1,62 @@
+---
+permalink: online-help/task-managing-report-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Ihre Berichtspläne im Dialogfeld Berichtszeitpläne verwalten verwalten verwalten verwalten. Sie können einen neuen Zeitplan hinzufügen und vorhandene Zeitpläne anzeigen, ändern oder löschen. 
+---
+= Verwalten von Berichtzeitplänen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Ihre Berichtspläne im Dialogfeld Berichtszeitpläne verwalten verwalten verwalten verwalten. Sie können einen neuen Zeitplan hinzufügen und vorhandene Zeitpläne anzeigen, ändern oder löschen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Berichte* und dann auf *Berichtszeitpläne verwalten*.
+. Im Dialogfeld *Berichtszeitpläne verwalten*
++
+|===
+| Ihr Ziel ist | Dann... 
+
+
+ a| 
+Vorhandenen Zeitplan anzeigen oder ändern
+ a| 
+.. Wählen Sie den Zeitplan aus der Liste im linken Fensterbereich aus.
++
+Die Zeitplandetails werden angezeigt.
+
+.. Nehmen Sie die erforderlichen Änderungen vor.
+.. Klicken Sie auf *Speichern* oder *Speichern und Schließen*.
+
+
+
+
+ a| 
+Einen vorhandenen Zeitplan löschen
+ a| 
+.. Wählen Sie den Zeitplan aus der Liste im linken Fensterbereich aus.
++
+Die Zeitplandetails werden angezeigt.
+
+.. Klicken Sie Auf *Zeitplan Löschen*.
+
+
+
+
+ a| 
+Fügen Sie einen neuen Zeitplan hinzu
+ a| 
+.. Klicken Sie Auf *Zeitplan Hinzufügen*.
+.. Im rechten Fensterbereich wird ein neues Planungsformular angezeigt.
+.. Geben Sie den Terminnamen, die E-Mail-Adresse des Empfängers, das Berichtsformat und die Häufigkeit ein, und wählen Sie die Berichte aus, die Sie planen möchten.
+.. Klicken Sie Auf *Speichern*. Der neue Zeitplan wird in die Liste „Zeitpläne“ eingefügt.
+
+
+|===
+

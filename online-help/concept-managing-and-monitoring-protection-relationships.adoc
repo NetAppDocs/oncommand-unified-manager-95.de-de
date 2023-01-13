@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-managing-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit OnCommand Unified Manager können Sicherungsbeziehungen erstellt, SnapMirror und SnapVault Beziehungen auf gemanagten Clustern überwacht und Fehler behoben werden und Daten können wiederhergestellt werden, sobald sie überschrieben oder verloren sind. 
+---
+= Managen und Überwachen von Sicherungsbeziehungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit OnCommand Unified Manager können Sicherungsbeziehungen erstellt, SnapMirror und SnapVault Beziehungen auf gemanagten Clustern überwacht und Fehler behoben werden und Daten können wiederhergestellt werden, sobald sie überschrieben oder verloren sind.
+
+Für SnapMirror Vorgänge gibt es zwei Replizierungstypen:
+
+* Asynchron
++
+Die Replizierung vom primären zum sekundären Volume wird durch einen Zeitplan festgelegt.
+
+* Synchron
++
+Die Replizierung wird gleichzeitig auf dem primären und sekundären Volume durchgeführt.
+
+
+
+Sie können bis zu 10 Sicherungsjobs gleichzeitig ausführen, ohne die Leistung zu beeinträchtigen. Möglicherweise haben Sie Auswirkungen auf die Leistung, wenn Sie zwischen 11 und 30 Jobs gleichzeitig ausführen. Es wird nicht empfohlen, mehr als 30 Jobs gleichzeitig auszuführen.

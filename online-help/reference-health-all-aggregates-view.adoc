@@ -1,0 +1,285 @@
+---
+permalink: online-help/reference-health-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Systemzustand/Aggregate Inventory“ werden Informationen zu den überwachten Aggregaten angezeigt und Sie können die Schwellenwerteinstellungen anzeigen und ändern. 
+---
+= Systemzustand/Aggregate Inventarseite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Systemzustand/Aggregate Inventory“ werden Informationen zu den überwachten Aggregaten angezeigt und Sie können die Schwellenwerteinstellungen anzeigen und ändern.
+
+
+
+== Befehlsschaltflächen
+
+* *Schwellenwerte Bearbeiten*
++
+Zeigt das Dialogfeld „Aggregat-Schwellenwerte bearbeiten“ an, in dem Sie die Schwellenwerteinstellungen für einen oder mehrere Aggregate bearbeiten können.
+
+* *Export*
++
+Ermöglicht das Exportieren der Details aller überwachten Aggregate in kommagetrennte Werte (`.csv`) Datei.
+
+
+
+
+
+== Aggregatliste
+
+Zeigt die Eigenschaften aller erkannten Aggregate im Tabellenformat an. Mit den Spaltenfiltern können Sie die angezeigten Daten anpassen:
+
+* *Status*
++
+Der aktuelle Status des Aggregats. Der Status kann kritisch sein (image:../media/sev-critical-um60.png["Symbol für den Schweregrad „Ereignis“ – „kritisch“"]), Fehler (image:../media/sev-error-um60.png["Symbol für den Schweregrad „Ereignis“: Fehler"]), Warnung (image:../media/sev-warning-um60.png["Symbol für den Schweregrad „Ereignis“ – Warnung"]Oder normal (image:../media/sev-normal-um60.png["Symbol für den Schweregrad „Ereignis“ – „Normal“"]).
+
++
+Sie können den Zeiger auf den Status verschieben, um weitere Informationen zu dem für das Aggregat generierten Ereignis oder Ereignissen anzuzeigen.
+
++
+Wenn der Status des Aggregats durch ein einziges Ereignis bestimmt wird, können Sie Informationen wie den Ereignisnamen, die Uhrzeit und das Datum anzeigen, an dem das Ereignis ausgelöst wurde, den Namen des Administrators, dem das Ereignis zugewiesen wurde, und die Ursache des Ereignisses anzeigen. Sie können auf die Schaltfläche *Details anzeigen* klicken, um weitere Informationen über die Veranstaltung anzuzeigen.
+
++
+Wenn der Status des Aggregats durch mehrere Ereignisse des gleichen Schweregrads bestimmt wird, werden die drei wichtigsten Ereignisse mit Informationen angezeigt, z. B. Ereignisname, Uhrzeit und Datum, an dem die Ereignisse ausgelöst werden, und der Name des Administrators, dem das Ereignis zugewiesen ist. Sie können weitere Details zu den einzelnen Ereignissen anzeigen, indem Sie auf den Ereignisnamen klicken. Sie können auch auf den Link *Alle Ereignisse anzeigen* klicken, um die Liste der generierten Ereignisse anzuzeigen.
+
+* * Aggregat*
++
+Der Name des Aggregats.
+
++
+Sie können den Zeiger auf ein Aggregat verschieben, um Informationen wie das letzte erzeugte Ereignis, den Node mit Aggregat, RAID-Typ, Snapshot Reserve, Snapshot Kopien und dem im Aggregat zugewiesenen Speicherplatz anzuzeigen. Sie können auch die Anzahl der derzeit laufenden Volume-Verschiebungen anzeigen.
+
+* *Bundesland*
++
+Der aktuelle Status des Aggregats:
+
++
+** Offline
++
+Lese- oder Schreibzugriff ist nicht zulässig.
+
+** Online
++
+Lese- und Schreibzugriff auf Volumes in diesem Aggregat ist zulässig.
+
+** Eingeschränkt
++
+Begrenzte Vorgänge, wie etwa die Paritätsrekonstruktion, sind zulässig, der Datenzugriff jedoch nicht.
+
+** Wird Erstellt
++
+Das Aggregat wird erstellt.
+
+** Zerstören
++
+Das Aggregat wird zerstört.
+
+** Fehlgeschlagen
++
+Das Aggregat kann nicht online gebracht werden.
+
+** Eingefroren
++
+Das Aggregat bedient (vorübergehend) keine Anforderungen.
+
+** Uneinheitlich
++
+Das Aggregat wurde als beschädigt markiert; wenden Sie sich an den technischen Support.
+
+** Eisenbeschränkungen
++
+Diagnosetools können nicht auf dem Aggregat ausgeführt werden.
+
+** Montage
++
+Das Aggregat wird angehängt.
+
+** Teilweise
++
+Mindestens eine Festplatte für das Aggregat gefunden wurde, aber zwei oder mehr Disketten fehlen.
+
+** Stillgelegt
++
+Das Aggregat wird stillgelegt.
+
+** Wird Stillgelegt
++
+Das Aggregat wird stillgelegt.
+
+** Umgekehrt
++
+Die Umkehroperation des Aggregats ist abgeschlossen.
+
+** Nicht Abgehängt
++
+Das Aggregat ist offline.
+
+** Entmounten
++
+Das Aggregat wird offline geschaltet.
+
+** Unbekannt
++
+Gibt an, dass das Aggregat erkannt wird, die Aggregatinformationen jedoch noch nicht vom Unified Manager-Server abgerufen werden.
+
+
+
+* *Knoten*
++
+Der Name des Storage Controllers, der das Aggregat enthält.
+
+* *Spiegelstatus*
++
+Der Mirror-Status des Aggregats:
+
++
+** Gespiegelt
++
+Die aggregierten Plex-Daten werden gespiegelt.
+
+** Spiegelung beeinträchtigt
++
+Die aggregierten Plex-Daten können nicht gespiegelt werden.
+
+** Spiegelung wird neu synchronisiert
++
+Die aggregierten Plex-Daten werden gespiegelt.
+
+** Fehlgeschlagen
++
+Die Plex-Datenspiegelung des Aggregats ist fehlgeschlagen.
+
+** Ungültige Konfiguration
++
+Der anfängliche Status, bevor ein Aggregat erstellt wird.
+
+** Nicht Initialisiert
++
+Das Aggregat wird erstellt.
+
+** Nicht Gespiegelt
++
+Das Aggregat wird nicht gespiegelt.
+
+** CP-Zählprüfung wird durchgeführt
++
+Das Aggregat wurde assimiliert und Unified Manager prüft, ob die CP für die Plexe ähnlich ist.
+
+** Limbo
++
+Es gibt ein Problem mit den Aggregat-Etiketten. Das ONTAP System erkennt das Aggregat, kann aber das Aggregat nicht genau assimilieren.
+
+** Erfordert eine CP-Zählprüfung
++
+Das Aggregat ist assimiliert, aber die CP wird auf beiden Plexen gezählt, noch nicht.
+
+
+
++
+Wenn sich ein Aggregat im Status „Mirror_Resynchronisierung“ befindet, wird zudem der Resynchronisierungsprozentsatz angezeigt.
+
+* * Im Übergang*
++
+Ob die Migration im Aggregat abgeschlossen ist oder nicht.
+
+* *Typ*
++
+Der Aggregattyp:
+
++
+** HDD
+** Hybrid
++
+Kombiniert HDDs und SSDs, aber Flash Pool wurde nicht aktiviert.
+
+** Hybrid (Flash Pool)
++
+Kombiniert HDDs und SSDs und ermöglicht die Aktivierung von Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Kombiniert SSDs mit einer Cloud-Tier
+
+** VMDisk (SDS)
++
+Virtuelle Laufwerke innerhalb einer virtuellen Maschine
+
+** VMDisk (FabricPool)
++
+Kombiniert virtuelle Festplatten mit einer Cloud-Tier
+
+** LUN (FlexArray) bei Standardfestplatten und SSD-Festplatten ist diese Spalte leer, wenn auf dem überwachten Speichersystem eine ONTAP-Version vor 8.3 ausgeführt wird.
+
+
+* *SnapLock Typ*
++
+Der SnapLock-Typ für das Aggregat. Mögliche Werte sind Compliance, Enterprise, Non-SnapLock.
+
+* *Genutzte Datenkapazität*
++
+Die Menge an Speicherplatz, der für Daten im Aggregat verwendet wird.
+
+* *Verwendete Daten %*
++
+Der Prozentsatz des für Daten im Aggregat genutzten Speicherplatzes.
+
+* *Verfügbare Datenkapazität*
++
+Die Menge an Speicherplatz, der für Daten im Aggregat verfügbar ist.
+
+* * Verfügbare Daten %*
++
+Der Prozentsatz des verfügbaren Speicherplatzes für Daten im Aggregat.
+
+* *Gesamtkapazität Der Daten*
++
+Die Gesamtdatengröße des Aggregats.
+
+* * Engagierte Kapazität*
++
+Den insgesamt für alle Volumes im Aggregat zugesagt wurde.
+
++
+Wenn Autogrow auf Volumes im Aggregat aktiviert ist, basiert die engagierte Kapazität auf der maximal zulässigen Volume-Größe, die mit Autogrow festgelegt ist, nicht auf der ursprünglichen Volume-Größe. Bei FabricPool Aggregaten ist dieser Wert nur für die lokale oder Performance-Ebene bzw. Kapazität relevant. Der im Cloud-Tier verfügbare Speicherplatz wird in diesem Wert nicht berücksichtigt.
+
+* *Speicherersparnis*
++
+Das Storage-Effizienz-Verhältnis basiert auf dem logischen Gesamtspeicherplatz, der zum Speichern der Daten verwendet wird, und dem physischen Speicherplatz, der zum Speichern der Daten unter Einsatz der ONTAP Storage-Effizienztechnologien erforderlich wäre.
+
++
+Dieses Feld wird nur dann befüllt, wenn auf dem überwachten Speichersystem ONTAP Version 9.0 oder höher ausgeführt wird, und nur für Aggregate ohne Root-Root.
+
+* *RAID-Typ*
++
+Der RAID-Konfigurationstyp:
+
++
+** RAID 0: Alle RAID-Gruppen sind vom Typ RAID 0.
+** RAID 4: Alle RAID Gruppen sind vom Typ RAID 4.
+** RAID-DP: Alle RAID-Gruppen vom Typ RAID-DP.
+** RAID-TEC: Alle RAID Gruppen sind vom Typ RAID-TEC.
+** Gemischtes RAID: Das Aggregat enthält RAID-Gruppen unterschiedlicher RAID-Typen (RAID 0, RAID 4, RAID-DP und RAID-TEC).
+
+
+* *Cloud Tier Verwendeter Platz*
++
+Der Speicherplatz, der im Cloud-Tier verwendet wird; wenn das Aggregat ein FabricPool Aggregat ist.
+
+
+
+
+
+== Bereich Filter
+
+Mit können Sie Filter festlegen, um die Art und Weise anzupassen, wie Informationen in der Liste der Aggregate angezeigt werden. Sie können Filter für die Spalte Status auswählen.
+
+[NOTE]
+====
+Die im Fensterbereich Filter angegebenen Filter überschreiben die für die Spalten in der Liste Aggregate angegebenen Filter.
+
+====

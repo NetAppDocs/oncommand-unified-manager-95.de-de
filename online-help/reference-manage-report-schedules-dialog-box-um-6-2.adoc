@@ -1,0 +1,94 @@
+---
+permalink: online-help/reference-manage-report-schedules-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können vorhandene Berichtspläne anzeigen, ändern oder löschen und neue Zeitpläne für Ihre Berichte über das Dialogfeld Berichtszeitpläne verwalten hinzufügen. 
+---
+= Dialogfeld „Berichtszeitpläne verwalten“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können vorhandene Berichtspläne anzeigen, ändern oder löschen und neue Zeitpläne für Ihre Berichte über das Dialogfeld Berichtszeitpläne verwalten hinzufügen.
+
+
+
+== Eigenschaften
+
+Sie können einen vorhandenen Zeitplan auswählen oder einen neuen Zeitplan für Ihre Berichte erstellen. Sie können Ihre Berichtspläne anzeigen, ändern oder löschen.
+
+* *Linker Fensterbereich*
++
+** *Terminplanname*
++
+Zeigt die vorhandenen Zeitpläne an. Wenn Sie auf einen beliebigen Zeitplan klicken, können Sie die Terminplandetails im rechten Fensterbereich anzeigen. Bei der ersten Anmeldung sind keine Zeitpläne vorhanden.
+
+** *Zeitplan Hinzufügen*
++
+Zeigt das neue Planungsformular im rechten Fensterbereich an. Sie können jetzt einen neuen Zeitplan hinzufügen.
+
+
+
+* *Rechter Fensterbereich*
++
+** *Terminplanname*
++
+Zeigt den Planungsnamen an.
+
+** * Empfänger-E-Mail-Adresse*
++
+Zeigt die E-Mail-Adresse des Benutzers an den der Bericht gesendet werden muss. Sie können mehrere E-Mail-Adressen eingeben, die durch Kommas getrennt sind.
+
+** *Berichtsformat*
++
+Zeigt das Format an, in dem der Bericht dargestellt werden muss. Die PDF-Option ist als Standardreport-Format ausgewählt. Wenn das XHTML-Format ausgewählt ist, öffnen Sie den Bericht, der per E-Mail über einen unterstützten Webbrowser gesendet wird.
+
+** *Frequenz*
++
+Zeigt die Häufigkeit an, mit der der Bericht geplant ist.
+
+** *Kategorie Melden*
++
+Zeigt die Gruppen der Berichtskategorie an. Wenn Sie eine Berichtskategorie aus der Liste auswählen, werden in der Spalte Verfügbare Berichte die Berichte angezeigt, die zu dieser Berichtskategorie gehören.
+
+** *Verfügbare Berichte*
++
+Zeigt nur die Berichte an, die zur ausgewählten Berichtskategorie gehören.
+
+** *Ausgewählte Berichte*
++
+Zeigt die ausgewählten Berichte an, auf die Sie den Zeitplan anwenden möchten. Sie können die gewünschten Berichte in der Spalte Verfügbare Berichte auswählen. Es muss mindestens ein Bericht ausgewählt werden
+
+
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Zeitplan Hinzufügen*
++
+Ermöglicht Ihnen das Hinzufügen eines neuen Zeitplans.
+
+* *Zeitplan Löschen*
++
+Ermöglicht das Löschen des aktuell angezeigten Zeitplans. Wenn Sie einen neuen Zeitplan erstellen, ist diese Schaltfläche nicht verfügbar.
+
+* *Speichern*
++
+Speichert den angezeigten, geänderten oder hinzugefügten Zeitplan.
+
+* *Speichern und Schließen*
++
+Speichert den angezeigten, geänderten oder hinzugefügten Zeitplan und schließt das Dialogfeld Berichtspläne verwalten.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Berichtszeitpläne verwalten, während eine Meldung angezeigt wird, die den Zeitplan speichern soll.
+
+

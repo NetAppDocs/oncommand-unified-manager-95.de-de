@@ -1,0 +1,36 @@
+---
+permalink: online-help/reference-export-policy-rules-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Das Dialogfeld Richtlinien exportieren zeigt Details zu den Exportrichtlinien, Authentifizierungsprotokollen und aktivierten Zugriffsrechten für die Volumes an, die zur Storage Virtual Machine \ (SVM\) gehören. Mit den Filtern können Sie die Anzeige der Informationen in der Liste der Regeln für den Export anpassen. Standardmäßig werden die Informationen anhand der Indexspalte sortiert.' 
+---
+= Dialogfeld „Richtlinien exportieren“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Dialogfeld Richtlinien exportieren zeigt Details zu den Exportrichtlinien, Authentifizierungsprotokollen und aktivierten Zugriffsrechten für die Volumes an, die zur Storage Virtual Machine (SVM) gehören. Mit den Filtern können Sie die Anzeige der Informationen in der Liste der Regeln für den Export anpassen. Standardmäßig werden die Informationen anhand der Indexspalte sortiert.
+
+* *Index*
++
+Zeigt den Index an, der den Regeln für die Exportrichtlinie zugewiesen ist. Es handelt sich um eine eindeutige Nummer.
+
+* *Zugriffsprotokolle*
++
+Zeigt die Protokolle an, die für die Regeln für die Exportrichtlinie aktiviert sind.
+
+* * Client Match*
++
+Zeigt die Clients an, die über Berechtigungen zum Zugriff auf Daten auf den Volumes verfügen, die zur SVM gehören.
+
+* *Nur-Lese-Zugriff*
++
+Zeigt das Authentifizierungsprotokoll an, das zum Lesen von Daten auf den Volumes verwendet wird, die zur SVM gehören.
+
+* *Schreibzugriff Lesen*
++
+Zeigt das Authentifizierungsprotokoll an, das zum Lesen oder Schreiben von Daten auf den Volumes verwendet wird, die zur SVM gehören.
+
+

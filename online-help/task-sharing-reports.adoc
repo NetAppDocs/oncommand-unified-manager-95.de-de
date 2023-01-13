@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-sharing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Ihre Berichte per E-Mail versenden und mit einem oder mehreren Benutzern teilen. 
+---
+= Gemeinsame Nutzung von Berichten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Ihre Berichte per E-Mail versenden und mit einem oder mehreren Benutzern teilen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Berichte* und dann auf *Bericht ausführen* für den gewünschten Bericht.
++
+Die Seite Berichtdetails wird angezeigt.
+
+. Klicken Sie Auf *Aktionen* > *Teilen*.
+. Geben Sie im Dialogfeld *Bericht teilen* die E-Mail-Adresse des Empfängers an, mit dem Sie den Bericht teilen möchten.
++
+Sie können eine oder mehrere E-Mail-Adressen angeben, die durch Kommas getrennt sind.
+
+. Geben Sie den Betreff der E-Mail an.
++
+Standardmäßig wird der Name des Berichts als Betreff der E-Mail angezeigt.
+
+. Wählen Sie das Berichtsformat aus.
++
+Die Option _PDF_ ist als Standardreport-Format ausgewählt. Wenn das XHTML-Format ausgewählt ist, muss der Empfänger den Bericht öffnen, der per E-Mail über einen unterstützten Webbrowser gesendet wird.
+
+. Klicken Sie Auf *Teilen*.
+

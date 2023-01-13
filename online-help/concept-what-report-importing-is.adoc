@@ -1,0 +1,44 @@
+---
+permalink: online-help/concept-what-report-importing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können einen Bericht mit der Option „Bericht importieren“ aus Unified Manager importieren und den importierten Bericht mit einem Namen und einer kurzen Beschreibung speichern. Durch das Importieren von Berichten können Sie zusätzlich zu den Standardberichten von Unified Manager benutzerdefinierte Berichte zu Ihrer Umgebung hinzufügen. 
+---
+= Der Import des Berichts ist
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können einen Bericht mit der Option *Bericht importieren* aus Unified Manager importieren und den importierten Bericht mit einem Namen und einer kurzen Beschreibung speichern. Durch das Importieren von Berichten können Sie zusätzlich zu den Standardberichten von Unified Manager benutzerdefinierte Berichte zu Ihrer Umgebung hinzufügen.
+
+Sie können ein importieren `.rptdesign` Datei, die bereits erstellt wurde. Sie können einen importierten Bericht ausführen, freigeben, planen und löschen.
+
+Unified Manager speichert die Importprotokolldateien in den Dateien jboss.log, ocum-Report.log und ocumserver-debug.log.
+
+[NOTE]
+====
+Der Kunden-Support hilft Ihnen nicht bei der Erstellung von Berichten, aber er unterstützt Sie bei Problemen, die während eines Berichtsimports auftreten.
+
+====
+Die Funktion Importbericht umfasst die folgende Unterstützung:
+
+* Berichte mit mehreren Kopfzeilen, in denen der Spaltbereich auf 1 gesetzt ist (`colspan=1`)
+* Berichte nur mit Diagrammen
+* Berichte nur mit Listen und Raster
+* Passwörter, die in Berichten verwendet werden, müssen im Format „`base64`“ codiert werden. Berichte, die andere Codierung verwenden, z. B. das Format „`jce`“, verursachen während des Importvorgangs einen Fehler.
+* Berichte, die die Datenaggregation enthalten, sollten das aggregierte Spaltenelement in den Tabellendaten des Berichts enthalten.
+
+
+Berichte im Text-, CSV- und Excel-Format werden in den folgenden Szenarien unterstützt:
+
+* Tabellenelement nur in `.rptdesign` Datei
+* Eine Tabelle mit nur einer Kopfzeile
+
+
+[NOTE]
+====
+Sie können Berichte, die über einen Spaltbereich von mehr als 1 verfügen, nicht importieren. Wenn ein Bericht im Text-, CSV- oder Excel-Format mehr als eine Kopfzeile enthält, wird nur die erste Kopfzeile berücksichtigt und der Rest wird ignoriert.
+
+====

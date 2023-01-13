@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-setup-autosupport-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Setup/AutoSupport können Sie die Beschreibung der AutoSupport anzeigen, regelmäßige AutoSupport aktivieren oder On-Demand AutoSupport Nachrichten senden. 
+---
+= Setup-/AutoSupport-Seite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Setup/AutoSupport können Sie die Beschreibung der AutoSupport anzeigen, regelmäßige AutoSupport aktivieren oder On-Demand AutoSupport Nachrichten senden.
+
+
+
+== Informationsbereich
+
+* *System-ID*
++
+Zeigt die System-ID für diesen Unified Manager-Server an.
+
+
+
+
+
+== Bereich „Periodensystem AutoSupport“
+
+Mit dieser Funktion können Sie dem technischen Support spezifische, vordefinierte Meldungen zur periodischen Problemdiagnose und -Behebung senden.
+
+* *Periodensystem-AutoSupport aktivieren*
++
+Gibt an, dass Sie die Funktion „Periodensystem AutoSupport“ aktivieren möchten.
+
+
+
+
+
+== On-Demand AutoSupport Bereich
+
+Sie können eine On-Demand-Nachricht an den technischen Support, einen bestimmten E-Mail-Empfänger oder beides generieren und senden:
+
+* *An technischen Support senden*
++
+Zeigt an, dass Sie bei aufgetretenen Problemen eine On-Demand-Nachricht an den technischen Support senden möchten.
+
+* *An E-Mail-Empfänger senden*
++
+Gibt an, dass Sie für alle aufgetretenen Probleme eine On-Demand-Nachricht an einen bestimmten Empfänger senden möchten.
+
+* * AutoSupport generieren und senden*
++
+Generiert und sendet eine On-Demand-Nachricht an den technischen Support, einen angegebenen E-Mail-Empfänger oder beides, wenn Fehler aufgetreten sind.
+
+
+
+
+
+== HTTP-Proxy-Bereich
+
+Sie können einen Proxy für den Internetzugriff festlegen, um AutoSupport-Inhalte zu unterstützen, falls Ihre Umgebung keinen direkten Zugriff vom Unified Manager-Server bietet.
+
+* *HTTP Proxy verwenden*
++
+Aktivieren Sie dieses Kontrollkästchen, um den Server zu identifizieren, der als HTTP-Proxy verwendet wird.
+
++
+Geben Sie den Hostnamen oder die IP-Adresse des Proxyservers und die Portnummer ein, die für die Verbindung mit dem Server verwendet wird.
+
+* *Authentifizierung verwenden*
++
+Aktivieren Sie dieses Kontrollkästchen, wenn Sie Authentifizierungsinformationen für den Zugriff auf den Server angeben müssen, der als HTTP-Proxy verwendet wird.
+
++
+Geben Sie den Benutzernamen und das Kennwort ein, das für die Authentifizierung mit dem HTTP-Proxy erforderlich ist.
+
+
+
+[NOTE]
+====
+HTTP-Proxys, die nur grundlegende Authentifizierung bereitstellen, werden nicht unterstützt.
+
+====

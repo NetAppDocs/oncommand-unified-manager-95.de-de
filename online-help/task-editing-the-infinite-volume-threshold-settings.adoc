@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-the-infinite-volume-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn Sie Probleme im Speicher Ihres Infinite Volume beheben müssen, können Sie die Schwellenwerteinstellungen der Kapazität des Infinite Volume basierend auf den Anforderungen Ihres Unternehmens bearbeiten. Wenn ein Schwellenwert überschritten wird, werden Ereignisse generiert und Sie erhalten Benachrichtigungen, wenn Sie für solche Ereignisse konfiguriert haben. 
+---
+= Bearbeiten der Schwellenwerteinstellungen des Infinite Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie Probleme im Storage-Bereich Ihres Infinite Volume beheben müssen, können Sie die Schwellenwerteinstellungen der Kapazität des Infinite Volume entsprechend den Anforderungen Ihres Unternehmens bearbeiten. Wenn ein Schwellenwert überschritten wird, werden Ereignisse generiert und Sie erhalten Benachrichtigungen, wenn Sie für solche Ereignisse konfiguriert haben.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie auf der Seite *Health/Storage Virtual Machines* Inventory eine SVM mit Infinite Volume aus.
+. Klicken Sie auf der Seite *Health/Storage Virtual Machine* Details auf *Actions* > *Schwellenwerte bearbeiten*.
+. Ändern Sie im Dialogfeld *SVM mit Infinite Volume Schwellenwerten* die Schwellenwerte nach Bedarf.
+. Klicken Sie auf *Speichern und Schließen*.
+

@@ -1,0 +1,48 @@
+---
+permalink: online-help/reference-edit-group-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die von Ihnen erstellten Gruppenregeln bearbeiten, um die maximale Anzahl von Speicherobjekten in einer Gruppe aufzunehmen. 
+---
+= Dialogfeld Gruppenregel bearbeiten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die von Ihnen erstellten Gruppenregeln bearbeiten, um die maximale Anzahl von Speicherobjekten in einer Gruppe aufzunehmen.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Regelname*
++
+Zeigt den Namen der Regel an.
+
+* *Zielobjekttyp*
++
+Zeigt das Speicherobjekt an, das einer ausgewählten Gruppe hinzugefügt werden soll. Sie können den Objekttyp nicht ändern.
+
+* * Assoziierte Gruppe*
++
+Zeigt die zugeordnete Gruppe an. Sie können eine andere Gruppe für die Gruppenregel auswählen.
+
+* *Zustand*
++
+Zeigt die Liste der Bedingungen für eine ausgewählte Gruppe an. Sie können die Bedingungen bearbeiten. Die Speicherobjekte werden auf Basis der Änderungen entweder entfernt oder einer ausgewählten Gruppe hinzugefügt.
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Speichern*
++
+Speichert die vorgenommenen Änderungen und schließt das Dialogfeld.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Gruppenregel bearbeiten, ohne Ihre Änderungen zu speichern.
+
+

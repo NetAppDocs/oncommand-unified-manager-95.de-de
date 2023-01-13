@@ -1,0 +1,32 @@
+---
+permalink: performance-checker/concept-what-the-expected-range-of-performance-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Der erwartete Wertebereich ist eine Prognose oder Vorhersage dessen, was die oberen und unteren Leistungswerte zu einem bestimmten Zeitpunkt erwartet werden. Bei der Workload-Latenz bilden die oberen Werte den Performance-Schwellenwert. Wenn der tatsächliche Wert den Performance-Schwellenwert überschreitet, löst Unified Manager eine Warnmeldung im Rahmen des Performance-Ereignisses aus. 
+---
+= Der erwartete Leistungsbereich
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der erwartete Wertebereich ist eine Prognose oder Vorhersage dessen, was die oberen und unteren Leistungswerte zu einem bestimmten Zeitpunkt erwartet werden. Bei der Workload-Latenz bilden die oberen Werte den Performance-Schwellenwert. Wenn der tatsächliche Wert den Performance-Schwellenwert überschreitet, löst Unified Manager eine Warnmeldung im Rahmen des Performance-Ereignisses aus.
+
+Beispiel: Während der regulären Geschäftszeiten zwischen 9:00 Uhr Bis 5:00 Uhr checken die meisten Mitarbeiter ihre E-Mail-Adresse möglicherweise zwischen 9:00 Uhr ein Und 10:30 Uhr Der erhöhte Bedarf an E-Mail-Servern bedeutet eine Zunahme der Workload-Aktivitäten im Back-End Storage während dieser Zeit. Mitarbeiter können von ihren E-Mail-Clients langsame Reaktionszeiten feststellen.
+
+Während der Mittagspause zwischen 12:00 Uhr Und 13:00 Uhr Und am Ende des Arbeitstages nach 5:00 Uhr werden die meisten Mitarbeiter wahrscheinlich von ihren Computern weg. Der Bedarf an E-Mail-Servern sinkt in der Regel, wodurch auch der Bedarf an Back-End Storage sinkt. Alternativ können geplante Workload-Operationen wie Storage-Backups oder Virus-Scans nach 5:00 Uhr geplant werden Und erhöhen Sie die Aktivität im Back-End Storage.
+
+Über mehrere Tage bestimmt der Anstieg und die Abnahme der Workload-Aktivität den erwarteten Aktivitätsbereich, wobei die Workloads über- und Untergrenzen verteilt sind. Wenn sich die tatsächlichen Workload-Aktivitäten für ein Objekt außerhalb der oberen oder unteren Grenzen befinden und für einen bestimmten Zeitraum außerhalb der Grenzen liegen, kann dies darauf hindeuten, dass das Objekt überlastet oder nicht ausgelastet ist.
+
+
+
+== Wie sich der erwartete Bereich bildet
+
+Unified Manager muss mindestens 3 Tage Workload-Aktivität sammeln, bevor sie mit der Analyse beginnen kann. Anschließend kann der erwartete Bereich für I/O-Reaktionszeiten und Vorgänge auf der GUI angezeigt werden. Die erforderliche Mindesterfassung berücksichtigt nicht alle Änderungen, die von der Workload-Aktivität durchgeführt werden. Nach der Erfassung der ersten 3 Tage der Aktivität passt Unified Manager den erwarteten Bereich alle 24 Stunden um 12:00 Uhr an, um Änderungen der Workload-Aktivität widerzuspiegeln und einen genaueren Leistungsschwellenwert festzulegen.
+
+[NOTE]
+====
+Bei der Sommerzeit (Sommerzeit) wird die Systemzeit geändert, wodurch der erwartete Bereich der Performance-Statistiken für überwachte Workloads verändert wird. Unified Manager beginnt sofort mit der Korrektur des erwarteten Bereichs, der ungefähr 15 Tage dauert. In dieser Zeit können Sie Unified Manager weiterhin verwenden. Da Unified Manager jedoch den erwarteten Bereich zum Erkennen von Ereignissen verwendet, sind einige Ereignisse möglicherweise nicht korrekt. Ereignisse, die vor der Zeitänderung erkannt wurden, werden nicht beeinträchtigt. Wenn Sie die Zeit auf einem Cluster oder auf einem Unified Manager-Server zu einem früheren Zeitpunkt manuell ändern, wirkt sich dies auch auf die Ergebnisse der Ereignisanalyse aus.
+
+====

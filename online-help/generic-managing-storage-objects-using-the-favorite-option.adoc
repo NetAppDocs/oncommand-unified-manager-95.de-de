@@ -1,0 +1,41 @@
+---
+permalink: online-help/generic-managing-storage-objects-using-the-favorite-option.html 
+sidebar: sidebar 
+keywords:  
+summary: Über die Option Favoriten können Sie ausgewählte Speicherobjekte in Unified Manager anzeigen und verwalten, indem Sie sie als Favoriten markieren. So können Sie den Status Ihrer bevorzugten Storage-Objekte schnell einsehen und Probleme beheben, bevor sie kritisch werden. 
+---
+= Verwalten von Speicherobjekten mit der Option Favoriten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über die Option Favoriten können Sie ausgewählte Speicherobjekte in Unified Manager anzeigen und verwalten, indem Sie sie als Favoriten markieren. So können Sie den Status Ihrer bevorzugten Storage-Objekte schnell einsehen und Probleme beheben, bevor sie kritisch werden.
+
+
+
+== Aufgaben, die Sie im Dashboard „Favoriten“ ausführen können
+
+* Zeigen Sie die Liste der als Favorit markierten Speicherobjekte an.
+* Fügen Sie der Favoritenliste Speicherobjekte hinzu.
+* Entfernen Sie Speicherobjekte aus der Favoritenliste.
+
+
+
+
+== Anzeigen der Favoritenliste
+
+Sie können die Kapazitäts-, Performance- und Sicherungsdetails ausgewählter Speicherobjekte in der Liste Favoriten anzeigen. Die Details von maximal 20 Speicherobjekten werden in der Favoritenliste angezeigt.
+
+
+
+== Hinzufügen von Speicherobjekten zur Favoritenliste
+
+Sie können der Liste „Favoriten“ Storage-Objekte hinzufügen und diese Objekte dann für Zustand, Kapazität und Performance überwachen. Sie können Cluster, Volumes und Aggregate nur als Favorit markieren.
+
+
+
+== Entfernen von Speicherobjekten aus der Favoritenliste
+
+Sie können Speicherobjekte aus der Favoritenliste entfernen, wenn sie nicht mehr als Favorit markiert werden müssen.

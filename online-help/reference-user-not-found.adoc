@@ -1,0 +1,28 @@
+---
+permalink: online-help/reference-user-not-found.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Der Benutzer wurde nicht gefunden
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *Ausgabe*
++
+Wenn Sie einen Authentifizierungsvorgang wie das Hinzufügen, Bearbeiten, Löschen oder Testen von Remote-Benutzern oder -Gruppen durchführen, wird die folgende Fehlermeldung angezeigt: `User not found`.
+
+* *Ursache*
++
+Dieses Problem kann auftreten, wenn der Benutzer im AD-Server oder LDAP-Server existiert und wenn Sie den Distinguished Base-Namen auf einen falschen Wert gesetzt haben.
+
+* *Korrekturmaßnahmen*
++
+.. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann auf *Setup* > *Authentifizierung*.
+.. Geben Sie die entsprechenden Informationen für den Basisnamen ein.
+.. Klicken Sie auf *Speichern und Schließen*.
+
+
+

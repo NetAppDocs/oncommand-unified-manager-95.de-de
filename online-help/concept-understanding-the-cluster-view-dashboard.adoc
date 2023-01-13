@@ -1,0 +1,37 @@
+---
+permalink: online-help/concept-understanding-the-cluster-view-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Das Unified ManagerCluster View Overview Dashboard liefert allgemeine Informationen über den Zustand der zu verwaltenden Cluster. Das Dashboard der Clusteransicht besteht aus zwei Hauptbereichen: Managed Clusters \ (links\) und Cluster Details \ (rechts\).' 
+---
+= Allgemeines zum Dashboard der Cluster-Ansicht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Unified ManagerCluster View Overview Dashboard liefert allgemeine Informationen über den Zustand der zu verwaltenden Cluster. Das Dashboard der Clusteransicht besteht aus zwei Hauptbereichen: Verwalteten Clustern (links) und Clusterdetails (rechts).
+
+Das folgende Bild zeigt ein Beispiel eines Unified ManagerCluster View Dashboards für die Überwachung von acht Clustern:
+
+image::../media/dashboard-clusterview-um.gif[Dashboard-Clusteransicht um]
+
+Das Statussymbol neben den einzelnen Cluster-Namen kann in den folgenden Status enthalten sein:
+
+* Kritisch (image:../media/sev-critical-um60.png["Symbol für den Schweregrad „Ereignis“ – „kritisch“"]): Ein oder mehrere aktive kritische Ereignisse wurden für den Cluster gemeldet.
+* Fehler (image:../media/sev-error-um60.png["Symbol für den Schweregrad „Ereignis“: Fehler"]): Ein oder mehrere aktive Fehlerereignisse wurden für den Cluster gemeldet.
+* Warnung (image:../media/sev-warning-um60.png["Symbol für den Schweregrad „Ereignis“ – Warnung"]): Ein oder mehrere aktive Warnereignisse wurden für den Cluster gemeldet.
+* Normal (image:../media/sev-normal-um60.png["Symbol für den Schweregrad „Ereignis“ – „Normal“"]): Für den Cluster wurden keine aktiven Ereignisse gemeldet.
+
+
+[NOTE]
+====
+Die Farbe gibt an, ob aktive (neue oder bestätigte) Ereignisse für das Objekt vorhanden sind. Ereignisse, die nicht mehr aktiv sind, die als veraltete Ereignisse bezeichnet werden, haben keinen Einfluss auf die Farbe des Symbols.
+
+====
+Um zusätzliche Informationen über ein Cluster anzuzeigen, können Sie eine der folgenden Aktionen durchführen:
+
+* Sie können auf einen Cluster-Namen klicken, um Überblicksinformationen zu Monitoring-Status, Kapazitätsstatus und Performance-Status des Clusters anzuzeigen.
+* Sie können auf *Cluster verwalten* klicken, um die Seite Configuration/Cluster Data Sources anzuzeigen, auf der Sie detaillierte Statusinformationen für alle Cluster anzeigen können, die von dieser Instanz von Unified Manager verwaltet werden.
+

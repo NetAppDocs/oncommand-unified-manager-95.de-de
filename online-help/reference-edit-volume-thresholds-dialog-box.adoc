@@ -1,0 +1,158 @@
+---
+permalink: online-help/reference-edit-volume-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Warnmeldungen so konfigurieren, dass Benachrichtigungen gesendet werden, wenn ein Ereignis im Zusammenhang mit der Kapazität eines Volumes generiert wird, und Sie können Korrekturmaßnahmen für das Ereignis ergreifen. Beispielsweise können Sie für den Schwellenwert „Volume Full“ eine Meldung konfigurieren, um eine Benachrichtigung zu senden, wenn der Zustand über einen bestimmten Zeitraum beibehalten wird. 
+---
+= Dialogfeld „Volumenschwellenwerte bearbeiten“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Benachrichtigungen konfigurieren, um Benachrichtigungen zu senden, wenn ein Ereignis bezüglich der Kapazität eines Volume generiert wird, und Sie können Korrekturmaßnahmen für das Ereignis ergreifen. Beispielsweise können Sie für den Schwellenwert „Volume Full“ eine Meldung konfigurieren, um eine Benachrichtigung zu senden, wenn der Zustand über einen bestimmten Zeitraum beibehalten wird.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+Im Dialogfeld Volume-Schwellenwerte bearbeiten können Sie Schwellenwerte auf Volume-Ebene konfigurieren, die auf die ausgewählten Volumes angewendet werden. Wenn Schwellenwerte auf Volume-Ebene konfiguriert werden, haben sie Vorrang vor den Schwellenwerten auf Gruppenebene oder den globalen Schwellenwerten.
+
+Sie können Schwellenwerteinstellungen für Kapazität, Snapshot Kopien, qtree-Kontingent, Wachstum und Inodes auf Volume-Ebene konfigurieren. Wenn eine Gruppenaktion des Schwellenwerttyps des Volumes konfiguriert ist, werden die Schwellenwerte der Gruppenaktion für Einstellungen verwendet, die nicht auf der Volume-Ebene konfiguriert sind. Wenn keine Gruppenaktion des Volume-Schwellenwerttyps konfiguriert ist, verwenden Sie im Dialogfeld „Volumenschwellenwerte bearbeiten“ Bereiche, die nicht konfiguriert sind, globale Schwellenwerte.
+
+
+
+== Kapazität
+
+Im Kapazitätsbereich können Sie die folgenden Schwellwerte für die Volume-Kapazität einstellen:
+
+* *Raum Fast Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als fast voll angesehen wird. Er zeigt auch die Größe des Volumens an, die dem angegebenen Schwellenwert entspricht.
+
++
+Sie können auch den Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+* *Raum Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als voll betrachtet wird. Er zeigt auch die Größe des Volumens an, die dem angegebenen Schwellenwert entspricht.
+
++
+Sie können auch den Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+* *Tage Bis Voll*
++
+Gibt die Anzahl der verbleibenden Tage an, bevor das Volume die volle Kapazität erreicht hat.
+
+
+
+
+
+== Snapshots
+
+Im Bereich Snapshot Kopien können Sie die folgenden Schwellwerte für die Snapshot Kopien im Volume festlegen.
+
+* *Snapshot Reserve Voll*
++
+Gibt den Prozentsatz an, mit dem der für Snapshot Kopien reservierte Speicherplatz als voll betrachtet wird.
+
+* *Tage Bis Voll*
++
+Gibt die Anzahl der Tage an, die noch verbleiben, bevor der für Snapshot Kopien reservierte Speicherplatz mit der vollen Kapazität erreicht wird.
+
+* * Anzahl*
++
+Gibt die Anzahl der Snapshot Kopien auf einem Volume an, die als zu viele Kopien gelten.
+
+
+
+
+
+== Qtree-Kontingentbereich
+
+Der Qtree Quota Bereich ermöglicht es Ihnen, die folgenden qtree Quota Schwellenwerte für die ausgewählten Volumen festzulegen:
+
+* *Fast Überengagiert*
++
+Gibt den Prozentsatz an, mit dem ein Volume als beinahe durch qtree Kontingente überengagiert werden soll.
+
+* *Überengagiert*
++
+Gibt den Prozentsatz an, mit dem ein Volume als durch qtree Kontingente überengagiert werden soll.
+
+
+
+
+
+== Wachstumsbereich
+
+Im Wachstumsbereich können Sie die folgende Schwellwertbedingung für das Volumenwachstum festlegen:
+
+* *Wachstumsrate*
++
+Gibt den Prozentsatz an, bei dem die Wachstumsrate eines Volumes als normal angesehen wird, bevor das System ein ungewöhnliches Ereignis der Volumenwachstumsrate generiert.
+
+* *Empfindlichkeit Der Wachstumsrate*
++
+Gibt den Faktor an, der auf die Standardabweichung der Wachstumsrate eines Volumens angewendet wird. Wenn die Wachstumsrate die faktorierte Standardabweichung überschreitet, wird ein ungewöhnliches Ereignis der Volumenwachstumsrate generiert.
+
++
+Ein niedrigerer Wert für die Empfindlichkeit der Wachstumsrate zeigt an, dass das Volumen sehr empfindlich auf Veränderungen der Wachstumsrate reagiert.
+
++
+[NOTE]
+====
+Wenn Sie die Wachstumssensitivität für Volumes auf der globalen Schwellenebene ändern, wird die Änderung auch auf die Wachstumsratenempfindlichkeit für Aggregate auf der globalen Schwellenebene angewendet.
+
+====
+
+
+
+
+== Inodes-Bereich
+
+Im Inodes-Bereich können Sie die folgenden Schwellwerte für Inodes festlegen:
+
+* *Fast Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als den Großteil seiner Inodes verbraucht wurde.
+
++
+Sie können auch die Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+* *Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als verbraucht wurde, alle Inodes verbraucht zu haben.
+
++
+Sie können auch die Schieberegler verwenden, um den Schwellenwert festzulegen.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Über die Schaltflächen können Sie die folgenden Aufgaben für ein ausgewähltes Volume ausführen:
+
+* *Auf Standard zurücksetzen*
++
+Ermöglicht Ihnen, die Schwellenwerte auf einen der folgenden Werte wiederherzustellen:
+
++
+** Gruppenwerte, wenn das Volume zu einer Gruppe gehört und diese Gruppe über einen Aktionstyp Volume-Schwellenwert verfügt.
+** Globale Werte, wenn das Volume nicht zu einer Gruppe gehört oder zu einer Gruppe gehört, die keinen Aktionstyp für den Volumenschwellenwert hat.
+
+
+* *Speichern*
++
+Speichert alle Schwellwerteinstellungen.
+
+* *Speichern und Schließen*
++
+Speichert alle Schwellwerteinstellungen und schließt das Dialogfeld.
+
+* *Abbrechen*
++
+Ignoriert die Änderungen (falls vorhanden) an den Schwellenwerteinstellungen und schließt das Dialogfeld.
+
+

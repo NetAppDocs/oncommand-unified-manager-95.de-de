@@ -1,0 +1,70 @@
+---
+permalink: online-help/task-changing-or-canceling-a-scheduled-maintenance-window.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn Sie ein Wartungsfenster von Unified Manager für die Zukunft konfiguriert haben, können Sie die Start- und Endzeit ändern oder das Wartungsfenster nicht mehr ausführen. 
+---
+= Ändern oder Abbrechen eines geplanten Wartungsfensters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie ein Wartungsfenster von Unified Manager für die Zukunft konfiguriert haben, können Sie die Start- und Endzeit ändern oder das Wartungsfenster nicht mehr ausführen.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Das Abbrechen eines derzeit ausgeführten Wartungsfensters ist hilfreich, wenn Sie die Cluster-Wartung vor dem Ende des geplanten Wartungsfensters abgeschlossen haben und Sie möchten Ereignisse und Warnmeldungen vom Cluster erneut empfangen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Konfiguration* > *Cluster-Datenquellen*.
+. In der Spalte *Wartungsmodus* für den Cluster:
++
+|===
+| Ihr Ziel ist | Führen Sie diesen Schritt aus... 
+
+
+ a| 
+Ändern Sie den Zeitrahmen für ein geplantes Wartungsfenster
+ a| 
+.. Klicken Sie neben dem Schieberegler auf den Text „`Scheduled`“.
+.. Ändern Sie das Start- und/oder Enddatum und die Uhrzeit, und klicken Sie auf *Anwenden*.
+
+
+
+
+ a| 
+Verlängern Sie die Länge eines aktiven Wartungsfensters
+ a| 
+.. Klicken Sie auf den Text „`Active`“ neben der Schieberegler-Schaltfläche.
+.. Ändern Sie das Enddatum und die Endzeit, und klicken Sie auf *Anwenden*.
+
+
+
+
+ a| 
+Abbrechen eines geplanten Wartungsfensters
+ a| 
+Wählen Sie die Schieberegler-Taste, und verschieben Sie sie nach links.
+
+
+
+ a| 
+Abbrechen eines aktiven Wartungsfensters
+ a| 
+Wählen Sie die Schieberegler-Taste, und verschieben Sie sie nach links.
+
+|===
+

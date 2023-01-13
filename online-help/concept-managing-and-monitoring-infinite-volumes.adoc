@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-infinite-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Überwachen Sie mit Infinite Volume die Kapazität und Verfügbarkeit Ihrer Storage Virtual Machines \(SVMs\). Durch die Erstellung von Regeln und Datenrichtlinien können Sie die Content-Platzierung in Ihrer Storage Virtual Machine \ (SVM\) mit Infinite Volume managen.' 
+---
+= Management und Monitoring von Infinite Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Überwachen Sie mit Infinite Volume die Kapazität und Verfügbarkeit Ihrer Storage Virtual Machines (SVMs). Durch die Erstellung von Regeln und Datenrichtlinien können Sie die Content-Platzierung in Ihrer Storage Virtual Machine (SVM) mit Infinite Volume managen.

@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-network-interface-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Zeigen Sie mithilfe der Seite „Performance/LIF-Informationen“ eine Liste der konfigurierten Attribute des LIF an. Diese Informationen könnten bei der Beantwortung von Fragen zur Leistungsfähigkeit helfen. 
+---
+= Informationsseite für Performance/LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Zeigen Sie mithilfe der Seite „Performance/LIF-Informationen“ eine Liste der konfigurierten Attribute des LIF an. Diese Informationen könnten bei der Beantwortung von Fragen zur Leistungsfähigkeit helfen.
+
+
+
+== LIF-Attribute
+
+* *IP-Adresse*
++
+Die dem LIF zugewiesene IPv4- oder IPv6-Adresse. Einem LIF kann mehrere IP-Adressen zugewiesen sein.
+
+* * Rolle*
++
+Die Rolle bestimmt die Art des Datenverkehrs, der über das LIF unterstützt wird.
+
++
+LIFs können eine der folgenden Rollen aufweisen:
+
++
+** Daten
+** Cluster
+** Node-Management
+** Intercluster
+
+
+* *Failover-Gruppe*
++
+Der Name der Failover-Gruppe, die dem LIF zugewiesen ist.
+
++
+Dieses Feld gilt nur für Netzwerk-LIFs, nicht für SAN (FC/ISCSI) und NVMe LIFs.
+
+* *Failover-Richtlinie*
++
+Der Name der Failover-Richtlinie, die dem LIF zugewiesen ist.
+
++
+Dieses Feld gilt nur für Netzwerk-LIFs, nicht für SAN (FC/ISCSI) und NVMe LIFs.
+
+* * Home Port*
++
+Der Name des Node und des Ports, der als Home-Port für diese Schnittstelle definiert wurde. Sie können auf den Namen klicken, um Einzelheiten zu den Ports auf der Seite Leistung/Port Explorer anzuzeigen.
+
+* *Aktueller Port*
++
+Der Name des Node und des Ports, auf dem die Schnittstelle derzeit gehostet wird. Sie können auf den Namen klicken, um Einzelheiten zu den Ports auf der Seite Leistung/Port Explorer anzuzeigen.
+
+

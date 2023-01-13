@@ -1,0 +1,79 @@
+---
+permalink: install/task-configuring-unified-manager-server-using-configuration-scripts-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: Nach der Installation von Unified Manager auf beiden Cluster-Knoten können Sie Unified Manager mit Failover Cluster Manager mithilfe von Konfigurationsskripten konfigurieren. 
+---
+= Konfiguration des Unified Manager Servers mit MSCS mithilfe von Konfigurationsskripten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nach der Installation von Unified Manager auf beiden Cluster-Knoten können Sie Unified Manager mit Failover Cluster Manager mithilfe von Konfigurationsskripten konfigurieren.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen eine freigegebene LUN erstellt haben, die ausreichend groß ist, um den Unified Manager-Quelldaten gerecht zu werden.
+
+
+
+== Schritte
+
+. Melden Sie sich beim ersten Node des Clusters an.
+. Erstellen Sie eine Rolle in Windows 2012 oder Windows 2016 mit Failover Cluster Manager:
++
+.. Starten Sie Failover Cluster Manager.
+.. Erstellen Sie die leere Rolle, indem Sie auf *Rollen* > *leere Rolle erstellen* klicken.
+.. Fügen Sie die globale IP-Adresse der Rolle hinzu, indem Sie mit der rechten Maustaste auf *Role* > *Ressourcen hinzufügen* > *Weitere Ressourcen* > *IP-Adresse* klicken.
++
+[NOTE]
+====
+Beide Knoten müssen diese IP-Adresse anpingen können, da Unified Manager über diese IP-Adresse gestartet wird, nachdem die Hochverfügbarkeit konfiguriert ist.
+
+====
+.. Fügen Sie die Datenfestplatte zur Rolle hinzu, indem Sie mit der rechten Maustaste auf *Role* > *Add Storage* klicken.
+
+
+. Führen Sie die aus `ha_setup.pl` Skript auf dem ersten Knoten: `perl ha_setup.pl --first -t mscs -g group_name -i ip address -n fully_qualified_domain_cluster_name -f shared_location_path -k data_disk -u user_name -p password`
++
+`C:\Program Files\NetApp\ocum\bin>perl .\ha_setup.pl --first -t mscs -g umgroup -i "IP Address" -n spr38457002.eng.company.com -k "Cluster Disk 2" -f E:\ -u admin -p wx17yz`
+
++
+Das Skript ist unter verfügbar `Install_Dir\NetApp\ocum\bin`.
+
++
+** Sie können den Wert des erhalten `-g`, `-k`, und `-i` Optionen mit dem `cluster res` Befehl.
+** Der `-n` Die Option muss der FQDN der globalen IP-Adresse sein, die von beiden Knoten aus angepingt werden kann.
+
+
+. Überprüfen Sie mithilfe der Failover Cluster Manager Webkonsole, ob die Unified Manager-Serverdienste, die Datenfestplatte und die Cluster-IP-Adresse der Cluster-Gruppe hinzugefügt werden.
+. Stoppen Sie alle Unified Manager Server Services (MySQL, ocie und ocieau), indem Sie die verwenden `services.msc` Befehl.
+. Wechseln Sie die Service-Gruppe in Failover Cluster Manager auf den zweiten Knoten.
+. Führen Sie den Befehl aus `perl ha_setup.pl --join -t mscs -f``shared_location_path` Auf dem zweiten Node des Clusters, um auf die Daten des Unified Manager Servers auf die LUN zu verweisen.
++
+`perl ha_setup.pl --join -t mscs -f E:\`
+
+. Stellen Sie mit Failover Cluster Manager alle Unified Manager-Services online.
+. Wechseln Sie manuell zum anderen Knoten des Microsoft Cluster Servers.
+. Überprüfen Sie, ob die Unified Manager-Serverdienste auf dem anderen Knoten des Clusters ordnungsgemäß gestartet werden.
+. Generieren Sie das Unified Manager-Zertifikat erneut, nachdem Sie Konfigurationsskripte ausgeführt haben, um die globale IP-Adresse zu erhalten.
++
+.. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im Menü *Setup* auf *HTTPS-Zertifikat*.
+.. Klicken Sie auf *HTTPS-Zertifikat erneut erstellen*.
+
+
++
+Das neu erstellte Zertifikat stellt die Cluster-IP-Adresse und nicht den vollqualifizierten Domänennamen (FQDN) bereit. Zur Einrichtung von Unified Manager für Hochverfügbarkeit müssen Sie die globale IP-Adresse verwenden.
+
+. Greifen Sie über folgende Ressourcen auf die Unified Manager-UI zu: `https://<FQDN of Global IP>`
+
+
+
+
+== Nachdem Sie fertig sind
+
+Nach der Konfiguration der Hochverfügbarkeit müssen Sie einen freigegebenen Backup-Speicherort erstellen. Der gemeinsam genutzte Speicherort ist erforderlich, um die Backups vor und nach dem Failover zu enthalten. Beide Nodes in der Hochverfügbarkeitseinrichtung müssen auf den gemeinsamen Speicherort zugreifen können.

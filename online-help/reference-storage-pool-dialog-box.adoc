@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-storage-pool-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Das Dialogfeld Storage Pool ermöglicht Ihnen, Details zum dedizierten Cache von SSDs anzuzeigen, auch als Storage-Pools bekannt. Sie können die Storage-Pools überwachen und Details anzeigen, wie z. B. den Storage-Pool-Zustand, den gesamten und verfügbaren Cache sowie die im Speicherpool verwendeten und verfügbaren Zuweisungen. 
+---
+= Dialogfeld „Speicherpool“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Dialogfeld Storage Pool ermöglicht Ihnen, Details zum dedizierten Cache von SSDs anzuzeigen, auch unter dem Namen „ _Storage Pools_“ bekannt. Sie können die Storage-Pools überwachen und Details anzeigen, wie z. B. den Storage-Pool-Zustand, den gesamten und verfügbaren Cache sowie die im Speicherpool verwendeten und verfügbaren Zuweisungen.
+
+Sie können die folgenden Speicher-Pool-Details anzeigen:
+
+* *Status*
++
+Zeigt den Status des Speicherpools an, der gesund oder ungesund sein kann.
+
+* *Gesamtzuweisungen*
++
+Zeigt die Gesamtzuordnungseinheiten und die Größe im Speicherpool an.
+
+* *Größe Der Zuordnungseinheit*
++
+Zeigt den minimalen Speicherplatz im Speicherpool an, der einem Aggregat zugewiesen werden kann.
+
+* *Festplatten*
++
+Zeigt die Anzahl der Laufwerke an, die zum Erstellen des Speicherpools verwendet werden. Wenn die Anzahl der Laufwerke in der Spalte „Speicherpool“ und die Anzahl der Festplatten, die auf der Registerkarte „Laufwerksinformationen“ für diesen Speicherpool angezeigt werden, nicht übereinstimmen, zeigt dies an, dass eine oder mehrere Festplatten beschädigt sind und der Speicherpool ungesund ist.
+
+* *Cache-Zuweisungen*
++
+** Verwendete Zuweisungen
++
+Zeigt Anzahl und Größe der von den Aggregaten verwendeten Zuordnungseinheiten an. Sie können auf den Aggregatnamen klicken, um Details zum Aggregat anzuzeigen.
+
+** Verfügbare Zuordnungen
++
+Zeigt die Anzahl und Größe der für die Nodes verfügbaren Zuweisungseinheiten an. Sie können auf den Node-Namen klicken, um weitere Details zum Aggregat anzuzeigen.
+
+
+
+

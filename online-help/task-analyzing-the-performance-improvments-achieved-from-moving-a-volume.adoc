@@ -1,0 +1,63 @@
+---
+permalink: online-help/task-analyzing-the-performance-improvments-achieved-from-moving-a-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Mit Unified Manager können Sie die Auswirkungen einer Volume-Verschiebung auf die Latenz \(Reaktionszeit\) anderer Volumes auf dem Cluster untersuchen. Durch die Verschiebung eines hochperformanten Volumes zu einem weniger ausgelasteten Aggregat oder eines Aggregats mit aktiviertem Flash-Storage kann das Volume effizienter ausgeführt werden.' 
+---
+= Analyse der Performance-Verbesserungen, die durch die Verschiebung eines Volumes erzielt wurden
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit Unified Manager können Sie die Auswirkungen einer Verschiebung eines Volumes auf die Latenz (Reaktionszeit) anderer Volumes auf dem Cluster untersuchen. Durch die Verschiebung eines hochperformanten Volumes zu einem weniger ausgelasteten Aggregat oder eines Aggregats mit aktiviertem Flash-Storage kann das Volume effizienter ausgeführt werden.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+* Sie müssen den Namen des Volumes oder der zugehörigen LUN identifiziert haben, die Sie analysieren möchten.
+* Unified Manager muss sieben Tage Daten erfasst und analysiert haben.
+
+
+
+
+== Über diese Aufgabe
+
+Unified Manager bestimmt, wann ein Volume zwischen Aggregaten verschoben wird. Es kann erkennen, wann die Volume-Verschiebung stattfindet, abgeschlossen ist oder fehlgeschlagen ist. Auf der Seite Performance/Volume Details wird für jeden Status der Volume-Verschiebung ein Änderungssymbol angezeigt. Anhand dieses Symbols können Sie feststellen, wann ein Verschiebevorgang stattgefunden hat, und Sie können feststellen, ob dieser zu einem Performance-Ereignis beigetragen hat.
+
+Wenn Sie die Seite „Ereignisdetails“ aufrufen, können Sie auf den Namen eines Volumes klicken, um direkt zur Seite „Performance/Volume Details“ zu wechseln.
+
+
+
+== Schritte
+
+. Geben Sie in der *Search*-Leiste den Namen des Volumens ein.
+. Klicken Sie auf den Namen des Volumes.
++
+Das Volume wird auf der Seite Performance/Volume Details angezeigt.
+
+. Passen Sie im Diagramm * Historic Data* die Schieberegler an, um die Aktivität der letzten Arbeitswoche anzuzeigen.
+. Analysieren Sie das *Latenz*-Diagramm und das *IOPS*-Diagramm, um zu sehen, wie sich das Volumen in den letzten Tagen abspielte.
++
+Angenommen, Sie stellen fest, dass ein konsistentes Muster sehr hoher durchschnittlicher Antwortzeiten von über 42 Millisekunden pro Betrieb (ms/OP) mit Performance-Ereignissen jeden Tag der Woche fällt und entscheiden, das Volume in ein weniger beschäftigtes Aggregat zu verschieben, um die Performance zu verbessern. Mit OnCommand System Manager kann das Volume zu einem Aggregat mit aktiviertem Flash Pool verschoben werden, um die Performance zu steigern. Etwa eine Stunde nach Abschluss der Volume-Verschiebung können Sie zu Unified Manager zurückkehren, um zu bestätigen, dass der Vorgang erfolgreich abgeschlossen wurde und sich die Latenz verbessert hat.
+
+. Wenn die Seite *Performance/Volume Details* nicht angezeigt wird, suchen Sie nach dem gewünschten Volume.
+. Klicken Sie im *Historic Data*-Diagramm auf *1d*, um die Aktivität vom letzten Tag, einige Stunden seit der Volumenbewegung, anzuzeigen.
++
+Im unteren Bereich der Seite in der Zeile Ereignisse Zeit wird ein Symbol für das Ereignis ändern (image:../media/opm-change-icon.gif["Symbol „Ereignis ändern“"]) Wird angezeigt, um die Zeit anzugeben, die der Vorgang der Volumenbewegung abgeschlossen wurde. Eine schwarze, vertikale Linie wird auch vom Änderungssymbol in das Latenzdiagramm angezeigt.
+
+. Zeigen Sie mit dem Cursor auf das Symbol Ereignis ändern, um Details zum Ereignis in der *Ereignisliste* anzuzeigen.
++
+Da das Volume zu einem Aggregat mit aktiviertem Flash Pool verschoben wurde, sehen Sie die Änderung bei Lese- und Schreib-I/O in den Cache.
+
+. Wählen Sie im Menü * Data by* unter *Mbps* die Option *Cache HIT Ratio* aus.
++
+Das Diagramm „Cache-Trefferverhältnis“ zeigt Statistiken zu den Lese- und Schreibvorgängen im Cache an.
+
++
+Das Volume wurde erfolgreich in ein Aggregat mit weniger Auslastung verschoben und das Änderungsereignis wird in der Ereignisliste rechts hervorgehoben. Die durchschnittliche Latenz sank deutlich von über 42 ms/op auf rund 24 ms/op Die derzeitige Latenz beträgt ca. 1.5 ms/op Im Cache-Trefferverhältnis-Diagramm liegt die Menge der erfolgreichen Lese- und Schreibvorgänge in den Cache jetzt bei 100 %, da sich das Volume jetzt auf einem Aggregat mit aktiviertem Flash Pool befindet.
+
+

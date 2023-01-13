@@ -1,0 +1,43 @@
+---
+permalink: health-checker/task-creating-a-new-mysql-data-set-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: Nach dem Erstellen der Datenquelle müssen Sie einen MySQL-Datensatz erstellen, um die Ausgabeergebnisse für Ihren Bericht zu erstellen. Sie können die Ausgabetypen auch bearbeiten, nachdem Sie den Datensatz erstellt haben. 
+---
+= Erstellen eines neuen MySQL-Datensatzes mit BIRT
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nach dem Erstellen der Datenquelle müssen Sie einen MySQL-Datensatz erstellen, um die Ausgabeergebnisse für Ihren Bericht zu erstellen. Sie können die Ausgabetypen auch bearbeiten, nachdem Sie den Datensatz erstellt haben.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen eine JDBC-Datenquelle mit BIRT erstellt haben.
+
+Sie müssen MySQL Connector/J. heruntergeladen und installiert haben
+
+Sie müssen einen Datenbankbenutzer mit der Rolle „Berichtschema“ in Unified Manager erstellt haben.
+
+
+
+== Schritte
+
+. Wählen Sie in *Eclipse* einen Arbeitsbereich aus.
+. Wählen Sie *Data Explorer* > *Datensätze* > *Neuer Datensatz*.
+. Wählen Sie im Dialogfeld *Neuer Datensatz* die zuvor erstellte Datenquelle, den Datentyp und den Namen des Datensatzes aus, und klicken Sie auf *Weiter*.
+. Definieren Sie einen SQL-Abfragetext mit den verfügbaren Elementen, oder geben Sie die Abfrage manuell ein und klicken Sie auf *Fertig stellen*.
+. Klicken Sie auf *Vorschauergebnisse*, um die SQL-Abfrage zu bestätigen, und klicken Sie dann auf *OK*.
+. Definieren Sie im Dialogfeld *Datensatz bearbeiten* die Ausgabespalten nach Bedarf und klicken Sie auf *OK*.
+. Ziehen Sie Elemente in den neu erstellten Bericht.
+
+
+
+
+== Nachdem Sie fertig sind
+
+Sie sollten den neu erstellten Bericht nun in Unified Manager importieren.

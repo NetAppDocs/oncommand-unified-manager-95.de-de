@@ -1,0 +1,146 @@
+---
+permalink: online-help/reference-logical-interface-events.html 
+sidebar: sidebar 
+keywords:  
+summary: LIF-Ereignisse liefern Informationen zum Status Ihrer LIFs, sodass Sie Monitoring auf potenzielle Probleme durchführen können. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad. 
+---
+= Ereignisse der logischen Schnittstelle (LIF)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LIF-Ereignisse liefern Informationen zum Status Ihrer LIFs, sodass Sie Monitoring auf potenzielle Probleme durchführen können. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad.
+
+
+
+== Impact Area: Verfügbarkeit
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+LIF-Status aus(ocumEvtLifStatusDown)
+ a| 
+Dar
+ a| 
+Schnittstelle
+ a| 
+Fehler
+
+
+
+ a| 
+LIF Failover nicht möglich (ocumEvtLifFailOverPossible)
+ a| 
+Dar
+ a| 
+Schnittstelle
+ a| 
+Warnung
+
+
+
+ a| 
+LIF nicht am Home Port(ocumEvtLifNotAtHomePort)
+ a| 
+Dar
+ a| 
+Schnittstelle
+ a| 
+Warnung
+
+|===
+
+
+== Impact Area: Konfiguration
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+LIF-Route nicht konfiguriert (nicht zutreffend)
+ a| 
+Ereignis
+ a| 
+Schnittstelle
+ a| 
+Informationsdaten
+
+|===
+
+
+== Impact Area: Performance
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+Netzwerk-LIF MBit/s kritischer Schwellenwert überschritten (ocumNetworkLifMbpsVorfall)
+ a| 
+Vorfall
+ a| 
+Schnittstelle
+ a| 
+Kritisch
+
+
+
+ a| 
+Netzwerk-LIF Mbps Warnung: Überschreitung des Schwellenwerts (ocumNetworkLifMbpsWarnung)
+ a| 
+Dar
+ a| 
+Schnittstelle
+ a| 
+Warnung
+
+
+
+ a| 
+Überschreitung kritischer Schwellenwert für FCP-LIF/MB/s (ocumFcpLifMbpsVorfall)
+ a| 
+Vorfall
+ a| 
+Schnittstelle
+ a| 
+Kritisch
+
+
+
+ a| 
+FCP LIF MB/s Warnung: Nicht behebter Schwellenwert (ocumFcpLifMbpsWarnung)
+ a| 
+Dar
+ a| 
+Schnittstelle
+ a| 
+Warnung
+
+
+
+ a| 
+NVMf FCP LIF MBit/s Critical Threshold Überlaufen (ocumNvmfFcLifMbpsVorfall)
+ a| 
+Vorfall
+ a| 
+Schnittstelle
+ a| 
+Kritisch
+
+
+
+ a| 
+NVMf FCP LIF MBit/s Warnung Überschreiten (ocumNvmfFcLifMbpsWarnung)
+ a| 
+Dar
+ a| 
+Schnittstelle
+ a| 
+Warnung
+
+|===

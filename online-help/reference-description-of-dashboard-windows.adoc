@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-dashboard-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: Über die Dashboard-Seiten können Sie einen schnellen Überblick über die überwachten Objekte erhalten. 
+---
+= Beschreibung der Dashboard-Fenster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über die Dashboard-Seiten können Sie einen schnellen Überblick über die überwachten Objekte erhalten.

@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-viewing-job-details.html 
+sidebar: sidebar 
+keywords:  
+summary: Nachdem Sie einen Job gestartet haben, können Sie den Fortschritt auf der Seite Schutz-/Jobdetails verfolgen und die zugehörigen Aufgaben auf mögliche Fehler überwachen. 
+---
+= Anzeigen von Jobdetails
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nachdem Sie einen Job gestartet haben, können Sie den Fortschritt auf der Seite Schutz-/Jobdetails verfolgen und die zugehörigen Aufgaben auf mögliche Fehler überwachen.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Schutz* > *Jobs*.
+. Klicken Sie auf der Seite *Schutz/Jobs* in der Spalte *Name* auf einen Jobnamen, um die Liste der Aufgaben anzuzeigen, die mit dem Job verknüpft sind.
+. Klicken Sie auf eine Aufgabe, um zusätzliche Informationen im Bereich *Aufgabendetails* und im Bereich *Aufgabenmeldungen* rechts neben der Aufgabenliste anzuzeigen.
+

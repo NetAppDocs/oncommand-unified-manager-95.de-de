@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-resuming-scheduled-transfers-on-a-quiesced-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Nachdem Sie eine Beziehung stillgelegt haben, um geplante Transfers zu stoppen, können Sie Resume auf der Seite Health/Volume Details verwenden, um geplante Transfers erneut zu aktivieren, damit die Daten auf dem Quell- oder primären Volume geschützt sind. Transfers werden im nächsten geplanten Transferintervall von einem Kontrollpunkt fortgesetzt, falls vorhanden. 
+---
+= Wiederaufnahme geplanter Transfers für eine stillgelegte Beziehung von der Seite „Systemzustand/Volume-Details“ aus
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nachdem Sie eine Beziehung stillgelegt haben, um geplante Transfers zu stoppen, können Sie *Resume* auf der Seite Health/Volume Details verwenden, um geplante Transfers erneut zu aktivieren, so dass Daten auf dem Quell- oder Primärvolume geschützt sind. Transfers werden im nächsten geplanten Transferintervall von einem Kontrollpunkt fortgesetzt, falls vorhanden.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Sie müssen Workflow Automation einrichten.
+
+
+
+
+== Schritte
+
+. Klicken Sie auf der Registerkarte *Schutz* der Detailseite *Gesundheit/Volumen* mit der rechten Maustaste in die Topologieansicht auf eine stillgelegene Beziehung, die Sie fortsetzen möchten.
++
+Alternativ können Sie im Menü *Aktionen* > *Beziehung* *Fortsetzen* die Option *Fortsetzen* wählen.
+
+. Klicken Sie im Dialogfeld *Fortsetzen* auf *Weiter*.
++
+Sie gelangen zurück zur Seite „Health/Volume Details“.
+
+. Um die zugehörigen Aufgaben anzuzeigen und deren Fortschritt zu verfolgen, klicken Sie auf den Job-Link, der oben auf der Seite *Health/Volume* Details angezeigt wird.
+. Klicken Sie auf der Seite *Schutz/Job* Details auf *Aktualisieren*, um die Aufgabenliste und die Aufgabendetails zu aktualisieren, die mit dem Konfigurationsauftrag für den Schutz verknüpft sind, und um festzustellen, wann der Job abgeschlossen ist.
++
+Nach Abschluss der Jobs werden die Datenübertragungen im nächsten geplanten Übertragungsintervall fortgesetzt.
+
+

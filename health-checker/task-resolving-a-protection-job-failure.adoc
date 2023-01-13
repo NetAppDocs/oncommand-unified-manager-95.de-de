@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-resolving-a-protection-job-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: Dieser Workflow bietet ein Beispiel dafür, wie Sie Fehler im Schutz über das Unified Manager-Dashboard identifizieren und beheben können. 
+---
+= Behebung eines Schutzauftrags
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dieser Workflow bietet ein Beispiel dafür, wie Sie Fehler im Schutz über das Unified Manager-Dashboard identifizieren und beheben können.
+
+
+
+== Bevor Sie beginnen
+
+Da für einige Aufgaben in diesem Workflow eine Anmeldung über die Rolle „OnCommand Administrator“ erforderlich ist, müssen Sie mit den Rollen vertraut sein, die für die Verwendung verschiedener Funktionen erforderlich sind, wie in beschrieben xref:reference-unified-manager-roles-and-capabilities.adoc[Unified Manager Benutzer-Rollen und -Funktionen].
+
+
+
+== Über diese Aufgabe
+
+In diesem Szenario greifen Sie auf die Seite Dashboards/Übersicht zu, um zu sehen, ob es Probleme mit Ihren Schutzjobs gibt. Im Bereich Schutzvorfall stellen Sie fest, dass ein Vorfall mit dem Jobabbruch vorliegt und ein Fehler beim Schutz eines Volumes angezeigt wird. Sie untersuchen diesen Fehler, um die mögliche Ursache und mögliche Lösung zu ermitteln.
+
+
+
+== Schritte
+
+. Klicken Sie im Bereich *Schutz-Vorfälle* des Dashboards *ungelöste Vorfälle und Risiken* auf das Ereignis *Schutzauftrag fehlgeschlagen*.
++
+[TIP]
+====
+Der verknüpfte Text für das Ereignis wird in das Formular geschrieben `object_name:/object_name - Error Name`, Wie z. B. `cluster2_src_svm:/cluster2_src_vol2 - Protection Job Failed`.
+
+====
++
+Die Seite Ereignisdetails für den fehlgeschlagenen Schutzauftrag wird angezeigt.
+
+. Prüfen Sie die Fehlermeldung im Feld Ursache im Bereich *Zusammenfassung*, um das Problem zu ermitteln und mögliche Korrekturmaßnahmen zu bewerten.
++
+Siehe xref:task-identifying-the-problem-and-performing-corrective-actions-for-a-failed-protection-job.adoc[Identifizieren des Problems und Durchführen von Korrekturmaßnahmen für einen fehlgeschlagenen Schutzauftrag].
+
+

@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-viewing-volume-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Schutz/Volume-Beziehungen“ können Sie den Status vorhandener Volume SnapMirror und SnapVault Beziehungen einsehen. Sie können auch Details zu Sicherungsbeziehungen unter anderem hinsichtlich Transfer- und lag-Status, Quell- und Zieldetails, Zeitplan- und Richtlinieninformationen usw. prüfen. 
+---
+= Anzeigen von Volume-Sicherungsbeziehungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Schutz/Volume-Beziehungen“ können Sie den Status vorhandener Volume SnapMirror und SnapVault Beziehungen einsehen. Sie können auch Details zu Sicherungsbeziehungen unter anderem hinsichtlich Transfer- und lag-Status, Quell- und Zieldetails, Zeitplan- und Richtlinieninformationen usw. prüfen.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Sie können auch Beziehungsbefehle von dieser Seite aus initiieren.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Schutz* > *Volume Relationships*.
++
+Die Seite „Schutz/Volume-Beziehungen“ wird angezeigt.
+
+. Es gibt folgende Möglichkeiten, die Details zur Volume-Sicherung anzuzeigen:
++
+** Um aktuelle Informationen über alle Volume-Beziehungen anzuzeigen, bleiben Sie auf der Standard *Alle Volume-Beziehungen*-Seite.
+** Um detaillierte Informationen zu den Trends der Volume-Übertragung über einen bestimmten Zeitraum anzuzeigen, wählen Sie im Menü Ansicht die Option *Volume Transfer Status (Historisch)*.
+** Um detaillierte Informationen über die Volume Transfer-Aktivität auf Tagesbasis anzuzeigen, wählen Sie im Menü Ansicht die Option *Volume Transfer Rate (Historisch)* aus.
+
+
++
+[NOTE]
+====
+Die Volume-Transferansichten zeigen Informationen zu Volumes nur in asynchronen Beziehungen an - Volumes in synchronen Beziehungen werden nicht angezeigt.
+
+====
+

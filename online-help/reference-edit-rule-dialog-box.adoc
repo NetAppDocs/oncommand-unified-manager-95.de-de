@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-edit-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Über das Dialogfeld Regel bearbeiten können Sie die Eigenschaften einer Regel bearbeiten, z. B. Dateitypen, Verzeichnispfade oder Eigentümer. Sie können auch eine geeignete Speicherklasse für die Regel auswählen. Wenn beispielsweise ein bestimmter Dateipfad nicht mehr gültig ist, können Sie den Dateipfad aus der entsprechenden Regel löschen. 
+---
+= Dialogfeld Regel bearbeiten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über das Dialogfeld Regel bearbeiten können Sie die Eigenschaften einer Regel bearbeiten, z. B. Dateitypen, Verzeichnispfade oder Eigentümer. Sie können auch eine geeignete Speicherklasse für die Regel auswählen. Wenn beispielsweise ein bestimmter Dateipfad nicht mehr gültig ist, können Sie den Dateipfad aus der entsprechenden Regel löschen.
+
+
+
+== Regelname
+
+Zeigt den Namen der Regel an.
+
+
+
+== Übereinstimmende Kriterien
+
+Zeigt eine Liste der Bedingungen an, die sich auf die ausgewählte Regelvorlage beziehen. Die Bedingungsliste ändert sich basierend auf der ausgewählten Regelvorlage.
+
+* *Hinzufügen*
++
+Ermöglicht das Hinzufügen einer neuen Regeleigenschaft, eines neuen Dateityps, eines Dateipfads oder eines neuen Besitzers. Wenn Sie beispielsweise die Regelvorlage „`Platzieren Sie alle Dateien mit den angegebenen Besitzernamen in eine geeignete Speicherklasse`“ angegeben haben, können Sie über die Schaltfläche Hinzufügen den Namen des Besitzers hinzufügen.
+
+* *Löschen*
++
+Ermöglicht das Löschen einer ausgewählten Regeleigenschaft.
+
+
+
+
+
+== Bereich der Content-Platzierung
+
+Zeigt die Liste der Speicherklassen an. Sie können eine geeignete Speicherklasse für die ausgewählte Regel auswählen.
+
+
+
+== Befehlsschaltflächen
+
+* *Aktualisierung*
++
+Aktualisiert die an der Regel vorgenommenen Änderungen und schließt das Dialogfeld Regel bearbeiten.
+
+* *Abbrechen*
++
+Bricht die letzten Änderungen an der Regel ab und schließt das Dialogfeld Regel bearbeiten.
+
+

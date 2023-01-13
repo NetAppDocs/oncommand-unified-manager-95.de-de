@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-create-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld Regel erstellen können Sie neue Regeln für Ihre Datenrichtlinie erstellen. Wenn Sie beispielsweise die Platzierung des Inhalts eines bestimmten Dateityps festlegen möchten, können Sie im Dialogfeld Regel erstellen die Regel für Ihre Datenrichtlinie erstellen verwenden. 
+---
+= Dialogfeld Regel erstellen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Regel erstellen können Sie neue Regeln für Ihre Datenrichtlinie erstellen. Wenn Sie beispielsweise die Platzierung des Inhalts eines bestimmten Dateityps festlegen möchten, können Sie im Dialogfeld Regel erstellen die Regel für Ihre Datenrichtlinie erstellen verwenden.
+
+
+
+== Regelname
+
+Gibt den Namen der neuen Regel an.
+
+
+
+== Bereich Vorlagen
+
+Zeigt die Liste der Regelvorlagen an. Sie können eine entsprechende Regelvorlage aus der Liste auswählen, um eine Regel für die Datenrichtlinie zu erstellen.
+
+
+
+== Übereinstimmende Kriterien
+
+Zeigt eine Liste der Bedingungen an, die sich auf die ausgewählte Regelvorlage beziehen. Die Bedingungsliste ändert sich basierend auf der ausgewählten Regelvorlage. Wenn Sie beispielsweise "`Platzieren Sie alle Dateien mit den angegebenen Besitzernamen in einer geeigneten Speicherklasse`", wird *Liste des Eigentümers, die...* in übereinstimmenden Kriterien angezeigt.
+
+* *Hinzufügen*
++
+Ermöglicht das Hinzufügen einer neuen Regeleigenschaft auf Grundlage der ausgewählten Regelvorlage. Wenn Sie beispielsweise die Regelvorlage „`Legen Sie alle Dateien mit den angegebenen Besitzernamen in eine geeignete Speicherklasse`“, können Sie über die Schaltfläche *Hinzufügen* den Namen des Eigentümers hinzufügen.
+
+* *Löschen*
++
+Ermöglicht das Löschen einer ausgewählten Regeleigenschaft.
+
+
+
+
+
+== Platzierung Von Inhalten
+
+Ermöglicht Ihnen die Auswahl einer geeigneten Speicherklasse für Ihre Regel aus der Liste.
+
+
+
+== Befehlsschaltflächen
+
+* *Erstellen*
++
+Erstellt eine neue Regel für die Datenrichtlinie und schließt das Dialogfeld Regel erstellen.
+
+* *Abbrechen*
++
+Bricht die letzten Änderungen an der Regel ab und schließt das Dialogfeld Regel erstellen.
+
+

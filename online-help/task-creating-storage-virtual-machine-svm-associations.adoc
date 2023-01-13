@@ -1,0 +1,66 @@
+---
+permalink: online-help/task-creating-storage-virtual-machine-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Mit dem Assistenten „Create Storage Virtual Machine Associations“ können Partnerapplikationen eine Quell-Storage Virtual Machine \ (SVM\) einer Ziel-SVM zur Verwendung mit SnapMirror und SnapVault Beziehungen zuordnen. Partnerapplikationen verwenden diese Verknüpfungen zum Zeitpunkt der Erstbereitstellung der Ziel-Volumes, um zu ermitteln, welche Ressourcen ausgewählt werden sollen.' 
+---
+= SVM-Zuordnungen werden erstellt
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit dem Assistenten „Create Storage Virtual Machine Associations“ können Partnerapplikationen eine Quell-Storage Virtual Machine (SVM) einer Ziel-SVM zuweisen, um sie mit SnapMirror- und SnapVault-Beziehungen zu verwenden. Partnerapplikationen verwenden diese Verknüpfungen zum Zeitpunkt der Erstbereitstellung der Ziel-Volumes, um zu ermitteln, welche Ressourcen ausgewählt werden sollen.
+
+
+
+== Bevor Sie beginnen
+
+* Die von Ihnen verknüpfen, muss bereits vorhanden sein.
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+
+== Über diese Aufgabe
+
+Für jede Quell-SVM und jeden Beziehungstyp können Sie nur eine Ziel-SVM auf jedem Ziel-Cluster auswählen.
+
+Das Ändern von Zuordnungen mithilfe der Funktionen Löschen und Erstellen wirkt sich nur auf zukünftige Bereitstellungsvorgänge aus. Es verschiebt keine vorhandenen Ziel-Volumes.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Schutz* > *SVM-Zuordnungen*.
+. Klicken Sie auf der Seite *Protection/Storage Virtual Machine Associations* auf *Create*.
++
+Der Assistent Create Storage Virtual Machine Associations wird gestartet.
+
+. Wählen Sie eine der folgenden Quellen aus:
++
+** * Any*
++
+Wählen Sie diese Option, wenn Sie eine Zuordnung zwischen einer beliebigen primären SVM-Quelle zu einer oder mehreren Ziel-SVM erstellen möchten. Das bedeutet, dass alle vorhandenen SVMs, die derzeit Schutz benötigen, sowie alle zukünftig erstellten SVMs der angegebenen Ziel-SVM zugeordnet sind. Beispielsweise könnte es sinnvoll sein, dass Applikationen aus verschiedenen Quellen an verschiedenen Standorten an einem Standort auf einer oder mehreren Ziel-SVM an einem Standort gesichert werden.
+
+** *Single*
++
+Wählen Sie diese Option, wenn Sie eine bestimmte Quell-SVM auswählen möchten, die einer oder mehreren Ziel-SVMs zugeordnet ist. Wenn Sie beispielsweise vielen Clients Storage-Services bereitstellen, deren Daten voneinander getrennt sein müssen, wählen Sie diese Option, um eine bestimmte SVM-Quelle einem bestimmten SVM-Ziel zu zuordnen, das nur diesem Client zugewiesen ist.
+
+** *Keine (Extern)*
++
+Wählen Sie diese Option, wenn Sie eine Zuordnung zwischen einer Quell-SVM und einem externen flexiblen Volume einer Ziel-SVM erstellen möchten.
+
+
+
+. Wählen Sie einen oder beide Arten von Schutzbeziehungen aus, die Sie erstellen möchten:
++
+** *SnapMirror*
+** *SnapVault*
+
+
+. Klicken Sie Auf *Weiter*.
+. Wählen Sie ein oder mehrere SVM-Schutzziele aus.
+. Klicken Sie Auf *Fertig Stellen*.
+

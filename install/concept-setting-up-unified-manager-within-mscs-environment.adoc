@@ -1,0 +1,18 @@
+---
+permalink: install/concept-setting-up-unified-manager-within-mscs-environment.html 
+sidebar: sidebar 
+keywords:  
+summary: Mithilfe von Failover Clustering lässt sich die Hochverfügbarkeit für Unified Manager konfigurieren. Das Hochverfügbarkeitseinrichtung ermöglicht Failover-Funktionen. 
+---
+= Einrichtung von Unified Manager in einer Failover-Clustering-Umgebung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mithilfe von Failover Clustering lässt sich die Hochverfügbarkeit für Unified Manager konfigurieren. Das Hochverfügbarkeitseinrichtung ermöglicht Failover-Funktionen.
+
+Bei diesem Setup besitzt nur ein Node alle Cluster-Ressourcen. Wenn ein Node ausfällt oder eine der konfigurierten Services nicht online geschaltet werden kann, erkennt der Failover-Cluster-Service dieses Ereignis und überträgt sofort die Kontrolle auf den anderen Node. Der zweite Node im Setup wird aktiv und beginnt mit der Bereitstellung von Services. Der Failover-Prozess erfolgt automatisch, und Sie müssen keine Aktionen durchführen.
+
+Ein mit dem Unified Manager-Server konfiguriertes Failover-Cluster besteht aus zwei Knoten, auf denen jeder Node dieselbe Version des Unified Manager-Servers ausführt. Alle Unified Manager-Serverdaten müssen für den Zugriff von einer gemeinsam genutzten Datenfestplatte konfiguriert werden.

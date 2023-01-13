@@ -1,0 +1,22 @@
+---
+permalink: install/task-upgrading-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können ein Upgrade auf Unified Manager Version 9.5 nur von Instanzen von Unified Manager 7.3 oder 9.4 durchführen. 
+---
+= Upgrade von Unified Manager auf VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein Upgrade auf Unified Manager Version 9.5 nur von Instanzen von Unified Manager 7.3 oder 9.4 durchführen.
+
+
+
+== Über diese Aufgabe
+
+Während des Upgrades ist Unified Manager nicht verfügbar. Vor dem Upgrade von Unified Manager sollten alle laufenden Vorgänge abgeschlossen werden.
+
+Wenn Unified Manager mit einer Instanz von OnCommand Workflow Automation gekoppelt ist und für beide Produkte neue Versionen der Software zur Verfügung stehen, müssen Sie die beiden Produkte trennen und anschließend eine neue Workflow-Automatisierungsverbindung einrichten, nachdem Sie die Upgrades durchgeführt haben. Wenn Sie ein Upgrade auf nur eines der Produkte durchführen, müssen Sie sich nach dem Upgrade bei Workflow Automation anmelden und überprüfen, ob noch Daten von Unified Manager erfasst werden.

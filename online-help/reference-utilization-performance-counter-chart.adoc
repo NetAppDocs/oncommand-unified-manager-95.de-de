@@ -1,0 +1,49 @@
+---
+permalink: online-help/reference-utilization-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: Das Zählerdiagramm zur Performance Explorer-Auslastung zeigt den durchschnittlichen Prozentsatz der ausgewählten Ressource an, die verwendet wird. 
+---
+= Zählerdiagramm der Auslastungs-Performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Zählerdiagramm zur Performance Explorer-Auslastung zeigt den durchschnittlichen Prozentsatz der ausgewählten Ressource an, die verwendet wird.
+
+Das Popup-Fenster, das angezeigt wird, wenn sich der Cursor im Diagrammbereich befindet, zeigt die spezifischen Zählerwerte zu bestimmten Zeiten an.
+
+Auf der unteren Seite der Kartenseite werden Informationen zur minimalen, maximalen, durchschnittlichen und 95. Perzentil-Auslastung für den ausgewählten Zeitraum angezeigt.
+
+
+
+== Auslastung – Zählerdiagramm insgesamt
+
+Zeigt den durchschnittlichen Prozentsatz der ausgewählten Ressource an, die verwendet wird. Bei Nodes zeigt dies die Auslastung von Node-Ressourcen (CPU und RAM) an, bei Aggregaten zeigt dies die Auslastung der Festplatten im Aggregat an. Bei den Ports gibt dies die Bandbreitenauslastung des Ports an.
+
+Diese Diagrammoption wird angewendet, wenn es sich bei dem ausgewählten Objekt um einen Node, ein Aggregat oder einen Port handelt.
+
+
+
+== *Zoom-Ansicht*-Taste
+
+Zeigt eine vergrößerte Ansicht der Daten des Zählerdiagramms an.
+
+* Veranstaltungen
++
+Das Auftreten von kritischen, Warn- und Informationsereignissen wird in den Zeitlinien über den Diagrammen angezeigt.
+
+* Schwellenwerte
++
+Die horizontale, gestrichelte Zeile zeigt den in Unified Manager festgelegten Grenzwert für die Auslastungswarnung an.
+
++
+Die rote Linie zeigt den Auslastungskritischen Schwellenwert in Unified Manager an.
+
+* Zähler
++
+Die Zähler im linken Teilfenster zeigen an, welche Zählerwerte angezeigt werden. Deaktivieren oder Auswählen des image:../media/eye-icon.gif[""] Dies wird mit einem Zähler verknüpft, versteckt und zeigt, dass Zählerinformationen aus dem Diagramm angezeigt werden und kann beim Vergleich der Objektnutzung helfen.
+
+

@@ -1,0 +1,130 @@
+---
+permalink: online-help/reference-cluster-setup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Configuration/Cluster Data Sources werden Informationen über die Cluster angezeigt, die von Unified Manager derzeit überwacht werden. Auf dieser Seite können Sie weitere Cluster hinzufügen, Cluster-Einstellungen bearbeiten und Cluster entfernen. 
+---
+= Seite „Configuration/Cluster Data sources“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Configuration/Cluster Data Sources werden Informationen über die Cluster angezeigt, die von Unified Manager derzeit überwacht werden. Auf dieser Seite können Sie weitere Cluster hinzufügen, Cluster-Einstellungen bearbeiten und Cluster entfernen.
+
+Eine Nachricht am Ende der Seite gibt an, wie häufig Unified Manager Performance-Daten aus den Clustern sammelt. Das Standard-Erfassungsintervall beträgt fünf Minuten, Sie können dieses Intervall jedoch über die Wartungskonsole ändern, wenn Sammlungen von großen Clustern nicht rechtzeitig abgeschlossen werden.
+
+
+
+== Befehlsschaltflächen
+
+* *Hinzufügen*
++
+Öffnet das Dialogfeld Cluster hinzufügen, in dem Sie Cluster hinzufügen können.
+
+* *Bearbeiten*
++
+Öffnet das Dialogfeld Cluster bearbeiten, in dem Sie die Einstellungen des ausgewählten Clusters bearbeiten können.
+
+* *Entfernen*
++
+Entfernt das ausgewählte Cluster und alle zugehörigen Ereignisse und Storage-Objekte. Nachdem der Cluster entfernt wurde, wird er nicht mehr überwacht.
+
++
+[NOTE]
+====
+Der Cluster, die zugehörigen Storage-Objekte und alle zugehörigen Ereignisse werden entfernt und das Cluster wird nicht mehr von Unified Manager überwacht. Auch die beim entfernten Cluster registrierte Instanz des Unified Manager wird vom Cluster nicht registriert.
+
+====
+* * Wiederentdecken*
++
+Erzwingt eine Neuentdeckung des Clusters, damit Sie die Erfassung von Gesundheits- und Performance-Daten aktualisieren können.
+
+
+
+
+
+== Cluster-Liste
+
+In der Liste Cluster werden die Eigenschaften aller erkannten Cluster angezeigt. Sie können auf eine Spaltenüberschrift klicken, um die Cluster nach dieser Spalte zu sortieren.
+
+* *Status*
++
+Zeigt den aktuellen Erkennungsstatus der Datenquelle an. Der Status kann fehlgeschlagen sein (image:../media/sev-error-um60.png["Symbol für den Schweregrad „Ereignis“: Fehler"]), Abgeschlossen (image:../media/sev-normal-um60.png["Symbol für den Schweregrad „Ereignis“ – „Normal“"]), oder in Arbeit (image:../media/in-progress.gif[""]).
+
+* *Name*
++
+Zeigt den Cluster-Namen an.
+
++
+Beachten Sie, dass der Name möglicherweise fünfzehn Minuten oder länger dauern kann, bis er nach dem ersten Hinzufügen des Clusters angezeigt wird.
+
+* *Wartungsmodus*
++
+Ermöglicht Ihnen, den Zeitrahmen oder „`maintential window`“ anzugeben, wenn ein Cluster zu Wartungszwecken ausfällt, damit Sie während des Wartungszeitraums keine Warnmeldungen vom Cluster erhalten.
+
++
+Wenn der Wartungsmodus für die Zukunft geplant ist, wird in diesem Feld „`Scheduled`“ angezeigt. Mit dem Mauszeiger über das Feld können Sie die geplante Zeit anzeigen. Wenn sich das Cluster im Wartungsfenster befindet, wird in diesem Feld „`aktiv`“ angezeigt.
+
+* *Hostname oder IP-Adresse*
++
+Zeigt den Hostnamen, den vollqualifizierten Domänennamen (FQDN), den Kurznamen oder die IP-Adresse der Cluster-Management-LIF an, die zur Verbindung mit dem Cluster verwendet wird.
+
+* *Protokoll*
++
+Zeigt den Protokolltyp an, der auf dem Cluster konfiguriert werden kann: HTTP oder HTTPS (für eine sichere Verbindung).
+
++
+Wenn mit beiden Protokollen eine Verbindung zum Cluster hergestellt wird, wird HTTPS über HTTP ausgewählt. Die Standardeinstellung ist HTTPS.
+
+* *Port*
++
+Zeigt die Portnummer des Clusters an.
+
++
+Wenn der Port nicht angegeben wird, wird der Standardport für das ausgewählte Protokoll verwendet (80 für HTTP oder 443 für HTTPS).
+
+* *Benutzername*
++
+Zeigt den Benutzernamen an, der zur Anmeldung beim Cluster verwendet werden kann.
+
+* *Betrieb*
++
+Zeigt den aktuellen Vorgang an, der von der Cluster-Datenquelle unterstützt wird.
+
++
+Die Datenquelle unterstützt folgende Vorgänge:
+
++
+** Ermitteln
++
+Gibt den Vorgang an, wenn die Datenquelle erkannt wird.
+
+** Gesundheitsabfrage
++
+Gibt den Vorgang an, wenn die Datenquelle erfolgreich erkannt wurde und die Probenahme gestartet wurde.
+
+** Löschen
++
+Gibt den Vorgang an, wenn die Datenquelle (Cluster) aus der jeweiligen Liste der Speicherobjekte gelöscht wird.
+
+
+
+* *Betriebszustand*
++
+Zeigt den Status des aktuellen Vorgangs an. Der Status kann ausgefallen, abgeschlossen oder in Bearbeitung sein.
+
+* *Startzeit Der Operation*
++
+Das Datum und die Uhrzeit, zu der der Vorgang gestartet wurde.
+
+* *Endzeit Der Operation*
++
+Datum und Uhrzeit des Vorgangs.
+
+* *Beschreibung*
++
+Alle Nachrichten im Zusammenhang mit dem Vorgang.
+
+

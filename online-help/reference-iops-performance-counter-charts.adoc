@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-iops-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: In den Performance Explorer IOPS-Zählerdiagrammen wird die Anzahl der vom ausgewählten Speicherobjekt verarbeiteten ein-/Ausgabevorgänge pro Sekunde angezeigt. 
+---
+= Zählerdiagramme der IOPS-Performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In den Performance Explorer IOPS-Zählerdiagrammen wird die Anzahl der vom ausgewählten Speicherobjekt verarbeiteten ein-/Ausgabevorgänge pro Sekunde angezeigt.
+
+Das Popup-Fenster, das angezeigt wird, wenn sich der Cursor im Diagrammbereich befindet, zeigt die spezifischen Zählerwerte zu bestimmten Zeiten an.
+
+Wenn in der Zoom-Ansicht angezeigt wird, zeigen die IOPS-Diagramme des Volumes und der LUN unter ONTAP auch Einstellungen für den maximalen und minimalen Durchsatz-Schwellenwert für Quality of Service (QoS) an. Die Diagramme für IOPS/TB zeigen QoS-Spitzenwerte und erwartete Durchsatzschwellenwerte an, falls konfiguriert.
+
+Wenn sich ein Volume oder eine LUN befindet, das die IOPS einer Shared QoS-Richtlinie gemeinsam nutzt, wird eine Zeile für „`Total Workload IOPS`“ angezeigt, um die IOPS zu zeigen, die von allen anderen Workloads in dieser Richtlinie verwendet werden.
+
+Unten auf der Diagrammseite werden Informationen zum IOPS-Minimum, Maximum, Durchschnitt und 95. Perzentil für den ausgewählten Zeitraum angezeigt.
+
+Es sind vier Arten von IOPS-Diagrammen verfügbar:
+
+
+
+== IOPS – Zählerdiagramm insgesamt
+
+Zeigt die Anzahl der pro Sekunde verarbeiteten ein-/Ausgabevorgänge an.
+
+
+
+== IOPS - Aufschlüsselung der Zähler
+
+Zeigt die gleichen IOPS-Daten, getrennt in Lese-, Schreib- und sonstige IOPS, an.
+
+Diese Diagrammoption wird angewendet, wenn das ausgewählte Objekt eine SVM, einen Node, ein Aggregat, ein Volume oder eine LUN ist.
+
+
+
+== IOPS – Zählerdiagramm zu Protokollen
+
+Zeigt dieselben IOPS-Daten an. Bei SVMs werden die Performance-Daten jedoch in einzelne Komponenten für den Datenverkehr über CIFS, NFS, FCP, NVMe und iSCSI-Protokolle getrennt.
+
+
+
+== IOPS/TB – Zählerdiagramm insgesamt
+
+Zeigt die Anzahl der pro Sekunde verarbeiteten ein-/Ausgabevorgänge basierend auf dem gesamten logischen Speicherplatz, der vom Volume in Terabyte verbraucht wird. Dieser Zähler wird auch als I/O-Dichte bezeichnet und misst, wie viel Performance mit einer bestimmten Menge an Storage-Kapazität bereitgestellt werden kann.
+
+Diese Diagrammoption ist nur verfügbar, wenn das ausgewählte Objekt ein Volume ist. Sie zeigt Performance-Daten nur an, wenn die vom Volume genutzte logische Kapazität größer oder gleich 1 TB ist. Lücken werden im Diagramm angezeigt, wenn die genutzte Kapazität während des ausgewählten Zeitraums unter 1 TB fällt.
+
+[NOTE]
+====
+In manchen Situationen kann das IOPS/TB-Diagramm große Datensspitzen anzeigen, während das IOPS-Diagramm nicht dasselbe Verhalten zeigt. Dies ist eine bekannte Beschränkung, wenn Performance-Daten weniger häufig als andere Performance-Daten erfasst werden. Dieses Diagramm kehrt in der Regel in 5 oder 10 Minuten wieder in den Normalbetrieb zurück, wenn die Erfassungszyklen synchronisiert werden.
+
+====
+
+
+== *Zoom-Ansicht*-Taste
+
+Zeigt eine vergrößerte Ansicht der Daten des Zählerdiagramms an.
+
+* Veranstaltungen
++
+Das Auftreten von kritischen, Fehler-, Warn- und Informationsereignissen wird in den Zeitlinien oberhalb der Diagramme angezeigt.
+
+* Schwellenwerte
++
+Die horizontale, gestrichelte Zeile zeigt den in Unified Manager festgelegten Grenzwert für die Auslastungswarnung an.
+
++
+Die rote Linie zeigt den Auslastungskritischen Schwellenwert in Unified Manager an.
+
+* Zähler
++
+Die Zähler im linken Teilfenster zeigen an, welche Zählerwerte angezeigt werden. Deaktivieren oder Auswählen des image:../media/eye-icon.gif[""] Das wird einem Zähler zugeordnet, versteckt sich und zeigt, dass Zählerinformationen aus dem Diagramm angezeigt werden und kann beim Vergleich der Objekt-IOPS helfen.
+
+

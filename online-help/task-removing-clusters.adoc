@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-removing-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können ein Cluster mithilfe der Seite Configuration/Cluster Data Sources aus Unified Manager entfernen. Beispielsweise können Sie ein Cluster entfernen, wenn die Cluster-Erkennung ausfällt oder wenn Sie ein Storage-System stilllegen möchten. 
+---
+= Cluster werden entfernt
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein Cluster mithilfe der Seite Configuration/Cluster Data Sources aus Unified Manager entfernen. Beispielsweise können Sie ein Cluster entfernen, wenn die Cluster-Erkennung ausfällt oder wenn Sie ein Storage-System stilllegen möchten.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen die OnCommand-Administratorrolle oder die Speicheradministratorrolle besitzen.
+
+
+
+== Über diese Aufgabe
+
+Durch diese Aufgabe wird das ausgewählte Cluster aus Unified Manager entfernt. Nachdem ein Cluster entfernt wurde, wird er nicht mehr überwacht. Die beim entfernten Cluster registrierte Instanz des Unified Manager wird auch vom Cluster nicht registriert.
+
+Durch das Entfernen eines Clusters werden auch alle seine Storage-Objekte, historischen Daten, Storage-Services und alle zugehörigen Ereignisse aus Unified Manager gelöscht. Diese Änderungen werden auf den Bestandsseiten und den Detailseiten nach dem nächsten Datenerfassungszyklus angezeigt.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Konfiguration* > *Cluster-Datenquellen*.
+. Wählen Sie auf der Seite *Konfiguration/Cluster-Datenquellen* den Cluster aus, den Sie entfernen möchten, und klicken Sie auf *Entfernen*.
+. Klicken Sie im Dialogfeld *Datenquelle entfernen* auf *Entfernen*, um die Anforderung zum Entfernen zu bestätigen.
+

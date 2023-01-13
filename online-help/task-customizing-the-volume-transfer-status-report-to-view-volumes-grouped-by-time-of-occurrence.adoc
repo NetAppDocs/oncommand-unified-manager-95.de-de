@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-volumes-grouped-by-time-of-occurrence.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können den Bericht Volume Transfer Status \(Historical\) so anpassen, dass die Liste der Volumes angezeigt wird, die nach Zeitpunkt des Eintretens zwischen zwei Daten gruppiert sind.' 
+---
+= Anpassen des Berichts zum Volume Transfer Status (Historical) zur Anzeige von Volumes, die nach Zeitpunkt des Auftretens gruppiert sind
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Bericht „Volume Transfer Status“ (Historischer Bericht) so anpassen, dass die Liste der Volumes angezeigt wird, die nach dem Zeitpunkt des Eintretens zwischen zwei Daten gruppiert sind.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. Gruppierung nach Cluster entfernen:
++
+.. Klicken Sie in der Spalte, die nicht gruppiert werden muss, auf die image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Öffnen Sie in der Spalte *Startzeit* das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Dropdown-Liste *Bedingung* die Option *Zwischen* aus.
+. Klicken Sie auf *Werte auswählen*, und wählen Sie die Werte *Datum von* und *Datum bis* aus.
+. Klicken Sie auf *OK*.
+

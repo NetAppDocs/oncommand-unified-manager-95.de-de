@@ -1,0 +1,29 @@
+---
+permalink: performance-checker/concept-navigating-performance-workflows-in-the-unified-manager-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Unified Manager-Oberfläche bietet viele Seiten zum Sammeln und Anzeigen von Performance-Informationen. Über das linke Navigationsfenster navigieren Sie zu den Seiten der GUI, und Sie verwenden die Registerkarten und Links auf den Seiten, um Informationen anzuzeigen und zu konfigurieren. 
+---
+= Navigation in Performance-Workflows in der Unified Manager GUI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Unified Manager-Oberfläche bietet viele Seiten zum Sammeln und Anzeigen von Performance-Informationen. Über das linke Navigationsfenster navigieren Sie zu den Seiten der GUI, und Sie verwenden die Registerkarten und Links auf den Seiten, um Informationen anzuzeigen und zu konfigurieren.
+
+Sie verwenden alle der folgenden Seiten, um Informationen zur Cluster-Performance zu überwachen und Fehler zu beheben:
+
+* Dashboard-Seiten
+* Inventarseiten für Storage-Objekte
+* Landing Pages für Storage-Objekte (einschließlich Performance Explorer)
+* Konfigurations- und Setup-Seiten
+* Ereignisseiten
+
+
+[NOTE]
+====
+Auf einer Seite in Unified Manager wird möglicherweise eine große Menge an Informationen angezeigt. Um alle verfügbaren Informationen anzuzeigen, scrollen Sie immer zum Ende der Seite.
+
+====

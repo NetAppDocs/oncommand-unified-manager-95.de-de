@@ -1,0 +1,126 @@
+---
+permalink: online-help/reference-performance-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Seite „Performance/Aggregates Inventory“ zeigt eine Übersicht über die Performance-Ereignisse, Daten und Konfigurationsinformationen für jedes Aggregat an, das durch eine Instanz von Unified Manager überwacht wird. Auf dieser Seite können Sie die Performance Ihrer Aggregate überwachen und Fehler bei Performance-Problemen und Schwellenwerten beheben. 
+---
+= Inventarseite für Performance/Aggregate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite „Performance/Aggregates Inventory“ zeigt eine Übersicht über die Performance-Ereignisse, Daten und Konfigurationsinformationen für jedes Aggregat an, das durch eine Instanz von Unified Manager überwacht wird. Auf dieser Seite können Sie die Performance Ihrer Aggregate überwachen und Fehler bei Performance-Problemen und Schwellenwerten beheben.
+
+Je nachdem, wie Sie diese Seite aufrufen, wird möglicherweise ein anderer Titel auf der Seite angezeigt, um anzugeben, ob die Liste gefiltert wurde. Wenn beispielsweise alle Aggregate angezeigt werden, lautet der Titel „`Aggregate`“. Wenn Sie eine Untergruppe von Aggregaten anzeigen, die von der Seite Threshold Policies zurückgegeben werden, lautet der Titel „`Aggregates“, auf die Policy aggr_IOPS angewendet wird`“.
+
+Mit den Schaltflächen oben auf der Seite können Sie Suchen durchführen, um bestimmte Daten zu finden, Filter zu erstellen und anzuwenden, um die Liste der angezeigten Daten einzugrenzen und die Daten auf der Seite in A zu exportieren `.csv` Datei, und fügen Sie Spalten auf der Seite hinzu oder entfernen Sie sie.
+
+Standardmäßig werden Objekte auf den Objektbestandsseiten sortiert, basierend auf dem Kritikereignis der Objektleistung. Objekte mit kritischen Ereignissen werden zuerst aufgeführt und Objekte mit Warnmeldungen werden als zweites aufgeführt. Dies bietet eine unmittelbare visuelle Darstellung von Problemen, die behoben werden müssen. Die Werte der Leistungsindikatoren basieren auf einem Durchschnitt aus den Daten der letzten 72 oder mehr Stunden, wie auf der Seite angegeben. Sie können auf die Schaltfläche „Aktualisieren“ klicken, um die Objektbestandsdaten zu aktualisieren.
+
+Über die Schaltflächen *Performance Threshold Policy* und *Clear PerformanceThreshold Policy* können Sie Schwellenwertrichtlinien für beliebige Objekte auf den Objektbestandsseiten zuweisen oder löschen.
+
+[NOTE]
+====
+Root-Aggregate werden auf dieser Seite nicht angezeigt.
+
+====
+
+
+== Aggregiert Spalten der Inventarseite
+
+Die Seite „Performance/Aggregates Inventory“ enthält die folgenden Spalten für jedes Aggregat.
+
+* *Status*
++
+Ein gesundes Objekt ohne aktive Ereignisse zeigt ein grünes Häkchen-Symbol (image:../media/sev-normal-um60.png["Symbol für den Schweregrad „Ereignis“ – „Normal“"]). Wenn das Objekt über ein aktives Ereignis verfügt, identifiziert das Symbol für die Ereignisanzeige den Schweregrad: Kritische Ereignisse sind rot (image:../media/sev-critical-um60.png["Symbol für den Schweregrad „Ereignis“ – „kritisch“"]Die Fehlerereignisse sind orange (image:../media/sev-error-um60.png["Symbol für den Schweregrad „Ereignis“: Fehler"]), und Warnereignisse sind gelb (image:../media/sev-warning-um60.png["Symbol für den Schweregrad „Ereignis“ – Warnung"]).
+
+* * Aggregat*
++
+Sie können auf den Aggregatnamen klicken, um zur Seite mit den Performance-Details dieses Aggregats zu navigieren.
+
+* *Aggregattyp*
++
+Der Aggregattyp:
+
++
+** HDD
+** Hybrid
++
+Kombiniert HDDs und SSDs, aber Flash Pool wurde nicht aktiviert.
+
+** Hybrid (Flash Pool)
++
+Kombiniert HDDs und SSDs und ermöglicht die Aktivierung von Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Kombiniert SSDs mit einer Cloud-Tier
+
+** VMDisk (SDS)
++
+Virtuelle Laufwerke innerhalb einer virtuellen Maschine
+
+** VMDisk (FabricPool)
++
+Kombiniert virtuelle Festplatten mit einer Cloud-Tier
+
+** LUN (FlexArray) in dieser Spalte wird „`not available`“ angezeigt, wenn auf dem überwachten Speichersystem eine ONTAP-Version vor 8.3 ausgeführt wird.
+
+
+* *Latenz*
++
+Die durchschnittliche Reaktionszeit aller I/O-Anforderungen im Aggregat, ausgedrückt in Millisekunden pro Vorgang
+
+* *IOPS*
++
+Die ein-/Ausgabevorgänge pro Sekunde auf dem Aggregat.
+
+* *Mbps*
++
+Der Durchsatz im Aggregat, gemessen in Megabyte pro Sekunde.
+
+* *Verwendete Leistungskapazität*
++
+Der Prozentsatz der Performance-Kapazität, die vom Aggregat verwendet wird.
+
++
+[NOTE]
+====
+Daten zur Performance-Kapazität sind nur verfügbar, wenn die Nodes in einem Cluster mit der Software ONTAP 9.0 oder höher installiert sind.
+
+====
+* *Nutzung*
++
+Der Prozentsatz der aktuell verwendeten Festplatten des Aggregats.
+
+* *Freie Kapazität*
++
+Die ungenutzte Storage-Kapazität dieses Aggregats sind Gigabyte.
+
+* *Gesamtkapazität*
++
+Die gesamte Storage-Kapazität dieses Aggregats ist Gigabyte.
+
+* *Inaktive Datenberichterstattung*
++
+Gibt an, ob die Funktion zur Berichterstellung inaktiver Daten auf diesem Aggregat aktiviert oder deaktiviert ist. Bei Aktivierung zeigen Volumes auf diesem Aggregat auf der Seite „Performance/Volumes Inventory“ den Umfang der „kalten“ Daten an.
+
++
+Der Wert in diesem Feld lautet „`N/A`“, wenn die Version von ONTAP keine inaktive Datenberichterstattung unterstützt.
+
+* * Cluster*
++
+Der Cluster, zu dem das Aggregat gehört. Sie können auf den Cluster-Namen klicken, um zur Detailseite des jeweiligen Clusters zu gelangen.
+
+* *Knoten*
++
+Der Node, zu dem das Aggregat gehört. Sie können auf den Node-Namen klicken, um zur Detailseite dieses Node zu navigieren.
+
+* *Grenzwertrichtlinie*
++
+Die benutzerdefinierte Performance-Schwellenwertrichtlinie, die für dieses Storage-Objekt aktiv ist, oder Richtlinien. Sie können den Cursor über Richtliniennamen mit Ellipsen (...) positionieren, um den vollständigen Richtliniennamen oder die Liste der zugewiesenen Richtliniennamen anzuzeigen. Die Schaltflächen *Performance Threshold Policy* und *Clear Performance Threshold Policy* bleiben deaktiviert, bis Sie ein oder mehrere Objekte auswählen, indem Sie auf die Kontrollkästchen ganz links klicken.
+
+

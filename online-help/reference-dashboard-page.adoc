@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-dashboard-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Die Seite Dashboards/Überblick wird als Diagramm den Zustand von Storage-Objekten wie Clustern, Aggregaten und Storage Virtual Machines \(SVMs\) angezeigt. Basierend auf den generierten Ereignissen für Verfügbarkeit, Kapazität, Performance und Sicherung werden diese Storage-Objekte als ordnungsgemäß, risikolos oder als „stabil“, „Warnung“ oder „Fehler“ für schutzbezogene Ereignisse kategorisiert.' 
+---
+= Dashboards/Übersichtsseite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite Dashboards/Überblick wird als Diagramm den Zustand von Storage-Objekten wie Clustern, Aggregaten und Storage Virtual Machines (SVMs) angezeigt. Basierend auf den generierten Ereignissen für Verfügbarkeit, Kapazität, Performance und Sicherung werden diese Storage-Objekte als ordnungsgemäß, risikolos oder als „stabil“, „Warnung“ oder „Fehler“ für schutzbezogene Ereignisse kategorisiert.
+
+
+
+== Der Balken für den Cluster ist nicht erreichbar
+
+Wenn ein Cluster nicht erreichbar ist, zeigt Unified Manager die Details in einer Leiste oben auf jeder Seite an. Wenn alle Cluster erreichbar sind, ist dieses Fenster ausgeblendet.
+
+Sie können die im Fenster angezeigten Informationen durch Drücken von F5 aktualisieren. Durch diese Aktion wird sichergestellt, dass im Teilfenster die neuesten Informationen über Cluster angezeigt werden, die derzeit nicht erreichbar sind. Wenn beispielsweise ein Cluster mit einem nicht zugänglichen Cluster entfernt wird oder wenn der Status eines Ereignisses veraltet ist, werden Informationen über das Ereignis entfernt, wenn Sie das Teilfenster aktualisieren.
+
+Sie können detaillierte Informationen über ein Cluster anzeigen, das nicht erreichbar ist, indem Sie auf die Schaltfläche *Details* klicken. Durch diese Aktion wird die Seite „Ereignisinventar“ geöffnet. Nach dem Schließen der Leiste wird diese nur noch angezeigt, wenn Sie sich wieder bei Unified Manager anmelden.
+
+
+
+== Übersichtsbereich
+
+* *Verfügbarkeitsfenster*
++
+Zeigt Informationen zur Verfügbarkeit von Clustern, Aggregaten und SVMs an, die von Unified Manager überwacht werden Die Speicherobjekte werden als gesund, gefährdet oder Vorfälle eingestuft. So wird beispielsweise der Status eines Clusters ohne freie Festplatten als gefährdet angezeigt.
+
++
+In diesem Fenster wird auch die Anzahl der Speicherobjekte in den einzelnen Kategorien angezeigt. Wenn Sie auf einen der Gesamtwerte des Objekts klicken, gelangen Sie zur Seite für dieses Objekt. Beispielsweise wird Sie durch Klicken auf die Registerkarte „Cluster total“ auf die Seite „Systemzustand/Cluster Inventar“ angezeigt. Wenn Sie oben in einer Spalte auf die Zahlen klicken, gelangen Sie zur Seite „Ereignisinventar“.
+
+* *Kapazitätsbereich*
++
+Zeigt Informationen zur Kapazität von Aggregaten und SVMs an, die von Unified Manager überwacht werden. Die Speicherobjekte werden als gesund, gefährdet oder Vorfälle eingestuft. So wird beispielsweise der Status eines Aggregats angezeigt, dessen genutzte Kapazität den vollen Schwellenwert erreicht hat.
+
++
+In diesem Fenster wird auch die Anzahl der Speicherobjekte in den einzelnen Kategorien angezeigt.
+
+* *Performance-Fenster*
++
+Zeigt Informationen zur Performance von Clustern, SVMs und Volumes an, die von Unified Manager überwacht werden Die Storage-Objekte werden basierend auf den erzeugten Performance-bezogenen Zwischenfällen als ordnungsgemäß, risikobehaftete oder mit Incidents kategorisiert. Beispielsweise wird der Status eines Volumes angezeigt, dessen I/O-Reaktionszeit auf seinen Workload den maximalen Schwellenwert erreicht hat, als Vorfälle auftreten.
+
++
+In diesem Teilfenster werden außerdem die Gesamtzahl der Cluster, SVMs und Volumes angezeigt, die von Unified Manager überwacht werden. Wenn Sie auf einen der Gesamtwerte des Objekts klicken, gelangen Sie zur Seite für dieses Objekt. Beispielsweise führt Sie ein Klicken auf die Cluster-Gesamtansicht zur Seite „Performance/Cluster Inventory“.
+
+* *Schutzbereich*
++
+Zeigt Informationen zu Sicherungsbeziehungen an, die von Unified Manager überwacht werden. Die Schutzbeziehungen werden als „gesund“, „Warnung“ oder „Fehler“ kategorisiert. Beispielsweise wird eine Beziehung mit einer Verzögerungsdauer angezeigt, die den lag-Warnschwellenwert überschreitet, als Warnung.
+
++
+In diesem Teilfenster wird außerdem die Gesamtzahl der Storage-Objekte in den einzelnen Sicherungskategorien angezeigt. Wenn Sie auf die Links für die Kategorien „Lag Status“, „Asynchronous Vault“, „Asynchronous Mirror“ oder „Synchronous“ klicken, gelangen Sie zu einer gefilterten Liste dieser Objekte auf der Seite „Protection/Volume Relationships“.
+
+

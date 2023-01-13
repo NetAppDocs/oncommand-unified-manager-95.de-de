@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-a-namespace-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Jedes Infinite Volume verfügt über eine einzelne Namespace-Komponente, die Verzeichnisinformationen und Dateinamen der physischen Datenspeicherposition der Datei innerhalb des Infinite Volume zuordnet. 
+---
+= Was für eine Namespace-Komponente ist
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Jedes Infinite Volume verfügt über eine einzelne Namespace-Komponente, die Verzeichnisinformationen und Dateinamen dem physischen Speicherort der Datei im Infinite Volume zuordnet.
+
+Die Clients kennen die Namespace-Komponente nicht und interagieren nicht direkt mit ihr. Die Namespace-Komponente ist eine interne Komponente des Infinite Volume.

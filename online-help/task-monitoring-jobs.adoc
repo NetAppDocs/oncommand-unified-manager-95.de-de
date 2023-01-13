@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-monitoring-jobs.html 
+sidebar: sidebar 
+keywords:  
+summary: Mithilfe der Seite Schutz/Jobs können Sie den Job-Status überwachen und Jobeigenschaften wie Speicherdiensttyp, Status, Abgesendete Zeit und Abgeschlossene Zeit anzeigen, um festzustellen, ob ein Job erfolgreich abgeschlossen wurde oder nicht. 
+---
+= Überwachen von Jobs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mithilfe der Seite Schutz/Jobs können Sie den Job-Status überwachen und Jobeigenschaften wie Speicherdiensttyp, Status, Abgesendete Zeit und Abgeschlossene Zeit anzeigen, um festzustellen, ob ein Job erfolgreich abgeschlossen wurde oder nicht.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Schutz* > *Jobs*.
++
+Die Seite Schutz/Jobs wird angezeigt.
+
+. Zeigen Sie die Spalte *Status* an, um den Status der aktuell ausgeführten Jobs zu bestimmen.
+. Klicken Sie auf einen Jobnamen, um Details zu diesem Job anzuzeigen.
++
+Die Seite Schutz-/Jobdetails wird angezeigt.
+
+

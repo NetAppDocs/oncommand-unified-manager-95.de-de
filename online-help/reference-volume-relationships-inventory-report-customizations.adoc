@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Bestandsbericht zu Volume-Beziehungen anpassen, um die Volume-Details anzuzeigen, die basierend auf der Fehlerquelle gefiltert werden. Mithilfe von Filtern können Sie Inventardetails zu Volume-Beziehungen basierend auf Zeitplänen anzeigen und Details zum Volume-Bestand basierend auf Problemen gruppieren. 
+---
+= Inventarisierung von Volume-Beziehungen – Berichte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Bestandsbericht zu Volume-Beziehungen anpassen, um die Volume-Details anzuzeigen, die basierend auf der Fehlerquelle gefiltert werden. Mithilfe von Filtern können Sie Inventardetails zu Volume-Beziehungen basierend auf Zeitplänen anzeigen und Details zum Volume-Bestand basierend auf Problemen gruppieren.

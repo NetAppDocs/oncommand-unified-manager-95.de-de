@@ -1,0 +1,173 @@
+---
+permalink: online-help/reference-event-management-inventory-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Ereignisinventar“ können Sie eine Liste der aktuellen Ereignisse und ihrer Eigenschaften anzeigen. Sie können Aufgaben wie Quittieren, Auflösen und Zuweisen von Ereignissen durchführen. Sie können auch eine Warnung zu bestimmten Ereignissen hinzufügen. 
+---
+= Seite „Ereignisinventar“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Ereignisinventar“ können Sie eine Liste der aktuellen Ereignisse und ihrer Eigenschaften anzeigen. Sie können Aufgaben wie Quittieren, Auflösen und Zuweisen von Ereignissen durchführen. Sie können auch eine Warnung zu bestimmten Ereignissen hinzufügen.
+
+Standardmäßig werden die Informationen auf dieser Seite alle 5 Minuten automatisch aktualisiert, um sicherzustellen, dass die aktuellen neuen Ereignisse angezeigt werden.
+
+
+
+== Komponenten filtern
+
+Hier können Sie die in der Ereignisliste angezeigten Informationen anpassen. Sie können die Liste der Ereignisse, die mit den folgenden Komponenten angezeigt werden, verfeinern:
+
+* Menü Ansicht zur Auswahl aus einer vordefinierten Liste von Filterauswahlen.
++
+Dazu gehören beispielsweise alle aktiven (neuen und bestätigten) Ereignisse, aktive Performanceereignisse, mir zugewiesene Ereignisse (der angemeldete Benutzer) und alle während aller Wartungsfenster generierten Ereignisse.
+
+* Suchbereich zum Verfeinern der Liste der Ereignisse durch Eingabe vollständiger oder teilweiser Begriffe.
+* Die Filterschaltfläche öffnet den Fensterbereich Filter, sodass Sie aus jedem verfügbaren Feld und Feldattribut auswählen können, um die Ereignisliste zu verfeinern.
+* Zeitauswahl zur Verfeinerung der Ereignisliste um den Zeitpunkt, an dem das Ereignis ausgelöst wurde.
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Zuweisen Zu*
++
+Hiermit können Sie den Benutzer auswählen, dem das Ereignis zugeordnet ist. Wenn Sie einem Benutzer ein Ereignis zuweisen, werden der Benutzername und die Uhrzeit, zu der Sie das Ereignis zugewiesen haben, in der Ereignisliste für die ausgewählten Ereignisse hinzugefügt.
+
++
+** Ich
++
+Weist das Ereignis dem derzeit angemeldeten Benutzer zu.
+
+** Einem anderen Benutzer
++
+Zeigt das Dialogfeld „Eigentümer zuweisen“ an, in dem Sie das Ereignis anderen Benutzern zuweisen oder neu zuweisen können. Sie können auch die Zuweisung von Ereignissen aufheben, indem Sie das Feld Eigentumsrechte leer lassen.
+
+
+
+* * Quittieren*
++
+Bestätigt die ausgewählten Ereignisse.
+
++
+Wenn Sie ein Ereignis bestätigen, werden Ihr Benutzername und die Uhrzeit, zu der Sie das Ereignis bestätigt haben, in der Ereignisliste für die ausgewählten Ereignisse hinzugefügt. Wenn Sie ein Ereignis bestätigen, sind Sie für die Verwaltung dieses Ereignisses verantwortlich.
+
++
+[NOTE]
+====
+Sie können keine Informationsereignisse bestätigen.
+
+====
+* *Als Gelöst Markieren*
++
+Ermöglicht Ihnen die Änderung des Ereignisstatus in „gelöst“.
+
++
+Wenn Sie ein Ereignis auflösen, werden Ihr Benutzername und die Zeit, zu der Sie das Ereignis aufgelöst haben, in der Ereignisliste für die ausgewählten Ereignisse hinzugefügt. Nachdem Sie Korrekturmaßnahmen für das Ereignis ergriffen haben, müssen Sie das Ereignis als gelöst markieren.
+
+* *Alarm Hinzufügen*
++
+Zeigt das Dialogfeld Alarm hinzufügen an, in dem Sie Warnmeldungen für die ausgewählten Ereignisse hinzufügen können.
+
+* *Export*
++
+Ermöglicht das Exportieren von Details aller Ereignisse in kommagetrennte Werte (`.csv`) Datei.
+
+* *Spaltenauswahl*
++
+Hier können Sie die Spalten auswählen, die auf der Seite angezeigt werden, und die Reihenfolge auswählen, in der sie angezeigt werden.
+
+
+
+
+
+== Ereignisliste
+
+Zeigt Details zu allen Ereignissen an, die nach ausgelöster Zeit geordnet sind.
+
+Standardmäßig werden neue und bestätigte Ereignisse für die letzten sieben Tage des Schweregrads kritisch, Fehler und Warnung angezeigt.
+
+* *Auslösezeit*
++
+Die Zeit, zu der das Ereignis generiert wurde.
+
+* *Severity*
++
+Der Schweregrad des Ereignisses: Kritisch (image:../media/sev-critical-um60.png[""]), Fehler (image:../media/sev-error-um60.png[""]), Warnung (image:../media/sev-warning-um60.png[""]), und Informationen (image:../media/sev-information-um60.gif[""]).
+
+* *Bundesland*
++
+Der Ereignisstatus: Neu, bestätigt, aufgelöst oder veraltet.
+
+* *Impact Level*
++
+Die Ereigniseinwirkung: Vorfall, Risiko oder Ereignis.
+
+* *Aufprallbereich*
++
+Die Auswirkung auf das Ereignis: Verfügbarkeit, Kapazität, Performance, Schutz oder Konfiguration.
+
+* *Name*
++
+Der Ereignisname.
+
++
+Sie können den Ereignisnamen auswählen, um die Seite Ereignisdetails anzuzeigen.
+
+* *Quelle*
++
+Der Name des Objekts, auf dem das Ereignis aufgetreten ist.
+
++
+Wenn eine Richtlinienverletzung bei Shared QoS auftritt, wird in diesem Feld nur das Workload-Objekt angezeigt, das die meisten IOPS oder MB/s verbraucht. Weitere Workloads, die diese Richtlinie verwenden, werden auf der Seite Ereignisdetails angezeigt.
+
++
+Sie können den Quellnamen auswählen, um die Seite für den Systemzustand oder die Performance-Details für das Objekt anzuzeigen.
+
+* *Quelltyp*
++
+Den Objekttyp (z. B. SVM, Volume oder Qtree), mit dem das Ereignis verknüpft ist.
+
+* * Zugewiesen Zu*
++
+Der Name des Benutzers, dem das Ereignis zugeordnet ist.
+
+* *Hinweise*
++
+Die Anzahl der Notizen, die für ein Ereignis hinzugefügt werden.
+
+* *Tage Herausragend*
++
+Die Anzahl der Tage seit der ersten Erzeugung des Ereignisses.
+
+* *Zugewiesene Zeit*
++
+Die Zeit, die seit der Zuweisung des Ereignisses an einen Benutzer verstrichen ist. Wenn die verstrichene Zeit eine Woche überschreitet, wird der Zeitstempel angezeigt, zu dem das Ereignis einem Benutzer zugewiesen wurde.
+
+* * Bestätigt Durch*
++
+Der Name des Benutzers, der das Ereignis bestätigt hat. Das Feld ist leer, wenn das Ereignis nicht bestätigt wird.
+
+* * Quittierte Zeit*
++
+Die Zeit, die seit dem Ereignis vergangen ist, wurde bestätigt. Wenn die verstrichene Zeit eine Woche überschreitet, wird der Zeitstempel angezeigt, zu dem das Ereignis bestätigt wurde.
+
+* * Gelöst Von*
++
+Der Name des Benutzers, der das Ereignis aufgelöst hat. Das Feld ist leer, wenn das Ereignis nicht aufgelöst wird.
+
+* * Zeit Gelöst*
++
+Die Zeit, die seit der Behebung des Ereignisses abgelaufen ist. Wenn die verstrichene Zeit eine Woche überschreitet, wird der Zeitstempel angezeigt, zu dem das Ereignis aufgelöst wurde.
+
+* *Veraltete Zeit*
++
+Die Zeit, in der der Zustand des Ereignisses obsolet wurde.
+
+

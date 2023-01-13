@@ -1,0 +1,29 @@
+---
+permalink: online-help/concept-collecting-data-and-monitoring-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager erfasst und analysiert Workload-Aktivitäten alle 5 Minuten, um Performance-Ereignisse zu identifizieren und Konfigurationsänderungen alle 15 Minuten zu erkennen. Es werden maximal 30 Tage 5 vergangener Performance- und Ereignisdaten aufbewahrt. Anhand dieser Daten wird der erwartete Bereich für alle überwachten Workloads prognostiziert. 
+---
+= Erfassung von Daten und Monitoring der Workload-Performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager erfasst und analysiert Workload-Aktivitäten alle 5 Minuten, um Performance-Ereignisse zu identifizieren und Konfigurationsänderungen alle 15 Minuten zu erkennen. Es werden maximal 30 Tage 5 vergangener Performance- und Ereignisdaten aufbewahrt. Anhand dieser Daten wird der erwartete Bereich für alle überwachten Workloads prognostiziert.
+
+[NOTE]
+====
+In diesem Kapitel wird beschrieben, wie dynamische Schwellenwerte funktionieren und wie sie zur Überwachung der Workload-Performance eingesetzt werden. Dieses Kapitel gilt nicht für Statistiken oder Ereignisse, die durch benutzerdefinierte oder systemdefinierte Leistungsschwellenwerte entstehen.
+
+====
+Unified Manager muss die Workload-Aktivität mindestens 3 Tage lang sammeln, bevor sie mit der Analyse beginnen kann. Vor dem erwarteten Bereich für I/O-Reaktionszeiten und Vorgänge kann auf der Seite Performance/Volume Details und auf der Seite Event Details angezeigt werden. Während diese Aktivität erfasst wird, werden im erwarteten Bereich nicht alle Änderungen angezeigt, die von der Workload-Aktivität auftreten. Nach der Erfassung von 3 Tagen Aktivität passt Unified Manager den erwarteten Bereich alle 24 Stunden um 12:00 Uhr an, um Workload-Aktivitätsänderungen zu berücksichtigen und einen präziseren Leistungsschwellenwert festzulegen.
+
+In den ersten 4 Tagen, an denen Unified Manager ein Volume überwacht, werden die Diagramme auf der Seite Performance/Volume Details nicht den erwarteten Bereich für dieses Volume angezeigt, wenn mehr als 24 Stunden seit der letzten Datenerfassung vergangen sind. Ereignisse, die vor der letzten Sammlung erkannt wurden, sind weiterhin verfügbar.
+
+[NOTE]
+====
+Bei der Sommerzeit (Sommerzeit) wird die Systemzeit geändert, wodurch der erwartete Bereich der Performance-Statistiken für überwachte Workloads verändert wird. Unified Manager beginnt sofort mit der Korrektur des erwarteten Bereichs, der ungefähr 15 Tage dauert. In dieser Zeit können Sie Unified Manager weiterhin verwenden. Da Unified Manager jedoch den erwarteten Bereich zum Erkennen von Ereignissen verwendet, sind einige Ereignisse möglicherweise nicht korrekt. Ereignisse, die vor der Zeitänderung erkannt wurden, werden nicht beeinträchtigt. Wenn Sie die Zeit auf einem Cluster oder auf einem Unified Manager-Server zu einem früheren Zeitpunkt manuell ändern, wirkt sich dies auch auf die Ergebnisse der Ereignisanalyse aus.
+
+====

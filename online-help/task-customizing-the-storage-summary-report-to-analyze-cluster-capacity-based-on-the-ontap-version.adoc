@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-analyze-cluster-capacity-based-on-the-ontap-version.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Bericht zur Storage-Übersicht so anpassen, dass Cluster nach ONTAP-Version gruppiert werden. Auch Aggregate mit Bezug auf die gesamte Rohkapazität lassen sich anzeigen. 
+---
+= Anpassen des Storage Summary-Berichts zur Analyse der Clusterkapazität auf Grundlage der ONTAP-Version
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Bericht zur Storage-Übersicht so anpassen, dass Cluster nach ONTAP-Version gruppiert werden. Auch Aggregate mit Bezug auf die gesamte Rohkapazität lassen sich anzeigen.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie Gruppierung nach Cluster:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie Auf image:../media/click-to-see-menu.gif[""] (Menüsymbol).
+.. Wählen Sie *Gruppe* > *Option Innere Gruppe löschen*.
+
+
+. So gruppieren Sie den Bericht nach der ONTAP-Version:
++
+.. Klicken Sie in die Spalte *OS Version* und wählen Sie die aus image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Gruppe Hinzufügen*.
+
+
+. Führen Sie die folgenden Schritte aus, um der gesamten Rohkapazität Aggregate hinzuzufügen:
++
+.. Klicken Sie in die Spalte *Gesamt Rohkapazität* und klicken Sie auf image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Aggregation*.
+.. Deaktivieren Sie im Dialogfeld *Aggregation* das Kontrollkästchen *Tabellenebene* und aktivieren Sie das Kontrollkästchen *Gruppenebene*.
+.. Geben Sie ggf. einen Namen in das Feld *Etikett eingeben* ein.
+
+
+. Klicken Sie auf *OK*.
+

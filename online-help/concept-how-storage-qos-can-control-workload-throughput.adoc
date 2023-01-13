@@ -1,0 +1,35 @@
+---
+permalink: online-help/concept-how-storage-qos-can-control-workload-throughput.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können eine Quality of Service \(QoS\)-Richtliniengruppe erstellen oder bearbeiten, um die I/O-Grenze pro Sekunde \(IOPS\) oder den Durchsatz \(Mbps\) für die darin enthaltenen Workloads zu steuern. Wenn sich die Workloads in einer Richtliniengruppe ohne festgelegte Grenzwerte befinden, wie z. B. in der Standardrichtlinie, oder das festgelegte Limit Ihren Anforderungen nicht entspricht, können Sie die Obergrenze erhöhen oder die Workloads in eine neue oder vorhandene Richtliniengruppe verschieben, die das gewünschte Limit hat.' 
+---
+= Kontrolle des Workload-Durchsatzes durch Storage-QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Richtliniengruppe für Quality of Service (QoS) erstellen oder bearbeiten, um das Limit für I/O pro Sekunde (IOPS) oder den Durchsatz (MB/s) für die in ihnen enthaltenen Workloads zu steuern. Wenn sich die Workloads in einer Richtliniengruppe ohne festgelegte Grenzwerte befinden, wie z. B. in der Standardrichtlinie, oder das festgelegte Limit Ihren Anforderungen nicht entspricht, können Sie die Obergrenze erhöhen oder die Workloads in eine neue oder vorhandene Richtliniengruppe verschieben, die das gewünschte Limit hat.
+
+QoS-Richtliniengruppen mit „`standard`“ können individuellen Workloads zugewiesen werden, zum Beispiel einzelnen Volumes oder LUNs. In diesem Fall kann der Workload das volle Durchsatzlimit verwenden. QoS-Richtliniengruppen können zudem mehreren Workloads zugewiesen werden. In diesem Fall wird das Durchsatzlimit von den Workloads gemeinsam genutzt. Beispielsweise würde ein QoS-Limit von 9,000 IOPS, das drei Workloads zugewiesen ist, die kombinierten IOPS von über 9,000 IOPS einschränken.
+
+„`Adaptive`“ QoS-Richtliniengruppen können auch einzelnen Workloads oder mehreren Workloads zugewiesen werden. Allerdings erhält jeder Workload bei der Zuweisung zu mehreren Workloads das volle Durchsatzlimit, anstatt gemeinsam mit anderen Workloads auf den Durchsatzwert zu zugreifen. Zudem passen anpassungsfähige QoS-Richtlinien die Durchsatzeinstellung automatisch basierend auf der Volume-Größe pro Workload an. So erhält das Verhältnis von IOPS zu Terabyte bei sich änderender Volume aufrecht. Wenn beispielsweise der Spitzenwert in der Richtlinie für anpassungsfähige QoS auf 5,000 IOPS/TB festgelegt ist, dann hat ein 10-TB-Volume eine Durchsatzobergrenze von 50,000 IOPS. Wenn die Größe des Volumes später auf 20 TB geändert wird, passt die anpassungsfähige QoS die Obergrenze an 100,000 IOPS an.
+
+Ab ONTAP 9.5 können Sie die Blockgröße einschließen, wenn Sie eine anpassungsfähige QoS-Richtlinie definieren. Dadurch wird die Richtlinie für Fälle, in denen Workloads sehr große Blockgrößen verwenden und letztendlich einen hohen Prozentsatz an Durchsatz verbrauchen, effektiv von einem Schwellenwert für IOPS/TB in einen MB/s-Schwellenwert konvertiert.
+
+Wenn bei QoS-Richtlinien für Shared-Gruppen die IOPS oder MB/s aller Workloads in einer Richtliniengruppe das festgelegte Limit überschreitet, drosselt die Richtliniengruppe die Workloads, um ihre Aktivitäten zu beschränken. Dies kann die Performance aller Workloads in der Richtliniengruppe beeinträchtigen. Wenn ein dynamisches Ereignis durch die Richtliniengruppendrosselung generiert wird, zeigt die Ereignisbeschreibung den Namen der beteiligten Richtliniengruppe an.
+
+Auf der Seite „Performance/Volumes Inventory“ können Sie die betroffenen Volumes nach IOPS und MB/s sortieren, um zu sehen, welche Workloads die höchste Auslastung aufweisen und welche dazu möglicherweise beigetragen haben. Wählen Sie auf der Seite „Performance/Volumes Explorer“ andere Volumes oder LUNs aus, um sie mit den betroffenen Workload-IOPS oder dem Durchsatz des MB/s zu vergleichen.
+
+Durch die Zuweisung von Workloads, die die Node-Ressourcen zu einer restriktiveren Richtliniengruppeneinstellung überbeanspruchen, drosselt die Richtliniengruppe die Workloads, um ihre Aktivitäten zu beschränken. Dadurch wird die Nutzung der Ressourcen auf diesem Node verringert. Wenn der Workload jedoch mehr Node-Ressourcen nutzen soll, kann der Wert der Richtliniengruppe erhöht werden.
+
+Sie können System Manager oder die Befehle ONTAP zum Verwalten von Richtliniengruppen verwenden, einschließlich der folgenden Aufgaben:
+
+* Erstellen einer Richtliniengruppe
+* Hinzufügen oder Entfernen von Workloads in einer Richtliniengruppe
+* Verschieben eines Workloads zwischen Richtliniengruppen
+* Ändern der Durchsatzbegrenzung einer Richtliniengruppe
+* Workloads werden in ein anderes Aggregat und/oder Node verschoben
+

@@ -1,0 +1,40 @@
+---
+permalink: online-help/task-adding-space-to-the-data-disk-of-the-vmware-virtual-machine.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn Sie die Menge an Speicherplatz auf der Datenfestplatte für die Unified Manager-Datenbank erhöhen müssen, können Sie nach der Installation Kapazität hinzufügen, indem Sie Festplattenspeicher auf Festplatte 3 vergrößern. 
+---
+= Hinzufügen von Speicherplatz zur Datenfestplatte der virtuellen VMware-Maschine
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie die Menge an Speicherplatz auf der Datenfestplatte für die Unified Manager-Datenbank erhöhen müssen, können Sie nach der Installation Kapazität hinzufügen, indem Sie den Festplattenspeicher erhöhen `disk 3`.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen Zugriff auf den vSphere Client haben.
+* Auf der virtuellen Maschine dürfen keine Snapshots lokal gespeichert werden.
+* Sie müssen über die Anmeldeinformationen für den Wartungs-Benutzer verfügen.
+
+
+
+
+== Über diese Aufgabe
+
+Wir empfehlen, dass Sie Ihre virtuelle Maschine sichern, bevor Sie die Größe der virtuellen Laufwerke erhöhen.
+
+
+
+== Schritte
+
+. Wählen Sie im vSphere-Client die Virtual Machine Unified Manager aus und fügen Sie den Daten dann weitere Festplattenkapazität hinzu `disk 3`. Details finden Sie in der VMware Dokumentation.
+. Wählen Sie im vSphere-Client die virtuelle Unified Manager-Maschine aus und wählen Sie dann die Registerkarte *Konsole* aus.
+. Klicken Sie auf das Konsolenfenster, und melden Sie sich dann mit Ihrem Benutzernamen und Passwort an der Wartungskonsole an.
+. Geben Sie im *Hauptmenü* die Nummer für die Option *Systemkonfiguration* ein.
+. Geben Sie im Menü * Systemkonfiguration* die Nummer für die Option *Datenfestplattengröße erhöhen* ein.
+

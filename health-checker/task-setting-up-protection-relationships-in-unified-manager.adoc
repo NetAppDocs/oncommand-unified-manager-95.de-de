@@ -1,0 +1,47 @@
+---
+permalink: health-checker/task-setting-up-protection-relationships-in-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie müssen verschiedene Schritte durchführen, um Unified Manager und OnCommand Workflow Automation zu verwenden, um SnapMirror- und SnapVault-Beziehungen zum Schutz Ihrer Daten einzurichten. 
+---
+= Einrichten von Sicherungsbeziehungen in Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie müssen verschiedene Schritte durchführen, um Unified Manager und OnCommand Workflow Automation zu verwenden, um SnapMirror- und SnapVault-Beziehungen zum Schutz Ihrer Daten einzurichten.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Es müssen Peer-Beziehungen zwischen zwei Clustern oder zwei Storage Virtual Machines (SVMs) hergestellt werden.
+* OnCommand Workflow Automation muss in Unified Manager integriert werden:
++
+** xref:task-configuring-a-connection-between-workflow-automation-and-unified-manager.adoc[OnCommand Workflow Automation einrichten]
+** xref:task-verifying-unified-manager-data-source-caching-in-workflow-automation.adoc[Überprüfen des Quellcaches von Unified Manager in Workflow Automation]
+
+
+
+
+
+
+== Schritte
+
+. Führen Sie je nach Art der Schutzbeziehung einen der folgenden Schritte aus:
++
+** xref:task-creating-a-snapmirror-protection-relationship-from-the-health-volume-details-page.adoc[SnapMirror Sicherungsbeziehung erstellen].
+** xref:task-creating-a-snapvault-protection-relationship-from-the-health-volume-details-page.adoc[SnapVault Sicherungsbeziehung erstellen].
+
+
+. Wenn Sie je nach Art der Beziehung eine Richtlinie für die Beziehung erstellen möchten, führen Sie einen der folgenden Schritte aus:
++
+** xref:task-creating-a-snapvault-policy-to-maximize-transfer-efficiency.adoc[Erstellen einer SnapVault-Richtlinie].
+** xref:task-creating-a-snapmirror-policy-to-maximize-transfer-efficiency.adoc[SnapMirror-Richtlinie erstellen].
+
+
+. xref:task-creating-snapmirror-and-snapvault-schedules.adoc[Erstellen eines SnapMirror oder SnapVault Zeitplans].
+

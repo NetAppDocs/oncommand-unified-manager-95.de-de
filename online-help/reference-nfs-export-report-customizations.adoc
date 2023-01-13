@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-nfs-export-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können NFS-Exportberichte anpassen, um Informationen über NFS-Exportrichtlinien und Regeln für Volumes auf Ihren Storage-Systemen zu analysieren. So können Sie z. B. Berichte anpassen, um Volumes mit nicht zugänglichen Verbindungspfaden und Volumes mit der Standard-Exportrichtlinie anzuzeigen. 
+---
+= Anpassungen des NFS-Exportberichts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können NFS-Exportberichte anpassen, um Informationen über NFS-Exportrichtlinien und Regeln für Volumes auf Ihren Storage-Systemen zu analysieren. So können Sie z. B. Berichte anpassen, um Volumes mit nicht zugänglichen Verbindungspfaden und Volumes mit der Standard-Exportrichtlinie anzuzeigen.

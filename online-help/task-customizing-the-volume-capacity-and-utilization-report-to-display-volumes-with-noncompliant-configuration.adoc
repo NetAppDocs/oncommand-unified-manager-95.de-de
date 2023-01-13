@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-with-noncompliant-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Volume-Kapazitäts- und Auslastungsbericht anpassen, um Volumes anzuzeigen, die den Unternehmensrichtlinien nicht entsprechen. Wenn beispielsweise die Deduplizierung für alle Volumes aktiviert sein muss, können Sie einen Bericht mit allen Volumes erstellen, in denen die Deduplizierung deaktiviert ist. 
+---
+= Anpassen des Berichts zur Kapazität und Auslastung des Volumes, um Volumes mit nicht-konformen Konfigurationen anzuzeigen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Volume-Kapazitäts- und Auslastungsbericht anpassen, um Volumes anzuzeigen, die den Unternehmensrichtlinien nicht entsprechen. Wenn beispielsweise die Deduplizierung für alle Volumes aktiviert sein muss, können Sie einen Bericht mit allen Volumes erstellen, in denen die Deduplizierung deaktiviert ist.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach SVM, Cluster oder Volume:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Alle Spalten ausblenden mit Ausnahme der Spalten Cluster, Storage Virtual Machine, Volume, Deduplication and Deduplication Space Savings (GB):
++
+.. Klicken Sie in die Spalte, und klicken Sie auf image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie im Menü die Option *Spalte* > *Spalte ausblenden*.
+
+
+. Um Volumes zu filtern, die die Deduplizierung deaktiviert haben, klicken Sie in der Spalte *Deduplizierung* auf und öffnen Sie das Dialogfeld *Filter*, indem Sie auf das klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Liste *Bedingung* die Option *gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *deaktiviert*.
+. Klicken Sie auf *OK*.
+. Um Volumes basierend auf den Platzeinsparungen durch die Deduplizierung zu sortieren, klicken Sie in der Spalte *Deduplication Space Savings (GB)* auf das image:../media/sort-desc.gif[""] Symbol.
+

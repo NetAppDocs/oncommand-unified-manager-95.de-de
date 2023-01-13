@@ -1,0 +1,128 @@
+---
+permalink: online-help/reference-port-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Port-Ereignisse bieten Ihnen den Status zu Cluster-Ports, sodass Sie Änderungen oder Probleme am Port überwachen können, z. B. ob der Port ausgefallen ist. 
+---
+= Port-Ereignisse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Port-Ereignisse bieten Ihnen den Status zu Cluster-Ports, sodass Sie Änderungen oder Probleme am Port überwachen können, z. B. ob der Port ausgefallen ist.
+
+
+
+== Impact Area: Verfügbarkeit
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+Port Status Down (ocumEvtPortStatusDown)
+ a| 
+Vorfall
+ a| 
+Knoten
+ a| 
+Kritisch
+
+|===
+
+
+== Impact Area: Performance
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+Unterschreitster Schwellenwert für Netzwerkport Mbps (ocumNetworkPortMbpsVorfall)
+ a| 
+Vorfall
+ a| 
+Port
+ a| 
+Kritisch
+
+
+
+ a| 
+Mbps-Warnung für Netzwerkanschluss, Überschreitung des Schwellenwerts (ocumNetworkPortMbpsWarnung)
+ a| 
+Dar
+ a| 
+Port
+ a| 
+Warnung
+
+
+
+ a| 
+Überschreitung kritischer Schwellenwert für FCP-Port/MB/s (ocumFcpPortMbpsVorfall)
+ a| 
+Vorfall
+ a| 
+Port
+ a| 
+Kritisch
+
+
+
+ a| 
+Warnung: Nicht verwendetes Warnschwellenwert für FCP-Port-Mbit/s (ocumFcpPortMbpsWarnung)
+ a| 
+Dar
+ a| 
+Port
+ a| 
+Warnung
+
+
+
+ a| 
+Auslastung des Netzwerkports – kritischer Schwellenwert – unterlaufen (NetzwerkPortUtilizationVorfall)
+ a| 
+Vorfall
+ a| 
+Port
+ a| 
+Kritisch
+
+
+
+ a| 
+Warnung über Netzwerk-Port-Auslastung, nicht überschritten (OktumNetzwerkPortUtilizationWarnung)
+ a| 
+Dar
+ a| 
+Port
+ a| 
+Warnung
+
+
+
+ a| 
+Unterschreitender Schwellenwert für die FCP-Port-Auslastung (ocumFcpPortUtilizationVorfall)
+ a| 
+Vorfall
+ a| 
+Port
+ a| 
+Kritisch
+
+
+
+ a| 
+Warnung: Nicht gestauter Schwellenwert für die FCP-Port-Auslastung (ocumFcpPortUtilizationWarnung)
+ a| 
+Dar
+ a| 
+Port
+ a| 
+Warnung
+
+|===

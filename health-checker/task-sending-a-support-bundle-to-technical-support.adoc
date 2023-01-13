@@ -1,0 +1,22 @@
+---
+permalink: health-checker/task-sending-a-support-bundle-to-technical-support.html 
+sidebar: sidebar 
+keywords:  
+summary: In diesem Workflow erfahren Sie, wie Sie über die Unified Manager Wartungskonsole ein Support Bundle generieren, abrufen und an den technischen Support senden. Sie sollten ein Support-Bundle senden, wenn das Problem, das Sie haben, detailliertere Diagnose und Fehlerbehebung erfordert als eine AutoSupport-Meldung. 
+---
+= Senden eines Unified Manager Support Bundle an den technischen Support
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In diesem Workflow erfahren Sie, wie Sie über die Unified Manager Wartungskonsole ein Support Bundle generieren, abrufen und an den technischen Support senden. Sie sollten ein Support-Bundle senden, wenn das Problem, das Sie haben, detailliertere Diagnose und Fehlerbehebung erfordert als eine AutoSupport-Meldung.
+
+
+
+== Über diese Aufgabe
+
+Weitere Informationen über die Wartungskonsole und die Support-Bundles finden Sie unter xref:task-using-the-maintenance-console.adoc[Verwenden der Wartungskonsole].
+
+Unified Manager speichert zwei generierte Support-Bundles gleichzeitig.

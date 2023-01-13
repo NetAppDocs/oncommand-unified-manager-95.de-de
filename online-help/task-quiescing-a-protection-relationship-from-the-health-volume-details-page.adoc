@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-quiescing-a-protection-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können eine Schutzbeziehung stilllegen, um einen vorübergehenden Ausfall von Datentransfers zu verhindern. Sie könnten eine Beziehung stilllegen, wenn Sie eine Snapshot Kopie eines SnapMirror Ziel-Volumes erstellen möchten, das eine Datenbank enthält, und Sie wollen sicherstellen, dass der Inhalt während der Snapshot Kopie stabil ist. 
+---
+= Eine Schutzbeziehung wird auf der Seite „Health/Volume Details“ stillgelegt
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Schutzbeziehung stilllegen, um einen vorübergehenden Ausfall von Datentransfers zu verhindern. Sie könnten eine Beziehung stilllegen, wenn Sie eine Snapshot Kopie eines SnapMirror Ziel-Volumes erstellen möchten, das eine Datenbank enthält, und Sie wollen sicherstellen, dass der Inhalt während der Snapshot Kopie stabil ist.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Sie müssen Workflow Automation einrichten.
+
+
+
+
+== Über diese Aufgabe
+
+Die Aktion quiesce wird in den folgenden Fällen nicht angezeigt:
+
+* Wenn die RBAC-Einstellungen diese Aktion nicht zulassen, z. B. wenn Sie nur über Operatorrechte verfügen
+* Wenn die Volume-ID unbekannt ist, z. B. wenn Sie über eine Cluster-übergreifende Beziehung verfügen und das Ziel-Cluster noch nicht erkannt wurde
+* Wenn Workflow Automation und Unified Manager noch nicht in Kombination Paar liegen
+
+
+
+
+== Schritte
+
+. Klicken Sie auf der Registerkarte *Schutz* der Detailseite *Gesundheit/Volumen* mit der rechten Maustaste auf die Beziehung in der Topologieansicht für die Schutzbeziehung, die Sie stilllegen möchten.
+. Wählen Sie im Menü * Quiesce* aus.
+. Klicken Sie auf *Ja*, um fortzufahren.
++
+Der Status des Jobs quiesce wird oben auf der Seite Health/Volume Details angezeigt, zusammen mit einem Link zu den Jobdetails.
+
+. Klicken Sie auf den Link *Details anzeigen*, um zur Detailseite *Schutz/Job* weitere Details und den Job-Fortschritt aufzurufen.
+. Klicken Sie auf den Zurück-Pfeil Ihres Browsers, um zur Detailseite *Gesundheit/Volumen* zurückzukehren.
++
+Der quiesce-Job ist abgeschlossen, wenn alle Arbeitsaufgaben erfolgreich abgeschlossen wurden.
+
+

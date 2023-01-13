@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-maximum-number-of-files-an-infinite-volume-can-store.html 
+sidebar: sidebar 
+keywords:  
+summary: In den meisten Fällen kann ein Infinite Volume bis zu 2 Milliarden Dateien speichern. Ist ein Infinite Volume relativ klein, kann die maximale Anzahl an Dateien weniger als 2 Milliarden betragen. 
+---
+= Maximale Anzahl an Dateien, die ein Infinite Volume speichern kann
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In den meisten Fällen kann ein Infinite Volume bis zu 2 Milliarden Dateien speichern. Ist ein Infinite Volume relativ klein, kann die maximale Anzahl an Dateien weniger als 2 Milliarden betragen.
+
+Die maximale Anzahl an Dateien, die ein Infinite Volume enthalten kann, wird durch die Größe der Namespace-Komponente festgelegt. Wenn die Namespace-Komponente 10 TB beträgt, kann das Infinite Volume 2 Milliarden Dateien enthalten. Wenn die Namespace-Komponente weniger als 10 TB beträgt, kann das Infinite Volume proportional weniger Dateien enthalten.
+
+Die Größe der Namespace-Komponente ist in etwa proportional zur Größe des Infinite Volume. Dies hängt von verschiedenen Faktoren ab, beispielsweise der Maximalgröße der Namespace-Komponente 10 TB, dem verfügbaren Speicherplatz im Aggregat, das die Namespace-Komponente enthält, und der SnapDiff-Einstellung.
+
+Bei einem Infinite Volume mit zwei Nodes oder einem Infinite Volume mit mehreren Nodes ohne SnapDiff erstellt das Infinite Volume eine Größe von mindestens 80 TB in der Regel eine Namespace-Komponente von 10 TB.
+
+Die Anzahl der Dateien beinhaltet nicht nur reguläre Dateien, sondern auch andere Dateisystemstrukturen wie Verzeichnisse und symbolische Links.

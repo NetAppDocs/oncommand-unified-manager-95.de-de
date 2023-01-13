@@ -1,0 +1,41 @@
+---
+permalink: online-help/concept-what-reports-do.html 
+sidebar: sidebar 
+keywords:  
+summary: In Berichten werden detaillierte Informationen zu Storage-Objekten angezeigt, mit denen Sie potenzielle Probleme prüfen und identifizieren können. 
+---
+= Was Berichte tun
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In Berichten werden detaillierte Informationen zu Storage-Objekten angezeigt, mit denen Sie potenzielle Probleme prüfen und identifizieren können.
+
+Sie können Berichte speichern, löschen, freigeben, planen und importieren. Sie können auch nach bestimmten Berichten suchen. Sie können Berichte an bestimmte Anwendungsfälle anpassen und den individuell angepassten Bericht für zukünftige Zwecke speichern. Sie können weitere Vorgänge wie Filtern, Sortieren, Gruppieren und Formatieren ausführen.
+
+Standardmäßig wird jede Berichtsgruppe nach Berichtstyp und -Beschreibung angezeigt. Sie können Berichte ausführen, um eine bestimmte Berichtsgruppe anzuzeigen.
+
+Nachdem Sie einen Bericht erstellt haben, können Sie ihn weiter anpassen und den angepassten Bericht speichern. Sie können die benutzerdefinierten Berichte anzeigen, die auf der Seite Berichte unter der spezifischen Berichtskategorie gespeichert werden.
+
+Sie können Berichte so planen, dass sie gesendet werden, oder Berichte in einem der unterstützten Formate teilen: PDF, XHTML, CSV, XLS oder Text.
+
+Sie können Berichte in verschiedenen Formaten exportieren und auf Ihrem Desktop speichern. Sie können einzelne Spaltendaten aus den generierten Berichten exportieren.
+
+Sie können Berichtsdesign-Dateien importieren (`.rptdesign` Dateien), und speichern Sie die importierten Berichte auf der Seite Berichte. Sie können benutzerdefinierte und importierte Berichte löschen.
+
+Sie können die folgenden Berichte importieren:
+
+* Berichte mit mehreren Kopfzeilen, für die ein Spaltbereich auf einen gesetzt ist
+* Berichte nur mit Diagrammen
+* Berichte nur mit Listen und Raster
+
+
+Berichte im Text-, CSV- und Excel-Format werden in den folgenden Szenarien unterstützt:
+
+* Tabellenelement nur in `.rptdesign` Datei
+* Eine Tabelle mit nur einer Kopfzeile als Zeile
+
+
+Sie können Berichte, die über einen Spaltbereich von mehr als einem verfügen, nicht importieren. Wenn ein Bericht im Text-, CSV- oder Excel-Format mehr als eine Kopfzeile enthält, wird nur die erste Kopfzeile berücksichtigt und die verbleibenden Zeilen werden ignoriert.

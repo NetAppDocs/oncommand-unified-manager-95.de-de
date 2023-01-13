@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-scheduling-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Ihre Berichte auf der Seite Berichtsdetails planen und die geplanten Berichte an einen oder mehrere Empfänger in einem bestimmten Format zu einer bestimmten Häufigkeit senden. Sie können beispielsweise einen Bericht als E-Mail im PDF-Format jeden Montag planen. 
+---
+= Planen von Berichten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Ihre Berichte auf der Seite Berichtsdetails planen und die geplanten Berichte an einen oder mehrere Empfänger in einem bestimmten Format zu einer bestimmten Häufigkeit senden. Sie können beispielsweise einen Bericht als E-Mail im PDF-Format jeden Montag planen.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Berichte* und dann auf *Bericht ausführen* für den gewünschten Bericht.
++
+Die Seite Berichtdetails wird angezeigt.
+
+. Klicken Sie Auf *Aktionen* > *Bericht Planen*.
+. Wählen Sie im Dialogfeld *Bericht planen* einen der bevorzugten Zeitpläne für Ihren Bericht aus:
++
+|===
+| Ihr Ziel ist | Dann... 
+
+
+ a| 
+Wählen Sie einen Zeitplan aus der bestehenden Liste von Zeitplänen aus
+ a| 
+Klicken Sie auf *vorhandenen Zeitplan verwenden* und wählen Sie den Zeitplan aus.
+
+
+
+ a| 
+Erstellen Sie einen neuen Zeitplan
+ a| 
+Klicken Sie auf *Neuen Zeitplan erstellen*, geben Sie dann den Terminplannamen ein, geben Sie die E-Mail-Adresse an, wählen Sie das Berichtsformat und die Berichtsfrequenz aus, und geben Sie eine Zeit oder einen Tag ein, die der Bericht ausführen soll. Sie können eine oder mehrere E-Mail-Adressen angeben, die durch Kommas getrennt sind. Die Option _PDF_ ist als Standardreport-Format ausgewählt. Als Standardfrequenz wird die Option _hourly_ ausgewählt.
+
+|===
+. Klicken Sie Auf *Zeitplan*.
+

@@ -1,0 +1,53 @@
+---
+permalink: online-help/concept-how-a-data-policy-filters-data-written-to-an-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: Eine Datenrichtlinie filtert automatisch auf das Infinite Volume geschriebene Daten in verschiedenen Storage-Klassen. Alle Dateien werden in das einzelne Dateisystem im Namespace des Infinite Volume geschrieben, und Regeln in der Datenrichtlinie bestimmen, welche Speicherklasse die Daten für die Dateien speichert. 
+---
+= Filtern einer Datenrichtlinie nach Daten, die auf ein Infinite Volume geschrieben wurden
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eine Datenrichtlinie filtert automatisch auf das Infinite Volume geschriebene Daten in verschiedenen Storage-Klassen. Alle Dateien werden im Namespace des Infinite Volume auf das einzelne File-System geschrieben. Anhand der Regeln der Datenrichtlinie wird festgelegt, welche Storage-Klasse die Daten für die Dateien speichert.
+
+Bei der Erstellung des Infinite Volume wird automatisch eine Datenrichtlinie für eine Storage Virtual Machine (SVM) mit Infinite Volume erstellt. Die Datenrichtlinie ist aktiv und enthält eine Standardregel. Die Standardregel speichert eingehende Daten für Dateien wie folgt für Infinite Volumes mit und ohne Storage-Klassen:
+
+|===
+| Für ein Infinite Volume... | Die standardmäßige Datenrichtlinie führt dies aus... 
+
+
+ a| 
+Ohne Storageklassen
+ a| 
+Alle eingehenden Daten für Dateien werden auf dem Infinite Volume gespeichert
+
+
+
+ a| 
+Mit einer Storage-Klasse
+ a| 
+Alle eingehenden Daten für Dateien werden in die Speicherklasse gespeichert
+
+
+
+ a| 
+Mit einer oder mehreren Speicherklassen
+ a| 
+Alle eingehenden Daten für Dateien werden in die erste erstellte Speicherklasse gespeichert
+
+|===
+[NOTE]
+====
+Bei einem Infinite Volume mit zwei oder mehr Storage-Klassen sollten Sie die So bald wie möglich der Datenrichtlinien ändern, um Regeln zu erstellen, die Daten nach verschiedenen Dateitypen in die verschiedenen Storage-Klassen filtern. Sie sollten die Datenrichtlinie unter Verwendung von Unified Manager ändern.
+
+====
+Die Datenrichtlinie hat keine Auswirkung auf den Speicherort der Dateien im Filesystem im Namespace des Infinite Volume, und die Storage-Klassen sind für Client-Applikationen transparent. Das Dateisystem im Namespace enthält die Dateinamen. Die Datenrichtlinie beeinflusst nur, welche Storage-Klassen zur Speicherung der Daten für die Dateien verwendet werden. Datenrichtlinien sind nützlich, wenn Sie einem Infinite Volume zwei oder mehr Storage-Klassen zuweisen.
+
+Sie können die Datenrichtlinie ändern, um zusätzliche Regeln zu erstellen, aber Sie können die Datenrichtlinie oder die Standardregel nicht löschen.
+
+Im folgenden Diagramm wird dargestellt, wie eine Datenrichtlinie die Daten eines Infinite Volume filtert. Der Dateiname wird in der Namespace-Komponente gespeichert, und die Regeln in der Datenrichtlinie geben an, dass Daten für diese bestimmte Datei in der Silber-Speicherklasse gespeichert werden.
+
+image::../media/how-a-data-policy-filters-data-written-to-an-infinite-volume.gif[Diese Grafik wird durch den umgebenden Text beschrieben]

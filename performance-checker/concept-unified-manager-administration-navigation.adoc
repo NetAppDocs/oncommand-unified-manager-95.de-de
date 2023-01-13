@@ -1,0 +1,24 @@
+---
+permalink: performance-checker/concept-unified-manager-administration-navigation.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Unified Manager-Administrationsfunktion ermöglicht das Management von Benutzern und Datenquellen. Sie können auch Setup-Aufgaben wie Authentifizierung, AutoSupport, E-Mail, HTTPS-Zertifikate, Netzwerke, Und NTP-Server über die Seite „Unified Manager Administration“. 
+---
+= Navigation in der Unified Manager-Administration
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Unified Manager-Administrationsfunktion ermöglicht das Management von Benutzern und Datenquellen. Sie können auch Setup-Aufgaben wie Authentifizierung, AutoSupport, E-Mail, HTTPS-Zertifikate, Netzwerke, Und NTP-Server über die Seite „Unified Manager Administration“.
+
+Dies ist ein Beispiel für viele mögliche Administrationspfade. Gehen Sie wie folgt vor, um eine Verbindung zu einem Workflow Automation-Server hinzuzufügen oder zu entfernen:
+
+image::../media/admin-navigation.gif[Administratornavigation]
+
+[NOTE]
+====
+Klicken Sie auf das Symbol *Home*, um zur Hauptnavigationsseite von Unified Manager zurückzukehren.
+
+====

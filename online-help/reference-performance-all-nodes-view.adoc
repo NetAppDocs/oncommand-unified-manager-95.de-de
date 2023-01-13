@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-performance-all-nodes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Seite Performance/Nodes-Inventar enthält eine Übersicht über die Performance-Ereignisse, Daten und Konfigurationsinformationen für jeden Node, der von einer Instanz von Unified Manager überwacht wird. So können Sie die Performance Ihrer Nodes schnell überwachen und Performance-Probleme und Schwellwerte beheben. 
+---
+= Inventarseite für Performance/Nodes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite Performance/Nodes-Inventar enthält eine Übersicht über die Performance-Ereignisse, Daten und Konfigurationsinformationen für jeden Node, der von einer Instanz von Unified Manager überwacht wird. So können Sie die Performance Ihrer Nodes schnell überwachen und Performance-Probleme und Schwellwerte beheben.
+
+Je nachdem, wie Sie zu dieser Seite navigieren, wird oben auf der Seite möglicherweise ein anderer Titel angezeigt, um anzugeben, ob die Liste gefiltert wurde. Beispiel: Wenn alle Nodes angezeigt werden, lautet der Titel „`Nodes`“. Wenn eine Untergruppe von Nodes angezeigt wird, die von der Seite „Cluster-Inventar“ zurückgegeben wird, lautet der Titel „`Nodes auf Cluster: opm-cluster2`“.
+
+Mit den Schaltflächen oben auf der Seite können Sie Suchen durchführen, um bestimmte Daten zu finden, Filter zu erstellen und anzuwenden, um die Liste der angezeigten Daten einzugrenzen und die Daten auf der Seite in A zu exportieren `.csv` Datei, und fügen Sie Spalten auf der Seite hinzu oder entfernen Sie sie.
+
+Standardmäßig werden Objekte auf den Objektbestandsseiten sortiert, basierend auf dem Kritikereignis der Objektleistung. Objekte mit kritischen Ereignissen werden zuerst aufgeführt und Objekte mit Warnmeldungen werden als zweites aufgeführt. Dies bietet eine unmittelbare visuelle Darstellung von Problemen, die behoben werden müssen. Die Werte der Leistungsindikatoren basieren auf einem Durchschnitt aus den Daten der letzten 72 oder mehr Stunden, wie auf der Seite angegeben. Sie können auf die Schaltfläche „Aktualisieren“ klicken, um die Objektbestandsdaten zu aktualisieren.
+
+Über die Schaltflächen *Performance Threshold Policy* und *Clear PerformanceThreshold Policy* können Sie Schwellenwertrichtlinien für beliebige Objekte auf den Objektbestandsseiten zuweisen oder löschen.
+
+
+
+== Spalten auf der Seite „Knoten“
+
+Die Seite „Performance/Nodes Inventory“ enthält die folgenden Spalten für jeden Node:
+
+* *Status*
++
+Ein gesundes Objekt ohne aktive Ereignisse zeigt ein grünes Häkchen-Symbol (image:../media/sev-normal-um60.png["Symbol für den Schweregrad „Ereignis“ – „Normal“"]). Wenn das Objekt über ein aktives Ereignis verfügt, identifiziert das Symbol für die Ereignisanzeige den Schweregrad: Kritische Ereignisse sind rot (image:../media/sev-critical-um60.png["Symbol für den Schweregrad „Ereignis“ – „kritisch“"]Die Fehlerereignisse sind orange (image:../media/sev-error-um60.png["Symbol für den Schweregrad „Ereignis“: Fehler"]), und Warnereignisse sind gelb (image:../media/sev-warning-um60.png["Symbol für den Schweregrad „Ereignis“ – Warnung"]).
+
+* *Knoten*
++
+Der Name des Node. Sie können auf den Node-Namen klicken, um zur Seite mit den Performance-Details dieses Node zu navigieren.
+
+* *Latenz*
++
+Die durchschnittliche Antwortzeit für alle I/O-Anfragen auf dem Node in Millisekunden pro Vorgang ausgedrückt.
+
+* *IOPS*
++
+Die durchschnittlichen ein-/Ausgabevorgänge pro Sekunde auf dem Node.
+
+* *Mbps*
++
+Der Durchsatz auf dem Node, gemessen in Megabyte pro Sekunde.
+
+* *Flash Cache Liest*
++
+Der Prozentsatz an Leseoperationen auf dem Node, die mit dem Cache zufrieden sind, anstatt von der Festplatte zurückgegeben zu werden.
+
++
+[NOTE]
+====
+Flash Cache-Daten werden nur für Nodes und nur angezeigt, wenn ein Flash Cache Modul im Node installiert ist.
+
+====
+* *Verwendete Leistungskapazität*
++
+Der Prozentsatz der Performance-Kapazität, die vom Node verbraucht wird.
+
++
+[NOTE]
+====
+Daten zur Performance-Kapazität sind nur verfügbar, wenn die Nodes in einem Cluster mit der Software ONTAP 9.0 oder höher installiert sind.
+
+====
+* *Nutzung*
++
+Gibt an, ob die CPU oder der Arbeitsspeicher auf dem Node überlastet sind.
+
+* *Freie Kapazität*
++
+Die ungenutzte Speicherkapazität des Nodes in Gigabyte
+
+* *Gesamtkapazität*
++
+Die gesamte Storage-Kapazität des Node in Gigabyte
+
+* * Cluster*
++
+Der Cluster, zu dem der Node gehört. Sie können auf den Namen des Clusters klicken, um zur Detailseite des Clusters zu navigieren.
+
+* *Grenzwertrichtlinie*
++
+Die benutzerdefinierte Performance-Schwellenwertrichtlinie, die für dieses Storage-Objekt aktiv ist, oder Richtlinien. Sie können den Cursor über Richtliniennamen mit Ellipsen (...) positionieren, um den vollständigen Richtliniennamen oder die Liste der zugewiesenen Richtliniennamen anzuzeigen. Die Schaltflächen *Performance Threshold Policy* und *Clear Performance Threshold Policy* bleiben deaktiviert, bis Sie ein oder mehrere Objekte auswählen, indem Sie auf die Kontrollkästchen ganz links klicken.
+
+

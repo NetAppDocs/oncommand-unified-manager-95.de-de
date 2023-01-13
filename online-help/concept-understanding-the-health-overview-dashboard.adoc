@@ -1,0 +1,44 @@
+---
+permalink: online-help/concept-understanding-the-health-overview-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Das Unified Manager Health Overview Dashboard bietet zusammenfassende Informationen über den Zustand Ihres Storage und Ihrer virtualisierten Umgebung. Die Seite Dashboards/Überblick enthält Systemzustandsinformationen über Storage-Objekte, die in vier Systemkategorien unterteilt sind: Verfügbarkeit, Kapazität, Performance und Sicherung der Storage-Objekte.' 
+---
+= Allgemeines zum Dashboard mit der Gesundheitsübersicht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Unified Manager Health Overview Dashboard bietet zusammenfassende Informationen über den Zustand Ihres Storage und Ihrer virtualisierten Umgebung. Die Seite Dashboards/Überblick enthält Systemzustandsinformationen über Storage-Objekte, die in vier Systemkategorien unterteilt sind: Verfügbarkeit, Kapazität, Performance und Sicherung der Storage-Objekte.
+
+Das folgende Bild zeigt die Fensterbereiche, die auf der Seite Dashboards/Übersicht angezeigt werden:
+
+image::../media/dashboard-um72.gif[Armaturenbrett um72]
+
+
+
+== Gesundheitsüberblick
+
+Zeigt als Diagramm Informationen zum Systemzustand Ihrer Storage-Objekte wie Cluster, Aggregate, Storage Virtual Machines (SVMs) und den Zustand der Sicherungsbeziehungen an. Auf der Seite Dashboards/Übersicht werden Ereignisse angezeigt, die für die folgenden Kategorien generiert wurden:
+
+Wenn Sie auf die Zahl über einer der gelben oder roten Balkendiagramme klicken, wird die Seite „Ereignisinventar“ angezeigt, auf der nur diese Ereignisse enthalten sind. Durch Klicken auf die Zahl unterhalb einer der Diagramme wird die Seite „Objektbestand“ mit nur diesen Objekten angezeigt.
+
+* *Verfügbarkeit*
++
+Zeigt Informationen zur Verfügbarkeit von Clustern, SVMs und Aggregaten an, die von Unified Manager überwacht werden Basierend auf den generierten verfügbarkeitsbezogenen Ereignissen werden die Storage-Objekte als stabil, risikobehaftete oder Zwischenfälle kategorisiert.
+
+* * Kapazität*
++
+Zeigt Informationen zur Kapazität der SVMs und Aggregate an, die von Unified Manager überwacht werden. Auf der Grundlage der generierten kapazitätsbezogenen Ereignisse werden die Storage-Objekte als gesund, risikobehaftete oder mit Zwischenfällen kategorisiert.
+
+* *Leistung*
++
+Zeigt Informationen zur Performance von Clustern, SVMs und Volumes an, die von Unified Manager überwacht werden Die Storage-Objekte werden basierend auf den erzeugten Performance-bezogenen Zwischenfällen als ordnungsgemäß, risikobehaftete oder mit Incidents kategorisiert.
+
+* *Schutz*
++
+Zeigt Informationen zu Sicherungsbeziehungen an, die von Unified Manager überwacht werden. Basierend auf den durch den Schutz bedingten Ereignissen, die erzeugt werden, werden die Schutzbeziehungen als gesund, Warnung oder Fehler kategorisiert.
+
+

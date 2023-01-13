@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-add-user-dialog-box-um.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können lokale Benutzer oder Datenbankbenutzer erstellen, Remote-Benutzer oder Remote-Gruppen hinzufügen und Rollen zuweisen, sodass diese Benutzer Storage-Objekte und Daten mit Unified Manager managen können. 
+---
+= Dialogfeld Benutzer hinzufügen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können lokale Benutzer oder Datenbankbenutzer erstellen, Remote-Benutzer oder Remote-Gruppen hinzufügen und Rollen zuweisen, sodass diese Benutzer Storage-Objekte und Daten mit Unified Manager managen können.
+
+Sie können einen Benutzer hinzufügen, indem Sie die folgenden Felder ausfüllen:
+
+* *Typ*
++
+Ermöglicht die Angabe des Benutzertyps, den Sie erstellen möchten.
+
+* *Name*
++
+Ermöglicht Ihnen, einen Benutzernamen anzugeben, mit dem sich ein Benutzer bei Unified Manager anmelden kann.
+
+* *Passwort*
++
+Ermöglicht Ihnen die Angabe eines Passworts für den angegebenen Benutzernamen. Dieses Feld wird nur angezeigt, wenn Sie einen lokalen Benutzer oder einen Datenbankbenutzer hinzufügen.
+
+* *Passwort Bestätigen*
++
+Ermöglicht Ihnen die erneute Eingabe Ihres Kennworts, um die Genauigkeit der Angaben im Feld „Kennwort“ sicherzustellen. Dieses Feld wird nur angezeigt, wenn Sie einen lokalen Benutzer oder einen Datenbankbenutzer hinzufügen.
+
+* *E-Mail*
++
+Ermöglicht Ihnen die Angabe einer E-Mail-Adresse für den Benutzer; die angegebene E-Mail-Adresse muss eindeutig dem Benutzernamen entsprechen. Dieses Feld wird nur angezeigt, wenn Sie einen Remote-Benutzer oder einen lokalen Benutzer hinzufügen.
+
+* * Rolle*
++
+Ermöglicht es Ihnen, dem Benutzer eine Rolle zuzuweisen und den Umfang der Aktivitäten festzulegen, die der Benutzer durchführen kann. Als Rolle können OnCommand-Administrator, Storage-Administrator, Operator, Integrations-Schema oder das Berichtschema verwendet werden.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Hinzufügen*
++
+Fügt den Benutzer hinzu und schließt das Dialogfeld Benutzer hinzufügen.
+
+* *Abbrechen*
++
+Bricht die Änderungen ab und schließt das Dialogfeld Benutzer hinzufügen.
+
+

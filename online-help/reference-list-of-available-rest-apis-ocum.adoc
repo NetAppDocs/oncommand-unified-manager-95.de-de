@@ -1,0 +1,38 @@
+---
+permalink: online-help/reference-list-of-available-rest-apis-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie sollten über die verfügbaren REST-APIs in Unified Manager informiert sein, damit Sie planen können, wie Sie die APIs verwenden können. Die API-Aufrufe sind unter den verschiedenen Ressourcentypen oder -Kategorien organisiert. 
+---
+= Liste der verfügbaren REST-APIs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie sollten über die verfügbaren REST-APIs in Unified Manager informiert sein, damit Sie planen können, wie Sie die APIs verwenden können. Die API-Aufrufe sind unter den verschiedenen Ressourcentypen oder -Kategorien organisiert.
+
+Auf der Swagger-Webseite finden Sie eine vollständige Liste der verfügbaren API-Aufrufe sowie die Details jedes Anrufs.
+
+Die Management-API-Aufrufe sind nach den folgenden Kategorien organisiert:
+
+* Aggregate
+* Cluster
+* Veranstaltungen
+* LIFs
+* LUNs
+* Namespaces
+* Knoten
+* Ports
+* SVMs
+* Volumes
+
+
+Wenn Sie eine der Kategorien auswählen, wird eine Liste angezeigt, die die Unterkategorie API zusammen mit einer versionierten Unterkategorie anzeigt, z. B.:
+
+* /Aggregate
+* /V1/Aggregate
+
+
+Die neueste Version der REST-APIs wird ohne Versionsnummer in der URL aufgeführt. Zur Integration mit Unified Manager sollten Sie immer die neueste Version der API verwenden.

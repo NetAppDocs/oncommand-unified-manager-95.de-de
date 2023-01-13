@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-add-group-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Dialogfeld Gruppe hinzufügen können Sie anhand der Gruppenregeln Gruppen erstellen, in denen Cluster, Volumes und SVMs eingeschlossen werden können. 
+---
+= Dialogfeld Gruppe hinzufügen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld Gruppe hinzufügen können Sie anhand der Gruppenregeln Gruppen erstellen, in denen Cluster, Volumes und SVMs eingeschlossen werden können.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* *Name*
++
+Gibt den Namen der Gruppe an. Sie müssen einen eindeutigen Namen für die Gruppe eingeben.
+
+* *Beschreibung*
++
+Gibt eine aussagekräftige Beschreibung der Gruppe an.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Befehlsschaltflächen können Sie die Erstellung einer neuen Gruppe hinzufügen oder abbrechen.
+
+* *Hinzufügen*
++
+Erstellt die neue Gruppe.
+
+* *Abbrechen*
++
+Schließt das Dialogfeld Gruppe hinzufügen, ohne Ihre Änderungen zu speichern.
+
+

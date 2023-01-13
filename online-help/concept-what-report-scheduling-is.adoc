@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-report-scheduling-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Mithilfe der Option „Zeitplan“ können Sie die Erstellung eines Berichts zu einem bestimmten Datum und einer bestimmten Uhrzeit planen. Der Bericht wird automatisch per E-Mail an einen oder mehrere Empfänger gemäß dem Zeitplan gesendet. 
+---
+= Die Berichtsplanung ist
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können einen Bericht für ein bestimmtes Datum und eine bestimmte Uhrzeit mithilfe der Option *Zeitplan* erstellen. Der Bericht wird automatisch per E-Mail an einen oder mehrere Empfänger gemäß dem Zeitplan gesendet.
+
+Wenn Sie einen Bericht planen, können Sie den Aufwand für die manuelle Erstellung und das manuelle Senden von Berichten minimieren. Sie können sicherstellen, dass der aktuelle Status des Speichers in festgelegten Intervallen von den Administratoren überwacht wird, die nicht anderweitig von Unified Manager benachrichtigt werden.

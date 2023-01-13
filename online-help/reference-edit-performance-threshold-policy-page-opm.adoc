@@ -1,0 +1,53 @@
+---
+permalink: online-help/reference-edit-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite „Schwellenwertrichtlinie bearbeiten“ können Sie eine vorhandene Richtlinie für Leistungsschwellenwerte ändern. 
+---
+= Seite „Richtlinie für Leistungsschwellenwert bearbeiten“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Schwellenwertrichtlinie bearbeiten“ können Sie eine vorhandene Richtlinie für Leistungsschwellenwerte ändern.
+
+Sie können die Felder auf dieser Seite ändern und auf *Speichern* klicken, um eine Richtlinie für Leistungsschwellenwerte zu ändern. Alle Cluster-Objekte, die derzeit die Schwellenwertrichtlinie verwenden, werden automatisch aktualisiert und verwenden die neue Richtliniendefinition.
+
+* *Für Objekttyp*
++
+Objekttyp kann nicht geändert werden.
+
+* *Policy Name*
++
+Ändern Sie den Namen der Schwellenwertrichtlinie.
+
+* *Beschreibung*
++
+Ändern Sie die detaillierte Beschreibung der Schwellenwertrichtlinie.
+
+* *Schwellenwerte*
++
+Ändern Sie den primären und optional den sekundären Schwellenwert-Zählerzustand.
+
++
+** *Wählen Sie einen Zähler*
++
+Ändern Sie den Zähler, auf dem Sie einen Performance-Schwellenwert festlegen möchten.
+
+** *Warnung*
++
+Geben Sie den Grenzwert für den Zähler ein, der als Warnung betrachtet wird.
+
+** * Kritisch*
++
+Geben Sie den Grenzwert für den Zähler ein, der als kritisch angesehen wird.
+
+
+
+* *Dauer*
++
+Ändern Sie die Anzahl der Minuten, die der Zählerwert größer sein muss als der Warnungs- oder der kritische Grenzwert.
+
+

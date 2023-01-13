@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-bookmarking-your-favorite-help-topics-onc.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Registerkarte „Hilfe-Favoriten“ können Sie häufig verwendete Hilfethemen als Lesezeichen hinzufügen. Hilfe-Lesezeichen ermöglichen den schnellen Zugriff auf Ihre bevorzugten Themen. 
+---
+= Lesezeichen für Ihre bevorzugten Hilfethemen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Registerkarte „Hilfe-Favoriten“ können Sie häufig verwendete Hilfethemen als Lesezeichen hinzufügen. Hilfe-Lesezeichen ermöglichen den schnellen Zugriff auf Ihre bevorzugten Themen.
+
+
+
+== Schritte
+
+. Navigieren Sie zum Hilfethema, das Sie als Favorit hinzufügen möchten.
+. Klicken Sie auf *Favoriten* und dann auf *Hinzufügen*.
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Mithilfe der Seiten zum Performance-Inventar werden Performance-Informationen über jede der verfügbaren Storage-Objekte wie Cluster, Aggregate, Volumes usw. angezeigt. Sie können mit den Detailseiten für Performance-Objekte verbunden werden, um detaillierte Informationen für ein bestimmtes Objekt anzuzeigen. 
+---
+= Beschreibungen der Seiten zum Leistungsbestand
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mithilfe der Seiten zum Performance-Inventar werden Performance-Informationen über jede der verfügbaren Storage-Objekte wie Cluster, Aggregate, Volumes usw. angezeigt. Sie können mit den Detailseiten für Performance-Objekte verbunden werden, um detaillierte Informationen für ein bestimmtes Objekt anzuzeigen.

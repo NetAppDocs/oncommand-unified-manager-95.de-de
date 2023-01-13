@@ -1,0 +1,164 @@
+---
+permalink: online-help/reference-capacity-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Systemzustand/Aggregate Kapazität und Auslastung können Sie Informationen über die Kapazität und Auslastung von Aggregaten in allen Clustern anzeigen. Diese Informationen geben Ihnen die Möglichkeit, mögliche Kapazitätsrisiken zu verstehen und die konfigurierte, genutzte und nicht genutzte Kapazität von Aggregaten anzuzeigen. 
+---
+= Systemzustand/Aggregate Kapazitäts- und Auslastungsseite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Systemzustand/Aggregate Kapazität und Auslastung können Sie Informationen über die Kapazität und Auslastung von Aggregaten in allen Clustern anzeigen. Diese Informationen geben Ihnen die Möglichkeit, mögliche Kapazitätsrisiken zu verstehen und die konfigurierte, genutzte und nicht genutzte Kapazität von Aggregaten anzuzeigen.
+
+Verwenden Sie die Schaltfläche *Export*, um die Details aller überwachten Aggregate in kommagetrennte Werte zu exportieren (`.csv`) Datei.
+
+* * Cluster*
++
+Der Cluster-Name.
+
+* *HA-Paar*
++
+Der HA-Paar-Wert, der durch die Bildung von zwei Nodes ermittelt wird.
+
+* * Aggregat*
++
+Der Name des Aggregats.
+
+* *Gesamtkapazität Der Daten*
++
+Die Gesamtkapazität (genutzter plus verfügbarer) Daten.
+
+* *Genutzte Datenkapazität*
++
+Der verwendeten Datenkapazität.
+
+* *Verwendete Daten %*
++
+Die genutzte Datenkapazität als Prozentsatz.
+
+* *Verfügbare Datenkapazität*
++
+Die verfügbare Datenkapazität.
+
+* * Verfügbare Daten %*
++
+Die verfügbare Datenkapazität als Prozentsatz.
+
+* * Tägliche Zuwachsrate %*
++
+Die Wachstumsrate, die alle 24 Stunden im Aggregat stattfindet.
+
+* *Tage Bis Voll*
++
+Die geschätzte Anzahl der verbleibenden Tage, bevor das Aggregat die volle Kapazität erreicht.
+
+* *Space Full Threshold %*
++
+Der Prozentsatz, an dem ein Aggregat als voll erachtet wird.
+
+* *Space Fast Voll Schwellenwert %*
++
+Der Prozentsatz, bei dem ein Aggregat als fast voll erachtet wird.
+
+* *Schwellenwert Der Wachstumsrate*
++
+Die Wachstumsrate des Aggregats, die als normal angesehen wird, bevor das System ein ungewöhnliches Ereignis für die aggregierte Wachstumsrate generiert.
+
+* *Schwellenwert Für Die Empfindlichkeit Der Wachstumsrate*
++
+Der Faktor, der auf die Standardabweichung der Wachstumsrate eines Aggregats angewendet wird. Wenn die Wachstumsrate die faktorierte Standardabweichung überschreitet, wird ein ungewöhnliches Ereignis für die aggregierte Wachstumsrate generiert.
+
+* *Tage Bis Zur Vollständigen Schwelle*
++
+Die Anzahl der verbleibenden Tage, bevor das Aggregat die volle Kapazität erreicht.
+
+* *Snapshot Reserve Gesamtkapazität*
++
+Die Gesamtkapazität der Snapshot-Reserve des Aggregats.
+
+* *Verwendete Snapshot-Reserve Kapazität*
++
+Die Menge an Speicherplatz, der von Snapshot-Kopien aus der Snapshot Reserve verwendet wird.
+
+* *Snapshot Reserve Verwendet %*
++
+Die Menge an Speicherplatz, den Snapshot Kopien aus der Snapshot Reserve als Prozentsatz verwendet haben.
+
+* *Snapshot Reserve Verfügbare Kapazität*
++
+Die Menge an Speicherplatz, der für Snapshot-Kopien verfügbar ist.
+
+* *Snapshot Reserve Verfügbar %*
++
+Die Menge an Speicherplatz, die für Snapshot Kopien als Prozentsatz verfügbar ist.
+
+* *Snapshot Kopien Reservieren Voller Schwellenwert %*
++
+Der Prozentsatz, an dem ein Aggregat seinen gesamten reservierten Speicherplatz für Snapshot Kopien verbraucht hat.
+
+* *Überengagierte Kapazität %*
++
+Die Gesamtüberbelegung als Prozentsatz.
+
+* *Überbeplante Schwelle %*
++
+Der Prozentsatz, an dem ein Aggregat als überengagiert erachtet wird.
+
+* *Nahezu Überhöhte Schwelle %*
++
+Der Prozentsatz, an dem ein Aggregat als nahezu überengagiert angesehen wird.
+
+* *Aggregattyp*
++
+Der Aggregattyp:
+
++
+** HDD
+** Hybrid
++
+Kombiniert HDDs und SSDs, aber Flash Pool wurde nicht aktiviert.
+
+** Hybrid (Flash Pool)
++
+Kombiniert HDDs und SSDs und ermöglicht die Aktivierung von Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Kombiniert SSDs mit einer Cloud-Tier
+
+** VMDisk (SDS)
++
+Virtuelle Laufwerke innerhalb einer virtuellen Maschine
+
+** VMDisk (FabricPool)
++
+Kombiniert virtuelle Festplatten mit einer Cloud-Tier
+
+** LUN (FlexArray) bei Standardfestplatten und SSD-Festplatten ist diese Spalte leer, wenn auf dem überwachten Speichersystem eine ONTAP-Version vor 8.3 ausgeführt wird.
+
+
+* *RAID-Typ*
++
+Der RAID-Konfigurationstyp.
+
+* *Gesamtzustand*
++
+Der aktuelle Status des Aggregats.
+
+* *SnapLock Typ*
++
+Gibt an, ob es sich um ein SnapLock Aggregat oder ein nicht-SnapLock Aggregat handelt.
+
+* *Cloud Tier Verwendeter Platz*
++
+Die Datenmenge, die aktuell im Cloud-Tier verwendet wird.
+
+* * Cloud Tier*
++
+Der Name des Cloud-Tier-Objektspeichers beim Erstellen von ONTAP.
+
+

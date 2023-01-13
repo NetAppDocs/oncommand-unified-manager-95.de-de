@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-noncompliant-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Aggregat-Kapazitäts- und Auslastungsbericht anpassen, um die Aggregate anzuzeigen, die nach dem vollständigen Schwellenwert gefiltert sind. So können Sie Aggregate anzeigen, die möglicherweise nicht den Unternehmensrichtlinien entsprechen. 
+---
+= Anpassung des Berichts zur Aggregatskapazität und -Auslastung, um Aggregate mit nicht-konformen Konfigurationen anzuzeigen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Aggregat-Kapazitäts- und Auslastungsbericht anpassen, um die Aggregate anzuzeigen, die nach dem vollständigen Schwellenwert gefiltert sind. So können Sie Aggregate anzeigen, die möglicherweise nicht den Unternehmensrichtlinien entsprechen.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach Cluster oder HA-Paar:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um den Aggregatschwellenwert von maximal 85 % zu filtern, klicken Sie in die Spalte *Space Full Threshold* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Liste *Bedingung* die Option *größer als* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *85*.
+. Klicken Sie auf *OK*.
+

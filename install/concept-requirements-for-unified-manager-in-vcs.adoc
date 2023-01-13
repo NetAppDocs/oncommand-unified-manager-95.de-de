@@ -1,0 +1,37 @@
+---
+permalink: install/concept-requirements-for-unified-manager-in-vcs.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vor der Installation von Unified Manager in einer Veritas Cluster Server \(VCS\) Umgebung müssen Sie sicherstellen, dass die Clusterknoten ordnungsgemäß konfiguriert sind, um Unified Manager zu unterstützen.' 
+---
+= Anforderungen an Unified Manager in VCS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vor der Installation von Unified Manager in einer Veritas Cluster Server (VCS) Umgebung müssen Sie sicherstellen, dass die Clusterknoten ordnungsgemäß konfiguriert sind, um Unified Manager zu unterstützen.
+
+Sie müssen sicherstellen, dass die VCS-Konfiguration die folgenden Anforderungen erfüllt:
+
+* Auf beiden Cluster-Nodes muss eine unterstützte Betriebssystemversion ausgeführt werden.
+* Die gleiche Version von Unified Manager muss auf beiden Cluster-Nodes mithilfe des gleichen Pfads installiert werden.
+* Der MySQL-Benutzer auf beiden Knoten muss die gleiche Benutzer-ID und Gruppen-ID haben.
+* Es müssen native ext3-, ext4-Dateisysteme und LVM (Logical Volume Manager) verwendet werden.
+* Unified Manager muss über Fibre Channel (FC) oder iSCSI mit dem Storage-System verbunden sein.
++
+Sie müssen außerdem sicherstellen, dass die FC-Verbindung aktiv ist und dass die auf den Storage-Systemen erstellten LUNs beiden Cluster-Nodes zugänglich sind.
+
+* Die gemeinsam genutzte Datenfestplatte muss über ausreichend Speicherplatz (mindestens 80 GB) für die Unified Manager-Datenbank, Berichte, Zertifikate und Skript-Plug-in-Ordner verfügen.
+* Auf jedem System müssen mindestens zwei Netzwerkschnittstellen eingerichtet sein: Eine für die Node-zu-Node-Kommunikation und die andere für die Node-to-Client-Kommunikation.
++
+Der Name der für die Kommunikation zwischen Nodes und Clients verwendeten Netzwerkschnittstelle muss auf beiden Systemen identisch sein.
+
+* Zwischen den Cluster-Nodes muss eine separate Heartbeat-Verbindung hergestellt werden. Andernfalls wird die Netzwerkschnittstelle für die Kommunikation zwischen den Cluster-Nodes verwendet.
+* Optional: SnapDrive für UNIX sollte verwendet werden, um einen freigegebenen Speicherort zu erstellen, der beiden Knoten in einem hochverfügbaren Setup zugänglich ist.
++
+Informationen zum Installieren und Erstellen eines gemeinsam genutzten Speicherorts finden Sie im Handbuch _SnapDrive for UNIX Installation and Administration_. Sie können auch LUNs über SnapDrive oder die Befehlszeilenschnittstelle des Storage-Systems verwalten. Weitere Informationen finden Sie in der Kompatibilitätsmatrix für SnapDrive für UNIX.
+
+* Für die SnapDrive- und VCS-Anwendungen muss zusätzlicher RAM verfügbar sein.
+

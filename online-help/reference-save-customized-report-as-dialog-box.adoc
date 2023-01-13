@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-save-customized-report-as-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können im Dialogfeld Customized Report unter speichern einen Bericht nach der Anpassung speichern. 
+---
+= Dialogfeld „Customized Report speichern unter“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können im Dialogfeld Customized Report unter speichern einen Bericht nach der Anpassung speichern.
+
+
+
+== Eigenschaften
+
+Sie können einen Bericht anpassen und speichern, indem Sie Eigenschaften wie den Namen und die Beschreibung angeben.
+
+* *Berichtsname*
++
+Zeigt den Namen des Berichts an. Der ursprüngliche Berichtname wird standardmäßig angezeigt. Sie können den Berichtsnamen gemäß den Einstellungen ändern. Der Berichtname darf nicht mehr als 255 Zeichen enthalten.
+
+* *Beschreibung*
++
+Gibt die Beschreibung der Anpassung an den Bericht an. Beschreibung darf nicht mehr als 150 Zeichen enthalten.
+
+
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Speichern*
++
+Speichert den angepassten Bericht .
+
+* *Abbrechen*
++
+Bricht die letzten Änderungen ab und schließt das Dialogfeld „Customized Report as speichern“.
+
+

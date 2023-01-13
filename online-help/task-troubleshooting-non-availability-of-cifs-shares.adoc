@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-troubleshooting-non-availability-of-cifs-shares.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können möglicherweise nicht auf CIFS-Freigaben zugreifen, wenn die Storage-Objekte, die diese Freigaben bereitstellen, nicht verfügbar sind. Sie sollten Verfügbarkeitsereignisse wie Volume Offline, Junction Path Offline oder SVM CIFS Server Down prüfen, die generiert werden, wenn diese Objekte nicht verfügbar sind. 
+---
+= Fehlerbehebung beim Zugriff auf CIFS-Freigaben
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können möglicherweise nicht auf CIFS-Freigaben zugreifen, wenn die Storage-Objekte, die diese Freigaben bereitstellen, nicht verfügbar sind. Sie sollten Verfügbarkeitsereignisse wie Volume Offline, Junction Path Offline oder SVM CIFS Server Down prüfen, die generiert werden, wenn diese Objekte nicht verfügbar sind.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen die Rolle „Storage Administrator“ besitzen, um diese Aufgabe ausführen zu können.
+
+
+
+== Über diese Aufgabe
+
+Wenn Sie eine entsprechende Warnung konfiguriert haben, werden Sie über eine E-Mail über das Verfügbarkeitsereignis benachrichtigt.
+
+
+
+== Schritte
+
+. Klicken Sie auf der Seite *Dashboards/Übersicht* auf das entsprechende Offline-Ereignis.
++
+Wenn Sie beispielsweise ein Ereignis Volume Offline erhalten, klicken Sie auf das *`Volume_name` Ereignis Volume Offline* im Verfügbarkeitsfenster im Bereich ungelöste Vorfälle und Risiken.
+
+. Klicken Sie auf der Seite *Event* Details auf *`Volume_name`* Im Feld * Quelle*.
+. Klicken Sie auf der Seite *Health/Volume* Details auf die Nummer, die CIFS Shares entspricht, im Fenster *Related Devices*.
+. Klicken Sie auf der Seite *Health/Storage Virtual Machine* Details auf die Registerkarte *CIFS Shares*.
++
+Sie können die Anzahl der betroffenen CIFS-Freigaben anzeigen.
+
+
+
+
+
+== Nachdem Sie fertig sind
+
+Sie müssen die Fehler entweder mit dem OnCommand System Manager oder der ONTAP CLI beheben.

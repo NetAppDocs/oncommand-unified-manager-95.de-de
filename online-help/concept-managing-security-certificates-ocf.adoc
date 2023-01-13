@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-security-certificates-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können HTTPS im Unified Manager-Server konfigurieren, um Ihre Cluster über eine sichere Verbindung zu überwachen und zu verwalten. 
+---
+= Verwalten von Sicherheitszertifikaten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können HTTPS im Unified Manager-Server konfigurieren, um Ihre Cluster über eine sichere Verbindung zu überwachen und zu verwalten.

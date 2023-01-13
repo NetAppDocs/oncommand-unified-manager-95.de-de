@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-qtree-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: Der Qtree-Kapazitäts- und Auslastungsbericht ermöglicht es Ihnen, die Kapazität und Auslastung der Systemqtrees zu analysieren, um mögliche Risiken, die aufgrund der reduzierten Clusterkapazität auftreten können, zu verstehen. 
+---
+= Bericht zur Kapazität und Auslastung von qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit dem Kapazitäts- und Auslastungsbericht von Qtree können Sie die Kapazität und Auslastung der qtrees des Systems analysieren, um mögliche Risiken, die aufgrund der reduzierten Cluster-Kapazität auftreten können, zu verstehen.
+
+
+
+== Die tabellarische Ansicht des Berichts zur Kapazität und Auslastung von qtree
+
+* * Cluster*
++
+Zeigt den Namen des Clusters an, der den qtree enthält.
+
+* *Storage Virtual Machine*
++
+Zeigt den Namen der Storage Virtual Machine (SVM) an, die den qtree enthält.
+
+* *Lautstärke*
++
+Zeigt den Namen des Volumes an, das den qtree enthält.
+
+* *Qtree*
++
+Zeigt den Namen des qtree an.
+
+* *Quotentyp*
++
+Gibt an, ob das Kontingent für einen Benutzer, eine Benutzergruppe oder einen qtree ist.
+
+* *Benutzer oder Gruppe*
++
+Zeigt den Namen des Benutzers oder der Benutzergruppe an. Für jeden Benutzer und jede Benutzergruppe werden mehrere Zeilen angezeigt. Wenn der Kontingenttyp qtree ist, wird _Not anwendbare_ angezeigt. Wenn das Kontingent nicht festgelegt ist, ist die Spalte leer.
+
+* *Verwendete Festplatte %*
++
+Zeigt den Prozentsatz des verwendeten Festplattenspeichers an. Wenn ein Festplattenlimit festgelegt ist, basiert dieser Wert auf dem Festplattenlimit. Wenn das Kontingent ohne Festplattenlimit festgelegt wird, basiert der Wert auf dem Volume-Datenraum. Wenn das Kontingent nicht gesetzt ist oder wenn die Quoten auf dem Volumen liegen, zu dem der qtree gehört, dann wird _nicht anwendbar_ angezeigt.
+
+* *Festplatten-Hard-Limit*
++
+Zeigt den maximalen Festplattenspeicher an, der für den qtree zugewiesen ist. Unified Manager generiert ein kritisches Ereignis, wenn dieses Limit erreicht wird und keine weiteren Festplattenschreibvorgänge mehr zulässig sind. Der Wert wird als _Unlimited_ angezeigt, wenn das Kontingent ohne eine Festplattenbegrenzung festgelegt ist, wenn die Quote nicht festgelegt ist, oder wenn die Quoten auf dem Volumen deaktiviert sind, zu dem der qtree gehört.
+
+* *Soft Limit Für Festplatten*
++
+Zeigt den für den qtree zugewiesenen Festplattenspeicher an, bevor ein Warnereignis generiert wird. Der Wert wird als _Unlimited_ angezeigt, wenn das Kontingent ohne eine feste Plattengrenze eingestellt ist, wenn die Quote nicht festgelegt ist, oder wenn die Quoten auf dem Volumen deaktiviert sind, zu dem der qtree gehört.
+
+* *Verwendete Dateien %*
++
+Zeigt den Prozentsatz der im qtree verwendeten Dateien an. Wenn das harte Limit für die Datei festgelegt ist, basiert dieser Wert auf dem harten Limit der Datei. Der Wert wird als _not anwendbares_ angezeigt, wenn das Kontingent nicht gesetzt ist, oder wenn das Kontingent ohne eine feste Dateigrenze festgelegt ist, oder wenn die Quoten auf dem Volumen deaktiviert sind, zu dem qtree gehört.
+
+* *Harte Dateibegrenzung*
++
+Zeigt das endgültige Limit für die Anzahl der Dateien an, die auf den qtrees zulässig sind. Der Wert wird als _Unlimited_ angezeigt, wenn das Kontingent ohne eine harte Dateibegrenzung festgelegt ist, wenn die Quote nicht festgelegt ist, oder wenn die Quoten auf dem Volumen deaktiviert sind, zu dem der qtree gehört.
+
+* *Soft Limit Für Dateien*
++
+Zeigt den Softlimit für die Anzahl der Dateien an, die auf qtrees zulässig sind. Der Wert wird als _Unlimited_ angezeigt, wenn das Kontingent ohne eine Datei-Softlimit gesetzt wird, wenn das Kontingent nicht gesetzt ist, oder wenn die Quoten auf dem Volumen deaktiviert sind, zu dem der qtree gehört.
+
+

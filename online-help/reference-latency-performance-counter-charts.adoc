@@ -1,0 +1,65 @@
+---
+permalink: online-help/reference-latency-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Die Zählerdiagramme des Performance Explorer zeigen die Anzahl von Millisekunden an, die für das ausgewählte Storage-Objekt erforderlich sind, um auf Applikationsanforderungen zu reagieren. 
+---
+= Zählerdiagramme zur Latenz-Performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Zählerdiagramme des Performance Explorer zeigen die Anzahl von Millisekunden an, die für das ausgewählte Storage-Objekt erforderlich sind, um auf Applikationsanforderungen zu reagieren.
+
+Das Popup-Fenster, das angezeigt wird, wenn sich der Cursor im Diagrammbereich befindet, zeigt die spezifischen Zählerwerte zu bestimmten Zeiten an.
+
+Auf der unteren Seite der Tabelle werden Informationen zur minimalen, maximalen, durchschnittlichen und 95. Perzentil-Latenz für den ausgewählten Zeitraum angezeigt.
+
+Es stehen drei Arten von Latenzdiagrammen zur Verfügung:
+
+
+
+== Latenz: Zählerdiagramm insgesamt
+
+Zeigt die Anzahl der Millisekunden an, die erforderlich ist, um auf Anwendungsanforderungen zu reagieren. Die durchschnittlichen Latenzwerte werden durch die I/O-Gewichtung bestimmt.
+
+
+
+== Latenz - Aufschlüsselung der Zähler
+
+Zeigt die gleichen Latenzdaten, die in Lese-, Schreib- und sonstige Latenz getrennt sind, an.
+
+Diese Diagrammoption wird angewendet, wenn das ausgewählte Objekt eine SVM, einen Node, ein Aggregat, ein Volume oder eine LUN ist.
+
+
+
+== Latenz: Zählerdiagramm der Cluster-Komponenten
+
+Zeigt die Latenzdaten nach Clusterkomponente an. Damit können Sie die Cluster-Komponente identifizieren, die für die Latenz verantwortlich ist. Wenn Sie den Mauszeiger über das Diagramm halten, wird der genaue Latenzbeitrag für jede Komponente angezeigt.
+
+Diese Diagrammoption wird angewendet, wenn das ausgewählte Objekt eine SVM, einen Node, ein Aggregat, ein Volume oder eine LUN ist.
+
+
+
+== *Zoom-Ansicht*-Taste
+
+Zeigt eine vergrößerte Ansicht der Daten des Zählerdiagramms an.
+
+* Veranstaltungen
++
+Das Auftreten von kritischen, Warn- und Informationsereignissen wird in den Zeitlinien über den Diagrammen angezeigt.
+
+* Schwellenwerte
++
+Die horizontale, gestrichelte Zeile zeigt den in Unified Manager festgelegten Grenzwert für die Auslastungswarnung an.
+
++
+Die rote Linie zeigt den Auslastungskritischen Schwellenwert in Unified Manager an.
+
+* Zähler
++
+Die Zähler im linken Teilfenster zeigen an, welche Zählerwerte angezeigt werden. Deaktivieren oder Auswählen des image:../media/eye-icon.gif[""] Das wird mit einem Zähler verknüpft, versteckt und zeigt, dass Zählerinformationen aus dem Diagramm angezeigt werden und kann beim Vergleich der Objektlatenz helfen.
+
+

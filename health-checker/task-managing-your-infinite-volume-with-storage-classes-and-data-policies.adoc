@@ -1,0 +1,68 @@
+---
+permalink: health-checker/task-managing-your-infinite-volume-with-storage-classes-and-data-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können das Infinite Volume effizient managen, indem Sie das Infinite Volume mit der erforderlichen Anzahl an Storage-Klassen erstellen, Schwellenwerte für jede Storage-Klasse konfigurieren, Regeln und eine Datenrichtlinie erstellen, um die Platzierung von auf das Infinite Volume geschriebenen Daten zu bestimmen, die Datensicherung zu konfigurieren und Benachrichtigungen optional zu konfigurieren. 
+---
+= Management des Infinite Volume mit Storage-Klassen und Datenrichtlinien
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können das Infinite Volume effizient managen, indem Sie das Infinite Volume mit der erforderlichen Anzahl an Storage-Klassen erstellen, Schwellenwerte für jede Storage-Klasse konfigurieren, Regeln und eine Datenrichtlinie erstellen, um die Platzierung von auf das Infinite Volume geschriebenen Daten zu bestimmen, die Datensicherung zu konfigurieren und Benachrichtigungen optional zu konfigurieren.
+
+
+
+== Bevor Sie beginnen
+
+* OnCommand Workflow Automation (WFA) muss installiert sein.
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Sie müssen die erforderliche Anzahl an Aggregaten erstellt haben, indem Sie den entsprechenden vordefinierten Workflow in WFA anpassen.
+* Sie müssen die erforderliche Anzahl an Storage-Klassen erstellt haben, indem Sie den entsprechenden vordefinierten Workflow in WFA anpassen.
+* Sie müssen den Unified Manager-Server als Datenquelle in WFA konfiguriert haben, und Sie müssen überprüfen, ob die Daten erfolgreich im Cache gespeichert sind.
+
+
+
+
+== Über diese Aufgabe
+
+Bei dieser Aufgabe müssen Sie zwischen zwei Applikationen wechseln: OnCommand Workflow Automation (WFA) und OnCommand Unified Manager.
+
+Die Aufgabe bietet Schritte auf hoher Ebene. Informationen zur Durchführung der WFA Aufgaben finden Sie in der Dokumentation „_OnCommand Workflow Automation_“.
+
+image::../media/cr-workflow-oc-6-0.gif[Workflow für das Management von Vserver mit Infinite Volume mit Storage-Klassen]
+
+
+
+== Schritte
+
+. image:../media/wfa-icon.gif["Symbol für den WFA Vorgang"] Passen Sie den vordefinierten Workflow an, um die erforderlichen Speicherklassen zu definieren.
+. image:../media/wfa-icon.gif["Symbol für den WFA Vorgang"] Erstellen Sie mithilfe des entsprechenden Workflows eine SVM mit Infinite Volume mit der erforderlichen Anzahl an Storage-Klassen.
+. image:../media/um-icon.gif["Symbol für Unified Manager Verfahren"] Fügen Sie der Unified Manager Datenbank den Cluster mit SVM und Infinite Volume hinzu.
++
+Sie können den Cluster hinzufügen, indem Sie die IP-Adresse oder den FQDN des Clusters angeben.
+
+. image:../media/um-icon.gif["Symbol für Unified Manager Verfahren"] xref:task-editing-storage-class-threshold-settings.adoc[Ändern Sie die Schwellenwerte für jede Storage-Klasse basierend auf den Anforderungen Ihres Unternehmens].
++
+Sie sollten die Standardeinstellungen für den Schwellenwert der Storage-Klasse verwenden, um den Speicherplatz der Storage-Klasse effektiv zu überwachen.
+
+. image:../media/um-icon.gif["Symbol für Unified Manager Verfahren"] xref:task-adding-alerts.adoc[Konfigurieren von Benachrichtigungsalarme und -Traps zur Behebung aller Verfügbarkeits- und Kapazitätsprobleme im Zusammenhang mit dem Infinite Volume].
+. image:../media/um-icon.gif["Symbol für Unified Manager Verfahren"] xref:task-creating-rules.adoc[Legen Sie in der Datenrichtlinie Regeln fest und aktivieren Sie alle Änderungen an der Datenrichtlinie]
++
+Die Regeln in einer Datenrichtlinie bestimmen die Platzierung der auf das Infinite Volume geschriebenen Inhalte.
+
++
+[NOTE]
+====
+Regeln in einer Datenrichtlinie betreffen nur neue Daten, die auf das Infinite Volume geschrieben werden. Bestehende Daten im Infinite Volume werden jedoch nicht beeinträchtigt.
+
+====
+. image:../media/wfa-icon.gif["Symbol für den WFA Vorgang"] Erstellung einer Disaster-Recovery- (DR-) SVM mit Infinite Volume und Konfiguration einer Datensicherung (DP) durch folgende Schritte:
++
+.. Datensicherung (DP) Infinite Volume unter Verwendung des entsprechenden Workflows erstellen
+.. Richten Sie eine DP-Spiegelbeziehung zwischen Quelle und Ziel mithilfe des entsprechenden Workflows ein.
+
+
+

@@ -1,0 +1,145 @@
+---
+permalink: online-help/reference-snapmirror-relationship-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Informationen zum Status Ihrer SnapMirror Beziehungen erhalten Sie bei SnapMirror Beziehungsereignissen, sodass Sie mögliche Probleme überwachen können. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad. 
+---
+= SnapMirror Beziehungsereignisse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Informationen zum Status Ihrer SnapMirror Beziehungen erhalten Sie bei SnapMirror Beziehungsereignissen, sodass Sie mögliche Probleme überwachen können. Ereignisse sind nach Impact Area gruppiert und umfassen den Ereignis- und Trap-Namen, den Impact-Level, den Quelltyp und den Schweregrad.
+
+
+
+== Aufprallbereich: Schutz
+
+Ein Sternchen (*) identifiziert EMS-Ereignisse, die in Unified Manager-Ereignisse konvertiert wurden.
+
+|===
+| Ereignisname (Trap-Name) | Auswirkungen | Typ der Quelle | Schweregrad 
+
+
+ a| 
+Spiegelreplikation ungesund(occumEvtSnapmirrorRelationshipUnHealthy)
+ a| 
+Dar
+ a| 
+SnapMirror Beziehung
+ a| 
+Warnung
+
+
+
+ a| 
+Spiegelreplikation - broken-off(ocumEvtSnapmirrorRelationshipStateBrokenoff)
+ a| 
+Dar
+ a| 
+SnapMirror Beziehung
+ a| 
+Fehler
+
+
+
+ a| 
+Spiegelreplikation wird initialisiert fehlgeschlagen(OktEvtSnapmirrorRelationshipInitialisierenFailed)
+ a| 
+Dar
+ a| 
+SnapMirror Beziehung
+ a| 
+Fehler
+
+
+
+ a| 
+Aktualisierung der Spiegelreplikation fehlgeschlagen(ocumEvtSnapmirrorRelationshipUpdateFailed)
+ a| 
+Dar
+ a| 
+SnapMirror Beziehung
+ a| 
+Fehler
+
+
+
+ a| 
+Spiegelreplikation – Fehler (occumEvtSnapMirrorRelationshipLagerFehler)
+ a| 
+Dar
+ a| 
+SnapMirror Beziehung
+ a| 
+Fehler
+
+
+
+ a| 
+Spiegelreplikation Verzögerung Warnung(occumEvtSnapMirrorRelationshipLagerWarnung)
+ a| 
+Dar
+ a| 
+SnapMirror Beziehung
+ a| 
+Warnung
+
+
+
+ a| 
+Resync der Spiegelreplikation fehlgeschlagen(OccumEvtSnapmirrorRelationshipResyncFailed)
+ a| 
+Dar
+ a| 
+SnapMirror Beziehung
+ a| 
+Fehler
+
+
+
+ a| 
+Mirror Replication DeletedocumEvtSnapmirrorRelationship Deleted
+ a| 
+Dar
+ a| 
+SnapMirror Beziehung
+ a| 
+Warnung
+
+
+
+ a| 
+Synchrone Replizierung Aus Sync *
+ a| 
+Dar
+ a| 
+SnapMirror Beziehung
+ a| 
+Warnung
+
+
+
+ a| 
+Synchrone Replizierung Wiederhergestellt *
+ a| 
+Ereignis
+ a| 
+SnapMirror Beziehung
+ a| 
+Informationsdaten
+
+
+
+ a| 
+Fehler Beim Automatischen Neusynchronisierung Der Synchronen Replikation *
+ a| 
+Dar
+ a| 
+SnapMirror Beziehung
+ a| 
+Fehler
+
+|===

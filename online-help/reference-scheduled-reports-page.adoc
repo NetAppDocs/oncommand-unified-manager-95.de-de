@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-scheduled-reports-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Berichte können Sie detaillierte Informationen zu den von Ihnen erstellten Berichten anzeigen. Sie können nach einem bestimmten Bericht suchen, einen Bericht speichern und einen Bericht löschen. Sie können auch einen Bericht planen, freigeben und importieren. 
+---
+= Berichtsseite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Berichte können Sie detaillierte Informationen zu den von Ihnen erstellten Berichten anzeigen. Sie können nach einem bestimmten Bericht suchen, einen Bericht speichern und einen Bericht löschen. Sie können auch einen Bericht planen, freigeben und importieren.
+
+Auf der Seite Berichte werden kategorisierte Berichtsgruppen angezeigt, zu denen Sie spezifische Berichtsdetails erhalten können. Standardmäßig werden die Berichtsgruppen erweitert, um die Berichtstypen, eine Berichtsübersicht und Links anzuzeigen, mit denen Sie Berichte anpassen können. Es kann jeweils nur ein Bericht angezeigt werden. Sie können auf die Schaltfläche *Bericht ausführen* klicken, um einen Bericht für eine bestimmte Gruppe von Berichten anzuzeigen.
+
+[NOTE]
+====
+Die Implementierung der Planung und Erstellung von Berichten auf der Seite Berichte wird in einer zukünftigen Version veraltet sein. Mit den folgenden zusätzlichen Methoden können Sie Gesundheits- und Performance-Daten aus Unified Manager extrahieren:
+
+* Daten direkt aus den Grid-Seiten in der GUI extrahieren
+* Verwenden der Open Database für den Zugriff auf alle verfügbaren Objekte
+* Ausführung von Unified Manager REST-APIs zur Rückgabe der Informationen, für die Sie interessiert sind, zu überprüfen
+
+
+====
+Die folgende Liste enthält Berichtsgruppen und Berichtstypen, die auf der Seite Berichte angezeigt werden:
+
+* Berichte Zur Kapazitätsauslastung
++
+** Zusammenfassung
+** Kapazität und Auslastung aggregieren
+** Volume-Kapazität und -Auslastung
+** Kapazität und Auslastung von qtree
+
+
+* Betriebsberichte - Ereignisse
+* Bestandsberichte
++
+** Cluster-Inventar
+** NFS Exporte
+** SVM-Inventar
+
+
+* Importierte Berichte
+* Datensicherungsberichte
++
+** Konfiguration Der Volume Data Protection
+** Inventarisierung Von Volume-Beziehungen
+** Volume-Transferstatus (Historisch)
+** Volume-Übertragungsrate (Historisch)
+
+
+

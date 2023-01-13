@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-nodes-reaching-maximum-disk-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Cluster-Bestandsbericht so anpassen, dass eine Liste der Nodes angezeigt wird, die das maximale Festplattenlimit erreichen und nach zunehmender Reihenfolge sortiert werden. 
+---
+= Sie können den Cluster-Inventory-Bericht so anpassen, dass Nodes angezeigt werden, die das maximale Festplattenslimit erreichen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Cluster-Bestandsbericht so anpassen, dass eine Liste der Nodes angezeigt wird, die das maximale Festplattenlimit erreichen und nach zunehmender Reihenfolge sortiert werden.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach Cluster oder Node:
++
+.. Klicken Sie in die Spalten, die nicht gruppiert werden müssen.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. So verschieben Sie die Spalte *Datenträgeranzahl* neben der Spalte *Modell*:
++
+.. Klicken Sie in die Spalte *Datenträgeranzahl*.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol und wählen Sie *Spalte* > *Spalten neu ordnen*.
+.. Verwenden Sie im Dialogfeld *Spalten neu ordnen* die Pfeiltasten nach oben* und *nach unten*, um die Spalte an die gewünschte Position zu verschieben.
+
+
+. So fügen Sie eine neue berechnete Spalte hinzu:
++
+.. Wählen Sie eine Spalte aus, und klicken Sie auf image:../media/click-to-see-menu.gif[""]Und wählen Sie *Spalte* > *Neue berechnete Spalte*.
+.. Geben Sie im Dialogfeld * Neue berechnete Spalte* ein `Maximum Disk Limit` Im Feld *Spaltenbeschriftung*.
+.. Wählen Sie aus der Liste Kategorie auswählen die Option *Vergleich*.
+.. Wählen Sie aus der Liste *Funktion auswählen* die Option *Erweitert*.
+.. Geben Sie im Feld *Ausdruck eingeben* ein `IF([model]="FAS3250" , 960, 0)`.
+.. Klicken Sie auf *OK*.
+
+
+. So fügen Sie eine zweite neue Spalte hinzu:
++
+.. Wählen Sie die Spalte *Maximum Disk Limit* aus, und klicken Sie auf image:../media/click-to-see-menu.gif[""] Und wählen Sie *Spalte* > *Neue berechnete Spalte*.
+.. Geben Sie im Dialogfeld * Neue berechnete Spalte* ein `Available Volume` Im Feld *Spaltenbeschriftung*.
+.. Wählen Sie in der Liste Kategorie auswählen die Option *Math* aus.
+.. Wählen Sie aus der Liste *Funktion auswählen* die Option *UNTERSCHIED*.
+.. Wählen Sie in der Liste Spalte 1 die Option *Maximum Disk Limit* aus.
+.. Wählen Sie in der Liste Spalte 2 die Option *Datenträgeranzahl* aus.
+.. Klicken Sie auf *OK*.
+
+
+. Um die Werte zu sortieren, klicken Sie in der Spalte *Verfügbare Volumen* auf und klicken Sie auf image:../media/click-to-see-menu.gif[""] Symbol.
+. Wählen Sie *Filter* > *Oben/Unten N*.
+. Wählen Sie im Dialogfeld *Top/Bottom N* aus dem Feld *Filter* die Option *Top N* aus, und geben Sie einen Wert in das Textfeld ein.
+. Klicken Sie auf *OK*.
+

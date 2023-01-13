@@ -1,0 +1,22 @@
+---
+permalink: health-checker/task-viewing-the-annotation-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können eine Liste mit Anmerkungen anzeigen, die zu Clustern, Volumes und Storage Virtual Machines \(SVMs\) dynamisch zugeordnet werden. Sie können auch Details wie die Beschreibung anzeigen, erstellt von, erstellt Datum, Werte, Regeln, Und die mit der Anmerkung verknüpften Objekte.' 
+---
+= Anzeigen der Anmerkungsliste und der Details
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Liste mit Anmerkungen anzeigen, die zu Clustern, Volumes und Storage Virtual Machines (SVMs) dynamisch zugeordnet werden. Sie können auch Details wie die Beschreibung anzeigen, erstellt von, erstellt Datum, Werte, Regeln, Und die mit der Anmerkung verknüpften Objekte.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im linken Menü Verwaltung auf *Anmerkungen*.
+. Klicken Sie auf der Registerkarte *Anmerkungen* auf den Anmerkungsnamen, um die zugehörigen Details anzuzeigen.
+

@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-importing-a-data-policy-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können eine Richtlinienkonfiguration aus einer Datei importieren, die Datenrichtlinie ändern und die Änderungen in der SVM mit Infinite Volume aktivieren. Im Falle eines Ausfalls können Sie beispielsweise eine bereits definierte Datenrichtlinie in die sekundäre importieren und die Richtlinie nach Bedarf ändern. 
+---
+= Importieren einer Konfiguration für Datenrichtlinien
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Richtlinienkonfiguration aus einer Datei importieren, die Datenrichtlinie ändern und die Änderungen in der SVM mit Infinite Volume aktivieren. Im Falle eines Ausfalls können Sie beispielsweise eine bereits definierte Datenrichtlinie in die sekundäre importieren und die Richtlinie nach Bedarf ändern.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Wenn Sie eine Konfiguration einer Datenrichtlinie importieren, werden Ihre vorhandenen Regeln überschrieben.
+
+Die Registerkarte Datenrichtlinie wird nur für SVMs mit Infinite Volume angezeigt.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie auf der Seite *Health/Storage Virtual Machines* Inventory die entsprechende SVM aus.
+. Klicken Sie Auf *Datenrichtlinie*.
++
+Es wird eine Liste der Regeln in der Datenrichtlinie für die ausgewählte SVM mit Infinite Volume angezeigt.
+
+. Klicken Sie Auf *Import*.
+. Geben Sie im Dialogfeld *Datenrichtlinie importieren* die Datenrichtlinie an, die Sie importieren möchten, indem Sie den absoluten Pfad der Datenrichtliniendatei angeben.
+. Klicken Sie Auf *Import*.
+. Klicken Sie auf *Aktivieren*, um die importierten Regeln in der SVM zu aktivieren.
+

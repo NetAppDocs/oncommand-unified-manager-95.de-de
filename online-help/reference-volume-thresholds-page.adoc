@@ -1,0 +1,204 @@
+---
+permalink: online-help/reference-volume-thresholds-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Auf der Seite Configuration/Health schwelles für Volumes können Sie globale Schwellenwerte für den Systemzustand für überwachte Volumes konfigurieren. Sie können Schwellenwerte für einzelne Volumes oder für alle Volumes weltweit festlegen. Wenn Sie die Optionen global konfigurieren, werden die Standardwerte aller Objekte geändert. Wenn jedoch die Standardwerte auf Objektebene geändert wurden, werden die globalen Werte nicht geändert. 
+---
+= Seite „Konfigurations-/Statusschwellenwerte“ für Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite Configuration/Health schwelles für Volumes können Sie globale Schwellenwerte für den Systemzustand für überwachte Volumes konfigurieren. Sie können Schwellenwerte für einzelne Volumes oder für alle Volumes weltweit festlegen. Wenn Sie die Optionen global konfigurieren, werden die Standardwerte aller Objekte geändert. Wenn jedoch die Standardwerte auf Objektebene geändert wurden, werden die globalen Werte nicht geändert.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+Ereignisse werden erzeugt, wenn ein Schwellenwert überschritten wird. Sie können für solche Ereignisse Korrekturmaßnahmen ergreifen.
+
+Für folgende Zwecke können Sie Schwellenwerte festlegen: Kapazität, Volume Snapshot-Kopien, Kontingente, Volume-Wachstum und Inodes.
+
+
+
+== Kapazität
+
+Im Kapazitätsbereich können Sie die folgenden Schwellwerte für die Volume-Kapazität einstellen. Beachten Sie, dass bei Aktivierung von Autogrow auf einem Volume die Kapazitätsschwellenwerte basierend auf der durch Autogrow festgelegten maximalen Volume-Größe gelten und nicht auf der ursprünglichen Volume-Größe basieren.
+
+* *Raum Fast Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als fast voll betrachtet wird:
+
++
+** Standardwert: 80 Prozent
++
+Der Wert für diesen Schwellenwert muss niedriger sein als der Wert für den Schwellenwert „Volume Full“, damit der Verwaltungsserver ein Ereignis generieren kann.
+
+** Event generiert: Volumen fast voll
+** Ereignis Schweregrad: Warnung
+
+
+* *Raum Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als voll betrachtet wird:
+
++
+** Standardwert: 90 Prozent
+** Event generiert: Volumen voll
+** Ereignis Severity: Fehler
+
+
+* *Tage Bis Voll*
++
+Gibt die Anzahl der verbleibenden Tage an, bevor die volle Kapazität des Volume erreicht ist:
+
++
+** Standardwert: 7
+** Event generiert: Volume Days bis Full
+** Ereignis Schweregrad: Fehler
+
+
+
+
+
+
+== Bereich der Snapshot-Kopien
+
+Im Bereich Snapshot Kopien können Sie die folgenden Schwellwerte für die Snapshot Kopien im Volume festlegen:
+
+* *Snapshot Reserve Voll*
++
+Gibt den Prozentsatz an, an dem der für Snapshot Kopien reservierte Speicherplatz voll berücksichtigt wird:
+
++
+** Standardwert: 90 Prozent
+** Event generiert: Volume Snapshot Reserve voll
+** Ereignis Schweregrad: Fehler
+
+
+* *Tage Bis Voll*
++
+Gibt die Anzahl der Tage an, die noch verbleiben, bevor der für Snapshot Kopien reservierte Speicherplatz mit der vollen Kapazität erreicht wird:
+
++
+** Standardwert: 7
+** Event generiert: Volume Snapshot Reserve Days bis Kapazitätsreserve
+** Ereignis Schweregrad: Fehler
+
+
+* * Anzahl*
++
+Gibt die Anzahl der Snapshot Kopien auf einem Volume an, die als zu viele Kopien gelten:
+
++
+** Standardwert: 250
+** Generiertes Ereignis: Zu viele Snapshot Kopien
+** Ereignis Schweregrad: Fehler
+
+
+
+
+
+
+== Qtree-Kontingentbereich
+
+Der Qtree Quota Bereich ermöglicht es Ihnen, die folgenden Volumen Quota Schwellenwerte einzustellen:
+
+* *Fast Überengagiert*
++
+Gibt den Prozentsatz an, mit dem ein Volume als beinahe durch qtree Kontingente überengagiert werden soll:
+
++
+** Standardwert: 95 Prozent
+** Event erzeugt: Volumen Qtree Kontingent fast überengagiert
+** Ereignis Schweregrad: Warnung
+
+
+* *Überengagiert*
++
+Gibt den Prozentsatz an, mit dem ein Volume als durch qtree Kontingente überengagiert werden soll:
+
++
+** Standardwert: 100 Prozent
+** Event erstellt: Volumen Qtree Kontingent überfordert
+** Ereignis Schweregrad: Fehler
+
+
+
+
+
+
+== Wachstumsbereich
+
+Im Wachstumsbereich können Sie die folgenden Schwellwerte für das Volumenwachstum festlegen:
+
+* *Wachstumsrate*
++
+Gibt den Prozentsatz an, bei dem die Wachstumsrate eines Volumes als normal angesehen wird, bevor das System ein ungewöhnliches Ereignis der Volumenwachstumsrate generiert:
+
++
+** Standardwert: 1 Prozent
+** Generiertes Ereignis: Volumenwachstumsrate anormal
+** Ereignis Schweregrad: Warnung
+
+
+* *Empfindlichkeit Der Wachstumsrate*
++
+Gibt den Faktor an, der auf die Standardabweichung der Wachstumsrate eines Volumens angewendet wird. Wenn die Wachstumsrate die faktorierte Standardabweichung überschreitet, wird ein ungewöhnliches Ereignis der Volumenwachstumsrate generiert.
+
++
+Ein niedrigerer Wert für die Empfindlichkeit der Wachstumsrate zeigt an, dass das Volumen sehr empfindlich auf Veränderungen der Wachstumsrate reagiert. Der Bereich für die Empfindlichkeit der Wachstumsrate liegt zwischen 1 und 5.
+
++
+** Standardwert: 2
+
+
++
+[NOTE]
+====
+Wenn Sie die Wachstumssensitivität für Volumes auf der globalen Schwellenebene ändern, wird die Änderung auch auf die Wachstumsratenempfindlichkeit für Aggregate auf der globalen Schwellenebene angewendet.
+
+====
+
+
+
+
+== Inodes-Bereich
+
+Im Inodes-Bereich können Sie die folgenden Schwellwerte für Inodes festlegen:
+
+* *Fast Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als den Großteil seiner Inodes verbraucht wurde:
+
++
+** Standardwert: 80 Prozent
+** Event generiert: Inodes fast voll
+** Ereignis Schweregrad: Warnung
+
+
+* *Voll*
++
+Gibt den Prozentsatz an, bei dem ein Volume als „alle Inodes verbraucht“ betrachtet wird:
+
++
+** Standardwert: 90 Prozent
+** Event generiert: Inodes voll
+** Ereignis Schweregrad: Fehler
+
+
+
+
+
+
+== Befehlsschaltflächen
+
+* *Wiederherstellen auf Werkseinstellungen*
++
+Ermöglicht die Wiederherstellung der Konfigurationseinstellungen auf die werkseitigen Standardwerte.
+
+* *Speichern*
++
+Speichert die Konfigurationseinstellungen für die ausgewählte Option.
+
+

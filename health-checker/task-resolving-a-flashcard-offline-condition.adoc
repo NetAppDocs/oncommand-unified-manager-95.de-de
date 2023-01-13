@@ -1,0 +1,45 @@
+---
+permalink: health-checker/task-resolving-a-flashcard-offline-condition.html 
+sidebar: sidebar 
+keywords:  
+summary: Dieser Workflow bietet ein Beispiel dafür, wie Sie den Offline-Zustand einer Flash-Karte beheben können. In diesem Szenario sind Sie ein Administrator oder Operator, der das Dashboard überwacht, um nach Problemen mit der Verfügbarkeit zu suchen. Sie sehen eine Flash-Karte offline-Zustand und Sie möchten die mögliche Ursache und Lösung des Problems zu ermitteln. 
+---
+= Offline-Zustand einer Flash-Karte beheben
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dieser Workflow bietet ein Beispiel dafür, wie Sie den Offline-Zustand einer Flash-Karte beheben können. In diesem Szenario sind Sie ein Administrator oder Operator, der das Dashboard überwacht, um nach Problemen mit der Verfügbarkeit zu suchen. Sie sehen eine Flash-Karte offline-Zustand und Sie möchten die mögliche Ursache und Lösung des Problems zu ermitteln.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Die im Bereich Verfügbarkeit der Seite Unified ManagerDashboards/Übersicht angezeigten Event-Informationen und Links führen zur Überwachung der allgemeinen Verfügbarkeit von Datenspeicherressourcen auf den überwachten Clustern. Dadurch können Sie bestimmte Ereignisse diagnostizieren, die sich auf die Verfügbarkeit auswirken könnten.
+
+In diesem Szenario zeigt die Seite Dashboards/Übersicht die Veranstaltung Flash-Karten offline im Bereich Verfügbarkeitsstörungen an. Ist eine Flash-Karte offline, wird die Verfügbarkeit gespeicherter Daten beeinträchtigt, weil die Performance des Cluster-Nodes, auf dem sie installiert ist, beeinträchtigt ist. Sie können die folgenden Schritte durchführen, um das potenzielle Problem zu lokalisieren und zu identifizieren:
+
+
+
+== Schritte
+
+. Klicken Sie im Bereich *Verfügbarkeit* im Bereich *ungelöste Vorfälle und Risiken* auf den Hypertext-Link, der für Flash Cards Offline angezeigt wird.
++
+Die Seite Ereignisdetails für den Verfügbarkeitsereignis wird angezeigt.
+
+. Auf der Seite *Ereignis* Details können Sie die im Feld Ursache angezeigten Informationen überprüfen und eine oder mehrere der folgenden Aufgaben ausführen:
++
+** Weisen Sie das Ereignis einem Administrator zu. xref:task-assigning-events-to-specific-users.adoc[Ereignisse werden zugewiesen]
+** Klicken Sie in diesem Fall auf die Quelle des Ereignisses, in dem sich der Cluster-Node befindet, auf dem sich die Offline-Flash-Karte befindet, um weitere Informationen über den Node zu erhalten. xref:task-performing-corrective-action-for-a-flashcard-offline.adoc[Durchführen der Korrekturmaßnahme für eine Flash-Karte offline]
+** Bestätigen Sie das Ereignis. xref:task-acknowledging-and-resolving-events.adoc[Bestätigen und Beheben von Ereignissen]
+
+
+

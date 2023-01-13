@@ -1,0 +1,58 @@
+---
+permalink: online-help/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Backup-Einstellungen für die Unified Manager Datenbank so konfigurieren, dass der Datenbank-Backup-Pfad, die Aufbewahrungsanzahl und der Backup-Zeitplan festgelegt werden. Sie können tägliche oder wöchentliche geplante Backups aktivieren. Standardmäßig sind geplante Backups deaktiviert. 
+---
+= Konfigurieren von Backup-Einstellungen für Datenbanken
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Backup-Einstellungen für die Unified Manager Datenbank so konfigurieren, dass der Datenbank-Backup-Pfad, die Aufbewahrungsanzahl und der Backup-Zeitplan festgelegt werden. Sie können tägliche oder wöchentliche geplante Backups aktivieren. Standardmäßig sind geplante Backups deaktiviert.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+* Sie müssen mindestens 150 GB Speicherplatz an dem Speicherort haben, den Sie als Backup-Pfad definieren.
++
+Es wird empfohlen, einen externen Standort zu verwenden, der sich außerhalb des Unified Manager-Hostsystems befindet.
+
+* Wenn Unified Manager auf einem Linux-System installiert ist, stellen Sie sicher, dass der Benutzer „`jboss`“ über Schreibberechtigungen in das Backup-Verzeichnis verfügt.
+* Sie sollten Backup-Vorgänge nicht so planen, dass sie unmittelbar nach dem Hinzufügen eines neuen Clusters ausgeführt werden, während Unified Manager historische Performance-Daten von 15 Tagen erfasst.
+
+
+
+
+== Über diese Aufgabe
+
+Mehr Zeit wird bei der ersten Durchführung eines Backups als bei nachfolgenden Backups benötigt, da es sich bei dem ersten Backup um ein Vollbackup handelt. Ein vollständiges Backup kann über 1 GB dauern und kann drei bis vier Stunden dauern. Nachfolgende Backups sind inkrementell und erfordern weniger Zeit.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann auf *Verwaltung* > *Datenbank-Backup*.
+. Klicken Sie auf der Seite *Management/Datenbank-Backup* auf *Aktionen* > *Einstellungen für die Datenbanksicherung*.
+. Konfigurieren Sie die entsprechenden Werte für einen Backup-Pfad und die Anzahl der Aufbewahrung.
++
+Der Standardwert für die Aufbewahrungsanzahl ist 10; Sie können 0 verwenden, um unbegrenzte Backups zu erstellen.
+
+. Wählen Sie im Abschnitt *Terminhäufigkeit* das Kontrollkästchen *Aktivieren* aus, und geben Sie dann einen täglichen oder wöchentlichen Zeitplan an.
++
+** * Daily*
++
+Wenn Sie diese Option auswählen, müssen Sie eine Zeit im 24-Stunden-Format eingeben, um das Backup zu erstellen. Wenn Sie beispielsweise 18:30 angeben, wird täglich um 6:30 Uhr ein Backup erstellt.
+
+** *Wöchentlich*
++
+Wenn Sie diese Option auswählen, müssen Sie die Uhrzeit und den Tag für die Erstellung des Backups angeben. Wenn Sie beispielsweise den Tag als Montag und die Zeit als 16:30 angeben, wird jeden Montag um 4:30 Uhr ein wöchentliches Backup erstellt.
+
+
+
+. Klicken Sie auf *Speichern und Schließen*.
+

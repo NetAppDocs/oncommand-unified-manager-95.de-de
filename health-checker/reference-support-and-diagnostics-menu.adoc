@@ -1,0 +1,22 @@
+---
+permalink: health-checker/reference-support-and-diagnostics-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: Über das Menü Support and Diagnostics können Sie ein Support Bundle erstellen. 
+---
+= Menü „Support und Diagnose“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über das Menü Support and Diagnostics können Sie ein Support Bundle erstellen.
+
+Die folgende Menüoption ist verfügbar:
+
+* * Unterstützungspaket Generieren*
++
+Mit dieser Funktion können Sie eine 7-Zip-Datei mit vollständigen Diagnoseinformationen im Home-Verzeichnis des Diagnosebenutzers erstellen. Die Datei umfasst Informationen, die durch eine AutoSupport Meldung, den Inhalt der Unified Manager Datenbank, detaillierte Daten zu den internen Unified Manager Servern und ausführliche Protokolle, die normalerweise nicht in AutoSupport Meldungen enthalten sind.
+
+

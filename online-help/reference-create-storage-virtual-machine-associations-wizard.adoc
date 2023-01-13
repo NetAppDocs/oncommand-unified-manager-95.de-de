@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-create-storage-virtual-machine-associations-wizard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Mit dem Assistenten „Create Storage Virtual Machine Associations“ können Sie Storage Virtual Machines \(SVMs\) aus Quell- und Ziel-Storage zur Verwendung in SnapMirror und SnapVault Sicherungsbeziehungen zuordnen.' 
+---
+= Assistent zum Erstellen von Storage Virtual Machine-Zuordnungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit dem Assistenten „Create Storage Virtual Machine Associations“ können Sie Storage Virtual Machines (SVMs) aus Quell- und Ziel-Storage zur Verwendung in SnapMirror und SnapVault Sicherungsbeziehungen zuordnen.
+
+
+
+== Wählen Sie Quell-SVM aus
+
+Im Fenster Quell-Storage-Virtual Machine auswählen können Sie die SVM in der SVM-Zuordnung als Quelle oder primäre SVM auswählen.
+
+* * Any*
++
+Ermöglicht Ihnen, eine Zuordnung zwischen einer beliebigen SVM-Quelle zu einem oder mehreren Ziel oder einer sekundären SVM zu erstellen. Das bedeutet, dass alle vorhandenen SVMs, die derzeit Schutz benötigen, sowie alle zukünftig erstellten SVMs der angegebenen Ziel-SVM zugeordnet sind. Beispielsweise könnte es sinnvoll sein, dass Applikationen aus verschiedenen Quellen an verschiedenen Standorten an einem Standort auf einer oder mehreren Ziel-SVM an einem Standort gesichert werden.
+
+* *Single*
++
+Hiermit können Sie eine bestimmte Quell-SVM mit einer oder mehreren Ziel-SVMs verknüpfen. Wenn Sie beispielsweise vielen Clients Storage-Services bereitstellen, deren Daten voneinander getrennt sein müssen, wählen Sie diese Option, um eine bestimmte SVM-Quelle einem bestimmten SVM-Ziel zu zuordnen, das nur diesem Client zugewiesen ist.
+
+* *Keine (Extern)*
++
+Damit lässt sich eine Verknüpfung zwischen einer Quell-SVM und einem externen, flexiblen Volume einer Ziel-SVM erstellen.
+
++
+** Storage Virtual Machine
++
+Führt die Namen der verfügbaren Quell-SVMs auf
+
+** Cluster
++
+Listet die Cluster auf, auf denen sich die SVM befindet
+
+
+
+* *Erlauben Sie solche Beziehungen*
++
+Ermöglicht Ihnen die Auswahl des Beziehungstyps für die Zuordnung:
+
++
+** SnapMirror
++
+Gibt eine SnapMirror-Beziehung als Zuordnungstyp an. Wenn Sie diese Option auswählen, wird die Datenreplikation von den ausgewählten Quellen zu den ausgewählten Zielen aktiviert.
+
+** SnapVault
++
+Gibt eine SnapVault-Beziehung als Zuordnungstyp an. Wenn Sie diese Option auswählen, werden Backups von den ausgewählten primären Standorten zu den ausgewählten sekundären Standorten aktiviert.
+
+
+
+
+
+
+
+== Wählen Sie Schutzziele
+
+Im Fenster Schutzziele auswählen des Assistenten zum Erstellen von Storage-VM-Zuordnungen können Sie auswählen, wo die Daten kopiert oder repliziert werden sollen. Sie können eine Zuordnung nur auf einer Ziel-SVM pro Cluster erstellen.
+
+
+
+== Befehlsschaltflächen
+
+Mit den Schaltflächen können Sie die folgenden Aufgaben ausführen:
+
+* *Weiter*
++
+Sie gelangen zur nächsten Seite des Assistenten.
+
+* *Zurück*
++
+Kehrt zur vorherigen Seite des Assistenten zurück.
+
+* *Fertig*
++
+Wendet Ihre Auswahl an und erstellt die Verknüpfung.
+
+* *Abbrechen*
++
+Schließt die Auswahl aus und schließt den Assistenten zum Erstellen von Storage-VM-Zuordnungen.
+
+

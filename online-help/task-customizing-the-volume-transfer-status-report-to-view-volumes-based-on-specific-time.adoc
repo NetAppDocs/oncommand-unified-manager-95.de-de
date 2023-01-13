@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-volumes-based-on-specific-time.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Sie können den Bericht Volume Transfer Status \(Historical\) anpassen, um die Volume-Details in bestimmten Zeitintervallen anzuzeigen.' 
+---
+= Anpassen des Berichts zum Volume Transfer Status (Historical), um Volumes in bestimmten Zeitintervallen anzuzeigen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Bericht „Volume Transfer Status“ (Historischer Bericht) anpassen, um die Volume-Details in bestimmten Zeitintervallen anzuzeigen.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. Gruppierung nach Cluster entfernen:
++
+.. Klicken Sie in die Spalte, die die Gruppierung aufheben soll.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um die Volume-Details zu einem bestimmten Zeitintervall anzuzeigen, klicken Sie in die Spalte *Startzeit* und klicken Sie dann auf image:../media/click-to-filter.gif[""] Symbol.
+. Klicken Sie im Dialogfeld *Filter* auf *Werte auswählen* und wählen Sie dann das Datum und die Uhrzeit aus der Dropdown-Liste aus.
++
+Die Volume-Details für den ausgewählten Zeitbereich werden angezeigt.
+
+

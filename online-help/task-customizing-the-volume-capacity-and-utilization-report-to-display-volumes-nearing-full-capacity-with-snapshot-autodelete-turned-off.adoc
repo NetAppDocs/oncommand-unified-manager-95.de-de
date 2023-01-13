@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-nearing-full-capacity-with-snapshot-autodelete-turned-off.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können den Volume-Kapazitäts- und Auslastungsbericht anpassen, um Volumes anzuzeigen, die nach einer besseren Anordnung der Volume-Kapazitätsauslastung sortiert sind. So können Sie Volumes anzeigen, die ihre volle Kapazität erreichen. 
+---
+= Anpassen des Volume-Kapazitäts- und Auslastungsberichts zur Anzeige von Volumes, die sich der vollen Kapazität nähern, bei ausgeschaltetem Snapshot Autodelete
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Volume-Kapazitäts- und Auslastungsbericht anpassen, um Volumes anzuzeigen, die nach einer besseren Anordnung der Volume-Kapazitätsauslastung sortiert sind. So können Sie Volumes anzeigen, die ihre volle Kapazität erreichen.
+
+
+
+== Über diese Aufgabe
+
+Sie können diese Aufgabe auch ausführen, indem Sie auf der Seite Berichte auf *Bericht ausführen* für den entsprechenden Bericht klicken.
+
+
+
+== Schritte
+
+. So entfernen Sie die Gruppierung nach SVM, Cluster oder Volume:
++
+.. Klicken Sie in die Spalte, die nicht gruppiert werden muss.
+.. Klicken Sie auf das image:../media/click-to-see-menu.gif[""] Symbol.
+.. Wählen Sie *Gruppe* > *Innengruppe Löschen*.
+
+
+. Um Volumen zu sortieren, die sich der vollen Kapazität nähern, klicken Sie in der Spalte *Tage bis voll* auf, und klicken Sie auf image:../media/sort-asc.gif[""] Symbol.
+. Um Volumen zu filtern, bei denen der Snapshot Autodelete deaktiviert ist, klicken Sie in die Spalte *Snapshot Autodelete* und öffnen Sie das Dialogfeld *Filter*, indem Sie auf klicken image:../media/click-to-filter.gif[""] Symbol.
+. Wählen Sie aus der Liste *Bedingung* die Option *gleich* aus.
+. Klicken Sie auf *Werte auswählen* und wählen Sie *deaktiviert*.
+. Klicken Sie auf *OK*.
+

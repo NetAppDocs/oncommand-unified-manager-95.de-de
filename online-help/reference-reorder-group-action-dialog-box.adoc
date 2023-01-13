@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-reorder-group-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können das Dialogfeld Gruppenaktionen neu anordnen verwenden, um die Reihen einer oder mehrerer Gruppenaktionen zu ändern. Die Position einer Gruppenaktion in der Tabelle bestimmt den Rang für die Gruppenaktion. 
+---
+= Dialogfeld Gruppenaktionen neu anordnen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können das Dialogfeld Gruppenaktionen neu anordnen verwenden, um die Reihen einer oder mehrerer Gruppenaktionen zu ändern. Die Position einer Gruppenaktion in der Tabelle bestimmt den Rang für die Gruppenaktion.
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+* * Rang*
++
+Gibt die Reihenfolge der Gruppenaktion an, die auf Speicherobjekte in einer Gruppe angewendet werden soll.
+
+* *Name*
++
+Gibt den Namen der Gruppenaktion an.
+
+* *Aktionstyp*
++
+Gibt den Aktionstyp an, den Sie auf den Speicherobjekten einer Gruppe ausführen können.
+
+* * Assoziierte Gruppe*
++
+Gibt den Namen der Gruppe an, für die die Gruppenaktionen definiert sind.
+
+

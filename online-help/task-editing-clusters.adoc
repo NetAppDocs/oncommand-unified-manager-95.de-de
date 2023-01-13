@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-editing-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können die Einstellungen eines vorhandenen Clusters, z. B. Host-Name oder IP-Adresse, Benutzername, Passwort, Protokoll und Port, ändern. Über das Dialogfeld Cluster bearbeiten. 
+---
+= Cluster werden bearbeitet
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Einstellungen eines vorhandenen Clusters, z. B. Host-Name oder IP-Adresse, Benutzername, Passwort, Protokoll und Port, ändern. Über das Dialogfeld Cluster bearbeiten.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen die OnCommand-Administratorrolle oder die Speicheradministratorrolle besitzen.
+
+
+
+== Über diese Aufgabe
+
+[NOTE]
+====
+Wenn Sie die IP-Adresse eines Clusters in eine IP-Adresse eines vorhandenen überwachten Clusters ändern, gehen alle Daten des vorhandenen Clusters verloren, wenn das frühere Cluster erkannt wird. Es wird keine Fehlermeldung angezeigt, um Sie zu warnen.
+
+====
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Konfiguration* > *Cluster-Datenquellen*.
+. Wählen Sie auf der Seite *Konfiguration/Cluster-Datenquellen* den Cluster aus, den Sie bearbeiten möchten, und klicken Sie dann auf *Bearbeiten*.
+. Ändern Sie im Dialogfeld *Cluster bearbeiten* die Werte nach Bedarf.
+. Klicken Sie Auf *Absenden*.
+

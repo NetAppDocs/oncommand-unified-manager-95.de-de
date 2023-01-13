@@ -1,0 +1,51 @@
+---
+permalink: online-help/task-adding-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: Im Unified Manager können Skripts hinzugefügt und die Skripte mit Warnmeldungen verknüpft werden. Diese Skripte werden automatisch ausgeführt, wenn eine Warnmeldung generiert wird, und ermöglichen es Ihnen, Informationen über Speicherobjekte zu erhalten, für die das Ereignis generiert wird. 
+---
+= Skripte werden hinzugefügt
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Unified Manager können Skripts hinzugefügt und die Skripte mit Warnmeldungen verknüpft werden. Diese Skripte werden automatisch ausgeführt, wenn eine Warnmeldung generiert wird, und ermöglichen es Ihnen, Informationen über Speicherobjekte zu erhalten, für die das Ereignis generiert wird.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen die Skripte erstellt und gespeichert haben, die Sie dem Unified Manager-Server hinzufügen möchten.
+* Die unterstützten Dateiformate für Skripte sind Perl, Shell, PowerShell und `.bat` Dateien:
++
+** Für Perl-Skripte muss Perl auf dem Unified Manager-Server installiert sein. Wenn Perl nach Unified Manager installiert wurde, müssen Sie den Unified Manager-Server neu starten.
+** Bei PowerShell Skripten muss auf dem Server die entsprechende PowerShell Ausführungsrichtlinie festgelegt werden, damit die Skripte ausgeführt werden können.
+
+
++
+[NOTE]
+====
+Wenn Ihr Skript Protokolldateien erstellt, um den Fortschritt des Warnungsskripts zu verfolgen, müssen Sie sicherstellen, dass die Protokolldateien nicht überall im Unified Manager-Installationsordner erstellt werden.
+
+====
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+
+== Über diese Aufgabe
+
+Sie können benutzerdefinierte Skripts hochladen und Ereignisdetails zu der Meldung erfassen.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im linken Menü Verwaltung auf *Scripts*.
+. Klicken Sie auf der Seite *Management/Scripts* auf *Hinzufügen*.
+. Klicken Sie im Dialogfeld *Skript hinzufügen* auf *Durchsuchen*, um die Skriptdatei auszuwählen.
+. Geben Sie eine Beschreibung für das ausgewählte Skript ein.
+. Klicken Sie Auf *Hinzufügen*.
+

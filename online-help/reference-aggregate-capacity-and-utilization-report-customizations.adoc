@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-aggregate-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Berichte anpassen, um zahlreiche Informationen zu Aggregaten anzuzeigen. 
+---
+= Anpassungen im Bericht zur Kapazität und Auslastung von Aggregaten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Berichte anpassen, um zahlreiche Informationen zu Aggregaten anzuzeigen.

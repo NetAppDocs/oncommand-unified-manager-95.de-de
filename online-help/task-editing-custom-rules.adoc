@@ -1,0 +1,63 @@
+---
+permalink: online-help/task-editing-custom-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können eine Regel bearbeiten, um neue Bedingungen oder Bedingungssätze in die Regel aufzunehmen. Wenn Sie beispielsweise neue Verzeichnispfade zusammen mit den Besitzernamen aufnehmen möchten, können Sie dies im Dialogfeld Regel bearbeiten tun. 
+---
+= Bearbeiten benutzerdefinierter Regeln
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Regel bearbeiten, um neue Bedingungen oder Bedingungssätze in die Regel aufzunehmen. Wenn Sie beispielsweise neue Verzeichnispfade zusammen mit den Besitzernamen aufnehmen möchten, können Sie dies im Dialogfeld Regel bearbeiten tun.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+Die Registerkarte Datenrichtlinie ist nur für eine SVM mit Infinite Volume sichtbar.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Systemzustand* > *SVMs*.
+. Wählen Sie auf der Seite *Health/Storage Virtual Machines* Inventory eine geeignete SVM aus.
+. Klicken Sie Auf *Datenrichtlinie*.
++
+Es wird eine Liste der Regeln in der Datenrichtlinie für die ausgewählte SVM mit Infinite Volume angezeigt.
+
+. Wählen Sie die Regel aus, für die neue Bedingungen oder Bedingungssätze einbezogen werden sollen.
+. Klicken Sie Auf *Bearbeiten*.
+. Fügen Sie im Dialogfeld *Regel bearbeiten* neue Bedingungen oder Bedingungssätze hinzu:
++
+|===
+| Sie möchten Folgendes hinzufügen: | Klicken Sie Auf... 
+
+
+ a| 
+Eine neue Bedingung
+ a| 
+Der image:../media/customrulecreate.gif[""] Symbol.
+
+
+
+ a| 
+Ein neuer Bedingungssatz
+ a| 
+*Bedingungssatz Hinzufügen*.
+
+|===
+. Klicken Sie Auf *Aktualisieren*.
+. Überprüfen Sie, ob Ihre Änderungen auf die Regel angewendet werden, indem Sie die Regel auf der Registerkarte *Datenrichtlinie* erweitern.
+. Vorschau aller anderen Änderungen an der Datenrichtlinie.
+. Klicken Sie auf *Aktivieren*, um die Änderungen in den Regeleigenschaften in der SVM zu aktivieren.
+

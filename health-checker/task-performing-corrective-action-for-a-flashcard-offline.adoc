@@ -1,0 +1,67 @@
+---
+permalink: health-checker/task-performing-corrective-action-for-a-flashcard-offline.html 
+sidebar: sidebar 
+keywords:  
+summary: Nachdem Sie die Beschreibung im Feld Ursache der Seite mit den Details zu Offline-Ereignissen der Flash-Karte überprüft haben, können Sie nach zusätzlichen Informationen suchen, die bei der Behebung des Problems hilfreich sind. 
+---
+= Durchführen der Korrekturmaßnahme für eine Flash-Karte offline
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nachdem Sie die Beschreibung im Feld Ursache der Seite mit den Details zu Offline-Ereignissen der Flash-Karte überprüft haben, können Sie nach zusätzlichen Informationen suchen, die bei der Behebung des Problems hilfreich sind.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+
+
+
+== Über diese Aufgabe
+
+In diesem Beispielszenario enthält die Ereignisübersicht auf der Seite Ereignisdetails die folgenden Informationen über den Zustand der Offline-Flash-Karte:
+
+[listing]
+----
+Severity: Critical
+State: New
+Impact Level: Incident
+Impact Area: Availability
+Source: alpha-node
+Source Type: Node
+Acknowledged By:
+Resolved By:
+Assigned To:
+Cause: Flash cards at slot numbers 3 are offline.
+Alert Settings:
+----
+Die Ereignisinformationen geben an, dass die in Steckplatz 3 im Cluster-Node mit dem Namen „`alpha-Node`“ installierte Flash-Karte offline ist.
+
+Die Informationen lokalisieren die Offline-Bedingung der Flash-Karte zu einem bestimmten Steckplatz auf einem bestimmten Cluster-Node, schlagen jedoch keinen Grund vor, dass die Flash-Karte offline ist.
+
+
+
+== Schritte
+
+. Um weitere Informationen zu erhalten, die Ihnen bei der Diagnose des Offline-Zustands der Flash-Karte helfen könnten, können Sie auf den Namen der Quelle des Ereignisses klicken.
++
+In diesem Beispiel ist die Quelle des Ereignisses der Cluster-Node „`alpha-Node`“. Wenn Sie auf den Node-Namen klicken, werden auf der Registerkarte Nodes auf der Seite Systemzustand/Cluster-Details der betroffenen Cluster die HA-Details angezeigt. In den angezeigten HA-Details werden Informationen über das HA-Paar angezeigt, zu dem der Node gehört.
+
++
+In diesem Beispiel werden die relevanten Informationen in der Zusammenfassungstabelle für Ereignisse auf den HA-Details aufgeführt. Die Tabelle gibt das Offline-Ereignis der Flash-Karte, die Uhrzeit der Generierung des Ereignisses und auch den Cluster-Node an, von dem dieses Ereignis stammt.
+
+. Greifen Sie über die ONTAP CLI oder den OnCommand System Manager auf die EMS-Protokolle (Event Manager System) für den betroffenen Cluster zu.
++
+In diesem Beispiel verwenden Sie den Ereignisnamen, die Ereigniszeit und die Ereignisquelle, um den EMS-Bericht zu diesem Ereignis zu finden. Der EMS-Bericht über das Ereignis enthält eine detaillierte Beschreibung des Ereignisses und häufig Hinweise zur Behebung des durch das Ereignis angegebenen Zustands.
+
+
+
+
+
+== Nachdem Sie fertig sind
+
+Nach der Diagnose des Problems wenden Sie sich an den entsprechenden Administrator oder Operator, um die erforderlichen manuellen Schritte auszuführen, um die Flash-Karte wieder online zu schalten.

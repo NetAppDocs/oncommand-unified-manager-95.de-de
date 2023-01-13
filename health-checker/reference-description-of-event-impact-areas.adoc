@@ -1,0 +1,36 @@
+---
+permalink: health-checker/reference-description-of-event-impact-areas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Die Ereignisse werden in fünf Wirkungsbereiche \ (Verfügbarkeit, Kapazität, Konfiguration, Performance und Schutz\) unterteilt, damit Sie sich auf die Arten von Ereignissen konzentrieren können, für die Sie verantwortlich sind.' 
+---
+= Beschreibung der Bereiche für Ereignisauswirkungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Ereignisse werden in fünf Bereiche mit Auswirkungen (Verfügbarkeit, Kapazität, Konfiguration, Leistung und Schutz) unterteilt, damit Sie sich auf die Arten von Ereignissen konzentrieren können, für die Sie verantwortlich sind.
+
+* *Verfügbarkeit*
++
+Verfügbarkeitsereignisse melden Sie, wenn ein Storage-Objekt offline geschaltet wird, wenn ein Protokollservice ausfällt, ein Problem mit dem Storage Failover auftritt oder wenn ein Problem mit der Hardware auftritt.
+
+* * Kapazität*
++
+Kapazitätsereignisse benachrichtigen Sie, wenn sich Ihre Aggregate, Volumes, LUNs oder Namespaces nähern oder einen Größenschwellenwert erreicht haben oder die Wachstumsrate für Ihre Umgebung ungewöhnlich ist.
+
+* *Konfiguration*
++
+Konfigurationsereignisse informieren Sie über die Erkennung, das Löschen, das Hinzufügen, das Entfernen oder Umbenennen Ihrer Storage-Objekte. Konfigurationsereignisse haben eine Auswirkung auf das Ereignis und einen Schweregrad der Informationen.
+
+* *Leistung*
++
+Bei Performance-Ereignissen werden Sie über Ressourcen, Konfigurationen oder Aktivitätsbedingungen auf dem Cluster informiert, die negative Auswirkungen auf die Geschwindigkeit der Eingabe oder den Abruf von Daten-Storage für Ihre überwachten Storage-Objekte haben können.
+
+* *Schutz*
++
+Schutzereignisse benachrichtigen Sie über Vorfälle oder Risiken im Zusammenhang mit SnapMirror Beziehungen, Probleme mit Zielkapazität, Probleme mit SnapVault Beziehungen oder Probleme mit Sicherungsaufgaben. Alle ONTAP Objekte (insbesondere Aggregate, Volumes und SVMs), die sekundäre Volumes und Sicherungsbeziehungen hosten, werden im Bereich der Sicherungsauswirkungen kategorisiert.
+
+

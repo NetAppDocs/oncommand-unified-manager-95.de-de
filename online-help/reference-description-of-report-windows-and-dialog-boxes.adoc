@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-report-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit den Optionen können Sie die Berichte planen, freigeben, verwalten, speichern und importieren. 
+---
+= Beschreibung der Berichtsfenster und Dialogfelder
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit den Optionen können Sie die Berichte planen, freigeben, verwalten, speichern und importieren.

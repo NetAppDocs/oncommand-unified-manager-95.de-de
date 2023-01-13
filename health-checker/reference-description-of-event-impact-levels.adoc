@@ -1,0 +1,28 @@
+---
+permalink: health-checker/reference-description-of-event-impact-levels.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Jedes Ereignis ist mit einem Impact Level \ (Vorfall, Risiko oder Ereignis\) verknüpft, um Ihnen dabei zu helfen, Ereignisse zu priorisieren, für die eine sofortige Korrektur erforderlich ist.' 
+---
+= Beschreibung der Level der Ereignisauswirkungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Jedes Ereignis ist mit einer Folgenabstufe (Vorfall, Risiko oder Ereignis) verbunden, um Ihnen bei der Priorisierung von Ereignissen zu helfen, für die sofortige Korrekturmaßnahmen erforderlich sind.
+
+* *Vorfall*
++
+Ein Vorfall ist eine Reihe von Ereignissen, die dazu führen können, dass ein Cluster keine Daten mehr für den Client bereitstellt, und nicht mehr genügend Speicherplatz zum Speichern von Daten vorhanden ist. Ereignisse mit Auswirkungen auf den Vorfall sind am schwersten. Um Serviceunterbrechungen zu vermeiden, sollten sofortige Korrekturmaßnahmen ergriffen werden.
+
+* *Risiko*
++
+Ein Risiko ist eine Reihe von Ereignissen, die dazu führen können, dass ein Cluster nicht mehr Daten für den Client bereitstellt, und nicht mehr genügend Speicherplatz zum Speichern von Daten vorhanden ist. Ereignisse mit Risikoeinwirkung können zu Serviceunterbrechungen führen. Möglicherweise ist eine Korrekturmaßnahme erforderlich.
+
+* *Veranstaltung*
++
+Ein Ereignis ist eine Statusänderung von Storage-Objekten und ihren Attributen. Ereignisse mit Auswirkungen auf das Ereignis dienen zur Information und erfordern keine Korrekturmaßnahmen.
+
+

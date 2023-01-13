@@ -1,0 +1,157 @@
+---
+permalink: online-help/reference-volume-data-protection-configuration-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Im Bericht zur Konfiguration der Volume-Datensicherung können Sie die ungesicherten Volumes und Storage Virtual Machines \(SVMs\) anzeigen, die in einem Node oder Cluster verwendet werden. Diese Informationen geben Ihnen einen Überblick über die Datensicherungsrisiken für Ihr System und zeigen die Details der geschützten Volumes und ungeschützten Volumes in Ihrem System an.' 
+---
+= Bericht zur Konfiguration der Volume-Datensicherung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der Bericht zur Konfiguration der Volume-Datensicherung ermöglicht Ihnen, die ungesicherten Volumes und Storage Virtual Machines (SVMs) anzuzeigen, die in einem Node oder Cluster verwendet werden. Diese Informationen geben Ihnen einen Überblick über die Datensicherungsrisiken für Ihr System und zeigen die Details der geschützten Volumes und ungeschützten Volumes in Ihrem System an.
+
+Der Bericht Volume Data Protection Configuration wird in zwei Formaten angezeigt:
+
+* Diagramm „geschützte und ungesicherte Volumes“
+* Tabellarische Ansicht der ungeschützten Volume-Daten
+
+
+
+
+== Diagramm „geschützte und ungesicherte Volumes“
+
+Zeigt den relativen Prozentsatz der geschützten Volumes und der ungesicherten Volumes im System an.
+
+
+
+== Tabellarische Ansicht der ungeschützten Volume-Daten
+
+* * Cluster*
++
+Zeigt den Cluster-Namen an.
+
+* *Storage Virtual Machine*
++
+Zeigt den Namen der Storage Virtual Machine (SVM) an, die das Volume enthält.
+
+* *Lautstärke*
++
+Zeigt den Namen des Volumes an.
+
+* *Datenkapazität (GB)*
++
+Zeigt die Gesamtkapazität (genutzt plus verfügbar) in GB an.
+
+* *Genutzte Datenkapazität (GB)*
++
+Zeigt die genutzte Datenkapazität (in GB) an.
+
+* *Verwendete Daten %*
++
+Zeigt die genutzte Datenkapazität als Prozentsatz an.
+
+* *Verfügbare Datenkapazität (GB)*
++
+Zeigt die verfügbare Datenkapazität (in GB) an.
+
+* * Verfügbare Daten %*
++
+Zeigt die verfügbare Datenkapazität als Prozentsatz an.
+
+* *Verwendete Snapshot-Reserve Kapazität (GB)*
++
+Zeigt die Menge an Speicherplatz an, die von Snapshot Kopien aus der Snapshot Reserve (in GB) verwendet wird.
+
+* *Snapshot Reserve Verwendet %*
++
+Zeigt die Menge an Speicherplatz an, die von Snapshot Kopien aus der Snapshot Reserve als Prozentsatz verwendet wird.
+
+* *Snapshot Reserve verfügbare Kapazität (GB)*
++
+Zeigt die Menge an Speicherplatz an, die für Snapshot Kopien verfügbar ist (in GB).
+
+* *Snapshot Reserve Verfügbar %*
++
+Zeigt die Menge an Speicherplatz an, die in Prozent für Snapshot Kopien verfügbar ist.
+
+* *Snapshot Reserve Gesamtkapazität (GB)*
++
+Zeigt die Gesamtkapazität der Snapshot-Reserve des Aggregats (in GB) an.
+
+* *Tage Bis Voll*
++
+Zeigt die geschätzte Anzahl der verbleibenden Tage an, bevor die volle Kapazität des Aggregats erreicht ist.
+
+* *Space Full Threshold %*
++
+Zeigt den Prozentsatz an, bei dem ein Aggregat voll ist.
+
+* *Space Fast Voll Schwellenwert %*
++
+Zeigt den Prozentsatz an, bei dem ein Aggregat fast voll ist.
+
+* * Tägliche Zuwachsrate %*
++
+Zeigt die Wachstumsrate an, die alle 24 Stunden im Volumen stattfindet.
+
+* *Gesamtanzahl Der Inodes*
++
+Zeigt die Gesamtanzahl der Inodes im Volume an.
+
+* * Auslastung Des Ikens*
++
+Gibt den Inode-Speicherplatz an, der im Volume verwendet wird.
+
+* *Quote Zugesagt Kapazität*
++
+Zeigt den Speicherplatz an, der in den Volumes reserviert ist.
+
+* *Quote überzuviel Kapazität (GB)*
++
+Zeigt den Speicherplatz an, der verwendet werden kann (in GB), bevor das System das Ereignis Volume Quota Overmited generiert.
+
+* *Snapshot Autodelete*
++
+Zeigt an, ob das automatische Löschen von Snapshot Kopien aktiviert oder deaktiviert ist.
+
+* *Deduplizierung*
++
+Zeigt an, ob die Deduplizierung für das Volume aktiviert oder deaktiviert ist.
+
+* *Deduplizierungseinsparungen (GB)*
++
+Zeigt die Menge an Speicherplatz an, die in einem Volume mithilfe der Deduplizierung eingespart wird (in GB).
+
+* *Komprimierung*
++
+Zeigt an, ob die Komprimierung für das Volume aktiviert oder deaktiviert ist.
+
+* *Komprimierung Raumeinsparungen (GB)*
++
+Zeigt die Menge an Speicherplatz an, die durch Komprimierung (in GB) in einem Volume gespeichert wird.
+
+* *Thin Provisioning*
++
+Zeigt an, ob die Platzgarantie für das ausgewählte Volume festgelegt ist. Gültige Werte sind Ja und Nein
+
+* *Autogrow*
++
+Zeigt an, ob das FlexVol-Volume automatisch wächst, wenn es über keinen freien Speicherplatz verfügt.
+
+* * Raumgarantie*
++
+Zeigt die FlexVol-Lautstärkeregelung an, wenn ein Volume freie Blöcke aus einem Aggregat entfernt.
+
+* *Bundesland*
++
+Zeigt den Status des Volumes an, das exportiert wird.
+
+* *SnapLock Typ*
++
+Gibt an, ob es sich um ein SnapLock- oder ein nicht-SnapLock-Volume handelt.
+
+* *Ablaufdatum*
+

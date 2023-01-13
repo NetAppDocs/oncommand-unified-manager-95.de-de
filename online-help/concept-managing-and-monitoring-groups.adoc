@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Gruppen in Unified Manager erstellen, um Storage-Objekte zu managen. 
+---
+= Verwalten und Überwachen von Gruppen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Gruppen in Unified Manager erstellen, um Storage-Objekte zu managen.

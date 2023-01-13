@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-certain-special-characters-do-not-work-with-reporting-search.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Bestimmte Sonderzeichen funktionieren nicht mit der Berichtssuche
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *Ausgabe*
++
+Die Verwendung der Sonderzeichen % und _ bei der Suche in einem Bericht führt zu einem Fehlschlagen des Vorgangs.
+
+* *Korrekturmaßnahmen*
++
+Wenn Sie nach einer Zeichenfolge suchen, die % oder _ enthält, sollten Sie vor dem angegebenen Zeichen einen Doppelschrägstrich verwenden.
+
++
+Um beispielsweise einen String mit S_10 zu finden, müssen Sie S\\_10 eingeben.
+
+

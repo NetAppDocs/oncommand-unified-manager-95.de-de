@@ -1,0 +1,111 @@
+---
+permalink: install/concept-virtual-infrastructure-or-hardware-system-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: Je nachdem, ob Sie Unified Manager auf einer virtuellen Infrastruktur oder auf einem physischen System installieren, müssen Sie die Mindestanforderungen an Arbeitsspeicher, CPU und Festplattenspeicher erfüllen. 
+---
+= Systemanforderungen für virtuelle Infrastruktur und Hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Je nachdem, ob Sie Unified Manager auf einer virtuellen Infrastruktur oder auf einem physischen System installieren, müssen Sie die Mindestanforderungen an Arbeitsspeicher, CPU und Festplattenspeicher erfüllen.
+
+In der folgenden Tabelle werden die Werte angezeigt, die für Speicher-, CPU- und Festplattenspeicherressourcen empfohlen werden. Diese Werte wurden so qualifiziert, dass Unified Manager die akzeptablen Leistungsniveaus erfüllt.
+
+|===
+| Hardwarekonfiguration | Empfohlene Einstellungen 
+
+
+ a| 
+RAM
+ a| 
+12 GB (Mindestanforderung 8 GB)
+
+
+
+ a| 
+Prozessoren
+ a| 
+4 CPUs
+
+
+
+ a| 
+CPU-Zykluskapazität
+ a| 
+9572 MHz insgesamt (Mindestanforderung 9572 MHz)
+
+
+
+ a| 
+Freier Speicherplatz
+ a| 
+VMware:
+
+* 5 GB (Thin Provisioning)
+* 152 GB (Thick Provisioning)
+
+
+
+
+ a| 
+Red hat oder CentOS: 150 GB, wobei die Kapazität wie folgt zugewiesen wird:
+
+* 50 GB der Root-Partition zugewiesen
+* 100 GB freier Speicherplatz, der dem zugewiesen ist `/opt/netapp/data` Verzeichnis, das auf einem LVM-Laufwerk oder auf einer separaten lokalen Festplatte installiert ist, die an das Zielsystem angeschlossen ist
+
+
+[NOTE]
+====
+Der `/tmp` Das Verzeichnis sollte mindestens 10 GB freien Speicherplatz und das haben `/var/log` Das Verzeichnis sollte mindestens 16 GB freien Speicherplatz haben.
+
+==== a| 
+Windows: 150 GB, wobei die Kapazität wie folgt zugewiesen wird:
+
+* 100 GB Festplattenspeicher für das Installationsverzeichnis
+* 50 GB Festplattenspeicher für das MySQL-Datenverzeichnis
+
+
+|===
+Unified Manager kann auf Systemen mit wenig Arbeitsspeicher installiert werden. Die empfohlenen 12 GB RAM sorgen jedoch dafür, dass genügend Arbeitsspeicher für eine optimale Leistung zur Verfügung steht und dass das System bei wachsender Konfiguration zusätzliche Cluster und Speicherobjekte aufnehmen kann. Sie dürfen der VM, wo Unified Manager eingesetzt wird, keine Speicherbeschränkungen mehr festlegen und müssen keine Funktionen (z. B. Ballooning) aktivieren, was die Software daran hindert, den im System zugewiesenen Speicher zu nutzen.
+
+Darüber hinaus ist die Anzahl der Nodes begrenzt, die eine einzelne Instanz von Unified Manager überwachen kann, bevor Sie eine zweite Instanz von Unified Manager installieren müssen. Weitere Informationen finden Sie im _Best Practices Guide_.
+
+http://www.netapp.com/us/media/tr-4621.pdf["Technischer Bericht 4621: Unified Manager Best Practices Guide"]
+
+Das Speicher-Page-Swapping beeinträchtigt die Leistung des Systems und der Verwaltungsanwendung negativ. Konkurrenzfähigkeit gegenüber CPU-Ressourcen, die aufgrund der gesamten Host-Auslastung nicht verfügbar sind, kann die Performance beeinträchtigen.
+
+
+
+== Dedizierte Nutzungsanforderungen
+
+Das physische oder virtuelle System, auf dem Sie Unified Manager installieren, muss ausschließlich für Unified Manager verwendet werden und darf nicht mit anderen Applikationen gemeinsam genutzt werden. Andere Applikationen nutzen unter Umständen Systemressourcen und können die Performance von Unified Manager deutlich verringern.
+
+
+
+== Speicherplatzanforderungen für Backups
+
+Wenn Sie die Backup- und Restore-Funktion von Unified Manager nutzen möchten, müssen Sie zusätzliche Kapazität zuweisen, damit das Verzeichnis „`data`“ oder die Festplatte 150 GB Speicherplatz hat. Ein Backup kann auf ein lokales Ziel oder ein Remote-Ziel geschrieben werden. Als Best Practice empfiehlt es sich, einen Remote-Standort außerhalb des Unified Manager-Hostsystems zu identifizieren, der über mindestens 150 GB Speicherplatz verfügt.
+
+
+
+== Anforderungen für die Host-Konnektivität
+
+Das physische System oder das virtuelle System, auf dem Sie Unified Manager installieren, müssen so konfiguriert werden, dass es erfolgreich sein kann `ping` Der Hostname des Hosts selbst. Bei einer IPv6-Konfiguration sollten Sie dies überprüfen `ping6` Für den Host-Namen ist erfolgreich, um sicherzustellen, dass die Unified Manager-Installation erfolgreich ist.
+
+Sie können den Hostnamen (oder die Host-IP-Adresse) verwenden, um auf die Web-Benutzeroberfläche des Produkts zuzugreifen. Wenn Sie während der Bereitstellung eine statische IP-Adresse für Ihr Netzwerk konfiguriert haben, haben Sie einen Namen für den Netzwerk-Host festgelegt. Wenn Sie das Netzwerk mit DHCP konfiguriert haben, sollten Sie den Hostnamen vom DNS beziehen.
+
+Wenn Sie Benutzern den Zugriff auf Unified Manager über den Kurznamen erlauben möchten, anstatt den vollständig qualifizierten Domänennamen (FQDN) oder die IP-Adresse zu verwenden, muss die Netzwerkkonfiguration diesen Kurznamen einem gültigen FQDN auflösen.
+
+
+
+== Angehängt `/opt/netapp` Oder `/opt/netapp/data` Anforderungen
+
+Die Montage ist möglich `/opt/netapp` Oder `/opt/netapp/data` Auf einem NAS- oder SAN-Gerät. Beachten Sie, dass die Verwendung von Remote-Bereitstellungspunkten zu Skalierungsproblemen führen kann. Wenn Sie einen Remote-Mount-Punkt verwenden, stellen Sie sicher, dass Ihr SAN- oder NAS-Netzwerk über genügend Kapazität verfügt, um die I/O-Anforderungen von Unified Manager zu erfüllen. Die Kapazität variiert und kann sich je nach Anzahl der von Ihnen überwachten Cluster und Storage-Objekte erhöhen.
+
+Wenn Sie angehängt sind `/opt/netapp` Oder `/opt/netapp/data` Von überall dort, wo das Root-Dateisystem und SELinux in Ihrer Umgebung aktiviert sind, müssen Sie den richtigen Kontext für die gemounteten Verzeichnisse festlegen.
+
+Siehe Thema xref:task-selinux-requirements-for-mounting-opt-netapp-or-opt-netapp-data-on-an-nfs-or-cifs-share.adoc[SELinux Anforderungen zum Mounten von /opt/netapp oder /opt/netapp/Daten auf einer NFS- oder CIFS-Freigabe] Weitere Informationen zum Festlegen des richtigen SELinux-Kontexts.

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-groups-of-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Storage-Objekte in Ihrer Umgebung managen, indem Sie Gruppen von Storage-Objekten erstellen. Diese Speicherobjekte müssen die Gruppenregeln erfüllen, die der Gruppe zugeordnet sind. 
+---
+= Verwalten von Gruppen von Storage-Objekten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Storage-Objekte in Ihrer Umgebung managen, indem Sie Gruppen von Storage-Objekten erstellen. Diese Speicherobjekte müssen die Gruppenregeln erfüllen, die der Gruppe zugeordnet sind.

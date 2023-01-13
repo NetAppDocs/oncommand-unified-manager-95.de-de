@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-cluster-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Inventarberichte anpassen, um zu überwachen, ob für Clusterkomponenten unzureichende Ressourcen vorhanden sind. Beispielsweise können Sie Berichte so anpassen, dass Informationen wie Cluster, die sich der SVM-Anzahl nähern, Nodes, die ältere Versionen von ONTAP ausführen, und Nodes, die das maximale Limit für Festplatten erreichen, überwacht werden. 
+---
+= Anpassungen für Cluster Inventory Report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Inventarberichte anpassen, um zu überwachen, ob für Clusterkomponenten unzureichende Ressourcen vorhanden sind. Beispielsweise können Sie Berichte so anpassen, dass Informationen wie Cluster, die sich der SVM-Anzahl nähern, Nodes, die ältere Versionen von ONTAP ausführen, und Nodes, die das maximale Limit für Festplatten erreichen, überwacht werden.

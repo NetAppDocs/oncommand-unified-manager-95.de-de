@@ -1,0 +1,44 @@
+---
+permalink: install/task-configuring-existing-unified-manager-setup-to-high-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können Ihre vorhandene Unified Manager Installation aktualisieren und Ihre Setup-Umgebung auf hohe Verfügbarkeit konfigurieren. 
+---
+= Aktualisierung einer vorhandenen Unified Manager-Einrichtung für hohe Verfügbarkeit
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Ihre vorhandene Unified Manager Installation aktualisieren und Ihre Setup-Umgebung auf hohe Verfügbarkeit konfigurieren.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen ein Backup- und Support-Bundle Ihrer vorhandenen Daten erstellt haben.
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Sie müssen dem Cluster einen zweiten Knoten hinzugefügt und Veritas Cluster Server (VCS) auf dem zweiten Knoten installiert haben.
++
+Siehe _Veritas Cluster Server 6.2.1 Installation Guide_.
+
+* Der neu hinzugefügte Node muss konfiguriert werden, um auf denselben freigegebenen Speicherort wie den des bestehenden Nodes im Hochverfügbarkeitsaufbau zuzugreifen.
+
+
+
+
+== Schritte
+
+. Melden Sie sich bei dem neuen Node des Clusters an.
+. Installation von Unified Manager auf dem Knoten
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Installation von Unified Manager unter Red hat Enterprise Linux oder CentOS]
+
+. Konfigurieren Sie den Unified Manager-Server mithilfe von Konfigurationsskripten auf dem bestehenden Node mit Daten.
+. Initiieren Sie ein manuelles Failover auf den zweiten Node.
+. Führen Sie die aus `perl ha_setup.pl --join -t vcs -f``mount_path` Befehl auf dem zweiten Node des Clusters, sodass der Unified Manager Server Daten auf die Shared LUN verweist.
+. Wenn OnCommand Workflow Automation (WFA) für Unified Manager konfiguriert ist, deaktivieren Sie die WFA Verbindung und konfigurieren Sie sie dann neu.
+. Wenn SnapProtect mit Unified Manager konfiguriert ist, konfigurieren Sie SnapProtect mit einer neuen Cluster-IP-Adresse und den vorhandenen Storage-Richtlinien neu.
+. Generieren Sie die benutzerdefinierten Berichte erneut, und fügen Sie diese Berichte mit der neuen Cluster-IP-Adresse zu Unified Manager hinzu.
+

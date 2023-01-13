@@ -1,0 +1,59 @@
+---
+permalink: performance-checker/task-responding-to-a-performance-incident-caused-by-a-disk-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: Mit Unified Manager können Sie ein Performance-Ereignis untersuchen, das durch die Überprovisionierung eines Aggregats verursacht wird. Sie können auch Unified Manager verwenden, um den Systemzustand des Aggregats zu überprüfen, um zu ermitteln, ob kürzlich auf dem Aggregat erkannte Systemzustandsereignisse zum Performance-Ereignis beigetragen haben. 
+---
+= Reaktion auf ein dynamisches Performance-Ereignis aufgrund eines Festplattenausfalls
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit Unified Manager können Sie ein Performance-Ereignis untersuchen, das durch die Überprovisionierung eines Aggregats verursacht wird. Sie können auch Unified Manager verwenden, um den Systemzustand des Aggregats zu überprüfen, um zu ermitteln, ob kürzlich auf dem Aggregat erkannte Systemzustandsereignisse zum Performance-Ereignis beigetragen haben.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „Operator“, „OnCommand Administrator“ oder „Storage Administrator“ verfügen.
+* Es müssen neue, anerkannte oder veraltete Ereignisse für die Leistung vorliegen.
+
+
+
+
+== Schritte
+
+. Rufen Sie die Seite *Ereignisdetails* auf, um Informationen über das Ereignis anzuzeigen.
+. Lesen Sie die *Description*, die die Workloads beschreibt, die an dem Ereignis beteiligt sind, und die Clusterkomponente, die mit einem Konflikt verbunden ist.
++
+Es gibt mehrere Opfer-Volumes, deren Latenz von der Cluster-Komponente mit Konflikten beeinträchtigt wurde. Das Aggregat, das sich in der Mitte eines RAID-Rekonstruktionss befindet, um die ausgefallene Festplatte durch eine Ersatzfestplatte zu ersetzen, ist die Clusterkomponente. Unter „Komponente in Konflikt“ ist das Aggregat-Symbol rot hervorgehoben und der Name des Aggregats wird in Klammern angezeigt.
+
+. Wählen Sie im Diagramm Workload-Auslastung die Option *Bully Workloads* aus.
+. Bewegen Sie den Mauszeiger über das Diagramm, um die obersten Workloads anzuzeigen, die sich auf die Komponente auswirken.
++
+Die wichtigsten Workloads mit der höchsten Spitzenauslastung seit dem Erkennen des Ereignisses werden oben in der Tabelle angezeigt. Einer der wichtigsten Workloads ist der durch das System definierte Workload Disk Health, der auf eine RAID-Rekonstruktion hinweist. Eine Rekonstruktion ist der interne Prozess zur Wiederherstellung des Aggregats mit der freien Platte. Der Disk Health Workload und die anderen Workloads im Aggregat verursachten wahrscheinlich die Konflikte im Aggregat und das zugehörige Ereignis.
+
+. Nachdem Sie bestätigt haben, dass die Aktivitäten des Festplatten-Status-Workloads das Ereignis verursacht haben, warten Sie ca. 30 Minuten, bis die Rekonstruktion abgeschlossen ist, und warten Sie, bis Unified Manager das Ereignis analysiert und erkennt, ob es noch im Aggregat zu Konflikten kommt.
+. Suchen Sie in Unified Manager nach der Ereignis-ID, die Sie in Schritt 2 aufgezeichnet haben.
++
+Das Ereignis für den Festplattenausfall wird auf der Seite „Ereignisdetails“ angezeigt. Überprüfen Sie nach Abschluss der RAID-Rekonstruktion, ob der Status veraltet ist, und geben Sie an, dass das Ereignis behoben ist.
+
+. Wählen Sie im Workload-Auslastungsdiagramm *Bully Workloads* aus, um die Workloads auf dem Aggregat nach Spitzenauslastung zu sehen.
+. Navigieren Sie zur Seite *Performance/Volume Details* für den Top Workload.
+. Klicken Sie auf *1d*, um die letzten 24 Stunden (1 Tag) der Daten für das ausgewählte Volumen anzuzeigen.
++
+Im Latenzdiagramm ist ein roter Punkt (image:../media/opm-incident-icon-png.gif["Symbol für den Vorfall im Performance Manager"]) Gibt an, wann das Ereignis des Festplattenfehlers aufgetreten ist.
+
+. Wählen Sie *Aufbruchdaten nach* aus.
+. Wählen Sie unter *Components* die Option ***Disk Utiation***.
+. Klicken Sie Auf *Absenden*.
++
+Das Diagramm zur Festplattenauslastung zeigt ein Diagramm aller Lese- und Schreibanforderungen vom ausgewählten Workload bis zu den Festplatten des Zielaggregats an.
+
+. Vergleichen Sie die Daten im Diagramm *Disk Utiation* mit den Daten zum Zeitpunkt des Ereignisses im Diagramm *Latenz*.
++
+Zum Zeitpunkt des Ereignisses zeigt die Plattenauslastung einen hohen Anteil an Lese- und Schreibvorgängen durch die RAID-Rekonstruktionsprozesse an, was die Latenz des ausgewählten Volumes erhöht. Einige Stunden nach dem Ereignis waren sowohl die Lese- als auch die Schreibvorgänge sowie die Latenz gesunken, sodass die Konflikte zwischen dem Aggregat nicht mehr bestehen.
+
+

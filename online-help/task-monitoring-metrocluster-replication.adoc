@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-monitoring-metrocluster-replication.html 
+sidebar: sidebar 
+keywords: MetroCluster Replication,Mirroring 
+summary: Sie können den allgemeinen Zustand der logischen Verbindungen überwachen und diagnostizieren, während Sie gleichzeitig die Daten spiegeln. Sie können die Probleme oder Risiken identifizieren, die die Spiegelung von Cluster-Komponenten wie Aggregaten, Nodes und Storage Virtual Machines unterbrechen. 
+---
+= Monitoring der MetroCluster Replizierung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den allgemeinen Zustand der logischen Verbindungen überwachen und diagnostizieren, während Sie gleichzeitig die Daten spiegeln. Sie können die Probleme oder Risiken identifizieren, die die Spiegelung von Cluster-Komponenten wie Aggregaten, Nodes und Storage Virtual Machines unterbrechen.
+
+
+
+== Bevor Sie beginnen
+
+Der lokale und der Remote-Cluster in der MetroCluster Konfiguration müssen Unified Manager hinzugefügt werden
+
+
+
+== Über diese Aufgabe
+
+Sie können die auf der Seite „Systemzustand/Cluster-Details“ angezeigten Informationen verwenden, um alle Replikationsprobleme zu beheben.
+
+Wenn Sie den Mauszeiger über das Symbol bewegen, können Sie detaillierte Informationen zum generierten Ereignis anzeigen.
+
+Unified Manager überwacht mit Systemzustandsmeldungen den Status der Komponenten und die Konnektivität in der MetroCluster-Konfiguration.
+
+
+
+== Schritte
+
+. Klicken Sie im linken Navigationsbereich auf *Gesundheit* > *Cluster*.
++
+Eine Liste der überwachten Cluster wird angezeigt.
+
+. Klicken Sie auf der Seite *Systemzustand/Cluster* Inventory auf den Namen des Clusters, für den Sie MetroCluster-Replikationsdetails anzeigen möchten, und klicken Sie dann auf die Registerkarte *MetroCluster-Replikation*.
++
+Die Topologie der zu replizierenden MetroCluster Konfiguration wird am lokalen Standort im entsprechenden Cluster-Objektbereich mit den Informationen zum Remote-Standort angezeigt, an dem die Daten gespiegelt werden.
+
+
+
+
+
+== Nachdem Sie fertig sind
+
+Wenn Sie Spiegelungsprobleme in Ihrer MetroCluster Konfiguration feststellen, müssen Sie sich bei System Manager einloggen oder auf die ONTAP CLI zugreifen, um die Probleme zu beheben.

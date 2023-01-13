@@ -1,0 +1,61 @@
+---
+permalink: online-help/task-reversing-protection-relationships-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Wenn ein Notfall das Quellvolume in Ihrer Schutzbeziehung deaktiviert, können Sie das Zielvolume für die Bereitstellung von Daten verwenden, indem Sie es in Lese-/Schreibzugriff konvertieren, während Sie die Quelle reparieren oder ersetzen. Wenn die Quelle für den Empfang von Daten erneut verfügbar ist, können Sie mithilfe der Resynchronisierung auf umgekehrter Richtung die Beziehung herstellen und die Daten auf der Quelle mit den Daten auf dem Ziel für Lesen/Schreiben synchronisieren. 
+---
+= Rückkehrung von Schutzbeziehungen auf der Seite „Gesundheits-/Volume-Details“
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn ein Notfall das Quellvolume in Ihrer Schutzbeziehung deaktiviert, können Sie das Zielvolume für die Bereitstellung von Daten verwenden, indem Sie es in Lese-/Schreibzugriff konvertieren, während Sie die Quelle reparieren oder ersetzen. Wenn die Quelle für den Empfang von Daten erneut verfügbar ist, können Sie mithilfe der Resynchronisierung auf umgekehrter Richtung die Beziehung herstellen und die Daten auf der Quelle mit den Daten auf dem Ziel für Lesen/Schreiben synchronisieren.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Sie müssen Workflow Automation einrichten.
+* Die Beziehung darf keine SnapVault Beziehung sein.
+* Eine Schutzbeziehung muss bereits vorhanden sein.
+* Die Schutzbeziehung muss gebrochen werden.
+* Sowohl die Quelle als auch das Ziel müssen online sein.
+* Die Quelle darf nicht Ziel eines anderen Datensicherungs-Volumes sein.
+
+
+
+
+== Über diese Aufgabe
+
+* Wenn Sie diese Aufgabe ausführen, werden Daten in der Quelle, die neuer als die Daten in der gemeinsamen Snapshot Kopie ist, gelöscht.
+* Die für die umgekehrte Resynchronisierung erstellten Richtlinien und Zeitpläne sind mit denen in der ursprünglichen Schutzbeziehung identisch.
++
+Wenn Richtlinien und Zeitpläne nicht vorhanden sind, werden sie erstellt.
+
+
+
+
+
+== Schritte
+
+. Suchen Sie auf der *Schutz*-Registerkarte der *Gesundheit/Volumen*-Detailseite in der Topologie die SnapMirror-Beziehung, auf der Sie Quelle und Ziel umkehren möchten, und klicken Sie mit der rechten Maustaste darauf.
+. Wählen Sie aus dem Menü die Option *Resync rückwärts*.
++
+Das Dialogfeld Resync umkehren wird angezeigt.
+
+. Stellen Sie sicher, dass die Beziehung, die im Dialogfeld *Resync* umkehren angezeigt wird, die Beziehung ist, für die Sie die Neusynchronisierung rückgängig machen möchten, und klicken Sie dann auf *Absenden*.
++
+Das Dialogfeld „Resync umkehren“ wird geschlossen und oben auf der Seite „Health/Volume Details“ wird ein Job-Link angezeigt.
+
+. Klicken Sie auf der Seite *Health/Volume* Details auf *Jobs anzeigen*, um den Status jedes umgekehrten Neusynchronisierung zu verfolgen.
++
+Eine gefilterte Liste von Jobs wird angezeigt.
+
+. Klicken Sie auf den Zurück-Pfeil Ihres Browsers, um zur Detailseite *Gesundheit/Volumen* zurückzukehren.
++
+Nach erfolgreichem Abschluss aller Jobaufgaben ist die Neusynchronisierung bei umgekehrter Neusynchronisierung abgeschlossen.
+
+

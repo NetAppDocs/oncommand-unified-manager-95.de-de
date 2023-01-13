@@ -1,0 +1,58 @@
+---
+permalink: online-help/task-testing-script-execution.html 
+sidebar: sidebar 
+keywords:  
+summary: Sie können überprüfen, ob Ihr Skript korrekt ausgeführt wird, wenn eine Warnung für ein Speicherobjekt generiert wird. 
+---
+= Skriptausführung wird getestet
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können überprüfen, ob Ihr Skript korrekt ausgeführt wird, wenn eine Warnung für ein Speicherobjekt generiert wird.
+
+
+
+== Bevor Sie beginnen
+
+* Sie müssen über die Rolle „OnCommand Administrator“ oder „Speicheradministrator“ verfügen.
+* Sie müssen ein Skript im unterstützten Dateiformat auf Unified Manager hochgeladen haben.
+
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im linken Menü Verwaltung auf *Scripts*.
+. Fügen Sie auf der Seite * Management/Scripts* Ihr Testskript hinzu.
+. Führen Sie auf der Seite *Konfiguration/Alarmfunktionen* eine der folgenden Aktionen aus:
++
+|===
+| An... | Tun Sie das... 
+
+
+ a| 
+Fügen Sie eine Meldung hinzu
+ a| 
+.. Klicken Sie auf der Seite Konfiguration/Warnmeldungen auf *Hinzufügen*.
+.. Verknüpfen Sie im Abschnitt Aktionen den Alarm mit Ihrem Testskript.
+
+
+
+
+ a| 
+Bearbeiten Sie eine Meldung
+ a| 
+.. Wählen Sie auf der Seite Konfiguration/Alarmfunktionen eine Warnmeldung aus und klicken Sie dann auf *Bearbeiten*.
+.. Verknüpfen Sie im Abschnitt Aktionen den Alarm mit Ihrem Testskript.
+
+
+|===
+. Klicken Sie Auf *Speichern*.
+. Wählen Sie auf der Seite *Konfiguration/Alarmfunktionen* die Warnmeldung aus, die Sie hinzugefügt oder geändert haben, und klicken Sie dann auf *Test*.
++
+Das Skript wird mit dem Argument „`-Test`“ ausgeführt, und eine Benachrichtigung wird an die E-Mail-Adressen gesendet, die beim Erstellen der Warnmeldung angegeben wurden.
+
+

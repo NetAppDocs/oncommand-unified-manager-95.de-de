@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-volume-transfer-status-historical-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Im Bericht Volume Transfer Status \(Historical\) können Sie die Übertragungstrends des Volumes über einen bestimmten Zeitraum analysieren. Sie können den Bericht so konfigurieren, dass der Transferstatus des Volumes für ein bestimmtes Zeitintervall angezeigt wird. Der Bericht zeigt außerdem an, ob die Volume-Übertragung erfolgreich oder fehlgeschlagen ist.' 
+---
+= Bericht „Volume Transfer Status“ (Historischer Bericht)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Bericht Volume Transfer Status (Historical) können Sie die Trends bei der Volume-Übertragung über einen bestimmten Zeitraum analysieren. Sie können den Bericht so konfigurieren, dass der Transferstatus des Volumes für ein bestimmtes Zeitintervall angezeigt wird. Der Bericht zeigt außerdem an, ob die Volume-Übertragung erfolgreich oder fehlgeschlagen ist.
+
+Der Bericht zum Volume Transfer Status (Historical) wird in zwei Formaten angezeigt:
+
+* Liniendiagramm für Volume Transfer Status
+* Berichtstabellen für Volume Transfer Status (Historical)
+
+
+
+
+== Liniendiagramm für Volume Transfer Status
+
+Das Liniendiagramm zeigt die Details der Volume-Übertragung an, indem die Transferanzahl anhand des Datums gezeichnet wird. Sie können auch anzeigen, ob eine bestimmte Volume-Übertragung erfolgreich oder fehlgeschlagen ist.
+
+
+
+== Tabellenansicht Volume Transfer Status
+
+* *Quellcluster-Name*
++
+Zeigt den Quellcluster-Namen an.
+
+* *Quell-SVM*
++
+Zeigt den Namen der Storage Virtual Machine (SVM) an.
+
+* *Name Des Quellvolumens*
++
+Zeigt den Namen des Quell-Volumes an.
+
+* *Zielcluster-Name*
++
+Zeigt den Ziel-Cluster-Namen an.
+
+* *Ziel-SVM*
++
+Zeigt den Namen der Ziel-SVM an.
+
+* *Zielvolumenname*
++
+Zeigt den Namen des Zieldatenträgers an.
+
+* *Operationsergebnis*
++
+Zeigt an, ob die Volume-Übertragung erfolgreich war.
+
+* *Startzeit*
++
+Zeigt die Startzeit der Volume-Übertragung an.
+
+* *Endzeit*
++
+Zeigt die Endzeit der Volume-Übertragung an.
+
+* *Übertragungsdauer (hh:mm:ss)*
++
+Zeigt die Zeit an, die für die Durchführung der Volume-Übertragung benötigt wurde (in Stunden).
+
+* *Transfergröße (MB)*
++
+Zeigt die Größe (in MB) des übertragenen Volumes an.
+
+* *Operationstyp*
++
+Zeigt den Typ der Volume-Übertragung an.
+
+

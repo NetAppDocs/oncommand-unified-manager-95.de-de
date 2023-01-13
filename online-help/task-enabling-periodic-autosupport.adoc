@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-enabling-periodic-autosupport.html 
+sidebar: sidebar 
+keywords:  
+summary: Es besteht die Möglichkeit, bestimmte, vorab definierte Meldungen automatisch an den technischen Support zu senden, um den ordnungsgemäßen Betrieb der Umgebung sicherzustellen und die Integrität der Umgebung zu wahren. 
+---
+= Aktivieren von regelmäßigen AutoSupport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es besteht die Möglichkeit, bestimmte, vorab definierte Meldungen automatisch an den technischen Support zu senden, um den ordnungsgemäßen Betrieb der Umgebung sicherzustellen und die Integrität der Umgebung zu wahren.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen als Wartungbenutzer angemeldet sein.
+
+
+
+== Über diese Aufgabe
+
+Sie müssen AutoSupport aktivieren, um von den Vorteilen der NetApp Active IQ profitieren zu können.
+
+
+
+== Schritte
+
+. Klicken Sie in der Symbolleiste auf *image:../media/clusterpage-settings-icon.gif[""]*, und klicken Sie dann im Menü *Einrichtung* auf *AutoSupport*.
+. Aktivieren Sie das Kontrollkästchen *Periodensystem AutoSupport* aktivieren.
+. Geben Sie bei Bedarf den Namen, den Port und die Authentifizierungsinformationen für den HTTP Proxy-Server an.
+. Klicken Sie Auf *Speichern*.
+

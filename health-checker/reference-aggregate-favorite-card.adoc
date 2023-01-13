@@ -1,0 +1,59 @@
+---
+permalink: health-checker/reference-aggregate-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: Die bevorzugte Karte für Aggregate ermöglicht Ihnen, die Kapazitäts- und Performance-Details der Aggregate anzuzeigen, die Sie als Favoriten markiert haben. 
+---
+= Aggregieren der Lieblingskarte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die bevorzugte Karte für Aggregate ermöglicht Ihnen, die Kapazitäts- und Performance-Details der Aggregate anzuzeigen, die Sie als Favoriten markiert haben.
+
+
+
+== Aggregatattribute
+
+Auf der Favoriten-Karte für das Aggregat werden die folgenden Aggregatattribute angezeigt:
+
+* * Integritätsstatus aggregieren*
++
+Ein Symbol, das den Zustand des Aggregats angibt. Mögliche Werte sind Normal, Warnung, Fehler und kritisch.
+
+* *Aggregatname*
++
+Der Name des Aggregats.
+
++
+Positionieren Sie den Cursor über den Aggregatnamen, um den Namen des Clusters anzuzeigen, zu dem das Aggregat gehört.
+
+* * Kapazität*
++
+Prozentsatz des verfügbaren freien Speicherplatzes im Aggregat und die geschätzte Anzahl an Tagen, bis das Aggregat voll ist.
+
++
+Zu beachten ist, dass FabricPool diese Informationen nur die Kapazität auf der lokalen Performance-Tier widerspiegeln. Klicken Sie auf die Kachel „Kapazität“, um detaillierte Informationen auf der Detailseite „Systemzustand/Aggregat“ anzuzeigen.
+
+* *Leistung*
++
+Performance-Details des Aggregats.
+
++
+** *IOPS*
++
+Durchschnittliche Anzahl von I/O-Vorgängen pro Sekunde in den letzten 72 Stunden.
+
+** *Durchsatz*
++
+Durchschnittsdurchsatz der letzten 72 Stunden, in Mbps .
+
+** *Latenz*
++
+Die durchschnittliche Reaktionszeit eines Vorgangs wurde in Millisekunden benötigt.
+
+
+
+

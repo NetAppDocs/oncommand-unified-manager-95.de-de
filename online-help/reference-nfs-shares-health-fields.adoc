@@ -1,0 +1,114 @@
+---
+permalink: online-help/reference-nfs-shares-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: Der Bericht NFS Exports ermöglicht es Ihnen, Informationen über NFS-Exportrichtlinien und die zugehörigen Regeln für Volumes in Ihrem Storage-System zu prüfen. 
+---
+= Bericht NFS Exporte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der Bericht NFS Exports ermöglicht es Ihnen, Informationen über NFS-Exportrichtlinien und die zugehörigen Regeln für Volumes in Ihrem Storage-System zu prüfen.
+
+
+
+== Tabellarische Ansicht des NFS Exports-Berichts
+
+* * Cluster*
++
+Zeigt den Namen des Clusters an.
+
+* *Storage Virtual Machine*
++
+Zeigt den Namen der SVM mit NFS-Exportrichtlinien an.
+
+* *Lautstärke*
++
+Zeigt den Namen des Volumes mit NFS-Exportrichtlinien an.
+
+* *Qtree*
++
+Zeigt den Namen des qtree auf einem Volume mit NFS-Exportrichtlinien an.
+
+* *Volume-Status*
++
+Zeigt den aktuellen Status des Volumes an. Der Status kann Offline, Online oder beschränkt sein.
+
++
+** Offline
++
+Lese- oder Schreibzugriff auf das Volume ist nicht zulässig.
+
+** Online
++
+Lese- und Schreibzugriff auf das Volume ist zulässig.
+
+** Eingeschränkt
++
+Begrenzte Vorgänge, wie etwa die Paritätsrekonstruktion, sind zulässig, der Datenzugriff jedoch nicht.
+
+
+
+* *Verbindungspfad*
++
+Zeigt den Pfad an, auf dem das Volume angehängt ist.
+
+* *Verbindungspfad Aktiv*
++
+Zeigt an, ob der Pfad für den Zugriff auf das bereitgestellte Volume aktiv oder inaktiv ist.
+
+* *Exportrichtlinie*
++
+Zeigt die Regeln an, die die Zugriffsberechtigung für exportierte Volumes definieren.
+
+* *Regelindex*
++
+Zeigt die Regeln an, die der Exportrichtlinie zugeordnet sind, z. B. die Authentifizierungsprotokolle und die Zugriffsberechtigung.
+
+* *Zugriffsprotokolle*
++
+Zeigt die Protokolle an, die für die Regeln für die Exportrichtlinie aktiviert sind.
+
+* * Client Match*
++
+Zeigt die Clients an, die über die Berechtigung zum Zugriff auf Daten auf den Volumes verfügen.
+
+* *Nur-Lese-Zugriff*
++
+Zeigt das Authentifizierungsprotokoll an, das zum Lesen von Daten auf den Volumes verwendet wird.
+
+* *Schreibzugriff Lesen*
++
+Zeigt das Authentifizierungsprotokoll an, das zum Lesen oder Schreiben von Daten auf den Volumes verwendet wird.
+
+* *Sicherheitsstil*
++
+Zeigt die Zugriffsberechtigung für Volumes an, die exportiert werden. Der Sicherheitsstil kann UNIX, Unified, NTFS oder gemischt sein.
+
++
+** UNIX (NFS-Clients)
++
+Dateien und Verzeichnisse im Volume haben UNIX Berechtigungen.
+
+** Virtualisierung
++
+Dateien und Verzeichnisse im Volume weisen einen einheitlichen Sicherheitsstil auf.
+
+** NTFS (CIFS-Clients)
++
+Dateien und Verzeichnisse im Volume haben Windows NTFS-Berechtigungen.
+
+** Gemischt
++
+Dateien und Verzeichnisse auf dem Volume können entweder UNIX Berechtigungen oder Windows NTFS Berechtigungen haben.
+
+
+
+* *Unix-Erlaubnis*
++
+Zeigt die UNIX-Berechtigungsbits in einem Oktal-String-Format an, das für die exportierten Volumes festgelegt ist. Es ähnelt den Berechtigungsbits im UNIX-Stil.
+
+
