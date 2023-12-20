@@ -6992,8 +6992,6 @@
   <block id="b05ec43ca7407c06122c42ea4b25632e" category="paragraph">Der Workflow Automation Setup wurde aus Unified Manager entfernt.</block>
   <block id="6999aa5ef7f71f7f00e64118e8275e74" category="paragraph">Speichert die Konfigurationseinstellungen für die ausgewählte Option.</block>
   <block id="93f88d6c3be8dc08239feb316ead84f9" category="paragraph">Um die Namen der EMS-Ereignisse anzuzeigen, die Sie in der ONTAP Cluster Shell abonnieren können, können Sie die verwenden<block ref="600519f6c6d0b7df8b905133fe79eb47" prefix=" " category="inline-code"></block> Befehl (vor ONTAP 9) oder der<block ref="83c19f62b32dae15ee31be017a321335" prefix=" " category="inline-code"></block> Befehl (ONTAP 9 oder höher). Eine ausführliche Anleitung zur Identifizierung einzelner EMS-Ereignisse ist in der Knowledgebase Antwort 1072320 verfügbar.</block>
-  <block id="b7ea02fe1dbdcd1a4d97e075ed656e5d" category="inline-link">KB 1072320 - so konfigurieren Sie ONTAP EMS-Ereignisabonnements in Unified Manager</block>
-  <block id="31217e322cc07a0593ddf09e0d4549b2" category="paragraph"><block ref="31217e322cc07a0593ddf09e0d4549b2" category="inline-link-rx"></block></block>
   <block id="d6b2a5eaec6d581c428382bf1fa65994" category="summary">Sie können den Cluster-Bestandsbericht so anpassen, dass eine Liste der Nodes angezeigt wird, die das maximale Festplattenlimit erreichen und nach zunehmender Reihenfolge sortiert werden.</block>
   <block id="e9cf43d6c7ec24f85386c110100fce90" category="doc">Sie können den Cluster-Inventory-Bericht so anpassen, dass Nodes angezeigt werden, die das maximale Festplattenslimit erreichen</block>
   <block id="cbed002dcbc960710aebe81be97aab0d" category="list-text">So entfernen Sie die Gruppierung nach Cluster oder Node:</block>
@@ -12161,7 +12159,6 @@
   <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Unified Manager Videos</block>
   <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Unified Manager Blogs</block>
   <block id="7c59cc884d6b9ef97e305e34cc436310" category="sidebar">Dokumentation für die neueste Version von Unified Manager</block>
-  <block id="85f73dd16ea214346164b0deea26773b" category="sidebar">Unified Manager</block>
   <block id="09d454f0bf432593d99fbfd84c9f9293" category="sidebar">Durchführung von Konfigurations- und Administrationsaufgaben</block>
   <block id="280e472487f2e1876889ef516ea66c22" category="sidebar">SELinux Anforderungen zum Mounten <code>von /opt/netapp</code> oder <code>/opt/netapp/Daten</code> auf einer NFS- oder CIFS-Freigabe</block>
   <block id="89376735b2b1322b2aeff45eff7abf01" category="sidebar">Durchführen einer unbeaufsichtigten Installation von Unified Manager unter Windows</block>
@@ -12216,4 +12213,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">So konfigurieren und erhalten Sie Benachrichtigungen von ONTAP EMS-Ereignisabonnement in Active IQ Unified Manager</block>
+  <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
 </blocks>

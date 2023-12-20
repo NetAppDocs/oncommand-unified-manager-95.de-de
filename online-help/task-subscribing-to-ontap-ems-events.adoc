@@ -45,7 +45,7 @@ Wenn Sie die ONTAP EMS-Ereignisse, die Sie abonniert haben, kann es möglicherwe
 Um die Namen der EMS-Ereignisse anzuzeigen, die Sie in der ONTAP Cluster Shell abonnieren können, können Sie die verwenden `event route show` Befehl (vor ONTAP 9) oder der `event catalog show` Befehl (ONTAP 9 oder höher). Eine ausführliche Anleitung zur Identifizierung einzelner EMS-Ereignisse ist in der Knowledgebase Antwort 1072320 verfügbar.
 
 +
-https://kb.netapp.com/app/answers/answer_view/a_id/1072320["KB 1072320 - so konfigurieren Sie ONTAP EMS-Ereignisabonnements in Unified Manager"]
+https://kb.netapp.com/mgmt/AIQUM/How_to_configure_and_receive_alerts_from_ONTAP_EMS_Event_Subscription_in_Active_IQ_Unified_Manager["So konfigurieren und erhalten Sie Benachrichtigungen von ONTAP EMS-Ereignisabonnement in Active IQ Unified Manager"^]
 
 . Klicken Sie Auf *Hinzufügen*.
 +
