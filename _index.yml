@@ -1,0 +1,46 @@
+---
+indexpage:
+  title: OnCommand Unified Manager Dokumentation
+  summary: OnCommand Unified Manager ermöglicht das Monitoring und Management des
+    Systemzustands sowie der Performance Ihrer ONTAP Storage-Systeme über eine einheitliche
+    Benutzeroberfläche. Diese Dokumentationsbibliothek enthält Informationen zu Version
+    9.5.
+  keywords: oncommand unified manager, release notes, 95
+  lead: OnCommand Unified Manager ermöglicht das Monitoring und Management des Systemzustands
+    sowie der Performance Ihrer ONTAP Storage-Systeme über eine einheitliche Benutzeroberfläche.
+    Diese Dokumentationsbibliothek enthält Informationen zu Version 9.5.
+  tiles:
+  - title: Los geht's
+    links:
+    - title: Versionshinweise
+      url: "/release-notes.html"
+    - title: Schnellstartinstallation für VMware vSphere
+      url: qsg-vapp.html
+    - title: Schnellstartinstallation für Linux
+      url: qsg-linux.html
+    - title: Schnellstartinstallation für Windows
+      url: qsg-windows.html
+  - title: Installation Konfiguration von Unified Manager
+    links:
+    - title: Installieren Sie das Upgrade auf VMware vSphere Systemen
+      url: install/concept-installing-upgrading-and-removing-unified-manager-software-on-vmware-vsphere.html
+    - title: Upgrade auf Linux-Systemen installieren
+      url: install/concept-install-upgrade-and-remove-unified-manager-software.html
+    - title: Installieren Sie das Upgrade auf Windows-Systemen
+      url: install/concept-installing-upgrading-and-removing-unified-manager-software.html
+    - title: Konfiguration Von Unified Manager
+      url: config/concept-configuring-unified-manager.html
+  - title: Performance Monitoring
+    links:
+    - title: Performance-Schwellenwerte
+      url: performance-checker/concept-managing-performance-thresholds.html
+    - title: Cluster-Performance
+      url: performance-checker/concept-monitoring-cluster-performance-from-the-dashboard.html
+  - title: Mehr Ressourcen
+    links:
+    - title: Unified Manager Videos
+      url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7mp3jFSg0IJgo3oeDQRY-Gl
+    - title: Unified Manager Blogs
+      url: https://www.netapp.com/blog/#q=active%20iq%20unified%20manager&t=Blogs&sort=%40publish-date-mktg%20descending&layout=card&f:@facet-language-mktg=[English]
+    - title: Dokumentation für die neueste Version von Unified Manager
+      url: https://docs.netapp.com/us-en/active-iq-unified-manager/index.html
