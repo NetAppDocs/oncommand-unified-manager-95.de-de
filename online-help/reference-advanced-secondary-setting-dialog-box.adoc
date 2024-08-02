@@ -88,4 +88,4 @@ Legt die Auswahl auf und schließt das Dialogfeld Erweiterte Zieleinstellungen.
 
 *Verwandte Informationen*
 
-http://www.netapp.com/us/media/tr-3966.pdf["Technischer Bericht 3966 von NetApp: Leitfaden zur NetApp Datenkomprimierung und Deduplizierung sowie Implementierungsleitfaden (Clustered Data ONTAP)"]
+https://www.netapp.com/pdf.html?item=/media/19753-tr-3966.pdf["Technischer Bericht 3966 von NetApp: Leitfaden zur NetApp Datenkomprimierung und Deduplizierung sowie Implementierungsleitfaden (Clustered Data ONTAP)"^]
